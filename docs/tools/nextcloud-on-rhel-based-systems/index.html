@@ -21,27 +21,27 @@
     <meta itemprop="description" content="Nextcloud setup guide on a RHEL based server">
     <meta itemprop="wordCount" content="1961">
     <title>Nextcloud on RHEL Based Systems :: Linux Reader</title>
-    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
-    <script src="/js/search-lunr.js?1766587782" defer></script>
-    <script src="/js/search.js?1766587782" defer></script>
+    <link href="/images/favicon.svg?1766588128" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766588128" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766588128" defer></script>
+    <script src="/js/search-lunr.js?1766588128" defer></script>
+    <script src="/js/search.js?1766588128" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1766587782";
+      window.relearn.index_js_url="/searchindex.en.js?1766588128";
     </script>
-    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766588128" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766588128" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766588128" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766588128" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
-    <link href="/css/theme.css?1766587782" rel="stylesheet">
-    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766588128" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766588128" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766588128" rel="stylesheet">
+    <link href="/css/theme.css?1766588128" rel="stylesheet">
+    <link href="/css/format-html.css?1766588128" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -375,8 +375,8 @@ Extract the contents to /var/www/nextcloud
 <p>Before you go any further, you will need to have a domain name set up for your server. I use Cloudflare to manage my DNS records. You will want to make a CNAME record for your nextcloud subdomain.</p>
 <p>Just add &ldquo;nextcloud&rdquo; as the name and &ldquo;yourwebsite.com&rdquo; as the content. This will make it so &ldquo;nextcloud.yourwebsite.com&rdquo; is the site for your nextcloud dashboard. Also, make sure to select &ldquo;DNS Only&rdquo; under proxy status.</p>
 <p>Here&rsquo;s what my CloudFlare domain setup looks with this blog as the main site, and cloud.perfectdarkmode.com as the nextcloud site:</p>
-<p><a href="#R-image-86eaf4e5245b3c5ce3b52f56d4690617" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020241229050325.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-86eaf4e5245b3c5ce3b52f56d4690617"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020241229050325.png"></a></p>
+<p><a href="#R-image-b63bdf1f25da3928f0de7d9d0a5a3a27" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020241229050325.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b63bdf1f25da3928f0de7d9d0a5a3a27"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020241229050325.png"></a></p>
 <p>Then you need to update trusted domains in /var/www/nextcloud/config/config.php:</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#5af78e">&#39;trusted_domains&#39;</span> <span style="color:#ff6ac1">=</span>&gt;
 </span></span><span style="display:flex;"><span>   <span style="color:#ff6ac1">[</span>
@@ -400,11 +400,11 @@ Extract the contents to /var/www/nextcloud
 <p>Obtain an SSL certificate. (See my <a href="/tools/obsidian-site-setup/">Obsidian site setup</a> post for information about Certbot and Apache setup.)</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo certbot -d {subdomain}.{domain}.com</code></pre></div>
 <p>Now log into nextcloud with your admin account using the DNS name you set earlier:</p>
-<p><a href="#R-image-1dcc82fb59a6c3686581359fea5d044b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020241229050541.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1dcc82fb59a6c3686581359fea5d044b"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020241229050541.png"></a></p>
+<p><a href="#R-image-b0a70c37cb626fcd0f1b5775f1cd64ba" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020241229050541.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0a70c37cb626fcd0f1b5775f1cd64ba"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020241229050541.png"></a></p>
 <p>I recommend setting up a normal user account instead of doing everything as &ldquo;admin&rdquo;. Just hit the &ldquo;A&rdquo; icon at the top right and go to &ldquo;Accounts&rdquo;. Then just select &ldquo;New Account&rdquo; and create a user account with whatever privileges you want.</p>
-<p><a href="#R-image-bdd094de2a33c99be3dd2eb2eb19ceb8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020241229051101.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bdd094de2a33c99be3dd2eb2eb19ceb8"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020241229051101.png"></a></p>
+<p><a href="#R-image-6d5cbf99ba816900ffc321cf539f1e12" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020241229051101.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6d5cbf99ba816900ffc321cf539f1e12"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020241229051101.png"></a></p>
 <p>I may make a post about which Nextcloud apps I recommend and customize the setup a bit. Let me know if that&rsquo;s something you&rsquo;d like to see. That&rsquo;s all for now.</p>
 <h3 id="make-log-dir">Make log dir:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir /var/log/nextcloud
@@ -668,22 +668,22 @@ fail2ban-client status sshd</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766588128" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
-    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766588128" defer></script>
+    <script src="/js/theme.js?1766588128" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>

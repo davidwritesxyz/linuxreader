@@ -51,27 +51,27 @@ Request: - Sent by the DHCP client to ask the server to lease the IPv4 address l
 Acknowledgment: - Sent by the DHCP server to assign the address and to list the mask, default router, and DNS server IP addresses IPv4 addresses that allow a host that has no IP address to still be able to send and receive messages on the local subnet: 0.0.0.0: - An address reserved for use as a source IPv4 address for hosts that do not yet have an IP address. 255.255.255.255: - The local broadcast IP address. Packets sent to this destination address are broadcast on the local data link, but routers do not forward them. a client, sends a Discover message, with source IP address of 0.0.0.0Host A sends the packet to destination 255.255.255.255 router R1 will not forward this packet. - - assuming the DHCP client chooses to use a DHCP option called the broadcast flag; all examples in this book assume the broadcast flag is used. - all hosts in the subnet receive the Offer message - the original Discover message lists a number called the client ID□□ includes the host’s MAC address, that identifies the original host (host A in this case).As a result, host A knows that the Offer message is meant for host A, which. Supporting DHCP for Remote Subnets with DHCP Relay">
     <meta itemprop="wordCount" content="324">
     <title></title>
-    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
-    <script src="/js/search-lunr.js?1766587782" defer></script>
-    <script src="/js/search.js?1766587782" defer></script>
+    <link href="/images/favicon.svg?1766588128" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766588128" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766588128" defer></script>
+    <script src="/js/search-lunr.js?1766588128" defer></script>
+    <script src="/js/search.js?1766588128" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1766587782";
+      window.relearn.index_js_url="/searchindex.en.js?1766588128";
     </script>
-    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766588128" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766588128" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766588128" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766588128" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
-    <link href="/css/theme.css?1766587782" rel="stylesheet">
-    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766588128" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766588128" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766588128" rel="stylesheet">
+    <link href="/css/theme.css?1766588128" rel="stylesheet">
+    <link href="/css/format-html.css?1766588128" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -323,22 +323,22 @@ Acknowledgment: - Sent by the DHCP server to assign the address and to list the 
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766588128" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
-    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766588128" defer></script>
+    <script src="/js/theme.js?1766588128" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>

@@ -35,27 +35,27 @@ Inside front cover Podman and Docker feature comparison
 &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Feature | Podman | Docker | Description | &#43;=================&#43;===============&#43;===============&#43;======================================&#43; | Supports all | [✔]{.cambria} | [✔]{.cambria} | Both pull and run container images | | OCI and Docker | | | from container registries (i.e., | | images | | | quay.io and docker.io) | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Launches OCI | [✔]{.cambria} | [✔]{.cambria} | Launch containers using runc, crun, | | container | | | Kata, gVisor, and OCI container | | engines | | | engines | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Simple | [✔]{.cambria} | [✔]{.cambria} | Podman and Docker share the same | | command-line | | | CLI. | | interface | | | | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Integration | [✔]{.cambria} | [✘]{.cambria} | Podman supports running systemd | | with systemd | | | inside of the container as well as | | | | | many systemd features. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Fork/exec model | [✔]{.cambria} | [✘]{.cambria} | The container is a direct descendant | | | | | of the podman command. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Fully support | [✔]{.cambria} | [✘]{.cambria} | Only Podman supports running | | user namespace | | | containers in separate user | | | | | namespaces. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Client–server | [✔]{.cambria} | [✔]{.cambria} | Docker is a RESTful API daemon. | | model | | | Podman supports RESTful API via a | | | | | systemd socket=activated service. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Supports | [✔]{.cambria} | [✔]{.cambria} | compose scripts work against both | | dockercompose | | | restful APIs. Podman[’]{.calibre6}s | | | | | works in rootless mode. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Supports | [✔]{.cambria} | [✔]{.cambria} | docker-py python bindings work | | docker-py | | | against both restful APIs. Podman’s | | | | | works in rootless mode. Podman also | | | | | supports podman-py for running | | | | | advanced features. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Daemonless | [✔]{.cambria} | [✘]{.cambria} | The podman command runs like a | | | | | traditional command-line tool, while | | | | | Docker requires multiple | | | | | root-running daemons. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Supports | [✔]{.cambria} | [✘]{.cambria} | Podman supports running multiple | | Kubernetes-like | | | containers within the same pod. | | pods | | | | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Supports | [✔]{.cambria} | [✘]{.cambria} | Podman can launch containers and | | Kubernetes yaml | | | pods based on Kubernetes yaml. It | | | | | can also generate Kuberenetes.yaml | | | | | from running containers. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Supports Docker | [✘]{.cambria} | [✔]{.cambria} | Podman believes the future for | | swarm | | | orchestrated multi-node containers | | | | | is Kubernetes and does not plan on | | | | | implementing Swarm. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Customizable | [✔]{.cambria} | [✘]{.cambria} | Podman allows you to configure | | registries | | | registries for short name expansion. | | | | | Docker is hard coded to docker.io | | | | | when you specify a short name. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Customizable | [✔]{.cambria} | [✘]{.cambria} | Podman supports fully customizing | | defaults | | | all of its defaults including | | | | | security, namespaces, volumes, and | | | | | more. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Mac OS support | [✔]{.cambria} | [✔]{.cambria} | Podman and Docker support running | | | | | containers on a Mac via a VM running | | | | | Linux. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Windows support | [✔]{.cambria} | [✔]{.cambria} | Podman and Docker support running | | | | | containers on a Windows WSL2 or a VM | | | | | running Linux. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43; | Linux support | [✔]{.cambria} | [✔]{.cambria} | Podman and Docker are supported on | | | | | all major Linux distributions. | &#43;—————–&#43;—————&#43;—————&#43;————————————–&#43;">
     <meta itemprop="wordCount" content="94787">
     <title></title>
-    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
-    <script src="/js/search-lunr.js?1766587782" defer></script>
-    <script src="/js/search.js?1766587782" defer></script>
+    <link href="/images/favicon.svg?1766588128" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766588128" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766588128" defer></script>
+    <script src="/js/search-lunr.js?1766588128" defer></script>
+    <script src="/js/search.js?1766588128" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1766587782";
+      window.relearn.index_js_url="/searchindex.en.js?1766588128";
     </script>
-    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766588128" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766588128" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766588128" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766588128" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
-    <link href="/css/theme.css?1766587782" rel="stylesheet">
-    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766588128" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766588128" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766588128" rel="stylesheet">
+    <link href="/css/theme.css?1766588128" rel="stylesheet">
+    <link href="/css/format-html.css?1766588128" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -533,8 +533,8 @@ Inside front cover Podman and Docker feature comparison
 
 <h1 id=""></h1>
 
-<p><a href="#R-image-ef369c41f85733b218eea27f6038cdff" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/cover.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ef369c41f85733b218eea27f6038cdff"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/cover.jpeg"></a></p>
+<p><a href="#R-image-afd335a4f3283293683d7c649657abcc" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/cover.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-afd335a4f3283293683d7c649657abcc"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/cover.jpeg"></a></p>
 <p>[]{#titlepage.xhtml}</p>
 <p>::: {}
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="100%" preserveaspectratio="xMidYMid meet" version="1.1" viewbox="0 0 900 1130" width="100%">
@@ -626,8 +626,8 @@ Inside front cover Podman and Docker feature comparison
 +&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
 <p>[]{#title.htm}</p>
 <p>  </p>
-<p><a href="#R-image-54f59df39cb8f3fdb14c3057179667ac" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/Manning_copyright.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-54f59df39cb8f3fdb14c3057179667ac"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/Manning_copyright.png"></a>{.calibre7}</p>
+<p><a href="#R-image-5f06ee0d88c0f7d3b73431190ea6a204" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/Manning_copyright.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5f06ee0d88c0f7d3b73431190ea6a204"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/Manning_copyright.png"></a>{.calibre7}</p>
 <p> </p>
 <p> </p>
 <h1 id="title.htm_heading_id_2" class="copyrighta">Podman in Action<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
@@ -642,8 +642,8 @@ microservices, and more</p>
 <a href="https://livebook.manning.com/#!/book/podman-in-action/discussion" rel="external" target="_blank">liveBook</a>{.index}</p>
 <p> </p>
 <p> </p>
-<p><a href="#R-image-2c8dca3e53d8a5cb45f77974de3390b8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/Manning_M_small.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2c8dca3e53d8a5cb45f77974de3390b8"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/Manning_M_small.png"></a>{.calibre8}</p>
+<p><a href="#R-image-bd38c579c75d508053bfeac7fcab96b5" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/Manning_M_small.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bd38c579c75d508053bfeac7fcab96b5"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/Manning_M_small.png"></a>{.calibre8}</p>
 <p>Manning</p>
 <p>Shelter Island</p>
 <p> </p>
@@ -683,8 +683,8 @@ books are printed on paper that is at least 15 percent recycled and
 processed without the use of elemental chlorine.</p>
 <p> </p>
 <p>+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
-| <a href="#R-image-6e7e4f1fc8cff7a05b071c13eace5623" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/Manning_M_small.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6e7e4f1fc8cff7a05b071c13eace5623"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/Manning_M_small.png"></a>{.calibre14}     | Manning Publications Co.          |
+| <a href="#R-image-67cc48ced4e562e10fb84401b20c2e9b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/Manning_M_small.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-67cc48ced4e562e10fb84401b20c2e9b"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/Manning_M_small.png"></a>{.calibre14}     | Manning Publications Co.          |
 |                                                              |                                   |
 |                                                              | 20 Baldwin Road Technical         |
 |                                                              |                                   |
@@ -1235,8 +1235,8 @@ as well as on several other sites. There are many videos of talks Dan
 has presented available on YouTube as well.</p>
 <h2 id="fm.htm_heading_id_10" class="fm-head">[]{#fm.htm_pgfId-1113530}about the author<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>::: figure
-<a href="#R-image-4339605706f5f8585fb6ba796a953b0b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/FM-Daniel_Walsh.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4339605706f5f8585fb6ba796a953b0b"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/FM-Daniel_Walsh.png"></a>{.calibre18}
+<a href="#R-image-d15aefa82b097e3dfcbc64cf4ac30b1f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/FM-Daniel_Walsh.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d15aefa82b097e3dfcbc64cf4ac30b1f"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/FM-Daniel_Walsh.png"></a>{.calibre18}
 :::</p>
 <p>[]{#fm.htm_pgfId-1113532}[Daniel Walsh]{.mc-small-caps} leads the team
 that created Podman, Buildah, Skopeo, CRI-O, and their related tools.
@@ -1364,8 +1364,8 @@ between the OCI container runtimes.</p>
 <p>[]{#01.htm_pgfId-1031549}Figure 1.1 shows into which categories these
 open source container projects fit.</p>
 <p>::: figure
-<a href="#R-image-d5d25a5415b7f5ca3a019d5bb7c94e3a" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d5d25a5415b7f5ca3a019d5bb7c94e3a"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-01.png"></a>{.calibre18}</p>
+<a href="#R-image-bacb5bb4fc02a9851bfc5da2dca2f294" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bacb5bb4fc02a9851bfc5da2dca2f294"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-01.png"></a>{.calibre18}</p>
 <p>[]{#01.htm_pgfId-1040864}Figure 1.1 Different open source projects
 dealing with containers within the categories of orchestrators, engines,
 and runtimes.
@@ -1379,8 +1379,8 @@ depth in chapter 4. Podman runs individual containers as well as pods.
 The Podman logo in figure 1.2 is a group of Selkies, the Irish concept
 of a mermaid. Groups of Selkies are called pods.</p>
 <p>::: figure
-<a href="#R-image-a168d18fc86c497d439751d433bb77e7" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a168d18fc86c497d439751d433bb77e7"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-02.png"></a>{.calibre18}</p>
+<a href="#R-image-dfd2150f350ca9ec6145cd03ed5cc844" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dfd2150f350ca9ec6145cd03ed5cc844"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-02.png"></a>{.calibre18}</p>
 <p>[]{#01.htm_pgfId-1040912}Figure 1.2 Podman&rsquo;s logo
 :::</p>
 <p>[]{#01.htm_pgfId-1031565}The Podman project describes Podman as &ldquo;a
@@ -1405,8 +1405,8 @@ management tools like Buildah[]{#01.htm_marker-1036166} and
 Skopeo[]{#01.htm_marker-1036167}. (See appendix A for a description of
 some of these tools.)</p>
 <p>::: figure
-<a href="#R-image-9e10faec3d8213151506924975b30bba" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-03.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9e10faec3d8213151506924975b30bba"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-03.png"></a>{.calibre18}</p>
+<a href="#R-image-72397e5013a2d6f5356be5be75ffe7e2" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-03.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-72397e5013a2d6f5356be5be75ffe7e2"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-03.png"></a>{.calibre18}</p>
 <p>[]{#01.htm_pgfId-1041026}Figure 1.3 Containers is the developer site for
 Podman and other related container tools (see
 <a href="https://github.com/containers" rel="external" target="_blank">https://github.com/containers</a>{.url}).
@@ -1626,8 +1626,8 @@ world, all you run is the containerized application&mdash;there is no
 overhead and no additional OS management. Figure 1.4 shows three
 applications running in three different VMs.</p>
 <p>::: figure
-<a href="#R-image-b31dbd28a992e5e6c6bb0eb5477574e9" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-04.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b31dbd28a992e5e6c6bb0eb5477574e9"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-04.png"></a>{.calibre18}</p>
+<a href="#R-image-ba7f7f348a092dab3f26a9f00907ac29" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-04.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ba7f7f348a092dab3f26a9f00907ac29"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-04.png"></a>{.calibre18}</p>
 <p>[]{#01.htm_pgfId-1041065}Figure 1.4 Physical machine running three
 applications in three VMs
 :::</p>
@@ -1637,8 +1637,8 @@ with just their required user spaces. You end up managing just one
 operating system, as shown in
 []{#01.htm_marker-1031679}[]{#01.htm_marker-1031680}figure 1.5.</p>
 <p>::: figure
-<a href="#R-image-776f0f8c91f19f169ec9d5419b88dc3d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-05.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-776f0f8c91f19f169ec9d5419b88dc3d"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-05.png"></a>{.calibre18}</p>
+<a href="#R-image-2f66d638c6381c2ccb2d4988d127cc5b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-05.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2f66d638c6381c2ccb2d4988d127cc5b"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-05.png"></a>{.calibre18}</p>
 <p>[]{#01.htm_pgfId-1041103}Figure 1.5 Physical machine running three
 applications in three containerized applications
 :::</p>
@@ -1652,8 +1652,8 @@ library than another, which prevents them from being installed at the
 same time. Figure 1.6 shows a traditional application running within an
 operating system without use of containers.</p>
 <p>::: figure
-<a href="#R-image-7d85d472e0cc80ea5aff8a04858eb866" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-06.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7d85d472e0cc80ea5aff8a04858eb866"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-06.png"></a>{.calibre18}</p>
+<a href="#R-image-430a6dd69afb21757440ea34b6e1bb94" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-06.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-430a6dd69afb21757440ea34b6e1bb94"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-06.png"></a>{.calibre18}</p>
 <p>[]{#01.htm_pgfId-1041150}Figure 1.6 Traditional LAMP stack (Linux,
 Apache, MariaDB, and PHP/PERL application) running on a server
 :::</p>
@@ -1668,8 +1668,8 @@ images encourage the packaging of a single service or application into a
 single container. Containers allow you to easily wire multiple
 applications together via the network.</p>
 <p>::: figure
-<a href="#R-image-9ae897aafaca7cd339e5d6845a271c72" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-07.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9ae897aafaca7cd339e5d6845a271c72"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-07.png"></a>{.calibre18}</p>
+<a href="#R-image-a0a3eb47b443a5cad0f5a625bed1b714" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-07.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0a3eb47b443a5cad0f5a625bed1b714"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-07.png"></a>{.calibre18}</p>
 <p>[]{#01.htm_pgfId-1041172}Figure 1.7 LAMP stack packaged individually
 into microservice containers. As containers communicate via the network,
 they can be easily moved to other VMs, making reuse much easier.
@@ -2014,8 +2014,8 @@ processes are just children of the current session, but there is a lot
 of communication going on behind the scenes. Figure 1.8 shows the Docker
 client-server architecture.</p>
 <p>::: figure
-<a href="#R-image-6dc18074121abe189b4d9b09d6731cf3" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-08.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6dc18074121abe189b4d9b09d6731cf3"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-08.png"></a>{.calibre18}</p>
+<a href="#R-image-d5a2731a420dc2156c73c51a7ade0de2" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-08.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d5a2731a420dc2156c73c51a7ade0de2"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-08.png"></a>{.calibre18}</p>
 <p>[]{#01.htm_pgfId-1041223}Figure 1.8 Docker client-server architecture.
 The container is a direct descendant of containerd, not the Docker
 client. The kernel sees no relationship between the client program and
@@ -2049,8 +2049,8 @@ and disadvantages of this mechanism. Figure 1.9 shows the Podman
 architecture and communication
 []{#01.htm_marker-1032023}[]{#01.htm_marker-1032024}flow.</p>
 <p>::: figure
-<a href="#R-image-930a279704a8d926b82c1e8ccff574a0" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-09.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-930a279704a8d926b82c1e8ccff574a0"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-09.png"></a>{.calibre18}</p>
+<a href="#R-image-8cfe56edb050fcec30e4d1b56c88aeaa" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-09.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8cfe56edb050fcec30e4d1b56c88aeaa"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-09.png"></a>{.calibre18}</p>
 <p>[]{#01.htm_pgfId-1041268}Figure 1.9 Podman fork/exec architecture. The
 user launches Podman, which executes the OCI runtime, which then
 launches the container. The container is a direct descendant of Podman.
@@ -2109,8 +2109,8 @@ up. Figure 1.10 is a twitter message from a Podman user who aliased the
 was surprised to remember he had been using Podman for two months while
 thinking he was using Docker.</p>
 <p>::: figure
-<a href="#R-image-fbdc1e1f58cea20bdf425936e252b785" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-10.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fbdc1e1f58cea20bdf425936e252b785"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-10.png"></a>{.calibre18}</p>
+<a href="#R-image-080ac4bfba11cbe4908b1bb5232f44f8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-10.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-080ac4bfba11cbe4908b1bb5232f44f8"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-10.png"></a>{.calibre18}</p>
 <p>[]{#01.htm_pgfId-1041309}Figure 1.10 Tweet about &ldquo;alias docker=&lsquo;podman&rsquo;&rdquo;
 :::</p>
 <p>[]{#01.htm_pgfId-1032048}Back in 2018, Alan Moran tweeted, &ldquo;I completely
@@ -2177,8 +2177,8 @@ activation, service ready notifications, and so on. Figure 1.11 is an
 actual badge of a Docker employee at the first DockerCon, illustrating
 their hostility towards systemd.</p>
 <p>::: figure
-<a href="#R-image-c54e733fe55030e8ed41fae703d60fab" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-11.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c54e733fe55030e8ed41fae703d60fab"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-11.png"></a>{.calibre18}</p>
+<a href="#R-image-573c58137190bd35f0342e8ea5b7e5ad" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-11.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-573c58137190bd35f0342e8ea5b7e5ad"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-11.png"></a>{.calibre18}</p>
 <p>[]{#01.htm_pgfId-1041347}Figure 1.11 Docker employee badge at DockerCon
 EU
 :::</p>
@@ -2215,8 +2215,8 @@ single entity. One of the goals of Podman is allowing you to experiment
 with pods. Figure 1.12 shows two pods running on a system, each pod
 containing three containers.</p>
 <p>::: figure
-<a href="#R-image-e07252c4236f4e34a999d3587562caa7" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-12.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e07252c4236f4e34a999d3587562caa7"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-12.png"></a>{.calibre18}</p>
+<a href="#R-image-c64a9b9a170ada3bb3a717dac35fef3b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/01-12.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c64a9b9a170ada3bb3a717dac35fef3b"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/01-12.png"></a>{.calibre18}</p>
 <p>[]{#01.htm_pgfId-1041385}Figure 1.12 Two pods running on a host. Each
 pod runs two different containers along with the infra container.
 :::</p>
@@ -2703,8 +2703,8 @@ launch a web browser to communicate with the web server inside of the
 container at localhost port <code>8080</code>{.fm-code-in-text} (see figure 2.1):</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-programlisting" data-lang="programlisting">$ web-browser localhost:8080</code></pre></div>
 <p>::: figure
-<a href="#R-image-43600a42b264d08e9b54447344d76006" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/02-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-43600a42b264d08e9b54447344d76006"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/02-01.png"></a>{.calibre18}</p>
+<a href="#R-image-308ffa60d256910419dfa6cb61a3aa44" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/02-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-308ffa60d256910419dfa6cb61a3aa44"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/02-01.png"></a>{.calibre18}</p>
 <p>[]{#02.htm_pgfId-1052898}Figure 2.1 Web browser window connecting to the
 ubi8/httpd-24 container running in Podman
 :::</p>
@@ -3140,8 +3140,8 @@ processes inside of existing containers:</p>
 container to see if the content has changed (see figure 2.2):</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-programlisting" data-lang="programlisting">$ web-browser localhost:8080</code></pre></div>
 <p>::: figure
-<a href="#R-image-4cdb2d8eb4585ed75fd80743a7adc4ce" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/02-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4cdb2d8eb4585ed75fd80743a7adc4ce"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/02-02.png"></a>{.calibre18}</p>
+<a href="#R-image-bfb25a1dca81734eb9bd91e4457002cf" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/02-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bfb25a1dca81734eb9bd91e4457002cf"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/02-02.png"></a>{.calibre18}</p>
 <p>[]{#02.htm_pgfId-1052948}Figure 2.2 Web browser window connecting to the
 ubi8/httpd-24 container running in Podman with updated Hello World HTML
 :::</p>
@@ -3426,8 +3426,8 @@ the ubi8/httpd-24. Now when you commit your container in the previous
 section, Podman adds another layer on top of the ubi8/httpd-24 image
 called <code>myimage</code>{.fm-code-in-text}[]{#02.htm_marker-1038221}.</p>
 <p>::: figure
-<a href="#R-image-6483454b2a7eb636301dc88be21615cb" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/02-03.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6483454b2a7eb636301dc88be21615cb"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/02-03.png"></a>{.calibre18}</p>
+<a href="#R-image-f9b8fec5da718deea360b6991a54fd81" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/02-03.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f9b8fec5da718deea360b6991a54fd81"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/02-03.png"></a>{.calibre18}</p>
 <p>[]{#02.htm_pgfId-1052986}Figure 2.3 A wedding cake display showing the
 images making up our Hello World application.
 :::</p>
@@ -3934,8 +3934,8 @@ Safari, Internet Explorer, or Microsoft Edge) to look at the images at
 quay.io. You can see 1.0 and the latest image in figure 2.4:</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-programlisting" data-lang="programlisting">$ web-browser quay.io/repository/rhatdan/myimage?tab=tags</code></pre></div>
 <p>::: figure
-<a href="#R-image-4e78f678f3a66387fc1c226f0c502690" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/02-04.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4e78f678f3a66387fc1c226f0c502690"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/02-04.png"></a>{.calibre18}</p>
+<a href="#R-image-d49f7aca728818918eb041e049cd1803" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/02-04.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d49f7aca728818918eb041e049cd1803"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/02-04.png"></a>{.calibre18}</p>
 <p>[]{#02.htm_pgfId-1053027}Figure 2.4 List of <code>myimage</code>{.fm-code-in-text}
 tags on quay.io
 (<a href="https://quay.io/repository/rhatdan/myimage/?tab=tags" rel="external" target="_blank">https://quay.io/repository/rhatdan/myimage/?tab=tags</a>{.url})
@@ -5008,8 +5008,8 @@ a web browser, and navigate to localhost:8080 to make sure the changes
 have taken place (see figure 3.1).</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-programlisting" data-lang="programlisting">$ web-browser localhost:8080</code></pre></div>
 <p>::: figure
-<a href="#R-image-4ef3ee00c0e669843a56c22cc12bd778" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/03-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4ef3ee00c0e669843a56c22cc12bd778"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/03-01.png"></a>{.calibre18}</p>
+<a href="#R-image-451e82dad77e00485e6b35e67275351e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/03-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-451e82dad77e00485e6b35e67275351e"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/03-01.png"></a>{.calibre18}</p>
 <p>[]{#03.htm_pgfId-1054147}Figure 3.1 Web browser window connecting to the
 <code>myimage</code>{.fm-code-in-text} Podman container[]{#03.htm_marker-1054148}
 with volume mounted L
@@ -5084,8 +5084,8 @@ this volume:</p>
 created in the host directory is displaying &ldquo;Goodbye World&rdquo; (see figure
 3.2).</p>
 <p>::: figure
-<a href="#R-image-b353b1d97637fdccb5fe7100bacb031d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/03-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b353b1d97637fdccb5fe7100bacb031d"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/03-02.png"></a>{.calibre18}</p>
+<a href="#R-image-465213a40eda645fa439072d6a157901" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/03-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-465213a40eda645fa439072d6a157901"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/03-02.png"></a>{.calibre18}</p>
 <p>[]{#03.htm_pgfId-1054186}Figure 3.2 Web browser window connecting to the
 <code>myimage</code>{.fm-code-in-text} Podman container[]{#03.htm_marker-1054187}
 with the named volume mounted
@@ -5455,8 +5455,8 @@ container; its only purpose is to hold open the namespaces and cgroups,
 while containers come and go. However, each pod will have a different
 infra container.</p>
 <p>::: figure
-<a href="#R-image-99d26ce4859a69d0d9f0b60c40b154f8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-99d26ce4859a69d0d9f0b60c40b154f8"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-01.png"></a>{.calibre18}</p>
+<a href="#R-image-0bc3b4f64a3e6e349293651f01a8bbcc" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0bc3b4f64a3e6e349293651f01a8bbcc"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-01.png"></a>{.calibre18}</p>
 <p>[]{#04.htm_pgfId-1108956}[]{#04.htm_id_84p7xz75sdgk}Figure 4.1 The
 Podman pod launches conmon with the infra container, which will hold
 cgroups and Linux namespaces.
@@ -5479,8 +5479,8 @@ is started</p>
 </ul>
 <p>[]{#04.htm_pgfId-1103775}The primary container runs the application.</p>
 <p>::: figure
-<a href="#R-image-89ec434e1b801fd51dfdf6f79994326d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-89ec434e1b801fd51dfdf6f79994326d"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-02.png"></a>{.calibre18}</p>
+<a href="#R-image-51fecceeca851bd6c734bbfe41d652ad" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-51fecceeca851bd6c734bbfe41d652ad"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-02.png"></a>{.calibre18}</p>
 <p>[]{#04.htm_pgfId-1109098}Figure 4.2 []{#04.htm_id_n238co82eabp}Podman
 next launches any init containers with conmon. The init containers
 examine the infra container and join its cgroups and namespaces.
@@ -5493,8 +5493,8 @@ documentation
 (<a href="https://kubernetes.io/docs/concepts/workloads/pods" rel="external" target="_blank">https://kubernetes.io/docs/concepts/workloads/pods</a>{.url})
 describes pods with sidecar containers as follows:</p>
 <p>::: figure
-<a href="#R-image-0a5d62ce35a6576e975d015250efa48e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-03.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0a5d62ce35a6576e975d015250efa48e"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-03.png"></a>{.calibre18}</p>
+<a href="#R-image-d1bfddeec8f30b10645209a3c8aca9bf" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-03.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d1bfddeec8f30b10645209a3c8aca9bf"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-03.png"></a>{.calibre18}</p>
 <p>[]{#04.htm_pgfId-1109134}[]{#04.htm_id_j3t1mdk8ldy}Figure 4.3 Podman
 waits until the init containers complete before launching the primary
 containers with their <code>conmon</code>{.fm-code-in-text} into the pod.
@@ -5511,8 +5511,8 @@ together as a single unit.</p>
 containers, there are several good articles on the following website:
 <a href="https://www.magalix.com/blog/the-sidecar-pattern" rel="external" target="_blank">https://www.magalix.com/blog/the-sidecar-pattern</a>{.url}.</p>
 <p>::: figure
-<a href="#R-image-93c2fc7a42f855bc3f133d45da5af6d1" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-04.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-93c2fc7a42f855bc3f133d45da5af6d1"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-04.png"></a>{.calibre18}</p>
+<a href="#R-image-385066d5f92b9c387720e872e10465d2" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-04.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-385066d5f92b9c387720e872e10465d2"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-04.png"></a>{.calibre18}</p>
 <p>[]{#04.htm_pgfId-1109173}[]{#04.htm_id_8bq5c4isrfz1}Figure 4.4 Podman
 can launch additional containers called sidecar containers.
 :::</p>
@@ -5545,8 +5545,8 @@ command[]{#04.htm_marker-1103810} has many of the same options as the
 create a container within a pod, the container inherits these options as
 its default (see figure 4.5).</p>
 <p>::: figure
-<a href="#R-image-f4229747455e7d1b48405f6816c6914e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-05.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f4229747455e7d1b48405f6816c6914e"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-05.png"></a>{.calibre18}</p>
+<a href="#R-image-ec597a026d949c7f46d29814d4b67c30" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-05.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ec597a026d949c7f46d29814d4b67c30"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-05.png"></a>{.calibre18}</p>
 <p>[]{#04.htm_pgfId-1109215}[]{#04.htm_id_jxxk1q3so2r7}Figure 4.5 Podman
 creates a network namespace and binds port <code>8080</code>{.fm-code-in-text}
 within the container to port <code>8080</code>{.fm-code-in-text} on the host.
@@ -5581,8 +5581,8 @@ option[]{#04.htm_marker-1103833}:</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-programlisting" data-lang="programlisting">$ podman create --pod mypod --name myapp quay.io/rhatdan/myimage
 Cec045acb1c2be4a6e4e88e21275076fb1de5519a25fb5a55f192da70708a640</code></pre></div>
 <p>::: figure
-<a href="#R-image-a2737954756de19e5bd3d27e539e13e7" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-06.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a2737954756de19e5bd3d27e539e13e7"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-06.png"></a>{.calibre18}</p>
+<a href="#R-image-22c63bf4b389cac26e1d1b03371e0dfd" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-06.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-22c63bf4b389cac26e1d1b03371e0dfd"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-06.png"></a>{.calibre18}</p>
 <p>[]{#04.htm_pgfId-1109257}Figure 4.6 []{#04.htm_id_g2ujyja8w08f}Because
 the pod does not have any init containers, the first
 <code>myapp</code>{.fm-code-in-text} container is launched into the pod.
@@ -5645,8 +5645,8 @@ pod[]{#04.htm_marker-1103871}, it will inherit the
 the ./html/time.sh command in the host directory is available to every
 container within the pod.</p>
 <p>::: figure
-<a href="#R-image-d363adbbf231de969ef7774d80eac705" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-07.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d363adbbf231de969ef7774d80eac705"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-07.png"></a>{.calibre18}</p>
+<a href="#R-image-93732f20f6bd709c2866115587e02018" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-07.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-93732f20f6bd709c2866115587e02018"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-07.png"></a>{.calibre18}</p>
 <p>[]{#04.htm_pgfId-1109296}[]{#04.htm_id_bsufq5aiah2b}Figure 4.7 Finally,
 Podman launches the sidecar container named
 <code>time</code>{.fm-code-in-text}[]{#04.htm_marker-1109297}.
@@ -5682,8 +5682,8 @@ volume mount, /var/www/html, it can see the changes in the
 navigate to http://localhost:8080 to verify the application is working,
 as seen in figure 4.8.</p>
 <p>::: figure
-<a href="#R-image-b8697b624481e63d5ceb88f0175cd8ce" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-08.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b8697b624481e63d5ceb88f0175cd8ce"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-08.png"></a>{.calibre18}</p>
+<a href="#R-image-559006b984ad76c57c1ba0015de171b4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-08.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-559006b984ad76c57c1ba0015de171b4"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-08.png"></a>{.calibre18}</p>
 <p>[]{#04.htm_pgfId-1109339}[]{#04.htm_id_v0n4sa5bdmic}Figure 4.8 The web
 browser communicates with <code>myapp</code>{.fm-code-in-text} running in a pod.
 :::</p>
@@ -5692,8 +5692,8 @@ button. Notice the date changes, indicating the sidecar container is
 running and updating the data used by the <code>myapp</code>{.fm-code-in-text} web
 server running within the primary container, as seen in figure 4.9.</p>
 <p>::: figure
-<a href="#R-image-3a0fe5a4bd6eac615b0d383f6f62a054" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-09.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3a0fe5a4bd6eac615b0d383f6f62a054"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-09.png"></a>{.calibre18}</p>
+<a href="#R-image-ff663d20e5f61b70882ae8256cb3c35b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/04-09.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ff663d20e5f61b70882ae8256cb3c35b"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/04-09.png"></a>{.calibre18}</p>
 <p>[]{#04.htm_pgfId-1109375}[]{#04.htm_id_h58wqqsm5erb}Figure 4.9 The web
 browser shows that the content in <code>myapp</code>{.fm-code-in-text} has been
 changed by the second container running in the pod.
@@ -6181,8 +6181,8 @@ disk by the container/ storage library, but when you are running a
 container on them, each layer needs to be mounted on the previous layer
 (figure 5.1).</p>
 <p>::: figure
-<a href="#R-image-19b74ac2cf683ca38faf7a43e788018d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/05-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-19b74ac2cf683ca38faf7a43e788018d"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/05-01.png"></a>{.calibre18}</p>
+<a href="#R-image-eb2b0707309f4a25c0fab4f4c8889a3f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/05-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb2b0707309f4a25c0fab4f4c8889a3f"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/05-01.png"></a>{.calibre18}</p>
 <p>[]{#05.htm_pgfId-1111790}[]{#05.htm_id_mnifp03xfnzo}Figure 5.1 Layered
 images stacked on one another are reassembled and mounted using
 container/storage.
@@ -6740,8 +6740,8 @@ system. For example, when I installed my laptop,
 Figure 5.2 shows what containers based on this mapping look like on my
 system.</p>
 <p>::: figure
-<a href="#R-image-d9bb54f3dec3adb51ceb31ee8ff8dfbb" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/05-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d9bb54f3dec3adb51ceb31ee8ff8dfbb"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/05-02.png"></a>{.calibre18}</p>
+<a href="#R-image-b7bc8433705b2b04702804adeb7f54b1" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/05-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b7bc8433705b2b04702804adeb7f54b1"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/05-02.png"></a>{.calibre18}</p>
 <p>[]{#05.htm_pgfId-1111835}Figure 5.2 User namespace mapping for
 containers
 :::</p>
@@ -6861,8 +6861,8 @@ adopting OCI containers. Figure 6.1 shows that even though the Docker
 client can be run as non-root, it connects to a root running daemon,
 giving full root access to the host OS.</p>
 <p>::: figure
-<a href="#R-image-862d6a24908ebb92e78673f855e0676b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-862d6a24908ebb92e78673f855e0676b"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-01.png"></a>{.calibre18}</p>
+<a href="#R-image-e87f09207cc094b194554487046e23fa" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e87f09207cc094b194554487046e23fa"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-01.png"></a>{.calibre18}</p>
 <p>[]{#06.htm_pgfId-1115608}Figure 6.1 Multiple users&rsquo; workloads sharing
 the same daemon running as root is inherently insecure.
 :::</p>
@@ -6873,8 +6873,8 @@ rootless mode under different users&rsquo; accounts is more secure. Figure 6.2
 shows multiple users running Podman independent of each other, without
 any root access.</p>
 <p>::: figure
-<a href="#R-image-b125c7873bf3cc430140a7fe1789b9e5" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b125c7873bf3cc430140a7fe1789b9e5"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-02.png"></a>{.calibre18}</p>
+<a href="#R-image-d38450d2fae97cd428716540e178c9f7" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d38450d2fae97cd428716540e178c9f7"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-02.png"></a>{.calibre18}</p>
 <p>[]{#06.htm_pgfId-1115646}Figure 6.2 Each workload running within its
 unique user space is more secure.
 :::</p>
@@ -7036,8 +7036,8 @@ to run a container. These mount commands are not allowed outside a user
 namespace (along with a mount namespace). Figure 6.3 shows the UIDs used
 within a user namespace.</p>
 <p>::: figure
-<a href="#R-image-f46c7a3b7cf006c512118dda725a78b8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-03.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f46c7a3b7cf006c512118dda725a78b8"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-03.png"></a>{.calibre18}</p>
+<a href="#R-image-a30ff7ac7aec5a026e16530258cf9fbb" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-03.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a30ff7ac7aec5a026e16530258cf9fbb"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-03.png"></a>{.calibre18}</p>
 <p>[]{#06.htm_pgfId-1115684}Figure 6.3 User namespace mapping for
 containers
 :::</p>
@@ -7409,8 +7409,8 @@ launches the <code>podman</code>{.fm-code-in-text} <code>pause</code>{.fm-code-i
 process[]{#06.htm_marker-1110642} to hold open the user and mount
 namespaces (figure 6.4).</p>
 <p>::: figure
-<a href="#R-image-4415de47211d75709797fec41673566b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-04.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-4415de47211d75709797fec41673566b"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-04.png"></a>{.calibre18}</p>
+<a href="#R-image-df9e4ba3012b119e242ace9d06665a37" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-04.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-df9e4ba3012b119e242ace9d06665a37"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-04.png"></a>{.calibre18}</p>
 <p>[]{#06.htm_pgfId-1115722}Figure 6.4 Podman launches the pause process to
 hold open the user and mount namespaces.
 :::</p>
@@ -7480,8 +7480,8 @@ from the container registry to the host.</p>
 </li>
 </ol>
 <p>::: figure
-<a href="#R-image-5548595c3b680aac66dccd506d92fe03" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-05.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5548595c3b680aac66dccd506d92fe03"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-05.png"></a>{.calibre18}</p>
+<a href="#R-image-f93e471eaa515c10dd5ce8b67022796a" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-05.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f93e471eaa515c10dd5ce8b67022796a"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-05.png"></a>{.calibre18}</p>
 <p>[]{#06.htm_pgfId-1115763}Figure 6.5 Podman pulls an image off a
 container registry and stores it in the container storage.
 :::</p>
@@ -7529,8 +7529,8 @@ to configure the host network and simulate a VPN for the container.
 Slirp4netns provides user-mode networking (slirp) for unprivileged
 network namespaces. See figure 6.6.</p>
 <p>::: figure
-<a href="#R-image-ee51bddf7d3c1045687959338342a01f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-06.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ee51bddf7d3c1045687959338342a01f"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-06.png"></a>{.calibre18}</p>
+<a href="#R-image-635a29c07028612122b6788eddbe9ca9" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-06.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-635a29c07028612122b6788eddbe9ca9"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-06.png"></a>{.calibre18}</p>
 <p>[]{#06.htm_pgfId-1115814}Figure 6.6 Podman creates a network namespace
 and launches slirp4netns to relay network connections.
 :::</p>
@@ -7575,8 +7575,8 @@ command[]{#06.htm_marker-1110719} when the container exits (see figure
 6.7). conmon is described in
 []{#06.htm_marker-1110720}[]{#06.htm_marker-1110721}section 4.1.</p>
 <p>::: figure
-<a href="#R-image-ed0daca5470d6b5ad9fee96d01a41100" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-07.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ed0daca5470d6b5ad9fee96d01a41100"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-07.png"></a>{.calibre18}</p>
+<a href="#R-image-3b034593e8a229b5858844a51e741945" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-07.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3b034593e8a229b5858844a51e741945"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-07.png"></a>{.calibre18}</p>
 <p>[]{#06.htm_pgfId-1115852}Figure 6.7 Podman launches the container
 monitor, which launches the OCI runtime.
 :::</p>
@@ -7631,16 +7631,16 @@ conmon to monitor the container.</p>
 </li>
 </ol>
 <p>::: figure
-<a href="#R-image-5ae5c3b6d799ee9d153d816be9cc65ac" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-08.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5ae5c3b6d799ee9d153d816be9cc65ac"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-08.png"></a>{.calibre18}</p>
+<a href="#R-image-9e6683c403ff22ccb803a7370e90e311" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-08.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9e6683c403ff22ccb803a7370e90e311"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-08.png"></a>{.calibre18}</p>
 <p>[]{#06.htm_pgfId-1116007}Figure 6.8 conmon launches the OCI runtime,
 which configures the kernel.
 :::</p>
 <p>[]{#06.htm_marker-1110753}[]{#06.htm_pgfId-1110744}And finally, conmon
 reports the success back to Podman (see figure 6.9).</p>
 <p>::: figure
-<a href="#R-image-0baf8f855b3401eca4401d96c70dabf4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-09.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0baf8f855b3401eca4401d96c70dabf4"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-09.png"></a>{.calibre18}</p>
+<a href="#R-image-1b7e166d1deac9796399093ac5449f36" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/06-09.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1b7e166d1deac9796399093ac5449f36"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/06-09.png"></a>{.calibre18}</p>
 <p>[]{#06.htm_pgfId-1116045}Figure 6.9 Podman and OCI runtime exit, leaving
 the container running with conmon monitoring it and slirp4netns
 providing the network.
@@ -7789,8 +7789,8 @@ you see in figure 7.1, Podman&rsquo;s []{#07.htm_id_Hlk115164025}fork/exec
 model grants systemd the ability to track the processes within a
 containerized service.</p>
 <p>::: figure
-<a href="#R-image-d570eef1e85d3a0b59d4f1d3821c4e6f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d570eef1e85d3a0b59d4f1d3821c4e6f"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-01.png"></a>{.calibre18}</p>
+<a href="#R-image-22506337e9c6c6d994a36102bb098656" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-22506337e9c6c6d994a36102bb098656"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-01.png"></a>{.calibre18}</p>
 <p>[]{#07.htm_pgfId-1118970}Figure 7.1 Systemd executing a Podman container
 :::</p>
 <p>[]{#07.htm_pgfId-1110304}Systemd puts all the processes within a unit
@@ -7817,8 +7817,8 @@ Kubernetes assumes microservices, and thus gathers logs from the
 <code>stdin</code>{.fm-code-in-text}/<code>stderr</code>{.fm-code-in-text} of the containers
 it runs. Figure 7.2 shows Podman running microservices.</p>
 <p>::: figure
-<a href="#R-image-7a80c25a72d4fc484dcde577e2f19f4c" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7a80c25a72d4fc484dcde577e2f19f4c"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-02.png"></a>{.calibre18}</p>
+<a href="#R-image-74a10ff67f5acbcf4e5f411f5311470d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-74a10ff67f5acbcf4e5f411f5311470d"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-02.png"></a>{.calibre18}</p>
 <p>[]{#07.htm_pgfId-1119015}Figure 7.2 Podman running three microservices
 :::</p>
 <p>[]{#07.htm_pgfId-1110319}An alternative idea was to run systemd as the
@@ -7855,8 +7855,8 @@ which will launch a tiny init program just to reap the zombie processes.</p>
 methods&mdash;microservices as well as multiservice containers. Figure 7.3
 shows systemd running a multiservice application within a container.</p>
 <p>::: figure
-<a href="#R-image-c1539f73a8ec1ba7ba1b7d0508047468" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-03.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c1539f73a8ec1ba7ba1b7d0508047468"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-03.png"></a>{.calibre18}</p>
+<a href="#R-image-af956f3a3412e60c81ee4b8c2876fa38" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-03.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-af956f3a3412e60c81ee4b8c2876fa38"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-03.png"></a>{.calibre18}</p>
 <p>[]{#07.htm_pgfId-1119056}Figure 7.3 Podman running systemd in a
 container with three services
 :::</p>
@@ -8083,8 +8083,8 @@ with the goodbye world index.html file:</p>
 containerized service is working (as seen in figure 7.4):</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-programlisting" data-lang="programlisting">$ web-browser localhost:8080</code></pre></div>
 <p>::: figure
-<a href="#R-image-46c3ccf95268c1695b04d909f565626d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-04.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-46c3ccf95268c1695b04d909f565626d"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-04.png"></a>{.calibre18}</p>
+<a href="#R-image-aa024b75a4a69313c2f5ef520c77f1a7" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-04.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-aa024b75a4a69313c2f5ef520c77f1a7"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-04.png"></a>{.calibre18}</p>
 <p>[]{#07.htm_pgfId-1119097}Figure 7.4 Web browser window showing
 system-based container image running your content
 :::</p>
@@ -8298,8 +8298,8 @@ service unit file with Podman to run your containerized service.</p>
 have seen, systemd uses unit files to specify how to run a service.
 Figure 7.5 shows how systemd works with Podman to launch a container.</p>
 <p>::: figure
-<a href="#R-image-23f2d46f1602e9feb870aacb8d980f10" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-05.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-23f2d46f1602e9feb870aacb8d980f10"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-05.png"></a>{.calibre18}</p>
+<a href="#R-image-58797d04b2b19c215a910991fab06d91" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-05.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-58797d04b2b19c215a910991fab06d91"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-05.png"></a>{.calibre18}</p>
 <p>[]{#07.htm_pgfId-1119135}Figure 7.5 Podman fork/exec architecture is
 ideal for systemd service management.
 :::</p>
@@ -8392,8 +8392,8 @@ localhost port <code>8080</code>{.fm-code-in-text} to see it is running (see fig
 7.6):</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-programlisting" data-lang="programlisting">$ web-browser localhost:8080</code></pre></div>
 <p>::: figure
-<a href="#R-image-0a32f58e8f8c3f7dadb91698fe78fed8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-06.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0a32f58e8f8c3f7dadb91698fe78fed8"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-06.png"></a>{.calibre18}</p>
+<a href="#R-image-1528964aae03ab3d710b965724eb1fdc" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-06.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1528964aae03ab3d710b965724eb1fdc"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-06.png"></a>{.calibre18}</p>
 <p>[]{#07.htm_pgfId-1119176}Figure 7.6 Web browser window connecting
 <code>myapp</code>{.fm-code-in-text}
 :::</p>
@@ -8756,8 +8756,8 @@ When Podman executes within a <code>NOTIFY</code>{.fm-code-in-text} unit file, i
 needs to volume mount the socket into the container and pass down the
 environment variable into the container (figure 7.7).</p>
 <p>::: figure
-<a href="#R-image-bacf18b0537361d3390c2696c81a3b63" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-07.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bacf18b0537361d3390c2696c81a3b63"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-07.png"></a>{.calibre18}</p>
+<a href="#R-image-55a1b6de3ae8c7c05cf12e2a97458a9b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-07.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-55a1b6de3ae8c7c05cf12e2a97458a9b"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-07.png"></a>{.calibre18}</p>
 <p>[]{#07.htm_pgfId-1119214}Figure 7.7 Containerized
 <code>sd_notify</code>{.fm-code-in-text} systemd service launched by Podman
 :::</p>
@@ -8799,8 +8799,8 @@ socket-activated service, systemd sets up listening IP or UNIX domain
 sockets on behalf of your service, without starting the service (figure
 7.8).</p>
 <p>::: figure
-<a href="#R-image-ac83a5bf25b77facfbe675e0bfda9e33" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-08.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ac83a5bf25b77facfbe675e0bfda9e33"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-08.png"></a>{.calibre18}</p>
+<a href="#R-image-a0a31fe68c08b6188d922a41d9b61359" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-08.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0a31fe68c08b6188d922a41d9b61359"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-08.png"></a>{.calibre18}</p>
 <p>[]{#07.htm_pgfId-1119252}Figure 7.8 Systemd listening on a socket for a
 socket-activated container
 :::</p>
@@ -8820,8 +8820,8 @@ services, the main process of the service is Podman, and it needs to
 pass the connection down to the service running within the container
 (figure 7.9).</p>
 <p>::: figure
-<a href="#R-image-90342aa4d722a0c50afc238d93b4e04d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-09.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-90342aa4d722a0c50afc238d93b4e04d"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-09.png"></a>{.calibre18}</p>
+<a href="#R-image-9fc40508ad6ea1bca472c2a059244384" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-09.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9fc40508ad6ea1bca472c2a059244384"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-09.png"></a>{.calibre18}</p>
 <p>[]{#07.htm_pgfId-1119290}Figure 7.9 When a connection to the socket
 systemd is listening on arrives, systemd activates Podman, which
 launches the container, passing the socket down to the container.
@@ -8848,8 +8848,8 @@ CONTAINER ID  IMAGE     COMMAND   CREATED   STATUS
 7.10):</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-programlisting" data-lang="programlisting">$ web-browser localhost:8080</code></pre></div>
 <p>::: figure
-<a href="#R-image-664db7b0c98f8b88a1cc42283eaf69d9" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-10.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-664db7b0c98f8b88a1cc42283eaf69d9"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-10.png"></a>{.calibre18}</p>
+<a href="#R-image-091e0cb050275dae3ae01a8a52b11b0f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/07-10.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-091e0cb050275dae3ae01a8a52b11b0f"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/07-10.png"></a>{.calibre18}</p>
 <p>[]{#07.htm_pgfId-1119328}Figure 7.10 A web browser window connecting to
 the <code>ubi8/httpd-24</code>{.fm-code-in-text} container running in Podman with
 updated Hello World HTML.
@@ -9056,8 +9056,8 @@ Kubernetes and then populates them in the Kubernetes YAML file:</p>
 <code>podman</code>{.fm-code-in-text} <code>generate</code>{.fm-code-in-text}
 <code>kube</code>{.fm-code-in-text} command[]{#08.htm_marker-1118724}.</p>
 <p>::: figure
-<a href="#R-image-375ef0c89d62a1b9b197f518de716ad7" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/08-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-375ef0c89d62a1b9b197f518de716ad7"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/08-01.png"></a>{.calibre18}</p>
+<a href="#R-image-b4b33d096649e088209022d1aa7641ea" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/08-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b4b33d096649e088209022d1aa7641ea"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/08-01.png"></a>{.calibre18}</p>
 <p>[]{#08.htm_pgfId-1123535}Figure 8.1 Shows the generated myapp.yaml file
 from the <code>myapp</code>{.fm-code-in-text} container[]{#08.htm_marker-1123534}
 :::</p>
@@ -9130,8 +9130,8 @@ multiple versions of your applications on different nodes, you could add
 a <code>replicas</code>{.fm-code-in-text} option[]{#08.htm_marker-1118777} to your
 YAML file, as seen in figure 8.2.</p>
 <p>::: figure
-<a href="#R-image-7d5cfb4d2e7ab395661f92161a250f0c" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/08-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7d5cfb4d2e7ab395661f92161a250f0c"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/08-02.png"></a>{.calibre18}</p>
+<a href="#R-image-f26739bae9810d095d208f01a7d2fae4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/08-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f26739bae9810d095d208f01a7d2fae4"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/08-02.png"></a>{.calibre18}</p>
 <p>[]{#08.htm_pgfId-1123573}Figure 8.2 The modified Kubernetes YAML file
 ready to run two replicas
 :::</p>
@@ -9189,8 +9189,8 @@ figure 8.3 that the <code>play</code>{.fm-code-in-text}
 command[]{#08.htm_marker-1118813} created a Pod with your container
 along with the infra containers.</p>
 <p>::: figure
-<a href="#R-image-6a38e6f40b91bcc6945da2de0ba86f57" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/08-03.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6a38e6f40b91bcc6945da2de0ba86f57"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/08-03.png"></a>{.calibre18}</p>
+<a href="#R-image-b55056d10ca9f327c3079b336304d76f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/08-03.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b55056d10ca9f327c3079b336304d76f"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/08-03.png"></a>{.calibre18}</p>
 <p>[]{#08.htm_pgfId-1123611}Figure 8.3 The <code>myapp-pod</code>{.fm-code-in-text}
 running with the <code>myapp</code>{.fm-code-in-text} container and the infra
 container
@@ -9778,8 +9778,8 @@ on-demand service. Figure 9.1 shows how systemd listens on the Podman
 socket and then launches the Podman service when it receives a
 connection.</p>
 <p>::: figure
-<a href="#R-image-c8b056ecf8e188643eafad0fb205c4cd" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/09-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c8b056ecf8e188643eafad0fb205c4cd"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/09-01.png"></a>{.calibre18}</p>
+<a href="#R-image-eca6abf9ffadb94d1cb5b013a7d302eb" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/09-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eca6abf9ffadb94d1cb5b013a7d302eb"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/09-01.png"></a>{.calibre18}</p>
 <p>[]{#09.htm_pgfId-1117624}[]{#09.htm_id_i88bi4plbk5b}Figure 9.1 Podman
 service running under systemd
 :::</p>
@@ -10365,8 +10365,8 @@ communicate with the socket-activated Podman service. Instead of
 executing the commands and containers as a child of the Podman process,
 it communicates with the service over the REST API.</p>
 <p>::: figure
-<a href="#R-image-ab32817650fcb134803a025f1da68701" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/09-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ab32817650fcb134803a025f1da68701"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/09-02.png"></a>{.calibre18}</p>
+<a href="#R-image-13ad9cd100aed872f0830e74f00eb113" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/09-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-13ad9cd100aed872f0830e74f00eb113"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/09-02.png"></a>{.calibre18}</p>
 <p>[]{#09.htm_pgfId-1117688}[]{#09.htm_id_y3fj7xwuq1cf}Figure 9.2
 <code>podman</code>{.fm-code-in-text} <code>--remote</code>{.fm-code-in-text} connecting to
 local podman.socket
@@ -10448,8 +10448,8 @@ SSH. It then connects to the Podman service by using systemd socket
 activation and communicating with our REST API, as shown in figure
 9.3.[]{#09.htm_id_x2sukq7nfn9t}[]{#09.htm_id_xehzr5i0ipj2}[]{#09.htm_id_b0mmeax3hyir}[]{#09.htm_id_u61su794t7r7}[]{#09.htm_id_h07up9l04rih}[]{#09.htm_id_w7f0w92kjs8q}</p>
 <p>::: figure
-<a href="#R-image-ad43ed74fcc71d6ff5db4879bdd86b4f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/09-03.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ad43ed74fcc71d6ff5db4879bdd86b4f"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/09-03.png"></a>{.calibre18}</p>
+<a href="#R-image-5948e0a9ceee0d41ad44a8ec384e9902" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/09-03.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5948e0a9ceee0d41ad44a8ec384e9902"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/09-03.png"></a>{.calibre18}</p>
 <p>[]{#09.htm_pgfId-1117726}Figure 9.3 <code>podman --remote</code>{.fm-code-in-text}
 connecting over SSH to the server machine
 :::</p>
@@ -10778,8 +10778,8 @@ Máirín Duffy[]{#10.htm_marker-1114083}[]{#10.htm_marker-1114084}
 (@marin), describing the security features of containers based on the
 three pigs (figure 10.1).</p>
 <p>::: figure
-<a href="#R-image-1f2a04c813e0bbc70343e17192cc8380" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/10-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1f2a04c813e0bbc70343e17192cc8380"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/10-01.png"></a>{.calibre18}</p>
+<a href="#R-image-aa2c9243dc2659739c966ad65ecfb632" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/10-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-aa2c9243dc2659739c966ad65ecfb632"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/10-01.png"></a>{.calibre18}</p>
 <p>[]{#10.htm_pgfId-1130030}Figure 10.1 <em>The Container Coloring Book</em>
 (<a href="https://red.ht/3gfVlHF" rel="external" target="_blank">https://red.ht/3gfVlHF</a>{.url})
 :::</p>
@@ -11281,8 +11281,8 @@ along with my UID <code>3265</code>{.fm-code-in-text} and was used by Podman whe
 launching containers. See figure 10.2 for a description of the user
 namespace mapping.</p>
 <p>::: figure
-<a href="#R-image-58b58141744fc23e1a4a85d386b8a9f2" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/10-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-58b58141744fc23e1a4a85d386b8a9f2"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/10-02.png"></a>{.calibre18}</p>
+<a href="#R-image-769b79f94921278a3763a058809790eb" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/10-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-769b79f94921278a3763a058809790eb"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/10-02.png"></a>{.calibre18}</p>
 <p>[]{#10.htm_pgfId-1130085}Figure 10.2 The mapping of UIDs used by
 rootless Podman for my account
 :::</p>
@@ -11798,8 +11798,8 @@ will concentrate on the SELinux type. I wrote <em>The SELinux Coloring
 Book</em> to explain the labeling, using the analogy of cats and dogs
 (figure 10.3).</p>
 <p>::: figure
-<a href="#R-image-e03092f3d0a537216d80189724599609" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/10-03.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e03092f3d0a537216d80189724599609"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/10-03.png"></a>{.calibre18}</p>
+<a href="#R-image-5654b80649a464a3c628ef881aba1288" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/10-03.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5654b80649a464a3c628ef881aba1288"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/10-03.png"></a>{.calibre18}</p>
 <p>[]{#10.htm_pgfId-1130140}Figure 10.3 <em>The SELinux Coloring
 Book</em>[]{#10.htm_id_1vp0m2w67vu8}[]{#10.htm_marker-1130141}
 (<a href="http://mng.bz/Xay6" rel="external" target="_blank">http://mng.bz/Xay6</a>{.url})
@@ -13088,8 +13088,8 @@ Commandos</em>[]{#A.htm_marker-1282235} (figure A.1;
 Máirín Duffy[]{#A.htm_marker-1282237} (@marin), describing the container
 tools talked about in this appendix, based on superheroes.</p>
 <p>::: figure
-<a href="#R-image-5d66b15b8554a2e4132cab818c1bc1eb" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/A-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5d66b15b8554a2e4132cab818c1bc1eb"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/A-01.png"></a>{.calibre18}</p>
+<a href="#R-image-f95b924c785030f5626ddfdd64b3074a" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/A-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f95b924c785030f5626ddfdd64b3074a"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/A-01.png"></a>{.calibre18}</p>
 <p>Figure A.1 The Container Coloring Book
 (<a href="https://red.ht/3gfVlHF" rel="external" target="_blank">https://red.ht/3gfVlHF</a>{.url})
 :::</p>
@@ -13126,8 +13126,8 @@ tools can work with the same data stores and libraries. The rest of this
 appendix describes the rest of the tools, starting with Skopeo (figure
 A.2).</p>
 <p>::: figure
-<a href="#R-image-cc0135f5d9c8af21f4c6df789fdeb074" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/A-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cc0135f5d9c8af21f4c6df789fdeb074"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/A-02.png"></a>{.calibre18}</p>
+<a href="#R-image-0b86ce4cb85fb30f22117daca8c5d913" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/A-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0b86ce4cb85fb30f22117daca8c5d913"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/A-02.png"></a>{.calibre18}</p>
 <p>Figure A.2 Skopeo, Buildah, and Podman work together by sharing the same
 containers/storage images and containers/image library for pulling and
 pushing images.
@@ -13145,8 +13145,8 @@ simple tool, Skopeo, was created to pull the image&rsquo;s detailed
 information and display it on the screen. <em>Skopeo</em> is the Greek word for
 <em>remote viewing</em>.</p>
 <p>::: figure
-<a href="#R-image-f63fb0af02fb716811c45d591e769b63" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/A-UN01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f63fb0af02fb716811c45d591e769b63"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/A-UN01.png"></a>{.calibre18}
+<a href="#R-image-c5c783db992cc970271c38572019c77f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/A-UN01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c5c783db992cc970271c38572019c77f"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/A-UN01.png"></a>{.calibre18}
 :::</p>
 <p>[]{#A.htm_pgfId-1277728}Execute the following <code>skopeo</code>{.fm-code-in-text}
 <code>inspect</code>{.fm-code-in-text} command[]{#A.htm_marker-1280173} to examine
@@ -13302,8 +13302,8 @@ scripting tools and languages than Containerfile to build images. We
 created a tool called Buildah[]{#A.htm_marker-1277862}
 (<a href="https://buildah.io" rel="external" target="_blank">https://buildah.io</a>{.url}) to serve this purpose.</p>
 <p>::: figure
-<a href="#R-image-e4d8c3632c58951573f0437ef41b7c26" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/A-UN02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e4d8c3632c58951573f0437ef41b7c26"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/A-UN02.png"></a>{.calibre18}
+<a href="#R-image-9bb6dc88c17e35575ae6bdfeca49ea83" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/A-UN02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9bb6dc88c17e35575ae6bdfeca49ea83"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/A-UN02.png"></a>{.calibre18}
 :::</p>
 <p>[]{#A.htm_pgfId-1277867}Buildah was designed to be that simple tool for
 building container images. It&rsquo;s built on top of the container/storage
@@ -13773,8 +13773,8 @@ Buildah, and Podman and can be used in conjunction with these tools.
 CRI-O&rsquo;s primary objective is replacing the Docker service as the
 container engine for Kubernetes.</p>
 <p>::: figure
-<a href="#R-image-7a1c2570136c34a41a4901abfff34d42" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/A-UN03.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7a1c2570136c34a41a4901abfff34d42"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/A-UN03.png"></a>{.calibre18}
+<a href="#R-image-cb9da97af3306fb612869f0f9cc8657c" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/A-UN03.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cb9da97af3306fb612869f0f9cc8657c"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/A-UN03.png"></a>{.calibre18}
 :::</p>
 <p>[]{#A.htm_pgfId-1278271}CRI-O is tied to Kubernetes releases. When a new
 version of Kubernetes is released, the version numbers are synchronized.
@@ -13802,8 +13802,8 @@ specification JSON file and then configures the namespaces, security
 controls, and cgroups and eventually starts the container process
 (figure B.1)[]{#B.htm_marker-1285375}.</p>
 <p>::: figure
-<a href="#R-image-dec9013d89b97feec97e03aac7b9afd5" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dec9013d89b97feec97e03aac7b9afd5"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B-01.png"></a>{.calibre18}</p>
+<a href="#R-image-08a8b4bf5a37ae4a270d2f2e21073d1c" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-08a8b4bf5a37ae4a270d2f2e21073d1c"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B-01.png"></a>{.calibre18}</p>
 <p>Figure B.1 Podman executes the OCI runtime to launch the container.
 :::</p>
 <p>[]{#B.htm_pgfId-1282825}In this appendix, you&rsquo;ll learn the four main OCI
@@ -14003,8 +14003,8 @@ in either OCI runtime, they are quickly fixed in both. See the
 <code>crun</code>{.fm-code-in-text}.</p>
 <h2 id="B.htm_heading_id_5" class="fm-head">[]{#B.htm_pgfId-1282973}B.3 Kata<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>::: figure
-<a href="#R-image-7a951bf669d833af5abc598eed8c9756" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B-01-UN01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7a951bf669d833af5abc598eed8c9756"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B-01-UN01.png"></a>{.calibre18}
+<a href="#R-image-38543e012d13c99d1fa778e9eaed47a9" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B-01-UN01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-38543e012d13c99d1fa778e9eaed47a9"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B-01-UN01.png"></a>{.calibre18}
 :::</p>
 <p>[]{#B.htm_pgfId-1282980}OCI
 []{#B.htm_marker-1283889}[]{#B.htm_marker-1283890}runtimes are also
@@ -14016,8 +14016,8 @@ security of VMs. Kata Containers is an open source container runtime,
 building lightweight virtual machines that seamlessly plug into the
 container&rsquo;s ecosystem.&rdquo;</em></p>
 <p>::: figure
-<a href="#R-image-ccf721b3e2f6e0b43d7796f718032552" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ccf721b3e2f6e0b43d7796f718032552"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B-02.png"></a>{.calibre18}</p>
+<a href="#R-image-f731bfb5762cfbfd72c0141bec19916a" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f731bfb5762cfbfd72c0141bec19916a"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B-02.png"></a>{.calibre18}</p>
 <p>Figure B.2 Kata containers launches a lightweight VM, which only runs
 the container.
 :::</p>
@@ -14082,8 +14082,8 @@ these OCI runtimes with your workload&rsquo;s needs in
 []{#B.htm_marker-1283007}[]{#B.htm_marker-1283008}mind.</p>
 <h2 id="B.htm_heading_id_6" class="fm-head">[]{#B.htm_pgfId-1283010}B.4 gVisor<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>::: figure
-<a href="#R-image-e46e5fa5c3af891873af0a7f3c07a52d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B-02-UN02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e46e5fa5c3af891873af0a7f3c07a52d"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B-02-UN02.png"></a>{.calibre18}
+<a href="#R-image-d79264989ec039278e4afce96533c198" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B-02-UN02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d79264989ec039278e4afce96533c198"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B-02-UN02.png"></a>{.calibre18}
 :::</p>
 <p>[]{#B.htm_pgfId-1283017}The
 []{#B.htm_marker-1283015}[]{#B.htm_marker-1283016}last OCI runtime I
@@ -14130,8 +14130,8 @@ is regularly updated with new instructions on how to install Podman for
 different distributions. Most of the content in this appendix originates
 from the podman.io site, as seen in figure C.1.</p>
 <p>::: figure
-<a href="#R-image-2f8ffae415b5416dd31b5d3918ae2bbe" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/C-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2f8ffae415b5416dd31b5d3918ae2bbe"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/C-01.png"></a>{.calibre18}</p>
+<a href="#R-image-025aa4cd51f3ae8d491b961a5146e3b8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/C-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-025aa4cd51f3ae8d491b961a5146e3b8"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/C-01.png"></a>{.calibre18}</p>
 <p>Figure C.1 Podman installation instructions website
 :::</p>
 <h3 id="C.htm_heading_id_4" class="fm-head1">[]{#C.htm_pgfId-1284778}C.1.1 macOS<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
@@ -14382,8 +14382,8 @@ ideas that improve the project. I often ask people who have set up
 complicated environments using Podman to blog about it, so others can
 learn.</p>
 <p>::: figure
-<a href="#R-image-06b6d7951808495248af4e454e5b616e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/D-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-06b6d7951808495248af4e454e5b616e"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/D-01.png"></a>{.calibre18}</p>
+<a href="#R-image-646359d1189334c0a41c43efd08b4a29" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/D-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-646359d1189334c0a41c43efd08b4a29"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/D-01.png"></a>{.calibre18}</p>
 <p>Figure D.1 Podman's Community page
 (<a href="https://podman.io/community" rel="external" target="_blank">https://podman.io/community</a>{.url})
 :::</p>
@@ -14409,8 +14409,8 @@ repository (figure D.2)[]{#D.htm_marker-1286454}. As of this writing,
 the project has over 1,200 forks and 12,000 stars. The bottom line is it
 is a very active project.</p>
 <p>::: figure
-<a href="#R-image-3f5fc54dab386356abf18c22f0e7b9e4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/D-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3f5fc54dab386356abf18c22f0e7b9e4"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/D-02.png"></a>{.calibre18}</p>
+<a href="#R-image-a5cf11b9cca06fe37c13a721a0f38ca5" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/D-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a5cf11b9cca06fe37c13a721a0f38ca5"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/D-02.png"></a>{.calibre18}</p>
 <p>Figure D.2 Podman's github page
 (<a href="https://github.com/containers/podman" rel="external" target="_blank">github.com/containers/podman</a>{.url})
 :::</p>
@@ -14549,8 +14549,8 @@ system designed to run containers.</p>
 <p>[]{#E.htm_pgfId-1286505}[Note]{.fm-callout-head} The VM is relatively
 large and takes a few minutes to download.</p>
 <p>::: figure
-<a href="#R-image-3b1eba3a154c767c47df81b1aed82810" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/E-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3b1eba3a154c767c47df81b1aed82810"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/E-01.png"></a>{.calibre18}</p>
+<a href="#R-image-7b2c4d54278494fb39b82f07ee2cd007" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/E-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7b2c4d54278494fb39b82f07ee2cd007"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/E-01.png"></a>{.calibre18}</p>
 <p>Figure E.1 The podman <code>machine init</code>{.fm-code-in-text} command pulling
 the VM and configuring the SSH
 :::</p>
@@ -14889,8 +14889,8 @@ and download the latest Podman MSI Windows Installer in the Releases
 section (figure F.1;
 <a href="https://github.com/containers/podman/releases" rel="external" target="_blank">https://github.com/containers/podman/releases</a>{.url}).</p>
 <p>::: figure
-<a href="#R-image-ac2fad726cd86de9195e44ff8f72bd33" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/F-01.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ac2fad726cd86de9195e44ff8f72bd33"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/F-01.png"></a>{.calibre18}</p>
+<a href="#R-image-9391e2ae0f6f20413a43bf50d78bbedf" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/F-01.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9391e2ae0f6f20413a43bf50d78bbedf"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/F-01.png"></a>{.calibre18}</p>
 <p>Figure F.1 Downloading and running the Podman installer
 :::</p>
 <p>[]{#F.htm_pgfId-1289631}After running the installer, open a terminal
@@ -14899,8 +14899,8 @@ Terminal as recommended), and execute your first
 <code>podman</code>{.fm-code-in-text} command[]{#F.htm_marker-1289632} (figure
 F.2).</p>
 <p>::: figure
-<a href="#R-image-469ad27d3426386790f7b713df16d065" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/F-02.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-469ad27d3426386790f7b713df16d065"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/F-02.png"></a>{.calibre18}</p>
+<a href="#R-image-e6c24a08bffd6cf14a0380b15f65b18e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/F-02.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e6c24a08bffd6cf14a0380b15f65b18e"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/F-02.png"></a>{.calibre18}</p>
 <p>Figure F.2 Podman commands running within the Windows Terminal
 :::</p>
 <p>[]{#F.htm_pgfId-1289641}Automatic WSL installation</p>
@@ -14918,8 +14918,8 @@ install.) If you prefer a manual installation, refer to the WSL
 []{#F.htm_marker-1292573}[]{#F.htm_marker-1292574}guide:
 <a href="https://docs.microsoft.com/en-us/windows/wsl/install" rel="external" target="_blank">https://docs.microsoft.com/en-us/windows/wsl/install</a>{.url}.</p>
 <p>::: figure
-<a href="#R-image-6aac2e9759866ead12bd9f09545753e1" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/F-03.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6aac2e9759866ead12bd9f09545753e1"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/F-03.png"></a>{.calibre18}</p>
+<a href="#R-image-7f9f3b368845e283a4ee798ecd4efebd" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/F-03.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7f9f3b368845e283a4ee798ecd4efebd"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/F-03.png"></a>{.calibre18}</p>
 <p>Figure F.3 The podman machine init starts the WSL installation.
 :::</p>
 <h2 id="F.htm_heading_id_6" class="fm-head">[]{#F.htm_pgfId-1289658}F.2 Using podman machine<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
@@ -14987,8 +14987,8 @@ compatible release of Fedora to create the WSL 2 instance
 since it is well integrated with Podman and is the operating system used
 by most of the Podman core developers.</p>
 <p>::: figure
-<a href="#R-image-bf86a8eb4ec58071900850710c60cba2" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/F-04.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-bf86a8eb4ec58071900850710c60cba2"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/F-04.png"></a>{.calibre18}</p>
+<a href="#R-image-2e10b0325a7bc47e90eae3ff59490e0c" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/F-04.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2e10b0325a7bc47e90eae3ff59490e0c"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/F-04.png"></a>{.calibre18}</p>
 <p>Figure F.4 The podman machine init command creating the WSL 2
 distribution and configuring SSH connections.
 :::</p>
@@ -18474,22 +18474,22 @@ option 68</a>{.index1}</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766588128" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766588128" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
-    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766588128" defer></script>
+    <script src="/js/theme.js?1766588128" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
