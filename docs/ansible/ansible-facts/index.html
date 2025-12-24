@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Ansible Facts">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Ansible Facts :: Linux Reader">
     <meta name="twitter:description" content="Ansible Facts">
-    <meta property="og:url" content="https://linuxreader.com/ansible/ansible-facts/">
+    <meta property="og:url" content="http://localhost:1313/ansible/ansible-facts/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Ansible Facts :: Linux Reader">
     <meta property="og:description" content="Ansible Facts">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Ansible Facts">
     <meta itemprop="wordCount" content="1314">
     <title>Ansible Facts :: Linux Reader</title>
-    <link href="/ansible/ansible-facts/index.xml" rel="alternate" type="application/rss+xml" title="Ansible Facts :: Linux Reader">
-    <link href="/ansible/ansible-facts/index.print.html" rel="alternate" type="text/html" title="Ansible Facts :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/ansible\/ansible-facts\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ansible-documentation/" title="Ansible Documentation (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/ansible-documentation/" title="Ansible Documentation (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -188,12 +142,9 @@
             Ansible Facts
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ansible-facts/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ansible-galaxy-roles/" title="Ansible Galaxy Roles (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/ansible-galaxy-roles/" title="Ansible Galaxy Roles (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -218,7 +169,7 @@
 system.</p>
 <p>Facts are collected when Ansible executes on the remote system. You&rsquo;ll see a &ldquo;Gathering Facts&rdquo; task  everytime you run a playbook. These facts are then stored in the variable <strong>ansible_facts</strong>.</p>
 <p>Use the <strong>debug</strong> module to check the value of variables. This module requires variables to be enclosed in curly brackets. This example shows a large list of facts from managed nodes:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: show facts
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">tasks</span>:
@@ -228,12 +179,12 @@ system.</p>
 <p>There are two supported formats for using Ansible fact variables:</p>
 <p>It&rsquo;s recommended to use square brackets: <code>ansible_facts['default_ipv4']['address']</code> but dotted notation is also supported for now: <code>ansible_facts.default_ipv4.address</code></p>
 <p>Commonly used ansible_facts:</p>
-<p><a href="#R-image-f156715862877412695a775c13832737" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../../images/Pasted%20image%2020250518052059.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f156715862877412695a775c13832737"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Pasted%20image%2020250518052059.png"></a></p>
+<p><a href="#R-image-f477172c5e144f577735afff37f4cd25" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../../images/Pasted%20image%2020250518052059.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f477172c5e144f577735afff37f4cd25"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Pasted%20image%2020250518052059.png"></a></p>
 <p>There are additional Ansible modules for gathering more information. See `ansible-doc -l | grep fact</p>
 <hr>
 <p><code>package_facts</code> module collects information about software packages installed on managed hosts.</p>
-<h3 id="two-ways-facts-are-displayed">Two ways facts are displayed</h3>
+<h3 id="two-ways-facts-are-displayed">Two ways facts are displayed<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><strong>Ansible_facts variable</strong> (current way)</p>
 <ul>
 <li>All facts are stored in a dictionary with the name <strong>ansible_facts</strong>, and items in this dictionary are addressed using the notation with square brackets</li>
@@ -255,7 +206,7 @@ system.</p>
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>    ansible1 | SUCCESS =&gt; {
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>    ansible1 | SUCCESS =&gt; {
         &#34;ansible_facts&#34;: {
             &#34;ansible_all_ipv4_addresses&#34;: [
                 &#34;192.168.122.1&#34;,
@@ -266,7 +217,7 @@ system.</p>
             ],
             &#34;ansible_apparmor&#34;: {</code></pre></div>
 <p>Comparing ansible_facts Versus Injected Facts as Variables</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ansible_facts                               Injected Variable
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ansible_facts                               Injected Variable
 --------------------------------------------------------------
 ansible_facts[&#39;hostname&#39;]                  ansible_hostname
 ansible_facts[&#39;distribution&#39;]              ansible_distribution
@@ -278,14 +229,14 @@ ansible_facts[&#39;devices&#39;][&#39;sda&#39;]\
 ansible_facts[&#39;distribution_version&#39;]      ansible_distribution_version</code></pre></div>
 <p>Different notations can be used in either method, the listings address the facts in dotted notation, not in the notation with square brackets.</p>
 <p>Addressing Facts with Injected Variables:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    - hosts: all
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    - hosts: all
 </span></span><span style="display:flex;"><span>      tasks:
 </span></span><span style="display:flex;"><span>      - name: show IP address
 </span></span><span style="display:flex;"><span>        debug:
 </span></span><span style="display:flex;"><span>          msg: &gt;
 </span></span><span style="display:flex;"><span>            This host uses IP address <span style="color:#ff6ac1">{{</span> ansible_default_ipv4.address <span style="color:#ff6ac1">}}</span></span></span></code></pre></div>
 <p>Addressing Facts Using the ansible_facts Variable</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>    ---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>    ---
     - hosts: all
       tasks:
       - name: show IP address
@@ -300,7 +251,7 @@ ansible_facts[&#39;distribution_version&#39;]      ansible_distribution_version<
 <code>{{ansible_facts.default_ipv4.address }}</code></p>
 <p>• Alternatively, facts can be addressed in square brackets notation:
 <code>{{ ansible_facts['default_ipv4']['address'] }}</code>. (preferred)</p>
-<h4 id="managing-fact-gathering">Managing Fact Gathering</h4>
+<h4 id="managing-fact-gathering">Managing Fact Gathering<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>By default, upon execution of each playbook, facts are gathered. This does slow down playbooks, and for that reason, it is possible to disable fact gathering completely. To do so, you can use the <strong>gather_facts: no</strong> parameter in the play header. If later in the same playbook it is necessary to gather facts, you can do this by running the setup module in a task.</p>
 <p>Even if it is possible to disable fact gathering for all of your Ansible configuration, this practice is not recommended. Too many playbooks use conditionals that are based on the current value of facts, and all of these conditionals would stop working if fact gathering were disabled altogether.</p>
 <p>As an alternative to make working with facts more efficient, you can disable a fact cache. To do so, you need to install an external plug-in.
@@ -312,7 +263,7 @@ install it first. Next, you can enable fact caching through ansible.cfg.</p>
 <p>3. Use <strong>pip install redis</strong>.</p>
 <p>4. Edit /etc/ansible/ansible.cfg and ensure it contains the following
 parameters:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">[defaults]
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">[defaults]
 gathering = smart
 fact_caching = redis
 fact_caching_timeout = 86400</code></pre></div>
@@ -320,7 +271,7 @@ fact_caching_timeout = 86400</code></pre></div>
 <p>Fact caching can be convenient but should be used with caution. If, for instance, a playbook installs a certain package only if a sufficient
 amount of disk space is available, it should not do this based on information that may be up to 24 hours old. For that reason, using a
 fact cache is not recommended in many situations.</p>
-<h4 id="custom-facts">Custom Facts</h4>
+<h4 id="custom-facts">Custom Facts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li>
 <p>Used to provide a host with arbitrary values that Ansible can use to change the behavior of plays.</p>
@@ -345,7 +296,7 @@ fact cache is not recommended in many situations.</p>
 </ul>
 <p>Dynamic custom facts are useful because they allow the facts to be determined at the moment that a script is running.  provides an example of a static custom fact file.</p>
 <p>Custom Facts Sample File:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>    [packages]
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>    [packages]
     web_package = httpd
     ftp_package = vsftpd
     
@@ -353,7 +304,7 @@ fact cache is not recommended in many situations.</p>
     web_service = httpd
     ftp_service = vsftpd</code></pre></div>
 <p>To get the custom facts files on the managed hosts, you can use a playbook that copies a local custom fact file (existing in the current Ansible project directory) to the appropriate location on the managed hosts. Notice that this playbook uses variables, which are explained in more detail in the section titled &ldquo;Working with Variables.&rdquo;</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>    ---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>    ---
     - name: Install custom facts
       hosts: all
       vars:
@@ -375,15 +326,15 @@ in <a href="/ansible/ansible-facts/#ch06.xhtml#list6_9">Listing 6-9</a>, the web
 <pre><code>{{ ansible_facts[’ansible_local’][’listing67’][’packages’][’web_package’] }}
 </code></pre>
 <p>To verify, you can use the setup module with the filter argument. Notice that because the setup module produces injected variables as a result, the ad hoc command to use is <code>ansible all -m setup -a &quot;filter=ansible_local&quot;</code> . The command <code>ansible all -m setup -a  &quot;filter=ansible_facts\['ansible_local'\]&quot;</code> does not work.</p>
-<h3 id="lab-working-with-ansible-facts">Lab Working with Ansible Facts</h3>
+<h3 id="lab-working-with-ansible-facts">Lab Working with Ansible Facts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>1. Create a custom fact file with the name custom.fact and the following contents:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">[software]
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">[software]
 package = httpd
 service = httpd
 state = started
 enabled = true</code></pre></div>
 <p>2. Write a playbook with the name copy_facts.yaml and the following contents:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
 - name: copy custom facts
   become: yes
   hosts: ansible1
@@ -401,7 +352,7 @@ enabled = true</code></pre></div>
 <p>4. Check the availability of the custom facts by using <code>ansible all -m setup -a &quot;filter=ansible_local&quot; -i inventory</code></p>
 <p>5. Use an ad hoc command to ensure that the httpd service is not installed on any of the managed servers: <code>ansible all -m yum -a &quot;name=httpd state=absent&quot; -i inventory -b</code></p>
 <p>6. Create a playbook with the name <strong>setup_with_facts.yaml</strong> that installs and enables the httpd service, using the custom facts:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
 - name: install and start the web service
   hosts: ansible1
   tasks:
@@ -527,8 +478,8 @@ enabled = true</code></pre></div>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -554,23 +505,23 @@ enabled = true</code></pre></div>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Managing Packages">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Managing Packages :: Linux Reader">
     <meta name="twitter:description" content="Managing Packages">
-    <meta property="og:url" content="https://linuxreader.com/ansible/managing-packages/">
+    <meta property="og:url" content="http://localhost:1313/ansible/managing-packages/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Managing Packages :: Linux Reader">
     <meta property="og:description" content="Managing Packages">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Managing Packages">
     <meta itemprop="wordCount" content="1032">
     <title>Managing Packages :: Linux Reader</title>
-    <link href="/ansible/managing-packages/index.xml" rel="alternate" type="application/rss+xml" title="Managing Packages :: Linux Reader">
-    <link href="/ansible/managing-packages/index.print.html" rel="alternate" type="text/html" title="Managing Packages :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/ansible\/managing-packages\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/managing-ansible-errors-and-logs/" title="Managing Ansible Errors and Logs (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/managing-ansible-errors-and-logs/" title="Managing Ansible Errors and Logs (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -187,12 +141,9 @@
             Managing Packages
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/managing-packages/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/managing-partitions-and-lvm/" title="Managing Partitions and LVM (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/managing-partitions-and-lvm/" title="Managing Partitions and LVM (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -213,13 +164,13 @@
 
 <h1 id="managing-packages">Managing Packages</h1>
 
-<h3 id="using-modules-to-manage-packages">Using Modules to Manage Packages</h3>
+<h3 id="using-modules-to-manage-packages">Using Modules to Manage Packages<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Modules used to manage packages:
-<a href="#R-image-405fa27b13ee781b040a238e44757f2d" class="lightbox-link"><img alt="Image" class="lazy lightbox figure-image" loading="lazy" src="/Images/12tab02.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-405fa27b13ee781b040a238e44757f2d"><img alt="Image" class="lazy lightbox lightbox-image" loading="lazy" src="/Images/12tab02.jpg"></a></p>
-<h4 id="configuring-repository-access">Configuring Repository Access</h4>
+<a href="#R-image-c1d4c5b203293f736643e7a23ee9f82f" class="lightbox-link"><img alt="Image" class="lazy lightbox figure-image" loading="lazy" src="/Images/12tab02.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c1d4c5b203293f736643e7a23ee9f82f"><img alt="Image" class="lazy lightbox lightbox-image" loading="lazy" src="/Images/12tab02.jpg"></a></p>
+<h4 id="configuring-repository-access">Configuring Repository Access<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The <strong>yum_repository</strong> module lets you work with yum repository files in the /etc/yum.repos.d/ directory.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    ---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: setting up repository access
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">tasks</span>:
@@ -231,14 +182,14 @@
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">baseurl</span>: ftp://control.example.com/repo/
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">gpgcheck</span>: <span style="color:#ff6ac1">no</span></span></span></code></pre></div>
 <p>yum_repository Key Arguments</p>
-<p><a href="#R-image-b734befa49b19c5c9d914a244917f07a" class="lightbox-link"><img alt="Image" class="lazy lightbox figure-image" loading="lazy" src="/Images/12tab03.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b734befa49b19c5c9d914a244917f07a"><img alt="Image" class="lazy lightbox lightbox-image" loading="lazy" src="/Images/12tab03.jpg"></a></p>
+<p><a href="#R-image-1175c040fa55fb0a2c6074ce683e1290" class="lightbox-link"><img alt="Image" class="lazy lightbox figure-image" loading="lazy" src="/Images/12tab03.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1175c040fa55fb0a2c6074ce683e1290"><img alt="Image" class="lazy lightbox lightbox-image" loading="lazy" src="/Images/12tab03.jpg"></a></p>
 <p>Notice that use of the <strong>gpgcheck</strong> argument is recommended but not
 mandatory. Most repositories are provided with a GPG key to verify that
 packages in the repository have not been tampered with. However, if no
 GPG key is set up for the repository, the <strong>gpgcheck</strong> parameter can be
 set to no to skip checking the GPG key.</p>
-<h4 class="h4" id="managing-software-with-yum">Managing Software with yum</h4>
+<h4 id="managing-software-with-yum" class="h4">Managing Software with yum<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The yum module can be used to manage software packages. You use it to
 install and remove packages or to update packages. This can be done for
 individual packages, as well as package groups and modules. Let&rsquo;s look
@@ -310,7 +261,7 @@ are provided as the argument to <strong>name</strong>, yum can install all these
 packages in one single task.</p>
 <hr>
 <p>:::</p>
-<h4 class="h4" id="managing-package-facts">Managing Package Facts</h4>
+<h4 id="managing-package-facts" class="h4">Managing Package Facts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>When Ansible is gathering facts, package facts are not included. To
 include package facts as well, you need to run a separate task; that is,
 you need to use the package_facts module. Facts that have been gathered
@@ -385,7 +336,7 @@ the different tools Ansible provides for module management.</p>
 <p>1. Use your editor to create a new file with the name exercise121.yaml.</p>
 <p>2. Write a play header that defines the variable <strong>my_package</strong> and
 sets its value to <strong>virt-manager</strong>:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
 - name: exercise121
   hosts: ansible2
   vars:
@@ -393,17 +344,17 @@ sets its value to <strong>virt-manager</strong>:</p>
   tasks:</code></pre></div>
 <p>3. Add a task that installs the package based on the name of the
 variable that was provided:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">- name: install package
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">- name: install package
   yum:
     name: &#34;{{ my_package }}&#34;
     state: present</code></pre></div>
 <p>4. Add a task that gathers facts about installed packages:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">- name: update package facts
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">- name: update package facts
   package_facts:
     manager: auto</code></pre></div>
 <p>5. As the last part of this exercise, add a task that shows facts about
 the package that you have just installed:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">- name: show package facts for {{ my_package }}
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">- name: show package facts for {{ my_package }}
   debug:
     var: ansible_facts.packages[my_package]
   when: my_package in ansible_facts.packages</code></pre></div>
@@ -521,8 +472,8 @@ verify its output.
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -548,23 +499,23 @@ verify its output.
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

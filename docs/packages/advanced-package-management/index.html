@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Managing package groups, application streams, modules, and DNF">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Advanced Package Management :: Linux Reader">
     <meta name="twitter:description" content="Managing package groups, application streams, modules, and DNF">
-    <meta property="og:url" content="https://linuxreader.com/packages/advanced-package-management/">
+    <meta property="og:url" content="http://localhost:1313/packages/advanced-package-management/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Advanced Package Management :: Linux Reader">
     <meta property="og:description" content="Managing package groups, application streams, modules, and DNF">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Managing package groups, application streams, modules, and DNF">
     <meta itemprop="wordCount" content="4221">
     <title>Advanced Package Management :: Linux Reader</title>
-    <link href="/packages/advanced-package-management/index.xml" rel="alternate" type="application/rss+xml" title="Advanced Package Management :: Linux Reader">
-    <link href="/packages/advanced-package-management/index.print.html" rel="alternate" type="text/html" title="Advanced Package Management :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/packages\/advanced-package-management\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/packages/" title="Packages (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/packages/" title="Packages (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -237,12 +191,9 @@
             Advanced Package Management
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/packages/advanced-package-management/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/packages/basic-package-management/" title="Basic Package Management (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/packages/basic-package-management/" title="Basic Package Management (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -263,8 +214,8 @@
 
 <h1 id="advanced-package-management">Advanced Package Management</h1>
 
-<h2 id="packagegroups">Package Groups</h2>
-<h3 id="package-group">package group</h3>
+<h2 id="packagegroups">Package Groups<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="package-group">package group<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Group of packages that serve a common purpose.</li>
 <li>Can query, install, and delete as a single unit rather than dealing with packages individually.</li>
@@ -279,42 +230,42 @@
 <ul>
 <li>container management, smart card support, security tools, system tools, network servers, etc.</li>
 </ul>
-<h2 id="individual-packages-package-groups-and-modules">Individual packages, package groups, and modules:</h2>
-<h3 id="individual-package-management">Individual Package Management</h3>
+<h2 id="individual-packages-package-groups-and-modules">Individual packages, package groups, and modules:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="individual-package-management">Individual Package Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>List, install, query, and remove packages.</p>
-<h4 id="listing-available-and-installed-packages">Listing Available and Installed Packages</h4>
+<h4 id="listing-available-and-installed-packages">Listing Available and Installed Packages<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li>dnf lists available packages as well as installed packages.</li>
 </ul>
-<h3 id="lab-list-all-packages-available-for-installation-from-all-enabled-repos">Lab: list all packages available for installation from all enabled repos,</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf repoquery</span></span></code></pre></div>
-<h3 id="lab-list-of-packages-that-are-available-only-from-a-specific-repo">Lab: list of packages that are available only from a specific repo:</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf repoquery --repo <span style="color:#5af78e">&#34;BaseOS&#34;</span></span></span></code></pre></div>
-<h3 id="lab-grep-for-an-expression-to-narrow-down-your-search">Lab: grep for an expression to narrow down your search.</h3>
+<h3 id="lab-list-all-packages-available-for-installation-from-all-enabled-repos">Lab: list all packages available for installation from all enabled repos,<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf repoquery</span></span></code></pre></div>
+<h3 id="lab-list-of-packages-that-are-available-only-from-a-specific-repo">Lab: list of packages that are available only from a specific repo:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf repoquery --repo <span style="color:#5af78e">&#34;BaseOS&#34;</span></span></span></code></pre></div>
+<h3 id="lab-grep-for-an-expression-to-narrow-down-your-search">Lab: grep for an expression to narrow down your search.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>For example, to find whether the BaseOS repo includes the <em>zsh</em> package.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf repoquery --repo BaseOS | grep zsh</span></span></code></pre></div>
-<h3 id="lab-list-all-installed-packages-on-the-system">Lab: list all installed packages on the system:</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf list installed</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf repoquery --repo BaseOS | grep zsh</span></span></code></pre></div>
+<h3 id="lab-list-all-installed-packages-on-the-system">Lab: list all installed packages on the system:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf list installed</span></span></code></pre></div>
 <p>Three columns:
 - package name
 - package version
 - repo it was installed from.
 - @anaconda means the package was installed at the time of RHEL installation.</p>
 <p>List all installed packages and all packages available for installation from all enabled repositories:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf list</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf list</span></span></code></pre></div>
 <ul>
 <li>@ sign identifies the package as installed.</li>
 </ul>
 <p>List all packages available from all enabled repositories that should be able to update:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf list updates</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf list updates</span></span></code></pre></div>
 <p>List whether a package (<em>bc</em>, for instance) is installed or available for installation from any enabled repository:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf list bc</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf list bc</span></span></code></pre></div>
 <p>List all installed packages whose names begin with the string &ldquo;gnome&rdquo; followed by any number of characters:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf list installed ^gnome*</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf list installed ^gnome*</span></span></code></pre></div>
 <p>List recently added packages:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf list recent</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf list recent</span></span></code></pre></div>
 <p>Refer to the <em>repoquery</em> and <em>list</em> subsections of the <em>dnf</em> command manual pages for more options and examples.</p>
-<h3 id="installing-and-updating-packages">Installing and Updating Packages</h3>
+<h3 id="installing-and-updating-packages">Installing and Updating Packages<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Installing a package:</p>
 <ul>
 <li>creates the necessary directory structure</li>
@@ -323,15 +274,15 @@
 <li>If already installed, <em>dnf</em> command updates it to the latest available version.</li>
 </ul>
 <p>Attempt to install a package called <em>ypbind</em>, proceed to update if it detects the presence of an older version:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf install ypbind</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf install ypbind</span></span></code></pre></div>
 <p>Install or update a package called <em>dcraw</em> located locally at /mnt/AppStream/Packages/</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf localinstall /mnt/AppStream/Packages/dcraw*</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf localinstall /mnt/AppStream/Packages/dcraw*</span></span></code></pre></div>
 <p>Update an installed package (<em>autofs</em>, for example) to the latest available version. Dnf will fail if the specified package is not already installed:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf update autofs</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf update autofs</span></span></code></pre></div>
 <p>Update all installed packages to the latest available versions:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf -y update</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf -y update</span></span></code></pre></div>
 <p>Refer to the <em>install</em> and <em>update</em> subsections of the <em>dnf</em> command manual pages for more options and examples.</p>
-<h3 id="exhibiting-package-information">Exhibiting Package Information</h3>
+<h3 id="exhibiting-package-information">Exhibiting Package Information<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Show:</p>
 <ul>
 <li>release</li>
@@ -344,20 +295,20 @@
 </ul>
 <p>dnf info subcommand</p>
 <p>View information about a package called <em>autofs</em>:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf info autofs</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf info autofs</span></span></code></pre></div>
 <ul>
 <li>Determines whether the specified package is installed or
 not.</li>
 </ul>
 <p>Refer to the <em>info</em> subsection of the <em>dnf</em> command manual pages.</p>
-<h3 id="removing-packages">Removing Packages</h3>
+<h3 id="removing-packages">Removing Packages<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Removing a package:</p>
 <ul>
 <li>uninstalls it and removes all associated files and directory structure.</li>
 <li>erases any dependencies as part of the deletion process.</li>
 </ul>
 <p>Remove a package called <em>ypbind</em>:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf remove ypbind</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf remove ypbind</span></span></code></pre></div>
 <p>Output</p>
 <ul>
 <li>Resolved dependencies</li>
@@ -367,43 +318,43 @@ not.</li>
 <li>List of the removed packages</li>
 </ul>
 <p>Refer to the <em>remove</em> subsection of the <em>dnf</em> command manual pages for more options and examples available for removing packages.</p>
-<h3 id="lab-manipulate-individual-packages">Lab: Manipulate Individual Packages</h3>
+<h3 id="lab-manipulate-individual-packages">Lab: Manipulate Individual Packages<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Perform management operations on a package called <code>cifs-utils</code>. Determine if this package is already installed and if it is available for installation. Display its information before installing it. Install the package and exhibit its information. Erase the package along with
 its dependencies and confirm the removal.</p>
 <ol>
 <li>Check whether the <em>cifs-utils</em> package is already installed:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf list installed | grep cifs-utils</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf list installed | grep cifs-utils</span></span></code></pre></div>
 <ol start="2">
 <li>Determine if the <em>cifs-utils</em> package is available for installation:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf repoquery cifs-utils</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf repoquery cifs-utils</span></span></code></pre></div>
 <ol start="3">
 <li>Display detailed information about the package:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf info cifs-utils</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf info cifs-utils</span></span></code></pre></div>
 <ol start="4">
 <li>Install the package:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf install -y cifs-utils</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf install -y cifs-utils</span></span></code></pre></div>
 <ol start="5">
 <li>Display the package information again:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf info cifs-utils</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf info cifs-utils</span></span></code></pre></div>
 <ol start="6">
 <li>Remove the package:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf remove -y cifs-utils</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf remove -y cifs-utils</span></span></code></pre></div>
 <ol start="7">
 <li>Confirm the removal:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf list installed | grep cif</span></span></code></pre></div>
-<h3 id="determining-provider-and-searching-package-metadata">Determining Provider and Searching Package Metadata</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf list installed | grep cif</span></span></code></pre></div>
+<h3 id="determining-provider-and-searching-package-metadata">Determining Provider and Searching Package Metadata<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>You can determine what package a specific file belongs to or which package comprises a certain string.</li>
 </ul>
 <p>Search for packages that contain a specific file such as /etc/passwd/, use the <em>provides</em> or the <em>whatprovides</em> subcommand with dnf:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf provides /etc/passwd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf provides /etc/passwd</span></span></code></pre></div>
 <ul>
 <li>
 <p>Indicates file is part of a package called <em>setup</em>, installed during RHEL installation.</p>
@@ -416,23 +367,23 @@ its dependencies and confirm the removal.</p>
 </li>
 </ul>
 <p>List all packages that contain filenames beginning with &ldquo;system-config&rdquo; followed by any number of characters:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf whatprovides /usr/bin/system-config*</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf whatprovides /usr/bin/system-config*</span></span></code></pre></div>
 <p>To search for all the packages that match the specified string in their
 name or summary:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf search system-config</span></span></code></pre></div>
-<h3 id="package-group-management">Package Group Management</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf search system-config</span></span></code></pre></div>
+<h3 id="package-group-management">Package Group Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li><code>group</code> subcommand</li>
 <li>list, install, query, and remove groups of packages.</li>
 </ul>
-<h3 id="listing-available-and-installed-package-groups">Listing Available and Installed Package Groups</h3>
+<h3 id="listing-available-and-installed-package-groups">Listing Available and Installed Package Groups<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><code>group list</code> subcommand:</p>
 <ul>
 <li>list the package groups available for installation from either or both repos</li>
 <li>list the package groups that are already installed on the system.</li>
 </ul>
 <p>List all available and installed package groups from all repositories:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group list</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group list</span></span></code></pre></div>
 <p>output:</p>
 <ul>
 <li>two categories of package groups:
@@ -453,19 +404,19 @@ name or summary:</p>
 <li>Output shows installed and available package groups.</li>
 </ul>
 <p>Display the number of installed and available package groups:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf group summary</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf group summary</span></span></code></pre></div>
 <p>List all installed and available package groups including those that
 are hidden:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf group list hidden</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf group list hidden</span></span></code></pre></div>
 <p>Try <em>group list</em> with --installed and --available options to narrow
 down the output list.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf group list --installed</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf group list --installed</span></span></code></pre></div>
 <p>List all packages that a specific package group such as Base contains:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf group info Base</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf group info Base</span></span></code></pre></div>
 <p>-v option with the group info subcommand for more
 information.</p>
 <p>Review group list and group info subsections of the <code>dnf</code> man pages.</p>
-<h3 id="installing-and-updating-package-groups">Installing and Updating Package Groups</h3>
+<h3 id="installing-and-updating-package-groups">Installing and Updating Package Groups<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Creates the necessary directory structure for all the packages included in the group and all dependent packages.</li>
 <li>Installs the required files.</li>
@@ -473,51 +424,51 @@ information.</p>
 <li>Attempts to update all the packages included in the group to the latest available versions.</li>
 </ul>
 <p>Install a package group called Emacs. Update if it detects an older version.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf -y groupinstall emacs</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf -y groupinstall emacs</span></span></code></pre></div>
 <p>Update the <em>smart card support</em> package group to the latest version:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf groupupdate <span style="color:#5af78e">&#34;Smart Card Support&#34;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf groupupdate <span style="color:#5af78e">&#34;Smart Card Support&#34;</span></span></span></code></pre></div>
 <p>Refer to the <em>group install</em> and <em>group update</em> subsections of the <em>dnf</em> command manual pages for more details.</p>
-<h3 id="removing-package-groups">Removing Package Groups</h3>
+<h3 id="removing-package-groups">Removing Package Groups<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Uninstalls all the included packages and deletes all associated files and directory structure.</li>
 <li>Erases any dependencies</li>
 </ul>
 <p>Erase the <em>smart card support</em> package group that was installed:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf -y groupremove <span style="color:#5af78e">&#39;smart card support&#39;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf -y groupremove <span style="color:#5af78e">&#39;smart card support&#39;</span></span></span></code></pre></div>
 <p>Refer to the <em>remove</em> subsection of the <em>dnf</em> command manual pages for
 more details.</p>
-<h3 id="lab-manipulate-package-groups">Lab: Manipulate Package Groups</h3>
+<h3 id="lab-manipulate-package-groups">Lab: Manipulate Package Groups<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Perform management operations on a package group called <em>system tools</em>. Determine if this group is already installed and if it is available for installation. List the packages it contains and install it. Remove the group along with its dependencies and confirm the removal.</p>
 <ol>
 <li>Check whether the <em>system tools</em> package group is already installed:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group list installed</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group list installed</span></span></code></pre></div>
 <ol start="2">
 <li>Determine if the <em>system tools</em> group is available for installation:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group list available</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group list available</span></span></code></pre></div>
 <p>The group name is exhibited at the bottom of the list under the
 available groups.</p>
 <ol start="3">
 <li>Display the list of packages this group contains:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group info <span style="color:#5af78e">&#39;system tools&#39;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group info <span style="color:#5af78e">&#39;system tools&#39;</span></span></span></code></pre></div>
 <ul>
 <li>All of the packages will be installed as part of the group installation.</li>
 </ul>
 <ol start="4">
 <li>Install the group:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf group install <span style="color:#5af78e">&#39;system tools&#39;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf group install <span style="color:#5af78e">&#39;system tools&#39;</span></span></span></code></pre></div>
 <ol start="5">
 <li>Remove the group:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf group remove <span style="color:#5af78e">&#39;system tools&#39;</span> -y</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf group remove <span style="color:#5af78e">&#39;system tools&#39;</span> -y</span></span></code></pre></div>
 <ol start="6">
 <li>Confirm the removal:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group list installed</span></span></code></pre></div>
-<h2 id="application-streams-and-modules">Application Streams and Modules</h2>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group list installed</span></span></code></pre></div>
+<h2 id="application-streams-and-modules">Application Streams and Modules<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>Application Streams</strong></p>
 <ul>
 <li>Introduced in RHEL 8.</li>
@@ -550,7 +501,7 @@ available groups.</p>
 <li>Rpm and modular format</li>
 <li>Include web server software, development languages, database software, etc.</li>
 </ul>
-<h4 id="benefits-of-segregation">Benefits of Segregation</h4>
+<h4 id="benefits-of-segregation">Benefits of Segregation<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Why separate BaseOS components from other applications?</p>
 <p>(1) Separates application components from the core operating system elements.<br>
 (2) Allows publishers to deliver and administrators to apply application updates more frequently.</p>
@@ -558,7 +509,7 @@ available groups.</p>
 <p>This could result in an unstable system or a misbehaving application due to an unwanted upgrade of one or more packages.</p>
 <p>By detaching the base OS components from the applications, either of the two can be updated independent of the other.</p>
 <p>This provides enhanced flexibility in tailoring the system components and application workloads without impacting the underlying stability of the system.</p>
-<h3 id="module-streams">Module Streams</h3>
+<h3 id="module-streams">Module Streams<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Collection of packages organized by version</li>
 <li>Each module can have multiple streams</li>
@@ -571,7 +522,7 @@ available groups.</p>
 <li>Only one stream of a specific module can be enabled at a time</li>
 <li>Each module has a default stream, which provides the latest or the recommended version.</li>
 </ul>
-<h3 id="module-profiles">Module Profiles</h3>
+<h3 id="module-profiles">Module Profiles<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>List of recommended packages organized for purpose-built, convenient deployments to support a variety of use cases
 such as:</li>
@@ -579,7 +530,7 @@ such as:</li>
 <li>A profile may also include packages from the BaseOS repository or the dependencies of the stream</li>
 <li>Each module stream can have zero, one, or more profiles associated with it with only one of them marked as the default.</li>
 </ul>
-<h3 id="module-management">Module Management</h3>
+<h3 id="module-management">Module Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><strong>Modules</strong> are special package groups usually representing an application, a language runtime, or a set of tools. They are available in one or <strong>multiple streams</strong> which usually represent a major version of a piece of software, They are available in one or <strong>multiple streams</strong> which give you an option to choose what versions of packages you want to consume.
 <a href="https://docs.fedoraproject.org/en-US/modularity/using-modules/" rel="external" target="_blank">https://docs.fedoraproject.org/en-US/modularity/using-modules/</a></p>
 <p>Modules are a way to deliver different versions of software (such as programming languages, databases, or web servers) independently of the base operating system&rsquo;s release cycle.</p>
@@ -589,13 +540,13 @@ such as:</li>
 <li>list, enable, install, query, remove, and disable
 modules.</li>
 </ul>
-<h3 id="listing-available-and-installed-modules">Listing Available and Installed Modules</h3>
+<h3 id="listing-available-and-installed-modules">Listing Available and Installed Modules<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>List all modules along with their stream, profile, and summary
 information available from all configured repos:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list</span></span></code></pre></div>
 <p>Limit the output to a list of modules available from a specific
 repo such as AppStream by adding --repo AppStream:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list --repo AppStream</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list --repo AppStream</span></span></code></pre></div>
 <p>Output:</p>
 <ul>
 <li>default (d)</li>
@@ -604,14 +555,14 @@ repo such as AppStream by adding --repo AppStream:</p>
 <li>installed (i)</li>
 </ul>
 <p>List all the streams for a specific module such as <code>ruby</code> and display their status:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list ruby</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list ruby</span></span></code></pre></div>
 <p>Modify the above and list only the specified stream 3.3 for the module <code>ruby</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list ruby:3.3</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list ruby:3.3</span></span></code></pre></div>
 <p>List all enabled module streams:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list --enabled</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list --enabled</span></span></code></pre></div>
 <p>Similarly, you can use the --installed and --disabled options with <code>dnf module list</code> to output only the installed or the disabled streams.</p>
 <p>Refer to the <em>module list</em> subsection of the <em>dnf</em> command manual pages.</p>
-<h3 id="installing-and-updating-modules">Installing and Updating Modules</h3>
+<h3 id="installing-and-updating-modules">Installing and Updating Modules<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Installing a module</p>
 <ul>
 <li>Creates directory tree for all packages included in the module and all dependent packages.</li>
@@ -621,12 +572,12 @@ repo such as AppStream by adding --repo AppStream:</p>
 </ul>
 <p>Install the <em>perl</em> module using its default stream and default
 profile:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf -y module install perl</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf -y module install perl</span></span></code></pre></div>
 <p>Update a module called <em>squid</em> to the latest version:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf module update squid -y</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf module update squid -y</span></span></code></pre></div>
 <p>Install the profile &ldquo;common&rdquo; with stream &ldquo;rhel9&rdquo; for the <em>container-tools</em> module: (module:stream/profile)</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf module install container-tools:rhel9/common</span></span></code></pre></div>
-<h3 id="displaying-module-information">Displaying Module Information</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf module install container-tools:rhel9/common</span></span></code></pre></div>
+<h3 id="displaying-module-information">Displaying Module Information<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Shows
 <ul>
@@ -637,11 +588,11 @@ profile:</p>
 <li>Can be viewed by supplying module info with dnf.</li>
 </ul>
 <p>List all profiles available for the module ruby:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module info --profile ruby</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module info --profile ruby</span></span></code></pre></div>
 <p>Limit the output to a particular stream such as 3.1:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module info --profile ruby:3.1</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module info --profile ruby:3.1</span></span></code></pre></div>
 <p>Refer to the <em>module info</em> subsection of the <em>dnf</em> command manual pages for more details.</p>
-<h3 id="removing-modules">Removing Modules</h3>
+<h3 id="removing-modules">Removing Modules<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Removing a module will:</p>
 <ul>
 <li>Uninstall all the included packages and</li>
@@ -649,9 +600,9 @@ profile:</p>
 <li>Erases any dependencies as part of the deletion process.</li>
 </ul>
 <p>Remove the ruby module with &ldquo;3.1&rdquo; stream:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf module remove ruby:3.1</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf module remove ruby:3.1</span></span></code></pre></div>
 <p>Refer to the <em>module remove</em> subsection of the <em>dnf</em> command manual pages:</p>
-<h3 id="lab-manipulate-modules">Lab: Manipulate Modules</h3>
+<h3 id="lab-manipulate-modules">Lab: Manipulate Modules<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Perform management operations on a module called <em>postgresql</em>.</li>
 <li>Determine if this module is already installed and if it is available for installation.</li>
@@ -662,28 +613,28 @@ profile:</p>
 <ol>
 <li>Check whether the <em>postgresql</em> module is already installed(i):</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list postgresql</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list postgresql</span></span></code></pre></div>
 <ol start="2">
 <li>Display detailed information about the default stream of the module:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module info postgresql:15</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module info postgresql:15</span></span></code></pre></div>
 <ol start="3">
 <li>Install the module with default profile for stream &ldquo;15&rdquo;:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf -y module install --profile postgresql:15</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf -y module install --profile postgresql:15</span></span></code></pre></div>
 <ol start="4">
 <li>Display the module information again:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module info postgresql:15</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module info postgresql:15</span></span></code></pre></div>
 <ol start="5">
 <li>Erase the module profile for the stream:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module remove -y postgresql:15</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module remove -y postgresql:15</span></span></code></pre></div>
 <ol start="6">
 <li>Confirm the removal (back to (d)):</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module info postgresql:15</span></span></code></pre></div>
-<h3 id="switching-module-streams">Switching Module Streams</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module info postgresql:15</span></span></code></pre></div>
+<h3 id="switching-module-streams">Switching Module Streams<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Typically performed to upgrade or downgrade the version of an installed module.</li>
 </ul>
@@ -715,7 +666,7 @@ disables the current enabled stream.</p>
 <p>dnf module list and dnf module info expose the enable/disable status of the module stream.</p>
 </li>
 </ul>
-<h3 id="lab-install-a-module-from-an-alternative-stream">Lab: Install a Module from an Alternative Stream</h3>
+<h3 id="lab-install-a-module-from-an-alternative-stream">Lab: Install a Module from an Alternative Stream<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Downgrade a module to a lower version.</li>
 <li>Remove the stream <code>ruby</code> 3.3 and</li>
@@ -726,19 +677,19 @@ disables the current enabled stream.</p>
 <ol>
 <li>Check the current state of all <em>perl</em> streams:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list perl</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list perl</span></span></code></pre></div>
 <ol start="2">
 <li>Remove perl 5.26:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf module remove perl -y</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf module remove perl -y</span></span></code></pre></div>
 <ol>
 <li>Confirm the removal:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list ruby</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list ruby</span></span></code></pre></div>
 <ol start="2">
 <li>Reset the module so that neither stream is enabled or disabled. This will remove the enabled (e) indication from ruby 3.3</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf module reset ruby</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf module reset ruby</span></span></code></pre></div>
 <ol start="3">
 <li>Install the non-default profile &ldquo;minimal&rdquo; for ruby stream 3.1. This will auto-enable the stream.</li>
 </ol>
@@ -746,12 +697,12 @@ disables the current enabled stream.</p>
 <ul>
 <li>Will instruct the command to remove installed packages for dependency resolution.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf module install ruby:3.1 --allowerasing</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf module install ruby:3.1 --allowerasing</span></span></code></pre></div>
 <ol start="4">
 <li>Check the status of the module:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list perl</span></span></code></pre></div>
-<h2 id="the-dnf-command">The dnf Command</h2>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list perl</span></span></code></pre></div>
+<h2 id="the-dnf-command">The dnf Command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Introduced in RHEL 8</li>
 <li>Can use interchangeably with yum in RHEL
@@ -938,16 +889,16 @@ groups and modules:</p>
 </table>
 <p>For labs, you&rsquo;ll need to create a definition file and configure access to the two repositories available on the RHEL 8 ISO
 image.</p>
-<h3 id="lab-configure-access-to-pre-built-repositories">Lab: Configure Access to Pre-Built Repositories</h3>
+<h3 id="lab-configure-access-to-pre-built-repositories">Lab: Configure Access to Pre-Built Repositories<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Set up access to the two dnf repositories that are available on RHEL 9 image. (You should have already configured an automatic mounting of RHEL 9 image on <em>/mnt</em>.) Create a definition file for the repositories and confirm.</p>
 <ol>
 <li>Verify that the image is currently mounted:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> df -h | grep mnt</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> df -h | grep mnt</span></span></code></pre></div>
 <ol start="2">
 <li>Create a definition file called local.repo in /etc/yum.repos.d/ using the <em>vim</em> editor and define the following data for both repositories in it:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>BaseOS<span style="color:#ff6ac1">]</span> 
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>BaseOS<span style="color:#ff6ac1">]</span> 
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">name</span><span style="color:#ff6ac1">=</span>BaseOS 
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">baseurl</span><span style="color:#ff6ac1">=</span>file:///mnt/BaseOS 
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">gpgcheck</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span> 
@@ -959,7 +910,7 @@ image.</p>
 <ol start="3">
 <li>Confirm access to the repositories:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf repolist </span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo dnf repolist </span></span></code></pre></div>
 <ul>
 <li>Ignore lines 1-4 in the output that are related to subscription and
 system registration.</li>
@@ -970,7 +921,7 @@ system registration.</li>
 <li>BaseOS repo contains 1,658 packages.</li>
 <li>Both repos are enabled by default and are ready for use.</li>
 </ul>
-<h3 id="dnf-yum-repository">dnf yum Repository</h3>
+<h3 id="dnf-yum-repository">dnf yum Repository<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><strong>dnf repository</strong> (<em>yum repository</em> or a <em>repo</em>)</p>
 <ul>
 <li>
@@ -1011,14 +962,14 @@ system registration.</li>
 <p>There are two pre-set repositories available on the RHEL 9 image. You will configure access to them via a definition file to support the exercises and lab environment.</p>
 </li>
 </ul>
-<h3 id="repository-definition-file">Repository Definition File</h3>
+<h3 id="repository-definition-file">Repository Definition File<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Repo definition files are located in /etc/yum.repos.d/</li>
 <li>Can create local.repo file in this directory to specify local repos</li>
 <li>See dnf.conf man page</li>
 </ul>
 <p>Sample repo definition file and key directives:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>BaseOS_RHEL_9<span style="color:#ff6ac1">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>BaseOS_RHEL_9<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">name</span><span style="color:#ff6ac1">=</span> RHEL <span style="color:#ff9f43">9</span> base operating system components
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">baseurl</span><span style="color:#ff6ac1">=</span>file://*mnt*BaseOS
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">enabled</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1</span>
@@ -1062,13 +1013,13 @@ Line 5 shows if packages are to be GPGchecked for authenticity.</p>
 </ul>
 </li>
 </ul>
-<h3 id="software-management-with-dnf">Software Management with dnf</h3>
+<h3 id="software-management-with-dnf">Software Management with dnf<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Tools are available to work with individual packages as well as package groups and modules.</li>
 <li><code>rpm</code> command is limited to managing one package at a time.</li>
 <li><code>dnf</code> has an associated configuration file that can define settings to control its behavior.</li>
 </ul>
-<h4 id="dnf-configuration-file">dnf Configuration File</h4>
+<h4 id="dnf-configuration-file">dnf Configuration File<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li>Key configuration file: /etc/dnf/dnf.conf</li>
 <li>&ldquo;main&rdquo; section
@@ -1081,8 +1032,8 @@ Line 5 shows if packages are to be GPGchecked for authenticity.</p>
 </li>
 </ul>
 <p>Default content of this configuration file:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> cat /etc/dnf/dnf.conf</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>main<span style="color:#ff6ac1">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> cat /etc/dnf/dnf.conf</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>main<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">gpgcheck</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">installonly_limit</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">3</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">clean_requirements_on_remove</span><span style="color:#ff6ac1">=</span>True
@@ -1133,12 +1084,12 @@ Line 5 shows if packages are to be GPGchecked for authenticity.</p>
 </table>
 <hr>
 <p>For other directives: <code>man 5 dnf.conf</code></p>
-<h2 id="advanced-package-management-diy-labs">Advanced Package Management DIY Labs</h2>
+<h2 id="advanced-package-management-diy-labs">Advanced Package Management DIY Labs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ol>
 <li>Configure Access to RHEL 8 Repositories (Make sure the RHEL 8 ISO image is attached to the VM and mounted.)  Create a definition file under <em>/etc/yum.repos.d/</em>, and define two blocks (one for BaseOS and another for AppStream).</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  vim /etc/yum.repos.d/local.repo</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>BaseOS<span style="color:#ff6ac1">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  vim /etc/yum.repos.d/local.repo</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>BaseOS<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">name</span><span style="color:#ff6ac1">=</span>BaseOS 
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">baseurl</span><span style="color:#ff6ac1">=</span>file:///mnt/BaseOS 
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">gpgcheck</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span> 
@@ -1150,80 +1101,80 @@ Line 5 shows if packages are to be GPGchecked for authenticity.</p>
 <ol start="4">
 <li>Verify the configuration with dnf repolist. You should see numbers in thousands under the Status column for both repositories.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf repolist -v</span></span></code></pre></div>
-<h3 id="lab--install-and-manage-individual-packages">Lab:  Install and Manage Individual Packages</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf repolist -v</span></span></code></pre></div>
+<h3 id="lab--install-and-manage-individual-packages">Lab:  Install and Manage Individual Packages<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>List all installed and available packages separately.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf list --available <span style="color:#ff6ac1">&amp;&amp;</span> dnf list --installed</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf list --available <span style="color:#ff6ac1">&amp;&amp;</span> dnf list --installed</span></span></code></pre></div>
 <ol start="2">
 <li>Show which package contains the /etc/group file.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf provides /etc/group</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf provides /etc/group</span></span></code></pre></div>
 <ol start="3">
 <li>Install the package <em>httpd</em>.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf -y install httpd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf -y install httpd</span></span></code></pre></div>
 <ol start="4">
 <li>Review /var/log/yum.log/ for confirmation. (/var/lib/dnf/history)</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  dnf history</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  dnf history</span></span></code></pre></div>
 <ol start="5">
 <li>Perform the following on the httpd package:</li>
 <li>Show information</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf info httpd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf info httpd</span></span></code></pre></div>
 <ol start="2">
 <li>List dependencies</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf repoquery --requires httpd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf repoquery --requires httpd</span></span></code></pre></div>
 <ol start="3">
 <li>Remove it</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf remove httpd</span></span></code></pre></div>
-<h3 id="lab-install-and-manage-package-groups">Lab Install and Manage Package Groups</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf remove httpd</span></span></code></pre></div>
+<h3 id="lab-install-and-manage-package-groups">Lab Install and Manage Package Groups<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>List all installed and available package groups separately.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group list available <span style="color:#ff6ac1">&amp;&amp;</span> dnf group list installed</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group list available <span style="color:#ff6ac1">&amp;&amp;</span> dnf group list installed</span></span></code></pre></div>
 <ol>
 <li>Install package groups <em>Security Tools</em> and <em>Scientific Support.</em></li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group install <span style="color:#5af78e">&#39;Security Tools&#39;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group install <span style="color:#5af78e">&#39;Security Tools&#39;</span></span></span></code></pre></div>
 <ol start="2">
 <li>Review /var/log/yum.log for confirmation.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf history</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf history</span></span></code></pre></div>
 <ol start="3">
 <li>Show the packages included in the Scientific Support package group, and delete this group.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group info <span style="color:#5af78e">&#39;Scientific Support&#39;</span> <span style="color:#ff6ac1">&amp;&amp;</span> dnf group  remove <span style="color:#5af78e">&#39;Scientific Support&#39;</span></span></span></code></pre></div>
-<h3 id="lab-install-and-manage-modules">Lab: Install and Manage Modules</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf group info <span style="color:#5af78e">&#39;Scientific Support&#39;</span> <span style="color:#ff6ac1">&amp;&amp;</span> dnf group  remove <span style="color:#5af78e">&#39;Scientific Support&#39;</span></span></span></code></pre></div>
+<h3 id="lab-install-and-manage-modules">Lab: Install and Manage Modules<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol start="4">
 <li>List all modules. Identify which modules, streams and profiles are installed, default, disabled, and enabled from the output.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list</span></span></code></pre></div>
 <ol start="5">
 <li>Install the default stream of the development profile for module <em>php</em>, and verify.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module install php <span style="color:#ff6ac1">&amp;&amp;</span> dnf module list</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module install php <span style="color:#ff6ac1">&amp;&amp;</span> dnf module list</span></span></code></pre></div>
 <ol start="6">
 <li>Remove the module.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module remove php</span></span></code></pre></div>
-<h3 id="lab-switch-module-streams-and-install-software">Lab Switch Module Streams and Install Software</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module remove php</span></span></code></pre></div>
+<h3 id="lab-switch-module-streams-and-install-software">Lab Switch Module Streams and Install Software<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol start="7">
 <li>List <em>postgresql</em> module. This will display the streams and profiles, and their status.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list postgresql</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module list postgresql</span></span></code></pre></div>
 <ol start="8">
 <li>Reset both streams</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module reset postgresql</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module reset postgresql</span></span></code></pre></div>
 <ol start="9">
 <li>enable the stream for the older version, and install its client profile.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module install postgresql:15</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf module install postgresql:15</span></span></code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -1295,8 +1246,8 @@ Line 5 shows if packages are to be GPGchecked for authenticity.</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1322,23 +1273,23 @@ Line 5 shows if packages are to be GPGchecked for authenticity.</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="Chapter 5 - Ansible Playbooks - Beyond the Basics The playbooks and simple playbook organization we used in the previous chapter cover many common use cases. When discussing the breadth of system administration needs, there are thousands more features of Ansible you need to know.
 We’ll cover how to run plays with more granularity, how to organize your tasks and playbooks for simplicity and usability, and other advanced playbook topics that will help you manage your infrastructure with even more confidence.">
@@ -12,7 +12,7 @@ We’ll cover how to run plays with more granularity, how to organize your tasks
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="Chapter 5 - Ansible Playbooks - Beyond the Basics The playbooks and simple playbook organization we used in the previous chapter cover many common use cases. When discussing the breadth of system administration needs, there are thousands more features of Ansible you need to know.
 We’ll cover how to run plays with more granularity, how to organize your tasks and playbooks for simplicity and usability, and other advanced playbook topics that will help you manage your infrastructure with even more confidence.">
-    <meta property="og:url" content="https://linuxreader.com/ansible/ansible4devops/chapter-5---ansible-playbooks---beyond-the-basics/">
+    <meta property="og:url" content="http://localhost:1313/ansible/ansible4devops/chapter-5---ansible-playbooks---beyond-the-basics/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:description" content="Chapter 5 - Ansible Playbooks - Beyond the Basics The playbooks and simple playbook organization we used in the previous chapter cover many common use cases. When discussing the breadth of system administration needs, there are thousands more features of Ansible you need to know.
 We’ll cover how to run plays with more granularity, how to organize your tasks and playbooks for simplicity and usability, and other advanced playbook topics that will help you manage your infrastructure with even more confidence.">
@@ -23,39 +23,35 @@ We’ll cover how to run plays with more granularity, how to organize your tasks
 We’ll cover how to run plays with more granularity, how to organize your tasks and playbooks for simplicity and usability, and other advanced playbook topics that will help you manage your infrastructure with even more confidence.">
     <meta itemprop="wordCount" content="8166">
     <title></title>
-    <link href="/ansible/ansible4devops/chapter-5---ansible-playbooks---beyond-the-basics/index.xml" rel="alternate" type="application/rss+xml" title="">
-    <link href="/ansible/ansible4devops/chapter-5---ansible-playbooks---beyond-the-basics/index.print.html" rel="alternate" type="text/html" title="">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/ansible\/ansible4devops\/chapter-5---ansible-playbooks---beyond-the-basics\/';
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -63,14 +59,14 @@ We’ll cover how to run plays with more granularity, how to organize your tasks
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -98,49 +94,7 @@ We’ll cover how to run plays with more granularity, how to organize your tasks
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -160,14 +114,14 @@ We’ll cover how to run plays with more granularity, how to organize your tasks
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/" title="Ansible (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/" title="Ansible (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -220,12 +174,9 @@ We’ll cover how to run plays with more granularity, how to organize your tasks
             
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ansible4devops/chapter-5---ansible-playbooks---beyond-the-basics/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ad-hoc-ansible-commands/" title="Ad Hoc Ansible Commands (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/ad-hoc-ansible-commands/" title="Ad Hoc Ansible Commands (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -246,7 +197,7 @@ We’ll cover how to run plays with more granularity, how to organize your tasks
 
 <h1 id=""></h1>
 
-<h2 id="chapter-5---ansible-playbooks---beyond-the-basics">Chapter 5 - Ansible Playbooks - Beyond the Basics</h2>
+<h2 id="chapter-5---ansible-playbooks---beyond-the-basics">Chapter 5 - Ansible Playbooks - Beyond the Basics<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>The playbooks and simple playbook organization we used in the previous
 chapter cover many common use cases. When discussing the breadth of
 system administration needs, there are thousands more features of
@@ -255,7 +206,7 @@ Ansible you need to know.</p>
 tasks and playbooks for simplicity and usability, and other advanced
 playbook topics that will help you manage your infrastructure with even
 more confidence.</p>
-<h3 id="chap07.xhtml_leanpub-auto-handlers">Handlers</h3>
+<h3 id="chap07.xhtml_leanpub-auto-handlers">Handlers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>In chapter 4, the Ubuntu LAMP server example used a simple handler to
 restart Apache, and certain tasks that affected Apache&rsquo;s configuration
 notified the handler with the option <code>notify: restart apache</code>:</p>
@@ -318,7 +269,7 @@ playbook, or you use the command line flag <code>--force-handlers</code> when
 running your playbook. Handlers won&rsquo;t run on any hosts that became
 unreachable during the playbook&rsquo;s run.</li>
 </ul>
-<h3 id="chap07.xhtml_leanpub-auto-environment-variables">Environment variables</h3>
+<h3 id="chap07.xhtml_leanpub-auto-environment-variables">Environment variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Ansible allows you to work with environment variables in a variety of
 ways. First of all, if you need to set some environment variables for
 your remote user account, you can do that by adding lines to the remote
@@ -379,7 +330,7 @@ server with <code>lineinfile</code>. If your application requires many environme
 variables (as is the case in many Java applications), you might consider
 using <code>copy</code> or <code>template</code> with a local file instead of using
 <code>lineinfile</code> with a large list of items.</p>
-<h4 id="chap07.xhtml_leanpub-auto-per-play-environment-variables">Per-play environment variables</h4>
+<h4 id="chap07.xhtml_leanpub-auto-per-play-environment-variables">Per-play environment variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>You can also set the environment for just one play, using the
 <code>environment</code> option for that play. As an example, let&rsquo;s say you need to
 set an http proxy for a certain file download. This can be done with:</p>
@@ -442,7 +393,7 @@ your use of quotes and escaping&mdash;you might end up using double quotes
 where you meant to use single quotes, or vice-versa, and end up printing
 a local environment variable instead of one from the remote server!</p>
 </aside>
-<h3 id="chap07.xhtml_leanpub-auto-variables">Variables</h3>
+<h3 id="chap07.xhtml_leanpub-auto-variables">Variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Variables in Ansible work just like variables in most other systems.
 Variables always begin with a letter (<code>[A-Za-z]</code>), and can include any
 number of underscores (<code>_</code>) or numbers (<code>[0-9]</code>).</p>
@@ -466,7 +417,7 @@ using a colon, like so:</p>
 <pre><code>foo: bar</code></pre>
 </div>
 </figure>
-<h4 id="chap07.xhtml_leanpub-auto-playbook-variables">Playbook Variables</h4>
+<h4 id="chap07.xhtml_leanpub-auto-playbook-variables">Playbook Variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>There are many different ways you can define variables to use in tasks.</p>
 <p>Variables can be passed in via the command line, when calling
 <code>ansible-playbook</code>, with the <code>--extra-vars</code> option:</p>
@@ -542,7 +493,7 @@ name. If ansible can&rsquo;t find a file with that name, it will use the
 second option (<code>apache_default.yml</code>). So, on a Debian or Ubuntu server,
 Ansible would correctly use <code>apache2</code> as the service name, even though
 there is no <code>apache_Debian.yml</code> or <code>apache_Ubuntu.yml</code> file available.</p>
-<h4 id="chap07.xhtml_inventory-variables">Inventory variables</h4>
+<h4 id="chap07.xhtml_inventory-variables">Inventory variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Variables may also be added via Ansible inventory files, either inline
 with a host definition, or after a group:</p>
 <figure class="code">
@@ -586,7 +537,7 @@ directory first (if the appropriate files exist), then it will use
 variables defined in the playbook directories.</p>
 <p>Another alternative to using <code>host_vars</code> and <code>group_vars</code> is to use
 conditional variable file imports, as was mentioned above.</p>
-<h4 id="chap07.xhtml_leanpub-auto-registered-variables">Registered Variables</h4>
+<h4 id="chap07.xhtml_leanpub-auto-registered-variables">Registered Variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>There are many times that you will want to run a command, then use its
 return code, stderr, or stdout to determine whether to run a later task.
 For these situations, Ansible allows you to use <code>register</code> to store the
@@ -610,7 +561,7 @@ needed to start our Node.js app:</p>
 search for the path to our app, and if it was not present, the Node.js
 app was started.</p>
 <p>We will explore the use of <code>register</code> further later in this chapter.</p>
-<h4 id="chap07.xhtml_leanpub-auto-accessing-variables">Accessing Variables</h4>
+<h4 id="chap07.xhtml_leanpub-auto-accessing-variables">Accessing Variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Simple variables (gathered by Ansible, defined in inventory files, or
 defined in playbook or variable files) can be used as part of a task
 using syntax like <code>{{ variable }}</code>. For example:</p>
@@ -699,7 +650,7 @@ the server:</p>
 {{ ansible_eth0[&#39;ipv4&#39;][&#39;address&#39;] }}</code></pre>
 </div>
 </figure>
-<h4 id="chap07.xhtml_leanpub-auto-host-and-group-variables">Host and Group variables</h4>
+<h4 id="chap07.xhtml_leanpub-auto-host-and-group-variables">Host and Group variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Ansible conveniently lets you define or override variables on a per-host
 or per-group basis. As we learned earlier, your inventory file can
 define groups and hosts like so:</p>
@@ -731,7 +682,7 @@ two per-host or per-group, but once you start getting into more involved
 playbooks, you might need to add a few (3+) host-specific variables. In
 these situations, you can define the variables in a different place to
 make maintenance and readability much easier.</p>
-<h5 id="chap07.xhtml_leanpub-auto-automatically-loaded-groupvars-and-hostvars">Automatically-loaded <code>group_vars</code> and <code>host_vars</code></h5>
+<h5 id="chap07.xhtml_leanpub-auto-automatically-loaded-groupvars-and-hostvars">Automatically-loaded <code>group_vars</code> and <code>host_vars</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
 <p>Ansible will search within the same directory as your inventory file (or
 inside <code>/etc/ansible</code> if you&rsquo;re using the default inventory file at
 <code>/etc/ansible/hosts</code>) for two specific directories: <code>group_vars</code> and
@@ -764,7 +715,7 @@ source-control repository.</p>
 groups, as well as a <code>host_vars/all</code> file that would apply to <em>all</em>
 hosts. Usually, though, it&rsquo;s best to provide defaults in your playbooks
 and roles (which will be discussed later).</p>
-<h5 id="chap07.xhtml_leanpub-auto-magic-variables-with-host-and-group-variables-and-information">Magic variables with host and group variables and information</h5>
+<h5 id="chap07.xhtml_leanpub-auto-magic-variables-with-host-and-group-variables-and-information">Magic variables with host and group variables and information<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
 <p>If you ever need to retrieve a specific host&rsquo;s variables from another
 host, Ansible provides a magic <code>hostvars</code> variable containing all the
 defined host variables (from inventory files and any discovered YAML
@@ -792,7 +743,7 @@ to the first period.</li>
 Hosts</a>
 in Ansible&rsquo;s official documentation for the latest information and
 further usage examples.</p>
-<h4 id="chap07.xhtml_leanpub-auto-facts-variables-derived-from-system-information">Facts (Variables derived from system information)</h4>
+<h4 id="chap07.xhtml_leanpub-auto-facts-variables-derived-from-system-information">Facts (Variables derived from system information)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>By default, whenever you run an Ansible playbook, Ansible first gathers
 information (&ldquo;facts&rdquo;) about each host in the play. You may have noticed
 this whenever we ran playbooks in earlier chapters:</p>
@@ -862,7 +813,7 @@ less than five different hosting providers, running on vastly different
 hardware, so I am sure to monitor the output of my <code>ansible-playbook</code>
 runs for abnormalities, especially when adding new servers to the mix.</p>
 </aside>
-<h5 id="chap07.xhtml_leanpub-auto-local-facts-factsd">Local Facts (Facts.d)</h5>
+<h5 id="chap07.xhtml_leanpub-auto-local-facts-factsd">Local Facts (Facts.d)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
 <p>Another way of defining host-specific facts is to place <code>.fact</code> file in
 a special directory on remote hosts, <code>/etc/ansible/facts.d/</code>. These
 files can be either JSON or INI files, or you could use executables that
@@ -920,7 +871,7 @@ host-specific facts.</p>
 <p>Note that <code>setup</code> module options (like <code>filter</code>) won&rsquo;t work on remote
 Windows hosts, as of this writing.</p>
 </aside>
-<h4 id="chap07.xhtml_leanpub-auto-ansible-vault---keeping-secrets-secret">Ansible Vault - Keeping secrets secret</h4>
+<h4 id="chap07.xhtml_leanpub-auto-ansible-vault---keeping-secrets-secret">Ansible Vault - Keeping secrets secret<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>If you use Ansible to fully automate the provisioning and configuration
 of your servers, chances are you will need to use passwords or other
 sensitive data for some tasks, whether it&rsquo;s setting a default admin
@@ -1074,7 +1025,7 @@ password and store <em>it</em> securely!</p>
 <p>More options and examples are available in the <a href="http://docs.ansible.com/ansible/playbooks_vault.html" rel="external" target="_blank">official documentation
 for Ansible
 Vault</a>.</p>
-<h4 id="chap07.xhtml_leanpub-auto-variable-precedence">Variable Precedence</h4>
+<h4 id="chap07.xhtml_leanpub-auto-variable-precedence">Variable Precedence<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>It should be rare that you would need to dig into the details of which
 variable is used when you define the same variable in five different
 places, but since there are odd occasions where this is the case,
@@ -1116,7 +1067,7 @@ idempotence of the tasks you&rsquo;re running.</li>
 <p>See Ansible&rsquo;s <a href="http://docs.ansible.com/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable" rel="external" target="_blank">Variable
 Precedence</a>
 documentation for more detail and examples.</p>
-<h3 id="chap07.xhtml_leanpub-auto-ifthenwhen---conditionals">If/then/when - Conditionals</h3>
+<h3 id="chap07.xhtml_leanpub-auto-ifthenwhen---conditionals">If/then/when - Conditionals<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Many tasks need only be run in certain circumstances. Some tasks use
 modules with built-in idempotence (as is the case when ensuring a yum or
 apt package is installed), and you usually don&rsquo;t need to define further
@@ -1128,7 +1079,7 @@ been run, or when they&rsquo;ve failed to run.</p>
 <p>We&rsquo;ll cover all the main conditionals behaviors you can apply to Ansible
 tasks, as well as how you can tell Ansible when a play has done
 something to a server or failed.</p>
-<h4 id="chap07.xhtml_leanpub-auto-jinja2-expressions-python-built-ins-and-logic">Jinja2 Expressions, Python built-ins, and Logic</h4>
+<h4 id="chap07.xhtml_leanpub-auto-jinja2-expressions-python-built-ins-and-logic">Jinja2 Expressions, Python built-ins, and Logic<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Before discussing all the different uses of conditionals in Ansible,
 it&rsquo;s worthwhile to cover a small part of Jinja2 (the syntax Ansible uses
 both for templates and for conditionals), and available Python functions
@@ -1155,7 +1106,7 @@ quickly.</p>
 &#39;see&#39; in &#39;Can you see me?&#39;
 foo != bar
 (1 &lt; 2) and (&#39;a&#39; not in &#39;best&#39;)
-<h1 id="the-following-expressions-evaluate-to-39false39">The following expressions evaluate to 'false':</h1>
+<h1 id="the-following-expressions-evaluate-to-39false39">The following expressions evaluate to 'false':<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p>4 in [1, 2, 3]
 foo == bar
 (foo != foo) or (a in [1, 2, 3])</code></pre></p>
@@ -1193,7 +1144,7 @@ choose to run (or not run) a certain task:</p>
 <p>It&rsquo;s generally best to stick with simpler Jinja2 filters and variables,
 but it&rsquo;s nice to be able to use Python when you&rsquo;re doing more advanced
 variable manipulation.</p>
-<h4 id="chap07.xhtml_leanpub-auto-register"><code>register</code></h4>
+<h4 id="chap07.xhtml_leanpub-auto-register"><code>register</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>In Ansible, any play can &lsquo;register&rsquo; a variable, and once registered,
 that variable will be available to all subsequent tasks. Registered
 variables work just like normal variables or host facts.</p>
@@ -1222,7 +1173,7 @@ resulted in a change), <code>delta</code> (the time it took to run the play),
 more data to the registered variable, so always inspect the output with
 <code>-v</code> if you need to see what&rsquo;s inside.</p>
 </aside>
-<h4 id="chap07.xhtml_leanpub-auto-when"><code>when</code></h4>
+<h4 id="chap07.xhtml_leanpub-auto-when"><code>when</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>One of the most helpful extra keys you can add to a play is a <code>when</code>
 statement. Let&rsquo;s take a look at a simple use of <code>when</code>:</p>
 <figure class="code">
@@ -1269,13 +1220,13 @@ real-world playbooks:</p>
   register: forever_list
 - command: forever start /path/to/app/app.js
   when: &quot;forever_list.stdout.find(&#39;/path/to/app/app.js&#39;) == -1&quot;
-<h1 id="run-39ping-hostssh39-script-if-39ping_hosts39-variable-is-true">Run 'ping-hosts.sh' script if 'ping_hosts' variable is true.</h1>
+<h1 id="run-39ping-hostssh39-script-if-39ping_hosts39-variable-is-true">Run 'ping-hosts.sh' script if 'ping_hosts' variable is true.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <ul>
 <li>command: /usr/local/bin/ping-hosts.sh
 when: ping_hosts</li>
 </ul>
-<h1 id="run-39git-cleanupsh39-script-if-a-branch-we39re-interested-in-is">Run 'git-cleanup.sh' script if a branch we're interested in is</h1>
-<h1 id="missing-from-git39s-list-of-branches-in-our-project">missing from git's list of branches in our project.</h1>
+<h1 id="run-39git-cleanupsh39-script-if-a-branch-we39re-interested-in-is">Run 'git-cleanup.sh' script if a branch we're interested in is<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<h1 id="missing-from-git39s-list-of-branches-in-our-project">missing from git's list of branches in our project.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <ul>
 <li>command: chdir=/path/to/project git branch
 register: git_branches</li>
@@ -1283,14 +1234,14 @@ register: git_branches</li>
 when: &quot;(is_app_server == true) and ('interesting-branch' not in <br>
 git_branches.stdout)&quot;</li>
 </ul>
-<h1 id="downgrade-php-version-if-the-current-version-contains-397039">Downgrade PHP version if the current version contains '7.0'.</h1>
+<h1 id="downgrade-php-version-if-the-current-version-contains-397039">Downgrade PHP version if the current version contains '7.0'.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <ul>
 <li>shell: php &ndash;version
 register: php_version</li>
 <li>shell: yum -y downgrade php*
 when: &quot;'7.0' in php_version.stdout&quot;</li>
 </ul>
-<h1 id="copy-a-file-to-the-remote-server-if-the-hosts-file-doesn39t-exist">Copy a file to the remote server if the hosts file doesn't exist.</h1>
+<h1 id="copy-a-file-to-the-remote-server-if-the-hosts-file-doesn39t-exist">Copy a file to the remote server if the hosts file doesn't exist.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <ul>
 <li>stat: path=/etc/hosts
 register: hosts_file</li>
@@ -1299,7 +1250,7 @@ when: hosts_file.stat.exists == false</code></pre></li>
 </ul>
 </div>
 </figure>
-<h4 id="chap07.xhtml_leanpub-auto-changedwhen-and-failedwhen"><code>changed_when</code> and <code>failed_when</code></h4>
+<h4 id="chap07.xhtml_leanpub-auto-changedwhen-and-failedwhen"><code>changed_when</code> and <code>failed_when</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Just like <code>when</code>, you can use <code>changed_when</code> and <code>failed_when</code> to
 influence Ansible&rsquo;s reporting of when a certain task results in changes
 or failures.</p>
@@ -1344,7 +1295,7 @@ returns an error, <strong>and</strong> that error doesn&rsquo;t contain &lsquo;a
 It&rsquo;s debatable whether the command should report a job already exists
 via stderr, or just print the result to stdout&hellip; but it&rsquo;s easy to
 account for whatever the command does with Ansible!</p>
-<h4 id="chap07.xhtml_leanpub-auto-ignoreerrors"><code>ignore_errors</code></h4>
+<h4 id="chap07.xhtml_leanpub-auto-ignoreerrors"><code>ignore_errors</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Sometimes there are commands that should be run always, and they often
 report errors. Or there are scripts you might run that output errors
 left and right, and the errors don&rsquo;t actually indicate a problem, but
@@ -1354,7 +1305,7 @@ Ansible will remain blissfully unaware of any problems running a
 particular task. Be careful using this, though; it&rsquo;s usually best if you
 can find a way to work with and around the errors generated by tasks so
 playbooks <em>do</em> fail if there are actual problems.</p>
-<h3 id="chap07.xhtml_leanpub-auto-delegation-local-actions-and-pauses">Delegation, Local Actions, and Pauses</h3>
+<h3 id="chap07.xhtml_leanpub-auto-delegation-local-actions-and-pauses">Delegation, Local Actions, and Pauses<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Some tasks, like sending a notification, communicating with load
 balancers, or making changes to DNS, networking, or monitoring servers,
 require Ansible to run the task on the host machine (running the
@@ -1389,7 +1340,7 @@ shorthand you can use, <code>local_action</code>, instead of adding the entire
 2   local_action: command remove-from-lb {{ inventory_hostname }}</code></pre>
 </div>
 </figure>
-<h4 id="chap07.xhtml_leanpub-auto-pausing-playbook-execution-with-waitfor">Pausing playbook execution with <code>wait_for</code></h4>
+<h4 id="chap07.xhtml_leanpub-auto-pausing-playbook-execution-with-waitfor">Pausing playbook execution with <code>wait_for</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>You might also use <code>local_action</code> in the middle of a playbook to wait
 for a freshly-booted server or application to start listening on a
 particular port:</p>
@@ -1421,7 +1372,7 @@ if a given port has drained all it&rsquo;s active connections.</li>
 <li>Using <code>delay</code>, you can simply pause playbook execution for a given
 amount of time (in seconds).</li>
 </ul>
-<h4 id="chap07.xhtml_leanpub-auto-running-an-entire-playbook-locally">Running an entire playbook locally</h4>
+<h4 id="chap07.xhtml_leanpub-auto-running-an-entire-playbook-locally">Running an entire playbook locally<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>When running playbooks on the server or workstation where the tasks need
 to be run (e.g. self-provisioning), or when a playbook should be
 otherwise run on the same host as the <code>ansible-playbook</code> command is run,
@@ -1452,7 +1403,7 @@ either running a playbook with <code>--check</code> mode to verify configuration
 (e.g. on a cron job that emails you when changes are reported), or when
 testing playbooks on testing infrastructure (e.g. via Travis, Jenkins,
 or some other CI tool).</p>
-<h3 id="chap07.xhtml_leanpub-auto-prompts">Prompts</h3>
+<h3 id="chap07.xhtml_leanpub-auto-prompts">Prompts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Under rare circumstances, you may require the user to enter the value of
 a variable that will be used in the playbook. If the playbook requires a
 user&rsquo;s personal login information, or if you prompt for a version or
@@ -1498,7 +1449,7 @@ most cases, you should avoid them unless absolutely necessary. It&rsquo;s
 preferable to use role or playbook variables, inventory variables, or
 even local environment variables, to maintain complete automation of the
 playbook run.</p>
-<h3 id="chap07.xhtml_leanpub-auto-tags">Tags</h3>
+<h3 id="chap07.xhtml_leanpub-auto-tags">Tags<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Tags allow you to run (or exclude) subsets of a playbook&rsquo;s tasks.</p>
 <p>You can tag roles, included files, individual tasks, and even entire
 plays. The syntax is simple, and below are examples of the different
@@ -1555,14 +1506,14 @@ YAML&rsquo;s list syntax, for example:</p>
 <div class="highlight">
 <pre><code># Shorthand list syntax.
 tags: [&#39;one&#39;, &#39;two&#39;, &#39;three&#39;]
-<h1 id="explicit-list-syntax">Explicit list syntax.</h1>
+<h1 id="explicit-list-syntax">Explicit list syntax.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p>tags:</p>
 <ul>
 <li>one</li>
 <li>two</li>
 <li>three</li>
 </ul>
-<h1 id="non-working-example">Non-working example.</h1>
+<h1 id="non-working-example">Non-working example.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p>tags: one, two, three</code></pre></p>
 </div>
 </figure>
@@ -1572,7 +1523,7 @@ generally avoid adding tags to individual tasks or includes (not adding
 tags everywhere reduces visual clutter). You will need to find a tagging
 style that suits your needs and lets you run (or <em>not</em> run) the specific
 parts of your playbooks you desire.</p>
-<h3 id="chap07.xhtml_leanpub-auto-blocks">Blocks</h3>
+<h3 id="chap07.xhtml_leanpub-auto-blocks">Blocks<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Introduced in Ansible 2.0.0, Blocks allow you to group related tasks
 together and apply particular task parameters on the block level. They
 also allow you to handle errors inside the blocks in a way similar to
@@ -1633,7 +1584,7 @@ failure handling can over-complicate things. If it&rsquo;s easier to maintain
 idempotence using <code>failed_when</code> per-task to define acceptable failure
 conditions, or to structure your playbook in a different way, it may not
 be necessary to use <code>block</code>/<code>rescue</code>/<code>always</code>.</p>
-<h3 id="chap07.xhtml_leanpub-auto-summary-4">Summary</h3>
+<h3 id="chap07.xhtml_leanpub-auto-summary-4">Summary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Playbooks are Ansible&rsquo;s primary means of automating infrastructure
 management. After reading this chapter, you should know how to use (and
 hopefully not abuse!) variables, inventories, handlers, conditionals,
@@ -1769,8 +1720,8 @@ with Ansible.</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1796,23 +1747,23 @@ with Ansible.</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

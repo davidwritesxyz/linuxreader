@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bash :: Linux Reader</title>
-    <link>https://linuxreader.com/bash/</link>
+    <link>http://localhost:1313/bash/</link>
     <description>Bash&#xD;Shell Scripting</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://linuxreader.com/bash/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/bash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bash</title>
-      <link>https://linuxreader.com/bash/bash-shell/</link>
+      <link>http://localhost:1313/bash/bash-shell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/bash/bash-shell/</guid>
+      <guid>http://localhost:1313/bash/bash-shell/</guid>
       <description>Bash variables, redirections, history substitution, metacharacters, startup files, etc.</description>
     </item>
     <item>
       <title>Shell Scripting</title>
-      <link>https://linuxreader.com/bash/shell-scripting/</link>
+      <link>http://localhost:1313/bash/shell-scripting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/bash/shell-scripting/</guid>
+      <guid>http://localhost:1313/bash/shell-scripting/</guid>
       <description>Shell scripting and logical constructs</description>
     </item>
   </channel>

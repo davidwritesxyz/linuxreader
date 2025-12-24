@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Nextcloud setup guide on a RHEL based server">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Nextcloud on RHEL Based Systems :: Linux Reader">
     <meta name="twitter:description" content="Nextcloud setup guide on a RHEL based server">
-    <meta property="og:url" content="https://linuxreader.com/tools/nextcloud-on-rhel-based-systems/">
+    <meta property="og:url" content="http://localhost:1313/tools/nextcloud-on-rhel-based-systems/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Nextcloud on RHEL Based Systems :: Linux Reader">
     <meta property="og:description" content="Nextcloud setup guide on a RHEL based server">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Nextcloud setup guide on a RHEL based server">
     <meta itemprop="wordCount" content="1961">
     <title>Nextcloud on RHEL Based Systems :: Linux Reader</title>
-    <link href="/tools/nextcloud-on-rhel-based-systems/index.xml" rel="alternate" type="application/rss+xml" title="Nextcloud on RHEL Based Systems :: Linux Reader">
-    <link href="/tools/nextcloud-on-rhel-based-systems/index.print.html" rel="alternate" type="text/html" title="Nextcloud on RHEL Based Systems :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/tools\/nextcloud-on-rhel-based-systems\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/how-to-set-up-hugo-relearn-theme/" title="How to Set Up Hugo Relearn Theme (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tools/how-to-set-up-hugo-relearn-theme/" title="How to Set Up Hugo Relearn Theme (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -223,12 +177,9 @@
             Nextcloud on RHEL Based Systems
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/nextcloud-on-rhel-based-systems/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/setting-up-a-self-hosted-nextcloud-server/" title="Self hosting a Nextcloud Server (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tools/setting-up-a-self-hosted-nextcloud-server/" title="Self hosting a Nextcloud Server (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -250,7 +201,7 @@
 <h1 id="nextcloud-on-rhel-based-systems">Nextcloud on RHEL Based Systems</h1>
 
 <p>I&rsquo;m going to show you how to set up your own, self-hosted Nextcloud server using Alma Linux 9 and Apache.</p>
-<h3 id="what-is-nextcloud">What is Nextcloud?</h3>
+<h3 id="what-is-nextcloud">What is Nextcloud?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Nextcloud is so many things. It offers so many features and options, it deserves a bulleted list:</p>
 <ul>
 <li>Free and open source</li>
@@ -281,7 +232,7 @@
 <li>sql database (This tutorial uses MariaDB)</li>
 </ul>
 <p>Official docs: <a href="https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html" rel="external" target="_blank">https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html</a></p>
-<h2 id="server-specs">Server Specs</h2>
+<h2 id="server-specs">Server Specs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Hard drives:
 120g main
 500g data
@@ -292,8 +243,8 @@ RAM: 32768</p>
 <p>ip 10.0.10.56/24
 root: { password }
 davidt: { password }</p>
-<h3 id="storage-setup">Storage setup</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir /var/www/nextcloud/ -p
+<h3 id="storage-setup">Storage setup<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir /var/www/nextcloud/ -p
 </span></span><span style="display:flex;"><span>mkdir /home/databkup
 </span></span><span style="display:flex;"><span>parted /dev/sdb mklabel gpt
 </span></span><span style="display:flex;"><span>parted /dev/sdb mkpart primary 0% 100%
@@ -306,7 +257,7 @@ davidt: { password }</p>
 </span></span><span style="display:flex;"><span>blkid /dev/sdc1 &gt;&gt; /etc/fstab
 </span></span><span style="display:flex;"><span>vim /etc/fstab
 </span></span><span style="display:flex;"><span>mount -a</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@dt-lab2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@dt-lab2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk</span>
 </span></span><span style="display:flex;"><span>NAME               MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
 </span></span><span style="display:flex;"><span>sda                  8:0    <span style="color:#ff9f43">0</span>  120G  <span style="color:#ff9f43">0</span> disk 
 </span></span><span style="display:flex;"><span>├─sda1               8:1    <span style="color:#ff9f43">0</span>    1G  <span style="color:#ff9f43">0</span> part /boot
@@ -318,22 +269,22 @@ davidt: { password }</p>
 </span></span><span style="display:flex;"><span>└─sdb1               8:17   <span style="color:#ff9f43">0</span>  500G  <span style="color:#ff9f43">0</span> part /var/www/nextcloud
 </span></span><span style="display:flex;"><span>sdc                  8:32   <span style="color:#ff9f43">0</span>  250G  <span style="color:#ff9f43">0</span> disk 
 </span></span><span style="display:flex;"><span>└─sdc1               8:33   <span style="color:#ff9f43">0</span>  250G  <span style="color:#ff9f43">0</span> part /home/databkup</span></span></code></pre></div>
-<h1 id="setting-up-dependencies">Setting up dependencies</h1>
-<h2 id="install-latest-supported-php">Install latest supported PHP</h2>
+<h1 id="setting-up-dependencies">Setting up dependencies<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<h2 id="install-latest-supported-php">Install latest supported PHP<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>I used this guide to help get a supported php version. As php 2 installed from dnf repos by default:
 <a href="https://orcacore.com/php83-installation-almalinux9-rockylinux9/" rel="external" target="_blank">https://orcacore.com/php83-installation-almalinux9-rockylinux9/</a></p>
 <p>Make sure dnf is up to date:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf update -y
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf update -y
 </span></span><span style="display:flex;"><span>sudo dnf upgrade -y</span></span></code></pre></div>
 <p>Set up the epel repository:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf install epel-release -y</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf install epel-release -y</code></pre></div>
 <p>Set up remi to manage php modules:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf install -y dnf-utils http://rpms.remirepo.net/enterprise/remi-release-9.rpm
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf install -y dnf-utils http://rpms.remirepo.net/enterprise/remi-release-9.rpm
 sudo dnf update -y</code></pre></div>
 <p>Remove old versions of php:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf remove php* -y</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf remove php* -y</code></pre></div>
 <p>List available php streams:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf module list reset php -y
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf module list reset php -y
 
 Last metadata expiration check: 1:03:46 ago on Sun 29 Dec 2024 03:34:52 AM MST.
 AlmaLinux 9 - AppStream
@@ -350,24 +301,24 @@ php                 remi-8.2                    common [d], devel, minimal      
 php                 remi-8.3 [e]                common [d], devel, minimal                PHP scripting language              
 php                 remi-8.4                    common [d], devel, minimal                PHP scripting language       </code></pre></div>
 <p>Enable the correct stream:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf module enable php:remi-8.3</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf module enable php:remi-8.3</code></pre></div>
 <p>Now the default to install is version 8.3, install it like this:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf install php -y
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf install php -y
 php -v</code></pre></div>
 <p>Let&rsquo;s install git, as it&rsquo;s also needed in this setup:
 <code>sudo dnf -y install git</code></p>
 <p>Install Composer for managing php modules:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">cd</span> <span style="color:#ff6ac1">&amp;&amp;</span> curl -sS https://getcomposer.org/installer | php
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">cd</span> <span style="color:#ff6ac1">&amp;&amp;</span> curl -sS https://getcomposer.org/installer | php
 </span></span><span style="display:flex;"><span>sudo mv composer.phar /usr/local/bin/composer</span></span></code></pre></div>
 <p>Install needed PHP modules:
 <code>sudo dnf -y install php-process php-zip php-gd php-mysqlnd php-ldap php-imagick php-bcmath php-gmp php-intl</code></p>
 <p>Upgrade php memory limit:
 <code>sudo vim /etc/php.ini</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">memory_limit</span> <span style="color:#ff6ac1">=</span> 512M</span></span></code></pre></div>
-<h2 id="apache-setup">Apache setup</h2>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">memory_limit</span> <span style="color:#ff6ac1">=</span> 512M</span></span></code></pre></div>
+<h2 id="apache-setup">Apache setup<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Add Apache config for vhost:
 <code>sudo vim /etc/httpd/conf.d/nextcloud.conf</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&lt;VirtualHost *:80&gt;
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&lt;VirtualHost *:80&gt;
 </span></span><span style="display:flex;"><span>  DocumentRoot /var/www/nextcloud/
 </span></span><span style="display:flex;"><span>  ServerName  cloud.<span style="color:#ff6ac1">{</span> site-name <span style="color:#ff6ac1">}</span>.com
 </span></span><span style="display:flex;"><span>
@@ -381,29 +332,29 @@ php -v</code></pre></div>
 </span></span><span style="display:flex;"><span>    &lt;/IfModule&gt;
 </span></span><span style="display:flex;"><span>  &lt;/Directory&gt;
 </span></span><span style="display:flex;"><span>&lt;/VirtualHost&gt;</span></span></code></pre></div>
-<h2 id="set-up-the-mysql-database">Set up the mysql database</h2>
+<h2 id="set-up-the-mysql-database">Set up the mysql database<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Install:
 <code>sudo dnf install mariadb-server -y</code></p>
 <p>Enable the service:
 <code>sudo systemctl enable --now mariadb</code></p>
 <p>Nextcloud needs some tables setup in order to store information in a database. First set up a secure sql database:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo mysql_secure_installation</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo mysql_secure_installation</code></pre></div>
 <p>Say “Yes” to the prompts and enter root password:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Switch to unix_socket authentication [Y/n]: Y
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Switch to unix_socket authentication [Y/n]: Y
 Change the root password? [Y/n]: Y	# enter password.
 Remove anonymous users? [Y/n]: Y
 Disallow root login remotely? [Y/n]: Y
 Remove test database and access to it? [Y/n]: Y
 Reload privilege tables now? [Y/n]: Y</code></pre></div>
 <p>Sign in to your SQL database with the password you just chose:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>mysql -u root -p</code></pre></div>
-<h3 id="create-the-database">Create the database:</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>mysql -u root -p</code></pre></div>
+<h3 id="create-the-database">Create the database:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>While signed in with the mysql command, enter the commands below one at a time. Make sure to replace the username and password. But leave localhost as is:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>CREATE DATABASE nextcloud;
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>CREATE DATABASE nextcloud;
 GRANT ALL ON nextcloud.* TO &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;{ password }&#39;;
 FLUSH PRIVILEGES;
 EXIT;</code></pre></div>
-<h1 id="nextcloud-install">Nextcloud Install</h1>
+<h1 id="nextcloud-install">Nextcloud Install<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p>Download nextcloud onto the server.
 Extract the contents to /var/www/nextcloud
 <code>tar -xjf nextcloud-31.0.4.tar.bz2 -C /var/www/ --strip-components=1</code></p>
@@ -411,28 +362,28 @@ Extract the contents to /var/www/nextcloud
 <code>sudo chmod -R 755 /var/www/nextcloud</code>
 <code>sudo chown -R apache:apache /var/www/nextcloud</code></p>
 <p>Selinux:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo semanage fcontext -a -t httpd_sys_content_t <span style="color:#5af78e">&#34;/var/www/nextcloud(/.*)?&#34;</span> <span style="color:#ff6ac1">&amp;&amp;</span> <span style="color:#5af78e">\
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo semanage fcontext -a -t httpd_sys_content_t <span style="color:#5af78e">&#34;/var/www/nextcloud(/.*)?&#34;</span> <span style="color:#ff6ac1">&amp;&amp;</span> <span style="color:#5af78e">\
 </span></span></span><span style="display:flex;"><span><span style="color:#5af78e"></span>sudo semanage fcontext -a -t httpd_sys_rw_content_t <span style="color:#5af78e">&#34;/var/www/nextcloud/(config|data|apps)(/.*)?&#34;</span> <span style="color:#ff6ac1">&amp;&amp;</span> <span style="color:#5af78e">\
 </span></span></span><span style="display:flex;"><span><span style="color:#5af78e"></span>sudo semanage fcontext -a -t httpd_sys_rw_content_t <span style="color:#5af78e">&#34;/var/www/nextcloud/data(/.*)?&#34;</span>
 </span></span><span style="display:flex;"><span>sudo restorecon -Rv /var/www/nextcloud/</span></span></code></pre></div>
 <p>Now we can actually install Nextcloud. <code>cd</code> to the /var/www/nextcloud directory and run occ with these settings to install:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo -u apache php occ  maintenance:install <span style="color:#5af78e">\
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo -u apache php occ  maintenance:install <span style="color:#5af78e">\
 </span></span></span><span style="display:flex;"><span><span style="color:#5af78e"></span>--database<span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;mysql&#39;</span> --database-name<span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;nextcloud&#39;</span> <span style="color:#5af78e">\
 </span></span></span><span style="display:flex;"><span><span style="color:#5af78e"></span>--database-user<span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;root&#39;</span> --database-pass<span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;{ password }&#39;</span> <span style="color:#5af78e">\
 </span></span></span><span style="display:flex;"><span><span style="color:#5af78e"></span>--admin-user<span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;admin&#39;</span> --admin-pass<span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;{ password }&#39;</span></span></span></code></pre></div>
-<h3 id="create-a-cname-record-for-dns">Create a CNAME record for DNS.</h3>
+<h3 id="create-a-cname-record-for-dns">Create a CNAME record for DNS.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Before you go any further, you will need to have a domain name set up for your server. I use Cloudflare to manage my DNS records. You will want to make a CNAME record for your nextcloud subdomain.</p>
 <p>Just add &ldquo;nextcloud&rdquo; as the name and &ldquo;yourwebsite.com&rdquo; as the content. This will make it so &ldquo;nextcloud.yourwebsite.com&rdquo; is the site for your nextcloud dashboard. Also, make sure to select &ldquo;DNS Only&rdquo; under proxy status.</p>
 <p>Here&rsquo;s what my CloudFlare domain setup looks with this blog as the main site, and cloud.perfectdarkmode.com as the nextcloud site:</p>
-<p><a href="#R-image-72d96c80d8c9883f1b2b22a256e33bdb" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020241229050325.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-72d96c80d8c9883f1b2b22a256e33bdb"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020241229050325.png"></a></p>
+<p><a href="#R-image-86eaf4e5245b3c5ce3b52f56d4690617" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020241229050325.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-86eaf4e5245b3c5ce3b52f56d4690617"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020241229050325.png"></a></p>
 <p>Then you need to update trusted domains in /var/www/nextcloud/config/config.php:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#5af78e">&#39;trusted_domains&#39;</span> <span style="color:#ff6ac1">=</span>&gt;
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#5af78e">&#39;trusted_domains&#39;</span> <span style="color:#ff6ac1">=</span>&gt;
 </span></span><span style="display:flex;"><span>   <span style="color:#ff6ac1">[</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#5af78e">&#39;cloud.{ site-name }.com&#39;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#5af78e">&#39;localhost&#39;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">]</span>,</span></span></code></pre></div>
-<h3 id="install-apache">Install Apache</h3>
+<h3 id="install-apache">Install Apache<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Install:
 <code>sudo dnf -y install httpd</code></p>
 <p>Enable:
@@ -440,44 +391,44 @@ Extract the contents to /var/www/nextcloud
 <p>Restart httpd
 <code>systemctl restart httpd</code></p>
 <p>Firewall rules:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo firewall-cmd --add-service https --permanent
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo firewall-cmd --add-service https --permanent
 </span></span><span style="display:flex;"><span>sudo firewall-cmd --add-service http --permanent
 </span></span><span style="display:flex;"><span>sudo firewall-cmd --reload</span></span></code></pre></div>
-<h3 id="install-ssl-with-certbot">Install SSL with Certbot</h3>
+<h3 id="install-ssl-with-certbot">Install SSL with Certbot<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Install certbot:
 <code>sudo dnf install certbot python3-certbot-apache -y</code></p>
 <p>Obtain an SSL certificate. (See my <a href="/tools/obsidian-site-setup/">Obsidian site setup</a> post for information about Certbot and Apache setup.)</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo certbot -d {subdomain}.{domain}.com</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo certbot -d {subdomain}.{domain}.com</code></pre></div>
 <p>Now log into nextcloud with your admin account using the DNS name you set earlier:</p>
-<p><a href="#R-image-58554c3396aae35fa2b70500847d0871" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020241229050541.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-58554c3396aae35fa2b70500847d0871"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020241229050541.png"></a></p>
+<p><a href="#R-image-1dcc82fb59a6c3686581359fea5d044b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020241229050541.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1dcc82fb59a6c3686581359fea5d044b"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020241229050541.png"></a></p>
 <p>I recommend setting up a normal user account instead of doing everything as &ldquo;admin&rdquo;. Just hit the &ldquo;A&rdquo; icon at the top right and go to &ldquo;Accounts&rdquo;. Then just select &ldquo;New Account&rdquo; and create a user account with whatever privileges you want.</p>
-<p><a href="#R-image-dbacc2bd022b396319c5c79d7c5a4dec" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020241229051101.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dbacc2bd022b396319c5c79d7c5a4dec"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020241229051101.png"></a></p>
+<p><a href="#R-image-bdd094de2a33c99be3dd2eb2eb19ceb8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020241229051101.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bdd094de2a33c99be3dd2eb2eb19ceb8"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020241229051101.png"></a></p>
 <p>I may make a post about which Nextcloud apps I recommend and customize the setup a bit. Let me know if that&rsquo;s something you&rsquo;d like to see. That&rsquo;s all for now.</p>
-<h3 id="make-log-dir">Make log dir:</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir /var/log/nextcloud
+<h3 id="make-log-dir">Make log dir:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir /var/log/nextcloud
 </span></span><span style="display:flex;"><span>touch /var/log/nextcloud.log
 </span></span><span style="display:flex;"><span>chown apache:apache -R /var/log/nextcloud</span></span></code></pre></div>
-<h3 id="change-apps-to-read-only">Change apps to read only</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>semanage fcontext -a -t httpd_sys_content_t <span style="color:#5af78e">&#34;/var/www/nextcloud/apps(/.*)?&#34;</span>
+<h3 id="change-apps-to-read-only">Change apps to read only<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>semanage fcontext -a -t httpd_sys_content_t <span style="color:#5af78e">&#34;/var/www/nextcloud/apps(/.*)?&#34;</span>
 </span></span><span style="display:flex;"><span>restorecon -R /var/www/nextcloud/apps</span></span></code></pre></div>
-<h3 id="allow-outbound-network">Allow outbound network:</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo setsebool -P httpd_can_network_connect <span style="color:#ff9f43">1</span>
+<h3 id="allow-outbound-network">Allow outbound network:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo setsebool -P httpd_can_network_connect <span style="color:#ff9f43">1</span>
 </span></span><span style="display:flex;"><span>sudo setsebool -P httpd_graceful_shutdown <span style="color:#ff9f43">1</span>
 </span></span><span style="display:flex;"><span>sudo setsebool -P httpd_can_network_relay <span style="color:#ff9f43">1</span>
 </span></span><span style="display:flex;"><span>sudo ausearch -c <span style="color:#5af78e">&#39;php-fpm&#39;</span> --raw | audit2allow -M my-phpfpm
 </span></span><span style="display:flex;"><span>sudo semodule -X <span style="color:#ff9f43">300</span> -i my-phpfpm.pp</span></span></code></pre></div>
-<h3 id="backup">Backup</h3>
+<h3 id="backup">Backup<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><code>mkdir /home/databkup</code>
 chown -R apache:apache /home/databkup</p>
 <p><code>vim /root/cleanbackups.sh</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>#!/bin/bash
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>#!/bin/bash
 
 find /home/backup -type f -mtime +5 -exec rm {} \;</code></pre></div>
 <p><code>chmod +x /root/cleanbackups.sh</code></p>
 <p><code>crontab -e</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e"># Clean up old backups every day at midnight</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e"># Clean up old backups every day at midnight</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span> * * * /root/cleanbackups.sh &gt; /dev/null 2&gt;&amp;<span style="color:#ff9f43">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#78787e"># Backup MySQL database every 12 hours</span>
@@ -486,8 +437,8 @@ find /home/backup -type f -mtime +5 -exec rm {} \;</code></pre></div>
 </span></span><span style="display:flex;"><span><span style="color:#78787e"># Rsync Nextcloud data directory every day at midnight</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff9f43">15</span> <span style="color:#ff9f43">0</span> * * * /usr/bin/rsync -Aavx /var/www/nextcloud/ /home/databkup/ --delete-before</span></span></code></pre></div>
 <p><code>mkdir /home/backup</code></p>
-<h3 id="update-mariadb">Update Mariadb:</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl stop mariadb.service
+<h3 id="update-mariadb">Update Mariadb:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl stop mariadb.service
 </span></span><span style="display:flex;"><span>dnf module switch-to mariadb:10.11
 </span></span><span style="display:flex;"><span>systemctl start mariadb.service
 </span></span><span style="display:flex;"><span>mariadb-upgrade --user<span style="color:#ff6ac1">=</span>root --password<span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;{ password }&#39;</span>
@@ -497,12 +448,12 @@ find /home/backup -type f -mtime +5 -exec rm {} \;</code></pre></div>
 <code>sudo -u apache /var/www/nextcloud/occ maintenance:repair --include-expensive</code></p>
 <p>Indices error:
 <code>sudo -u apache /var/www/nextcloud/occ db:add-missing-indices</code></p>
-<h3 id="redis-install-for-memcache">Redis install for memcache</h3>
+<h3 id="redis-install-for-memcache">Redis install for memcache<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>This setup uses Redis for File locking and APCu for memcache</p>
 <p><code>dnf -y install redis php-pecl-redis php-pecl-apcu</code></p>
 <p><code>systemctl enable --now redis</code></p>
 <p>Add to config.php:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#5af78e">&#39;memcache.locking&#39;</span> <span style="color:#ff6ac1">=</span>&gt; <span style="color:#5af78e">&#39;\OC\Memcache\Redis&#39;</span>,
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#5af78e">&#39;memcache.locking&#39;</span> <span style="color:#ff6ac1">=</span>&gt; <span style="color:#5af78e">&#39;\OC\Memcache\Redis&#39;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#5af78e">&#39;memcache.local&#39;</span> <span style="color:#ff6ac1">=</span>&gt; <span style="color:#5af78e">&#39;\OC\Memcache\APCu&#39;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#5af78e">&#39;redis&#39;</span> <span style="color:#ff6ac1">=</span>&gt; <span style="color:#ff6ac1">[</span>
 </span></span><span style="display:flex;"><span>   <span style="color:#5af78e">&#39;host&#39;</span>     <span style="color:#ff6ac1">=</span>&gt; <span style="color:#5af78e">&#39;/run/redis/redis-server.sock&#39;</span>,
@@ -512,7 +463,7 @@ find /home/backup -type f -mtime +5 -exec rm {} \;</code></pre></div>
 <code>vim /etc/redis/redis.conf</code>
 change port to <code>port 0</code>/</p>
 <p>uncomment the socket options under &ldquo;Unix Socket&rdquo; and change to:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>unixsocket /run/redis/redis-server.sock
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>unixsocket /run/redis/redis-server.sock
 </span></span><span style="display:flex;"><span>unixsocketperm <span style="color:#ff9f43">770</span></span></span></code></pre></div>
 <p>Update permissions for redis
 <code>usermod -a -G redis apache</code></p>
@@ -520,28 +471,28 @@ change port to <code>port 0</code>/</p>
 <code>vim /etc/php.d/40-apcu.ini</code>
 <code>apc.shm_size=256M</code></p>
 <p>Restart apache and redis:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl restart redis
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl restart redis
 </span></span><span style="display:flex;"><span>systemctl restart httpd</span></span></code></pre></div>
 <p>Added logging and phone region to config.php:
 <code>mkdir /var/log/nextcloud/</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#5af78e">&#39;log_type&#39;</span> <span style="color:#ff6ac1">=</span>&gt; <span style="color:#5af78e">&#39;file&#39;</span>,
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  <span style="color:#5af78e">&#39;log_type&#39;</span> <span style="color:#ff6ac1">=</span>&gt; <span style="color:#5af78e">&#39;file&#39;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#5af78e">&#39;logfile&#39;</span> <span style="color:#ff6ac1">=</span>&gt; <span style="color:#5af78e">&#39;/var/log/nextcloud/nextcloud.log&#39;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#5af78e">&#39;logfilemode&#39;</span> <span style="color:#ff6ac1">=</span>&gt; 416,
 </span></span><span style="display:flex;"><span>  <span style="color:#5af78e">&#39;default_phone_region&#39;</span> <span style="color:#ff6ac1">=</span>&gt; <span style="color:#5af78e">&#39;US&#39;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#5af78e">&#39;logtimezone&#39;</span> <span style="color:#ff6ac1">=</span>&gt; <span style="color:#5af78e">&#39;America/Phoenix&#39;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#5af78e">&#39;loglevel&#39;</span> <span style="color:#ff6ac1">=</span>&gt; <span style="color:#5af78e">&#39;1&#39;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#5af78e">&#39;logdateformat&#39;</span> <span style="color:#ff6ac1">=</span>&gt; <span style="color:#5af78e">&#39;F d, Y H:i:s&#39;</span>,</span></span></code></pre></div>
-<h3 id="op-cache-error">OP-Cache error</h3>
+<h3 id="op-cache-error">OP-Cache error<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Change opcache.interned_strings_buffer to 16 and uncomment:</p>
 <p><code>vim /etc/php.d/10-opcache.ini</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>opcache.interned_strings_buffer=16</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>opcache.interned_strings_buffer=16</code></pre></div>
 <p><code>systemctl restart php-fpm httpd</code></p>
-<h3 id="last-job-execution-ran-2-months-ago-something-seems-wrong">Last job execution ran 2 months ago. Something seems wrong.</h3>
+<h3 id="last-job-execution-ran-2-months-ago-something-seems-wrong">Last job execution ran 2 months ago. Something seems wrong.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Set up cron job for the Apache user:
 <code>crontab -u apache -e</code></p>
 <p>Add to file that shows up:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>*/5  *  *  *  * php -f /var/www/nextcloud/cron.php</span></span></code></pre></div>
-<h3 id="other-errors">Other Errors</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>*/5  *  *  *  * php -f /var/www/nextcloud/cron.php</span></span></code></pre></div>
+<h3 id="other-errors">Other Errors<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>The &ldquo;files_reminders&rdquo; app needs the notification app to work properly. You should either enable notifications or disable files_reminder.</li>
 </ul>
@@ -554,12 +505,12 @@ change port to <code>port 0</code>/</p>
 <li>Some headers are not set correctly on your instance - The <code>Strict-Transport-Security</code> HTTP header is not set (should be at least <code>15552000</code> seconds). For enhanced security, it is recommended to enable HSTS. For more details see the <a href="https://docs.nextcloud.com/server/32/go.php?to=admin-security" rel="external" target="_blank">documentation ↗</a>.</li>
 </ul>
 <p>Added after closing directory line in SSL config:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim nextcloud-le-ssl.conf </span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Header always set Strict-Transport-Security &#34;max-age=15552000; includeSubDomains; preload&#34;</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim nextcloud-le-ssl.conf </span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Header always set Strict-Transport-Security &#34;max-age=15552000; includeSubDomains; preload&#34;</code></pre></div>
 <p>And add to the bottom of /var/www/nextcloud/.htaccess:
 <code>&quot;Header always set Strict-Transport-Security &quot;max-age=15552000; includeSubDomains&quot;</code></p>
 <p>Change this line in config.php from localhost to server name:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code> &#39;overwrite.cli.url&#39; =&gt; &#39;http://cloud.{ site-name }.com&#39;,</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code> &#39;overwrite.cli.url&#39; =&gt; &#39;http://cloud.{ site-name }.com&#39;,</code></pre></div>
 <ul>
 <li>Integrity checker has been disabled. Integrity cannot be verified.</li>
 </ul>
@@ -571,13 +522,13 @@ change port to <code>port 0</code>/</p>
 </ul>
 <p>Your web server is not properly set up to resolve &ldquo;/ocm-provider/&rdquo;. This is most likely related to a web server configuration that was not updated to deliver this folder directly. Please compare your configuration against the shipped rewrite rules in &ldquo;.htaccess&rdquo; for Apache
 add to <code>vim /var/www/nextcloud/.htaccess</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&lt;IfModule mod_rewrite.c&gt;
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&lt;IfModule mod_rewrite.c&gt;
 </span></span><span style="display:flex;"><span>  RewriteEngine on
 </span></span><span style="display:flex;"><span>  RewriteRule ^ocm-provider/<span style="color:#ff6ac1">(</span>.*<span style="color:#ff6ac1">)</span>$ /index.php/apps/ocm/<span style="color:#ff5c57">$1</span> <span style="color:#ff6ac1">[</span>QSA,L<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span>&lt;/IfModule&gt;</span></span></code></pre></div>
 <p>Your web server is not properly set up to resolve <code>.well-known</code> URLs, failed on: <code>/.well-known/caldav</code></p>
 <p>added to <code>vim /var/www/nextcloud/.htaccess</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e"># .well-known URLs for CalDAV/CardDAV and other services</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e"># .well-known URLs for CalDAV/CardDAV and other services</span>
 </span></span><span style="display:flex;"><span>&lt;IfModule mod_rewrite.c&gt;
 </span></span><span style="display:flex;"><span>  RewriteEngine On
 </span></span><span style="display:flex;"><span>  RewriteRule ^<span style="color:#5af78e">\.</span>well-known/caldav$ /remote.php/dav/ <span style="color:#ff6ac1">[</span><span style="color:#ff5c57">R</span><span style="color:#ff6ac1">=</span>301,L<span style="color:#ff6ac1">]</span>
@@ -589,18 +540,18 @@ add to <code>vim /var/www/nextcloud/.htaccess</code></p>
 <p><strong>PHP configuration option &ldquo;output_buffering&rdquo; must be disabled</strong>
 <code>vim /etc/php.ini</code></p>
 <p><code>output_buffering = Off</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@oort31 nextcloud<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo &#34;output_buffering=off&#34; &gt; .user.ini</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@oort31 nextcloud<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo &#34;output_buffering=off&#34; &gt; .user.ini</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@oort31 nextcloud<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chown apache:apache .user.ini</span>
 </span></span><span style="display:flex;"><span>chmod <span style="color:#ff9f43">644</span> .user.ini
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@oort31 nextcloud<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl restart httpd</span></span></span></code></pre></div>
 <p><strong>Installed tmux</strong>
 <code>dnf -y install tmux</code></p>
-<h3 id="apps">Apps</h3>
+<h3 id="apps">Apps<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Disabled File Reminders app</p>
-<h3 id="add-fail2ban">Add fail2ban</h3>
+<h3 id="add-fail2ban">Add fail2ban<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>sudo dnf -y install fail2ban</p>
 <p>vim /etc/fail2ban/jail.local</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[DEFAULT]
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>[DEFAULT]
 bantime = 24h
 ignoreip = 10.0.0.0/8
 usedns = no
@@ -690,8 +641,8 @@ fail2ban-client status sshd</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -717,23 +668,23 @@ fail2ban-client status sshd</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

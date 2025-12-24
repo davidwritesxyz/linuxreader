@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Desktop :: Linux Reader</title>
-    <link>https://linuxreader.com/desktop/</link>
+    <link>http://localhost:1313/desktop/</link>
     <description>Configure Fedora Desktop using Ansible&#xD;New Fedora Build Using Ansible&#xD;Learning Touch Typing&#xD;Learning touch typing&#xD;My Fedora Setup&#xD;My Fedora Setup&#xD;Silverblue&#xD;Fedora Silverblue</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://linuxreader.com/desktop/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/desktop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configure Fedora Desktop using Ansible</title>
-      <link>https://linuxreader.com/desktop/new-setup/</link>
+      <link>http://localhost:1313/desktop/new-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/desktop/new-setup/</guid>
+      <guid>http://localhost:1313/desktop/new-setup/</guid>
       <description>New Fedora Build Using Ansible</description>
     </item>
     <item>
       <title>Learning Touch Typing</title>
-      <link>https://linuxreader.com/desktop/learning-touch-typing/</link>
+      <link>http://localhost:1313/desktop/learning-touch-typing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/desktop/learning-touch-typing/</guid>
+      <guid>http://localhost:1313/desktop/learning-touch-typing/</guid>
       <description>Learning touch typing</description>
     </item>
     <item>
       <title>My Fedora Setup</title>
-      <link>https://linuxreader.com/desktop/my-fedora-setup/</link>
+      <link>http://localhost:1313/desktop/my-fedora-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/desktop/my-fedora-setup/</guid>
+      <guid>http://localhost:1313/desktop/my-fedora-setup/</guid>
       <description>My Fedora Setup</description>
     </item>
     <item>
       <title>Silverblue</title>
-      <link>https://linuxreader.com/desktop/silverblue/</link>
+      <link>http://localhost:1313/desktop/silverblue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/desktop/silverblue/</guid>
+      <guid>http://localhost:1313/desktop/silverblue/</guid>
       <description>Fedora Silverblue</description>
     </item>
   </channel>

@@ -1,13 +1,13 @@
 baseURL = 'https://linuxreader.com/'
 languageCode = 'en-us'
 title = 'Linux Reader'
-theme = ["hugo-theme-relearn", "plausible-hugo"]
+theme = ["hugo-theme-relearn-8.3.0"]
 publishDir = "docs"
 contentDir = "linuxreader"
-[outputs]
-  home = ["HTML", "RSS", "PRINT", "SEARCH"]
-  section = ["HTML", "RSS", "PRINT"]
-  page = ["HTML", "RSS", "PRINT"]
+#[outputs]
+#  home = ["HTML", "RSS", "PRINT", "SEARCH"]
+#  section = ["HTML", "RSS", "PRINT"]
+#  page = ["HTML", "RSS", "PRINT"]
 
 [params]
   linktitle = 'Linux Reader'
@@ -177,13 +177,13 @@ weight = 12
 [[menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub"
 identifier = "ds"
-url = "https://github.com/linuxreader"
+url = "https://github.com/davidwritesxyz"
 weight = 14
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-fw fa-linkedin'></i> LinkedIn"
 identifier = "LinkedIn"
-url = "https://linkedin.com/in/linuxreader/"
+url = "https://linkedin.com/in/davidwritesxyz/"
 weight = 15
 
 #[Languages]
@@ -199,7 +199,7 @@ weight = 15
 [markup.goldmark.renderer]
 unsafe = true
 
-[params.plausible]
-  enable = true  # Whether to enable plausible tracking
-  domain = "linuxreader.com"  # Plausible "domain" name/id in your dashboard
-  selfhosted_domain = "analytics.linuxreader.com:8443"
+#[params.plausible]
+#  enable = true  # Whether to enable plausible tracking
+#  domain = "linuxreader.com"  # Plausible "domain" name/id in your dashboard
+#  selfhosted_domain = "analytics.linuxreader.com:8443"

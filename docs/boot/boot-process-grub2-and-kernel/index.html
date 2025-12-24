@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Linux kernel, boot process, and password recovery">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Boot Process, Grub2, and Kernel :: Linux Reader">
     <meta name="twitter:description" content="Linux kernel, boot process, and password recovery">
-    <meta property="og:url" content="https://linuxreader.com/boot/boot-process-grub2-and-kernel/">
+    <meta property="og:url" content="http://localhost:1313/boot/boot-process-grub2-and-kernel/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Boot Process, Grub2, and Kernel :: Linux Reader">
     <meta property="og:description" content="Linux kernel, boot process, and password recovery">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Linux kernel, boot process, and password recovery">
     <meta itemprop="wordCount" content="3693">
     <title>Boot Process, Grub2, and Kernel :: Linux Reader</title>
-    <link href="/boot/boot-process-grub2-and-kernel/index.xml" rel="alternate" type="application/rss+xml" title="Boot Process, Grub2, and Kernel :: Linux Reader">
-    <link href="/boot/boot-process-grub2-and-kernel/index.print.html" rel="alternate" type="text/html" title="Boot Process, Grub2, and Kernel :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/boot\/boot-process-grub2-and-kernel\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/boot/" title="Boot (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/boot/" title="Boot (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -218,12 +172,9 @@
             Boot Process, Grub2, and Kernel
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/boot/boot-process-grub2-and-kernel/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/boot/system-initialization-message-logging-and-system-tuning/" title="System Initialization, Message Logging, and System Tuning (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/boot/system-initialization-message-logging-and-system-tuning/" title="System Initialization, Message Logging, and System Tuning (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -244,7 +195,7 @@
 
 <h1 id="boot-process-grub2-and-kernel">Boot Process, Grub2, and Kernel</h1>
 
-<h2 id="linux-kernel">Linux Kernel</h2>
+<h2 id="linux-kernel">Linux Kernel<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>controls everything on the system.
 <ul>
@@ -341,7 +292,7 @@
 <p>different kernel may be loaded by interacting with GRUB2.</p>
 </li>
 </ul>
-<h3 id="kernel-packages">Kernel Packages</h3>
+<h3 id="kernel-packages">Kernel Packages<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>set of core kernel packages that must be installed on the system at a minimum to make it work.</li>
 <li>Additional packages providing supplementary kernel support are also available.</li>
@@ -389,18 +340,18 @@
       </tr>
   </tbody>
 </table>
-<h3 id="kernel-packages-1">Kernel Packages</h3>
+<h3 id="kernel-packages-1">Kernel Packages<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Packages containing the source code for RHEL 8 are also available for those who wish to customize and recompile the code</li>
 </ul>
 <p>List kernel packages installed on the system:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf list installed kernel*</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf list installed kernel*</span></span></code></pre></div>
 <ul>
 <li>Shows six kernel packages that were loaded during the OS installation.</li>
 </ul>
-<h3 id="analyzing-kernel-version">Analyzing Kernel Version</h3>
+<h3 id="analyzing-kernel-version">Analyzing Kernel Version<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Check the version of the kernel running on the system to check for compatibility with an application or database:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> uname -r
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> uname -r
 </span></span><span style="display:flex;"><span> 5.14.0-362.24.1.el9_3.x86_64</span></span></code></pre></div>
 <p>5 - Major version
 14 - Major revision
@@ -408,14 +359,14 @@
 362 - Red Hat version
 el9 - Enterprise Linux 9
 x86_64 - Processor architecture</p>
-<h3 id="kernel-directory-structure">Kernel Directory Structure</h3>
+<h3 id="kernel-directory-structure">Kernel Directory Structure<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Kernel and its support files (noteworthy locations)</p>
 <ul>
 <li>/boot</li>
 <li>/proc</li>
 <li>/usr/lib/modules</li>
 </ul>
-<h3 id="boot">/boot</h3>
+<h3 id="boot">/boot<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Created at system installation.</li>
 <li>Linux kernel</li>
@@ -445,7 +396,7 @@ x86_64 - Processor architecture</p>
 <li>hold bootloader information specific to firmware type used on the system: UEFI or BIOS.</li>
 </ul>
 <p>List /boot/Grub2:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /boot/grub2</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /boot/grub2</span>
 </span></span><span style="display:flex;"><span> total <span style="color:#ff9f43">32</span>
 </span></span><span style="display:flex;"><span> -rw-r--r--. <span style="color:#ff9f43">1</span> root root   <span style="color:#ff9f43">64</span> Feb <span style="color:#ff9f43">25</span> 05:13 device.map
 </span></span><span style="display:flex;"><span> drwxr-xr-x. <span style="color:#ff9f43">2</span> root root   <span style="color:#ff9f43">25</span> Feb <span style="color:#ff9f43">25</span> 05:13 fonts
@@ -470,7 +421,7 @@ x86_64 - Processor architecture</p>
 <li>storage location for configuration of the running and rescue kernels.</li>
 <li>Configuration is stored in files under the /boot/loader/entries/</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /boot/loader/entries/</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /boot/loader/entries/</span>
 </span></span><span style="display:flex;"><span> total <span style="color:#ff9f43">12</span>
 </span></span><span style="display:flex;"><span> -rw-r--r--. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">484</span> Feb <span style="color:#ff9f43">25</span> 05:13  8215ac7e45d34823b4dce2e258c3cc47-0-rescue.conf
 </span></span><span style="display:flex;"><span> -rw-r--r--. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">460</span> Mar <span style="color:#ff9f43">16</span> 06:17  8215ac7e45d34823b4dce2e258c3cc47-5.14.0-362.18.1.el9_3.x86_64.conf
@@ -479,7 +430,7 @@ x86_64 - Processor architecture</p>
 <li>The files are named using the machine id of the system as stored in /etc/machine-id/ and the kernel version they are for.</li>
 </ul>
 <p>content of the kernel file:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost entries<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat  /boot/loader/entries/8215ac7e45d34823b4dce2e258c3cc47-5.14.0- 362.18.1.el9_3.x86_64.conf</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost entries<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat  /boot/loader/entries/8215ac7e45d34823b4dce2e258c3cc47-5.14.0- 362.18.1.el9_3.x86_64.conf</span>
 </span></span><span style="display:flex;"><span> title Red Hat Enterprise Linux <span style="color:#ff6ac1">(</span>5.14.0-362.18.1.el9_3.x86_64<span style="color:#ff6ac1">)</span> 9.3  <span style="color:#ff6ac1">(</span>Plow<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span> version 5.14.0-362.18.1.el9_3.x86_64
 </span></span><span style="display:flex;"><span> linux /vmlinuz-5.14.0-362.18.1.el9_3.x86_64
@@ -492,7 +443,7 @@ x86_64 - Processor architecture</p>
 <li>&ldquo;title&rdquo; is displayed on the bootloader screen</li>
 <li>&ldquo;kernelopts&rdquo; and &ldquo;tuned_params&rdquo; supply values to the booting kernel to control its behavior.</li>
 </ul>
-<h3 id="proc">/proc</h3>
+<h3 id="proc">/proc<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Virtual, memory-based file system</li>
 <li>contents are created and updated in memory at system boot and during runtime</li>
@@ -540,18 +491,18 @@ processor and memory information:
 <ul>
 <li>data used by top, ps, uname, free, uptime and w, to display information.</li>
 </ul>
-<h3 id="usrlibmodules">/usr/lib/modules/</h3>
+<h3 id="usrlibmodules">/usr/lib/modules/<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>holds information about kernel modules.</li>
 <li>subdirectories are specific to the kernels installed on the system.</li>
 </ul>
 <p>Long listing of /usr/lib/modules/ shows two installed kernels:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost entries<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /usr/lib/modules</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost entries<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /usr/lib/modules</span>
 </span></span><span style="display:flex;"><span> total <span style="color:#ff9f43">8</span>
 </span></span><span style="display:flex;"><span> drwxr-xr-x. <span style="color:#ff9f43">7</span> root root <span style="color:#ff9f43">4096</span> Mar <span style="color:#ff9f43">16</span> 06:18 5.14.0-362.18.1.el9_3.x86_64
 </span></span><span style="display:flex;"><span> drwxr-xr-x. <span style="color:#ff9f43">8</span> root root <span style="color:#ff9f43">4096</span> Mar <span style="color:#ff9f43">16</span> 06:18 5.14.0-362.24.1.el9_3.x86_64</span></span></code></pre></div>
 <p>View /usr/lib/modules/5.14.0-362.18.1.el9_3.x86_64/:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ls -l /usr/lib/modules/5.14.0-362.18.1.el9_3.x86_64</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ls -l /usr/lib/modules/5.14.0-362.18.1.el9_3.x86_64</span></span></code></pre></div>
 <ul>
 <li>Subdirectories hold module-specific information for the kernel version.</li>
 </ul>
@@ -559,12 +510,12 @@ processor and memory information:
 <ul>
 <li>stores modules for a variety of hardware and software components in various subdirectories:</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ls -l /usr/lib/modules/5.14.0-362.18.1.el9_3.x86_64/kernel/drivers</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ls -l /usr/lib/modules/5.14.0-362.18.1.el9_3.x86_64/kernel/drivers</span></span></code></pre></div>
 <ul>
 <li>Additional modules may be installed on the system to support more
 components.</li>
 </ul>
-<h3 id="installing-the-kernel">Installing the Kernel</h3>
+<h3 id="installing-the-kernel">Installing the Kernel<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
 <p>requires extra care</p>
@@ -617,7 +568,7 @@ components.</li>
 <p>Kernel packages for RHEL are available to subscribers on Red Hat&rsquo;s Customer Portal.</p>
 </li>
 </ul>
-<h2 id="linux-boot-process">Linux Boot Process</h2>
+<h2 id="linux-boot-process">Linux Boot Process<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Multiple phases during the boot process.</p>
 <ul>
 <li>Starts selective services during its transition from one phase into another.</li>
@@ -647,7 +598,7 @@ boot process on an x86 computer may be split into four major phases:
 </li>
 </ul>
 <p>The system accomplishes these phases one after the other while performing and attempting to complete the tasks identified in each phase.</p>
-<h3 id="the-firmware-phase-bios-and-uefi">The Firmware Phase (BIOS and UEFI)</h3>
+<h3 id="the-firmware-phase-bios-and-uefi">The Firmware Phase (BIOS and UEFI)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>firmware:</p>
 <ul>
 <li>BIOS (<em>Basic Input/Output System</em>) or the UEFI (<em>Unified Extensible Firmware Interface</em>) code that is stored in flash memory on the x86-based system board.</li>
@@ -702,7 +653,7 @@ boot process on an x86 computer may be split into four major phases:
 <li>supports one or more bootloader programs.</li>
 <li>comes with a boot manager that allows you to choose an alternative boot source.</li>
 </ul>
-<h3 id="bootloader-phase">Bootloader Phase</h3>
+<h3 id="bootloader-phase">Bootloader Phase<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Once the firmware phase is over and a boot device is detected,</li>
 <li>system loads a piece of software called <em>bootloader</em> that is located in the boot sector of the boot device.</li>
@@ -720,7 +671,7 @@ boot process on an x86 computer may be split into four major phases:
 <li>GRUB2 looks for the EFI system partition <strong>/boot/efi</strong> instead</li>
 <li>Runs the kernel based on the configuration defined in the /boot/efi/EFI/redhat/grub.efi file.</li>
 </ul>
-<h3 id="kernel-phase">Kernel Phase</h3>
+<h3 id="kernel-phase">Kernel Phase<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li><em>kernel</em> is the central program of the operating system, providing access to hardware and system services.</li>
 <li>After getting control from the bootloader, the kernel:
@@ -752,7 +703,7 @@ boot process on an x86 computer may be split into four major phases:
 </ul>
 </li>
 </ul>
-<h3 id="initialization-phase">Initialization Phase</h3>
+<h3 id="initialization-phase">Initialization Phase<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
 <p>fourth and the last phase in the boot process.</p>
@@ -779,7 +730,7 @@ boot process on an x86 computer may be split into four major phases:
 <p>system boot process is considered complete when all enabled services are operational for the boot target and users are able to log in to the system</p>
 </li>
 </ul>
-<h3 id="grub2-bootloader">GRUB2 Bootloader</h3>
+<h3 id="grub2-bootloader">GRUB2 Bootloader<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>After the firmware phase has concluded:</li>
 <li>Bootloader presents a menu with a list of bootable kernels available on the system</li>
@@ -788,7 +739,7 @@ boot process on an x86 computer may be split into four major phases:
 <li>Press a key before the timeout expires to interrupt the autoboot process and interact with GRUB2.</li>
 <li>autoboot countdown default value is 5 seconds.</li>
 </ul>
-<h3 id="interacting-with-grub2">Interacting with GRUB2</h3>
+<h3 id="interacting-with-grub2">Interacting with GRUB2<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>GRUB2 main menu shows a list of bootable kernels at the top.</li>
 <li>Edit a selected kernel menu entry by pressing an <em>e</em> or go to the grub&gt; command prompt by pressing a <em>c</em>.</li>
@@ -806,8 +757,8 @@ boot process on an x86 computer may be split into four major phases:
 <li>command mode: execute debugging, recovery, etc.</li>
 <li>view available commands by pressing the TAB key.</li>
 </ul>
-<h3 id="grub2-commands">GRUB2 Commands</h3>
-<h4 id="understanding-grub2-configuration-files">Understanding GRUB2 Configuration Files</h4>
+<h3 id="grub2-commands">GRUB2 Commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="understanding-grub2-configuration-files">Understanding GRUB2 Configuration Files<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p><strong>/boot/grub2/grub.cfg</strong></p>
 <ul>
 <li>Referenced at boot time.</li>
@@ -823,7 +774,7 @@ boot process on an x86 computer may be split into four major phases:
 <li>Any changes in this file must be followed by the execution of the <code>grub2-mkconfig</code> command in order to be reflected in grub.cfg.</li>
 </ul>
 <p>Default settings:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost default<span style="color:#ff6ac1">]</span><span style="color:#78787e"># nl /etc/default/grub</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost default<span style="color:#ff6ac1">]</span><span style="color:#78787e"># nl /etc/default/grub</span>
 </span></span><span style="display:flex;"><span>     1	<span style="color:#ff5c57">GRUB_TIMEOUT</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">5</span>
 </span></span><span style="display:flex;"><span>     2	<span style="color:#ff5c57">GRUB_DISTRIBUTOR</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;</span><span style="color:#ff6ac1">$(</span>sed <span style="color:#5af78e">&#39;s, release .*$,,g&#39;</span> /etc/system-release<span style="color:#ff6ac1">)</span><span style="color:#5af78e">&#34;</span>
 </span></span><span style="display:flex;"><span>     3	<span style="color:#ff5c57">GRUB_DEFAULT</span><span style="color:#ff6ac1">=</span>saved
@@ -877,7 +828,7 @@ boot process on an x86 computer may be split into four major phases:
 <ul>
 <li>Default settings are good enough for normal system operation.</li>
 </ul>
-<h3 id="bootgrub2grubcfg---bootefiefiredhatgrubcfg">/boot/grub2/grub.cfg - /boot/efi/EFI/redhat/grub.cfg</h3>
+<h3 id="bootgrub2grubcfg---bootefiefiredhatgrubcfg">/boot/grub2/grub.cfg - /boot/efi/EFI/redhat/grub.cfg<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Main GRUB2 configuration file that supplies boot-time configuration information.</li>
 <li>located in the /boot/grub2/ on BIOS-based systems</li>
@@ -890,7 +841,7 @@ boot process on an x86 computer may be split into four major phases:
 <ul>
 <li>Uses the settings defined in helper scripts located in the /etc/grub.d directory.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost default<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /etc/grub.d</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost default<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /etc/grub.d</span>
 </span></span><span style="display:flex;"><span> total <span style="color:#ff9f43">104</span>
 </span></span><span style="display:flex;"><span> -rwxr-xr-x. <span style="color:#ff9f43">1</span> root root  <span style="color:#ff9f43">9346</span> Jan  <span style="color:#ff9f43">9</span> 09:51 00_header
 </span></span><span style="display:flex;"><span> -rwxr-xr-x. <span style="color:#ff9f43">1</span> root root  <span style="color:#ff9f43">1046</span> Aug <span style="color:#ff9f43">29</span>  <span style="color:#ff9f43">2023</span> 00_tuned
@@ -922,7 +873,7 @@ boot process on an x86 computer may be split into four major phases:
 <ul>
 <li>Sources /boot/grub2/grubenv for kernel options and other settings.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost grub2<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat grubenv</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost grub2<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat grubenv</span>
 </span></span><span style="display:flex;"><span> <span style="color:#78787e"># GRUB Environment Block</span>
 </span></span><span style="display:flex;"><span> <span style="color:#78787e"># WARNING: Do not edit this file by tools other than grub-editenv!!!</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">saved_entry</span><span style="color:#ff6ac1">=</span>8215ac7e45d34823b4dce2e258c3cc47-5.14.0- 362.24.1.el9_3.x86_64
@@ -937,7 +888,7 @@ boot process on an x86 computer may be split into four major phases:
 <li>All bootable kernels are listed in the GRUB2 menu</li>
 <li>any of the kernel entries can be selected to boot.</li>
 </ul>
-<h3 id="lab-change-default-system-boot-timeout">Lab: Change Default System Boot Timeout</h3>
+<h3 id="lab-change-default-system-boot-timeout">Lab: Change Default System Boot Timeout<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>change the default system boot timeout value to 8 seconds persistently, and validate.</li>
 </ul>
@@ -950,10 +901,10 @@ boot process on an x86 computer may be split into four major phases:
 <p>Execute the <em>grub2-mkconfig</em> command to reproduce <em>grub.cfg</em>:</p>
 </li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grub2-mkconfig -o /boot/grub2/grub.cfg</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grub2-mkconfig -o /boot/grub2/grub.cfg</span></span></code></pre></div>
 <p>3.Restart the system with <em>sudo reboot</em> and confirm the new
 timeout value when GRUB2 menu appears.</p>
-<h2 id="booting-into-specific-targets">Booting into Specific Targets</h2>
+<h2 id="booting-into-specific-targets">Booting into Specific Targets<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>RHEL</p>
 <ul>
 <li>
@@ -982,8 +933,8 @@ timeout value when GRUB2 menu appears.</p>
 </li>
 </ul>
 <p>Append &ldquo;emergency&rdquo; to the kernel line entry:</p>
-<p><a href="#R-image-cfa7be990b174687545a8d974c71e6a5" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240321045343.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cfa7be990b174687545a8d974c71e6a5"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240321045343.png"></a></p>
+<p><a href="#R-image-b2c3f2f796e8875dee87d8df0d2a88bb" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240321045343.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b2c3f2f796e8875dee87d8df0d2a88bb"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240321045343.png"></a></p>
 <p>Other options:</p>
 <ul>
 <li>&ldquo;rescue&rdquo;</li>
@@ -991,7 +942,7 @@ timeout value when GRUB2 menu appears.</p>
 <li>&ldquo;s&rdquo;</li>
 <li>&ldquo;single&rdquo;</li>
 </ul>
-<h2 id="reset-the-root-user-password">Reset the root User Password</h2>
+<h2 id="reset-the-root-user-password">Reset the root User Password<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Terminate the boot process at an early stage to be placed in a special debug shell in order to reset the <em>root</em> password.</li>
 </ul>
@@ -1001,51 +952,51 @@ timeout value when GRUB2 menu appears.</p>
 </li>
 <li>
 <p>Modify this kernel string and append &ldquo;rd.break&rdquo; to the end of the line.
-<a href="#R-image-1de81be32a3499bbfbf183e6f635e80e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020240321045933.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1de81be32a3499bbfbf183e6f635e80e"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020240321045933.png"></a></p>
+<a href="#R-image-b8d8ebd45d65db4b3e3354e5af7c168f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020240321045933.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b8d8ebd45d65db4b3e3354e5af7c168f"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020240321045933.png"></a></p>
 </li>
 <li>
 <p>Press Ctrl+x when done to boot to the special shell. The system mounts the root file system read-only on the <em>/sysroot</em> directory. Make <em>/sysroot</em> appear as mounted on <em>/</em> using the <em>chroot</em> command:</p>
 </li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> chroot sysroot</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> chroot sysroot</span></span></code></pre></div>
 <p>3. Remount the root file system in read/write mode for the <em>passwd</em> command to be able to modify the <em>shadow</em> file with a new password:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> mount -o remount,rw /</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> mount -o remount,rw /</span></span></code></pre></div>
 <ol start="4">
 <li>Enter a new password for <em>root</em> by invoking the <em>passwd</em> command:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> passwd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> passwd</span></span></code></pre></div>
 <ol start="5">
 <li>Create a hidden file called <em>.autorelabel</em> to instruct the operating system to run SELinux relabeling on all files, including the <em>shadow</em> file that was updated with the new <em>root</em> password, on the next reboot:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> touch .autorelabel</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> touch .autorelabel</span></span></code></pre></div>
 <ol start="6">
 <li>Issue the <em>exit</em> command to quit the chroot shell and then the <em>reboot</em> command to restart the system and boot it to the default target.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff5c57">exit</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff5c57">exit</span>
 </span></span><span style="display:flex;"><span> reboot</span></span></code></pre></div>
-<h2 id="second-method">Second method</h2>
+<h2 id="second-method">Second method<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Look into using <code>init=/bin/bash</code> for password recovery as a second method.</p>
-<h2 id="boot-grub2-kernel-labs">Boot Grub2 Kernel Labs</h2>
-<h3 id="lab-enable-verbose-system-boot">Lab: Enable Verbose System Boot</h3>
+<h2 id="boot-grub2-kernel-labs">Boot Grub2 Kernel Labs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="lab-enable-verbose-system-boot">Lab: Enable Verbose System Boot<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Remove &ldquo;quiet&rdquo; from the end of the value of the variable GRUB_CMDLINE_LINUX in the /etc/default/grub file</li>
 <li>Run <em>grub2-mkconfig</em> to apply the update.</li>
 <li>Reboot the system and observe that the system now displays verbose information during the boot process.</li>
 </ul>
-<h3 id="lab-reset-root-user-password">Lab: Reset root User Password</h3>
+<h3 id="lab-reset-root-user-password">Lab: Reset root User Password<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Reset the <em>root</em> user password by booting the system into emergency mode with SELinux disabled.</li>
 <li>Try to log in with root and enter the new password after the reboot.</li>
 </ul>
-<h3 id="lab-install-new-kernel">Lab: Install New Kernel</h3>
+<h3 id="lab-install-new-kernel">Lab: Install New Kernel<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Check the current version of the kernel using the <em>uname</em> or <em>rpm</em> command.</li>
 <li>Download a higher version from the Red Hat Customer Portal or <a href="http://rpmfind.net" rel="external" target="_blank">rpmfind.net</a> and install it.</li>
 <li>Reboot the system and ensure the new kernel is listed on the bootloader menu.
 5.14.0-427.35.1.el9_4.x86_64</li>
 </ul>
-<h3 id="lab-download-and-install-a-new-kernel">Lab: Download and Install a New Kernel</h3>
+<h3 id="lab-download-and-install-a-new-kernel">Lab: Download and Install a New Kernel<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>download the latest available kernel packages from the Red Hat Customer Portal</li>
 <li>install them using the dnf command.</li>
@@ -1178,8 +1129,8 @@ confirm the loading of the new kernel:
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1205,23 +1156,23 @@ confirm the loading of the new kernel:
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

@@ -2,303 +2,303 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ansible :: Linux Reader</title>
-    <link>https://linuxreader.com/ansible/</link>
+    <link>http://localhost:1313/ansible/</link>
     <description>Ad Hoc Ansible Commands&#xD;Ansible Documentation&#xD;Ansible Facts&#xD;Ansible Galaxy Roles&#xD;Ansible Inventory and Ansible.cfg&#xD;Ansible Playbooks&#xD;Ansible Roles&#xD;Ansible Vault&#xD;Ansible-inventory command&#xD;Ansible.cfg&#xD;Boot Process&#xD;Building an Ansible lab with Ansible&#xD;Common modules with examples&#xD;Deploying files&#xD;Discovering storage related facts&#xD;Dynamic Inventory&#xD;Encrypted passwords&#xD;Execution Environments&#xD;Handlers&#xD;Host Name Patterns&#xD;Including and importing Files&#xD;Jinja2 templates&#xD;Managing Ansible Errors and Logs&#xD;Managing Packages&#xD;Managing Partitions and LVM&#xD;Managing Services&#xD;Networking with Ansible&#xD;NFS Setup&#xD;Optimizing Ansible Processing&#xD;Repositories and subscriptions&#xD;SeLinux File Properties&#xD;Setting up an Ansible Lab&#xD;SSH Connections&#xD;Troubleshooting Common Scenarios&#xD;Users and Groups&#xD;Using Loops and Items&#xD;Using Modules for Troubleshooting and Testing&#xD;Using Multiple Inventories&#xD;Using RHEL System roles&#xD;Using Tags&#xD;Using when to Run Tasks Conditionally&#xD;Variables</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://linuxreader.com/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ansible/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ad Hoc Ansible Commands</title>
-      <link>https://linuxreader.com/ansible/ad-hoc-ansible-commands/</link>
+      <link>http://localhost:1313/ansible/ad-hoc-ansible-commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/ad-hoc-ansible-commands/</guid>
+      <guid>http://localhost:1313/ansible/ad-hoc-ansible-commands/</guid>
       <description>Ad Hoc Ansible Commands</description>
     </item>
     <item>
       <title>Ansible Documentation</title>
-      <link>https://linuxreader.com/ansible/ansible-documentation/</link>
+      <link>http://localhost:1313/ansible/ansible-documentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/ansible-documentation/</guid>
+      <guid>http://localhost:1313/ansible/ansible-documentation/</guid>
       <description>Ansible Documentation resources</description>
     </item>
     <item>
       <title>Ansible Facts</title>
-      <link>https://linuxreader.com/ansible/ansible-facts/</link>
+      <link>http://localhost:1313/ansible/ansible-facts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/ansible-facts/</guid>
+      <guid>http://localhost:1313/ansible/ansible-facts/</guid>
       <description>Ansible Facts</description>
     </item>
     <item>
       <title>Ansible Galaxy Roles</title>
-      <link>https://linuxreader.com/ansible/ansible-galaxy-roles/</link>
+      <link>http://localhost:1313/ansible/ansible-galaxy-roles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/ansible-galaxy-roles/</guid>
+      <guid>http://localhost:1313/ansible/ansible-galaxy-roles/</guid>
       <description>Ansible Galaxy Roles</description>
     </item>
     <item>
       <title>Ansible Inventory and Ansible.cfg</title>
-      <link>https://linuxreader.com/ansible/ansible-inventory/</link>
+      <link>http://localhost:1313/ansible/ansible-inventory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/ansible-inventory/</guid>
+      <guid>http://localhost:1313/ansible/ansible-inventory/</guid>
       <description>Setting up and Ansible environment</description>
     </item>
     <item>
       <title>Ansible Playbooks</title>
-      <link>https://linuxreader.com/ansible/ansible-playbooks/</link>
+      <link>http://localhost:1313/ansible/ansible-playbooks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/ansible-playbooks/</guid>
+      <guid>http://localhost:1313/ansible/ansible-playbooks/</guid>
       <description>Getting started with Ansible Playbooks</description>
     </item>
     <item>
       <title>Ansible Roles</title>
-      <link>https://linuxreader.com/ansible/using-ansible-roles/</link>
+      <link>http://localhost:1313/ansible/using-ansible-roles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/using-ansible-roles/</guid>
+      <guid>http://localhost:1313/ansible/using-ansible-roles/</guid>
       <description>Ansible Roles</description>
     </item>
     <item>
       <title>Ansible Vault</title>
-      <link>https://linuxreader.com/ansible/ansible-vault/</link>
+      <link>http://localhost:1313/ansible/ansible-vault/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/ansible-vault/</guid>
+      <guid>http://localhost:1313/ansible/ansible-vault/</guid>
       <description>Ansible Vault</description>
     </item>
     <item>
       <title>Ansible-inventory command</title>
-      <link>https://linuxreader.com/ansible/ansible-inventory-command/</link>
+      <link>http://localhost:1313/ansible/ansible-inventory-command/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/ansible-inventory-command/</guid>
+      <guid>http://localhost:1313/ansible/ansible-inventory-command/</guid>
       <description>Ansible-inventory command</description>
     </item>
     <item>
       <title>Ansible.cfg</title>
-      <link>https://linuxreader.com/ansible/ansible.cfg/</link>
+      <link>http://localhost:1313/ansible/ansible.cfg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/ansible.cfg/</guid>
+      <guid>http://localhost:1313/ansible/ansible.cfg/</guid>
       <description>Ansible.cfg</description>
     </item>
     <item>
       <title>Boot Process</title>
-      <link>https://linuxreader.com/ansible/boot-process/</link>
+      <link>http://localhost:1313/ansible/boot-process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/boot-process/</guid>
+      <guid>http://localhost:1313/ansible/boot-process/</guid>
       <description>Managing Boot Process with Ansible</description>
     </item>
     <item>
       <title>Building an Ansible lab with Ansible</title>
-      <link>https://linuxreader.com/ansible/building-an-ansible-lab-with-ansible/</link>
+      <link>http://localhost:1313/ansible/building-an-ansible-lab-with-ansible/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/building-an-ansible-lab-with-ansible/</guid>
+      <guid>http://localhost:1313/ansible/building-an-ansible-lab-with-ansible/</guid>
       <description>Building an Ansible lab with Ansible using Ansible and Libvirt</description>
     </item>
     <item>
       <title>Common modules with examples</title>
-      <link>https://linuxreader.com/ansible/common-modules-with-examples/</link>
+      <link>http://localhost:1313/ansible/common-modules-with-examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/common-modules-with-examples/</guid>
+      <guid>http://localhost:1313/ansible/common-modules-with-examples/</guid>
       <description>Common Ansible modules with examples</description>
     </item>
     <item>
       <title>Deploying files</title>
-      <link>https://linuxreader.com/ansible/deploying-files/</link>
+      <link>http://localhost:1313/ansible/deploying-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/deploying-files/</guid>
+      <guid>http://localhost:1313/ansible/deploying-files/</guid>
       <description>Manipulating files, SELinux, and Jinja2 templates</description>
     </item>
     <item>
       <title>Discovering storage related facts</title>
-      <link>https://linuxreader.com/ansible/discovering-storage-related-facts/</link>
+      <link>http://localhost:1313/ansible/discovering-storage-related-facts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/discovering-storage-related-facts/</guid>
+      <guid>http://localhost:1313/ansible/discovering-storage-related-facts/</guid>
       <description>Discovering storage related facts</description>
     </item>
     <item>
       <title>Dynamic Inventory</title>
-      <link>https://linuxreader.com/ansible/dynamic-inventory/</link>
+      <link>http://localhost:1313/ansible/dynamic-inventory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/dynamic-inventory/</guid>
+      <guid>http://localhost:1313/ansible/dynamic-inventory/</guid>
       <description>Using Dynamic Ansible Inventories</description>
     </item>
     <item>
       <title>Encrypted passwords</title>
-      <link>https://linuxreader.com/ansible/encrypted-passwords/</link>
+      <link>http://localhost:1313/ansible/encrypted-passwords/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/encrypted-passwords/</guid>
+      <guid>http://localhost:1313/ansible/encrypted-passwords/</guid>
       <description>Encrypted passwords</description>
     </item>
     <item>
       <title>Execution Environments</title>
-      <link>https://linuxreader.com/ansible/execution-environments/</link>
+      <link>http://localhost:1313/ansible/execution-environments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/execution-environments/</guid>
+      <guid>http://localhost:1313/ansible/execution-environments/</guid>
       <description>Ansible Execution Environments</description>
     </item>
     <item>
       <title>Handlers</title>
-      <link>https://linuxreader.com/ansible/handlers/</link>
+      <link>http://localhost:1313/ansible/handlers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/handlers/</guid>
+      <guid>http://localhost:1313/ansible/handlers/</guid>
       <description>Handlers</description>
     </item>
     <item>
       <title>Host Name Patterns</title>
-      <link>https://linuxreader.com/ansible/host-name-patterns/</link>
+      <link>http://localhost:1313/ansible/host-name-patterns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/host-name-patterns/</guid>
+      <guid>http://localhost:1313/ansible/host-name-patterns/</guid>
       <description>Working with host name patterns</description>
     </item>
     <item>
       <title>Including and importing Files</title>
-      <link>https://linuxreader.com/ansible/including-and-importing-files/</link>
+      <link>http://localhost:1313/ansible/including-and-importing-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/including-and-importing-files/</guid>
+      <guid>http://localhost:1313/ansible/including-and-importing-files/</guid>
       <description>Including and importing Files</description>
     </item>
     <item>
       <title>Jinja2 templates</title>
-      <link>https://linuxreader.com/ansible/jinja2-templates/</link>
+      <link>http://localhost:1313/ansible/jinja2-templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/jinja2-templates/</guid>
+      <guid>http://localhost:1313/ansible/jinja2-templates/</guid>
       <description>Jinja2 templates</description>
     </item>
     <item>
       <title>Managing Ansible Errors and Logs</title>
-      <link>https://linuxreader.com/ansible/managing-ansible-errors-and-logs/</link>
+      <link>http://localhost:1313/ansible/managing-ansible-errors-and-logs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/managing-ansible-errors-and-logs/</guid>
+      <guid>http://localhost:1313/ansible/managing-ansible-errors-and-logs/</guid>
       <description>Managing Ansible Errors and Logs</description>
     </item>
     <item>
       <title>Managing Packages</title>
-      <link>https://linuxreader.com/ansible/managing-packages/</link>
+      <link>http://localhost:1313/ansible/managing-packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/managing-packages/</guid>
+      <guid>http://localhost:1313/ansible/managing-packages/</guid>
       <description>Managing Packages</description>
     </item>
     <item>
       <title>Managing Partitions and LVM</title>
-      <link>https://linuxreader.com/ansible/managing-partitions-and-lvm/</link>
+      <link>http://localhost:1313/ansible/managing-partitions-and-lvm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/managing-partitions-and-lvm/</guid>
+      <guid>http://localhost:1313/ansible/managing-partitions-and-lvm/</guid>
       <description>Managing Partitions and LVM</description>
     </item>
     <item>
       <title>Managing Services</title>
-      <link>https://linuxreader.com/ansible/managing-services/</link>
+      <link>http://localhost:1313/ansible/managing-services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/managing-services/</guid>
+      <guid>http://localhost:1313/ansible/managing-services/</guid>
       <description>Managing Services with Ansible</description>
     </item>
     <item>
       <title>Networking with Ansible</title>
-      <link>https://linuxreader.com/ansible/networking-with-ansible/</link>
+      <link>http://localhost:1313/ansible/networking-with-ansible/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/networking-with-ansible/</guid>
+      <guid>http://localhost:1313/ansible/networking-with-ansible/</guid>
       <description>Networking with Ansible</description>
     </item>
     <item>
       <title>NFS Setup</title>
-      <link>https://linuxreader.com/ansible/nfs-setup/</link>
+      <link>http://localhost:1313/ansible/nfs-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/nfs-setup/</guid>
+      <guid>http://localhost:1313/ansible/nfs-setup/</guid>
       <description>NFS Setup</description>
     </item>
     <item>
       <title>Optimizing Ansible Processing</title>
-      <link>https://linuxreader.com/ansible/optimizing-ansible-processing/</link>
+      <link>http://localhost:1313/ansible/optimizing-ansible-processing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/optimizing-ansible-processing/</guid>
+      <guid>http://localhost:1313/ansible/optimizing-ansible-processing/</guid>
       <description>Optimizing Ansible Processing</description>
     </item>
     <item>
       <title>Repositories and subscriptions</title>
-      <link>https://linuxreader.com/ansible/repositories-and-subscriptions/</link>
+      <link>http://localhost:1313/ansible/repositories-and-subscriptions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/repositories-and-subscriptions/</guid>
+      <guid>http://localhost:1313/ansible/repositories-and-subscriptions/</guid>
       <description>Repositories and subscriptions</description>
     </item>
     <item>
       <title>SeLinux File Properties</title>
-      <link>https://linuxreader.com/ansible/selinux-file-properties/</link>
+      <link>http://localhost:1313/ansible/selinux-file-properties/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/selinux-file-properties/</guid>
+      <guid>http://localhost:1313/ansible/selinux-file-properties/</guid>
       <description>How to manage SeLinux File Properties with Ansible</description>
     </item>
     <item>
       <title>Setting up an Ansible Lab</title>
-      <link>https://linuxreader.com/ansible/setting-up-an-ansible-lab/</link>
+      <link>http://localhost:1313/ansible/setting-up-an-ansible-lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/setting-up-an-ansible-lab/</guid>
+      <guid>http://localhost:1313/ansible/setting-up-an-ansible-lab/</guid>
       <description>Basic Ansible lab for RHCE</description>
     </item>
     <item>
       <title>SSH Connections</title>
-      <link>https://linuxreader.com/ansible/ssh-connections/</link>
+      <link>http://localhost:1313/ansible/ssh-connections/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/ssh-connections/</guid>
+      <guid>http://localhost:1313/ansible/ssh-connections/</guid>
       <description>SSH Connections</description>
     </item>
     <item>
       <title>Troubleshooting Common Scenarios</title>
-      <link>https://linuxreader.com/ansible/troubleshooting-common-scenarios/</link>
+      <link>http://localhost:1313/ansible/troubleshooting-common-scenarios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/troubleshooting-common-scenarios/</guid>
+      <guid>http://localhost:1313/ansible/troubleshooting-common-scenarios/</guid>
       <description>Troubleshooting Common Scenarios</description>
     </item>
     <item>
       <title>Users and Groups</title>
-      <link>https://linuxreader.com/ansible/users-and-groups/</link>
+      <link>http://localhost:1313/ansible/users-and-groups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/users-and-groups/</guid>
+      <guid>http://localhost:1313/ansible/users-and-groups/</guid>
       <description>Users and Groups</description>
     </item>
     <item>
       <title>Using Loops and Items</title>
-      <link>https://linuxreader.com/ansible/using-loops-and-items/</link>
+      <link>http://localhost:1313/ansible/using-loops-and-items/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/using-loops-and-items/</guid>
+      <guid>http://localhost:1313/ansible/using-loops-and-items/</guid>
       <description>Using Loops and Items</description>
     </item>
     <item>
       <title>Using Modules for Troubleshooting and Testing</title>
-      <link>https://linuxreader.com/ansible/using-modules-for-troubleshooting-and-testing/</link>
+      <link>http://localhost:1313/ansible/using-modules-for-troubleshooting-and-testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/using-modules-for-troubleshooting-and-testing/</guid>
+      <guid>http://localhost:1313/ansible/using-modules-for-troubleshooting-and-testing/</guid>
       <description>Using Modules for Troubleshooting and Testing</description>
     </item>
     <item>
       <title>Using Multiple Inventories</title>
-      <link>https://linuxreader.com/ansible/using-multiple-inventories/</link>
+      <link>http://localhost:1313/ansible/using-multiple-inventories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/using-multiple-inventories/</guid>
+      <guid>http://localhost:1313/ansible/using-multiple-inventories/</guid>
       <description>Using Multiple Inventories</description>
     </item>
     <item>
       <title>Using RHEL System roles</title>
-      <link>https://linuxreader.com/ansible/using-rhel-system-roles/</link>
+      <link>http://localhost:1313/ansible/using-rhel-system-roles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/using-rhel-system-roles/</guid>
+      <guid>http://localhost:1313/ansible/using-rhel-system-roles/</guid>
       <description>Using RHEL System roles</description>
     </item>
     <item>
       <title>Using Tags</title>
-      <link>https://linuxreader.com/ansible/using-tags/</link>
+      <link>http://localhost:1313/ansible/using-tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/using-tags/</guid>
+      <guid>http://localhost:1313/ansible/using-tags/</guid>
       <description>Using Tags</description>
     </item>
     <item>
       <title>Using when to Run Tasks Conditionally</title>
-      <link>https://linuxreader.com/ansible/using-when-to-run-tasks-conditionally/</link>
+      <link>http://localhost:1313/ansible/using-when-to-run-tasks-conditionally/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/using-when-to-run-tasks-conditionally/</guid>
+      <guid>http://localhost:1313/ansible/using-when-to-run-tasks-conditionally/</guid>
       <description>Using when to Run Tasks Conditionally</description>
     </item>
     <item>
       <title>Variables</title>
-      <link>https://linuxreader.com/ansible/variables/</link>
+      <link>http://localhost:1313/ansible/variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/variables/</guid>
+      <guid>http://localhost:1313/ansible/variables/</guid>
       <description>All about Ansible variables</description>
     </item>
   </channel>

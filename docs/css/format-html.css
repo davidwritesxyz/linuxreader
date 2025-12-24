@@ -283,13 +283,15 @@ pre:not(.mermaid) {
   }
 }
 
-code.copy-to-clipboard-code:after,
-.inline-copy-to-clipboard-button,
-.block-copy-to-clipboard-button {
+code.copy-to-clipboard-code:after {
   display: none;
 }
 
-#R-body .svg-reset-button {
+#R-body .actionbar {
+  display: none;
+}
+
+#toast-container {
   display: none;
 }
 

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About :: Linux Reader</title>
-    <link>https://linuxreader.com/about/</link>
+    <link>http://localhost:1313/about/</link>
     <description>Welcome to Linux Reader! Read about random Linux topics and improve your Linux skills!&#xA;I’m David,&#xA;I am a tech enthusiast interested in Linux, open source projects, networking, scripting, programming, and cyber security. This is my hub where I will be teaching as I learn. This will help me pick up skills better and hopefully help others along the way.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://linuxreader.com/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

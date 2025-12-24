@@ -2,79 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Networking :: Linux Reader</title>
-    <link>https://linuxreader.com/networking/</link>
+    <link>http://localhost:1313/networking/</link>
     <description>Consoling in to MX80 from linux&#xD;How to console into an MX80 router from linux&#xD;DNS&#xD;DNS Stuff&#xD;How to Study for the CCNA Exam&#xD;Guide to how you should approach studying for the CCNA exam&#xD;Juniper CLI Basics&#xD;Juniper Basics&#xD;My CCNA Notes&#xD;Notes I took for a multitude of CCNA resources&#xD;Networking Network Devices and Network Connections&#xD;Hostname, IP addressing, network protocols, network manager, tools, etc.&#xD;Resources for Passing CCNA&#xD;Resources for passing the CCNA exam&#xD;Time Synchronization&#xD;NTP, Chrony, etc.&#xD;Toggle PoE on a Juniper Switch&#xD;How to toggle PoE on a Juniper switch.&#xD;What to Learn After CCNA&#xD;What you should learn after taking the CCNA exam</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://linuxreader.com/networking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Consoling in to MX80 from linux</title>
-      <link>https://linuxreader.com/networking/consoling_in_to_mx80_from_linux/</link>
+      <link>http://localhost:1313/networking/consoling_in_to_mx80_from_linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/networking/consoling_in_to_mx80_from_linux/</guid>
+      <guid>http://localhost:1313/networking/consoling_in_to_mx80_from_linux/</guid>
       <description>How to console into an MX80 router from linux</description>
     </item>
     <item>
       <title>DNS</title>
-      <link>https://linuxreader.com/networking/dns-and-time-synchronization/</link>
+      <link>http://localhost:1313/networking/dns-and-time-synchronization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/networking/dns-and-time-synchronization/</guid>
+      <guid>http://localhost:1313/networking/dns-and-time-synchronization/</guid>
       <description>DNS Stuff</description>
     </item>
     <item>
       <title>How to Study for the CCNA Exam</title>
-      <link>https://linuxreader.com/networking/how-to-study-for-the-ccna-exam/</link>
+      <link>http://localhost:1313/networking/how-to-study-for-the-ccna-exam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/networking/how-to-study-for-the-ccna-exam/</guid>
+      <guid>http://localhost:1313/networking/how-to-study-for-the-ccna-exam/</guid>
       <description>Guide to how you should approach studying for the CCNA exam</description>
     </item>
     <item>
       <title>Juniper CLI Basics</title>
-      <link>https://linuxreader.com/networking/juniper_cli_basics/</link>
+      <link>http://localhost:1313/networking/juniper_cli_basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/networking/juniper_cli_basics/</guid>
+      <guid>http://localhost:1313/networking/juniper_cli_basics/</guid>
       <description>Juniper Basics</description>
     </item>
     <item>
       <title>My CCNA Notes</title>
-      <link>https://linuxreader.com/networking/ccna/ccna-notes/my-ccna-notes/</link>
+      <link>http://localhost:1313/networking/ccna/ccna-notes/my-ccna-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/networking/ccna/ccna-notes/my-ccna-notes/</guid>
+      <guid>http://localhost:1313/networking/ccna/ccna-notes/my-ccna-notes/</guid>
       <description>Notes I took for a multitude of CCNA resources</description>
     </item>
     <item>
       <title>Networking Network Devices and Network Connections</title>
-      <link>https://linuxreader.com/networking/networking-network-devices-and-network-connections/</link>
+      <link>http://localhost:1313/networking/networking-network-devices-and-network-connections/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/networking/networking-network-devices-and-network-connections/</guid>
+      <guid>http://localhost:1313/networking/networking-network-devices-and-network-connections/</guid>
       <description>Hostname, IP addressing, network protocols, network manager, tools, etc.</description>
     </item>
     <item>
       <title>Resources for Passing CCNA</title>
-      <link>https://linuxreader.com/networking/resources-for-passing-ccna/</link>
+      <link>http://localhost:1313/networking/resources-for-passing-ccna/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/networking/resources-for-passing-ccna/</guid>
+      <guid>http://localhost:1313/networking/resources-for-passing-ccna/</guid>
       <description>Resources for passing the CCNA exam</description>
     </item>
     <item>
       <title>Time Synchronization</title>
-      <link>https://linuxreader.com/networking/time-synchronization/</link>
+      <link>http://localhost:1313/networking/time-synchronization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/networking/time-synchronization/</guid>
+      <guid>http://localhost:1313/networking/time-synchronization/</guid>
       <description>NTP, Chrony, etc.</description>
     </item>
     <item>
       <title>Toggle PoE on a Juniper Switch</title>
-      <link>https://linuxreader.com/networking/toggle_poe/</link>
+      <link>http://localhost:1313/networking/toggle_poe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/networking/toggle_poe/</guid>
+      <guid>http://localhost:1313/networking/toggle_poe/</guid>
       <description>How to toggle PoE on a Juniper switch.</description>
     </item>
     <item>
       <title>What to Learn After CCNA</title>
-      <link>https://linuxreader.com/networking/what-to-learn-after-ccna/</link>
+      <link>http://localhost:1313/networking/what-to-learn-after-ccna/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/networking/what-to-learn-after-ccna/</guid>
+      <guid>http://localhost:1313/networking/what-to-learn-after-ccna/</guid>
       <description>What you should learn after taking the CCNA exam</description>
     </item>
   </channel>

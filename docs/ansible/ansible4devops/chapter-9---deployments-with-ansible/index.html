@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="Chapter 9 - Deployments with Ansible Deploying application code to servers is one of the hardest, but most rewarding, tasks of any development team. Most shops using traditional deployment techniques (manual steps, shell scripts, and prayers) dread deployments, especially for complex, monolithic apps.
 Deployments are less daunting when you adopt modern deployment processes and use the right amount of automation. In the best case, deployments become so boring and routine they barely register as a blip on your team’s radar.">
@@ -12,7 +12,7 @@ Deployments are less daunting when you adopt modern deployment processes and use
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="Chapter 9 - Deployments with Ansible Deploying application code to servers is one of the hardest, but most rewarding, tasks of any development team. Most shops using traditional deployment techniques (manual steps, shell scripts, and prayers) dread deployments, especially for complex, monolithic apps.
 Deployments are less daunting when you adopt modern deployment processes and use the right amount of automation. In the best case, deployments become so boring and routine they barely register as a blip on your team’s radar.">
-    <meta property="og:url" content="https://linuxreader.com/ansible/ansible4devops/chapter-9---deployments-with-ansible/">
+    <meta property="og:url" content="http://localhost:1313/ansible/ansible4devops/chapter-9---deployments-with-ansible/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:description" content="Chapter 9 - Deployments with Ansible Deploying application code to servers is one of the hardest, but most rewarding, tasks of any development team. Most shops using traditional deployment techniques (manual steps, shell scripts, and prayers) dread deployments, especially for complex, monolithic apps.
 Deployments are less daunting when you adopt modern deployment processes and use the right amount of automation. In the best case, deployments become so boring and routine they barely register as a blip on your team’s radar.">
@@ -23,39 +23,35 @@ Deployments are less daunting when you adopt modern deployment processes and use
 Deployments are less daunting when you adopt modern deployment processes and use the right amount of automation. In the best case, deployments become so boring and routine they barely register as a blip on your team’s radar.">
     <meta itemprop="wordCount" content="6810">
     <title></title>
-    <link href="/ansible/ansible4devops/chapter-9---deployments-with-ansible/index.xml" rel="alternate" type="application/rss+xml" title="">
-    <link href="/ansible/ansible4devops/chapter-9---deployments-with-ansible/index.print.html" rel="alternate" type="text/html" title="">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/ansible\/ansible4devops\/chapter-9---deployments-with-ansible\/';
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -63,14 +59,14 @@ Deployments are less daunting when you adopt modern deployment processes and use
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -98,49 +94,7 @@ Deployments are less daunting when you adopt modern deployment processes and use
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -160,14 +114,14 @@ Deployments are less daunting when you adopt modern deployment processes and use
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/" title="Ansible (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/" title="Ansible (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -194,12 +148,9 @@ Deployments are less daunting when you adopt modern deployment processes and use
             
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ansible4devops/chapter-9---deployments-with-ansible/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ad-hoc-ansible-commands/" title="Ad Hoc Ansible Commands (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/ad-hoc-ansible-commands/" title="Ad Hoc Ansible Commands (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -220,7 +171,7 @@ Deployments are less daunting when you adopt modern deployment processes and use
 
 <h1 id=""></h1>
 
-<h2 id="chapter-9---deployments-with-ansible">Chapter 9 - Deployments with Ansible</h2>
+<h2 id="chapter-9---deployments-with-ansible">Chapter 9 - Deployments with Ansible<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Deploying application code to servers is one of the hardest, but most
 rewarding, tasks of any development team. Most shops using traditional
 deployment techniques (manual steps, shell scripts, and prayers) dread
@@ -241,7 +192,7 @@ continuous integration, well-tested code, feature flags, etc.). While it
 may not be immediately possible to start deploying <em>your</em> application to
 production 20 times a day, you can move a long way towards effortless
 deployments by automating deployments with Ansible.</p>
-<h3 id="chap11.xhtml_leanpub-auto-deployment-strategies">Deployment strategies</h3>
+<h3 id="chap11.xhtml_leanpub-auto-deployment-strategies">Deployment strategies<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>There are dozens of ways to deploy code to servers. For the most basic
 applications, you may only need to switch to a new tag in a code
 repository on the server and restarting a service.</p>
@@ -264,7 +215,7 @@ many common use cases. There are other ways to strengthen your
 deployment processes, often involving application-level and
 organizational change, but those deployment aspects are out of the scope
 of this book.</p>
-<h3 id="chap11.xhtml_leanpub-auto-simple-single-server-deployments">Simple single-server deployments</h3>
+<h3 id="chap11.xhtml_leanpub-auto-simple-single-server-deployments">Simple single-server deployments<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>The vast majority of small applications and websites are easily run on a
 single virtual machine or dedicated server. Using Ansible to provision
 and manage the configuration on the server is a no-brainer. Even though
@@ -305,7 +256,7 @@ Vagrantfile:</p>
 <p>In this case, we have a VM at the IP address <code>192.168.33.7</code>. When
 provisioned, it will run the Ansible playbook defined in
 <code>playbooks/main.yml</code> on the VM.</p>
-<h4 id="chap11.xhtml_leanpub-auto-provisioning-a-ruby-on-rails-server">Provisioning a Ruby on Rails server</h4>
+<h4 id="chap11.xhtml_leanpub-auto-provisioning-a-ruby-on-rails-server">Provisioning a Ruby on Rails server<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>To prepare for our application deployment, we need to do the following:</p>
 <ol>
 <li>Install git (our application is version controlled in a git
@@ -394,7 +345,7 @@ playbook and include that separately. Inside <code>playbooks/main.yml</code>:</p
 2 - include: provision.yml</code></pre>
 </div>
 </figure>
-<h4 id="chap11.xhtml_leanpub-auto-deploying-a-rails-app-to-the-server">Deploying a Rails app to the server</h4>
+<h4 id="chap11.xhtml_leanpub-auto-deploying-a-rails-app-to-the-server">Deploying a Rails app to the server<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>All the dependencies for our app&rsquo;s deployment were configured in
 <code>provision.yml</code>, so we&rsquo;re ready to build a playbook to perform all the
 deployment tasks.</p>
@@ -584,7 +535,7 @@ unique strings for these variables using <code>rake secret</code>.</li>
 (like <code>bundle exec</code> and <code>rake</code>) to run with the correct Rails
 application environment.</li>
 </ul>
-<h4 id="chap11.xhtml_leanpub-auto-provisioning-and-deploying-the-rails-app">Provisioning and Deploying the Rails App</h4>
+<h4 id="chap11.xhtml_leanpub-auto-provisioning-and-deploying-the-rails-app">Provisioning and Deploying the Rails App<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Since we now have our <code>provision.yml</code> and <code>deploy.yml</code> playbooks
 completed, and both are <code>include</code>d in the <code>main.yml</code> playbook Vagrant
 will run, it&rsquo;s time to bring up the new VM using Vagrant, and see if our
@@ -661,7 +612,7 @@ could update the <code>app_version</code> variable in <code>vars.yml</code> and 
 playbook again, but to save time using our flexible playbook layout
 (with separate provisioning and deployment playbooks), we can run the
 <code>deploy.yml</code> playbook separately.</p>
-<h4 id="chap11.xhtml_leanpub-auto-deploying-application-updates">Deploying application updates</h4>
+<h4 id="chap11.xhtml_leanpub-auto-deploying-application-updates">Deploying application updates<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>First, to test deployment without provisioning, we need to create an
 inventory file to tell Ansible how to connect directly to the
 Vagrant-managed VM.</p>
@@ -745,7 +696,7 @@ responsive UI.</figcaption>
 the latest git tag, then running the <code>deploy.yml</code> playbook again. The
 <code>main.yml</code> playbook can be run to ensure the entire server stack is in
 the correct state, but it&rsquo;s faster to just deploy the app updates.</p>
-<h3 id="chap11.xhtml_leanpub-auto-zero-downtime-multi-server-deployments">Zero-downtime multi-server deployments</h3>
+<h3 id="chap11.xhtml_leanpub-auto-zero-downtime-multi-server-deployments">Zero-downtime multi-server deployments<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>If you need to run an application on multiple servers for horizontal
 scalability or redundancy, deployments can be cumbersome, resulting in
 downtime and complicated deployment processes&mdash;but not when you use
@@ -1061,7 +1012,7 @@ the project has seen some new feature development since the initial
 <code>1.0.0</code> version you just deployed. We now need a way to get the new
 version deployed to and running on all the servers while maintaining
 100% uptime for the API as a whole.</p>
-<h4 id="chap11.xhtml_leanpub-auto-ensuring-zero-downtime-with-serial-and-integration-tests">Ensuring zero downtime with <code>serial</code> and integration tests</h4>
+<h4 id="chap11.xhtml_leanpub-auto-ensuring-zero-downtime-with-serial-and-integration-tests">Ensuring zero downtime with <code>serial</code> and integration tests<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Now, after a little extra time in development, we have new features to
 deploy in a <code>1.0.1</code> version. You could run the exact same
 <code>ansible-playbook</code> command as above, adding in
@@ -1141,7 +1092,7 @@ application needs, and having more than one or two servers offline would
 put your infrastructure into a bad state, you should be more
 conservative with these settings&mdash;and maybe provision a little more
 capacity!</p>
-<h4 id="chap11.xhtml_leanpub-auto-deploying-to-app-servers-behind-a-load-balancer">Deploying to app servers behind a load balancer</h4>
+<h4 id="chap11.xhtml_leanpub-auto-deploying-to-app-servers-behind-a-load-balancer">Deploying to app servers behind a load balancer<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>In the case of Server Check.in, there are two separate API layers that
 manage the complexity of ensuring all server checks happen, regardless
 of whether certain servers are up or down. The &rsquo;load balancing&rsquo; occurs
@@ -1413,7 +1364,7 @@ functional state.</p>
 <p>This demonstration may seem basic, but the <code>pre_tasks</code> and <code>post_tasks</code>
 in the playbook are identical to what many large-scale production
 infrastructure deployments use!</p>
-<h3 id="chap11.xhtml_leanpub-auto-capistrano-style-and-blue-green-deployments">Capistrano-style and blue-green deployments</h3>
+<h3 id="chap11.xhtml_leanpub-auto-capistrano-style-and-blue-green-deployments">Capistrano-style and blue-green deployments<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Many developers who deal with Ruby applications are familiar with
 <a href="http://capistranorb.com/" rel="external" target="_blank">Capistrano</a>, a task automation and
 application deployment application built with Ruby. Capistrano&rsquo;s basic
@@ -1462,7 +1413,7 @@ BIG-IP</a>,
 <a href="http://docs.ansible.com/haproxy_module.html" rel="external" target="_blank">HAProxy</a>, <a href="http://docs.ansible.com/netscaler_module.html" rel="external" target="_blank">Citrix
 NetScaler</a>, and <a href="http://docs.ansible.com/ec2_elb_module.html" rel="external" target="_blank">Amazon
 ELB</a>.</p>
-<h3 id="chap11.xhtml_leanpub-auto-additional-deployment-features">Additional Deployment Features</h3>
+<h3 id="chap11.xhtml_leanpub-auto-additional-deployment-features">Additional Deployment Features<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>There are a few other Ansible modules and options which are helpful in
 the context of deployments:</p>
 <p><a href="http://docs.ansible.com/playbooks_delegation.html#run-once" rel="external" target="_blank"><code>run_once</code></a>
@@ -1514,7 +1465,7 @@ deployment begins or ends. For example:</p>
 <p>For a great primer on Ansible notifications, see Ansible Inc&rsquo;s blog
 post: <a href="http://www.ansible.com/blog/listen-to-your-servers-talk" rel="external" target="_blank">Listen to your Servers
 Talk</a>.</p>
-<h3 id="chap11.xhtml_leanpub-auto-summary-12">Summary</h3>
+<h3 id="chap11.xhtml_leanpub-auto-summary-12">Summary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Automating deployments with Ansible enables your development team to
 have their code on production servers more reliably and quickly, and it
 enables your operations team to spend less time on repetitive tasks, and
@@ -1652,8 +1603,8 @@ situation out of the box.</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1679,23 +1630,23 @@ situation out of the box.</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

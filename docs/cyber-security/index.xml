@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cyber Security :: Linux Reader</title>
-    <link>https://linuxreader.com/cyber-security/</link>
+    <link>http://localhost:1313/cyber-security/</link>
     <description>Security Enhanced Linux&#xD;The confusing world of SELinux&#xD;The Linux Firewall&#xD;Firewalld stuff mostly&#xD;The Secure Shell Service&#xD;OpenSSH, system access, file transfer</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://linuxreader.com/cyber-security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/cyber-security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security Enhanced Linux</title>
-      <link>https://linuxreader.com/cyber-security/security-enhanced-linux/</link>
+      <link>http://localhost:1313/cyber-security/security-enhanced-linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/cyber-security/security-enhanced-linux/</guid>
+      <guid>http://localhost:1313/cyber-security/security-enhanced-linux/</guid>
       <description>The confusing world of SELinux</description>
     </item>
     <item>
       <title>The Linux Firewall</title>
-      <link>https://linuxreader.com/cyber-security/the-linux-firewall/</link>
+      <link>http://localhost:1313/cyber-security/the-linux-firewall/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/cyber-security/the-linux-firewall/</guid>
+      <guid>http://localhost:1313/cyber-security/the-linux-firewall/</guid>
       <description>Firewalld stuff mostly</description>
     </item>
     <item>
       <title>The Secure Shell Service</title>
-      <link>https://linuxreader.com/cyber-security/the-secure-shell-service/</link>
+      <link>http://localhost:1313/cyber-security/the-secure-shell-service/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/cyber-security/the-secure-shell-service/</guid>
+      <guid>http://localhost:1313/cyber-security/the-secure-shell-service/</guid>
       <description>OpenSSH, system access, file transfer</description>
     </item>
   </channel>

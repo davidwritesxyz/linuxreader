@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Managing AutoFS">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="AutoFS :: Linux Reader">
     <meta name="twitter:description" content="Managing AutoFS">
-    <meta property="og:url" content="https://linuxreader.com/storage/autofs/">
+    <meta property="og:url" content="http://localhost:1313/storage/autofs/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="AutoFS :: Linux Reader">
     <meta property="og:description" content="Managing AutoFS">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Managing AutoFS">
     <meta itemprop="wordCount" content="2011">
     <title>AutoFS :: Linux Reader</title>
-    <link href="/storage/autofs/index.xml" rel="alternate" type="application/rss+xml" title="AutoFS :: Linux Reader">
-    <link href="/storage/autofs/index.print.html" rel="alternate" type="text/html" title="AutoFS :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/storage\/autofs\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/storage/" title="Storage (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/storage/" title="Storage (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -200,12 +154,9 @@
             AutoFS
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/storage/autofs/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/storage/local-file-systems-and-swap/" title="Local File Systems and Swap (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/storage/local-file-systems-and-swap/" title="Local File Systems and Swap (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -226,7 +177,7 @@
 
 <h1 id="autofs">AutoFS</h1>
 
-<h2 id="autofs">AutoFS</h2>
+<h2 id="autofs">AutoFS<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Automatically mount and unmount on clients during runtime and system reboots.</li>
 <li>Triggers mount or unmount action based on mount point activity.</li>
@@ -260,7 +211,7 @@ timeout = 300
 negative_timeout = 60
 mount_nfs_default_protocol = 4
 logging = none</p>
-<h4 id="additional-directives">Additional directives:</h4>
+<h4 id="additional-directives">Additional directives:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p><strong>master_map_name</strong></p>
 <ul>
 <li>
@@ -289,7 +240,7 @@ logging = none</p>
 <p>Normally left to their default values.</p>
 </li>
 </ul>
-<h3 id="autofs-maps">AutoFS Maps</h3>
+<h3 id="autofs-maps">AutoFS Maps<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Where AutoFS finds the shares to mount and their locations.</li>
 <li>Also tells Autofs what options to use.</li>
@@ -317,11 +268,11 @@ logging = none</p>
 <li>You can append an option to auto.master but it will apply globally to all subentries in the specified map file.</li>
 </ul>
 <p>Map entry format examples:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  /-                      /etc/auto.master.d/auto.direct   <span style="color:#5af78e">\#</span> Line <span style="color:#ff9f43">1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  /-                      /etc/auto.master.d/auto.direct   <span style="color:#5af78e">\#</span> Line <span style="color:#ff9f43">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  /misc                   /etc/auto.misc                   <span style="color:#5af78e">\#</span> Line <span style="color:#ff9f43">2</span></span></span></code></pre></div>
-<h3 id="direct-map">Direct Map</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>/- /etc/auto.master.d/auto.direct &lt;-- defines direct map and points to auto.direct for details</code></pre></div>
+<h3 id="direct-map">Direct Map<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>/- /etc/auto.master.d/auto.direct &lt;-- defines direct map and points to auto.direct for details</code></pre></div>
 <p>Mount shares on unrelated mount points</p>
 <ul>
 <li>Always visible to users</li>
@@ -334,8 +285,8 @@ logging = none</p>
 </ul>
 </li>
 </ul>
-<h3 id="indirect-map">Indirect Map</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>/misc /etc/auto.misc &lt;-- indirect map and points to auto.misc for details</code></pre></div>
+<h3 id="indirect-map">Indirect Map<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>/misc /etc/auto.misc &lt;-- indirect map and points to auto.misc for details</code></pre></div>
 <p>Automount removable filesystems</p>
 <ul>
 <li>Mount point <em>/misc</em> precedes mount point entries in <em>/etc/auto.miscq</em></li>
@@ -347,41 +298,41 @@ logging = none</p>
 <li>One entry in <em>/etc/mtab</em> gets added for each indirect map.</li>
 <li>Usually better to use indirect map for automounting NFS shares.</li>
 </ul>
-<h3 id="lab-access-nfs-share-using-direct-map-server10">Lab: Access NFS Share Using Direct Map (server10)</h3>
+<h3 id="lab-access-nfs-share-using-direct-map-server10">Lab: Access NFS Share Using Direct Map (server10)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Install Autofs</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf install -y autofs</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo dnf install -y autofs</code></pre></div>
 <ol>
 <li>Create mount point /autodir using mkdir</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo mkdir /autodir</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo mkdir /autodir</code></pre></div>
 <ol>
 <li>Add an entry to <em>/etc/auto.master</em> to point the AutoFS service to the auto.dir file for more information:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>/- /etc/auto.master.d/auto.dir</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>/- /etc/auto.master.d/auto.dir</code></pre></div>
 <ol>
 <li>Create <em>/etc/auto.master.d/auto.dir</em> and add the mount point, NFS server, and share info:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>/autodir server20:/common</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>/autodir server20:/common</code></pre></div>
 <ol>
 <li>Start AutoFS service and enable it at startup:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo systemctl enable --now autofs</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo systemctl enable --now autofs</code></pre></div>
 <ol>
 <li>Make sure AUtoFS service is running. Use -l and &ndash;no-pager options to show full details without piping the output to a pager program (pg)</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo systemctl status autofs -l --no-pager</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo systemctl status autofs -l --no-pager</code></pre></div>
 <ol>
 <li>Run ls on the mount point then verify the share is automounted and accessible with mount.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ls /autodir
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ls /autodir
 mount | grep autodir</code></pre></div>
 <ol>
 <li>Wait 5 minutes and run the mount command again to see it has disappeared.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>mount | grep autodir</code></pre></div>
-<h3 id="exercise-16-4-access-nfs-share-using-indirect-map">Exercise 16-4: Access NFS Share Using Indirect Map</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>mount | grep autodir</code></pre></div>
+<h3 id="exercise-16-4-access-nfs-share-using-indirect-map">Exercise 16-4: Access NFS Share Using Indirect Map<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>configure an indirect map to automount the NFS share /common that is available from server20.</li>
 <li>install the relevant software and set up AutoFS maps to support the automatic mounting.</li>
@@ -391,26 +342,26 @@ mount | grep autodir</code></pre></div>
 <p>1. Install the autofs software package if it is not already there:</p>
 <p>2. Confirm the entry for the indirect map <em>/misc</em> in the <em>/etc/auto.master</em>
 file exists:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 common<span style="color:#ff6ac1">]</span><span style="color:#78787e"># grep ^/misc /etc/auto.master</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 common<span style="color:#ff6ac1">]</span><span style="color:#78787e"># grep ^/misc /etc/auto.master</span>
 </span></span><span style="display:flex;"><span>/misc	/etc/auto.misc</span></span></code></pre></div>
 <p>3. Edit the <em>/etc/auto.misc</em> file and add the mount point, NFS server, and share information to it:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>autoindir server30:/common</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>autoindir server30:/common</span></span></code></pre></div>
 <p>4. Start the AutoFS service now and set it to autostart at system reboots:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl enable --now autofs</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl enable --now autofs</span></span></span></code></pre></div>
 <p>5. Verify the operational status of the AutoFS service. Use the -l and --no-pager options to show full details without piping the output to a pager program (the pg command in this case):</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl status autofs -l --no-pager</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl status autofs -l --no-pager</span></span></span></code></pre></div>
 <p><br>
 6. Run the ls command on the mount point /misc/autoindir and then grep for both auto.misc and autoindir on the mount command output to verify that the share is automounted and accessible:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls /misc/autoindir</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls /misc/autoindir</span>
 </span></span><span style="display:flex;"><span>test.text</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mount | egrep &#39;auto.misc|autoindir&#39;</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mount | egrep &#39;auto.misc|autoindir&#39;</span>
 </span></span><span style="display:flex;"><span>/etc/auto.misc on /misc <span style="color:#ff5c57">type</span> autofs <span style="color:#ff6ac1">(</span>rw,relatime,fd<span style="color:#ff6ac1">=</span>7,pgrp<span style="color:#ff6ac1">=</span>3321,timeout<span style="color:#ff6ac1">=</span>300,minproto<span style="color:#ff6ac1">=</span>5,maxproto<span style="color:#ff6ac1">=</span>5,indirect,pipe_ino<span style="color:#ff6ac1">=</span>31779<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>server30:/common on /misc/autoindir <span style="color:#ff5c57">type</span> nfs4 <span style="color:#ff6ac1">(</span>rw,relatime,vers<span style="color:#ff6ac1">=</span>4.2,rsize<span style="color:#ff6ac1">=</span>262144,wsize<span style="color:#ff6ac1">=</span>262144,namlen<span style="color:#ff6ac1">=</span>255,hard,proto<span style="color:#ff6ac1">=</span>tcp,timeo<span style="color:#ff6ac1">=</span>600,retrans<span style="color:#ff6ac1">=</span>2,sec<span style="color:#ff6ac1">=</span>sys,clientaddr<span style="color:#ff6ac1">=</span>192.168.0.40,local_lock<span style="color:#ff6ac1">=</span>none,addr<span style="color:#ff6ac1">=</span>192.168.0.30<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
 <ul>
 <li><em>/misc/autoindir</em> has been auto generated.</li>
 <li>You can use the umbrella mount point /misc to mount additional auto-generated mount points.</li>
 </ul>
-<h3 id="automounting-user-home-directories-">Automounting User Home Directories \</h3>
+<h3 id="automounting-user-home-directories-">Automounting User Home Directories \<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>AutoFS allows us to automount user home directories by exploiting two special characters in indirect maps.</p>
 <p><strong>asterisk (*)</strong></p>
 <ul>
@@ -443,7 +394,7 @@ file exists:</p>
 <p>If there is only one NFS server sharing the home directories, you can simply specify its name in lieu of the first &amp; symbol in the above entry.</p>
 </li>
 </ul>
-<h3 id="exercise-16-5-automount-user-home-directories-using-indirect-map">Exercise 16-5: Automount User Home Directories Using Indirect Map</h3>
+<h3 id="exercise-16-5-automount-user-home-directories-using-indirect-map">Exercise 16-5: Automount User Home Directories Using Indirect Map<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>There are two portions for this exercise. The first portion should be done on server20 (NFS server) and the second portion on server10 (NFS client) as user1 with sudo where required.</p>
 <p>first portion</p>
 <ul>
@@ -460,25 +411,25 @@ file exists:</p>
 <p>On NFS server server20:</p>
 <p>1. Create a user account called user30 with UID 3000 (-u) and assign
 password &ldquo;password1&rdquo;:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 common<span style="color:#ff6ac1">]</span><span style="color:#78787e"># useradd -u 3000 user30</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 common<span style="color:#ff6ac1">]</span><span style="color:#78787e"># useradd -u 3000 user30</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 common<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo password1 | sudo passwd --stdin user30</span>
 </span></span><span style="display:flex;"><span>Changing password <span style="color:#ff6ac1">for</span> user user30.
 </span></span><span style="display:flex;"><span>passwd: all authentication tokens updated successfully.</span></span></code></pre></div>
 <p>2. Edit the /etc/exports file and add an entry for /home (do not modify or remove the previous entry):
 <code>/home server40(rw)</code></p>
 <p>3. Export all the shares listed in the /etc/exports file:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 common<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo exportfs -avr</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 common<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo exportfs -avr</span>
 </span></span><span style="display:flex;"><span>exporting server40.example.com:/home
 </span></span><span style="display:flex;"><span>exporting server40.example.com:/common</span></span></code></pre></div>
 <p>On NFS client server10:</p>
 <p>1. Install the autofs software package if it is not already there:
 <code>dnf install autofs</code></p>
 <p>2. Create a user account called user30 with UID 3000 (-u), base home directory location /nfshome (-b), no home directory (-M), and password &ldquo;password1&rdquo;:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 misc<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo useradd -u 3000 -b /nfshome -M user30</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 misc<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo useradd -u 3000 -b /nfshome -M user30</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 misc<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo password1 | sudo passwd --stdin user30</span></span></span></code></pre></div>
 <p>This is to ensure that the UID for the user is consistent on the server and the client to avoid access issues.</p>
 <p>3. Create the umbrella mount point /nfshome to automount the user&rsquo;s home directory:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo mkdir /nfshome</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo mkdir /nfshome</span></span></code></pre></div>
 <p>4. Edit the <em>/etc/auto.master</em> file and add the mount point and indirect map location to it:
 <code>/nfshome /etc/auto.master.d/auto.home</code></p>
 <p>5. Create the /etc/auto.master.d/auto.home file and add the following information to it:
@@ -489,7 +440,7 @@ password &ldquo;password1&rdquo;:</p>
 <p>7. Verify the operational status of the AutoFS service. Use the -l and --no-pager options to show full details without piping the output to a pager program (the pg command):
 <code>systemctl status autofs -l --no-pager</code></p>
 <p>8. Log in as user30 and run the pwd, ls, and df commands for verification:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 nfshome<span style="color:#ff6ac1">]</span><span style="color:#78787e"># su - user30</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 nfshome<span style="color:#ff6ac1">]</span><span style="color:#78787e"># su - user30</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user30@server40 ~<span style="color:#ff6ac1">]</span>$ ls
 </span></span><span style="display:flex;"><span>user30.txt
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user30@server40 ~<span style="color:#ff6ac1">]</span>$ <span style="color:#ff5c57">pwd</span>
@@ -506,12 +457,12 @@ password &ldquo;password1&rdquo;:</p>
 </span></span><span style="display:flex;"><span>server30:/home/user30   17G  2.2G   15G  13% /nfshome/user30</span></span></code></pre></div>
 <p>EXAM TIP: You may need to configure AutoFS for mounting a remote user
 home directory.</p>
-<h2 id="nfs-diy-labs">NFS DIY Labs</h2>
-<h3 id="lab-configure-nfs-share-and-automount-with-direct-map">Lab: Configure NFS Share and Automount with Direct Map</h3>
+<h2 id="nfs-diy-labs">NFS DIY Labs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="lab-configure-nfs-share-and-automount-with-direct-map">Lab: Configure NFS Share and Automount with Direct Map<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>As user1 with sudo on server30, share directory /sharenfs (create it) in read/write mode using NFS.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkdir /sharenfs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkdir /sharenfs</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod 777 /sharenfs</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /etc/exports</span>
 </span></span><span style="display:flex;"><span>
@@ -530,11 +481,11 @@ home directory.</p>
 <ul>
 <li>On server40 as user1 with sudo, install the AutoFS software and start the service.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 nfshome<span style="color:#ff6ac1">]</span><span style="color:#78787e"># dnf -y install autofs</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 nfshome<span style="color:#ff6ac1">]</span><span style="color:#78787e"># dnf -y install autofs</span></span></span></code></pre></div>
 <ul>
 <li>Configure the master and a direct map to automount the share on /mntauto (create it).</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /etc/auto.master</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /etc/auto.master</span>
 </span></span><span style="display:flex;"><span>/- /etc/auto.master.d/auto.dir
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /etc/auto.master.d/auto.dir</span>
@@ -546,19 +497,19 @@ home directory.</p>
 <ul>
 <li>Run ls on /mntauto to trigger the mount.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mount | grep mntauto</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mount | grep mntauto</span>
 </span></span><span style="display:flex;"><span>/etc/auto.master.d/auto.dir on /mntauto <span style="color:#ff5c57">type</span> autofs <span style="color:#ff6ac1">(</span>rw,relatime,fd<span style="color:#ff6ac1">=</span>10,pgrp<span style="color:#ff6ac1">=</span>6211,timeout<span style="color:#ff6ac1">=</span>300,minproto<span style="color:#ff6ac1">=</span>5,maxproto<span style="color:#ff6ac1">=</span>5,direct,pipe_ino<span style="color:#ff6ac1">=</span>40247<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>server30:/sharenfs on /mntauto <span style="color:#ff5c57">type</span> nfs4 <span style="color:#ff6ac1">(</span>rw,relatime,vers<span style="color:#ff6ac1">=</span>4.2,rsize<span style="color:#ff6ac1">=</span>262144,wsize<span style="color:#ff6ac1">=</span>262144,namlen<span style="color:#ff6ac1">=</span>255,hard,proto<span style="color:#ff6ac1">=</span>tcp,timeo<span style="color:#ff6ac1">=</span>600,retrans<span style="color:#ff6ac1">=</span>2,sec<span style="color:#ff6ac1">=</span>sys,clientaddr<span style="color:#ff6ac1">=</span>192.168.0.40,local_lock<span style="color:#ff6ac1">=</span>none,addr<span style="color:#ff6ac1">=</span>192.168.0.30<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
 <ul>
 <li>Use <code>df -h</code> to confirm.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[root@server40 /]# df -h | grep mntauto
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>[root@server40 /]# df -h | grep mntauto
 server30:/sharenfs      17G  2.2G   15G  13% /mntauto</code></pre></div>
-<h3 id="lab-automount-nfs-share-with-indirect-map">Lab: Automount NFS Share with Indirect Map</h3>
+<h3 id="lab-automount-nfs-share-with-indirect-map">Lab: Automount NFS Share with Indirect Map<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>As user1 with sudo on server40, configure the master and an indirect map to automount the share under /autoindir (create it).</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkdir /autoindir</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkdir /autoindir</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 etc<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /etc/auto.master</span>
 </span></span><span style="display:flex;"><span>/autoindir /etc/auto.misc
@@ -570,12 +521,12 @@ server30:/sharenfs      17G  2.2G   15G  13% /mntauto</code></pre></div>
 <ul>
 <li>Run ls on /autoindir/sharenfs to trigger the mount.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 etc<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls /autoindir/sharenfs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 etc<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls /autoindir/sharenfs</span>
 </span></span><span style="display:flex;"><span>test.text</span></span></code></pre></div>
 <ul>
 <li>Use <code>df -h</code> to confirm.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 etc<span style="color:#ff6ac1">]</span><span style="color:#78787e"># df -h</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 etc<span style="color:#ff6ac1">]</span><span style="color:#78787e"># df -h</span>
 </span></span><span style="display:flex;"><span>Filesystem             Size  Used Avail Use% Mounted on
 </span></span><span style="display:flex;"><span>devtmpfs               4.0M     <span style="color:#ff9f43">0</span>  4.0M   0% /dev
 </span></span><span style="display:flex;"><span>tmpfs                  888M     <span style="color:#ff9f43">0</span>  888M   0% /dev/shm
@@ -660,8 +611,8 @@ server30:/sharenfs      17G  2.2G   15G  13% /mntauto</code></pre></div>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -687,23 +638,23 @@ server30:/sharenfs      17G  2.2G   15G  13% /mntauto</code></pre></div>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Password aging, group and user manament">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Advanced User Management :: Linux Reader">
     <meta name="twitter:description" content="Password aging, group and user manament">
-    <meta property="og:url" content="https://linuxreader.com/users-and-groups/advanced-user-management/">
+    <meta property="og:url" content="http://localhost:1313/users-and-groups/advanced-user-management/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Advanced User Management :: Linux Reader">
     <meta property="og:description" content="Password aging, group and user manament">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Password aging, group and user manament">
     <meta itemprop="wordCount" content="3330">
     <title>Advanced User Management :: Linux Reader</title>
-    <link href="/users-and-groups/advanced-user-management/index.xml" rel="alternate" type="application/rss+xml" title="Advanced User Management :: Linux Reader">
-    <link href="/users-and-groups/advanced-user-management/index.print.html" rel="alternate" type="text/html" title="Advanced User Management :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/users-and-groups\/advanced-user-management\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/users-and-groups/" title="Users and Groups (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/users-and-groups/" title="Users and Groups (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -238,12 +192,9 @@
             Advanced User Management
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/users-and-groups/advanced-user-management/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/users-and-groups/basic-user-management/" title="Basic User Management (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/users-and-groups/basic-user-management/" title="Basic User Management (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -264,7 +215,7 @@
 
 <h1 id="advanced-user-management">Advanced User Management</h1>
 
-<h2 id="local-user-authentication-files">Local User Authentication Files</h2>
+<h2 id="local-user-authentication-files">Local User Authentication Files<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Three supported account types: root, normal, service</li>
 <li>root
@@ -294,7 +245,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="etcpasswd">/etc/passwd</h3>
+<h3 id="etcpasswd">/etc/passwd<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>vital user login data</li>
 <li>each row hold info for one user</li>
@@ -348,7 +299,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="etcshadow">/etc/shadow</h3>
+<h3 id="etcshadow">/etc/shadow<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>no access permissions for any user (even root) (but owned by root)</li>
 <li>secure password control (shadow password)</li>
@@ -414,7 +365,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="etcgroup">/etc/group</h3>
+<h3 id="etcgroup">/etc/group<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>plaintext file and contains critical group information.</li>
 <li>644 permissions by default and owned by root.</li>
@@ -452,7 +403,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="etcgshadow">/etc/gshadow</h3>
+<h3 id="etcgshadow">/etc/gshadow<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>no access permissions for any user (even root)</li>
 <li>group passwords are hashed and stored</li>
@@ -484,7 +435,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="gpasswd-command"><code>gpasswd</code> command:</h3>
+<h3 id="gpasswd-command"><code>gpasswd</code> command:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>add group administrators.</li>
 <li>add or delete group members.
@@ -495,8 +446,8 @@
 </ul>
 </li>
 </ul>
-<h3 id="useradd-and-logindefs-configuration-files">useradd and login.defs configuration files</h3>
-<h3 id="useradd-command"><code>useradd</code> command</h3>
+<h3 id="useradd-and-logindefs-configuration-files">useradd and login.defs configuration files<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="useradd-command"><code>useradd</code> command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>picks up the default values from the /etc/default/useradd and /etc/login.defs files for any options that are not specified at the command line when executing it.</li>
 <li>login.defs file is also consulted by the usermod, userdel, chage, and passwd commands</li>
@@ -510,7 +461,7 @@
 <li>skeleton directory location to copy user initialization files from (SKEL)</li>
 <li>whether to create mail spool directory (CREATE_MAIL_SPOOL)</li>
 </ul>
-<h3 id="etclogindefs-default-directives">/etc/login.defs default directives:</h3>
+<h3 id="etclogindefs-default-directives">/etc/login.defs default directives:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>MAIL_DIR</p>
 <ul>
 <li>mail directory location</li>
@@ -543,7 +494,7 @@
 <ul>
 <li>encryption method for user passwords</li>
 </ul>
-<h2 id="password-aging-attributes">Password Aging attributes</h2>
+<h2 id="password-aging-attributes">Password Aging attributes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Can be done for an individual user or applied to all users.</li>
 <li>Can prevent users from logging in to the system by locking their access for a period of time or permanently.</li>
@@ -553,7 +504,7 @@
 <li>every file that a user creates is in the ownership of that user.</li>
 <li>ownership may be changed and given to another user by a super user.</li>
 </ul>
-<h3 id="password-aging-and-management">Password Aging and management</h3>
+<h3 id="password-aging-and-management">Password Aging and management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Setting restrictions on password expiry, account disablement, locking and unlocking users, and password change frequency.</li>
 <li>Can choose to inactivate it completely for an individual user.</li>
@@ -561,7 +512,7 @@
 <li>aging management tools—<code>chage</code> and <code>passwd</code>—</li>
 <li><code>usermod</code> command can be used to implement two aging attributes (user expiry and password expiry) and lock and unlock user accounts.</li>
 </ul>
-<h3 id="chage-command">chage command</h3>
+<h3 id="chage-command">chage command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Set or alter password aging parameters on a user account.</li>
 <li>Changes various fields in the shadow file</li>
@@ -605,7 +556,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="passwd-command">passwd command</h3>
+<h3 id="passwd-command">passwd command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>set or modify a user’s password</li>
 <li>modify the password aging attributes and</li>
@@ -662,7 +613,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="usermod-command">usermod command</h3>
+<h3 id="usermod-command">usermod command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Modify a user’s attribute</li>
 <li>Lock or unlock their account</li>
@@ -681,7 +632,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="linux-groups-and-their-management">Linux Groups and their Management</h2>
+<h2 id="linux-groups-and-their-management">Linux Groups and their Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>/etc/group
 <ul>
@@ -705,7 +656,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="groupadd-command">groupadd command</h3>
+<h3 id="groupadd-command">groupadd command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>adds entries to the group and gshadow files for each group added to the system</li>
 <li>picks up default values from /etc/login.defs</li>
@@ -734,7 +685,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="groupmod-command">groupmod command</h3>
+<h3 id="groupmod-command">groupmod command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>syntax of this command is very similar to the groupadd with most options identical.</li>
 <li>Additional flags
@@ -747,9 +698,9 @@
 </ul>
 </li>
 </ul>
-<h2 id="user-management">User Management</h2>
-<h3 id="switching-users">Switching Users</h3>
-<h4 id="su-command">su command</h4>
+<h2 id="user-management">User Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="switching-users">Switching Users<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="su-command">su command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Ctrl-d
 - return to previous user
 su -
@@ -760,19 +711,19 @@ su -
 <li>root user can switch into any user account that exists on the system without being prompted for that user’s password.</li>
 <li>switching into the root account to execute privileged actions is not recommended.</li>
 </ul>
-<h3 id="whoami-command">whoami command</h3>
+<h3 id="whoami-command">whoami command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>show current user</li>
 </ul>
-<h3 id="logname-command">logname command</h3>
+<h3 id="logname-command">logname command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Identity of the user who originally logged in.</li>
 </ul>
-<h3 id="groupdel-command">groupdel command</h3>
+<h3 id="groupdel-command">groupdel command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>removes entries for the specified group from both group and gshadow files.</li>
 </ul>
-<h3 id="doing-as-superuser-substitute-user">Doing as Superuser (substitute user)</h3>
+<h3 id="doing-as-superuser-substitute-user">Doing as Superuser (substitute user)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Any normal user that requires privileged access to administrative commands or non-owning files is defined in the sudoers file.
 <ul>
@@ -814,7 +765,7 @@ group is prefixed by %</li>
 </ul>
 </li>
 </ul>
-<h3 id="sudo-command">sudo command</h3>
+<h3 id="sudo-command">sudo command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>/etc/sudoers</li>
 <li>/etc/sudoers.d/
@@ -825,245 +776,245 @@ group is prefixed by %</li>
 </ul>
 </li>
 </ul>
-<h3 id="owning-user-and-owning-group">Owning User and Owning Group</h3>
+<h3 id="owning-user-and-owning-group">Owning User and Owning Group<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Every file and directory has an owner.</li>
 <li>Creator assumes ownership by default.</li>
 <li>Every user is a member of one or more groups.</li>
 <li>Owners group is also assigned to file or directory by default.</li>
 </ul>
-<h3 id="chown-command">chown command</h3>
+<h3 id="chown-command">chown command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>alter the ownership for files and directories</li>
 <li>Must have root privileges.</li>
 <li>Can also change owning group.</li>
 </ul>
-<h3 id="chgrp-command">chgrp command</h3>
+<h3 id="chgrp-command">chgrp command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>alter the owning group for files and directories</li>
 <li>Must have root privileges.</li>
 </ul>
-<h2 id="advanced-user-management-labs">Advanced User Management Labs</h2>
-<h3 id="lab-set-and-confirm-password-aging-with-chage-root">Lab: Set and Confirm Password Aging with chage (root)</h3>
+<h2 id="advanced-user-management-labs">Advanced User Management Labs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="lab-set-and-confirm-password-aging-with-chage-root">Lab: Set and Confirm Password Aging with chage (root)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Set password aging parameters for user100 to mindays (-m) 7, maxdays (-M) 28, and warndays (-W) 5:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chage -m <span style="color:#ff9f43">7</span> -M <span style="color:#ff9f43">28</span> -W <span style="color:#ff9f43">5</span> user100</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chage -m <span style="color:#ff9f43">7</span> -M <span style="color:#ff9f43">28</span> -W <span style="color:#ff9f43">5</span> user100</span></span></code></pre></div>
 <ol start="2">
 <li>Confirm</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chage -l user100</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chage -l user100</span></span></code></pre></div>
 <ol start="3">
 <li>Set the account expiry to January 31, 2020</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chage -E 2020-01-31 user100</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chage -E 2020-01-31 user100</span></span></code></pre></div>
 <ol start="4">
 <li>Verify the new account expiry setting</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chage -l user100</span></span></code></pre></div>
-<h3 id="lab-set-and-confirm-password-aging-with-passwd-root">Lab: Set and Confirm Password Aging with passwd (root)</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chage -l user100</span></span></code></pre></div>
+<h3 id="lab-set-and-confirm-password-aging-with-passwd-root">Lab: Set and Confirm Password Aging with passwd (root)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Set password aging attributes for user200 to mindays 10, maxdays 90, and warndays 14:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -n <span style="color:#ff9f43">10</span> -x <span style="color:#ff9f43">90</span> -w <span style="color:#ff9f43">14</span> user200</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -n <span style="color:#ff9f43">10</span> -x <span style="color:#ff9f43">90</span> -w <span style="color:#ff9f43">14</span> user200</span></span></code></pre></div>
 <ol start="2">
 <li>Confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -S user200</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -S user200</span></span></code></pre></div>
 <ol start="3">
 <li>Set the number of inactivity days to 5:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -i <span style="color:#ff9f43">5</span> user200</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -i <span style="color:#ff9f43">5</span> user200</span></span></code></pre></div>
 <ol start="4">
 <li>Confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -S user200</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -S user200</span></span></code></pre></div>
 <ol start="5">
 <li>Ensure that the user is forced to change their password at next login:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -e user200</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -e user200</span></span></code></pre></div>
 <ol start="6">
 <li>Confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -S user200</span></span></code></pre></div>
-<h3 id="lab-lock-and-unlock-a-user-account-with-usermod-and-passwd-root">Lab: Lock and Unlock a User Account with usermod and passwd (root)</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -S user200</span></span></code></pre></div>
+<h3 id="lab-lock-and-unlock-a-user-account-with-usermod-and-passwd-root">Lab: Lock and Unlock a User Account with usermod and passwd (root)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Obtain the current password information for user200 from the shadow file:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep user200 /etc/shadow</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep user200 /etc/shadow</span></span></code></pre></div>
 <ol start="2">
 <li>Lock the account for user200:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>usermod -L user200 </span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>usermod -L user200 </span></span></code></pre></div>
 <ol start="3">
 <li>Confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep user200 /etc/shadow</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep user200 /etc/shadow</span></span></code></pre></div>
 <ol start="4">
 <li>Unlock the account with either of the following:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>usermod -U user200
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>usermod -U user200
 </span></span><span style="display:flex;"><span>or
 </span></span><span style="display:flex;"><span>passwd -u user200</span></span></code></pre></div>
 <ol start="5">
 <li>confirm</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep user200 /etc/shadow</span></span></code></pre></div>
-<h3 id="lab-create-a-group-and-add-members-root">Lab: Create a Group and Add Members (root)</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep user200 /etc/shadow</span></span></code></pre></div>
+<h3 id="lab-create-a-group-and-add-members-root">Lab: Create a Group and Add Members (root)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Create the group linuxadm with GID 5000:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>groupadd -g <span style="color:#ff9f43">5000</span> linuxadm</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>groupadd -g <span style="color:#ff9f43">5000</span> linuxadm</span></span></code></pre></div>
 <ol start="2">
 <li>Create a group called dba with the same GID as that of group linuxadm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>groupadd -o -g <span style="color:#ff9f43">5000</span> dba</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>groupadd -o -g <span style="color:#ff9f43">5000</span> dba</span></span></code></pre></div>
 <ol start="3">
 <li>Confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep linuxadm /etc/group
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep linuxadm /etc/group
 </span></span><span style="display:flex;"><span>grep dba /etc/group</span></span></code></pre></div>
 <ol start="4">
 <li>Add user1 as a secondary member of group dba using the <code>usermod </code>command. The existing membership for the user must remain intact.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>usermod -aG dba user1</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>usermod -aG dba user1</span></span></code></pre></div>
 <ol start="5">
 <li>Verify the updated group membership information for user1 by extracting the relevant entry from the group file, and running the id and groups command for user1:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep dba /etc/group
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep dba /etc/group
 </span></span><span style="display:flex;"><span>id user1
 </span></span><span style="display:flex;"><span>groups user1</span></span></code></pre></div>
-<h3 id="lab-modify-and-delete-a-group-account-root">Lab: Modify and Delete a Group Account (root)</h3>
+<h3 id="lab-modify-and-delete-a-group-account-root">Lab: Modify and Delete a Group Account (root)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Alter the name of linuxadm to sysadm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>groupmod -n sysadm linuxadm</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>groupmod -n sysadm linuxadm</span></span></code></pre></div>
 <ol start="2">
 <li>Change the GID of sysadm to 6000:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>groupmod -g <span style="color:#ff9f43">6000</span> sysadm</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>groupmod -g <span style="color:#ff9f43">6000</span> sysadm</span></span></code></pre></div>
 <ol start="3">
 <li>Confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep sysadm /etc/group
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep sysadm /etc/group
 </span></span><span style="display:flex;"><span>grep linuxadm /etc/group</span></span></code></pre></div>
 <ol start="4">
 <li>Delete sysadm group and confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>groupdel sysadm
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>groupdel sysadm
 </span></span><span style="display:flex;"><span>grep sysadm /etc/group</span></span></code></pre></div>
-<h3 id="lab-to-switch-from-user1-assuming-you-are-logged-in-as-user1-into-root-without-executing-the-startup-scripts">Lab: To switch from user1 (assuming you are logged in as user1) into root without executing the startup scripts</h3>
+<h3 id="lab-to-switch-from-user1-assuming-you-are-logged-in-as-user1-into-root-without-executing-the-startup-scripts">Lab: To switch from user1 (assuming you are logged in as user1) into root without executing the startup scripts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li></li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su</span></span></code></pre></div>
 <ol start="2">
 <li>switch to user100</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su - user100</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su - user100</span></span></code></pre></div>
 <ol start="3">
 <li>See what whoami and logname reports now:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>whoami
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>whoami
 </span></span><span style="display:flex;"><span>logname</span></span></code></pre></div>
 <ol start="4">
 <li>use su as follows and execute this privileged command to obtain desired results:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su -c <span style="color:#5af78e">&#39;firewall-cmd --list-services&#39;</span></span></span></code></pre></div>
-<h3 id="lab-add-user1-to-sudo-file-but-only-for-the-cat-command">Lab: Add user1 to sudo file but only for the cat command.</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su -c <span style="color:#5af78e">&#39;firewall-cmd --list-services&#39;</span></span></span></code></pre></div>
+<h3 id="lab-add-user1-to-sudo-file-but-only-for-the-cat-command">Lab: Add user1 to sudo file but only for the cat command.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Open up /etc/sudoers and add the following:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>user1 <span style="color:#ff5c57">ALL</span><span style="color:#ff6ac1">=</span>/usr/bin/cat</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>user1 <span style="color:#ff5c57">ALL</span><span style="color:#ff6ac1">=</span>/usr/bin/cat</span></span></code></pre></div>
 <ol start="2">
 <li>run cat as user1 with and without sudo:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /etc/sudoers
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /etc/sudoers
 </span></span><span style="display:flex;"><span>sudo cat /etc/sudoers</span></span></code></pre></div>
-<h3 id="lab-add-user-and-command-aliases-to-the-sudoer-file">Lab: Add user and command aliases to the sudoer file.</h3>
+<h3 id="lab-add-user-and-command-aliases-to-the-sudoer-file">Lab: Add user and command aliases to the sudoer file.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Add the following to the bottom of the sudoers file:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Cmnd_Alias <span style="color:#ff5c57">PKGCMD</span> <span style="color:#ff6ac1">=</span> /usr/bin/yum, /usr/bin/rpm
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Cmnd_Alias <span style="color:#ff5c57">PKGCMD</span> <span style="color:#ff6ac1">=</span> /usr/bin/yum, /usr/bin/rpm
 </span></span><span style="display:flex;"><span>User_Alias <span style="color:#ff5c57">PKGADM</span> <span style="color:#ff6ac1">=</span> user1, user100, user200 
 </span></span><span style="display:flex;"><span>PKGADM <span style="color:#ff5c57">ALL</span><span style="color:#ff6ac1">=</span>PKGCMD</span></span></code></pre></div>
 <ol start="2">
 <li>Run rpm or yum with sudo as one of the users.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo yum </span></span></code></pre></div>
-<h3 id="lab-take-a-look-at-examples-in-the-sudoers-file">Lab: Take a look at examples in the sudoers file.</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /etc/sudoers</span></span></code></pre></div>
-<h3 id="lab-viewing-owner-and-group-information">Lab: Viewing owner and group information</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo yum </span></span></code></pre></div>
+<h3 id="lab-take-a-look-at-examples-in-the-sudoers-file">Lab: Take a look at examples in the sudoers file.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /etc/sudoers</span></span></code></pre></div>
+<h3 id="lab-viewing-owner-and-group-information">Lab: Viewing owner and group information<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Create a file file1 as user1 in their home directory and exhibit the file’s long listing:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch file1
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch file1
 </span></span><span style="display:flex;"><span>ls -l file1</span></span></code></pre></div>
 <ol start="2">
 <li>View the corresponding UID and GID instead, you can specify the -n option with the command:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -ln file1</span></span></code></pre></div>
-<h3 id="lab-modify-file-owner-and-owning-group">Lab: Modify File Owner and Owning Group</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -ln file1</span></span></code></pre></div>
+<h3 id="lab-modify-file-owner-and-owning-group">Lab: Modify File Owner and Owning Group<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Change into the /tmp directory and create file10 and dir10:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">cd</span> /tmp
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">cd</span> /tmp
 </span></span><span style="display:flex;"><span>touch file10
 </span></span><span style="display:flex;"><span>mkdir dir10</span></span></code></pre></div>
 <ol start="2">
 <li>Check and validate that both attributes are set to user1:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l file10
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l file10
 </span></span><span style="display:flex;"><span>ls -ld dir10</span></span></code></pre></div>
 <ol start="3">
 <li>Set the ownership of file10 to user100 and confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chown user100 file10
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chown user100 file10
 </span></span><span style="display:flex;"><span>ls -l file10</span></span></code></pre></div>
 <ol start="4">
 <li>Alter the owning group to dba and verify:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chgrp dba file10
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chgrp dba file10
 </span></span><span style="display:flex;"><span>ls -l file10</span></span></code></pre></div>
 <ol start="5">
 <li>Change the ownership to user200 and owning group to user100 and confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chown user200:user100 file10</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chown user200:user100 file10</span></span></code></pre></div>
 <ol start="6">
 <li>Modify the ownership to user200 and owning group to dba recursively on dir10 and validate:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo  chown -R user200:dba dir10
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo  chown -R user200:dba dir10
 </span></span><span style="display:flex;"><span>ls -ld dir10</span></span></code></pre></div>
-<h3 id="lab-create-user-and-configure-password-aging-root">Lab: Create User and Configure Password Aging (root)</h3>
+<h3 id="lab-create-user-and-configure-password-aging-root">Lab: Create User and Configure Password Aging (root)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Create group lnxgrp with GID 6000.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>groupadd lnxgrp -g <span style="color:#ff9f43">6000</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>groupadd lnxgrp -g <span style="color:#ff9f43">6000</span></span></span></code></pre></div>
 <ol start="2">
 <li>Create user user5000 with UID 5000 and GID 6000. Assign this user a password.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>useradd -u <span style="color:#ff9f43">5000</span> -g <span style="color:#ff9f43">6000</span> user5000</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>useradd -u <span style="color:#ff9f43">5000</span> -g <span style="color:#ff9f43">6000</span> user5000</span></span></code></pre></div>
 <ol start="3">
 <li>Establish password aging attributes so that this user cannot change their password within 4 days after setting it and with a password validity of 30 days. This user should start getting warning messages for changing password 10 days prior to account lock down.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chage -m <span style="color:#ff9f43">4</span> -M <span style="color:#ff9f43">30</span> -W <span style="color:#ff9f43">10</span> user5000</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chage -m <span style="color:#ff9f43">4</span> -M <span style="color:#ff9f43">30</span> -W <span style="color:#ff9f43">10</span> user5000</span></span></code></pre></div>
 <ol start="4">
 <li>This user account needs to expire on the 20th of December, 2021.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chage -E 2021-12-20 user5000</span></span></code></pre></div>
-<h3 id="lab-6-2-lock-and-unlock-user-root">Lab 6-2: Lock and Unlock User (root)</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chage -E 2021-12-20 user5000</span></span></code></pre></div>
+<h3 id="lab-6-2-lock-and-unlock-user-root">Lab 6-2: Lock and Unlock User (root)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Lock the user account for user5000 using the passwd command, and</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -l user5000</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>passwd -l user5000</span></span></code></pre></div>
 <ol start="2">
 <li>confirm by examining the change in the /etc/shadow file.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /etc/shadow</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /etc/shadow</span></span></code></pre></div>
 <ol start="3">
 <li>Try to log in with user5000 and observe what happens.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su - user1
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su - user1
 </span></span><span style="display:flex;"><span>su - user5000</span></span></code></pre></div>
 <ol start="4">
 <li>Use the usermod command and unlock</li>
@@ -1139,8 +1090,8 @@ group is prefixed by %</li>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1166,23 +1117,23 @@ group is prefixed by %</li>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

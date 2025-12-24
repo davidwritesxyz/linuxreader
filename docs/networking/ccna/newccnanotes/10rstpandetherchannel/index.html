@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="10 RSTP and Etherchannel 2.0 Network Access2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP) 2.5 Describe the need for and basic operations of Rapid PVST&#43; Spanning Tree Protocol and identify basic operations2.5.a Root port, root bridge (primary/secondary), and other port names 2.5.b Port states (forwarding/blocking)2.5.c PortFast benefits Most network engineers make the distribution layer switches be the root. STP Modes and Standards Three options to configure on the spanninguse -tree mode command, which tells the switch which type of STP to and STPtheswitches do not support STP or RSTP with the single tree (CST)-based PVST&#43;, Cisco-proprietary and RSTP-based RPVST&#43;, or the IEEE standard MSTP.. They can use either the Cisco-proprietary MSTP allows the definition of as many instances (multiple spanning tree instances, or MSTIs) as chosen by the network designer but does not require one per VLAN. STP and MSTP now exist as part of the 802.1Q standard, which defines VLANs and VLAN trunking. The revised rules divide the original priority field into two separate fields, as shown in Figure 10priority field and a 12-bit subfield called the system ID extension (which represents the VLAN ID-4: a 4-bit Cisco switches let you configure the BID, but only the priority part. The switch fills in its universal (burnedin the 12-bit system ID extension field; you cannot change that behavior either. -in) MAC address as the system ID. It also plugs in the VLAN ID of a VLAN The only part configurable by the network engineer is the 4-bit priority field. the configuration command (65,535. But not just any number in that range will suffice; it must be a multiple of 4096spanning-tree vlan vlan-id priority x) requires a decimal number between 0 and ,as emphasized in the help text shown in Example 10-2. Command Guide RSTP #spanning#spanning--tree vlan vlantree vlan x root primary-id priority x #spanning#show spanning-tree vlan x root secondary-tree vlan 9 EtherChannel (int)#channel#show etherchannel 1 summary-group 1 mode on #show etherchannel summary#show etherchannel 1 port-channel #show etherchannel load#channel-group 1 mode desirable/auto (PAgP)-balance #channel#port-channel load-group 1 mode active/passive (LACP)-balance src-dst-mac 10. RSTP and EtherChannelTuesday, July 27, 2021 12:04 PM help text shown in Example 10-2. #spanning-tree vlan x root primary(on the switch that should be primary)
 #spanning-tree vlan x root secondary(on the switch that should be secondary)
@@ -28,7 +28,7 @@ How Switches Use the Priority and System ID Extension
 Cisco Catalyst switches configure the priority value using a number that represents a 16system ID extension exists as the low-order 12 bits of that same number. -bit value; however, the
 When the switch builds its BID to use for RSTP in a VLAN, it must combine the configured priority with the VLAN ID of that VLAN.
 the configured priority results in a 16-bit priority that always ends with 12 binary 0s.">
-    <meta property="og:url" content="https://linuxreader.com/networking/ccna/newccnanotes/10rstpandetherchannel/">
+    <meta property="og:url" content="http://localhost:1313/networking/ccna/newccnanotes/10rstpandetherchannel/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:description" content="10 RSTP and Etherchannel 2.0 Network Access2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP) 2.5 Describe the need for and basic operations of Rapid PVST&#43; Spanning Tree Protocol and identify basic operations2.5.a Root port, root bridge (primary/secondary), and other port names 2.5.b Port states (forwarding/blocking)2.5.c PortFast benefits Most network engineers make the distribution layer switches be the root. STP Modes and Standards Three options to configure on the spanninguse -tree mode command, which tells the switch which type of STP to and STPtheswitches do not support STP or RSTP with the single tree (CST)-based PVST&#43;, Cisco-proprietary and RSTP-based RPVST&#43;, or the IEEE standard MSTP.. They can use either the Cisco-proprietary MSTP allows the definition of as many instances (multiple spanning tree instances, or MSTIs) as chosen by the network designer but does not require one per VLAN. STP and MSTP now exist as part of the 802.1Q standard, which defines VLANs and VLAN trunking. The revised rules divide the original priority field into two separate fields, as shown in Figure 10priority field and a 12-bit subfield called the system ID extension (which represents the VLAN ID-4: a 4-bit Cisco switches let you configure the BID, but only the priority part. The switch fills in its universal (burnedin the 12-bit system ID extension field; you cannot change that behavior either. -in) MAC address as the system ID. It also plugs in the VLAN ID of a VLAN The only part configurable by the network engineer is the 4-bit priority field. the configuration command (65,535. But not just any number in that range will suffice; it must be a multiple of 4096spanning-tree vlan vlan-id priority x) requires a decimal number between 0 and ,as emphasized in the help text shown in Example 10-2. Command Guide RSTP #spanning#spanning--tree vlan vlantree vlan x root primary-id priority x #spanning#show spanning-tree vlan x root secondary-tree vlan 9 EtherChannel (int)#channel#show etherchannel 1 summary-group 1 mode on #show etherchannel summary#show etherchannel 1 port-channel #show etherchannel load#channel-group 1 mode desirable/auto (PAgP)-balance #channel#port-channel load-group 1 mode active/passive (LACP)-balance src-dst-mac 10. RSTP and EtherChannelTuesday, July 27, 2021 12:04 PM help text shown in Example 10-2. #spanning-tree vlan x root primary(on the switch that should be primary)
 #spanning-tree vlan x root secondary(on the switch that should be secondary)
@@ -55,39 +55,35 @@ When the switch builds its BID to use for RSTP in a VLAN, it must combine the co
 the configured priority results in a 16-bit priority that always ends with 12 binary 0s.">
     <meta itemprop="wordCount" content="2109">
     <title></title>
-    <link href="/networking/ccna/newccnanotes/10rstpandetherchannel/index.xml" rel="alternate" type="application/rss+xml" title="">
-    <link href="/networking/ccna/newccnanotes/10rstpandetherchannel/index.print.html" rel="alternate" type="text/html" title="">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/networking\/ccna\/newccnanotes\/10rstpandetherchannel\/';
       window.relearn.relBasePath='..\/..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -95,14 +91,14 @@ the configured priority results in a 16-bit priority that always ends with 12 bi
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -130,49 +126,7 @@ the configured priority results in a 16-bit priority that always ends with 12 bi
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -192,14 +146,14 @@ the configured priority results in a 16-bit priority that always ends with 12 bi
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/" title="Networking (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/networking/" title="Networking (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"> 
                 </div>
@@ -212,12 +166,9 @@ the configured priority results in a 16-bit priority that always ends with 12 bi
             
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/ccna/newccnanotes/10rstpandetherchannel/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/consoling_in_to_mx80_from_linux/" title="Consoling in to MX80 from linux (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/networking/consoling_in_to_mx80_from_linux/" title="Consoling in to MX80 from linux (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -238,23 +189,23 @@ the configured priority results in a 16-bit priority that always ends with 12 bi
 
 <h1 id=""></h1>
 
-<h1 id="10-rstp-and-etherchannel">10 RSTP and Etherchannel</h1>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>2.0 Network Access2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)
+<h1 id="10-rstp-and-etherchannel">10 RSTP and Etherchannel<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>2.0 Network Access2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)
 2.5 Describe the need for and basic operations of Rapid PVST+ Spanning Tree Protocol and identify basic operations2.5.a Root port, root bridge (primary/secondary), and other port names
 2.5.b Port states (forwarding/blocking)2.5.c PortFast benefits
 Most network engineers make the distribution layer switches be the root.
 STP Modes and Standards
 Three options to configure on the spanninguse -tree mode command, which tells the switch which type of STP to
 and STPtheswitches do not support STP or RSTP with the single tree (CST)-based PVST+, Cisco-proprietary and RSTP-based RPVST+, or the IEEE standard MSTP.. They can use either the Cisco-proprietary</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>MSTP allows the definition of as many instances (multiple spanning tree instances, or MSTIs) as chosen by the network designer but does not require one per VLAN.</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>STP and MSTP now exist as part of the 802.1Q standard, which defines VLANs and VLAN trunking.
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>MSTP allows the definition of as many instances (multiple spanning tree instances, or MSTIs) as chosen by the network designer but does not require one per VLAN.</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>STP and MSTP now exist as part of the 802.1Q standard, which defines VLANs and VLAN trunking.
 The revised rules divide the original priority field into two separate fields, as shown in Figure 10priority field and a 12-bit subfield called the system ID extension (which represents the VLAN ID-4: a 4-bit</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Cisco switches let you configure the BID, but only the priority part.
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Cisco switches let you configure the BID, but only the priority part.
 The switch fills in its universal (burnedin the 12-bit system ID extension field; you cannot change that behavior either. -in) MAC address as the system ID. It also plugs in the VLAN ID of a VLAN The only part configurable by
 the network engineer is the 4-bit priority field.
 the configuration command (65,535. But not just any number in that range will suffice; it must be a multiple of 4096spanning-tree vlan vlan-id priority x) requires a decimal number between 0 and ,as emphasized in the
 help text shown in Example 10-2.</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Command Guide
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Command Guide
 RSTP
 #spanning#spanning--tree vlan vlantree vlan x root primary-id priority x
 #spanning#show spanning-tree vlan x root secondary-tree vlan 9
@@ -263,8 +214,8 @@ EtherChannel
 #show etherchannel summary#show etherchannel 1 port-channel
 #show etherchannel load#channel-group 1 mode desirable/auto (PAgP)-balance
 #channel#port-channel load-group 1 mode active/passive (LACP)-balance src-dst-mac</code></pre></div>
-<h6 id="10-rstp-and-etherchanneltuesday-july-27-2021-1204-pm">10. RSTP and EtherChannelTuesday, July 27, 2021 12:04 PM</h6>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>help text shown in Example 10-2.</code></pre></div>
+<h6 id="10-rstp-and-etherchanneltuesday-july-27-2021-1204-pm">10. RSTP and EtherChannelTuesday, July 27, 2021 12:04 PM<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h6>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>help text shown in Example 10-2.</code></pre></div>
 <p>#spanning-tree vlan x root primary(on the switch that should be primary)<br>
 #spanning-tree vlan x root secondary(on the switch that should be secondary)<br>
 These two commands cause the switch to make a choice of priority value but then store the chosen priority value in thespanning-tree vlan x priority valuecommand.The command with root primary or root secondary<br>
@@ -275,8 +226,8 @@ How Switches Use the Priority and System ID Extension<br>
 Cisco Catalyst switches configure the priority value using a number that represents a 16system ID extension exists as the low-order 12 bits of that same number. -bit value; however, the<br>
 When the switch builds its BID to use for RSTP in a VLAN, it must combine the configured priority with the VLAN ID of that VLAN.<br>
 the configured priority results in a 16-bit priority that always ends with 12 binary 0s.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Root Switch: 24,576 (priority) + 9 (VLAN ID) = 24585Local Switch: 32,768 (priority) + 9 (VLAN ID) = 32777</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>RSTP creates one treeVLAN. —the Common Spanning Tree (CST)—while RPVST+ creates one tree for each and every
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Root Switch: 24,576 (priority) + 9 (VLAN ID) = 24585Local Switch: 32,768 (priority) + 9 (VLAN ID) = 32777</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>RSTP creates one treeVLAN. —the Common Spanning Tree (CST)—while RPVST+ creates one tree for each and every
 RSTP sends one set of RSTP messages (BPDUs) in the network, no matter the number of VLANs, while RPVST+ sends one set of messages per VLAN.
 RSTP and RPVST+ use different destination MAC addresses: RSTP with multicast address 0180.C200.0000 (an address defined in the IEEE standard), and RPVST+ with multicast address 0100.0CCC.CCCD (an address chosen
 by Cisco).
@@ -312,7 +263,7 @@ wait for the other switch to begin negotiations.”<br>
 desirable and auto keywords enable PAgP<br>
 active and passive keywords enable LACP.<br>
 with PAgP, at least one of the two sides must use desirable, and with LACP, at least one of the two sides must use active.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Do not use the on parameter on one end, and either auto or desirable (or for LACP, active or passive) on the neighboring switch. The on option uses neither PAgP nor LACP, so a configuration that uses on, with
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Do not use the on parameter on one end, and either auto or desirable (or for LACP, active or passive) on the neighboring switch. The on option uses neither PAgP nor LACP, so a configuration that uses on, with
 PAgP or LACP options on the other end, would prevent the EtherChannel from working.
 #show etherchannel 1 port-channel.</code></pre></div>
 <p>Physical Interface Configuration and EtherChannels<br>
@@ -325,7 +276,7 @@ The list of items the switch checks includes the following:<br>
 ▪STP interface settings<br>
 switches check the settings on the neighboring switch. To do so, the switches either use PAgP or LACP (if already in use) or use Cisco Discovery Protocol (CDP) if using manual configuration. When checking<br>
 neighbors, all settings except the STP settings must match.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>errthe -disabled state.PortChannel and physical interfaces must be shutdown, and then no shutdown, to recover from the</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>errthe -disabled state.PortChannel and physical interfaces must be shutdown, and then no shutdown, to recover from the</code></pre></div>
 <p>when a switch applies the shutdown and no shutdown commands to a PortChannel, it applies those same commands to the physical interfaces, as well; so, just do the shutdown/no shutdown on the PortChannel<br>
 interface.<br>
 EtherChannel Load Distribution<br>
@@ -349,7 +300,7 @@ lower-order bits, the algorithm achieves better balancing of traffic over the li
 The Effects of the EtherChannel Load Distribution Algorithm<br>
 showing the use of theconsider some addresses or ports and answer the question: which link would you use when forwarding a test etherchannel load-balance EXEC command. That command asks the switch to<br>
 message with those address/port values?</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>All three tests list the same outgoing physical interface because (1) the method uses only the source MAC address, and
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>All three tests list the same outgoing physical interface because (1) the method uses only the source MAC address, and
 all three tests use the same MAC addresses. All three tests use a different destination MAC address, with different low-order bits, but that had no impact on the choice because the method—src-mac—
 does not consider the destination MAC address.</code></pre></div>
 <p>chennel-group command cannot override the channel-protocol command</p>
@@ -433,8 +384,8 @@ does not consider the destination MAC address.</code></pre></div>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -460,23 +411,23 @@ does not consider the destination MAC address.</code></pre></div>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

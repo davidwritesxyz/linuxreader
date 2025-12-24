@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="Chapter 6 - Playbook Organization - Roles and Includes So far, we’ve used fairly straightforward examples in this book. Most examples are created for a particular server, and are in one long playbook.
 Ansible is flexible when it comes to organizing tasks in more efficient ways so you can make playbooks more maintainable, reusable, and powerful. We’ll look at two ways to split up tasks more efficiently using includes and roles, and we’ll explore Ansible Galaxy, a repository of some community-maintained roles that help configure common packages and applications.">
@@ -12,7 +12,7 @@ Ansible is flexible when it comes to organizing tasks in more efficient ways so 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="Chapter 6 - Playbook Organization - Roles and Includes So far, we’ve used fairly straightforward examples in this book. Most examples are created for a particular server, and are in one long playbook.
 Ansible is flexible when it comes to organizing tasks in more efficient ways so you can make playbooks more maintainable, reusable, and powerful. We’ll look at two ways to split up tasks more efficiently using includes and roles, and we’ll explore Ansible Galaxy, a repository of some community-maintained roles that help configure common packages and applications.">
-    <meta property="og:url" content="https://linuxreader.com/ansible/ansible4devops/chapter-6---playbook-organization---roles-and-includes/">
+    <meta property="og:url" content="http://localhost:1313/ansible/ansible4devops/chapter-6---playbook-organization---roles-and-includes/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:description" content="Chapter 6 - Playbook Organization - Roles and Includes So far, we’ve used fairly straightforward examples in this book. Most examples are created for a particular server, and are in one long playbook.
 Ansible is flexible when it comes to organizing tasks in more efficient ways so you can make playbooks more maintainable, reusable, and powerful. We’ll look at two ways to split up tasks more efficiently using includes and roles, and we’ll explore Ansible Galaxy, a repository of some community-maintained roles that help configure common packages and applications.">
@@ -23,39 +23,35 @@ Ansible is flexible when it comes to organizing tasks in more efficient ways so 
 Ansible is flexible when it comes to organizing tasks in more efficient ways so you can make playbooks more maintainable, reusable, and powerful. We’ll look at two ways to split up tasks more efficiently using includes and roles, and we’ll explore Ansible Galaxy, a repository of some community-maintained roles that help configure common packages and applications.">
     <meta itemprop="wordCount" content="4765">
     <title></title>
-    <link href="/ansible/ansible4devops/chapter-6---playbook-organization---roles-and-includes/index.xml" rel="alternate" type="application/rss+xml" title="">
-    <link href="/ansible/ansible4devops/chapter-6---playbook-organization---roles-and-includes/index.print.html" rel="alternate" type="text/html" title="">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/ansible\/ansible4devops\/chapter-6---playbook-organization---roles-and-includes\/';
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -63,14 +59,14 @@ Ansible is flexible when it comes to organizing tasks in more efficient ways so 
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -98,49 +94,7 @@ Ansible is flexible when it comes to organizing tasks in more efficient ways so 
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -160,14 +114,14 @@ Ansible is flexible when it comes to organizing tasks in more efficient ways so 
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/" title="Ansible (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/" title="Ansible (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -200,12 +154,9 @@ Ansible is flexible when it comes to organizing tasks in more efficient ways so 
             
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ansible4devops/chapter-6---playbook-organization---roles-and-includes/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ad-hoc-ansible-commands/" title="Ad Hoc Ansible Commands (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/ad-hoc-ansible-commands/" title="Ad Hoc Ansible Commands (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -226,7 +177,7 @@ Ansible is flexible when it comes to organizing tasks in more efficient ways so 
 
 <h1 id=""></h1>
 
-<h2 id="chapter-6---playbook-organization---roles-and-includes">Chapter 6 - Playbook Organization - Roles and Includes</h2>
+<h2 id="chapter-6---playbook-organization---roles-and-includes">Chapter 6 - Playbook Organization - Roles and Includes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>So far, we&rsquo;ve used fairly straightforward examples in this book. Most
 examples are created for a particular server, and are in one long
 playbook.</p>
@@ -236,7 +187,7 @@ powerful. We&rsquo;ll look at two ways to split up tasks more efficiently
 using includes and roles, and we&rsquo;ll explore Ansible Galaxy, a repository
 of some community-maintained roles that help configure common packages
 and applications.</p>
-<h3 id="chap08.xhtml_leanpub-auto-includes">Includes</h3>
+<h3 id="chap08.xhtml_leanpub-auto-includes">Includes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>We&rsquo;ve already seen one of the most basic ways of including other files
 in Chapter 4, when <code>vars_files</code> was used to place variables into a
 separate <code>vars.yml</code> file instead of inline with the playbook:</p>
@@ -341,7 +292,7 @@ like the following:</p>
 <pre><code>- include: ssh-setup.yml</code></pre>
 </div>
 </figure>
-<h4 id="chap08.xhtml_leanpub-auto-dynamic-includes">Dynamic includes</h4>
+<h4 id="chap08.xhtml_leanpub-auto-dynamic-includes">Dynamic includes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Until Ansible 2.0.0, includes were processed when your playbook run
 started, so you couldn&rsquo;t do things like load a particular include when
 some condition was met. Ansible 2.0.0 evaluates includes during playbook
@@ -363,7 +314,7 @@ when: extra_tasks_file.stat.exists</code></pre></li>
 <code>include</code>. You can even use a <code>with_items</code> loop (or any other <code>with_*</code>
 loop) with includes. Includes evaluated during playback execution can
 make your playbooks much more flexible!</p>
-<h4 id="chap08.xhtml_leanpub-auto-handler-includes">Handler includes</h4>
+<h4 id="chap08.xhtml_leanpub-auto-handler-includes">Handler includes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Handlers can be included just like tasks, within a playbook&rsquo;s <code>handlers</code>
 section. For example:</p>
 <figure class="code">
@@ -375,7 +326,7 @@ section. For example:</p>
 <p>This can be helpful in limiting the noise in your main playbook, since
 handlers are usually used for things like restarting services or loading
 a configuration, and can distract from the playbook&rsquo;s primary purpose.</p>
-<h4 id="chap08.xhtml_leanpub-auto-playbook-includes">Playbook includes</h4>
+<h4 id="chap08.xhtml_leanpub-auto-playbook-includes">Playbook includes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Playbooks can even be included in other playbooks, using the same
 <code>include</code> syntax in the top level of your playbook. For example, if you
 have two playbooks&mdash;one to set up your webservers (<code>web.yml</code>), and one
@@ -399,7 +350,7 @@ individual playbooks. When you want to initialize your infrastructure,
 make changes across your entire fleet of servers, or check to make sure
 their configuration matches your playbook definitions, you can run one
 <code>ansible-playbook</code> command!</p>
-<h4 id="chap08.xhtml_leanpub-auto-complete-includes-example">Complete includes example</h4>
+<h4 id="chap08.xhtml_leanpub-auto-complete-includes-example">Complete includes example<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>What if I told you we could remake the 137-line Drupal LAMP server
 playbook from Chapter 4 in just 21 lines? With includes, it&rsquo;s easy; just
 break out each of the sets of tasks into their own include files, and
@@ -499,7 +450,7 @@ directory.</p>
 includes to accomplish conditional task inclusion using a different
 playbook structure, or roles, which we will discuss next.</p>
 </aside>
-<h3 id="chap08.xhtml_leanpub-auto-roles">Roles</h3>
+<h3 id="chap08.xhtml_leanpub-auto-roles">Roles<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Including playbooks inside other playbooks makes your playbook
 organization a little more sane, but once you start wrapping up your
 entire infrastructure&rsquo;s configuration in playbooks, you might end up
@@ -514,7 +465,7 @@ on individual servers or groups of servers?</p>
 <p>Let&rsquo;s dive into what makes an Ansible role by taking one of the playbook
 examples from Chapter 4 and splitting it into a more flexible structure
 using roles.</p>
-<h4 id="chap08.xhtml_leanpub-auto-role-scaffolding">Role scaffolding</h4>
+<h4 id="chap08.xhtml_leanpub-auto-role-scaffolding">Role scaffolding<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Instead of requiring you to explicitly include certain files and
 playbooks in a role, Ansible automatically includes any <code>main.yml</code> files
 inside specific directories that make up the role.</p>
@@ -549,7 +500,7 @@ to suit your needs. Using the <code>init</code> command also ensures the role is
 structured correctly in case you want to someday contribute the role to
 Ansible Galaxy.</p>
 </aside>
-<h4 id="chap08.xhtml_leanpub-auto-building-your-first-role">Building your first role</h4>
+<h4 id="chap08.xhtml_leanpub-auto-building-your-first-role">Building your first role<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Let&rsquo;s clean up the Node.js server example from Chapter four, and break
 out one of the main parts of the configuration&mdash;installing Node.js and
 any required npm modules.</p>
@@ -617,7 +568,7 @@ like:</p>
 <li>nodejs</li>
 </ul>
 <p>tasks:</p>
-<h1 id="nodejs-app-deployment-tasks">Node.js app deployment tasks&hellip;</code></pre></h1>
+<h1 id="nodejs-app-deployment-tasks">Node.js app deployment tasks&hellip;</code></pre><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 </div>
 </figure>
 <aside class="information blurb">
@@ -636,7 +587,7 @@ values of the tasks.</p>
 <p>Our role isn&rsquo;t all that helpful at this point, though, because it still
 does only one thing, and it&rsquo;s not really flexible enough to be used on
 other servers that might need different Node.js modules to be installed.</p>
-<h4 id="chap08.xhtml_leanpub-auto-more-flexibility-with-role-vars-and-defaults">More flexibility with role vars and defaults</h4>
+<h4 id="chap08.xhtml_leanpub-auto-more-flexibility-with-role-vars-and-defaults">More flexibility with role vars and defaults<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>To make our role more flexible, we can make it use a list of npm modules
 instead of a hardcoded value, then allow playbooks using the role to
 provide their own module list variable to override our role&rsquo;s default
@@ -727,8 +678,8 @@ defined in your role, put them into <code>vars</code>. For more on variable
 precedence, see the aptly-named &ldquo;Variable Precedence&rdquo; section in the
 previous chapter.</p>
 </aside>
-<h4 id="chap08.xhtml_leanpub-auto-other-role-parts-handlers-files-and-templates">Other role parts: handlers, files, and templates</h4>
-<h5 id="chap08.xhtml_leanpub-auto-handlers-1">Handlers</h5>
+<h4 id="chap08.xhtml_leanpub-auto-other-role-parts-handlers-files-and-templates">Other role parts: handlers, files, and templates<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<h5 id="chap08.xhtml_leanpub-auto-handlers-1">Handlers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
 <p>In one of the prior examples, we introduced handlers&mdash;tasks that could
 be called via the <code>notify</code> option after any playbook task resulted in a
 change&mdash;and an example handler for restarting Apache was given:</p>
@@ -754,7 +705,7 @@ look like this:</p>
 <p>You can call handlers defined in a role&rsquo;s handlers folder just like
 those included directly in your playbooks (e.g.
 <code>notify: restart apache</code>).</p>
-<h5 id="chap08.xhtml_leanpub-auto-files-and-templates">Files and Templates</h5>
+<h5 id="chap08.xhtml_leanpub-auto-files-and-templates">Files and Templates<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
 <p>For the following examples, let&rsquo;s assume our role is structured with
 files and templates inside <code>files</code> and <code>templates</code> directories,
 respectively:</p>
@@ -798,7 +749,7 @@ from within a role&rsquo;s <code>templates</code> directory, like so:</p>
 and the <code>template</code> module runs given template files through the Jinja2
 templating engine, merging in any variables available during your
 playbook run before copying the file to the server.</p>
-<h4 id="chap08.xhtml_leanpub-auto-organizing-more-complex-and-cross-platform-roles">Organizing more complex and cross-platform roles</h4>
+<h4 id="chap08.xhtml_leanpub-auto-organizing-more-complex-and-cross-platform-roles">Organizing more complex and cross-platform roles<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>For simple package installation and configuration roles, you can get by
 with placing all tasks, variables, and handlers directly in the
 respective <code>main.yml</code> file Ansible automatically loads. But you can also
@@ -892,7 +843,7 @@ the simplest.</p>
 with clever usage of variables in tasks and in configuration templates,
 it can be used in a wide variety of infrastructure that needs Apache
 installed.</p>
-<h3 id="chap08.xhtml_leanpub-auto-ansible-galaxy">Ansible Galaxy</h3>
+<h3 id="chap08.xhtml_leanpub-auto-ansible-galaxy">Ansible Galaxy<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Ansible roles are powerful and flexible; they allow you to encapsulate
 sets of configuration and deployable units of playbooks, variables,
 templates, and other files, so you can easily reuse them across
@@ -909,7 +860,7 @@ common applications, and they&rsquo;re all available through the
 <p>Galaxy offers the ability to add, download, and rate roles. With an
 account, you can contribute your own roles or rate others&rsquo; roles (though
 you don&rsquo;t need an account to use roles).</p>
-<h4 id="chap08.xhtml_leanpub-auto-getting-roles-from-galaxy">Getting roles from Galaxy</h4>
+<h4 id="chap08.xhtml_leanpub-auto-getting-roles-from-galaxy">Getting roles from Galaxy<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>One of the primary functions of the <code>ansible-galaxy</code> command is
 retrieving roles from Galaxy. Roles must be downloaded before they can
 be used in playbooks.</p>
@@ -936,7 +887,7 @@ in time. Please check Ansible Galaxy&rsquo;s
 <a href="https://galaxy.ansible.com/intro" rel="external" target="_blank">About</a> page and stay tuned to
 Ansible&rsquo;s blog for the latest updates.</p>
 </aside>
-<h5 id="chap08.xhtml_leanpub-auto-using-role-requirements-files-to-manage-dependencies">Using role requirements files to manage dependencies</h5>
+<h5 id="chap08.xhtml_leanpub-auto-using-role-requirements-files-to-manage-dependencies">Using role requirements files to manage dependencies<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
 <p>If your infrastructure configuration requires five, ten, fifteen or more
 Ansible roles, installing them all via <code>ansible-galaxy install</code> commands
 can be exhausting. Additionally, if you host roles internally (e.g. via
@@ -977,7 +928,7 @@ looks like this:</p>
 Ansible requirements files, see the official documentation: <a href="http://docs.ansible.com/ansible/galaxy.html#advanced-control-over-role-requirements-files" rel="external" target="_blank">Advanced
 Control over Role Requirements
 Files</a>.</p>
-<h4 id="chap08.xhtml_leanpub-auto-a-lamp-server-in-eight-lines-of-yaml">A LAMP server in eight lines of YAML</h4>
+<h4 id="chap08.xhtml_leanpub-auto-a-lamp-server-in-eight-lines-of-yaml">A LAMP server in eight lines of YAML<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>With the Apache, MySQL, and PHP roles installed, we can quickly create a
 LAMP server. This example assumes you already have a CentOS-based linux
 VM or server booted and can connect to it or run Ansible as a
@@ -1017,7 +968,7 @@ install software, but they configure it <em>exactly</em> how you want it, every
 time, with minimal adjustment. Additionally, many of these roles work
 across different flavors of Linux and UNIX, so you have better
 configuration portability!</p>
-<h4 id="chap08.xhtml_leanpub-auto-a-solr-server-in-eight-lines-of-yaml">A Solr server in eight lines of YAML</h4>
+<h4 id="chap08.xhtml_leanpub-auto-a-solr-server-in-eight-lines-of-yaml">A Solr server in eight lines of YAML<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Let&rsquo;s grab a few more roles and build an Apache Solr search server,
 which requires Java and Apache Tomcat to be installed and configured.</p>
 <figure class="code">
@@ -1056,7 +1007,7 @@ servers with the proper versions and paths. Configuration management
 with Ansible Galaxy becomes <em>true</em> configuration management&mdash;you get to
 spend more time managing your server&rsquo;s configuration, and less time on
 packaging and building individual services!</p>
-<h4 id="chap08.xhtml_leanpub-auto-helpful-galaxy-commands">Helpful Galaxy commands</h4>
+<h4 id="chap08.xhtml_leanpub-auto-helpful-galaxy-commands">Helpful Galaxy commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Some other helpful <code>ansible-galaxy</code> commands you might use from time to
 time:</p>
 <ul>
@@ -1070,7 +1021,7 @@ for submission to Ansible Galaxy</li>
 downloaded by editing your <code>ansible.cfg</code> configuration file (normally
 located in <code>/etc/ansible/ansible.cfg</code>), and setting a <code>roles_path</code> in
 the <code>[defaults]</code> section.</p>
-<h4 id="chap08.xhtml_leanpub-auto-contributing-to-ansible-galaxy">Contributing to Ansible Galaxy</h4>
+<h4 id="chap08.xhtml_leanpub-auto-contributing-to-ansible-galaxy">Contributing to Ansible Galaxy<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>If you&rsquo;ve been working on some useful Ansible roles, and you&rsquo;d like to
 share them with others, all you need to do is make sure they follow
 Ansible Galaxy&rsquo;s basic template (especially within the <code>meta/main.yml</code>
@@ -1081,7 +1032,7 @@ Galaxy template&rsquo;s structure.</p>
 Galaxy roles like <code>ansible-role-[rolename]</code>, so I can easily see them
 when browsing my repos on GitHub), and add a new role while logged into
 galaxy.ansible.com.</p>
-<h3 id="chap08.xhtml_leanpub-auto-summary-5">Summary</h3>
+<h3 id="chap08.xhtml_leanpub-auto-summary-5">Summary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Using includes and Ansible roles organizes Playbooks and makes them
 maintainable. This chapter introduced different ways of using <code>include</code>,
 the power and flexible structure of roles, and how you can utilize
@@ -1216,8 +1167,8 @@ that do just about anything.</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1243,23 +1194,23 @@ that do just about anything.</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

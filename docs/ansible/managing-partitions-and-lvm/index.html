@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Managing Partitions and LVM">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Managing Partitions and LVM :: Linux Reader">
     <meta name="twitter:description" content="Managing Partitions and LVM">
-    <meta property="og:url" content="https://linuxreader.com/ansible/managing-partitions-and-lvm/">
+    <meta property="og:url" content="http://localhost:1313/ansible/managing-partitions-and-lvm/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Managing Partitions and LVM :: Linux Reader">
     <meta property="og:description" content="Managing Partitions and LVM">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Managing Partitions and LVM">
     <meta itemprop="wordCount" content="812">
     <title>Managing Partitions and LVM :: Linux Reader</title>
-    <link href="/ansible/managing-partitions-and-lvm/index.xml" rel="alternate" type="application/rss+xml" title="Managing Partitions and LVM :: Linux Reader">
-    <link href="/ansible/managing-partitions-and-lvm/index.print.html" rel="alternate" type="text/html" title="Managing Partitions and LVM :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/ansible\/managing-partitions-and-lvm\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/managing-packages/" title="Managing Packages (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/managing-packages/" title="Managing Packages (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -188,12 +142,9 @@
             Managing Partitions and LVM
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/managing-partitions-and-lvm/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/managing-services/" title="Managing Services (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/managing-services/" title="Managing Services (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -214,7 +165,7 @@
 
 <h1 id="managing-partitions-and-lvm">Managing Partitions and LVM</h1>
 
-<h3 id="managing-partitions-and-lvm">Managing Partitions and LVM</h3>
+<h3 id="managing-partitions-and-lvm">Managing Partitions and LVM<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>After detecting the disk device that needs to be used, you can move on and start creating partitions and logical volumes.</p>
 <ul>
 <li>partition a disk using the parted module,</li>
@@ -222,7 +173,7 @@
 <li>create file systems using the filesystem module and mount them using the mount module</li>
 <li>manage swap storage.</li>
 </ul>
-<h4 id="creating-partitions">Creating Partitions</h4>
+<h4 id="creating-partitions">Creating Partitions<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p><strong>Parted Module</strong>
 name:</p>
 <ul>
@@ -249,7 +200,7 @@ the available disk space.</li>
 <li>Set specific partition properties such as LVM partition type.</li>
 <li>Required for LVM partition type</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>      - <span style="color:#ff6ac1">name</span>: create new partition
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>      - <span style="color:#ff6ac1">name</span>: create new partition
 </span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">parted</span>:
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">name</span>: files
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">label</span>: gpt
@@ -268,7 +219,7 @@ the available disk space.</li>
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">part_start</span>: 2GiB
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">part_end</span>: 4GiB
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">flags</span>: [ lvm ]</span></span></code></pre></div>
-<h4 id="managing-volume-groups-and-lvm-logical-volumes">Managing Volume Groups and LVM Logical Volumes</h4>
+<h4 id="managing-volume-groups-and-lvm-logical-volumes">Managing Volume Groups and LVM Logical Volumes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p><strong>lvg</strong> module</p>
 <ul>
 <li>manage LVM logical volumes</li>
@@ -284,7 +235,7 @@ the available disk space.</li>
 <li><strong>pvs</strong> argument to identify the physical volume (which is often a partition or a disk device) on which the volume group needs to be created.</li>
 <li>May need to specify the <strong>pesize</strong> to refer to the size of the physical extents.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: create a volume group
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: create a volume group
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">lvg</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">vg</span>: vgdata
 </span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">pesize</span>: <span style="color:#5af78e">&#34;8&#34;</span>
@@ -306,12 +257,12 @@ vg</li>
 <li>VG is which the lv should be created</li>
 </ul>
 <p>Creating an LVM Logical Volume</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: create a logical volume
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: create a logical volume
 </span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">lvol</span>:
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">lv</span>: lvdata
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">size</span>: <span style="color:#ff9f43">100</span>%FREE
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">vg</span>: vgdata</span></span></code></pre></div>
-<h4 id="creating-and-mounting-file-systems">Creating and Mounting File Systems</h4>
+<h4 id="creating-and-mounting-file-systems">Creating and Mounting File Systems<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p><strong>filesystem</strong> module</p>
 <ul>
 <li>Supports creating as well as resizing file systems.</li>
@@ -328,11 +279,11 @@ resizefs</li>
 <li>Extends the filesystem if set to yes. Extended to the current block size</li>
 </ul>
 <p>Creating an XFS File System</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: create an XFS filesystem
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: create an XFS filesystem
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">filesystem</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">dev</span>: /dev/vgdata/lvdata
 </span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">fstype</span>: xfs</span></span></code></pre></div>
-<h3 id="mounting-a-filesystem">Mounting a filesystem</h3>
+<h3 id="mounting-a-filesystem">Mounting a filesystem<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><strong>mount</strong> module.</p>
 <ul>
 <li>Used to mount a filesystem</li>
@@ -351,13 +302,13 @@ state</li>
 <li>mounted to mount device now</li>
 <li>present to set in /etc/fstab but not mount it now</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>      - <span style="color:#ff6ac1">name</span>: mount the filesystem
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>      - <span style="color:#ff6ac1">name</span>: mount the filesystem
 </span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">mount</span>:
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">src</span>: /dev/vgdata/lvdata
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">fstype</span>: xfs
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">state</span>: mounted
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">path</span>: /mydir</span></span></code></pre></div>
-<h4 id="configuring-swap-space">Configuring Swap Space</h4>
+<h4 id="configuring-swap-space">Configuring Swap Space<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li>
 <p>To set up swap space, you first must format a device as swap space and next mount the swap space.</p>
@@ -380,7 +331,7 @@ state</li>
 </ul>
 <p>A conditional check is performed, and additional swap space is configured if the current
 amount of swap space is lower than 256 MiB.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    ---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: configure swap storage
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: ansible2
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">tasks</span>:
@@ -394,9 +345,9 @@ amount of swap space is lower than 256 MiB.</p>
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">command</span>: swapon /dev/sdb1
 </span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">when</span>: ansible_swaptotal_mb &lt; 256</span></span></code></pre></div>
 <p>Run an ad hoc command to ensure that /dev/sdb on the target host is empty:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ansible ansible2 -a <span style="color:#5af78e">&#34;dd if=/dev/zero of=/dev/sdb bs=1M count=10&#34;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ansible ansible2 -a <span style="color:#5af78e">&#34;dd if=/dev/zero of=/dev/sdb bs=1M count=10&#34;</span></span></span></code></pre></div>
 <p>To make sure that you don&rsquo;t get any errors about partitions that are in use, also reboot the target host:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">ansible ansible2 -m reboot</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">ansible ansible2 -m reboot</code></pre></div>
 <ul>
 <li>Lack of idempotency if the size is specified as 100%FREE, which is a relative value, not an absolute value.</li>
 <li>This value works the first time you run the playbook, but it does not the second time you run the playbook.</li>
@@ -513,8 +464,8 @@ amount of swap space is lower than 256 MiB.</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -540,23 +491,23 @@ amount of swap space is lower than 256 MiB.</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

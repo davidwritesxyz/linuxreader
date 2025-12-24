@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Self hosting a Nextcloud server">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Self hosting a Nextcloud Server :: Linux Reader">
     <meta name="twitter:description" content="Self hosting a Nextcloud server">
-    <meta property="og:url" content="https://linuxreader.com/tools/setting-up-a-self-hosted-nextcloud-server/">
+    <meta property="og:url" content="http://localhost:1313/tools/setting-up-a-self-hosted-nextcloud-server/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Self hosting a Nextcloud Server :: Linux Reader">
     <meta property="og:description" content="Self hosting a Nextcloud server">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Self hosting a Nextcloud server">
     <meta itemprop="wordCount" content="1338">
     <title>Self hosting a Nextcloud Server :: Linux Reader</title>
-    <link href="/tools/setting-up-a-self-hosted-nextcloud-server/index.xml" rel="alternate" type="application/rss+xml" title="Self hosting a Nextcloud Server :: Linux Reader">
-    <link href="/tools/setting-up-a-self-hosted-nextcloud-server/index.print.html" rel="alternate" type="text/html" title="Self hosting a Nextcloud Server :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/tools\/setting-up-a-self-hosted-nextcloud-server\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/nextcloud-on-rhel-based-systems/" title="Nextcloud on RHEL Based Systems (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tools/nextcloud-on-rhel-based-systems/" title="Nextcloud on RHEL Based Systems (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -203,12 +157,9 @@
             Self hosting a Nextcloud Server
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/setting-up-a-self-hosted-nextcloud-server/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/using-vagrant-on-linux/" title="Using Vagrant on Linux (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tools/using-vagrant-on-linux/" title="Using Vagrant on Linux (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -230,7 +181,7 @@
 <h1 id="self-hosting-a-nextcloud-server">Self hosting a Nextcloud Server</h1>
 
 <p>This is a step-by-step guide to setting up Nextcloud on a Debian server. You will need a server hosted by a VPS like Vultr. And a Domain hosted by a DNS provider such as Cloudflare</p>
-<h3 id="what-is-nextcloud">What is Nextcloud?</h3>
+<h3 id="what-is-nextcloud">What is Nextcloud?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Nextcloud is so many things. It offers so many features and options, it deserves a bulleted list:</p>
 <ul>
 <li>Free and open source</li>
@@ -249,23 +200,23 @@
 </ul>
 <p>It is also free and open source. This mean the source code is available to all. And hosting yourself means you can guarantee that your data isn&rsquo;t being shared.</p>
 <p>As you can see. Nextcloud is feature packed and offers an all in one solution for many needs. The set up is fairly simple!</p>
-<h3 id="install-dependencies">Install Dependencies</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo apt update </code></pre></div>
-<h4 id="sury-dependencies">Sury Dependencies</h4>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo apt install software-properties-common ca-certificates lsb-release apt-transport-https </code></pre></div>
-<h4 id="enable-sury-repository">Enable Sury Repository</h4>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo sh -c &#39;echo &#34;deb https://packages.sury.org/php/ $(lsb_release -sc) main&#34; &gt; /etc/apt/sources.list.d/php.list&#39; </code></pre></div>
-<h4 id="import-the-gpg-key-for-the-repository">Import the GPG key for the repository</h4>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>wget -qO - https://packages.sury.org/php/apt.gpg | sudo apt-key add - </code></pre></div>
-<h4 id="install-php-82">Install PHP 8.2</h4>
+<h3 id="install-dependencies">Install Dependencies<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo apt update </code></pre></div>
+<h4 id="sury-dependencies">Sury Dependencies<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo apt install software-properties-common ca-certificates lsb-release apt-transport-https </code></pre></div>
+<h4 id="enable-sury-repository">Enable Sury Repository<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo sh -c &#39;echo &#34;deb https://packages.sury.org/php/ $(lsb_release -sc) main&#34; &gt; /etc/apt/sources.list.d/php.list&#39; </code></pre></div>
+<h4 id="import-the-gpg-key-for-the-repository">Import the GPG key for the repository<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>wget -qO - https://packages.sury.org/php/apt.gpg | sudo apt-key add - </code></pre></div>
+<h4 id="install-php-82">Install PHP 8.2<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p><a href="https://computingforgeeks.com/how-to-install-php-8-2-on-debian/?expand_article=1" rel="external" target="_blank">https://computingforgeeks.com/how-to-install-php-8-2-on-debian/?expand_article=1</a>
 (This is also part of the other dependencies install command below)</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo apt install php8.2 </code></pre></div>
-<h4 id="install-other-dependencies">Install other dependencies:</h4>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>apt install -y nginx python3-certbot-nginx mariadb-server php8.2 php8.2-{fpm,bcmath,bz2,intl,gd,mbstring,mysql,zip,xml,curl}</code></pre></div>
-<h3 id="improving-nextcloud-server-performance">Improving Nextcloud server performance</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo apt install php8.2 </code></pre></div>
+<h4 id="install-other-dependencies">Install other dependencies:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>apt install -y nginx python3-certbot-nginx mariadb-server php8.2 php8.2-{fpm,bcmath,bz2,intl,gd,mbstring,mysql,zip,xml,curl}</code></pre></div>
+<h3 id="improving-nextcloud-server-performance">Improving Nextcloud server performance<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Adding more child processes for PHP to use:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>vim /etc/php/8.2/fpm/pool.d/www.conf
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>vim /etc/php/8.2/fpm/pool.d/www.conf
 
 # update the following parameters in the file
 pm = dynamic
@@ -273,35 +224,35 @@ pm.max_children = 120
 pm.start_servers = 12
 pm.min_spare_servers = 6
 pm.max_spare_servers = 18</code></pre></div>
-<h3 id="start-your-mariadb-server">Start your MariaDB server:</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>systemctl enable mariadb --now</code></pre></div>
-<h3 id="set-up-a-sql-database">Set up a SQL Database</h3>
+<h3 id="start-your-mariadb-server">Start your MariaDB server:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>systemctl enable mariadb --now</code></pre></div>
+<h3 id="set-up-a-sql-database">Set up a SQL Database<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Nextcloud needs some tables setup in order to store information in a database. First set up a secure sql database:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo mysql_secure_installation</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo mysql_secure_installation</code></pre></div>
 <p>Say “Yes” to the prompts and enter root password:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Switch to unix_socket authentication [Y/n]: Y
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Switch to unix_socket authentication [Y/n]: Y
 Change the root password? [Y/n]: Y	# enter password.
 Remove anonymous users? [Y/n]: Y
 Disallow root login remotely? [Y/n]: Y
 Remove test database and access to it? [Y/n]: Y
 Reload privilege tables now? [Y/n]: Y</code></pre></div>
 <p>Sign in to your SQL database with the password you just chose:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>mysql -u root -p</code></pre></div>
-<h3 id="creating-a-database-for-nextcloud">Creating a database for NextCloud</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>mysql -u root -p</code></pre></div>
+<h3 id="creating-a-database-for-nextcloud">Creating a database for NextCloud<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>While signed in with the mysql command, enter the commands below one at a time. Make sure to replace the username and password. But leave localhost as is:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>CREATE DATABASE nextcloud;
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>CREATE DATABASE nextcloud;
 GRANT ALL ON nextcloud.* TO &#39;david&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;@Rfanext12!&#39;;
 FLUSH PRIVILEGES;
 EXIT;</code></pre></div>
-<h3 id="install-ssl-with-certbot">Install SSL with Certbot</h3>
+<h3 id="install-ssl-with-certbot">Install SSL with Certbot<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Obtain an SSL certificate. See my <a href="https://perfectdarkmode.com/posts/2023/03/building-a-minimalist-website-with-hugo/" rel="external" target="_blank">website setup</a> post for information about Certbot and nginx setup.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>certbot certonly --nginx -d nextcloud.example.com</code></pre></div>
-<h3 id="create-a-cname-record-for-dns">Create a CNAME record for DNS.</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>certbot certonly --nginx -d nextcloud.example.com</code></pre></div>
+<h3 id="create-a-cname-record-for-dns">Create a CNAME record for DNS.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>You will need to have a domain name set up for your server. I use Cloudflare to manage my DNS records. You will want to make a CNAME record for your nextcloud subdomain.</p>
 <p>Just add &ldquo;nextcloud&rdquo; as the name and &ldquo;yourwebsite.com&rdquo; as the content. This will make it so &ldquo;nextcloud.yourwebsite.com&rdquo;. Make sure to select &ldquo;DNS Only&rdquo; under proxy status.</p>
-<h3 id="nginx-setup">Nginx Setup</h3>
+<h3 id="nginx-setup">Nginx Setup<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Edit your sites-available config at /etc/nginx/sites-available/nextcloud. See comments in the following text box:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>vim /etc/nginx/sites-available/nextcloud
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>vim /etc/nginx/sites-available/nextcloud
 
 # Add this to the file:
 # replace example.org with your domain name
@@ -405,26 +356,26 @@ server {
         try_files $uri $uri/ /index.php$request_uri;
     }
 }</code></pre></div>
-<h3 id="enable-the-site">Enable the site</h3>
+<h3 id="enable-the-site">Enable the site<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Create a link between the file you just made and /etc/nginx/sites-enabled</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ln -s /etc/nginx/sites-available/nextcloud /etc/nginx/sites-enabled/</code></pre></div>
-<h3 id="install-nextcloud">Install Nextcloud</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ln -s /etc/nginx/sites-available/nextcloud /etc/nginx/sites-enabled/</code></pre></div>
+<h3 id="install-nextcloud">Install Nextcloud<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Download the latest Nextcloud version. Then extract into /var/www/. Also, update the file&rsquo;s permissions to give nginx access:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>wget https://download.nextcloud.com/server/releases/latest.tar.bz2
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>wget https://download.nextcloud.com/server/releases/latest.tar.bz2
 tar -xjf latest.tar.bz2 -C /var/www
 chown -R www-data:www-data /var/www/nextcloud
 chmod -R 755 /var/www/nextcloud</code></pre></div>
-<h3 id="start-and-enable-php-fpm-on-startup">Start and enable php-fpm on startup</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>&lt;systemctl enable php8.2fpm --now](&gt;&lt;--may not need this.
+<h3 id="start-and-enable-php-fpm-on-startup">Start and enable php-fpm on startup<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>&lt;systemctl enable php8.2fpm --now](&gt;&lt;--may not need this.
 # Do need this-&gt;
 sudo systemctl enable php8.2-fpm.service --now</code></pre></div>
-<h3 id="reload-nginx">Reload nginx</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>systemctl reload nginx</code></pre></div>
-<h3 id="nextcloud-occ-tool">Nextcloud occ tool</h3>
+<h3 id="reload-nginx">Reload nginx<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>systemctl reload nginx</code></pre></div>
+<h3 id="nextcloud-occ-tool">Nextcloud occ tool<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Here is a built in Nextcloud tool just in case things break. Here is a <a href="https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/occ_command.html" rel="external" target="_blank">guide</a> on troubleshooting with occ. The basic command is as follows:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo -u www-data php /var/www/nextcloud/occ</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo -u www-data php /var/www/nextcloud/occ</code></pre></div>
 <p>Add this as an alias in ~/.bashrc for ease of use.</p>
-<h3 id="you-are-ready-to-log-in-to-nextcloud">You are ready to log in to Nextcloud!</h3>
+<h3 id="you-are-ready-to-log-in-to-nextcloud">You are ready to log in to Nextcloud!<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Go to your nextcloud domain in a browser. In my case, I head to nextcloud.perfectdarkmode.com. Fill out the form to create your first Nextcloud user:</p>
 <ul>
 <li>Choose an admin username and secure password.</li>
@@ -442,9 +393,9 @@ sudo systemctl enable php8.2-fpm.service --now</code></pre></div>
 <li>Put the Nextcloud dashboard as your default browser homepage and customize themes.</li>
 <li>Set up email integration.</li>
 </ul>
-<h3 id="nextcloud-desktop-synchronization">NextCloud desktop synchronization</h3>
+<h3 id="nextcloud-desktop-synchronization">NextCloud desktop synchronization<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Install the desktop client (Fedora)</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Sudo dnf install nextcloudclient</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Sudo dnf install nextcloudclient</code></pre></div>
 <p>Install on other distros: <a href="https://help.nextcloud.com/t/install-nextcloud-client-for-opensuse-arch-linux-fedora-ubuntu-based-android-ios/13657" rel="external" target="_blank">https://help.nextcloud.com/t/install-nextcloud-client-for-opensuse-arch-linux-fedora-ubuntu-based-android-ios/13657</a></p>
 <ol>
 <li>Run the nextcloud desktop app and sign in.</li>
@@ -453,11 +404,11 @@ sudo systemctl enable php8.2-fpm.service --now</code></pre></div>
 <li>Move everything into your nextcloud folder.</li>
 </ol>
 <p>This may break things with filepaths so beware. Now you are ready to use and explore nextcloud. Here is a <a href="https://www.youtube.com/watch?v=j0APTeBFfSU" rel="external" target="_blank">video</a> from TechHut to get you started down the NextCloud rabbit hole.</p>
-<h4 id="change-max-upload-size-default-is-500mg">Change max upload size (default is 500mg)</h4>
+<h4 id="change-max-upload-size-default-is-500mg">Change max upload size (default is 500mg)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>/var/www/nextcloud/.user.ini
 php_value upload_max_filesize = 16G
 php_value post_max_size = 16G</p>
-<h3 id="remove-file-locks">Remove file locks</h3>
+<h3 id="remove-file-locks">Remove file locks<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Put Nextcloud in maintenance mode: Edit <code>config/config.php</code> and change this line:<br>
 <code>'maintenance' =&gt; true,</code></p>
 <p>Empty table <code>oc_file_locks</code>: Use tools such as phpmyadmin or connect directly to your database and run (the default table prefix is <code>oc_</code>, this prefix can be different or even empty):<br>
@@ -466,7 +417,7 @@ php_value post_max_size = 16G</p>
 <li>disable maintenance mode (undo first step).</li>
 <li>Make sure your cron-jobs run properly (you admin page tells you when cron ran the last time): <a href="https://docs.nextcloud.org/server/13/admin_manual/configuration_server/background_jobs_configuration.html" rel="external" target="_blank">https://docs.nextcloud.org/server/13/admin_manual/configuration_server/background_jobs_configuration.html 2.7k</a></li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>mysql -u root -p
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>mysql -u root -p
 MariaDB [(none)]&gt; use nextcloud;
 MariaDB [nextcloud]&gt; DELETE FROM oc_file_locks WHERE 1;
 
@@ -549,8 +500,8 @@ MariaDB [nextcloud]&gt; DELETE FROM oc_file_locks WHERE 1;
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -576,23 +527,23 @@ MariaDB [nextcloud]&gt; DELETE FROM oc_file_locks WHERE 1;
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

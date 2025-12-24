@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Processes, priorities, and scheduling jobs.">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Process and Task Scheduling :: Linux Reader">
     <meta name="twitter:description" content="Processes, priorities, and scheduling jobs.">
-    <meta property="og:url" content="https://linuxreader.com/system/process-and-task-scheduling/">
+    <meta property="og:url" content="http://localhost:1313/system/process-and-task-scheduling/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Process and Task Scheduling :: Linux Reader">
     <meta property="og:description" content="Processes, priorities, and scheduling jobs.">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Processes, priorities, and scheduling jobs.">
     <meta itemprop="wordCount" content="3488">
     <title>Process and Task Scheduling :: Linux Reader</title>
-    <link href="/system/process-and-task-scheduling/index.xml" rel="alternate" type="application/rss+xml" title="Process and Task Scheduling :: Linux Reader">
-    <link href="/system/process-and-task-scheduling/index.print.html" rel="alternate" type="text/html" title="Process and Task Scheduling :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/system\/process-and-task-scheduling\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/system/interaction/" title="Interaction (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/system/interaction/" title="Interaction (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -230,12 +184,9 @@
             Process and Task Scheduling
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/system/process-and-task-scheduling/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/" title="Tools (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tools/" title="Tools (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -256,7 +207,7 @@
 
 <h1 id="process-and-task-scheduling">Process and Task Scheduling</h1>
 
-<h2 id="processes-and-priorities">Processes and Priorities</h2>
+<h2 id="processes-and-priorities">Processes and Priorities<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Process</p>
 <ul>
 <li>a unit for provisioning system resources.</li>
@@ -288,7 +239,7 @@
 </li>
 <li></li>
 </ul>
-<h3 id="process-states">Process States</h3>
+<h3 id="process-states">Process States<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Five basic process states:
 <ul>
@@ -324,9 +275,9 @@
 </ul>
 </li>
 </ul>
-<p><a href="#R-image-9c0afa02ff9ae1114f10a190f832c3d4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/image-5YWJN0KN%201.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9c0afa02ff9ae1114f10a190f832c3d4"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/image-5YWJN0KN%201.jpg"></a></p>
-<h3 id="ps-command"><code>ps</code> command</h3>
+<p><a href="#R-image-01a8e04d1621517026f1539292286029" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/image-5YWJN0KN%201.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-01a8e04d1621517026f1539292286029"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/image-5YWJN0KN%201.jpg"></a></p>
+<h3 id="ps-command"><code>ps</code> command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Lists processes specific to the terminal where this command is issued.</li>
 <li>Shows:
@@ -455,7 +406,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="top-command"><code>top</code> command</h3>
+<h3 id="top-command"><code>top</code> command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Display processes in real time</li>
 <li>q or ctrl+c to quit</li>
@@ -583,18 +534,18 @@
 </ul>
 </li>
 </ul>
-<h3 id="listing-a-specific-process">Listing a Specific Process</h3>
-<h3 id="pidof-and-pgrep-command"><code>pidof</code> and <code>pgrep</code> command</h3>
+<h3 id="listing-a-specific-process">Listing a Specific Process<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="pidof-and-pgrep-command"><code>pidof</code> and <code>pgrep</code> command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>List only the PID of a specific process</li>
 <li>pass a process name as an argument to view its PID</li>
 <li>identical if used without any options</li>
 </ul>
-<h3 id="listing-processes-by-user-and-group-ownership">Listing Processes by User and Group Ownership</h3>
+<h3 id="listing-processes-by-user-and-group-ownership">Listing Processes by User and Group Ownership<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>can use <code>ps</code> to list a process by it&rsquo;s ownership or owning group.</li>
 </ul>
-<h3 id="process-niceness-and-priority">Process Niceness and Priority</h3>
+<h3 id="process-niceness-and-priority">Process Niceness and Priority<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>A process is spawned at a certain priority,</li>
 <li>priority is established based on the nice value.</li>
@@ -636,15 +587,15 @@
 </ul>
 </li>
 </ul>
-<h3 id="nice-command"><code>nice</code> command</h3>
+<h3 id="nice-command"><code>nice</code> command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Launch a program at a non-default priority.</li>
 </ul>
-<h3 id="renice-command"><code>renice</code> command</h3>
+<h3 id="renice-command"><code>renice</code> command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Alter the priority of a running program</li>
 </ul>
-<h3 id="controlling-processes-with-signals">Controlling Processes with Signals</h3>
+<h3 id="controlling-processes-with-signals">Controlling Processes with Signals<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>terminating the process gracefully</li>
 <li>killing it abruptly</li>
@@ -652,7 +603,7 @@
 <li>Ordinary users can kill processes that they own, while the root user privilege is needed to kill any process on the system.</li>
 <li>Processes in a waiting state ignore the soft termination signal.</li>
 </ul>
-<h3 id="kill-command"><code>kill</code> command</h3>
+<h3 id="kill-command"><code>kill</code> command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Pass a signal to a process</li>
 <li>Requires one or more PIDs</li>
@@ -682,12 +633,12 @@
 - Same as using Ctrl+z to suspend a job
 - 20 SIGTSTP
 - Same as using the fg command</p>
-<h3 id="pkill-command">pkill command</h3>
+<h3 id="pkill-command">pkill command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>pass a signal to a process</li>
 <li>requires one or more process names to send a signal to.</li>
 </ul>
-<h2 id="job-scheduling">Job Scheduling</h2>
+<h2 id="job-scheduling">Job Scheduling<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Run a command at a specified time.</li>
 <li>One time or periodic.</li>
@@ -703,13 +654,13 @@
 </li>
 <li><code>atd</code> and <code>crond</code> manage jobs</li>
 </ul>
-<h3 id="atd">atd</h3>
+<h3 id="atd">atd<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Run one time jobs.</li>
 <li>atd daemon retries a missed job at the same time next day.</li>
 <li>Does not need a restart with changes</li>
 </ul>
-<h3 id="crond">crond</h3>
+<h3 id="crond">crond<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Run periodic scheduled jobs.</li>
 <li>Daemon reads the schedules in files located in the <em>/var/spool/cron</em> and <em>/etc/cron.d</em> directories.
@@ -722,7 +673,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="controlling-user-access">Controlling user access</h3>
+<h3 id="controlling-user-access">Controlling user access<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>all users can schedule jobs</li>
 <li>access to job scheduling can be edited
@@ -787,7 +738,7 @@
 </table>
 </li>
 </ul>
-<h3 id="scheduler-log-file">Scheduler Log File</h3>
+<h3 id="scheduler-log-file">Scheduler Log File<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><em>/var/log/cron</em>
 - Logs for both <code>atd</code> and <code>cron</code>
 Shows
@@ -798,7 +749,7 @@ Shows
 - message for each invocation
 - service start time and delays
 - must have root privileges to view</p>
-<h3 id="at-command"><code>at</code> command</h3>
+<h3 id="at-command"><code>at</code> command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>schedule a one-time execution of a program in the future.</li>
 <li>Submitted jobs are spooled in the <em>/var/spool/at/</em> and executed by the atd daemon at the specified time.</li>
@@ -858,8 +809,8 @@ Shows
 </ul>
 </li>
 </ul>
-<h3 id="crontab">Crontab</h3>
-<h3 id="crontab-command"><code>crontab</code> command</h3>
+<h3 id="crontab">Crontab<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="crontab-command"><code>crontab</code> command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>other method for scheduling tasks for running in the future.</li>
 <li>Unlike atd, crond executes cron jobs on a regular basis as defined in the <em>/etc/crontab</em> file.</li>
@@ -910,7 +861,7 @@ Shows
 </ul>
 </li>
 </ul>
-<h3 id="syntax-of-user-crontables">Syntax of User Crontables</h3>
+<h3 id="syntax-of-user-crontables">Syntax of User Crontables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li><em>/etc/crontab</em>
 <ul>
@@ -973,8 +924,8 @@ example crontable line</li>
 </li>
 </ul>
 <p><em>/etc/crontab</em> contents:
-<a href="#R-image-e93623c76a2947a74c3e8fad1eb139a6" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240815080652.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e93623c76a2947a74c3e8fad1eb139a6"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240815080652.png"></a></p>
+<a href="#R-image-f206eab112e0721425eacc59c3ff7bf0" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240815080652.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f206eab112e0721425eacc59c3ff7bf0"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240815080652.png"></a></p>
 <ul>
 <li>Step values may be used with * and ranges in the crontables using the forward slash character (/).</li>
 <li>Step values allow the number of skips for a given value.</li>
@@ -999,7 +950,7 @@ example crontable line</li>
 </li>
 </ul>
 <p>Make sure you understand and memorize the order of the fields defined in crontables.</p>
-<h3 id="anacron">Anacron</h3>
+<h3 id="anacron">Anacron<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>service that runs after every system reboot</li>
 <li>checks for any cron and at jobs that were scheduled for execution during the time the system was down and were missed as a result.</li>
@@ -1096,130 +1047,130 @@ example crontable line</li>
 </ul>
 </li>
 </ul>
-<h2 id="process-and-task-scheduling-labs">Process and Task Scheduling Labs</h2>
-<h3 id="lab-ps">Lab: ps</h3>
+<h2 id="process-and-task-scheduling-labs">Process and Task Scheduling Labs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="lab-ps">Lab: ps<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>ps</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps</code></pre></div>
 <ol start="2">
 <li>Check manual pages:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>man ps</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>man ps</code></pre></div>
 <ol start="3">
 <li>Run with &ldquo;every&rdquo; and &ldquo;full format&rdquo; flags:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code> ps -ef</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code> ps -ef</code></pre></div>
 <ol start="4">
 <li>Produce an output with the command name in column 1, PID in column 2, PPID in column 3, and owner name in column 4, run it as follows:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code> ps -o comm,pid,ppid,user</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code> ps -o comm,pid,ppid,user</code></pre></div>
 <ol start="5">
 <li>Check how many sshd processes are currently running on the system:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code> ps -C sshd</code></pre></div>
-<h3 id="lab-top">Lab: top</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code> ps -C sshd</code></pre></div>
+<h3 id="lab-top">Lab: top<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>top</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>top</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>top</code></pre></div>
 <ol start="2">
 <li>View manual page:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>man top</code></pre></div>
-<h3 id="lab-list-a-specific-process">Lab: List a specific process</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>man top</code></pre></div>
+<h3 id="lab-list-a-specific-process">Lab: List a specific process<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>list the PID of the rsyslogd daemon</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>pidof rsyslogd
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>pidof rsyslogd
 or
 pgrep rsyslogd</code></pre></div>
-<h3 id="lab-listing-processes-by-user-and-group-ownership">Lab: Listing Processes by User and Group Ownership</h3>
+<h3 id="lab-listing-processes-by-user-and-group-ownership">Lab: Listing Processes by User and Group Ownership<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>List processes owned by user1:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps -U user1</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps -U user1</code></pre></div>
 <ol start="2">
 <li>List processes owned by group root:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps -G root</code></pre></div>
-<h3 id="lab-nice">Lab: nice</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps -G root</code></pre></div>
+<h3 id="lab-nice">Lab: nice<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>View the default nice value:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>nice</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>nice</code></pre></div>
 <ol start="2">
 <li>List priority and niceness for all processes:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl</code></pre></div>
-<h3 id="lab-start-processes-at-non-default-priorities-2-terminals">Lab: Start Processes at Non-Default Priorities (2 terminals)</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl</code></pre></div>
+<h3 id="lab-start-processes-at-non-default-priorities-2-terminals">Lab: Start Processes at Non-Default Priorities (2 terminals)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Run the top command at the default priority/niceness in Terminal 1:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>top</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>top</code></pre></div>
 <ol start="2">
 <li>Check the priority and niceness for the top command in Terminal 2 using the ps command:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
 <ol start="3">
 <li>Terminate the top session in Terminal 1 by pressing the letter q and relaunch it at a lower priority with a nice value of +2:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>nice -n 2 top</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>nice -n 2 top</code></pre></div>
 <ol start="4">
 <li>\Check the priority and niceness for the top command in Terminal 2 using the ps command:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
 <ol start="5">
 <li>Terminate the top session in Terminal 1 by pressing the letter q and relaunch it at a higher priority with a nice value of -10. Use sudo for root privileges.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo nice -n -10 top</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo nice -n -10 top</code></pre></div>
 <ol start="6">
 <li>Check the priority and niceness for the top command in Terminal 2 using the ps command:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
 <ol start="7">
 <li>Terminate the top session by pressing the letter q.</li>
 </ol>
-<h3 id="lab-alter-process-priorities-2-terminals">Lab: Alter Process Priorities (2 terminals)</h3>
+<h3 id="lab-alter-process-priorities-2-terminals">Lab: Alter Process Priorities (2 terminals)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Run the top command at the default priority/niceness in Terminal 1:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>top</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>top</code></pre></div>
 <ol start="2">
 <li>Check the priority and niceness for the top command in Terminal 2 using the ps command:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
 <ol start="3">
 <li>While the top session is running in Terminal 1, increase its priority by renicing it to -5. Use the command substitution to get the PID of top. Prepend the renice command by sudo. The output indicates the old (0) and new (-5) priorities for the process.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo renice -n -5 $(pidof top)</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo renice -n -5 $(pidof top)</code></pre></div>
 <ol start="4">
 <li>Validate the above change with ps. Focus on columns 7 and 8.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
 <ol start="5">
 <li>Repeat the above but set the process to run at a lower priority by renicing it to 8: The output indicates the old (-5) and new (8) priorities for the process.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo renice -n 8 $(pidof top)</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo renice -n 8 $(pidof top)</code></pre></div>
 <ol start="6">
 <li>Validate the above change with ps. Focus on columns 7 and 8.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
-<h3 id="lab-controlling-processes-with-signals">Lab: Controlling Processes with Signals</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
+<h3 id="lab-controlling-processes-with-signals">Lab: Controlling Processes with Signals<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Pass the soft termination signal to the crond daemon, use either of the following:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo pkill crond
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo pkill crond
 # or
 sudo kill $(pidof crond)</code></pre></div>
 <ol start="2">
 <li>Confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps -ef | grep crond</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps -ef | grep crond</code></pre></div>
 <ol start="3">
 <li>Forcefully kill crond:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo pkill -9 crond
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo pkill -9 crond
 # or
 sudo pkill -s SIGKILL crond
 # or
@@ -1227,111 +1178,111 @@ sudo kill -9 $(pgrep crond)</code></pre></div>
 <ol start="4">
 <li>Kill all crond processes:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo killall crond</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo killall crond</code></pre></div>
 <ol start="5">
 <li>View manual pages:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>man kill
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>man kill
 man pkill
 man killall</code></pre></div>
-<h3 id="lab-cron-and-atd">Lab: cron and atd</h3>
+<h3 id="lab-cron-and-atd">Lab: cron and atd<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>View log files for cron and atd</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo cat /var/log/cron</code></pre></div>
-<h3 id="lab-at-and-crond">Lab: at and crond</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo cat /var/log/cron</code></pre></div>
+<h3 id="lab-at-and-crond">Lab: at and crond<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>run /home/user1/.bash_profile file for user1 2 hours from now:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>at -f ~/.bash_profile now + 2 hours</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>at -f ~/.bash_profile now + 2 hours</code></pre></div>
 <ol start="2">
 <li>Consult crontab manual pages:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>man crontab</code></pre></div>
-<h3 id="lab-submit-view-list-and-erase-an-at-job">Lab: Submit, View, List, and Erase an at Job</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>man crontab</code></pre></div>
+<h3 id="lab-submit-view-list-and-erase-an-at-job">Lab: Submit, View, List, and Erase an at Job<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>1.Run the at command and specify the correct execution time and date for the job. Type the entire command at the first at&gt; prompt and press Enter. Press Ctrl+d at the second at&gt; prompt to complete the job submission and return to the shell prompt.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>at 1:30pm 3/31/20
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>at 1:30pm 3/31/20
 date &amp;&gt; /tmp/date.out</code></pre></div>
 <p>The system assigned job ID 5 to it, and the output also pinpoints the job’s execution time.</p>
 <p>2.List the job file created in the /var/spool/at directory:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo ls -l /var/spool/at/</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo ls -l /var/spool/at/</code></pre></div>
 <p>3.List the spooled job with the at command. You may alternatively use atq to list it.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>at -l
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>at -l
 # or
 atq</code></pre></div>
 <p>4.Display the contents of this file with the at command and specify the job ID:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>at -c 5</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>at -c 5</code></pre></div>
 <p>5.Remove the spooled job with the at command by specifying its job ID. You may alternatively run atrm 5 to delete it.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>at -d 5</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>at -d 5</code></pre></div>
 <p>This should erase the job file from the /var/spool/at directory. You can</p>
 <ol start="6">
 <li>confirm the deletion by running atq or at -l.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>atq</code></pre></div>
-<h3 id="lab-add-list-and-erase-a-cron-job">Lab: Add, List, and Erase a Cron Job</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>atq</code></pre></div>
+<h3 id="lab-add-list-and-erase-a-cron-job">Lab: Add, List, and Erase a Cron Job<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>assume that all users are currently denied access to cron</p>
 <ol>
 <li>Edit the /etc/cron.allow file and add user1 to it:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo vim /etc/cron.allow
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo vim /etc/cron.allow
 user1</code></pre></div>
 <ol start="2">
 <li>Switch to user1 Open the crontable and append the following schedule to it. Save the file when done and exit out of the editor.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>crontab -e
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>crontab -e
 */5 10-11 5,20 * * echo &#34;Hello, this is a cron test.&#34; &gt; /tmp/hello.out</code></pre></div>
 <ol start="3">
 <li>Check for the presence of a new file by the name user1 under the /var/spool/cron directory:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo ls -l /var/spool/cron</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo ls -l /var/spool/cron</code></pre></div>
 <ol start="4">
 <li>List the contents of the crontable:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>crontab -l</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>crontab -l</code></pre></div>
 <ol start="5">
 <li>Remove the crontable and confirm the deletion:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>crontab -r
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>crontab -r
 crontab -l</code></pre></div>
-<h3 id="lab-anacron">Lab: Anacron</h3>
+<h3 id="lab-anacron">Lab: Anacron<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>View the default content of /etc/anacrontab without commented or empty lines:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>cat /etc/anacrontab | grep -ve ^# -ve ^$</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>cat /etc/anacrontab | grep -ve ^# -ve ^$</code></pre></div>
 <ol start="2">
 <li>View anacron man pages:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>man anacron</code></pre></div>
-<h3 id="lab-8-1-nice-and-renice-a-process">Lab 8-1: Nice and Renice a Process</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>man anacron</code></pre></div>
+<h3 id="lab-8-1-nice-and-renice-a-process">Lab 8-1: Nice and Renice a Process<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>As user1 with sudo on server1, open two terminal sessions. Run the top command in terminal 1. Run the pgrep or ps command in terminal 2 to determine the PID and the nice value of top.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
 <ol start="2">
 <li>Stop top on terminal 1 and relaunch at a lower priority (+8).</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>nice -n 8 top</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>nice -n 8 top</code></pre></div>
 <ol start="3">
 <li>Confirm the new nice value of the process in terminal 2.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
 <ol start="4">
 <li>Issue the renice command in terminal 2 and increase the priority of top to -10:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>renice -n -10 $(pidof top)</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>renice -n -10 $(pidof top)</code></pre></div>
 <ol start="5">
 <li>Confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
-<h3 id="lab-8-2-configure-a-user-crontab-file">Lab 8-2: Configure a User Crontab File</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ps -efl | grep top</code></pre></div>
+<h3 id="lab-8-2-configure-a-user-crontab-file">Lab 8-2: Configure a User Crontab File<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>As user1 on server1, run the tty and date commands to determine the terminal file (assume /dev/pts/1) and current system time.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>tty
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>tty
 date</code></pre></div>
 <p>Create a cron entry to display “Hello World” on the terminal. Schedule echo “Hello World” &gt; /dev/tty/1 to run 3 minutes from the current system time.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>crontab -e
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>crontab -e
 */3 * * * * echo &#34;Hello World&#34; &gt; /dev/pts/2</code></pre></div>
 <p>As root, ensure user1 can schedule cron jobs.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>sudo vim /etc/cron.allow
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>sudo vim /etc/cron.allow
 user1</code></pre></div>
 
   <footer class="footline">
@@ -1405,8 +1356,8 @@ user1</code></pre></div>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1432,23 +1383,23 @@ user1</code></pre></div>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

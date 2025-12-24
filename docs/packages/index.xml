@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Packages :: Linux Reader</title>
-    <link>https://linuxreader.com/packages/</link>
+    <link>http://localhost:1313/packages/</link>
     <description>Advanced Package Management&#xD;Managing package groups, application streams, modules, and DNF&#xD;Basic Package Management&#xD;RPM and package integrity and credibility</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://linuxreader.com/packages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/packages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advanced Package Management</title>
-      <link>https://linuxreader.com/packages/advanced-package-management/</link>
+      <link>http://localhost:1313/packages/advanced-package-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/packages/advanced-package-management/</guid>
+      <guid>http://localhost:1313/packages/advanced-package-management/</guid>
       <description>Managing package groups, application streams, modules, and DNF</description>
     </item>
     <item>
       <title>Basic Package Management</title>
-      <link>https://linuxreader.com/packages/basic-package-management/</link>
+      <link>http://localhost:1313/packages/basic-package-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/packages/basic-package-management/</guid>
+      <guid>http://localhost:1313/packages/basic-package-management/</guid>
       <description>RPM and package integrity and credibility</description>
     </item>
   </channel>

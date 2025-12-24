@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Files :: Linux Reader</title>
-    <link>https://linuxreader.com/files/</link>
+    <link>http://localhost:1313/files/</link>
     <description>Advanced File Management&#xD;File permissions, ACLs, and finding things&#xD;Basic File Managment&#xD;File types, linking, viewing, and archiving files.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://linuxreader.com/files/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/files/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advanced File Management</title>
-      <link>https://linuxreader.com/files/advanced-file-management/</link>
+      <link>http://localhost:1313/files/advanced-file-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/files/advanced-file-management/</guid>
+      <guid>http://localhost:1313/files/advanced-file-management/</guid>
       <description>File permissions, ACLs, and finding things</description>
     </item>
     <item>
       <title>Basic File Managment</title>
-      <link>https://linuxreader.com/files/file-management/</link>
+      <link>http://localhost:1313/files/file-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/files/file-management/</guid>
+      <guid>http://localhost:1313/files/file-management/</guid>
       <description>File types, linking, viewing, and archiving files.</description>
     </item>
   </channel>

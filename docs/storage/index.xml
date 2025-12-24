@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Storage :: Linux Reader</title>
-    <link>https://linuxreader.com/storage/</link>
+    <link>http://localhost:1313/storage/</link>
     <description>AutoFS&#xD;Managing AutoFS&#xD;Local File Systems and Swap&#xD;Local file systems and swap&#xD;Network File System (NFS)&#xD;Managing NFS and AutoFS&#xD;Partitioning, MBR, and GPT&#xD;Partitions and their management.&#xD;Remove a filesystem from a partition&#xD;Remove a filesystem from a partition.&#xD;Thin Provisioning and LVM&#xD;Thin provisioning and LVM&#xD;Virtual Data Optimizer (VDO)&#xD;VDO</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://linuxreader.com/storage/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/storage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AutoFS</title>
-      <link>https://linuxreader.com/storage/autofs/</link>
+      <link>http://localhost:1313/storage/autofs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/storage/autofs/</guid>
+      <guid>http://localhost:1313/storage/autofs/</guid>
       <description>Managing AutoFS</description>
     </item>
     <item>
       <title>Local File Systems and Swap</title>
-      <link>https://linuxreader.com/storage/local-file-systems-and-swap/</link>
+      <link>http://localhost:1313/storage/local-file-systems-and-swap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/storage/local-file-systems-and-swap/</guid>
+      <guid>http://localhost:1313/storage/local-file-systems-and-swap/</guid>
       <description>Local file systems and swap</description>
     </item>
     <item>
       <title>Network File System (NFS)</title>
-      <link>https://linuxreader.com/storage/network-file-system-nfs/</link>
+      <link>http://localhost:1313/storage/network-file-system-nfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/storage/network-file-system-nfs/</guid>
+      <guid>http://localhost:1313/storage/network-file-system-nfs/</guid>
       <description>Managing NFS and AutoFS</description>
     </item>
     <item>
       <title>Partitioning, MBR, and GPT</title>
-      <link>https://linuxreader.com/storage/partitioning-mbr-and-gpt/</link>
+      <link>http://localhost:1313/storage/partitioning-mbr-and-gpt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/storage/partitioning-mbr-and-gpt/</guid>
+      <guid>http://localhost:1313/storage/partitioning-mbr-and-gpt/</guid>
       <description>Partitions and their management.</description>
     </item>
     <item>
       <title>Remove a filesystem from a partition</title>
-      <link>https://linuxreader.com/storage/remove-a-filesystem-from-a-partition/</link>
+      <link>http://localhost:1313/storage/remove-a-filesystem-from-a-partition/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/storage/remove-a-filesystem-from-a-partition/</guid>
+      <guid>http://localhost:1313/storage/remove-a-filesystem-from-a-partition/</guid>
       <description>Remove a filesystem from a partition.</description>
     </item>
     <item>
       <title>Thin Provisioning and LVM</title>
-      <link>https://linuxreader.com/storage/thin-provisioning/</link>
+      <link>http://localhost:1313/storage/thin-provisioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/storage/thin-provisioning/</guid>
+      <guid>http://localhost:1313/storage/thin-provisioning/</guid>
       <description>Thin provisioning and LVM</description>
     </item>
     <item>
       <title>Virtual Data Optimizer (VDO)</title>
-      <link>https://linuxreader.com/storage/virtual-data-optimizer-vdo/</link>
+      <link>http://localhost:1313/storage/virtual-data-optimizer-vdo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/storage/virtual-data-optimizer-vdo/</guid>
+      <guid>http://localhost:1313/storage/virtual-data-optimizer-vdo/</guid>
       <description>VDO</description>
     </item>
   </channel>

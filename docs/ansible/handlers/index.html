@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Handlers">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Handlers :: Linux Reader">
     <meta name="twitter:description" content="Handlers">
-    <meta property="og:url" content="https://linuxreader.com/ansible/handlers/">
+    <meta property="og:url" content="http://localhost:1313/ansible/handlers/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Handlers :: Linux Reader">
     <meta property="og:description" content="Handlers">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Handlers">
     <meta itemprop="wordCount" content="1790">
     <title>Handlers :: Linux Reader</title>
-    <link href="/ansible/handlers/index.xml" rel="alternate" type="application/rss+xml" title="Handlers :: Linux Reader">
-    <link href="/ansible/handlers/index.print.html" rel="alternate" type="text/html" title="Handlers :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/ansible\/handlers\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/execution-environments/" title="Execution Environments (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/execution-environments/" title="Execution Environments (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -198,12 +152,9 @@
             Handlers
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/handlers/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/host-name-patterns/" title="Host Name Patterns (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/host-name-patterns/" title="Host Name Patterns (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -224,11 +175,11 @@
 
 <h1 id="handlers">Handlers</h1>
 
-<h2 id="using-handlers">Using Handlers</h2>
+<h2 id="using-handlers">Using Handlers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>A task that is triggered and is executed by a successful task.</li>
 </ul>
-<h4 id="working-with-handlers">Working with Handlers</h4>
+<h4 id="working-with-handlers">Working with Handlers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li>Define a <strong>notify</strong> statement at the level where the task is defined.</li>
 <li>The <strong>notify</strong> statement should list the name of the handler that is to be executed</li>
@@ -236,14 +187,14 @@
 <li>Make sure the name of the handler matches the name of the item that is called in the <strong>notify</strong> statement, because that is what the handler is looking for.</li>
 <li>Handlers can be specified as a list, so one task can call multiple handlers.</li>
 </ul>
-<h3 id="lab">Lab</h3>
+<h3 id="lab">Lab<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Define the file index.html on localhost. Use this file in the second play to set up the web server.</li>
 <li>The handler is triggered from the task where the copy module is used to copy the index.html file.</li>
 <li>If this task is successful, the <strong>notify</strong> statement calls the handler.</li>
 <li>A second task is defined, which is intended to fail.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: create file on localhost
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: localhost
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">tasks</span>:
@@ -291,7 +242,7 @@
 <p>Run an ad hoc command to remove the /var/www/html/index.html file on the managed hosts and run the playbook again:
 <code>ansible ansible2 -m file -a &quot;name=/var/www/html/index.html state=absent&quot;</code></p>
 <p>Run the playbook again and you&rsquo;ll see the handler runs.</p>
-<h4 id="understanding-handler-execution-and-exceptions">Understanding Handler Execution and Exceptions</h4>
+<h4 id="understanding-handler-execution-and-exceptions">Understanding Handler Execution and Exceptions<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>When a task fails, none of the following tasks run. How does that make handlers different? A handler runs only on the success of a task, but the next task in the list also runs only if the previous task was successful. What, then, is so special about handlers?</p>
 <p>The difference is in the nature of the handler.</p>
 <ul>
@@ -313,16 +264,16 @@
 • Handlers run only if the task calling them generates a changed status.
 • Handlers by default will not run if any task in the same play fails, unless <strong>force_handlers</strong> or <strong>ignore_errors</strong> are used.
 • Handlers run only after <em>all</em> tasks in the play where the handler is activated have been processed. You might want to define multiple plays to avoid this behavior.</p>
-<h3 id="lab-working-with-handlers">Lab: Working with Handlers</h3>
+<h3 id="lab-working-with-handlers">Lab: Working with Handlers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>1. Open a playbook with the name exercise73.yaml.</p>
 <p>2. Define the play header:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: update the kernel
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">force_handlers</span>: <span style="color:#ff6ac1">true</span>
 </span></span><span style="display:flex;"><span>  tasks:</span></span></code></pre></div>
 <p>3. Add a task that updates the current kernel:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: update the kernel
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">force_handlers</span>: <span style="color:#ff6ac1">true</span>
@@ -333,7 +284,7 @@
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">state</span>: latest
 </span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">notify</span>: reboot_server</span></span></code></pre></div>
 <p>4. Add a handler that reboots the server in case the kernel was successfully updated:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: update the kernel
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">force_handlers</span>: <span style="color:#ff6ac1">true</span>
@@ -347,8 +298,8 @@
 </span></span><span style="display:flex;"><span>  - <span style="color:#ff6ac1">name</span>: reboot_server
 </span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">command</span>: reboot</span></span></code></pre></div>
 <p>5. Run the playbook using <strong>ansible-playbook exercise73.yaml</strong> andobserve its result. Notice that the handler runs only if the kernel was updated. If the kernel already was at the latest version, nothing has changed and the handler does not run. Also notice that it wasn&rsquo;t really necessary to use <strong>force_handlers</strong> in the play header, but by using it anyway, at least you now know where to use it.</p>
-<h3 id="dealing-with-failures">Dealing with Failures</h3>
-<h4 id="understanding-task-execution">Understanding Task Execution</h4>
+<h3 id="dealing-with-failures">Dealing with Failures<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="understanding-task-execution">Understanding Task Execution<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li>Tasks in Ansible playbooks are executed in the order they are specified.</li>
 <li>If a task in the playbook fails to execute on a host, the task generates an error and the play does not further execute on that specific host.</li>
@@ -360,7 +311,7 @@
 <li>Used in the play header or on a block.</li>
 <li>Stop executing on all hosts when a failing task is encountered</li>
 </ul>
-<h4 id="managing-task-errors">Managing Task Errors</h4>
+<h4 id="managing-task-errors">Managing Task Errors<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Generically, tasks can generate three different types of results.
 ok</p>
 <ul>
@@ -379,8 +330,8 @@ failed</li>
 <li>can be used to ensure that handlers will be executed, even if a failing task
 was encountered.</li>
 </ul>
-<h3 id="lab-ignore_">Lab: <strong>ignore_errors</strong></h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
+<h3 id="lab-ignore_">Lab: <strong>ignore_errors</strong><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: restart sshd only if crond is running
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">tasks</span>:
@@ -393,8 +344,8 @@ was encountered.</li>
 </span></span><span style="display:flex;"><span>            <span style="color:#ff6ac1">name</span>: sshd
 </span></span><span style="display:flex;"><span>            <span style="color:#ff6ac1">state</span>: restarted
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">when</span>: result.rc == 0</span></span></code></pre></div>
-<h3 id="lab-forcing-handlers-to-run">Lab: Forcing Handlers to Run</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    ---
+<h3 id="lab-forcing-handlers-to-run">Lab: Forcing Handlers to Run<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: create file on localhost
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: localhost
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">tasks</span>:
@@ -426,14 +377,14 @@ was encountered.</li>
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">service</span>:
 </span></span><span style="display:flex;"><span>            <span style="color:#ff6ac1">name</span>: httpd
 </span></span><span style="display:flex;"><span>            <span style="color:#ff6ac1">state</span>: restarted</span></span></code></pre></div>
-<h4 id="specifying-task-failure-conditions">Specifying Task Failure Conditions</h4>
+<h4 id="specifying-task-failure-conditions">Specifying Task Failure Conditions<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p><strong>failed_when</strong></p>
 <ul>
 <li>conditional used to evaluate some expression.</li>
 <li>Set a failure condition on a task</li>
 </ul>
-<h3 id="lab-failed_when">Lab: failed_when</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
+<h3 id="lab-failed_when">Lab: failed_when<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: demonstrating failed_when
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">tasks</span>:
@@ -450,8 +401,8 @@ was encountered.</li>
 <li>specify when a task fails.</li>
 <li>Using this module makes sense only if <strong>when</strong> is used to define the exact condition when a failure should occur.</li>
 </ul>
-<h3 id="lab-using-the-fail-module">Lab: Using the fail Module</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    ---
+<h3 id="lab-using-the-fail-module">Lab: Using the fail Module<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: demonstrating the fail module
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">ignore_errors</span>: <span style="color:#ff6ac1">yes</span>
@@ -471,11 +422,11 @@ was encountered.</li>
 <li>Without this move, the message &ldquo;second task executed&rdquo; would never be  shown because the fail module always generates a failure message.</li>
 <li>The main advantage of using the fail module instead of using <strong>failed_when</strong> is that the fail module can easily be used to set a clear failure message, which is not possible when using <strong>failed_when</strong>.</li>
 </ul>
-<h4 id="managing-changed-status">Managing Changed Status</h4>
+<h4 id="managing-changed-status">Managing Changed Status<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>In Ansible, there are commands that change something and commands that don&rsquo;t. Some commands, however, are not very obvious in reporting their
 status.</p>
-<h3 id="lab--change-status">Lab:  Change status</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
+<h3 id="lab--change-status">Lab:  Change status<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: demonstrate changed status
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">tasks</span>:
@@ -498,8 +449,8 @@ status.</p>
 <ul>
 <li>If you set <strong>changed_when</strong> to false, the playbook reports only an ok or failed status and never reports a changed status.</li>
 </ul>
-<h3 id="lab-using-changed_">Lab: Using <strong>changed_when</strong></h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>---
+<h3 id="lab-using-changed_">Lab: Using <strong>changed_when</strong><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: demonstrate changed status
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">tasks</span>:
@@ -511,15 +462,15 @@ status.</p>
 </span></span><span style="display:flex;"><span>  - <span style="color:#ff6ac1">name</span>: print local time
 </span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">debug</span>:
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">var</span>: command_result.stdout</span></span></code></pre></div>
-<h4 id="using-blocks">Using Blocks</h4>
+<h4 id="using-blocks">Using Blocks<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li>Useful when working with conditional statements.</li>
 <li>A group of tasks to which a <strong>when</strong> statement can be applied.</li>
 <li>As a result, if a single condition is true, multiple tasks can be executed.</li>
 <li>To do so, between the <strong>tasks:</strong> statement in the play header and the actual tasks that run the specific modules, you can insert a <strong>block:</strong> statement.</li>
 </ul>
-<h3 id="lab-using-blocks">Lab: Using Blocks</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>---
+<h3 id="lab-using-blocks">Lab: Using Blocks<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: simple block example
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">tasks</span>:
@@ -538,13 +489,13 @@ status.</p>
 <li>The <strong>when</strong> statement is applied at the same level as the <strong>block</strong> definition.</li>
 <li>When you define it this way, the tasks in the block are executed only if the <strong>when</strong> statement is true.</li>
 </ul>
-<h4 id="using-blocks-with-rescue-and-always-statements">Using Blocks with rescue and always Statements</h4>
+<h4 id="using-blocks-with-rescue-and-always-statements">Using Blocks with rescue and always Statements<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li>Blocks can be used for simple error handling as well, in such a way that if any task that is defined in the <strong>block</strong> statement fails, the tasks that are defined in the <strong>rescue</strong> section are executed.</li>
 <li>Besides that, an <strong>always</strong> section can be used to define tasks that should always run, regardless of the success or failure of the tasks in the block.</li>
 </ul>
-<h3 id="lab-using-blocks-rescue-and-always">Lab: Using Blocks, <strong>rescue</strong>, and <strong>always</strong></h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: using blocks
+<h3 id="lab-using-blocks-rescue-and-always">Lab: Using Blocks, <strong>rescue</strong>, and <strong>always</strong><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: using blocks
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">tasks</span>: 
 </span></span><span style="display:flex;"><span>  - <span style="color:#ff6ac1">name</span>: intended to be successful
@@ -696,8 +647,8 @@ status.</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -723,23 +674,23 @@ status.</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

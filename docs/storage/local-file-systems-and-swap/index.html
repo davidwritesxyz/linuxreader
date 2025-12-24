@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Local file systems and swap">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Local File Systems and Swap :: Linux Reader">
     <meta name="twitter:description" content="Local file systems and swap">
-    <meta property="og:url" content="https://linuxreader.com/storage/local-file-systems-and-swap/">
+    <meta property="og:url" content="http://localhost:1313/storage/local-file-systems-and-swap/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Local File Systems and Swap :: Linux Reader">
     <meta property="og:description" content="Local file systems and swap">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Local file systems and swap">
     <meta itemprop="wordCount" content="9043">
     <title>Local File Systems and Swap :: Linux Reader</title>
-    <link href="/storage/local-file-systems-and-swap/index.xml" rel="alternate" type="application/rss+xml" title="Local File Systems and Swap :: Linux Reader">
-    <link href="/storage/local-file-systems-and-swap/index.print.html" rel="alternate" type="text/html" title="Local File Systems and Swap :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/storage\/local-file-systems-and-swap\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/storage/autofs/" title="AutoFS (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/storage/autofs/" title="AutoFS (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -234,12 +188,9 @@
             Local File Systems and Swap
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/storage/local-file-systems-and-swap/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/storage/network-file-system-nfs/" title="Network File System (NFS) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/storage/network-file-system-nfs/" title="Network File System (NFS) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -260,7 +211,7 @@
 
 <h1 id="local-file-systems-and-swap">Local File Systems and Swap</h1>
 
-<h2 id="file-systems-and-file-system-types">File Systems and File System Types</h2>
+<h2 id="file-systems-and-file-system-types">File Systems and File System Types<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>File systems</strong></p>
 <ul>
 <li>Can be optimized, resized, mounted, and unmounted independently.</li>
@@ -359,7 +310,7 @@
 <li>Network based</li>
 <li>NFS file system set to mount and unmount automatically on remote client systems.</li>
 </ul>
-<h3 id="extended-file-systems">Extended File Systems</h3>
+<h3 id="extended-file-systems">Extended File Systems<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>First generation is obsolete and is no longer supported</li>
 <li>Second, third, and fourth generations are currently available and supported.</li>
@@ -450,7 +401,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="xfs-file-system">XFS File System</h3>
+<h3 id="xfs-file-system">XFS File System<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>High-performing 64-bit extent-based journaling file system type.</li>
 <li>Allows the creation of file systems and files up to 8EiB (ExbiByte).</li>
@@ -464,24 +415,24 @@
 <li>Speedy input/output performance.</li>
 <li>Can be snapshot in a mounted, active state.</li>
 </ul>
-<h3 id="vfat-file-system">VFAT File System</h3>
+<h3 id="vfat-file-system">VFAT File System<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Extension to the legacy FAT file system (FAT16)</li>
 <li>Supports 255 characters in filenames including spaces and periods</li>
 <li>Does not differentiate between lowercase and uppercase letters.</li>
 <li>Primarily used on removable media, such as floppy and USB flash drives, for exchanging data between Linux and Windows.</li>
 </ul>
-<h3 id="iso9660-file-system">ISO9660 File System</h3>
+<h3 id="iso9660-file-system">ISO9660 File System<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>For removable optical disc media such as CD/DVD drives</li>
 </ul>
-<h1 id="file-system-management">File System Management</h1>
-<h4 id="file-system-administration-commands">File System Administration Commands</h4>
+<h1 id="file-system-management">File System Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<h4 id="file-system-administration-commands">File System Administration Commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li>Some are limited to their operations on the Extended, XFS, or VFAT file system type.</li>
 <li>Others are general and applicable to all file system types.</li>
 </ul>
-<h4 id="extended-file-system-management-commands">Extended File System Management Commands</h4>
+<h4 id="extended-file-system-management-commands">Extended File System Management Commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p><code>e2label</code></p>
 <ul>
 <li>Modifies the label of a file system</li>
@@ -490,7 +441,7 @@
 <ul>
 <li>Tunes or displays file system attributes</li>
 </ul>
-<h4 id="xfs-management-commands">XFS Management Commands</h4>
+<h4 id="xfs-management-commands">XFS Management Commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p><code>xfs_admin  </code></p>
 <ul>
 <li>Tunes file system attributes</li>
@@ -503,7 +454,7 @@
 <ul>
 <li>Exhibits information about a file system</li>
 </ul>
-<h4 id="general-file-system-commands">General File System Commands</h4>
+<h4 id="general-file-system-commands">General File System Commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p><code>blkid  </code></p>
 <ul>
 <li>Displays block device attributes including their UUIDs and labels</li>
@@ -537,16 +488,16 @@
 <ul>
 <li>Unmount a file system.</li>
 </ul>
-<h3 id="mounting-and-unmounting-file-systems">Mounting and Unmounting File Systems</h3>
+<h3 id="mounting-and-unmounting-file-systems">Mounting and Unmounting File Systems<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>File system must be connected to the directory structure at a desired attachment point, (mount point)</li>
 <li>A mount point in essence is any empty directory that is created and used for this purpose.</li>
 </ul>
 <p>Use the mount command to view information about xfs mounted file systems:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mount -t xfs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mount -t xfs</span>
 </span></span><span style="display:flex;"><span>/dev/mapper/rhel-root on / <span style="color:#ff5c57">type</span> xfs <span style="color:#ff6ac1">(</span>rw,relatime,seclabel,attr2,inode64,logbufs<span style="color:#ff6ac1">=</span>8,logbsize<span style="color:#ff6ac1">=</span>32k,noquota<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>/dev/sda1 on /boot <span style="color:#ff5c57">type</span> xfs <span style="color:#ff6ac1">(</span>rw,relatime,seclabel,attr2,inode64,logbufs<span style="color:#ff6ac1">=</span>8,logbsize<span style="color:#ff6ac1">=</span>32k,noquota<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
-<h4 id="mount-command">Mount command</h4>
+<h4 id="mount-command">Mount command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li><code>-t</code> option
 <ul>
@@ -582,14 +533,14 @@
 <ul>
 <li>Mounts a file system read-only read/write)</li>
 </ul>
-<h4 id="umount-command">umount Command</h4>
+<h4 id="umount-command">umount Command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li>Detach a file system from the directory hierarchy and make it inaccessible to users and applications.</li>
 <li>Expects the absolute pathname to the block device containing the file system or its mount point name in order to detach it.</li>
 <li>Unmount all or a specific type of file system.</li>
 <li>Kernel removes the corresponding file system entry from the <em>/proc/self/mounts</em> file after it has been successfully disconnected.</li>
 </ul>
-<h3 id="determining-the-uuid-of-a-file-system">Determining the UUID of a File System</h3>
+<h3 id="determining-the-uuid-of-a-file-system">Determining the UUID of a File System<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
 <p>Extended and XFS file systems have a 128-bit (32 hexadecimal characters) UUID (Universally Unique IDentifier) assigned to it at the time of its creation.</p>
@@ -617,9 +568,9 @@
 </li>
 </ul>
 <p>Determine the UUID of /boot</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk | grep boot</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk | grep boot</span>
 </span></span><span style="display:flex;"><span>├─sda1          8:1    <span style="color:#ff9f43">0</span>    1G  <span style="color:#ff9f43">0</span> part /boot</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo xfs_admin -u /dev/sda1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo xfs_admin -u /dev/sda1</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">UUID</span> <span style="color:#ff6ac1">=</span> 630568e1-608f-4603-9b97-e27f82c7d4b4
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo blkid /dev/sda1</span>
@@ -631,7 +582,7 @@
 <p>For extended file systems, you can use the <code>tune2fs</code>, <code>blkid</code>, or <code>lsblk</code> commands to determine the UUID.</p>
 <p>A UUID is also assigned to a file system that is created in a VDO or LVM volume; however, it need not be used in the fstab file, as the device
 files associated with the logical volumes are always unique and persistent.</p>
-<h3 id="labeling-a-file-system">Labeling a File System</h3>
+<h3 id="labeling-a-file-system">Labeling a File System<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>A unique label may be used instead of a UUID to keep the file system association with its device file exclusive and persistent across system reboots.</li>
 <li>A label is limited to a maximum of 12 characters on the XFS file system</li>
@@ -640,7 +591,7 @@ files associated with the logical volumes are always unique and persistent.</p>
 </ul>
 <p>The <em>/boot</em> file system is located in the <em>/dev/sda1</em> partition and its type is XFS. You can use the <code>xfs_admin</code> or the <code>lsblk</code> command as follows to
 determine its label:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo xfs_admin -l /dev/sda1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo xfs_admin -l /dev/sda1</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">label</span> <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lsblk -f /dev/sda1</span>
@@ -652,20 +603,20 @@ determine its label:</p>
 <li>Labeling an XFS file system requires that the target file system be unmounted.</li>
 </ul>
 <p>unmount /boot, set the label &ldquo;bootfs&rdquo; on its device file, and remount it:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo umount /boot</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo umount /boot</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo xfs_admin -L bootfs /dev/sda1</span>
 </span></span><span style="display:flex;"><span>writing all SBs
 </span></span><span style="display:flex;"><span>new <span style="color:#ff5c57">label</span> <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#34;bootfs&#34;</span></span></span></code></pre></div>
 <p>Confirm the new label by executing <code>sudo xfs_admin -l /dev/sda1</code> or <code>sudo lsblk -f /dev/sda1</code>.</p>
 <p>For extended file systems, you can use the <code>e2label</code> command to apply a label and the <code>tune2fs</code>, <code>blkid</code>, and <code>lsblk</code> commands to view and verify.</p>
 <p>Now you can replace the <code>UUID=\&quot;22d05484-6ae1-4ef8-a37d-abab674a5e35</code>&quot; for /boot in the fstab file with <code>LABEL=bootfs</code>, and unmount and remount /boot as demonstrated above for confirmation.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mount /boot</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mount /boot</span>
 </span></span><span style="display:flex;"><span>mount: <span style="color:#ff6ac1">(</span>hint<span style="color:#ff6ac1">)</span> your fstab has been modified, but systemd still uses
 </span></span><span style="display:flex;"><span>       the old version; use <span style="color:#5af78e">&#39;systemctl daemon-reload&#39;</span> to reload.</span></span></code></pre></div>
 <p>A label may also be applied to a file system created in a logical volume; however, it is not recommended for use in the fstab file, as the
 device files for logical volumes are always unique and remain persistent across system reboots.</p>
-<h3 id="automatically-mounting-a-file-system-at-reboots">Automatically Mounting a File System at Reboots</h3>
-<h4 id="etcfstab"><em>/etc/fstab</em></h4>
+<h3 id="automatically-mounting-a-file-system-at-reboots">Automatically Mounting a File System at Reboots<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="etcfstab"><em>/etc/fstab</em><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li>File systems defined in the <em>/etc/fstab</em> file are mounted automatically at reboots.</li>
 <li>Must contain proper and complete information for each listed file system.</li>
@@ -682,7 +633,7 @@ device files for logical volumes are always unique and remain persistent across 
 <li>Only need to specify one of these attributes with the <code>umount</code> command to detach it from the directory hierarchy.</li>
 <li>Contains entries for file systems that are created at the time of installation.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /etc/fstab</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /etc/fstab</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#78787e">#</span>
 </span></span><span style="display:flex;"><span><span style="color:#78787e"># /etc/fstab</span>
@@ -745,7 +696,7 @@ device files for logical volumes are always unique and remain persistent across 
 <p>0 in columns 5 and 6 for XFS, virtual, remote, and removable file system types has no meaning. You do not need to add them for these file system types.</p>
 </li>
 </ul>
-<h2 id="lab-create-and-mount-ext4-vfat-and-xfs-file-systems-in-partitions-server2">Lab: Create and Mount Ext4, VFAT, and XFS File Systems in Partitions (server2)</h2>
+<h2 id="lab-create-and-mount-ext4-vfat-and-xfs-file-systems-in-partitions-server2">Lab: Create and Mount Ext4, VFAT, and XFS File Systems in Partitions (server2)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Create 2 x 100MB partitions on the /dev/sdb disk,</li>
 <li>initialize them separately with the Ext4 and VFAT file system types,</li>
@@ -756,19 +707,19 @@ device files for logical volumes are always unique and remain persistent across 
 <li>you will use the disk /dev/sdc and repeat the above procedure to establish an XFS file system in it and mount it on /xfsfs1.</li>
 </ul>
 <p>1. Apply the label &ldquo;msdos&rdquo; to the sdb disk using the parted command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdb mklabel msdos</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdb mklabel msdos</span>
 </span></span><span style="display:flex;"><span>Warning: The existing disk label on /dev/sdb will be destroyed and all data on this disk will be
 </span></span><span style="display:flex;"><span>lost. Do you want to <span style="color:#ff6ac1">continue</span>?
 </span></span><span style="display:flex;"><span>Yes/No? y                                                                 
 </span></span><span style="display:flex;"><span>Information: You may need to update /etc/fstab.</span></span></code></pre></div>
 <p>2. Create 2 x 100MB primary partitions on sdb with the parted command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdb mkpart primary 1 101m</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdb mkpart primary 1 101m</span>
 </span></span><span style="display:flex;"><span>Information: You may need to update /etc/fstab.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdb mkpart primary 102 201m</span>
 </span></span><span style="display:flex;"><span>Information: You may need to update /etc/fstab.</span></span></code></pre></div>
 <p>3. Initialize the first partition (sdb1) with Ext4 file system type using the mkfs command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs -t ext4 /dev/sdb1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs -t ext4 /dev/sdb1</span>
 </span></span><span style="display:flex;"><span>mke2fs 1.46.5 <span style="color:#ff6ac1">(</span>30-Dec-2021<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>/dev/sdb1 contains a LVM2_member file system
 </span></span><span style="display:flex;"><span>Proceed anyway? <span style="color:#ff6ac1">(</span>y,N<span style="color:#ff6ac1">)</span> y
@@ -782,10 +733,10 @@ device files for logical volumes are always unique and remain persistent across 
 </span></span><span style="display:flex;"><span>Creating journal <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">4096</span> blocks<span style="color:#ff6ac1">)</span>: <span style="color:#ff6ac1">done</span>
 </span></span><span style="display:flex;"><span>Writing superblocks and filesystem accounting information: <span style="color:#ff6ac1">done</span> </span></span></code></pre></div>
 <p>4. Initialize the second partition (sdb2) with VFAT file system type using the mkfs command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs -t vfat /dev/sdb2</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs -t vfat /dev/sdb2</span>
 </span></span><span style="display:flex;"><span>mkfs.fat 4.2 <span style="color:#ff6ac1">(</span>2021-01-31<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
 <p>5. Initialize the whole disk (sdc) with the XFS file system type using the mkfs.xfs command. Add the -f flag to force the removal of any old partitioning or labeling information from the disk.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs.xfs /dev/sdc -f </span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs.xfs /dev/sdc -f </span>
 </span></span><span style="display:flex;"><span>Filesystem should be larger than 300MB.
 </span></span><span style="display:flex;"><span>Log size should be at least 64MB.
 </span></span><span style="display:flex;"><span>Support <span style="color:#ff6ac1">for</span> filesystems like this one is deprecated and they will not be supported in future releases.
@@ -800,25 +751,25 @@ device files for logical volumes are always unique and remain persistent across 
 </span></span><span style="display:flex;"><span>         <span style="color:#ff6ac1">=</span>                       <span style="color:#ff5c57">sectsz</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">512</span>   <span style="color:#ff5c57">sunit</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span> blks, lazy-count<span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">realtime</span> <span style="color:#ff6ac1">=</span>none                   <span style="color:#ff5c57">extsz</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">4096</span>   <span style="color:#ff5c57">blocks</span><span style="color:#ff6ac1">=</span>0, <span style="color:#ff5c57">rtextents</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span></span></span></code></pre></div>
 <p>6. Determine the UUIDs for all three file systems using the lsblk command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk -f /dev/sdb /dev/sdc</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk -f /dev/sdb /dev/sdc</span>
 </span></span><span style="display:flex;"><span>NAME   FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
 </span></span><span style="display:flex;"><span>sdb                                                                           
 </span></span><span style="display:flex;"><span>├─sdb1 ext4   1.0         0bdd22d0-db53-40bb-8cc7-36efc9184196                
 </span></span><span style="display:flex;"><span>└─sdb2 vfat   FAT16       FB3A-6572                                           
 </span></span><span style="display:flex;"><span>sdc    xfs                91884326-9686-4569-96fa-9adb02c1f6f4&gt;<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
 <p>7. Open the /etc/fstab file, go to the end of the file, and append entries for the file systems for persistence using their UUIDs:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">UUID</span><span style="color:#ff6ac1">=</span>0bdd22d0-db53-40bb-8cc7-36efc9184196 /ext4fs1 ext4 defaults <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span>                
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">UUID</span><span style="color:#ff6ac1">=</span>0bdd22d0-db53-40bb-8cc7-36efc9184196 /ext4fs1 ext4 defaults <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span>                
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">UUID</span><span style="color:#ff6ac1">=</span>FB3A-6572 /vfatfs1 vfat defaults <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span>                                          
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">UUID</span><span style="color:#ff6ac1">=</span>91884326-9686-4569-96fa-9adb02c1f6f4 /xfsfs1 xfs defaults <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span></span></span></code></pre></div>
 <p>8. Create mount points /ext4fs1, /vfatfs1, and /xfsfs1 for the three
 file systems using the mkdir command:
 <code>[root@server2 ~]# sudo mkdir /ext4fs1 /vfatfs1 /xfsfs1</code></p>
 <p>9. Mount the new file systems using the mount command. This command will fail if there are any invalid or missing information in the file.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mount -a</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mount -a</span>
 </span></span><span style="display:flex;"><span>mount: <span style="color:#ff6ac1">(</span>hint<span style="color:#ff6ac1">)</span> your fstab has been modified, but systemd still uses
 </span></span><span style="display:flex;"><span>       the old version; use <span style="color:#5af78e">&#39;systemctl daemon-reload&#39;</span> to reload.</span></span></code></pre></div>
 <p>10. View the mount and availability status as well as the types of all three file systems using the df command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># df -hT</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># df -hT</span>
 </span></span><span style="display:flex;"><span>Filesystem            Type      Size  Used Avail Use% Mounted on
 </span></span><span style="display:flex;"><span>devtmpfs              devtmpfs  4.0M     <span style="color:#ff9f43">0</span>  4.0M   0% /dev
 </span></span><span style="display:flex;"><span>tmpfs                 tmpfs     888M     <span style="color:#ff9f43">0</span>  888M   0% /dev/shm
@@ -829,7 +780,7 @@ file systems using the mkdir command:
 </span></span><span style="display:flex;"><span>/dev/sdb1             ext4       84M   14K   77M   1% /ext4fs1
 </span></span><span style="display:flex;"><span>/dev/sdb2             vfat       95M     <span style="color:#ff9f43">0</span>   95M   0% /vfatfs1
 </span></span><span style="display:flex;"><span>/dev/sdc              xfs       245M   15M  231M   6% /xfsfs1</span></span></code></pre></div>
-<h2 id="lab-create-and-mount-ext4-and-xfs-file-systems-in-lvm-logical-volumes-server2">Lab: Create and Mount Ext4 and XFS File Systems in LVM Logical Volumes (server2)</h2>
+<h2 id="lab-create-and-mount-ext4-and-xfs-file-systems-in-lvm-logical-volumes-server2">Lab: Create and Mount Ext4 and XFS File Systems in LVM Logical Volumes (server2)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Create a volume group called <em>vgfs</em> comprised of a 172MB physical volume created in a partition on the <em>/dev/sdd</em> disk.</li>
 <li>The PE size for the volume group should be set at 16MB.</li>
@@ -840,25 +791,25 @@ file systems using the mkdir command:
 <li>Verify their availability and usage.</li>
 </ul>
 <p>1. Create a 172MB partition on the sdd disk using the parted command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdd mkpart pri 1 172m</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdd mkpart pri 1 172m</span>
 </span></span><span style="display:flex;"><span>Information: You may need to update /etc/fstab.</span></span></code></pre></div>
 <p>2. Initialize the sdd1 partition for use in LVM using the pvcreate command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sdd1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sdd1</span>
 </span></span><span style="display:flex;"><span>  Device /dev/sdb2 has updated name <span style="color:#ff6ac1">(</span>devices file /dev/sdd2<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>  Device /dev/sdb1 has no PVID <span style="color:#ff6ac1">(</span>devices file brKVLFEG3AoBzhWoso0Sa1gLYHgNZ4vL<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>  Physical volume <span style="color:#5af78e">&#34;/dev/sdd1&#34;</span> successfully created.</span></span></code></pre></div>
 <p>3. Create the volume group vgfs with a PE size of 16MB using the physical volume sdd1:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgcreate -s 16 vgfs /dev/sdd1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgcreate -s 16 vgfs /dev/sdd1</span>
 </span></span><span style="display:flex;"><span>  Volume group <span style="color:#5af78e">&#34;vgfs&#34;</span> successfully created</span></span></code></pre></div>
 <p>The PE size is not easy to alter after a volume group creation, so ensure it is defined as required at creation.</p>
 <p>4. Create two logical volumes ext4vol and xfsvol of size 80MB each in vgfs using the <code>lvcreate</code> command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -n ext4vol -L 80 vgfs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -n ext4vol -L 80 vgfs</span>
 </span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;ext4vol&#34;</span> created.
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate  -n xfsvol -L 80 vgfs</span>
 </span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;xfsvol&#34;</span> created.</span></span></code></pre></div>
 <p>5. Format the ext4vol logical volume with the Ext4 file system type using the mkfs.ext4 command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs.ext4 /dev/vgfs/ext4vol</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs.ext4 /dev/vgfs/ext4vol</span>
 </span></span><span style="display:flex;"><span>mke2fs 1.46.5 <span style="color:#ff6ac1">(</span>30-Dec-2021<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>Creating filesystem with <span style="color:#ff9f43">81920</span> 1k blocks and <span style="color:#ff9f43">20480</span> inodes
 </span></span><span style="display:flex;"><span>Filesystem UUID: 4ed1fef7-2164-485b-8035-7f627cd59419
@@ -871,7 +822,7 @@ file systems using the mkdir command:
 </span></span><span style="display:flex;"><span>Writing superblocks and filesystem accounting information: <span style="color:#ff6ac1">done</span></span></span></code></pre></div>
 <p>You can also use <code>sudo mkfs -t ext4 /dev/vgfs/ext4vol</code>.</p>
 <p>6. Format the xfsvol logical volume with the XFS file system type using the mkfs.xfs command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs.xfs /dev/vgfs/xfsvol</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs.xfs /dev/vgfs/xfsvol</span>
 </span></span><span style="display:flex;"><span>Filesystem should be larger than 300MB.
 </span></span><span style="display:flex;"><span>Log size should be at least 64MB.
 </span></span><span style="display:flex;"><span>Support <span style="color:#ff6ac1">for</span> filesystems like this one is deprecated and they will not be supported in future releases.
@@ -887,17 +838,17 @@ file systems using the mkdir command:
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">realtime</span> <span style="color:#ff6ac1">=</span>none                   <span style="color:#ff5c57">extsz</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">4096</span>   <span style="color:#ff5c57">blocks</span><span style="color:#ff6ac1">=</span>0, <span style="color:#ff5c57">rtextents</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span></span></span></code></pre></div>
 <p>You may also use <code>sudo mkfs -t xfs /dev/vgfs/xfsvol</code> instead.</p>
 <p>7. Open the /etc/fstab file, go to the end of the file, and append entries for the file systems for persistence using their device files:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/dev/vgfs/ext4vol /ext4fs2 ext4 defaults <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/dev/vgfs/ext4vol /ext4fs2 ext4 defaults <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span>
 </span></span><span style="display:flex;"><span>/dev/vgfs/xfsvol /xfsfs2 xfs defaults <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span></span></span></code></pre></div>
 <p>8. Create mount points /ext4fs2 and /xfsfs2 using the mkdir command:
 <code>[root@server2 ~]# sudo mkdir /ext4fs2 /xfsfs2</code></p>
 <p>9. Mount the new file systems using the mount command. This command will fail if there is any invalid or missing information in the file.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mount -a</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mount -a</span>
 </span></span><span style="display:flex;"><span>mount: <span style="color:#ff6ac1">(</span>hint<span style="color:#ff6ac1">)</span> your fstab has been modified, but systemd still uses
 </span></span><span style="display:flex;"><span>       the old version; use <span style="color:#5af78e">&#39;systemctl daemon-reload&#39;</span> to reload.</span></span></code></pre></div>
 <p>10. View the mount and availability status as well as the types of the
 new LVM file systems using the lsblk and df commands:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk /dev/sdd</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk /dev/sdd</span>
 </span></span><span style="display:flex;"><span>NAME             MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
 </span></span><span style="display:flex;"><span>sdd                8:48   <span style="color:#ff9f43">0</span>  250M  <span style="color:#ff9f43">0</span> disk 
 </span></span><span style="display:flex;"><span>└─sdd1             8:49   <span style="color:#ff9f43">0</span>  163M  <span style="color:#ff9f43">0</span> part 
@@ -906,7 +857,7 @@ new LVM file systems using the lsblk and df commands:</p>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># df -hT | grep fs2</span>
 </span></span><span style="display:flex;"><span>/dev/mapper/vgfs-ext4vol ext4       70M   14K   64M   1% /ext4fs2
 </span></span><span style="display:flex;"><span>/dev/mapper/vgfs-xfsvol  xfs        75M  4.8M   70M   7% /xfsfs2</span></span></code></pre></div>
-<h3 id="lab-resize-ext4-and-xfs-file-systems-in-lvm-logical-volumes-server-2">Lab: Resize Ext4 and XFS File Systems in LVM Logical Volumes (server 2)</h3>
+<h3 id="lab-resize-ext4-and-xfs-file-systems-in-lvm-logical-volumes-server-2">Lab: Resize Ext4 and XFS File Systems in LVM Logical Volumes (server 2)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Grow the size of the <em>vgfs</em> volume group that was created in the last lab by adding the whole <em>sde</em> disk to it.</li>
 <li>Extend the <em>ext4vol</em> logical volume along with the file system it contains by 40MB using two separate commands.</li>
@@ -915,23 +866,23 @@ new LVM file systems using the lsblk and df commands:</p>
 </ul>
 <p>1. Initialize the sde disk and add it to the vgfs volume group:</p>
 <p>sde had a gpt partition table with no partitions ran the following to reset it:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># dd if=/dev/zero of=/dev/sde bs=1M count=2 conv=fsync</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># dd if=/dev/zero of=/dev/sde bs=1M count=2 conv=fsync</span>
 </span></span><span style="display:flex;"><span>2+0 records in
 </span></span><span style="display:flex;"><span>2+0 records out
 </span></span><span style="display:flex;"><span><span style="color:#ff9f43">2097152</span> bytes <span style="color:#ff6ac1">(</span>2.1 MB, 2.0 MiB<span style="color:#ff6ac1">)</span> copied, 0.0102036 s, <span style="color:#ff9f43">206</span> MB/s
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo partprobe /dev/sde</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sde</span>
 </span></span><span style="display:flex;"><span>  Physical volume <span style="color:#5af78e">&#34;/dev/sde&#34;</span> successfully created.</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sde</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sde</span>
 </span></span><span style="display:flex;"><span>  Physical volume <span style="color:#5af78e">&#34;/dev/sde&#34;</span> successfully created.
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgextend vgfs /dev/sde</span>
 </span></span><span style="display:flex;"><span>  Volume group <span style="color:#5af78e">&#34;vgfs&#34;</span> successfully extended</span></span></code></pre></div>
 <p>2. Confirm the new size of vgfs using the <code>vgs</code> and <code>vgdisplay</code> commands:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs</span>
 </span></span><span style="display:flex;"><span>  VG   <span style="color:#78787e">#PV #LV #SN Attr   VSize   VFree  </span>
 </span></span><span style="display:flex;"><span>  rhel   <span style="color:#ff9f43">1</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- &lt;19.00g      <span style="color:#ff9f43">0</span> 
 </span></span><span style="display:flex;"><span>  vgfs   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- 400.00m 240.00m</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vgdisplay vgfs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vgdisplay vgfs</span>
 </span></span><span style="display:flex;"><span>  Devices file sys_wwid t10.ATA_VBOX_HARDDISK_VBa5e3cbf7-10921e08 PVID qeP9dCevNnTy422I8p18NxDKQ2WyDodU last seen on /dev/sdf1 not found.
 </span></span><span style="display:flex;"><span>  --- Volume group ---
 </span></span><span style="display:flex;"><span>  VG Name               vgfs
@@ -955,7 +906,7 @@ new LVM file systems using the lsblk and df commands:</p>
 </span></span><span style="display:flex;"><span>  VG UUID               amDADJ-I4dH-jQUF-RFcE-58iL-jItl-5ti6LS</span></span></code></pre></div>
 <p>There are now two physical volumes in the volume group and the total size increased to 400MiB.</p>
 <p>3. Grow the logical volume ext4vol and the file system it holds by 40MB using the <code>lvextend</code> and <code>fsadm</code> command pair. Make sure to use an uppercase L to specify the size. The default unit is MiB. The plus sign (+) signifies an addition to the current size.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvextend -L +40 /dev/vgfs/ext4vol</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvextend -L +40 /dev/vgfs/ext4vol</span>
 </span></span><span style="display:flex;"><span>  Rounding size to boundary between physical extents: 48.00 MiB.
 </span></span><span style="display:flex;"><span>  Size of logical volume vgfs/ext4vol changed from 80.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">5</span> extents<span style="color:#ff6ac1">)</span> to 128.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">8</span> extents<span style="color:#ff6ac1">)</span>.
 </span></span><span style="display:flex;"><span>  Logical volume vgfs/ext4vol successfully resized.
@@ -967,7 +918,7 @@ new LVM file systems using the lsblk and df commands:</p>
 </span></span><span style="display:flex;"><span>The filesystem on /dev/mapper/vgfs-ext4vol is now <span style="color:#ff9f43">131072</span> <span style="color:#ff6ac1">(</span>1k<span style="color:#ff6ac1">)</span> blocks long.</span></span></code></pre></div>
 <p>The resize subcommand instructs the <code>fsadm</code> command to grow the file system to the full length of the specified logical volume.</p>
 <p>4. Grow the logical volume xfsvol and the file system (-r) it holds by (+) 40MB using the lvresize command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvresize -r -L +40 /dev/vgfs/xfsvol</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvresize -r -L +40 /dev/vgfs/xfsvol</span>
 </span></span><span style="display:flex;"><span>  Rounding size to boundary between physical extents: 48.00 MiB.
 </span></span><span style="display:flex;"><span>  Size of logical volume vgfs/xfsvol changed from 80.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">5</span> extents<span style="color:#ff6ac1">)</span> to 128.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">8</span> extents<span style="color:#ff6ac1">)</span>.
 </span></span><span style="display:flex;"><span>  File system xfs found on vgfs/xfsvol mounted at /xfsfs2.
@@ -988,15 +939,15 @@ new LVM file systems using the lsblk and df commands:</p>
 </span></span><span style="display:flex;"><span>  Extended file system xfs on vgfs/xfsvol.
 </span></span><span style="display:flex;"><span>  Logical volume vgfs/xfsvol successfully resized.</span></span></code></pre></div>
 <p>5. Verify the new extensions to both logical volumes using the <code>lvs</code> command. You may also issue the <code>lvdisplay</code> or <code>vgdisplay</code> command instead.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvs | grep vol</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvs | grep vol</span>
 </span></span><span style="display:flex;"><span>  Devices file sys_wwid t10.ATA_VBOX_HARDDISK_VBa5e3cbf7-10921e08 PVID qeP9dCevNnTy422I8p18NxDKQ2WyDodU last seen on /dev/sdf1 not found.
 </span></span><span style="display:flex;"><span>  ext4vol vgfs -wi-ao---- 128.00m                                                    
 </span></span><span style="display:flex;"><span>  xfsvol  vgfs -wi-ao---- 128.00m   </span></span></code></pre></div>
 <p>6. Check the new sizes and the current mount status for both file systems using the <code>df</code> and <code>lsblk</code> commands:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># df -hT | grep -E &#39;ext4vol|xfsvol&#39;</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># df -hT | grep -E &#39;ext4vol|xfsvol&#39;</span>
 </span></span><span style="display:flex;"><span>/dev/mapper/vgfs-xfsvol  xfs       123M  5.4M  118M   5% /xfsfs2
 </span></span><span style="display:flex;"><span>/dev/mapper/vgfs-ext4vol ext4      115M   14K  107M   1% /ext4fs2</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk /dev/sdd /dev/sde</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk /dev/sdd /dev/sde</span>
 </span></span><span style="display:flex;"><span>NAME             MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
 </span></span><span style="display:flex;"><span>sdd                8:48   <span style="color:#ff9f43">0</span>  250M  <span style="color:#ff9f43">0</span> disk 
 </span></span><span style="display:flex;"><span>└─sdd1             8:49   <span style="color:#ff9f43">0</span>  163M  <span style="color:#ff9f43">0</span> part 
@@ -1005,7 +956,7 @@ new LVM file systems using the lsblk and df commands:</p>
 </span></span><span style="display:flex;"><span>sde                8:64   <span style="color:#ff9f43">0</span>  250M  <span style="color:#ff9f43">0</span> disk 
 </span></span><span style="display:flex;"><span>├─vgfs-ext4vol   253:2    <span style="color:#ff9f43">0</span>  128M  <span style="color:#ff9f43">0</span> lvm  /ext4fs2
 </span></span><span style="display:flex;"><span>└─vgfs-xfsvol    253:3    <span style="color:#ff9f43">0</span>  128M  <span style="color:#ff9f43">0</span> lvm  /xfsfs2</span></span></code></pre></div>
-<h2 id="lab-create-and-mount-xfs-file-system-in-lvm-vdo-volume">Lab: Create and Mount XFS File System in LVM VDO Volume</h2>
+<h2 id="lab-create-and-mount-xfs-file-system-in-lvm-vdo-volume">Lab: Create and Mount XFS File System in LVM VDO Volume<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Create an LVM VDO volume called <em>lvvdo</em> of virtual size 20GB on the 5GB sdf disk in a volume group called <em>vgvdo1</em>.</li>
 <li>Initialize the volume with the XFS file system type.</li>
@@ -1014,15 +965,15 @@ new LVM file systems using the lsblk and df commands:</p>
 <li>verify its availability and usage.\</li>
 </ul>
 <p>1. Initialize the sdf disk using the <code>pvcreate</code> command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sdf</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sdf</span>
 </span></span><span style="display:flex;"><span>  WARNING: adding device /dev/sdf with idname t10.ATA_VBOX_HARDDISK_VBa5e3cbf7-10921e08 which is already used <span style="color:#ff6ac1">for</span> missing device.
 </span></span><span style="display:flex;"><span>  Physical volume <span style="color:#5af78e">&#34;/dev/sdf&#34;</span> successfully created.</span></span></code></pre></div>
 <p>2. Create vgvdo1 volume group using the <code>vgcreate</code> command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgcreate vgvdo1 /dev/sdf</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgcreate vgvdo1 /dev/sdf</span>
 </span></span><span style="display:flex;"><span>  WARNING: adding device /dev/sdf with idname t10.ATA_VBOX_HARDDISK_VBa5e3cbf7-10921e08 which is already used <span style="color:#ff6ac1">for</span> missing device.
 </span></span><span style="display:flex;"><span>  Volume group <span style="color:#5af78e">&#34;vgvdo1&#34;</span> successfully created</span></span></code></pre></div>
 <p>3. Display basic information about the volume group:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay vgvdo1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay vgvdo1</span>
 </span></span><span style="display:flex;"><span>  Devices file sys_wwid t10.ATA_VBOX_HARDDISK_VBa5e3cbf7-10921e08 PVID qeP9dCevNnTy422I8p18NxDKQ2WyDodU last seen on /dev/sdf1 not found.
 </span></span><span style="display:flex;"><span>  --- Volume group ---
 </span></span><span style="display:flex;"><span>  VG Name               vgvdo1
@@ -1045,7 +996,7 @@ new LVM file systems using the lsblk and df commands:</p>
 </span></span><span style="display:flex;"><span>  Free  PE / Size       <span style="color:#ff9f43">1279</span> / &lt;5.00 GiB
 </span></span><span style="display:flex;"><span>  VG UUID               b9u8Ng-m3BF-Jz2b-sBu8-gEG1-bBGQ-sBgrt0</span></span></code></pre></div>
 <p>4. Create a VDO volume called lvvdo1 using the <code>lvcreate</code> command. Use the <code>-l</code> option to specify the number of logical extents (1279) to be allocated and the <code>-V</code> option for the amount of virtual space (20GB).</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -n lvvdo -l 1279 -V 20G --type vdo vgvdo1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -n lvvdo -l 1279 -V 20G --type vdo vgvdo1</span>
 </span></span><span style="display:flex;"><span>WARNING: vdo signature detected on /dev/vgvdo1/vpool0 at offset 0. Wipe it? <span style="color:#ff6ac1">[</span>y/n<span style="color:#ff6ac1">]</span>: y
 </span></span><span style="display:flex;"><span>  Wiping vdo signature on /dev/vgvdo1/vpool0.
 </span></span><span style="display:flex;"><span>    The VDO volume can address <span style="color:#ff9f43">2</span> GB in <span style="color:#ff9f43">1</span> data slab.
@@ -1053,7 +1004,7 @@ new LVM file systems using the lsblk and df commands:</p>
 </span></span><span style="display:flex;"><span>    If a larger maximum size might be needed, use bigger slabs.
 </span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;lvvdo&#34;</span> created.</span></span></code></pre></div>
 <p>5. Display detailed information about the volume group including the logical volume and the physical volume:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay -v vgvdo1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay -v vgvdo1</span>
 </span></span><span style="display:flex;"><span>  Devices file sys_wwid t10.ATA_VBOX_HARDDISK_VBa5e3cbf7-10921e08 PVID qeP9dCevNnTy422I8p18NxDKQ2WyDodU last seen on /dev/sdf1 not found.
 </span></span><span style="display:flex;"><span>  --- Volume group ---
 </span></span><span style="display:flex;"><span>  VG Name               vgvdo1
@@ -1121,7 +1072,7 @@ new LVM file systems using the lsblk and df commands:</p>
 </span></span><span style="display:flex;"><span>  PV Status             allocatable
 </span></span><span style="display:flex;"><span>  Total PE / Free PE    <span style="color:#ff9f43">1279</span> / <span style="color:#ff9f43">0</span></span></span></code></pre></div>
 <p>6. Display the new VDO volume creation using the lsblk command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lsblk /dev/sdf</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lsblk /dev/sdf</span>
 </span></span><span style="display:flex;"><span>NAME                    MAJ:MIN RM SIZE RO TYPE MOUNTPOINTS
 </span></span><span style="display:flex;"><span>sdf                       8:80   <span style="color:#ff9f43">0</span>   5G  <span style="color:#ff9f43">0</span> disk 
 </span></span><span style="display:flex;"><span>└─vgvdo1-vpool0_vdata   253:4    <span style="color:#ff9f43">0</span>   5G  <span style="color:#ff9f43">0</span> lvm  
@@ -1130,7 +1081,7 @@ new LVM file systems using the lsblk and df commands:</p>
 <p>The output shows the virtual volume size (20GB) and the underlying disk size (5GB).</p>
 <p>7. Initialize the VDO volume with the XFS file system type using the <code>mkfs.xfs</code> command. The VDO volume device file is
 /dev/mapper/vgvdo1-lvvdo as indicated in the above output. Add the <code>-f</code> flag to force the removal of any old partitioning or labeling information from the disk.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs.xfs /dev/mapper/vgvdo1-lvvdo</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs.xfs /dev/mapper/vgvdo1-lvvdo</span>
 </span></span><span style="display:flex;"><span>meta-data<span style="color:#ff6ac1">=</span>/dev/mapper/vgvdo1-lvvdo <span style="color:#ff5c57">isize</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">512</span>    <span style="color:#ff5c57">agcount</span><span style="color:#ff6ac1">=</span>4, <span style="color:#ff5c57">agsize</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1310720</span> <span style="color:#ff5c57">blks</span>
 </span></span><span style="display:flex;"><span>         <span style="color:#ff6ac1">=</span>                       <span style="color:#ff5c57">sectsz</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">4096</span>  <span style="color:#ff5c57">attr</span><span style="color:#ff6ac1">=</span>2, <span style="color:#ff5c57">projid32bit</span><span style="color:#ff6ac1">=</span><span style="color:#ff5c57">1</span>
 </span></span><span style="display:flex;"><span>         <span style="color:#ff6ac1">=</span>                       <span style="color:#ff5c57">crc</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1</span>        <span style="color:#ff5c57">finobt</span><span style="color:#ff6ac1">=</span>1, <span style="color:#ff5c57">sparse</span><span style="color:#ff6ac1">=</span>1, <span style="color:#ff5c57">rmapbt</span><span style="color:#ff6ac1">=</span><span style="color:#ff5c57">0</span>
@@ -1144,16 +1095,16 @@ new LVM file systems using the lsblk and df commands:</p>
 </span></span><span style="display:flex;"><span>Discarding blocks...Done.</span></span></code></pre></div>
 <p>(lab said vgvdo1-lvvdo1 but it didn&rsquo;t exist for me.)</p>
 <p>8. Open the /etc/fstab file, go to the end of the file, and append the following entry for the file system for persistent mounts using its device file:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/dev/mapper/vgvdo1-lvvdo /xfsvdo1 xfs defaults <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span> </span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/dev/mapper/vgvdo1-lvvdo /xfsvdo1 xfs defaults <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span> </span></span></code></pre></div>
 <p>9. Create the mount point /xfsvdo1 using the mkdir command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkdir /xfsvdo1</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkdir /xfsvdo1</span></span></span></code></pre></div>
 <p>10. Mount the new file system using the mount command. This command will fail if there are any invalid or missing information in the file.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mount -a</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mount -a</span>
 </span></span><span style="display:flex;"><span>mount: <span style="color:#ff6ac1">(</span>hint<span style="color:#ff6ac1">)</span> your fstab has been modified, but systemd still uses
 </span></span><span style="display:flex;"><span>       the old version; use <span style="color:#5af78e">&#39;systemctl daemon-reload&#39;</span> to reload.</span></span></code></pre></div>
 <p>The mount command with the <code>-a</code> flag is a validation test for the fstab file. It should always be executed after updating this file and before rebooting the server to avoid landing the system in an unbootable state.</p>
 <p>11. View the mount and availability status as well as the type of the VDO file system using the <code>lsblk</code> and <code>df</code> commands:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk /dev/sdf</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk /dev/sdf</span>
 </span></span><span style="display:flex;"><span>NAME                    MAJ:MIN RM SIZE RO TYPE MOUNTPOINTS
 </span></span><span style="display:flex;"><span>sdf                       8:80   <span style="color:#ff9f43">0</span>   5G  <span style="color:#ff9f43">0</span> disk 
 </span></span><span style="display:flex;"><span>└─vgvdo1-vpool0_vdata   253:4    <span style="color:#ff9f43">0</span>   5G  <span style="color:#ff9f43">0</span> lvm  
@@ -1163,14 +1114,14 @@ new LVM file systems using the lsblk and df commands:</p>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># df -hT /xfsvdo1</span>
 </span></span><span style="display:flex;"><span>Filesystem               Type  Size  Used Avail Use% Mounted on
 </span></span><span style="display:flex;"><span>/dev/mapper/vgvdo1-lvvdo xfs    20G  175M   20G   1% /xfsvdo1</span></span></code></pre></div>
-<h2 id="monitoring-file-system-usage">Monitoring File System Usage</h2>
-<h3 id="df-disk-free-command">df (disk free) command</h3>
+<h2 id="monitoring-file-system-usage">Monitoring File System Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="df-disk-free-command">df (disk free) command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>reports usage details for mounted file systems.</li>
 <li>reports the numbers in KBs unless the -m or -h option is specified to view the sizes in MBs or human-readable format.</li>
 </ul>
 <p>Let&rsquo;s run this command with the -h option on server2:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># df -h</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># df -h</span>
 </span></span><span style="display:flex;"><span>Filesystem             Size  Used Avail Use% Mounted on
 </span></span><span style="display:flex;"><span>devtmpfs               4.0M     <span style="color:#ff9f43">0</span>  4.0M   0% /dev
 </span></span><span style="display:flex;"><span>tmpfs                  888M     <span style="color:#ff9f43">0</span>  888M   0% /dev/shm
@@ -1203,25 +1154,25 @@ new LVM file systems using the lsblk and df commands:</p>
 <ul>
 <li>show inode information (example: df -hi)</li>
 </ul>
-<h3 id="calculating-disk-usage">Calculating Disk Usage</h3>
-<h3 id="du-command">du command</h3>
+<h3 id="calculating-disk-usage">Calculating Disk Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="du-command">du command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>reports the amount of space a file or directory occupies.</li>
 <li>-m or -h option to view the output in MBs or human-readable format. In addition, you can</li>
 <li>view a usage summary with the -s switch and a grand total with -c.</li>
 </ul>
 <p>Run this command on the /usr/bin directory to view the usage summary:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># du -sh /usr/bin</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># du -sh /usr/bin</span>
 </span></span><span style="display:flex;"><span>151M	/usr/bin</span></span></code></pre></div>
 <p>Add a &ldquo;total&rdquo; row to the output and with numbers displayed in KBs:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># du -sc /usr/bin</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># du -sc /usr/bin</span>
 </span></span><span style="display:flex;"><span>154444	/usr/bin
 </span></span><span style="display:flex;"><span>154444	total</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># du -sch /usr/bin</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># du -sch /usr/bin</span>
 </span></span><span style="display:flex;"><span>151M	/usr/bin
 </span></span><span style="display:flex;"><span>151M	total</span></span></code></pre></div>
 <p>Try this command with different options on the /usr/sbin/lvm file and observe the results.</p>
-<h2 id="swap-and-its-management">Swap and its Management</h2>
+<h2 id="swap-and-its-management">Swap and its Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>
 <p>Move pages of idle data between physical memory and swap.</p>
@@ -1281,14 +1232,14 @@ new LVM file systems using the lsblk and df commands:</p>
 <p>The idle processes are only reactivated, and new processes are only allowed to be started when the system discovers that the available physical memory has climbed above the threshold level and thrashing has ceased.</p>
 </li>
 </ul>
-<h3 id="determining-current-swap-usage">Determining Current Swap Usage</h3>
+<h3 id="determining-current-swap-usage">Determining Current Swap Usage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Size of a swap area should not be less than the amount of physical memory.</li>
 <li>Depending on workload requirements, it may be twice the size or larger.</li>
 <li>It is also not uncommon to see systems with less swap than the actual amount of physical memory.</li>
 <li>This is especially witnessed on systems with a huge physical memory size.</li>
 </ul>
-<h3 id="free-command"><code>free</code> command</h3>
+<h3 id="free-command"><code>free</code> command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>View memory and swap space utilization.</li>
 <li>view how much physical memory is installed (total), used (used), available (free), used by shared library routines (shared), holding data before it is written to disk (buffers), and used to store frequently accessed data (cached) on the system. The</li>
@@ -1318,7 +1269,7 @@ new LVM file systems using the lsblk and df commands:</p>
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># free -ht</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># free -ht</span>
 </span></span><span style="display:flex;"><span>               total        used        free      shared  buff/cache   available
 </span></span><span style="display:flex;"><span>Mem:           1.7Gi       783Mi       714Mi       5.0Mi       440Mi       991Mi
 </span></span><span style="display:flex;"><span>Swap:          2.0Gi          0B       2.0Gi
@@ -1328,14 +1279,14 @@ new LVM file systems using the lsblk and df commands:</p>
 <li>Reads memory and swap information from the <em>/proc/meminfo</em> file to produce the report. The values are shown in KBs by
 default, and they are slightly off from what is shown above with <code>free</code>. Here are the relevant fields from this file:</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /proc/meminfo | grep -E &#39;Mem|Swap&#39;</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /proc/meminfo | grep -E &#39;Mem|Swap&#39;</span>
 </span></span><span style="display:flex;"><span>MemTotal:        <span style="color:#ff9f43">1818080</span> kB
 </span></span><span style="display:flex;"><span>MemFree:          <span style="color:#ff9f43">731724</span> kB
 </span></span><span style="display:flex;"><span>MemAvailable:    <span style="color:#ff9f43">1015336</span> kB
 </span></span><span style="display:flex;"><span>SwapCached:            <span style="color:#ff9f43">0</span> kB
 </span></span><span style="display:flex;"><span>SwapTotal:       <span style="color:#ff9f43">2097148</span> kB
 </span></span><span style="display:flex;"><span>SwapFree:        <span style="color:#ff9f43">2097148</span> kB</span></span></code></pre></div>
-<h3 id="prioritizing-swap-spaces">Prioritizing Swap Spaces</h3>
+<h3 id="prioritizing-swap-spaces">Prioritizing Swap Spaces<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>You may find multiple swap areas configured and activated to meet the workload demand.</li>
 <li>The default behavior of RHEL is to use the first activated swap area and move on to the next when the first one is exhausted.</li>
@@ -1344,7 +1295,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <li>A higher value of &ldquo;pri&rdquo; sets a higher priority for the corresponding swap region.</li>
 <li>For swap areas with an identical priority, the system alternates between them.</li>
 </ul>
-<h3 id="swap-administration-commands">Swap Administration Commands</h3>
+<h3 id="swap-administration-commands">Swap Administration Commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>In order to create and manage swap spaces on the system, the <code>mkswap</code>, <code>swapon</code>, and <code>swapoff</code> commands are available.</li>
 <li>Use <code>mkswap</code> to initialize a partition for use as a swap space.</li>
@@ -1352,7 +1303,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <li>Can also set it up for automatic activation by placing an entry in the fstab file.</li>
 <li>The fstab file accepts the swap area&rsquo;s device file, UUID, or label.</li>
 </ul>
-<h3 id="lab-create-and-activate-swap-in-partition-and-logical-volume-server-2">Lab: Create and Activate Swap in Partition and Logical Volume (server 2)</h3>
+<h3 id="lab-create-and-activate-swap-in-partition-and-logical-volume-server-2">Lab: Create and Activate Swap in Partition and Logical Volume (server 2)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Create one swap area in a new 40MB partition called <em>sdb3</em> using the <code>mkswap</code> command.</li>
 <li>Create another swap area in a 140MB logical volume called swapvol in vgfs.</li>
@@ -1362,7 +1313,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 </ul>
 <p>EXAM TIP: Use the <code>lsblk</code> command to determine available disk space.</p>
 <p>1. Use <code>parted print</code> on the sdb disk and the <code>vgs</code> command on the vgfs volume group to determine available space for a new 40MB partition and a 144MB logical volume:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdb print</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdb print</span>
 </span></span><span style="display:flex;"><span>Model: ATA VBOX HARDDISK <span style="color:#ff6ac1">(</span>scsi<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>Disk /dev/sdb: 262MB
 </span></span><span style="display:flex;"><span>Sector size <span style="color:#ff6ac1">(</span>logical/physical<span style="color:#ff6ac1">)</span>: 512B/512B
@@ -1379,13 +1330,13 @@ default, and they are slightly off from what is shown above with <code>free</cod
 </span></span><span style="display:flex;"><span>  vgfs   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- 400.00m 144.00m</span></span></code></pre></div>
 <p>The outputs show 49MB (250MB minus 201MB) free space on the sdb disk and 144MB free space in the volume group.</p>
 <p>2. Create a partition called sdb3 of size 40MB using the parted command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdb mkpart primary 202 242</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdb mkpart primary 202 242</span>
 </span></span><span style="display:flex;"><span>Information: You may need to update /etc/fstab.</span></span></code></pre></div>
 <p>3. Create logical volume swapvol of size 144MB in vgs using the <code>lvcreate</code> command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -L 144 -n swapvol vgfs               </span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -L 144 -n swapvol vgfs               </span>
 </span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;swapvol&#34;</span> created.</span></span></code></pre></div>
 <p>4. Construct swap structures in sdb3 and swapvol using the mkswap command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkswap /dev/sdb3</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkswap /dev/sdb3</span>
 </span></span><span style="display:flex;"><span>Setting up swapspace version 1, <span style="color:#ff5c57">size</span> <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">38</span> MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">39841792</span> bytes<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>no label, <span style="color:#ff5c57">UUID</span><span style="color:#ff6ac1">=</span>a796e0df-b1c3-4c30-bdde-dd522bba4fff
 </span></span><span style="display:flex;"><span>
@@ -1394,40 +1345,40 @@ default, and they are slightly off from what is shown above with <code>free</cod
 </span></span><span style="display:flex;"><span>no label, <span style="color:#ff5c57">UUID</span><span style="color:#ff6ac1">=</span>88196e73-feaf-4137-8743-f9340296aeec</span></span></code></pre></div>
 <p>5. Edit the fstab file and add entries for both swap areas for auto-activation on reboots. Obtain the UUID for partition swap with
 <code>lsblk -f /dev/sdb3</code> and use the device file for logical volume. Specify their priorities.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">UUID</span><span style="color:#ff6ac1">=</span>a796e0df-b1c3-4c30-bdde-dd522bba4fff swap swap <span style="color:#ff5c57">pri</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1</span> <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">UUID</span><span style="color:#ff6ac1">=</span>a796e0df-b1c3-4c30-bdde-dd522bba4fff swap swap <span style="color:#ff5c57">pri</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1</span> <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span>
 </span></span><span style="display:flex;"><span>/dev/vgfs/swapvol swap swap <span style="color:#ff5c57">pri</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">2</span> <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span>   </span></span></code></pre></div>
 <p>EXAM TIP: You will not be given any credit for this work if you forget to add entries to the fstab file.</p>
 <p>6. Determine the current amount of swap space on the system using the swapon command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo swapon</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo swapon</span>
 </span></span><span style="display:flex;"><span>NAME      TYPE      SIZE USED PRIO
 </span></span><span style="display:flex;"><span>/dev/dm-1 partition   2G   0B   -2</span></span></code></pre></div>
 <p>There is one 2GB swap area on the system and it is configured at the default priority of -2.</p>
 <p>7. Activate the new swap regions using the swapon command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo swapon -a</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo swapon -a</span></span></span></code></pre></div>
 <p>8. Confirm the activation using the swapon command or by viewing the /proc/swaps file:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo swapon</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo swapon</span>
 </span></span><span style="display:flex;"><span>NAME      TYPE      SIZE USED PRIO
 </span></span><span style="display:flex;"><span>/dev/dm-1 partition   2G   0B   -2
 </span></span><span style="display:flex;"><span>/dev/sdb3 partition  38M   0B    <span style="color:#ff9f43">1</span>
 </span></span><span style="display:flex;"><span>/dev/dm-7 partition 144M   0B    <span style="color:#ff9f43">2</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /proc/swaps</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /proc/swaps</span>
 </span></span><span style="display:flex;"><span>Filename				Type		Size		Used		Priority
 </span></span><span style="display:flex;"><span>/dev/dm-1                               partition	2097148		0		-2
 </span></span><span style="display:flex;"><span>/dev/sdb3                               partition	38908		0		<span style="color:#ff9f43">1</span>
 </span></span><span style="display:flex;"><span>/dev/dm-7                               partition	147452		0		<span style="color:#ff9f43">2</span>
 </span></span><span style="display:flex;"><span><span style="color:#78787e">#dm is device mapper</span></span></span></code></pre></div>
 <p>9. Issue the free command to view the reflection of swap numbers on the Swap and Total lines:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># free -ht</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># free -ht</span>
 </span></span><span style="display:flex;"><span>               total        used        free      shared  buff/cache   available
 </span></span><span style="display:flex;"><span>Mem:           1.7Gi       793Mi       706Mi       5.0Mi       438Mi       981Mi
 </span></span><span style="display:flex;"><span>Swap:          2.2Gi          0B       2.2Gi
 </span></span><span style="display:flex;"><span>Total:         3.9Gi       793Mi       2.9Gi</span></span></code></pre></div>
-<h2 id="local-filesystems-and-swap-diy-labs">Local Filesystems and Swap DIY Labs</h2>
-<h3 id="lab-create-vfat-ext4-and-xfs-file-systems-in-partitions-and-mount-persistently">Lab: Create VFAT, Ext4, and XFS File Systems in Partitions and Mount Persistently</h3>
+<h2 id="local-filesystems-and-swap-diy-labs">Local Filesystems and Swap DIY Labs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="lab-create-vfat-ext4-and-xfs-file-systems-in-partitions-and-mount-persistently">Lab: Create VFAT, Ext4, and XFS File Systems in Partitions and Mount Persistently<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Create three 70MB primary partitions on one of the available 250MB disks (lsblk) by invoking the parted utility directly at the command prompt.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># parted /dev/sdc mklabel msdos</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># parted /dev/sdc mklabel msdos</span>
 </span></span><span style="display:flex;"><span>Information: You may need to update /etc/fstab.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># parted /dev/sdc mkpart primary 1 70m</span>
@@ -1442,7 +1393,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Number  Start   End     Size    Type     File system  Flags
 </span></span><span style="display:flex;"><span> <span style="color:#ff9f43">1</span>      1049kB  70.3MB  69.2MB  primary</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>parted<span style="color:#ff6ac1">)</span> mkpart primary 71MB 140MB                                    
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>parted<span style="color:#ff6ac1">)</span> mkpart primary 71MB 140MB                                    
 </span></span><span style="display:flex;"><span>Warning: The resulting partition is not properly aligned <span style="color:#ff6ac1">for</span> best performance: 138671s % 2048s !<span style="color:#ff6ac1">=</span> 0s
 </span></span><span style="display:flex;"><span>Ignore/Cancel?                                                            
 </span></span><span style="display:flex;"><span>Ignore/Cancel? ignore                                                     
@@ -1464,7 +1415,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <li>Apply label &ldquo;msdos&rdquo; if the disk is new.</li>
 <li>Initialize partition 1 with VFAT, partition 2 with Ext4, and partition 3 with XFS file system types.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs -t vfat /dev/sdc1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs -t vfat /dev/sdc1</span>
 </span></span><span style="display:flex;"><span>mkfs.fat 4.2 <span style="color:#ff6ac1">(</span>2021-01-31<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs -t ext4 /dev/sdc2</span>
@@ -1496,7 +1447,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <ul>
 <li>Create mount points /vfatfs5, /ext4fs5, and /xfsfs5, and mount all three manually.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkdir /vfatfs5 /ext4fs5 /xfsfs5</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkdir /vfatfs5 /ext4fs5 /xfsfs5</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mount /dev/sdc1 /vfatfs5</span>
 </span></span><span style="display:flex;"><span>mount: <span style="color:#ff6ac1">(</span>hint<span style="color:#ff6ac1">)</span> your fstab has been modified, but systemd still uses
@@ -1517,7 +1468,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <ul>
 <li>Determine the UUIDs for the three file systems, and add them to the fstab file.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># blkid /dev/sdc1 /dev/sdc2 /dev/sdc3 &gt;&gt; /etc/fstab</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># blkid /dev/sdc1 /dev/sdc2 /dev/sdc3 &gt;&gt; /etc/fstab</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /etc/fstab</span></span></span></code></pre></div>
 <ul>
@@ -1525,7 +1476,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <code>umount /dev/sdb1 /dev/sdb2 /dev/sdb3</code></li>
 <li>Run <code>df -h</code> for verification.</li>
 </ul>
-<h3 id="lab-create-xfs-file-system-in-lvm-vdo-volume-and-mount-persistently">Lab: Create XFS File System in LVM VDO Volume and Mount Persistently</h3>
+<h3 id="lab-create-xfs-file-system-in-lvm-vdo-volume-and-mount-persistently">Lab: Create XFS File System in LVM VDO Volume and Mount Persistently<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
 <p>Ensure that VDO software is installed.
@@ -1535,7 +1486,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <p>Create a volume vdo5 with a logical size 20GB on a 5GB disk (lsblk) using the <code>lvcreate command</code>.</p>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -n vdo5 -l 1279 -V 20G --type vdo vgvdo1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -n vdo5 -l 1279 -V 20G --type vdo vgvdo1</span>
 </span></span><span style="display:flex;"><span>WARNING: vdo signature detected on /dev/vgvdo1/vpool0 at offset 0. Wipe it? <span style="color:#ff6ac1">[</span>y/n<span style="color:#ff6ac1">]</span>: y
 </span></span><span style="display:flex;"><span>  Wiping vdo signature on /dev/vgvdo1/vpool0.
 </span></span><span style="display:flex;"><span>    The VDO volume can address <span style="color:#ff9f43">2</span> GB in <span style="color:#ff9f43">1</span> data slab.
@@ -1545,7 +1496,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <ul>
 <li>Initialize the volume with XFS file system type.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs.xfs /dev/mapper/vgvdo1-vdo5</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkfs.xfs /dev/mapper/vgvdo1-vdo5</span>
 </span></span><span style="display:flex;"><span>meta-data<span style="color:#ff6ac1">=</span>/dev/mapper/vgvdo1-vdo5 <span style="color:#ff5c57">isize</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">512</span>    <span style="color:#ff5c57">agcount</span><span style="color:#ff6ac1">=</span>4, <span style="color:#ff5c57">agsize</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1310720</span> <span style="color:#ff5c57">blks</span>
 </span></span><span style="display:flex;"><span>         <span style="color:#ff6ac1">=</span>                       <span style="color:#ff5c57">sectsz</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">4096</span>  <span style="color:#ff5c57">attr</span><span style="color:#ff6ac1">=</span>2, <span style="color:#ff5c57">projid32bit</span><span style="color:#ff6ac1">=</span><span style="color:#ff5c57">1</span>
 </span></span><span style="display:flex;"><span>         <span style="color:#ff6ac1">=</span>                       <span style="color:#ff5c57">crc</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1</span>        <span style="color:#ff5c57">finobt</span><span style="color:#ff6ac1">=</span>1, <span style="color:#ff5c57">sparse</span><span style="color:#ff6ac1">=</span>1, <span style="color:#ff5c57">rmapbt</span><span style="color:#ff6ac1">=</span><span style="color:#ff5c57">0</span>
@@ -1560,22 +1511,22 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <ul>
 <li>Create mount point /vdofs5, and mount it manually.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkdir /vdofs5</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkdir /vdofs5</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e">#mount /dev/mapper/vgvdo1-vdo5 /vdofs5)/etc/fstab</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># umount /dev/mapper/vgvdo1-vdo5</span></span></span></code></pre></div>
 <ul>
 <li>Unmount the file system manually and execute <code>mount -a</code> to mount it back.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># blkid /dev/mapper/vgvdo1-vdo5 &gt;&gt; /etc/fstab</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># blkid /dev/mapper/vgvdo1-vdo5 &gt;&gt; /etc/fstab</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /etc/fstab</span></span></span></code></pre></div>
 <ul>
 <li>Run <code>df -h</code> to confirm.</li>
 </ul>
-<h3 id="lab-create-ext4-and-xfs-file-systems-in-lvm-volumes-and-mount-persistently">Lab: Create Ext4 and XFS File Systems in LVM Volumes and Mount Persistently</h3>
+<h3 id="lab-create-ext4-and-xfs-file-systems-in-lvm-volumes-and-mount-persistently">Lab: Create Ext4 and XFS File Systems in LVM Volumes and Mount Persistently<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Initialize an available 250MB disk for use in LVM (lsblk).</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># parted /dev/sdc mklabel msdos</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 mapper<span style="color:#ff6ac1">]</span><span style="color:#78787e"># parted /dev/sdc mklabel msdos</span>
 </span></span><span style="display:flex;"><span>Warning: The existing disk label on /dev/sdc will be destroyed and all data on
 </span></span><span style="display:flex;"><span>this disk will be lost. Do you want to <span style="color:#ff6ac1">continue</span>?
 </span></span><span style="display:flex;"><span>Yes/No? y                                                                 
@@ -1586,7 +1537,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <ul>
 <li>Create volume group vg with PE size 8MB and add the physical volume.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sdc1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sdc1</span>
 </span></span><span style="display:flex;"><span>  Devices file /dev/sdc is excluded: device is partitioned.
 </span></span><span style="display:flex;"><span>  WARNING: adding device /dev/sdc1 with idname t10.ATA_VBOX_HARDDISK_VB6894bac4-590d5546 which is already used <span style="color:#ff6ac1">for</span> /dev/sdc.
 </span></span><span style="display:flex;"><span>  Physical volume <span style="color:#5af78e">&#34;/dev/sdc1&#34;</span> successfully created.
@@ -1598,7 +1549,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <ul>
 <li>Create two logical volumes lv200 and lv300 of sizes 120MB and 100MB.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lvcreate -n lv200 -L 120 vg</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lvcreate -n lv200 -L 120 vg</span>
 </span></span><span style="display:flex;"><span>  Devices file /dev/sdc is excluded: device is partitioned.
 </span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;lv200&#34;</span> created.
 </span></span><span style="display:flex;"><span>  
@@ -1609,7 +1560,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <li>Use the <code>vgs</code>, <code>pvs</code>, <code>lvs</code>, and <code>vgdisplay</code> commands for verification.</li>
 <li>Initialize the volumes with Ext4 and XFS file system types.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkfs.ext4 /dev/vg/lv200</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkfs.ext4 /dev/vg/lv200</span>
 </span></span><span style="display:flex;"><span>mke2fs 1.46.5 <span style="color:#ff6ac1">(</span>30-Dec-2021<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>Creating filesystem with <span style="color:#ff9f43">122880</span> 1k blocks and <span style="color:#ff9f43">30720</span> inodes
 </span></span><span style="display:flex;"><span>Filesystem UUID: 52eac2ee-b5bd-4025-9e40-356b38d21996
@@ -1638,7 +1589,7 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <ul>
 <li>Create mount points /lvmfs5 and /lvmfs6, and mount them manually.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkdir /lvmfs5 /lvmfs6</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkdir /lvmfs5 /lvmfs6</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mount /dev/vg/lv200 /lvmfs5</span>
 </span></span><span style="display:flex;"><span>mount: <span style="color:#ff6ac1">(</span>hint<span style="color:#ff6ac1">)</span> your fstab has been modified, but systemd still uses
 </span></span><span style="display:flex;"><span>       the old version; use <span style="color:#5af78e">&#39;systemctl daemon-reload&#39;</span> to reload.
@@ -1648,19 +1599,19 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <ul>
 <li>Add the file system information to the fstab file using their device files.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># blkid /dev/vg/lv200 &gt;&gt; /etc/fstab</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># blkid /dev/vg/lv200 &gt;&gt; /etc/fstab</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># blkid /dev/vg/lv300 &gt;&gt; /etc/fstab</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /etc/fstab</span></span></span></code></pre></div>
 <ul>
 <li>Unmount the file systems manually, and execute mount -a to mount them back. Run <code>df -h</code> to confirm.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># umount /dev/vg/lv200 /dev/vg/lv300</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># umount /dev/vg/lv200 /dev/vg/lv300</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mount -a</span></span></span></code></pre></div>
-<h3 id="lab-14-4-extend-ext4-and-xfs-file-systems-in-lvm-volumes">Lab 14-4: Extend Ext4 and XFS File Systems in LVM Volumes</h3>
+<h3 id="lab-14-4-extend-ext4-and-xfs-file-systems-in-lvm-volumes">Lab 14-4: Extend Ext4 and XFS File Systems in LVM Volumes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>initialize an available 250MB disk for use in LVM (lsblk).</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># pvcreate /dev/sdb</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># pvcreate /dev/sdb</span>
 </span></span><span style="display:flex;"><span>  Devices file /dev/sdc is excluded: device is partitioned.
 </span></span><span style="display:flex;"><span>WARNING: dos signature detected on /dev/sdb at offset 510. Wipe it? <span style="color:#ff6ac1">[</span>y/n<span style="color:#ff6ac1">]</span>: y
 </span></span><span style="display:flex;"><span>  Wiping dos signature on /dev/sdb.
@@ -1669,14 +1620,14 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <ul>
 <li>Add the new physical volume to volume group vg200.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vgextend vg /dev/sdb</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vgextend vg /dev/sdb</span>
 </span></span><span style="display:flex;"><span>  Devices file /dev/sdc is excluded: device is partitioned.
 </span></span><span style="display:flex;"><span>  WARNING: adding device /dev/sdb with idname t10.ATA_VBOX_HARDDISK_VB428913dd-446a194f which is already used <span style="color:#ff6ac1">for</span> missing device.
 </span></span><span style="display:flex;"><span>  Volume group <span style="color:#5af78e">&#34;vg&#34;</span> successfully extended</span></span></code></pre></div>
 <ul>
 <li>Expand logical volumes lv200 and lv300 along with the underlying file systems to 200MB and 250MB.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lvextend -L 200m /dev/vg/lv200</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lvextend -L 200m /dev/vg/lv200</span>
 </span></span><span style="display:flex;"><span>  Size of logical volume vg/lv200 changed from 120.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">15</span> extents<span style="color:#ff6ac1">)</span> to 200.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">25</span> extents<span style="color:#ff6ac1">)</span>.
 </span></span><span style="display:flex;"><span>  Logical volume vg/lv200 successfully resized.
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lvextend -L 250m /dev/vg/lv200</span>
@@ -1686,12 +1637,12 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <ul>
 <li>Use the <code>vgs</code>, <code>pvs</code>, <code>lvs</code>, <code>vgdisplay</code>, and <code>df</code> commands for verification.</li>
 </ul>
-<h3 id="lab-14-5-create-swap-in-partition-and-lvm-volume-and-activate-persistently">Lab 14-5: Create Swap in Partition and LVM Volume and Activate Persistently</h3>
+<h3 id="lab-14-5-create-swap-in-partition-and-lvm-volume-and-activate-persistently">Lab 14-5: Create Swap in Partition and LVM Volume and Activate Persistently<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Create two 100MB partitions on an available 250MB disk (lsblk) by invoking the parted utility directly at the command prompt.</li>
 <li>Apply label &ldquo;msdos&rdquo; if the disk is new.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># parted /dev/sdd mklabel msdos</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># parted /dev/sdd mklabel msdos</span>
 </span></span><span style="display:flex;"><span>Information: You may need to update /etc/fstab.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># parted /dev/sdd mkpart primary 1 100MB</span>
@@ -1702,13 +1653,13 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <ul>
 <li>Initialize one of the partitions with swap structures.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkswap /dev/sdd1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo mkswap /dev/sdd1</span>
 </span></span><span style="display:flex;"><span>Setting up swapspace version 1, <span style="color:#ff5c57">size</span> <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">94</span> MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">98562048</span> bytes<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>no label, <span style="color:#ff5c57">UUID</span><span style="color:#ff6ac1">=</span>40eea6c2-b80c-4b25-ad76-611071db52d5</span></span></code></pre></div>
 <ul>
 <li>Apply label swappart to the swap partition, and add it to the fstab file.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># swaplabel -L swappart /dev/sdd1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># swaplabel -L swappart /dev/sdd1</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># blkid /dev/sdd1 &gt;&gt; /etc/fstab</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /etc/fstab</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">UUID</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;40eea6c2-b80c-4b25-ad76-611071db52d5&#34;</span> swap swap <span style="color:#ff5c57">pri</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1</span> <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span></span></span></code></pre></div>
@@ -1723,29 +1674,29 @@ default, and they are slightly off from what is shown above with <code>free</cod
 <p>Initialize the other partition for use in LVM.</p>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># pvcreate /dev/sdd2</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># pvcreate /dev/sdd2</span>
 </span></span><span style="display:flex;"><span>  Physical volume <span style="color:#5af78e">&#34;/dev/sdd2&#34;</span> successfully created.</span></span></code></pre></div>
 <ul>
 <li>Expand volume group vg (Lab 14-3) by adding this physical volume to it.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vgextend vg /dev/sdd2</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vgextend vg /dev/sdd2</span>
 </span></span><span style="display:flex;"><span>  Volume group <span style="color:#5af78e">&#34;vg200&#34;</span> successfully extended</span></span></code></pre></div>
 <ul>
 <li>Create logical volume swapvol of size 180MB.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lvcreate -L 180 -n swapvol vg</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lvcreate -L 180 -n swapvol vg</span>
 </span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;swapvol&#34;</span> created.</span></span></code></pre></div>
 <ul>
 <li>Use the <code>vgs</code>, <code>pvs</code>, <code>lvs</code>, and <code>vgdisplay</code> commands for verification.</li>
 <li>Initialize the logical volume for swap.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost vg200<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkswap /dev/vg/swapvol</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost vg200<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkswap /dev/vg/swapvol</span>
 </span></span><span style="display:flex;"><span>Setting up swapspace version 1, <span style="color:#ff5c57">size</span> <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">180</span> MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">188739584</span> bytes<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span>no label, <span style="color:#ff5c57">UUID</span><span style="color:#ff6ac1">=</span>a4b939d0-4b53-4e73-bee5-4c402aff6f9b</span></span></code></pre></div>
 <ul>
 <li>Add an entry to the fstab file for the new swap area using its device file.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost vg200<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /etc/fstab</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost vg200<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /etc/fstab</span>
 </span></span><span style="display:flex;"><span>/dev/vg200/swapvol swap swap <span style="color:#ff5c57">pri</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">2</span> <span style="color:#ff9f43">0</span> <span style="color:#ff9f43">0</span></span></span></code></pre></div>
 <ul>
 <li>Execute <code>swapon -a</code> to activate it.</li>
@@ -1827,8 +1778,8 @@ default, and they are slightly off from what is shown above with <code>free</cod
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1854,23 +1805,23 @@ default, and they are slightly off from what is shown above with <code>free</cod
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

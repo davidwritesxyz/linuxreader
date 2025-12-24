@@ -1,72 +1,30 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="3 Extended ACLs Friday, September 17, 2021 1:11 PM
 IP and TCP Header
 IP Header
 Misc Header Fields▪ 9 bytes
-▪ 1 byte ▪▪ ie 6 = tcpidentify TCP header Protocol Header Checksum▪ 2 bytes ▪ 4 bytes Source IP Dest. IP▪ 4 bytes Options▪ variable TCP Header Source Port- 2 bytes 2 bytes Dest. port Rest of TCP- 16 bytes tcp or udp keyword
-can optionally reference the source and/or destination portequal, not equal, less than, greater than, and for a range of port numbers can use port numbers or keywords for some well-known application ports
-positions of the source and destination port fields in the access-list command and these port
-number keywords. access-list 101 permit (protocol) Source_IP (source port) dest_IP (dest port) Protocol– tcpudp eq ne lt_ Source Port lt_gt_ range_ eq ne lt_gt_ range_ Dest. Port eq: =lt: &lt; ne: not equal gt: &gt;range: x to y ie: # access-list 101 permit tcp 172.16.1.0 0.0.0.255 172.16.3.0 0.0.0.255 eq 21 eq 21 is in the destination port position
-Apps and Port number shortcuts for ACL Commands
-20 21 ftpftp-data
-22 -
-23 25 telnetsmtp
-53 67 domainbootps (dhcp server)
-68 69 bootpc (dhcp clienttftp )
-80 www
-110 161 pop3snmp
-443 514 - -
-16,384 -32,767 (RTP/ Voice/ Video) -
-Extended IP ACL Configuration">
+▪ 1 byte ▪▪ ie 6 = tcpidentify TCP header Protocol Header Checksum▪ 2 bytes ▪ 4 bytes Source IP Dest. IP▪ 4 bytes Options▪ variable TCP Header Source Port- 2 bytes 2 bytes Dest. port Rest of TCP- 16 bytes tcp or udp keyword">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="3 Extended ACLs Friday, September 17, 2021 1:11 PM
 IP and TCP Header
 IP Header
 Misc Header Fields▪ 9 bytes
-▪ 1 byte ▪▪ ie 6 = tcpidentify TCP header Protocol Header Checksum▪ 2 bytes ▪ 4 bytes Source IP Dest. IP▪ 4 bytes Options▪ variable TCP Header Source Port- 2 bytes 2 bytes Dest. port Rest of TCP- 16 bytes tcp or udp keyword
-can optionally reference the source and/or destination portequal, not equal, less than, greater than, and for a range of port numbers can use port numbers or keywords for some well-known application ports
-positions of the source and destination port fields in the access-list command and these port
-number keywords. access-list 101 permit (protocol) Source_IP (source port) dest_IP (dest port) Protocol– tcpudp eq ne lt_ Source Port lt_gt_ range_ eq ne lt_gt_ range_ Dest. Port eq: =lt: &lt; ne: not equal gt: &gt;range: x to y ie: # access-list 101 permit tcp 172.16.1.0 0.0.0.255 172.16.3.0 0.0.0.255 eq 21 eq 21 is in the destination port position
-Apps and Port number shortcuts for ACL Commands
-20 21 ftpftp-data
-22 -
-23 25 telnetsmtp
-53 67 domainbootps (dhcp server)
-68 69 bootpc (dhcp clienttftp )
-80 www
-110 161 pop3snmp
-443 514 - -
-16,384 -32,767 (RTP/ Voice/ Video) -
-Extended IP ACL Configuration">
-    <meta property="og:url" content="https://linuxreader.com/networking/ccna/newccnanotes/3-extended-acls/">
+▪ 1 byte ▪▪ ie 6 = tcpidentify TCP header Protocol Header Checksum▪ 2 bytes ▪ 4 bytes Source IP Dest. IP▪ 4 bytes Options▪ variable TCP Header Source Port- 2 bytes 2 bytes Dest. port Rest of TCP- 16 bytes tcp or udp keyword">
+    <meta property="og:url" content="http://localhost:1313/networking/ccna/newccnanotes/3-extended-acls/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:description" content="3 Extended ACLs Friday, September 17, 2021 1:11 PM
 IP and TCP Header
 IP Header
 Misc Header Fields▪ 9 bytes
-▪ 1 byte ▪▪ ie 6 = tcpidentify TCP header Protocol Header Checksum▪ 2 bytes ▪ 4 bytes Source IP Dest. IP▪ 4 bytes Options▪ variable TCP Header Source Port- 2 bytes 2 bytes Dest. port Rest of TCP- 16 bytes tcp or udp keyword
-can optionally reference the source and/or destination portequal, not equal, less than, greater than, and for a range of port numbers can use port numbers or keywords for some well-known application ports
-positions of the source and destination port fields in the access-list command and these port
-number keywords. access-list 101 permit (protocol) Source_IP (source port) dest_IP (dest port) Protocol– tcpudp eq ne lt_ Source Port lt_gt_ range_ eq ne lt_gt_ range_ Dest. Port eq: =lt: &lt; ne: not equal gt: &gt;range: x to y ie: # access-list 101 permit tcp 172.16.1.0 0.0.0.255 172.16.3.0 0.0.0.255 eq 21 eq 21 is in the destination port position
-Apps and Port number shortcuts for ACL Commands
-20 21 ftpftp-data
-22 -
-23 25 telnetsmtp
-53 67 domainbootps (dhcp server)
-68 69 bootpc (dhcp clienttftp )
-80 www
-110 161 pop3snmp
-443 514 - -
-16,384 -32,767 (RTP/ Voice/ Video) -
-Extended IP ACL Configuration">
+▪ 1 byte ▪▪ ie 6 = tcpidentify TCP header Protocol Header Checksum▪ 2 bytes ▪ 4 bytes Source IP Dest. IP▪ 4 bytes Options▪ variable TCP Header Source Port- 2 bytes 2 bytes Dest. port Rest of TCP- 16 bytes tcp or udp keyword">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Networking">
@@ -74,56 +32,38 @@ Extended IP ACL Configuration">
 IP and TCP Header
 IP Header
 Misc Header Fields▪ 9 bytes
-▪ 1 byte ▪▪ ie 6 = tcpidentify TCP header Protocol Header Checksum▪ 2 bytes ▪ 4 bytes Source IP Dest. IP▪ 4 bytes Options▪ variable TCP Header Source Port- 2 bytes 2 bytes Dest. port Rest of TCP- 16 bytes tcp or udp keyword
-can optionally reference the source and/or destination portequal, not equal, less than, greater than, and for a range of port numbers can use port numbers or keywords for some well-known application ports
-positions of the source and destination port fields in the access-list command and these port
-number keywords. access-list 101 permit (protocol) Source_IP (source port) dest_IP (dest port) Protocol– tcpudp eq ne lt_ Source Port lt_gt_ range_ eq ne lt_gt_ range_ Dest. Port eq: =lt: &lt; ne: not equal gt: &gt;range: x to y ie: # access-list 101 permit tcp 172.16.1.0 0.0.0.255 172.16.3.0 0.0.0.255 eq 21 eq 21 is in the destination port position
-Apps and Port number shortcuts for ACL Commands
-20 21 ftpftp-data
-22 -
-23 25 telnetsmtp
-53 67 domainbootps (dhcp server)
-68 69 bootpc (dhcp clienttftp )
-80 www
-110 161 pop3snmp
-443 514 - -
-16,384 -32,767 (RTP/ Voice/ Video) -
-Extended IP ACL Configuration">
+▪ 1 byte ▪▪ ie 6 = tcpidentify TCP header Protocol Header Checksum▪ 2 bytes ▪ 4 bytes Source IP Dest. IP▪ 4 bytes Options▪ variable TCP Header Source Port- 2 bytes 2 bytes Dest. port Rest of TCP- 16 bytes tcp or udp keyword">
     <meta itemprop="wordCount" content="832">
     <title></title>
-    <link href="/networking/ccna/newccnanotes/3-extended-acls/index.xml" rel="alternate" type="application/rss+xml" title="">
-    <link href="/networking/ccna/newccnanotes/3-extended-acls/index.print.html" rel="alternate" type="text/html" title="">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/networking\/ccna\/newccnanotes\/3-extended-acls\/';
       window.relearn.relBasePath='..\/..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -131,14 +71,14 @@ Extended IP ACL Configuration">
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -166,49 +106,7 @@ Extended IP ACL Configuration">
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -228,14 +126,14 @@ Extended IP ACL Configuration">
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/" title="Networking (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/networking/" title="Networking (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"> 
                 </div>
@@ -248,12 +146,9 @@ Extended IP ACL Configuration">
             
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/ccna/newccnanotes/3-extended-acls/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/consoling_in_to_mx80_from_linux/" title="Consoling in to MX80 from linux (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/networking/consoling_in_to_mx80_from_linux/" title="Consoling in to MX80 from linux (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -274,26 +169,26 @@ Extended IP ACL Configuration">
 
 <h1 id=""></h1>
 
-<h1 id="3-extended-acls">3 Extended ACLs</h1>
+<h1 id="3-extended-acls">3 Extended ACLs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p>Friday, September 17, 2021 1:11 PM</p>
 <p>IP and TCP Header<br>
 IP Header<br>
 Misc Header Fields▪ 9 bytes</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>▪ 1 byte
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>▪ 1 byte
 ▪▪ ie 6 = tcpidentify TCP header</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Protocol</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Header Checksum▪ 2 bytes</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>▪ 4 bytes</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Source IP</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Dest. IP▪ 4 bytes
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Protocol</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Header Checksum▪ 2 bytes</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>▪ 4 bytes</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Source IP</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Dest. IP▪ 4 bytes
 Options▪ variable
 TCP Header
 Source Port- 2 bytes</code></pre></div>
 <ul>
 <li>2 bytes</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Dest. port</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Rest of TCP- 16 bytes</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Dest. port</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Rest of TCP- 16 bytes</code></pre></div>
 <p>tcp or udp keyword</p>
 <ul>
 <li>
@@ -304,7 +199,7 @@ Source Port- 2 bytes</code></pre></div>
 <li>can use port numbers or keywords for some well-known application ports<br>
 positions of the source and destination port fields in the access-list command and these port<br>
 number keywords.
-<h1 id="access-list-101-permitprotocolsource_ipsource-portdest_ipdest-port">access-list 101 permit <strong>(protocol)</strong> Source_IP <strong>(source port)</strong> dest_IP <strong>(dest port)</strong></h1>
+<h1 id="access-list-101-permitprotocolsource_ipsource-portdest_ipdest-port">access-list 101 permit <strong>(protocol)</strong> Source_IP <strong>(source port)</strong> dest_IP <strong>(dest port)</strong><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 Protocol&ndash; tcpudp
 <ul>
 <li>
@@ -316,7 +211,7 @@ Protocol&ndash; tcpudp
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Source Port</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Source Port</code></pre></div>
 <ul>
 <li>
 <ul>
@@ -336,8 +231,8 @@ Protocol&ndash; tcpudp
 </li>
 <li>range_</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Dest. Port</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>eq: =lt: &lt;
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Dest. Port</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>eq: =lt: &lt;
 ne: not equal
 gt: &gt;range: x to y
 ie:
@@ -370,10 +265,10 @@ Extended IP ACL Configuration</p>
 <p>ACL numbers - 100 – 199 and 2000– 2699</p>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>(If you were to type eq 80, the config would show eq http://www.)</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>(If you were to type eq 80, the config would show eq http://www.)</code></pre></div>
 <p>Extended IP Access Lists: Example 1</p>
 <p>#(int) ip access-group 101 in</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Named IP Access Lists</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Named IP Access Lists</code></pre></div>
 <ul>
 <li>Easier to remember</li>
 <li>
@@ -386,9 +281,9 @@ Config<br>
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># ip access-list (standard/ extended) (name)</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>#(int) ip access-group barney out</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>#(ACLmode) no deny ip 10.1.2.0 0.0.0.255</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code># ip access-list (standard/ extended) (name)</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>#(int) ip access-group barney out</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>#(ACLmode) no deny ip 10.1.2.0 0.0.0.255</code></pre></div>
 <ul>
 <li>deleting a single entry from the ACL.</li>
 <li>delete and add new lines to the ACL from within ACL configuration mode</li>
@@ -414,8 +309,8 @@ command, dictating the location of the statement within the ACL.</p>
 </li>
 <li>
 <p>Automatic sequence numbering: - sequence numbers are added to ACEs automatically</p>
-<h1 id="show-ip-access--shows-access-list-24-and-sequence-numbers-with-each-entry-lists-24">Show ip access- Shows access list 24 and sequence numbers with each entry-lists 24</h1>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code> - delete entry 20</code></pre></div>
+<h1 id="show-ip-access--shows-access-list-24-and-sequence-numbers-with-each-entry-lists-24">Show ip access- Shows access list 24 and sequence numbers with each entry-lists 24<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code> - delete entry 20</code></pre></div>
 <p>#(ACLmode) no 20</p>
 <ul>
 <li>
@@ -426,16 +321,16 @@ command, dictating the location of the statement within the ACL.</p>
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>#(ACLmode) 5 deny 10.1.1.1</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>although Example 3-6 uses a numbered ACL, named ACLs use the same process to edit (add
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>#(ACLmode) 5 deny 10.1.1.1</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>although Example 3-6 uses a numbered ACL, named ACLs use the same process to edit (add
 and remove) entries.</code></pre></div>
 <p>Editing ACLs Using Sequence Numbers (named and numbered (not the global numbered way)</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>numbered ACLs are stored with the original style of configuration, as global access-list commands,
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>numbered ACLs are stored with the original style of configuration, as global access-list commands,
 no matter which method is used to configure the ACL.</code></pre></div>
-<h5 id="-">-</h5>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>the parts of ACL 24 configured with both new-style commands and old-style commands are all
+<h5 id="-">-<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>the parts of ACL 24 configured with both new-style commands and old-style commands are all
 listed in the same old-style ACL (show running-config).</code></pre></div>
-<h5 id="--1">-</h5>
+<h5 id="--1">-<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
 <p>Numbered ACL Configuration Versus Named ACL Configuration</p>
 <ul>
 <li>Place more specific statements early in the ACL.
@@ -455,7 +350,7 @@ Security threats that can be mitigated with ACLs</p>
 <li>-DoS smurf attacksDenying/filtering ICMP messages, inbound</li>
 <li>-Denying/filtering ICCMP messages, outboundDenying/filtering Traceroute</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>* Don&#39;t allow external packets that have an internal destination address.
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>* Don&#39;t allow external packets that have an internal destination address.
 Configuring ACLs from the internet</code></pre></div>
 <ul>
 <li>-Deny any source addresses from your internal networks Deny any local host addresses (127.0.0.0/8)</li>
@@ -559,8 +454,8 @@ Configuring ACLs from the internet</code></pre></div>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -586,23 +481,23 @@ Configuring ACLs from the internet</code></pre></div>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

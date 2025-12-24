@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="System initialization, service management, tuning, and logging">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="System Initialization, Message Logging, and System Tuning :: Linux Reader">
     <meta name="twitter:description" content="System initialization, service management, tuning, and logging">
-    <meta property="og:url" content="https://linuxreader.com/boot/system-initialization-message-logging-and-system-tuning/">
+    <meta property="og:url" content="http://localhost:1313/boot/system-initialization-message-logging-and-system-tuning/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="System Initialization, Message Logging, and System Tuning :: Linux Reader">
     <meta property="og:description" content="System initialization, service management, tuning, and logging">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="System initialization, service management, tuning, and logging">
     <meta itemprop="wordCount" content="4930">
     <title>System Initialization, Message Logging, and System Tuning :: Linux Reader</title>
-    <link href="/boot/system-initialization-message-logging-and-system-tuning/index.xml" rel="alternate" type="application/rss+xml" title="System Initialization, Message Logging, and System Tuning :: Linux Reader">
-    <link href="/boot/system-initialization-message-logging-and-system-tuning/index.print.html" rel="alternate" type="text/html" title="System Initialization, Message Logging, and System Tuning :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/boot\/system-initialization-message-logging-and-system-tuning\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/boot/boot-process-grub2-and-kernel/" title="Boot Process, Grub2, and Kernel (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/boot/boot-process-grub2-and-kernel/" title="Boot Process, Grub2, and Kernel (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -223,12 +177,9 @@
             System Initialization, Message Logging, and System Tuning
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/boot/system-initialization-message-logging-and-system-tuning/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/containers/" title="Containers (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/containers/" title="Containers (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -249,7 +200,7 @@
 
 <h1 id="system-initialization-message-logging-and-system-tuning">System Initialization, Message Logging, and System Tuning</h1>
 
-<h2 id="system-initialization-and-service-management">System Initialization and Service Management</h2>
+<h2 id="system-initialization-and-service-management">System Initialization and Service Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>systemd</strong> (system daemon)</p>
 <ul>
 <li>
@@ -370,7 +321,7 @@
 <li>as soon as the checks on the file systems are finished, systemd remounts them using their standard devices.</li>
 <li>Parallelism in file system mounts does not affect the root and virtual file systems.</li>
 </ul>
-<h3 id="units">Units</h3>
+<h3 id="units">Units<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><em>Units</em></p>
 <ul>
 <li>
@@ -550,7 +501,7 @@ unit-specific configuration data</li>
 </li>
 </ul>
 <p>Sample unit file for sshd.service from the /usr/lib/systemd/system/:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>david@fedora:~$ cat /usr/lib/systemd/system/sshd.service
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>david@fedora:~$ cat /usr/lib/systemd/system/sshd.service
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>Unit<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">Description</span><span style="color:#ff6ac1">=</span>OpenSSH server daemon
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">Documentation</span><span style="color:#ff6ac1">=</span>man:sshd<span style="color:#ff6ac1">(</span>8<span style="color:#ff6ac1">)</span> man:sshd_config<span style="color:#ff6ac1">(</span>5<span style="color:#ff6ac1">)</span>
@@ -668,7 +619,7 @@ unit-specific configuration data</li>
       </tr>
   </tbody>
 </table>
-<h3 id="systemd-targets">Systemd Targets</h3>
+<h3 id="systemd-targets">Systemd Targets<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Target unit files</p>
 <ul>
 <li>contain all information under the [Unit] section
@@ -680,7 +631,7 @@ unit-specific configuration data</li>
 </li>
 </ul>
 <p>Show the graphical target file (/usr/lib/systemd/system/graphical.target):</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /usr/lib/systemd/system/graphical.target</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /usr/lib/systemd/system/graphical.target</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>Unit<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">Description</span><span style="color:#ff6ac1">=</span>Graphical Interface
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">Documentation</span><span style="color:#ff6ac1">=</span>man:systemd.special<span style="color:#ff6ac1">(</span>7<span style="color:#ff6ac1">)</span>
@@ -691,7 +642,7 @@ unit-specific configuration data</li>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">AllowIsolate</span><span style="color:#ff6ac1">=</span>yes</span></span></code></pre></div>
 <p>Requires, Wants, Conflicts, and After suggests that the system must have already accomplished the rescue.service, rescue.target, multi-user.target, and display-manager.service levels in order to be declared running in the graphical target.</p>
 <p>Run <code>man systemd.target</code>for details</p>
-<h3 id="systemctl-command">systemctl Command</h3>
+<h3 id="systemctl-command">systemctl Command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Performs administrative functions and supports plentiful subcommands and flags.</li>
 </ul>
@@ -781,7 +732,7 @@ unit-specific configuration data</li>
       </tr>
   </tbody>
 </table>
-<h3 id="listing-and-viewing-units">Listing and Viewing Units</h3>
+<h3 id="listing-and-viewing-units">Listing and Viewing Units<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>List all units that are currently loaded in memory along with their status and description:
 <code>systemctl</code></p>
 <p>Output:
@@ -815,18 +766,18 @@ DESCRIPTION column</p>
 <li>include the inactive units:</li>
 </ul>
 <p>List all active and inactive units of type socket:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl -t socket --all</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl -t socket --all</span></span></code></pre></div>
 <p>List all units of type socket currently loaded in memory and the service they activate, sorted by the listening address:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl list-sockets</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl list-sockets</span></span></code></pre></div>
 <p>List all unit files (column 1) installed on the system and their current state (column 2):</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl list-unit-files</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl list-unit-files</span></span></code></pre></div>
 <p>List all units that failed to start at the last system boot:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl --failed</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl --failed</span></span></code></pre></div>
 <p>List the hierarchy of all dependencies (required and wanted units) for the current default target:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl list-dependencies</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl list-dependencies</span></span></code></pre></div>
 <p>List the hierarchy of all dependencies (required and wanted units) for a specific unit such as <em>atd.service</em>:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl list-dependencies atd.service</span></span></code></pre></div>
-<h3 id="managing-service-units">Managing Service Units</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl list-dependencies atd.service</span></span></code></pre></div>
+<h3 id="managing-service-units">Managing Service Units<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>systemctl subcommands to manage service units, including</p>
 <ul>
 <li>starting</li>
@@ -835,7 +786,7 @@ DESCRIPTION column</p>
 <li>checking status</li>
 </ul>
 <p>Check the current operational status and other details for the <em>atd</em> service:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl status atd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl status atd</span></span></code></pre></div>
 <p>Output:
 service description</p>
 <ul>
@@ -868,32 +819,32 @@ Also includes Main PID of the service process and more.</li>
 </li>
 </ul>
 <p>Disable the <em>atd</em> service from autostarting at the next system reboot:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo systemctl disable atd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo systemctl disable atd</span></span></code></pre></div>
 <p>Re-enable <em>atd</em> to autostart at the next system reboot:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl <span style="color:#ff5c57">enable</span> atd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl <span style="color:#ff5c57">enable</span> atd</span></span></code></pre></div>
 <p>Check whether <em>atd</em> is set to autostart at the next system reboot:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl is-enabled atd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl is-enabled atd</span></span></code></pre></div>
 <p>Check whether the <em>atd</em> service is running:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl is-active atd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl is-active atd</span></span></code></pre></div>
 <p>Stop and restart <em>atd</em>, run either of the following:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl stop atd ; systemctl start atd</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl restart atd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl stop atd ; systemctl start atd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl restart atd</span></span></code></pre></div>
 <p>Show the details of the <em>atd</em> service:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl show atd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl show atd</span></span></code></pre></div>
 <p>Prohibit <em>atd</em> from being enabled or disabled:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl mask atd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl mask atd</span></span></code></pre></div>
 <p>Try disabling or enabling <em>atd</em> and observe the effect of the previous command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl disable atd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl disable atd</span></span></code></pre></div>
 <p>Reverse the effect of the <em>mask</em> subcommand and try disable and enable operations:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl unmask atd <span style="color:#ff6ac1">&amp;&amp;</span> systemctl disable atd <span style="color:#ff6ac1">&amp;&amp;</span> systemctl <span style="color:#ff5c57">enable</span> atd</span></span></code></pre></div>
-<h3 id="managing-target-units">Managing Target Units</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl unmask atd <span style="color:#ff6ac1">&amp;&amp;</span> systemctl disable atd <span style="color:#ff6ac1">&amp;&amp;</span> systemctl <span style="color:#ff5c57">enable</span> atd</span></span></code></pre></div>
+<h3 id="managing-target-units">Managing Target Units<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><em>systemctl</em> can also manage target units.</p>
 <ul>
 <li>view or change the default boot target</li>
 <li>switch from one running target into another</li>
 </ul>
 <p>View what units of type target are currently loaded and active:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl -t target</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl -t target</span></span></code></pre></div>
 <p>output:</p>
 <ul>
 <li>target unit&rsquo;s name</li>
@@ -918,13 +869,13 @@ Also includes Main PID of the service process and more.</li>
 <li>You may have to modify the default boot target persistently for the exam.</li>
 </ul>
 <p>Change the current default boot target from graphical.target to multi-user.target:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl set-default multi-user</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl set-default multi-user</span></span></code></pre></div>
 <ul>
 <li>removes the existing symlink (<em>default.target</em>) pointing to the old boot target and replaces it with the new target file path.</li>
 </ul>
 <p>revert the default boot target to graphical:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl set-default graphical</span></span></code></pre></div>
-<h3 id="switching-into-specific-targets">Switching into Specific Targets</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl set-default graphical</span></span></code></pre></div>
+<h3 id="switching-into-specific-targets">Switching into Specific Targets<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Use  <code>systemctl</code> to transition the running system from one target state into another.</li>
 <li>graphical, multi-user, reboot, shutdown&mdash;are the most common</li>
@@ -933,22 +884,22 @@ Also includes Main PID of the service process and more.</li>
 <li>hibernate is suitable for mobile devices.</li>
 </ul>
 <p>Switch into multi-user using the <em>isolate</em> subcommand:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl isolate multi-user</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl isolate multi-user</span></span></code></pre></div>
 <ul>
 <li>This will stop the graphical service on the system and display the text-based console login screen.</li>
 </ul>
 <p>Type in a username such as <em>user1</em> and enter the password to log in:</p>
 <p>Log in and return to the graphical target:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl isolate graphical</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl isolate graphical</span></span></code></pre></div>
 <p>Shut down the system and power it off, use the following or simply
 run the <em>poweroff</em> command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl poweroff</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> poweroff</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl poweroff</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> poweroff</span></span></code></pre></div>
 <p>Shut down and reboot the system:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl reboot</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> reboot</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl reboot</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> reboot</span></span></code></pre></div>
 <p><code>halt</code>, <code>poweroff</code>, and <code>reboot</code> are symbolic links to the <em>systemctl</em> command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /usr/sbin/halt /usr/sbin/poweroff  /usr/sbin/reboot</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -l /usr/sbin/halt /usr/sbin/poweroff  /usr/sbin/reboot</span>
 </span></span><span style="display:flex;"><span> lrwxrwxrwx. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">16</span> Aug <span style="color:#ff9f43">22</span>  <span style="color:#ff9f43">2023</span> /usr/sbin/halt -&gt;  ../bin/systemctl
 </span></span><span style="display:flex;"><span> lrwxrwxrwx. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">16</span> Aug <span style="color:#ff9f43">22</span>  <span style="color:#ff9f43">2023</span> /usr/sbin/poweroff -&gt;  ../bin/systemctl
 </span></span><span style="display:flex;"><span> lrwxrwxrwx. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">16</span> Aug <span style="color:#ff9f43">22</span>  <span style="color:#ff9f43">2023</span> /usr/sbin/reboot -&gt;  ../bin/systemctl</span></span></code></pre></div>
@@ -966,7 +917,7 @@ run the <em>poweroff</em> command:</p>
 <li>stops the services</li>
 <li>shut the system down to the specified target state.</li>
 </ul>
-<h2 id="system-logging">System Logging</h2>
+<h2 id="system-logging">System Logging<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Log files need to be rotated periodically to prevent the file system space from filling up.</li>
 <li>Configuration files that define the default and custom locations to direct the log messages to and to configure rotation settings.
@@ -1036,7 +987,7 @@ system log file</li>
 <p>PID is stored to prevent multiple instances of this daemon.</p>
 </li>
 </ul>
-<h3 id="thesyslog-configuration-file">TheSyslog Configuration File</h3>
+<h3 id="thesyslog-configuration-file">TheSyslog Configuration File<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>/etc/rsyslog.conf</p>
 <ul>
 <li>primary syslog configuration file</li>
@@ -1154,12 +1105,12 @@ action field</li>
 <ul>
 <li>Restart or reload the rsyslog service in order for the changes to take effect.</li>
 </ul>
-<h3 id="rotating-log-files">Rotating Log Files</h3>
+<h3 id="rotating-log-files">Rotating Log Files<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Log location is defined in the rsyslog configuration file.</p>
 <p>View the /var/log/ directory:
 <code>ls -l /var/log</code></p>
 <p>systemd unit file called logrotate.timer under the /usr/lib/systemd/system directory invokes the logrotate service (/usr/lib/systemd/system/logrotate.service) on a daily basis. Here is what this file contains:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost cron.daily<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl cat logrotate.timer</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost cron.daily<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl cat logrotate.timer</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#78787e"># /usr/lib/systemd/system/logrotate.timer</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>Unit<span style="color:#ff6ac1">]</span>
@@ -1174,7 +1125,7 @@ action field</li>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>Install<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">WantedBy</span><span style="color:#ff6ac1">=</span>timers.target</span></span></code></pre></div>
 <p>The logrotate service runs rotations as per the schedule and other parameters defined in the /etc/logrotate.conf and additional log configuration files located in the /etc/logrotate.d directory.</p>
-<h3 id="etccrondailylogrotate-script">/etc/cron.daily/logrotate script</h3>
+<h3 id="etccrondailylogrotate-script">/etc/cron.daily/logrotate script<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>invokes the <em>logrotate</em> command on a daily basis.</li>
 <li>runs a rotation as per the schedule defined in /etc/logrotate.conf and the</li>
@@ -1187,7 +1138,7 @@ action field</li>
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> grep -v ^$ /etc/logrotate.conf
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> grep -v ^$ /etc/logrotate.conf
 </span></span><span style="display:flex;"><span> <span style="color:#78787e"># see &#34;man logrotate&#34; for details</span>
 </span></span><span style="display:flex;"><span> <span style="color:#78787e"># global options do not affect preceding include directives</span>
 </span></span><span style="display:flex;"><span> <span style="color:#78787e"># rotate log files weekly</span>
@@ -1229,9 +1180,9 @@ action field</li>
 <li>settings defined in user-defined files overrides the global settings.</li>
 </ul>
 <p>The /etc/logrotate.d/ directory includes additional configuration files for other service logs:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ls -l /etc/logrotate.d/</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ls -l /etc/logrotate.d/</span></span></code></pre></div>
 <p>Show the file content for btmp (records of failed user login attempts) that is used to control the rotation behavior for  /var/log/btmp:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> cat /etc/logrotate.d/btmp
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> cat /etc/logrotate.d/btmp
 </span></span><span style="display:flex;"><span>	<span style="color:#5af78e">```</span> 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>- rotation is once a month. 
@@ -1248,7 +1199,7 @@ action field</li>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>View /var/log/boot.log:</span></span></code></pre></div>
 <p>sudo head /var/log/boot.log</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>output:
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>output:
 - OK or FAILED 
    - indicates if the service was started successfully or not.
 
@@ -1267,16 +1218,16 @@ action field</li>
 View /var/log messages:
 ```bash
 tail /var/log/messages</code></pre></div>
-<h3 id="logging-custom-messages">Logging Custom Messages</h3>
+<h3 id="logging-custom-messages">Logging Custom Messages<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>The Modules section in the <em>rsyslog.conf</em> file</p>
 <ul>
 <li>Provides the support via the imuxsock module to record custom messages to the <em>messages</em> file using the <em>logger</em> command.</li>
 </ul>
-<h3 id="logger-command">logger command</h3>
+<h3 id="logger-command">logger command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Add a note indicating the calling user has rebooted the system:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code> logger -i &#34;System rebooted by $USER&#34;</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code> logger -i &#34;System rebooted by $USER&#34;</code></pre></div>
 <p>observe the message recorded along with the timestamp, hostname, and PID:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tail -l /var/log/messages</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tail -l /var/log/messages</span></span></code></pre></div>
 <p>-p option</p>
 <ul>
 <li>specify a priority level either as a numerical value or in the facility.priority format.</li>
@@ -1288,7 +1239,7 @@ tail /var/log/messages</code></pre></div>
 </ul>
 <p>View logger man pages:
 <code>man logger</code></p>
-<h3 id="the-systemd-journal">The systemd Journal</h3>
+<h3 id="the-systemd-journal">The systemd Journal<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
 <p>Systemd-based logging service for the collection and storage of logging data.</p>
@@ -1333,8 +1284,8 @@ journals</li>
 <li>main config file for journald</li>
 <li>contains numerous default settings that affect the overall functionality of the service.</li>
 </ul>
-<h3 id="retrieving-and-viewing-messages">Retrieving and Viewing Messages</h3>
-<h3 id="journalctl-command">journalctl command</h3>
+<h3 id="retrieving-and-viewing-messages">Retrieving and Viewing Messages<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="journalctl-command">journalctl command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>retrieve messages from the journal for viewing in a variety of ways using different options.</li>
 </ul>
@@ -1345,35 +1296,35 @@ journals</li>
 <li>Each line begins with a timestamp followed by the system hostname, process name with or without a PID, and the actual message.</li>
 </ul>
 <p>Display verbose output for each entry:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl -o verbose</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl -o verbose</span></span></code></pre></div>
 <p>View all events since the last system reboot:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl -b</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl -b</span></span></code></pre></div>
 <p>-0 (default, since the last system reboot),
 -1 (the previous system reboot),
 -2 (two reboots before)
 1 &amp; 2 only work if there are logs persistently stored.</p>
 <p>View only kernel-generated alerts since the last system reboot:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl -kb0</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl -kb0</span></span></code></pre></div>
 <p>Limit the output to view 3 entries only:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl -n3</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl -n3</span></span></code></pre></div>
 <p>To show all alerts generated by a particular service, such as <em>crond</em>:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl /usr/sbin/crond</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl /usr/sbin/crond</span></span></code></pre></div>
 <p>Retrieve all messages logged for a certain process, such as the PID associated with the <em>chronyd</em> service:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl <span style="color:#ff5c57">_PID</span><span style="color:#ff6ac1">=</span><span style="color:#ff6ac1">$(</span>pgrep chronyd<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl <span style="color:#ff5c57">_PID</span><span style="color:#ff6ac1">=</span><span style="color:#ff6ac1">$(</span>pgrep chronyd<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
 <p>Reveal all messages for a particular system unit, such as sshd.service:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl <span style="color:#ff5c57">_SYSTEMD_UNIT</span><span style="color:#ff6ac1">=</span>sshd.service</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl <span style="color:#ff5c57">_SYSTEMD_UNIT</span><span style="color:#ff6ac1">=</span>sshd.service</span></span></code></pre></div>
 <p>View all error messages logged between a date range, such as October 10, 2019 and October 16, 2019:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl --since 2019-10-16 --until 2019-10-16 -p err</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl --since 2019-10-16 --until 2019-10-16 -p err</span></span></code></pre></div>
 <p>Get all warning messages that have appeared today and display them in reverse chronological order:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl --since today -p warning -r </span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl --since today -p warning -r </span></span></code></pre></div>
 <ul>
 <li>Can specify the time range in hh:mm:ss format, or yesterday, today, or tomorrow as well.</li>
 </ul>
 <p>follow option</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl -f</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> man journalctl</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code> man systemd-journald</code></pre></div>
-<h3 id="preserving-journal-information">Preserving Journal Information</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> journalctl -f</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> man journalctl</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code> man systemd-journald</code></pre></div>
+<h3 id="preserving-journal-information">Preserving Journal Information<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>enable a separate storage location for the journal to save all its messages there persistently.</li>
 <li>default is under /var/log/journal/</li>
@@ -1405,32 +1356,32 @@ journals</li>
       </tr>
   </tbody>
 </table>
-<h3 id="journal-data-storage-options">Journal Data Storage Options</h3>
+<h3 id="journal-data-storage-options">Journal Data Storage Options<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>create the /var/log/journal/ manually and use preferred &ldquo;auto&rdquo; option.</p>
 <ul>
 <li>faster query responses from in-memory storage</li>
 <li>access to historical log data from on-disk storage.</li>
 </ul>
-<h3 id="lab-configure-persistent-storage-for-journal-information">Lab: Configure Persistent Storage for Journal Information</h3>
+<h3 id="lab-configure-persistent-storage-for-journal-information">Lab: Configure Persistent Storage for Journal Information<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Run the necessary steps to enable and confirm persistent storage for the journals.</p>
 <ol>
 <li>Create a subdirectory called <em>journal</em> under the /var/log/ directory and confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  sudo mkdir /var/log/journal</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  sudo mkdir /var/log/journal</span></span></code></pre></div>
 <ol start="2">
 <li>Restart the <em>systemd-journald</em> service and confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl restart systemd-journald <span style="color:#ff6ac1">&amp;&amp;</span> systemctl status systemd- journald</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl restart systemd-journald <span style="color:#ff6ac1">&amp;&amp;</span> systemctl status systemd- journald</span></span></code></pre></div>
 <ol start="3">
 <li>List the new directory and observe a subdirectory matching the machine ID of the system as defined in the /etc/machine-id file is created:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ll /var/log/journal <span style="color:#ff6ac1">&amp;&amp;</span> cat /etc/machine-id</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ll /var/log/journal <span style="color:#ff6ac1">&amp;&amp;</span> cat /etc/machine-id</span></span></code></pre></div>
 <ul>
 <li>This log file is rotated automatically once a month based on the settings in the <em>journald.conf</em> file.</li>
 </ul>
 <p>Check the manual pages of journal.conf</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> man journald.conf</span></span></code></pre></div>
-<h2 id="system-tuning">System Tuning</h2>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> man journald.conf</span></span></code></pre></div>
+<h2 id="system-tuning">System Tuning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>System tuning service</p>
 <ul>
 <li>Monitor connected devices</li>
@@ -1457,7 +1408,7 @@ journals</li>
 </ul>
 </li>
 </ul>
-<h3 id="tuned-tuning-profiles">tuned tuning Profiles</h3>
+<h3 id="tuned-tuning-profiles">tuned tuning Profiles<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Nine profiles to support a variety of use cases.</li>
 <li>Can create custom profiles from nothing or by using one of the existing profiles as a template.</li>
@@ -1525,21 +1476,21 @@ journals</li>
       </tr>
   </tbody>
 </table>
-<h3 id="tuning-profiles">Tuning Profiles</h3>
+<h3 id="tuning-profiles">Tuning Profiles<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Predefined profiles are located in /usr/lib/tuned/ in subdirectories matching their names.</p>
 <p>View predefined profiles:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ls -l /usr/lib/tuned</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ls -l /usr/lib/tuned</span></span></code></pre></div>
 <p>The default active profile set on <em>server1</em> and <em>server2</em> is the
 <em>virtual-guest</em> profile, as the two systems are hosted in a VirtualBox virtualized environment.</p>
-<h3 id="the-tuned-adm-command">The tuned-adm Command</h3>
+<h3 id="the-tuned-adm-command">The tuned-adm Command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>single profile management command that comes with tuned</li>
 <li>can list active and available profiles, query current settings, switch between profiles, and turn the tuning off.</li>
 <li>Can recommend the best profile for the system based on many system attributes.</li>
 </ul>
 <p>View the man pages:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> man tuned-adm</span></span></code></pre></div>
-<h3 id="lab-12-2-manage-tuning-profiles">Lab 12-2: Manage Tuning Profiles</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> man tuned-adm</span></span></code></pre></div>
+<h3 id="lab-12-2-manage-tuning-profiles">Lab 12-2: Manage Tuning Profiles<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>install the <em>tuned</em> service</li>
 <li>start it now</li>
@@ -1553,32 +1504,32 @@ journals</li>
 <ol>
 <li>Install the <em>tuned</em> package if it is not already installed:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf install tuned</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> dnf install tuned</span></span></code></pre></div>
 <ol start="2">
 <li>Start the <em>tuned</em> service and set it to autostart at reboots:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl --now <span style="color:#ff5c57">enable</span> tuned</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl --now <span style="color:#ff5c57">enable</span> tuned</span></span></code></pre></div>
 <ol start="3">
 <li>Confirm the startup:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl status tuned</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl status tuned</span></span></code></pre></div>
 <ol start="4">
 <li>Display the list of available and active tuning profiles:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm list</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm list</span></span></code></pre></div>
 <ol start="5">
 <li>List only the current active profile:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm active</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm active</span></span></code></pre></div>
 <ol start="6">
 <li>Switch to the <em>powersave</em> profile and confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm profile powersave
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm profile powersave
 </span></span><span style="display:flex;"><span> tuned-adm active</span></span></code></pre></div>
 <ol start="7">
 <li>Determine the recommended profile for <em>server1</em> and switch to it:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># tuned-adm recommend</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># tuned-adm recommend</span>
 </span></span><span style="display:flex;"><span> virtual-guest
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># tuned-adm profile virtual-guest</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># tuned-adm active</span>
@@ -1586,52 +1537,52 @@ journals</li>
 <ol start="8">
 <li>Turn off tuning:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># tuned-adm off</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># tuned-adm off</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># tuned-adm active</span>
 </span></span><span style="display:flex;"><span> No current active profile.</span></span></code></pre></div>
 <ol start="9">
 <li>Reactivate tuning and confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># tuned-adm profile virtual-guest</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># tuned-adm profile virtual-guest</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># tuned-adm active</span>
 </span></span><span style="display:flex;"><span> Current active profile: virtual-guest </span></span></code></pre></div>
-<h2 id="sysinit-logging-and-tuning-labs">Sysinit, Logging, and Tuning Labs</h2>
-<h3 id="lab-modify-default-boot-target">Lab: Modify Default Boot Target</h3>
+<h2 id="sysinit-logging-and-tuning-labs">Sysinit, Logging, and Tuning Labs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="lab-modify-default-boot-target">Lab: Modify Default Boot Target<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Modify the default boot target from graphical to multi-user, and reboot the system to test it.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl set-default multi-user</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> systemctl set-default multi-user</span></span></code></pre></div>
 <ul>
 <li>Run the <code>systemctl</code> and <code>who</code> commands after the reboot for validation.</li>
 <li>Restore the default boot target back to graphical and reboot to verify.</li>
 </ul>
-<h3 id="lab-record-custom-alerts">Lab: Record Custom Alerts</h3>
+<h3 id="lab-record-custom-alerts">Lab: Record Custom Alerts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Write the message &ldquo;This is $LOGNAME adding this marker on $(date)&rdquo; to /var/log/messages.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> logger -i <span style="color:#5af78e">&#34;This is </span><span style="color:#ff5c57">$LOGNAME</span><span style="color:#5af78e"> adding this marker on  </span><span style="color:#ff6ac1">$(</span>date<span style="color:#ff6ac1">)</span><span style="color:#5af78e">&#34;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> logger -i <span style="color:#5af78e">&#34;This is </span><span style="color:#ff5c57">$LOGNAME</span><span style="color:#5af78e"> adding this marker on  </span><span style="color:#ff6ac1">$(</span>date<span style="color:#ff6ac1">)</span><span style="color:#5af78e">&#34;</span></span></span></code></pre></div>
 <ul>
 <li>Ensure that variable and command expansions work. Verify the entry in the file.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tail -l /var/log/messages</span></span></code></pre></div>
-<h3 id="lab-apply-tuning-profile">Lab: Apply Tuning Profile</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tail -l /var/log/messages</span></span></code></pre></div>
+<h3 id="lab-apply-tuning-profile">Lab: Apply Tuning Profile<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>identify the current system tuning profile with the <em>tuned-adm</em> command.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm active</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm active</span></span></code></pre></div>
 <ul>
 <li>List all available profiles.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm list</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm list</span></span></code></pre></div>
 <ul>
 <li>List the recommended profile for <em>server1</em>.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm recommend</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm recommend</span></span></code></pre></div>
 <ul>
 <li>Apply the &ldquo;balanced&rdquo; profile and verify with <em>tuned-adm</em>.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm profile balanced</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm active</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm profile balanced</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> tuned-adm active</span></span></code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -1703,8 +1654,8 @@ journals</li>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1730,23 +1681,23 @@ journals</li>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Using Modules for Troubleshooting and Testing">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Using Modules for Troubleshooting and Testing :: Linux Reader">
     <meta name="twitter:description" content="Using Modules for Troubleshooting and Testing">
-    <meta property="og:url" content="https://linuxreader.com/ansible/using-modules-for-troubleshooting-and-testing/">
+    <meta property="og:url" content="http://localhost:1313/ansible/using-modules-for-troubleshooting-and-testing/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Using Modules for Troubleshooting and Testing :: Linux Reader">
     <meta property="og:description" content="Using Modules for Troubleshooting and Testing">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Using Modules for Troubleshooting and Testing">
     <meta itemprop="wordCount" content="1967">
     <title>Using Modules for Troubleshooting and Testing :: Linux Reader</title>
-    <link href="/ansible/using-modules-for-troubleshooting-and-testing/index.xml" rel="alternate" type="application/rss+xml" title="Using Modules for Troubleshooting and Testing :: Linux Reader">
-    <link href="/ansible/using-modules-for-troubleshooting-and-testing/index.print.html" rel="alternate" type="text/html" title="Using Modules for Troubleshooting and Testing :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/ansible\/using-modules-for-troubleshooting-and-testing\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/using-loops-and-items/" title="Using Loops and Items (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/using-loops-and-items/" title="Using Loops and Items (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -187,12 +141,9 @@
             Using Modules for Troubleshooting and Testing
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/using-modules-for-troubleshooting-and-testing/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/using-multiple-inventories/" title="Using Multiple Inventories (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/using-multiple-inventories/" title="Using Multiple Inventories (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -213,7 +164,7 @@
 
 <h1 id="using-modules-for-troubleshooting-and-testing">Using Modules for Troubleshooting and Testing</h1>
 
-<h3 id="using-modules-for-troubleshooting-and-testing">Using Modules for Troubleshooting and Testing</h3>
+<h3 id="using-modules-for-troubleshooting-and-testing">Using Modules for Troubleshooting and Testing<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>While working with playbooks, you may use different modules for
 troubleshooting. The debug module was used in previous chapters and is
 particularly useful for analyzing variable behavior. Some other modules
@@ -221,11 +172,11 @@ may prove useful when troubleshooting Ansible. <a href="/ansible/using-modules-f
 11-4</a> gives an overview.</p>
 <p>::: group
 <strong>Table 11-4</strong> Troubleshooting Modules Overview</p>
-<p><a href="#R-image-dd4d86809e4a02fc7e6ea333ed8f4e62" class="lightbox-link"><img alt="Image" class="lazy lightbox figure-image" loading="lazy" src="Images/11tab04.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dd4d86809e4a02fc7e6ea333ed8f4e62"><img alt="Image" class="lazy lightbox lightbox-image" loading="lazy" src="Images/11tab04.jpg"></a> {width=&ldquo;940&rdquo; height=&ldquo;295&rdquo;}
+<p><a href="#R-image-04244452189614d03f7fbe382427a48a" class="lightbox-link"><img alt="Image" class="lazy lightbox figure-image" loading="lazy" src="Images/11tab04.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-04244452189614d03f7fbe382427a48a"><img alt="Image" class="lazy lightbox lightbox-image" loading="lazy" src="Images/11tab04.jpg"></a> {width=&ldquo;940&rdquo; height=&ldquo;295&rdquo;}
 :::</p>
 <p>The following sections discuss how these modules can be used.</p>
-<h4 class="h4" id="using-the-debug-module">Using the Debug Module</h4>
+<h4 id="using-the-debug-module" class="h4">Using the Debug Module<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The debug module is useful to visualize what is happening at a certain
 point in a playbook. It works with two arguments: the <strong>msg</strong> argument
 can be used to print a message, and the <strong>var</strong> argument can be used to
@@ -237,7 +188,7 @@ way, using the <strong>{{ varname }}</strong> syntax.</p>
 <p>Because you have already seen the debug module in action in numerous
 examples in Chapters 6, 7, and 8 of this book, no new examples are
 included here.</p>
-<h4 class="h4" id="using-the-uri-module">Using the uri Module</h4>
+<h4 id="using-the-uri-module" class="h4">Using the uri Module<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The best way to learn how to work with these modules is to look at some
 examples. <a href="/ansible/using-modules-for-troubleshooting-and-testing/#ch11.xhtml#list11_7">Listing 11-7</a> shows an example where
 the uri module is used.</p>
@@ -268,7 +219,7 @@ of running this playbook. Notice that the playbook does not generate a
 failure because the default web page that is shown by the Apache web
 server contains the text &ldquo;welcome.&rdquo;</p>
 <p><strong>Listing 11-8 ansible-playbook listing117.yaml</strong> Command Result</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>ansible@control rhce8-book<span style="color:#ff6ac1">]</span>$ ansible-playbook listing117.yaml
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>ansible@control rhce8-book<span style="color:#ff6ac1">]</span>$ ansible-playbook listing117.yaml
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    PLAY <span style="color:#ff6ac1">[</span><span style="color:#ff5c57">test</span> webserver access<span style="color:#ff6ac1">]</span> ***************************************************
 </span></span><span style="display:flex;"><span>    
@@ -288,7 +239,7 @@ server contains the text &ldquo;welcome.&rdquo;</p>
 <p>Using the uri module can be useful to perform a simple test to check
 whether a web server is available, but you can also use it to check
 accessibility or returned information from an API endpoint.</p>
-<h4 class="h4" id="using-the-stat-module">Using the stat Module</h4>
+<h4 id="using-the-stat-module" class="h4">Using the stat Module<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>You can use the stat module to check on the status of files. Although
 this module can be useful for checking on the status of just a few
 files, it&rsquo;s not a file system integrity checker that was developed to
@@ -372,7 +323,7 @@ ansible5                   : ok=0    changed=0    unreachable=1    failed=0    s
 ansible6                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0
 </code></pre>
 <p>:::</p>
-<h4 class="h4" id="using-the-assert-module">Using the assert Module</h4>
+<h4 id="using-the-assert-module" class="h4">Using the assert Module<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The assert module is a bit like the fail module. You can use it to
 perform a specific conditional action. The assert module works with a
 <strong>that</strong> option that defines a list of conditionals. If any one of these
@@ -410,7 +361,7 @@ to be equal to or bigger than 1, and smaller than or equal to 100.</p>
 <p>Before this can be done, one little problem needs to be managed: when
 <strong>vars_prompt</strong> is used, the variable type is set to be a string by
 default. This means that a statement like</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>**filesize left <span style="color:#ff5c57">caret</span><span style="color:#ff6ac1">=</span> 100**</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>**filesize left <span style="color:#ff5c57">caret</span><span style="color:#ff6ac1">=</span> 100**</span></span></code></pre></div>
 <p>would
 fail with a type mismatch. That is why a Jinja2 filter is used to
 convert the variable type from string to integer.</p>
@@ -500,7 +451,7 @@ modules discussed in this section.</p>
 <strong>Exercise 11-2 Using Modules for Troubleshooting</strong></p>
 <p>1. Open your editor to create the file exercise112.yaml and define the
 play header:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
 - name: using assert to check if volume group vgdata exists
   hosts: all
   tasks:</code></pre></div>
@@ -508,18 +459,18 @@ play header:</p>
 volume group with the name vgdata exists. The task should use
 <strong>register</strong> to register the command result, and it should continue if
 this is not the case.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">- name: check if vgdata exists
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">- name: check if vgdata exists
   command: vgs vgdata
   register: vg_result
   ignore_errors: true</code></pre></div>
 <p>3. To make it easier to use <strong>assert</strong> in the next step on the right
 variable, include a <strong>debug</strong> task to show the value of the variable:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">- name: show vg_result variable
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">- name: show vg_result variable
   debug:
     var: vg_result</code></pre></div>
 <p>4. Add a task to print a success or failure message, depending on the
 result of the <strong>vgs</strong> command from the first task:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">- name: print a message
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">- name: print a message
   assert:
     that:
     - vg_result.rc == 0
@@ -643,8 +594,8 @@ the command <strong>vgs cl</strong>, which on CentOS 8 should give a positive re
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -670,23 +621,23 @@ the command <strong>vgs cl</strong>, which on CentOS 8 should give a positive re
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

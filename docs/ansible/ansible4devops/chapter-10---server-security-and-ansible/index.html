@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="Chapter 10 - Server Security and Ansible The first configuration to be performed on any new server—especially any server with any exposure (direct or indirect) to the public Internet)—is security configuration.
 There are nine basic measures to ensure servers are secure from unauthorized access or intercepted communications:
@@ -14,7 +14,7 @@ Use secure and encrypted communication. Disable root login and use sudo. Remove 
     <meta name="twitter:description" content="Chapter 10 - Server Security and Ansible The first configuration to be performed on any new server—especially any server with any exposure (direct or indirect) to the public Internet)—is security configuration.
 There are nine basic measures to ensure servers are secure from unauthorized access or intercepted communications:
 Use secure and encrypted communication. Disable root login and use sudo. Remove unused software, open only required ports. Use the principle of least privilege. Update the OS and installed software. Use a properly-configured firewall. Make sure log files are populated and rotated. Monitor logins and block suspect IP addresses. Use SELinux (Security-Enhanced Linux). Your infrastructure is as weak as the weakest server; in many high-profile security breaches, one poorly-secured server acts as a gateway into the rest of the network. Don’t let your servers be those servers! Good security also helps you achieve the holy grail of system administration—100% uptime.">
-    <meta property="og:url" content="https://linuxreader.com/ansible/ansible4devops/chapter-10---server-security-and-ansible/">
+    <meta property="og:url" content="http://localhost:1313/ansible/ansible4devops/chapter-10---server-security-and-ansible/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:description" content="Chapter 10 - Server Security and Ansible The first configuration to be performed on any new server—especially any server with any exposure (direct or indirect) to the public Internet)—is security configuration.
 There are nine basic measures to ensure servers are secure from unauthorized access or intercepted communications:
@@ -27,39 +27,35 @@ There are nine basic measures to ensure servers are secure from unauthorized acc
 Use secure and encrypted communication. Disable root login and use sudo. Remove unused software, open only required ports. Use the principle of least privilege. Update the OS and installed software. Use a properly-configured firewall. Make sure log files are populated and rotated. Monitor logins and block suspect IP addresses. Use SELinux (Security-Enhanced Linux). Your infrastructure is as weak as the weakest server; in many high-profile security breaches, one poorly-secured server acts as a gateway into the rest of the network. Don’t let your servers be those servers! Good security also helps you achieve the holy grail of system administration—100% uptime.">
     <meta itemprop="wordCount" content="6023">
     <title></title>
-    <link href="/ansible/ansible4devops/chapter-10---server-security-and-ansible/index.xml" rel="alternate" type="application/rss+xml" title="">
-    <link href="/ansible/ansible4devops/chapter-10---server-security-and-ansible/index.print.html" rel="alternate" type="text/html" title="">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/ansible\/ansible4devops\/chapter-10---server-security-and-ansible\/';
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -67,14 +63,14 @@ Use secure and encrypted communication. Disable root login and use sudo. Remove 
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -102,49 +98,7 @@ Use secure and encrypted communication. Disable root login and use sudo. Remove 
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -164,14 +118,14 @@ Use secure and encrypted communication. Disable root login and use sudo. Remove 
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/" title="Ansible (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/" title="Ansible (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -203,12 +157,9 @@ Use secure and encrypted communication. Disable root login and use sudo. Remove 
             
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ansible4devops/chapter-10---server-security-and-ansible/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ad-hoc-ansible-commands/" title="Ad Hoc Ansible Commands (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/ad-hoc-ansible-commands/" title="Ad Hoc Ansible Commands (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -229,7 +180,7 @@ Use secure and encrypted communication. Disable root login and use sudo. Remove 
 
 <h1 id=""></h1>
 
-<h2 id="chapter-10---server-security-and-ansible">Chapter 10 - Server Security and Ansible</h2>
+<h2 id="chapter-10---server-security-and-ansible">Chapter 10 - Server Security and Ansible<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>The first configuration to be performed on any new server&mdash;especially
 any server with any exposure (direct or indirect) to the public
 Internet)&mdash;is security configuration.</p>
@@ -253,7 +204,7 @@ servers! Good security also helps you achieve the holy grail of system
 administration&mdash;100% uptime.</p>
 <p>In this chapter, you&rsquo;ll learn about Linux security and how Ansible helps
 secure your servers, following the basic topics above.</p>
-<h3 id="chap12.xhtml_leanpub-auto-a-brief-history-of-ssh-and-remote-access">A brief history of SSH and remote access</h3>
+<h3 id="chap12.xhtml_leanpub-auto-a-brief-history-of-ssh-and-remote-access">A brief history of SSH and remote access<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>In the beginning, computers were the size of large conference rooms. A
 punch card reader would merrily accept pieces of paper with instructions
 the computer would run, and then a printer would etch the results into
@@ -271,7 +222,7 @@ interact with the large central computers.</p>
 between the central computer and all those on the network, because the
 small, centralized networks used were physically isolated from one
 another.</p>
-<h4 id="chap12.xhtml_leanpub-auto-telnet">Telnet</h4>
+<h4 id="chap12.xhtml_leanpub-auto-telnet">Telnet<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>In the late 1960s, the Telnet protocol was defined and started being
 used over TCP networks (normally on port 23) for remote control over
 larger private networks, and eventually the public Internet.</p>
@@ -312,7 +263,7 @@ connecting them&mdash;is a weak point exposing you to a man-in-the-middle
 attack. Strong encryption is needed between your computer and the
 destination if you want to ensure data security.</p>
 </aside>
-<h4 id="chap12.xhtml_leanpub-auto-rlogin-rsh-and-rcp">rlogin, rsh and rcp</h4>
+<h4 id="chap12.xhtml_leanpub-auto-rlogin-rsh-and-rcp">rlogin, rsh and rcp<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p><code>rlogin</code> was introduced in BSD 4.2 in 1983, and has been distributed
 with many UNIX-like systems alongside Telnet until recently. rlogin was
 used widely during the 80s and much of the 90s.</p>
@@ -332,7 +283,7 @@ to execute individual shell commands remotely, and <code>rcp</code> (&ldquo;remo
 is used for remote file copies. <code>rsh</code> and <code>rcp</code> inherited the same
 security problems as rlogin, since they use the same connection method
 (over different ports).</p>
-<h4 id="chap12.xhtml_leanpub-auto-ssh">SSH</h4>
+<h4 id="chap12.xhtml_leanpub-auto-ssh">SSH<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Secure Shell was created in 1995 by Finland native Tatu Ylönen, in
 response to a <a href="http://en.wikipedia.org/wiki/Secure_Shell#Version_1.x" rel="external" target="_blank">password-sniffing
 attack</a> at his
@@ -430,7 +381,7 @@ change the port, set <code>Port [new-port-number]</code> in the configuration.</
 </ol>
 <p>We&rsquo;ll cover how to configure some of these particular options in SSH in
 the next section.</p>
-<h4 id="chap12.xhtml_leanpub-auto-the-evolution-of-ssh-and-the-future-of-remote-access">The evolution of SSH and the future of remote access</h4>
+<h4 id="chap12.xhtml_leanpub-auto-the-evolution-of-ssh-and-the-future-of-remote-access">The evolution of SSH and the future of remote access<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>It has been over a decade since OpenSSH became the <em>de facto</em> standard
 of remote access protocols, and since then Internet connectivity has
 changed dramatically. For reliable, low-latency LAN and Internet
@@ -459,7 +410,7 @@ Google Chrome!).</p>
 remote terminal access, but one thing is for sure: Ansible will continue
 to support the most secure, fast, and reliable connection methods to
 help you build and manage your infrastructure!</p>
-<h3 id="chap12.xhtml_leanpub-auto-use-secure-and-encrypted-communication">Use secure and encrypted communication</h3>
+<h3 id="chap12.xhtml_leanpub-auto-use-secure-and-encrypted-communication">Use secure and encrypted communication<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>We spent a lot of time discussing SSH&rsquo;s heritage and the way it works
 because it is, in many ways, the foundation of a secure
 infrastructure&mdash;in almost every circumstance, you will allow SSH remote
@@ -509,7 +460,7 @@ path to a private key file (identity file) with
 <code>ssh-agent</code> setup, so typically a manual definition of the key file is
 not required.</p>
 </aside>
-<h3 id="chap12.xhtml_leanpub-auto-disable-root-login-and-use-sudo">Disable root login and use <code>sudo</code></h3>
+<h3 id="chap12.xhtml_leanpub-auto-disable-root-login-and-use-sudo">Disable root login and use <code>sudo</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>We&rsquo;ve already disabled root login with Ansible&rsquo;s <code>lineinfile</code> module in
 the previous section, but we&rsquo;ll cover a general Linux best practice
 here: don&rsquo;t use the root account if you don&rsquo;t absolutely need to use it.</p>
@@ -582,7 +533,7 @@ check out the <a href="http://www.sudo.ws/sudo/sample.sudoers" rel="external" ta
 file</a> for some practical
 examples.</p>
 </aside>
-<h3 id="chap12.xhtml_leanpub-auto-remove-unused-software-open-only-required-ports">Remove unused software, open only required ports</h3>
+<h3 id="chap12.xhtml_leanpub-auto-remove-unused-software-open-only-required-ports">Remove unused software, open only required ports<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Before the widespread use of configuration management tools for servers,
 when snowflake servers were the norm, servers would become bloated with
 extra software no longer in active use, open ports for old and
@@ -615,7 +566,7 @@ leave port 25 open on your server unless your server will be used as an
 SMTP relay server. Further, make sure the services you have listening on
 your open ports are configured to only allow access from trusted
 clients.</p>
-<h3 id="chap12.xhtml_leanpub-auto-use-the-principle-of-least-privilege">Use the principle of least privilege</h3>
+<h3 id="chap12.xhtml_leanpub-auto-use-the-principle-of-least-privilege">Use the principle of least privilege<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Users, applications, and processes should only be able to access
 information (files) and resources (memory, network ports, etc) necessary
 for their operation.</p>
@@ -623,7 +574,7 @@ for their operation.</p>
 tangentially related to the principle of least privilege, but user
 account configuration and file permissions are two main areas directly
 related to the principle.</p>
-<h4 id="chap12.xhtml_leanpub-auto-user-account-configuration">User account configuration</h4>
+<h4 id="chap12.xhtml_leanpub-auto-user-account-configuration">User account configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>New user accounts, by default, have fairly limited permissions on a
 Linux server. They usually have a home folder, over which they have
 complete control, but any other folder or file on the system is only
@@ -639,7 +590,7 @@ access files as <code>root</code> or another user.</li>
 <p>For the former method, please read the next section on file permissions
 to learn how to limit access. For the latter, please make sure you
 understand the use of sudoers as explained earlier in this chapter.</p>
-<h4 id="chap12.xhtml_leanpub-auto-file-permissions">File permissions</h4>
+<h4 id="chap12.xhtml_leanpub-auto-file-permissions">File permissions<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Every Ansible module that deals with files has file ownership and
 permission parameters available, including <code>owner</code>, <code>group</code>, and <code>mode</code>.
 Almost every time you handle files (using <code>copy</code>, <code>template</code>, <code>file</code>,
@@ -692,7 +643,7 @@ user account, or a deployment or service account on the server. Set the
 <em>group</em> for the files to a group the webserver user is in, and the
 webserver should now be able to access the files (assuming you have the
 same permissions set for the user and group, like <code>664</code>).</p>
-<h3 id="chap12.xhtml_leanpub-auto-update-the-os-and-installed-software">Update the OS and installed software</h3>
+<h3 id="chap12.xhtml_leanpub-auto-update-the-os-and-installed-software">Update the OS and installed software<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Every year, hundreds of security updates are released for the packages
 running on your servers, some of them fixing critical bugs. If you don&rsquo;t
 keep your server software up to date, you will be extremely vulnerable,
@@ -723,7 +674,7 @@ certain packages. In those cases, you need to configure <code>yum</code> or <cod
 to tell them what to do (edit <code>/etc/yum.conf</code> for <code>yum</code> on RedHat-based
 systems, or use <code>apt-mark hold [package-name]</code> to keep a certain package
 at its current version on Debian-based systems).</p>
-<h4 id="chap12.xhtml_leanpub-auto-automating-updates">Automating updates</h4>
+<h4 id="chap12.xhtml_leanpub-auto-automating-updates">Automating updates<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Fully automated daily or weekly package and system upgrades provide even
 greater security. Not every environment or corporation can accommodate
 frequent automated upgrades (especially if your application has been
@@ -738,7 +689,7 @@ necessary, <em>especially</em> when using automatic updates, if you want to
 prevent potentially insecure packages from being installed on your
 servers!</p>
 </aside>
-<h4 id="chap12.xhtml_leanpub-auto-automating-updates-for-redhat-based-systems">Automating updates for RedHat-based systems</h4>
+<h4 id="chap12.xhtml_leanpub-auto-automating-updates-for-redhat-based-systems">Automating updates for RedHat-based systems<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>RedHat 6 and later (and modern versions of Fedora, and RedHat
 derivatives like CentOS) uses a cron-based package, <code>yum-cron</code>, for
 automatic updates. For basic, set-and-forget usage, install <code>yum-cron</code>
@@ -754,7 +705,7 @@ and make sure it&rsquo;s started and set to run on system boot:</p>
 </figure>
 <p>Further configuration (such as packages to exclude from automatic
 updates) is done in the <code>yum.conf</code> file, at <code>/etc/yum.conf</code>.</p>
-<h4 id="chap12.xhtml_leanpub-auto-automating-updates-for-debian-based-systems">Automating updates for Debian-based systems</h4>
+<h4 id="chap12.xhtml_leanpub-auto-automating-updates-for-debian-based-systems">Automating updates for Debian-based systems<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Debian and its derivatives typically use the <code>unattended-upgrades</code>
 package to configure automatic updates. Like <code>yum-cron</code>, it is easy to
 install, and its configuration is placed in a variety of files within
@@ -810,7 +761,7 @@ updated packages.</p>
 so you know when they&rsquo;ll need a manual reboot if you have
 <code>Automatic-Reboot</code> set to <code>false</code>!</p>
 </aside>
-<h3 id="chap12.xhtml_leanpub-auto-use-a-properly-configured-firewall">Use a properly-configured firewall</h3>
+<h3 id="chap12.xhtml_leanpub-auto-use-a-properly-configured-firewall">Use a properly-configured firewall<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>If you were building a secure bank vault, you wouldn&rsquo;t want to have a
 many doors and windows leading into the vault. You&rsquo;d instead build
 reinforced concrete walls, and have one or two strong metal doors.</p>
@@ -823,7 +774,7 @@ other external firewall services.</p>
 <p>Ansible includes built-in support for configuring server firewalls with
 <code>ufw</code> (common on newer Debian and Ubuntu distributions) and <code>firewalld</code>
 (common on newer Fedora, RedHat, and CentOS distributions).</p>
-<h4 id="chap12.xhtml_leanpub-auto-configuring-a-firewall-with-ufw-on-debian-or-ubuntu">Configuring a firewall with <code>ufw</code> on Debian or Ubuntu</h4>
+<h4 id="chap12.xhtml_leanpub-auto-configuring-a-firewall-with-ufw-on-debian-or-ubuntu">Configuring a firewall with <code>ufw</code> on Debian or Ubuntu<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Below is an entire firewall configuration to lock down most everything
 on a Debian or Ubuntu server, allowing traffic only through ports 22
 (SSH), 80 (HTTP), and 123 (NTP):</p>
@@ -869,7 +820,7 @@ New profiles: skip
 123/udp (v6)               ALLOW IN    Anywhere (v6)</code></pre></p>
 </div>
 </figure>
-<h4 id="chap12.xhtml_leanpub-auto-configuring-a-firewall-with-firewalld-on-redhat-fedora-or-centos">Configuring a firewall with <code>firewalld</code> on RedHat, Fedora, or CentOS</h4>
+<h4 id="chap12.xhtml_leanpub-auto-configuring-a-firewall-with-firewalld-on-redhat-fedora-or-centos">Configuring a firewall with <code>firewalld</code> on RedHat, Fedora, or CentOS<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The same firewall configuration can be done via <code>firewalld</code> for
 RedHat-based systems with similar ease:</p>
 <figure class="code">
@@ -932,7 +883,7 @@ lock down ports or IP addresses that will lock you out of the server
 entirely, otherwise you&rsquo;ll have to connect to the server through a local
 terminal connection and start over!</p>
 </aside>
-<h3 id="chap12.xhtml_leanpub-auto-make-sure-log-files-are-populated-and-rotated">Make sure log files are populated and rotated</h3>
+<h3 id="chap12.xhtml_leanpub-auto-make-sure-log-files-are-populated-and-rotated">Make sure log files are populated and rotated<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Checking server logs is one of the most effective ways to not only see
 what attacks have taken place on a server, but also to see trends over
 time and predict high-traffic periods, potential attack vectors, and
@@ -971,7 +922,7 @@ a bit too large. There are a number of <code>logrotate</code> roles on Ansible
 Galaxy (e.g. <a href="https://galaxy.ansible.com/list#/roles/1117" rel="external" target="_blank">Nick Hammond&rsquo;s <code>logrotate</code>
 role</a>) that make rotation
 configuration easy.</p>
-<h3 id="chap12.xhtml_leanpub-auto-monitor-logins-and-block-suspect-ip-addresses">Monitor logins and block suspect IP addresses</h3>
+<h3 id="chap12.xhtml_leanpub-auto-monitor-logins-and-block-suspect-ip-addresses">Monitor logins and block suspect IP addresses<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>If you&rsquo;ve ever set up a new server on the public internet and enabled
 SSH on port 22 with password-based login enabled, you know how quickly
 the deluge of script-based logins begins. Many honeypot servers detect
@@ -1004,7 +955,7 @@ distributions:</p>
 defaults in a local override file, <code>/etc/fail2ban/jail.local</code>. See the
 <a href="http://www.fail2ban.org/wiki/index.php/MANUAL_0_8" rel="external" target="_blank">Fail2Ban manual</a> for
 more information.</p>
-<h3 id="chap12.xhtml_leanpub-auto-use-selinux-security-enhanced-linux-or-apparmor">Use SELinux (Security-Enhanced Linux) or AppArmor</h3>
+<h3 id="chap12.xhtml_leanpub-auto-use-selinux-security-enhanced-linux-or-apparmor">Use SELinux (Security-Enhanced Linux) or AppArmor<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>SELinux and AppArmor are two different tools which allow you to
 construct security sandboxes for memory and filesystem access, so, for
 example, one application can&rsquo;t easily access another application&rsquo;s
@@ -1068,7 +1019,7 @@ an excellent and concise introduction.</p>
 <p>Next time you&rsquo;re tempted to disable SELinux instead of fixing the
 underlying problem, spend a little time investigating the correct
 boolean settings to configuring your system correctly for SELinux.</p>
-<h3 id="chap12.xhtml_leanpub-auto-summary-and-further-reading">Summary and further reading</h3>
+<h3 id="chap12.xhtml_leanpub-auto-summary-and-further-reading">Summary and further reading<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>This chapter contains a broad overview of some Linux security best
 practices, and how Ansible helps you conform to them. There is a wealth
 of good information on the Internet to help you secure your servers,
@@ -1214,8 +1165,8 @@ geerlingguy</a>.</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1241,23 +1192,23 @@ geerlingguy</a>.</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

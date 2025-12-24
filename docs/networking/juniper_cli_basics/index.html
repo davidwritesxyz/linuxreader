@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Juniper Basics">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Juniper CLI Basics :: Linux Reader">
     <meta name="twitter:description" content="Juniper Basics">
-    <meta property="og:url" content="https://linuxreader.com/networking/juniper_cli_basics/">
+    <meta property="og:url" content="http://localhost:1313/networking/juniper_cli_basics/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Juniper CLI Basics :: Linux Reader">
     <meta property="og:description" content="Juniper Basics">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Juniper Basics">
     <meta itemprop="wordCount" content="944">
     <title>Juniper CLI Basics :: Linux Reader</title>
-    <link href="/networking/juniper_cli_basics/index.xml" rel="alternate" type="application/rss+xml" title="Juniper CLI Basics :: Linux Reader">
-    <link href="/networking/juniper_cli_basics/index.print.html" rel="alternate" type="text/html" title="Juniper CLI Basics :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/networking\/juniper_cli_basics\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/how-to-study-for-the-ccna-exam/" title="How to Study for the CCNA Exam (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/networking/how-to-study-for-the-ccna-exam/" title="How to Study for the CCNA Exam (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -234,12 +188,9 @@
             Juniper CLI Basics
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/juniper_cli_basics/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/ccna/ccna-notes/my-ccna-notes/" title="My CCNA Notes (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/networking/ccna/ccna-notes/my-ccna-notes/" title="My CCNA Notes (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -260,15 +211,15 @@
 
 <h1 id="juniper-cli-basics">Juniper CLI Basics</h1>
 
-<h2 id="connection-methods">Connection Methods</h2>
-<h4 id="factory-default-login">Factory default login:</h4>
+<h2 id="connection-methods">Connection Methods<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h4 id="factory-default-login">Factory default login:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>User: root<br>
 No password</p>
-<h4 id="fxpo">Fxpo</h4>
+<h4 id="fxpo">Fxpo<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Ethernet management interface</p>
-<h4 id="ssh-ftp-telnet-https">SSH, FTP. Telnet, http(s)</h4>
+<h4 id="ssh-ftp-telnet-https">SSH, FTP. Telnet, http(s)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Cannot route traffic and is used for management purposes only.</p>
-<h3 id="initial-login">Initial Login</h3>
+<h3 id="initial-login">Initial Login<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Logging for the First Time<br>
 • Nonroot users are placed into the CLI automatically<br>
 • Root user SSH login requires explicit config<br>
@@ -293,30 +244,30 @@ cli<br>
 Shell Prompt<br>
 CLI Prompt &ldquo;&gt;</li>
 </ul>
-<h2 id="cli-modes">CLI Modes</h2>
+<h2 id="cli-modes">CLI Modes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>configure</p>
 <p>Configure mode . New candidate config file</p>
-<h3 id="configure-private-best-practice">configure private (best practice)</h3>
+<h3 id="configure-private-best-practice">configure private (best practice)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Configure mode with a private candidate file</p>
 <p>Other users logged in will not make changes to this file</p>
 <p>Private Files comitted are merged into active config</p>
 <p>Whoever commits last wins if there are matching commands</p>
 <p>Can&rsquo;t commit until you are at the top of the configuration (in private mode)</p>
-<h3 id="configure-exclusive">configure exclusive</h3>
+<h3 id="configure-exclusive">configure exclusive<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Locks config database</p>
 <p>Can be killed by admin</p>
 <p>No other user can edit config while you are in this mode</p>
-<h3 id="edit-top">(edit) top</h3>
+<h3 id="edit-top">(edit) top<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Goes back to the top of the configuration tree</p>
 <p>Candidate Config Files</p>
-<h3 id="commit">commit</h3>
+<h3 id="commit">commit<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Turns candidate config file into active</p>
 <p>Warning will show if candidate config is already being edited</p>
 <p>Commiting Configurations</p>
 <p>Rollback files are last three Active configurations and stored in /config/(the current active are stored here as well)</p>
 <p>4-49 are stores in /var/config/</p>
 <p>Shows timestamp for the last time the file was active</p>
-<h3 id="rollback-1">rollback 1</h3>
+<h3 id="rollback-1">rollback 1<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Places rollback file one into the candidate config, must commit to make it active</p>
 <p>CLI Help, Auto complete</p>
 <p>Can type ? To show available commands</p>
@@ -324,16 +275,16 @@ CLI Prompt &ldquo;&gt;</li>
 <p>Show version info, hostname, and model</p>
 <p>#&gt;Configure</p>
 <p>goes into configure mode</p>
-<h3 id="set-system-host-name-hostname">set system host-name hostname</h3>
+<h3 id="set-system-host-name-hostname">set system host-name hostname<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>set&rsquo;s hostname</p>
-<h3 id="delete-system-host-name">delete system host-name</h3>
+<h3 id="delete-system-host-name">delete system host-name<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>deletes set hostname</p>
-<h3 id="edit-routing-options-static">edit routing-options static</h3>
+<h3 id="edit-routing-options-static">edit routing-options static<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>edit routing options mode</p>
-<h3 id="exit">exit</h3>
+<h3 id="exit">exit<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>exit</p>
 <p>Junos will let you know that config hasn&rsquo;t been committed and ask if you want to commit</p>
-<h3 id="rollback-0">rollback 0</h3>
+<h3 id="rollback-0">rollback 0<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>throwaway all changes to active candidate</p>
 <p>#&gt; help topic routing-options static</p>
 <p>shows info page for topic specified</p>
@@ -349,64 +300,64 @@ CLI Prompt &ldquo;&gt;</li>
 <p>will show user defined options for autocomplete as well</p>
 <p>Navigating Configuration Mode</p>
 <p>When you go into config mode the running config is copied into a candidate file that you will be working on</p>
-<h3 id="show">show</h3>
+<h3 id="show">show<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>if in configure mode, displays the entire candidate configuration</p>
-<h3 id="edit">edit</h3>
+<h3 id="edit">edit<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>similar to cd</p>
-<h3 id="edit-protocols-ospf">edit protocols ospf</h3>
+<h3 id="edit-protocols-ospf">edit protocols ospf<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>goes to the protocols/ospf heirarchy config mode</p>
 <p>if you run show commend it will show the contents of hierarchy from wherever you are.</p>
-<h3 id="top">top</h3>
+<h3 id="top">top<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>goes to the top of the hierarchy. Like cd to / in Linux</p>
 <p>must be at the top to commit changes</p>
-<h3 id="show-protocols-ospf">show protocols ospf</h3>
+<h3 id="show-protocols-ospf">show protocols ospf<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>selects which part of the hierarchy to show</p>
 <p>will only see this if you are above the option you want to show in the hierarchy</p>
 <p>can bypass this with:</p>
-<h3 id="top-show-routing-options-static">top show routing-options static</h3>
+<h3 id="top-show-routing-options-static">top show routing-options static<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>same thing happens with the edit command</p>
-<h3 id="top-edit-routing-options">top edit routing-options</h3>
+<h3 id="top-edit-routing-options">top edit routing-options<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>same fix</p>
 <p>Editing, Renaming, and Comparing Configuration</p>
-<h3 id="up">up</h3>
+<h3 id="up">up<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>moves up one level in the hierarchy</p>
 <p>there is a protion in this video wioth vlan and interface configuration, come back if this isn&rsquo;t covered elsewhere</p>
-<h3 id="up-2">up 2</h3>
+<h3 id="up-2">up 2<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>jump up 2 levels</p>
-<h3 id="rollback-">rollback ?</h3>
+<h3 id="rollback-">rollback ?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>shows all the rollback files on the system</p>
-<h3 id="run-show-system-uptime">run show system uptime</h3>
+<h3 id="run-show-system-uptime">run show system uptime<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>run is like &ldquo;do&rdquo; in cisco, can run command from anywhere</p>
-<h3 id="rollback-1-1">rollback 1</h3>
+<h3 id="rollback-1-1">rollback 1<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>rolls config back to rollback 1 file</p>
-<h3 id="show--compare">show | compare</h3>
+<h3 id="show--compare">show | compare<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>show things to be removed added with - or +</p>
-<h3 id="exit-1">exit</h3>
+<h3 id="exit-1">exit<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Also brings you to the top of config file</p>
 <p>Replace, Copy, or annotate Configuration</p>
-<h3 id="copy-ge-001-to-ge-002">copy ge-0/0/1 to ge-0/0/2</h3>
+<h3 id="copy-ge-001-to-ge-002">copy ge-0/0/1 to ge-0/0/2<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>makes a copy of the config</p>
-<h3 id="show-ge-000">show ge-0/0/0</h3>
-<h3 id="edit-ge-000">edit ge-0/0/0</h3>
+<h3 id="show-ge-000">show ge-0/0/0<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h3 id="edit-ge-000">edit ge-0/0/0<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Edit interfaces mode</p>
 <p>#(int) replace pattern 0.101 with 200.102</p>
 <p>Replaces the pattern of the ip address</p>
 <p>#(int) replace pattern /24 with /25</p>
 <p>Replace mask</p>
 <p>If using replace commands don&rsquo;t commit the config without running the #top show | compare command to verify. You may have run the compare command from one place.</p>
-<h3 id="top-edit-protocols-ospf">top edit protocols ospf</h3>
+<h3 id="top-edit-protocols-ospf">top edit protocols ospf<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Go into ospf edit</p>
-<h3 id="deactivate-interface-ge-0000">deactivate interface ge-0/0/0.0</h3>
+<h3 id="deactivate-interface-ge-0000">deactivate interface ge-0/0/0.0<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Remove interface from ospf</p>
-<h3 id="annotate-interface-ge-000-took-down-due-to-flapping">annotate interface ge-0/0/0 &ldquo;took down due to flapping&rdquo;</h3>
+<h3 id="annotate-interface-ge-000-took-down-due-to-flapping">annotate interface ge-0/0/0 &ldquo;took down due to flapping&rdquo;<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>C style programming comment</p>
 <p>Load merge Configuration</p>
-<h3 id="run-file-list">run file list</h3>
+<h3 id="run-file-list">run file list<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>ls -l basically</p>
-<h3 id="run-file-show-top-int-config">run file show top-int-config</h3>
+<h3 id="run-file-show-top-int-config">run file show top-int-config<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Display contents of top-int-config</p>
-<h3 id="paste-config-on-a-juniper-switch">Paste Config on a Juniper Switch</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>cli
+<h3 id="paste-config-on-a-juniper-switch">Paste Config on a Juniper Switch<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>cli
 top
 delete
 configure
@@ -414,8 +365,8 @@ load set terminal
 ctrl+shift +D to exit
 commit check
 commit and-quit</code></pre></div>
-<h2 id="juniper-command-equivalent-to-cisco-commands">Juniper command equivalent to Cisco commands</h2>
-<h3 id="basic-cli-and-systems-management">Basic CLI and Systems Management</h3>
+<h2 id="juniper-command-equivalent-to-cisco-commands">Juniper command equivalent to Cisco commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="basic-cli-and-systems-management">Basic CLI and Systems Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Commands</p>
 <p>clock set  &gt; set date<br>
 reload  &gt; request system reboot<br>
@@ -426,22 +377,22 @@ show running config  &gt; show configuration<br>
 show users  &gt; show system users<br>
 show version  &gt; show version | show chassis hardware <br>
 trace  &gt; traceroute</p>
-<h3 id="switching-commands">Switching Commands</h3>
+<h3 id="switching-commands">Switching Commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>show ethernet-switching interfaces<br>
 show spanning-tree  &gt; show spanning-tree bridge<br>
 show mac address-table  &gt; show ethernet-switching table</p>
-<h3 id="ospf-commands">OSPF Commands</h3>
+<h3 id="ospf-commands">OSPF Commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>show ip ospf database  &gt; show ospf database<br>
 show ip ospf interface  &gt; show ospf interface<br>
 show ip ospf neighbor  &gt; show ospf neighbor</p>
-<h3 id="routing-protocol-independent-commands">Routing Protocol-Independent Commands</h3>
+<h3 id="routing-protocol-independent-commands">Routing Protocol-Independent Commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>clear arp-cache  &gt; clear arp<br>
 show arp  &gt; show arp<br>
 show ip route  &gt; show route<br>
 show ip route summary  &gt; show route summary<br>
 show route-map  &gt; show policy | policy-name<br>
 show tcp  &gt; show system connections</p>
-<h3 id="interface-commands">Interface Commands</h3>
+<h3 id="interface-commands">Interface Commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>clear counters  &gt; clear interface statistics<br>
 show interfaces  &gt; show interfaces<br>
 show interfaces detail  &gt; show interfaces extensive<br>
@@ -525,8 +476,8 @@ show ip interface brief  &gt; show interfaces terse</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -552,23 +503,23 @@ show ip interface brief  &gt; show interfaces terse</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

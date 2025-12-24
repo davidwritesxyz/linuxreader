@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="Sync obsidian dirs to hugo dirs: rsync -av --delete source destination –delete flag deletes files in the destination directory if they do not exist in the source
 #!/bin/bash rsync -av --delete ~/Documents/content/booknotes ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/&#39;health and fitness&#39; ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/images ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/linux ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/networking ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/now ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/philosophy ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/python ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/Recipes ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/Recommended ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/tools ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/writing ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/_index.md ~/Documents/blog/content/ cd /home/david/Documents/blog &amp;&amp; hugo &amp;&amp; if ! nmcli connection show --active | grep -q &#34;Primary&#34;; then echo &#34;Starting VPN...&#34; nmcli connection up id &#34;Primary&#34; sleep 5 fi rsync -rtvzP ~/Documents/blog/docs/ {username}@{ip-address}:/var/www/public Using inotify to monitor obsidian and run the update script whenever there are changes: sudo dnf -y install inotify-tools">
@@ -12,7 +12,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="Sync obsidian dirs to hugo dirs: rsync -av --delete source destination –delete flag deletes files in the destination directory if they do not exist in the source
 #!/bin/bash rsync -av --delete ~/Documents/content/booknotes ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/&#39;health and fitness&#39; ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/images ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/linux ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/networking ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/now ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/philosophy ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/python ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/Recipes ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/Recommended ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/tools ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/writing ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/_index.md ~/Documents/blog/content/ cd /home/david/Documents/blog &amp;&amp; hugo &amp;&amp; if ! nmcli connection show --active | grep -q &#34;Primary&#34;; then echo &#34;Starting VPN...&#34; nmcli connection up id &#34;Primary&#34; sleep 5 fi rsync -rtvzP ~/Documents/blog/docs/ {username}@{ip-address}:/var/www/public Using inotify to monitor obsidian and run the update script whenever there are changes: sudo dnf -y install inotify-tools">
-    <meta property="og:url" content="https://linuxreader.com/tools/obsidian-site-setup/">
+    <meta property="og:url" content="http://localhost:1313/tools/obsidian-site-setup/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:description" content="Sync obsidian dirs to hugo dirs: rsync -av --delete source destination –delete flag deletes files in the destination directory if they do not exist in the source
 #!/bin/bash rsync -av --delete ~/Documents/content/booknotes ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/&#39;health and fitness&#39; ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/images ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/linux ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/networking ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/now ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/philosophy ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/python ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/Recipes ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/Recommended ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/tools ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/writing ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/_index.md ~/Documents/blog/content/ cd /home/david/Documents/blog &amp;&amp; hugo &amp;&amp; if ! nmcli connection show --active | grep -q &#34;Primary&#34;; then echo &#34;Starting VPN...&#34; nmcli connection up id &#34;Primary&#34; sleep 5 fi rsync -rtvzP ~/Documents/blog/docs/ {username}@{ip-address}:/var/www/public Using inotify to monitor obsidian and run the update script whenever there are changes: sudo dnf -y install inotify-tools">
@@ -23,39 +23,35 @@
 #!/bin/bash rsync -av --delete ~/Documents/content/booknotes ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/&#39;health and fitness&#39; ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/images ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/linux ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/networking ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/now ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/philosophy ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/python ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/Recipes ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/Recommended ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/tools ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/writing ~/Documents/blog/content/ rsync -av --delete ~/Documents/content/_index.md ~/Documents/blog/content/ cd /home/david/Documents/blog &amp;&amp; hugo &amp;&amp; if ! nmcli connection show --active | grep -q &#34;Primary&#34;; then echo &#34;Starting VPN...&#34; nmcli connection up id &#34;Primary&#34; sleep 5 fi rsync -rtvzP ~/Documents/blog/docs/ {username}@{ip-address}:/var/www/public Using inotify to monitor obsidian and run the update script whenever there are changes: sudo dnf -y install inotify-tools">
     <meta itemprop="wordCount" content="669">
     <title></title>
-    <link href="/tools/obsidian-site-setup/index.xml" rel="alternate" type="application/rss+xml" title="">
-    <link href="/tools/obsidian-site-setup/index.print.html" rel="alternate" type="text/html" title="">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/tools\/obsidian-site-setup\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -63,14 +59,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -98,49 +94,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -160,14 +114,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/" title="Tools (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tools/" title="Tools (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -193,12 +147,9 @@
             
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/obsidian-site-setup/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/calibre-web-with-docker-and-nginx/" title="Calibre Web with Docker and NGINX (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tools/calibre-web-with-docker-and-nginx/" title="Calibre Web with Docker and NGINX (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -222,7 +173,7 @@
 <p>Sync obsidian dirs to hugo dirs:
 <code>rsync -av --delete source destination</code>
 &ndash;delete flag deletes files in the destination directory if they do not exist in the source</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>#!/bin/bash
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>#!/bin/bash
 rsync -av --delete ~/Documents/content/booknotes ~/Documents/blog/content/
 rsync -av --delete ~/Documents/content/&#39;health and fitness&#39; ~/Documents/blog/content/
 rsync -av --delete ~/Documents/content/images ~/Documents/blog/content/
@@ -247,11 +198,11 @@ if ! nmcli connection show --active | grep -q &#34;Primary&#34;;
 fi
 
 rsync -rtvzP ~/Documents/blog/docs/ {username}@{ip-address}:/var/www/public</code></pre></div>
-<h3 id="using-inotify-to-monitor-obsidian-and-run-the-update-script-whenever-there-are-changes">Using inotify to monitor obsidian and run the update script whenever there are changes:</h3>
+<h3 id="using-inotify-to-monitor-obsidian-and-run-the-update-script-whenever-there-are-changes">Using inotify to monitor obsidian and run the update script whenever there are changes:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><code>sudo dnf -y install inotify-tools</code></p>
 <p>Script to monitor the folder:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim ~/Documents/Scripts/obsidian_monitor.sh</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim ~/Documents/Scripts/obsidian_monitor.sh</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span>
 </span></span><span style="display:flex;"><span>inotifywait -m -r -e modify,create,delete <span style="color:#5af78e">&#34;~/Documents/content/&#34;</span> | <span style="color:#ff6ac1">while</span> <span style="color:#ff5c57">read</span> path action file; <span style="color:#ff6ac1">do</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;Change detected: </span><span style="color:#ff5c57">$action</span><span style="color:#5af78e"> on </span><span style="color:#ff5c57">$file</span><span style="color:#5af78e">&#34;</span>
@@ -260,8 +211,8 @@ rsync -rtvzP ~/Documents/blog/docs/ {username}@{ip-address}:/var/www/public</cod
 <p>Make script executable:
 <code>chmod +x ~/Documents/Scripts/obsidian_monitor.sh</code></p>
 <p>Create startup script ~/.config/systemd/user/obsidian-monitor.service</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim ~/.config/systemd/user/obsidian-monitor.service </span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>Unit<span style="color:#ff6ac1">]</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim ~/.config/systemd/user/obsidian-monitor.service </span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>Unit<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">Description</span><span style="color:#ff6ac1">=</span>Obsidian Monitor
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">After</span><span style="color:#ff6ac1">=</span>network.target
@@ -274,33 +225,33 @@ rsync -rtvzP ~/Documents/blog/docs/ {username}@{ip-address}:/var/www/public</cod
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>Install<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">WantedBy</span><span style="color:#ff6ac1">=</span>multi-user.target</span></span></code></pre></div>
 <p>Reload systemd, enable, and start the service:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl --user daemon-reload
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl --user daemon-reload
 </span></span><span style="display:flex;"><span>systemctl --user <span style="color:#ff5c57">enable</span> obsidian-monitor.service
 </span></span><span style="display:flex;"><span>systemctl --user start obsidian-monitor.service</span></span></code></pre></div>
 <p>Run <code>hugo</code> to build the html</p>
-<h3 id="on-the-server">On the server</h3>
+<h3 id="on-the-server">On the server<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Create the directory for the html files:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p /var/www/public</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p /var/www/public</span></span></code></pre></div>
 <p>From your laptop, yeet the files over to the /var/www directory on the server:
 `rsync -rtvzP ~/Documents/blog/docs/ {username}@{servername or ip}:/var/www/public</p>
 <p>Update file owner and permissions:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo find /var/www/public -type d -exec chmod +x <span style="color:#ff6ac1">{}</span> <span style="color:#5af78e">\;</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo find /var/www/public -type d -exec chmod +x <span style="color:#ff6ac1">{}</span> <span style="color:#5af78e">\;</span>
 </span></span><span style="display:flex;"><span>sudo find /var/www/public -type f -exec chmod <span style="color:#ff9f43">644</span> <span style="color:#ff6ac1">{}</span> <span style="color:#5af78e">\;</span>
 </span></span><span style="display:flex;"><span>sudo chown -R apache:apache /var/www/public</span></span></code></pre></div>
 <p>Check active vhosts:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>httpd -D DUMP_VHOSTS  </span></span></code></pre></div>
-<h3 id="firewall-permissions">Firewall Permissions</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>httpd -D DUMP_VHOSTS  </span></span></code></pre></div>
+<h3 id="firewall-permissions">Firewall Permissions<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>You will need to make sure your firewall allows port 80 and 443. Vultr installs the ufw program by default. But your can install it if you used a different provider. Beware, enabling a firewalll could block you from accessing your vm, so do your research before tinkering outside of these instructions.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo firewall-cmd --add-service https --permanent
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo firewall-cmd --add-service https --permanent
 </span></span><span style="display:flex;"><span>sudo firewall-cmd --add-service http --permanent</span></span></code></pre></div>
-<h3 id="setting-up-the-apache-server">Setting up the Apache Server</h3>
+<h3 id="setting-up-the-apache-server">Setting up the Apache Server<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Install apache:
 <code>sudo dnf -y install httpd</code></p>
 <p>Comment out <code>ServerName</code> and <code>DocumentRoot</code> directives in /etc/httpd/conf/httpd.conf file.</p>
 <p>Get rid of userdir.conf
 <code>sudo mv /etc/httpd/conf.d/userdir.conf /etc/httpd/conf.d/userdir.conf.old</code></p>
 <p>Comment out /etc/httpd/conf.d/welcome.conf:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e"># </span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e"># </span>
 </span></span><span style="display:flex;"><span><span style="color:#78787e"># This configuration file enables the default &#34;Welcome&#34; page if there</span>
 </span></span><span style="display:flex;"><span><span style="color:#78787e"># is no default index page present for the root URL.  To disable the</span>
 </span></span><span style="display:flex;"><span><span style="color:#78787e"># Welcome page, comment out all the lines below. </span>
@@ -322,7 +273,7 @@ rsync -rtvzP ~/Documents/blog/docs/ {username}@{ip-address}:/var/www/public</cod
 </span></span><span style="display:flex;"><span><span style="color:#78787e">#Alias /system_noindex_logo.png /usr/share/httpd/icons/system_noindex_logo.png</span></span></span></code></pre></div>
 <p>Create vhost file:
 <code>sudo vim /etc/httpd/conf.d/vhost_{sitename}.com</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>&lt;VirtualHost *:80&gt;
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>&lt;VirtualHost *:80&gt;
     ServerAdmin webmaster@{sitename}.com
     DocumentRoot /var/www/public
     ServerName {sitename}.com
@@ -333,18 +284,18 @@ rsync -rtvzP ~/Documents/blog/docs/ {username}@{ip-address}:/var/www/public</cod
 &lt;/VirtualHost&gt;</code></pre></div>
 <p>Enable the apache service now and at startup:
 <code>sudo systemctl enable --now httpd</code></p>
-<h4 id="use-certbot-to-generate-certs-for-ssltls">Use certbot to generate certs for SSL/TLS:</h4>
+<h4 id="use-certbot-to-generate-certs-for-ssltls">Use certbot to generate certs for SSL/TLS:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Install certbot:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Sudo dnf -y install epel-release
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Sudo dnf -y install epel-release
 </span></span><span style="display:flex;"><span>sudo dnf install certbot python3-certbot-apache -y</span></span></code></pre></div>
 <p>Restore selinux contexts:
 <code>sudo restorecon -Rv /var/www/public</code></p>
 <p>Restart the httpd service:
 <code>sudo systemctl restart httpd</code></p>
-<h3 id="set-up-a-cronjob-to-automatically-renew-certbot-certs">Set Up a Cronjob to automatically Renew certbot certs</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>crontab -e</code></pre></div>
+<h3 id="set-up-a-cronjob-to-automatically-renew-certbot-certs">Set Up a Cronjob to automatically Renew certbot certs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>crontab -e</code></pre></div>
 <p>Select a text editor and add this line to the end of the file. Then save and exit the file:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>0 0 1 * * certbot --httpd renew</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>0 0 1 * * certbot --httpd renew</code></pre></div>
 <p>You now have a running website. Just make new posts locally, the run &ldquo;hugo&rdquo; to rebuild the site. And use the rsync alias to update the folder on your server. I will soon be making tutorials on making an email address for your domain, such as <a href="mailto:david@perfectdarkmode.com" rel="external" target="_blank">david@perfectdarkmode.com</a> on my site. I will also be adding a comments section, RSS feed, email subscription, sidebar, and more.</p>
 <p>Feel free to reach out with any questions if you get stuck. This is meant to be an all encompassing guide. So I want it to work.</p>
 
@@ -426,8 +377,8 @@ rsync -rtvzP ~/Documents/blog/docs/ {username}@{ip-address}:/var/www/public</cod
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -453,23 +404,23 @@ rsync -rtvzP ~/Documents/blog/docs/ {username}@{ip-address}:/var/www/public</cod
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

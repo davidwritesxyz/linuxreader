@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="9 Spanning Tree Protocol Concepts 2.0 Network Access 2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)2.5 Describe the need for and basic operations of Rapid PVST&#43; Spanning Tree Protocol and identify basic operations 2.5.a Root port, root bridge (primary/secondary), and other port names2.5.b Port states (forwarding/blocking) 2.5.c PortFast benefits RSTP is most common nowCisco defaults to RSTP
 MAC table instability The switches arrive on different ports.MAC address tables keep changing because frames with the same source MAC
@@ -22,7 +22,7 @@ Multiple frame transmission side effect of looping framesMultiple copies are del
 What Spanning Tree Does interfaces does not process any frames except STP/RSTP messages and some other overhead messages blocking state STP Convergence switches collectively realize that something has changed in the LAN topology determine whether they need to change which ports block and which port forward
 How Spanning Tree works
 three criteria to choose whether to put and interface in forwarding state: STP puts all working interfaces on the root switch in forwarding state elect a root switch. select the port with the least administrative cost (root port)– cost between itself and the root switch (root cost) (root cost path)root port (RP) gets put in a forwarding state That switch is the designated switch, and that switch’s interface, attached to that The switch with the lowest root cost, as compared with the other switches attached to the same link, is placed in forwarding state. nonroot switches 9. Spanning Tree Protocol Concepts Monday, July 26, 2021 11:27 AM">
-    <meta property="og:url" content="https://linuxreader.com/networking/ccna/newccnanotes/9spanningtreeprotocolconcepts/">
+    <meta property="og:url" content="http://localhost:1313/networking/ccna/newccnanotes/9spanningtreeprotocolconcepts/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:description" content="9 Spanning Tree Protocol Concepts 2.0 Network Access 2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)2.5 Describe the need for and basic operations of Rapid PVST&#43; Spanning Tree Protocol and identify basic operations 2.5.a Root port, root bridge (primary/secondary), and other port names2.5.b Port states (forwarding/blocking) 2.5.c PortFast benefits RSTP is most common nowCisco defaults to RSTP
 MAC table instability The switches arrive on different ports.MAC address tables keep changing because frames with the same source MAC
@@ -43,39 +43,35 @@ How Spanning Tree works
 three criteria to choose whether to put and interface in forwarding state: STP puts all working interfaces on the root switch in forwarding state elect a root switch. select the port with the least administrative cost (root port)– cost between itself and the root switch (root cost) (root cost path)root port (RP) gets put in a forwarding state That switch is the designated switch, and that switch’s interface, attached to that The switch with the lowest root cost, as compared with the other switches attached to the same link, is placed in forwarding state. nonroot switches 9. Spanning Tree Protocol Concepts Monday, July 26, 2021 11:27 AM">
     <meta itemprop="wordCount" content="2882">
     <title></title>
-    <link href="/networking/ccna/newccnanotes/9spanningtreeprotocolconcepts/index.xml" rel="alternate" type="application/rss+xml" title="">
-    <link href="/networking/ccna/newccnanotes/9spanningtreeprotocolconcepts/index.print.html" rel="alternate" type="text/html" title="">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/networking\/ccna\/newccnanotes\/9spanningtreeprotocolconcepts\/';
       window.relearn.relBasePath='..\/..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -83,14 +79,14 @@ three criteria to choose whether to put and interface in forwarding state: STP p
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -118,49 +114,7 @@ three criteria to choose whether to put and interface in forwarding state: STP p
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -180,14 +134,14 @@ three criteria to choose whether to put and interface in forwarding state: STP p
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/" title="Networking (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/networking/" title="Networking (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"> 
                 </div>
@@ -200,12 +154,9 @@ three criteria to choose whether to put and interface in forwarding state: STP p
             
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/ccna/newccnanotes/9spanningtreeprotocolconcepts/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/consoling_in_to_mx80_from_linux/" title="Consoling in to MX80 from linux (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/networking/consoling_in_to_mx80_from_linux/" title="Consoling in to MX80 from linux (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -226,8 +177,8 @@ three criteria to choose whether to put and interface in forwarding state: STP p
 
 <h1 id=""></h1>
 
-<h1 id="9-spanning-tree-protocol-concepts">9 Spanning Tree Protocol Concepts</h1>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>2.0 Network Access
+<h1 id="9-spanning-tree-protocol-concepts">9 Spanning Tree Protocol Concepts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>2.0 Network Access
 2.4 Configure and verify (Layer 2/Layer 3) EtherChannel (LACP)2.5 Describe the need for and basic operations of Rapid PVST+ Spanning Tree Protocol and identify
 basic operations
 2.5.a Root port, root bridge (primary/secondary), and other port names2.5.b Port states (forwarding/blocking)
@@ -253,7 +204,7 @@ What Spanning Tree Does</li>
 <li>except STP/RSTP messages and some other overhead messages</li>
 <li>blocking state</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>STP Convergence</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>STP Convergence</code></pre></div>
 <ul>
 <li>switches collectively realize that something has changed in the LAN topology</li>
 <li>determine whether they need to change which ports block and which port forward<br>
@@ -261,7 +212,7 @@ How Spanning Tree works<br>
 three criteria to choose whether to put and interface in forwarding state:</li>
 <li>STP puts all working interfaces on the root switch in forwarding state</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>elect a root switch.</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>elect a root switch.</code></pre></div>
 <ul>
 <li>select the port with the least administrative cost (root port)&ndash; cost between itself and the root switch (root cost) (root cost path)root port (RP) gets put in a forwarding state
 <ul>
@@ -270,8 +221,8 @@ three criteria to choose whether to put and interface in forwarding state:</li>
 </li>
 <li>The switch with the lowest root cost, as compared with the other switches attached to the same link, is placed in forwarding state.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>nonroot switches</code></pre></div>
-<h1 id="9-spanning-tree-protocol-concepts-1">9. Spanning Tree Protocol Concepts</h1>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>nonroot switches</code></pre></div>
+<h1 id="9-spanning-tree-protocol-concepts-1">9. Spanning Tree Protocol Concepts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p>Monday, July 26, 2021 11:27 AM</p>
 <ul>
 <li>That switch is the designated switch, and that switch&rsquo;s interface, attached to that segment, is called the designated port (DP)</li>
@@ -281,17 +232,17 @@ three criteria to choose whether to put and interface in forwarding state:</li>
 <li>forwarding</li>
 <li>root switch is always the designated switch</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>All the root switches ports</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>All the root switches ports</code></pre></div>
 <ul>
 <li>forwarding</li>
 <li>port with the least cost to the root switch (lowest root cost)</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>All nonroot switch&#39;s root ports</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>All nonroot switch&#39;s root ports</code></pre></div>
 <ul>
 <li>forwardingswitch forwarding the Hello on to the segment with the lowest root cost is the designated<br>
 switch for the segment</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Each LAN&#39;s designated port</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Each LAN&#39;s designated port</code></pre></div>
 <ul>
 <li>
 <ul>
@@ -300,7 +251,7 @@ switch for the segment</li>
 </li>
 <li>frames received on these interfaces to not forward</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>All other working ports</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>All other working ports</code></pre></div>
 <p>The STP Bridge ID and Hello BPDU</p>
 <ul>
 <li>
@@ -423,7 +374,7 @@ to that switch’s cost to reach the root. In effect, the switch with the lower 
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Two additional tiebreakers are needed in some cases</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Two additional tiebreakers are needed in some cases</code></pre></div>
 <ul>
 <li>switch ports connected to endpoint devices should become DPs and settle into a forwarding state.</li>
 </ul>
@@ -439,7 +390,7 @@ switch to win the root election.</li>
 </li>
 <li>change the BID, the engineer can</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>to favor one link, give the ports on that link a lower cost, or to avoid a link, give the ports a
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>to favor one link, give the ports on that link a lower cost, or to avoid a link, give the ports a
 higher cost.</code></pre></div>
 <p>Link Costs<br>
 10 Mbps&ndash; 2,000,000100 (old)</p>
@@ -450,7 +401,7 @@ higher cost.</code></pre></div>
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>100Mbps</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>100Mbps</code></pre></div>
 <ul>
 <li>
 <ul>
@@ -458,17 +409,17 @@ higher cost.</code></pre></div>
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>1gbps</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>1gbps</code></pre></div>
 <ul>
 <li>2000</li>
 <li>2 (old)</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>10Gbps</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>10Gbps</code></pre></div>
 <ul>
 <li>200</li>
 <li>N/A (old)</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>100Gbps</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>100Gbps</code></pre></div>
 <ul>
 <li>
 <ul>
@@ -482,7 +433,7 @@ higher cost.</code></pre></div>
 <p><strong>(config) # spanning</strong> - Cisco Catalyst switches can be configured to use the long values as defaults <strong>- tree pathcost method long</strong></p>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>1Tbps</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>1Tbps</code></pre></div>
 <p>Details specific to STP<br>
 STP Activity When the Network Remains Stable</p>
 <ul>
@@ -496,7 +447,7 @@ When forwarding the Hello BPDU, each switch sets the root cost to that local swi
 calculated root cost. The switch also sets the “sender’s bridge ID” field to its own bridge ID. (The root’s bridge ID field is not changed.)</p>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Step 1. interfaces (those in a forwarding state).The root creates and sends a Hello BPDU, with a root cost of 0, out all its working
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Step 1. interfaces (those in a forwarding state).The root creates and sends a Hello BPDU, with a root cost of 0, out all its working
 Step 2. The nonroot switches receive the Hello on their root ports. After changing the
 Hello to list their own BID as the sender’s BID and listing that switch’s root cost, the switch forwards the Hello out all designated ports.
 Step 3. Steps 1 and 2 repeat until something changes.
@@ -507,20 +458,20 @@ tree topology.</code></pre></div>
 All switches use the timers as dictated by the root switch, which the root lists in its<br>
 periodic Hello BPDU messages.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>STP Timers That Manage STP Convergence</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>periodic Hello BPDU messages.</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>STP Timers That Manage STP Convergence</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>periodic Hello BPDU messages.</code></pre></div>
 <ul>
 <li>2 seconds by default</li>
 <li>Period between hellos created by the root</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>hello</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>hello</code></pre></div>
 <ul>
 <li>10 times the hello (20 seconds by default hello)How long the switch will go without receiving any hellos before it attempts to<br>
 change the stp topology</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>MaxAge</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Forward Delay-- 15 secondshow long the port stays in listening and learning state</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>After MaxAge expires, the switch essentially makes all its STP choices again, based on any
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>MaxAge</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Forward Delay-- 15 secondshow long the port stays in listening and learning state</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>After MaxAge expires, the switch essentially makes all its STP choices again, based on any
 Hellos it receives from other switches.</code></pre></div>
 <p>Changing Interface States with STP<br>
 Roles, like root port and designated port, relate to how STP analyzes the LAN topology.<br>
@@ -541,7 +492,7 @@ received from each MAC address during this period.</p>
 <p>Transitory</p>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Listening:</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Listening:</code></pre></div>
 <ul>
 <li>
 <ul>
@@ -550,7 +501,7 @@ received from each MAC address during this period.</p>
 </li>
 <li>Transitory</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Learning:</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Learning:</code></pre></div>
 <ul>
 <li>does not forward frames</li>
 <li>
@@ -559,7 +510,7 @@ received from each MAC address during this period.</p>
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Blocking</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Blocking</code></pre></div>
 <ul>
 <li>learns mac addresses</li>
 <li>
@@ -568,7 +519,7 @@ received from each MAC address during this period.</p>
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Forwarding</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Forwarding</code></pre></div>
 <ul>
 <li>
 <ul>
@@ -576,7 +527,7 @@ received from each MAC address during this period.</p>
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Disabled</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Disabled</code></pre></div>
 <p>blocking &gt; listening, &gt; learning &gt; forwarding.<br>
 STP leaves the interface in each interim state for a time equal to the forward delay timer, which defaults to 15 seconds.<br>
 a convergence event that causes an interface to change from blocking to forwarding<br>
@@ -591,7 +542,7 @@ Rapid STP Concepts</p>
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Comparing STP and RSTP</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Comparing STP and RSTP</code></pre></div>
 <ul>
 <li>elect the root switch using the same rules and tiebreakers.</li>
 <li>
@@ -605,7 +556,7 @@ Rapid STP Concepts</p>
 <li>they can both be used in the same network.</li>
 <li>RSTP improves network convergence when topology changes occur, usually converging within a few seconds (or in slow conditions, in about 10 seconds).</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>RSTP defines more cases in which the switch can avoid waiting for a timer to expire, such as the following:
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>RSTP defines more cases in which the switch can avoid waiting for a timer to expire, such as the following:
 a switch can replace its root port, without any waiting to reach a forwarding state (in some
 conditions).</code></pre></div>
 <ul>
@@ -618,7 +569,7 @@ conditions).</code></pre></div>
 <li>uses the term alternate port to refer to a switch’s other ports that could be used as the root port if the root port ever fails.<br>
 The backup port concept provides a backup port on the local switch for a designated port.- backup ports apply only to designs that use hubs, so they are unlikely to be useful today.)</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>RSTP Port roles</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>RSTP Port roles</code></pre></div>
 <ul>
 <li>
 <p>Nonroot switch&rsquo;s port that has the best path to the root<br>
@@ -633,8 +584,8 @@ Designated port- port designated to forward onto a collision domain</p>
 <p>Replaces designated port when designated port fails</p>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Backup Port</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Disabled ports- administratively disabled</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Backup Port</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Disabled ports- administratively disabled</code></pre></div>
 <ul>
 <li>each switch independently generates its own Hellos.
 <ul>
@@ -647,7 +598,7 @@ Designated port- port designated to forward onto a collision domain</p>
 <ul>
 <li>both the RP and the alternate port must receive Hellos that identify the same root switch.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>alternate port</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>alternate port</code></pre></div>
 <ul>
 <li>
 <ul>
@@ -656,10 +607,10 @@ Designated port- port designated to forward onto a collision domain</p>
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>without waiting on any timers, the switch changes roles and state for the alternate
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>without waiting on any timers, the switch changes roles and state for the alternate
 port:</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>the switch changes the former root port’s role and state:</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>the new root port also does not need to spend time in other states, such as learning state,
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>the switch changes the former root port’s role and state:</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>the new root port also does not need to spend time in other states, such as learning state,
 instead moving immediately to forwarding state.</code></pre></div>
 <ul>
 <li>Step 1. The link between SW1 and SW3 fails, so SW3’s current root port (Gi0/1) fails.<br>
@@ -690,7 +641,7 @@ As a result, RSTP creates more scenarios in which a formerly discarding port can
 learning state, as shown in the example in Figure 9-9.</p>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>RSTP backup port role creates a way for RSTP to quickly replace a switch’s designated port
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>RSTP backup port role creates a way for RSTP to quickly replace a switch’s designated port
 on some LAN.</code></pre></div>
 <p>RSTP Port Types<br>
 several links between two switches. RSTP considers these links to be point-to-point links<br>
@@ -720,25 +671,25 @@ PortFast</p>
 <p>allows a switch to immediately transition from blocking to forwarding, bypassing listening and learning states.</p>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>PortFast</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>only ports on which you can safely enable PortFast are ports on which you
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>PortFast</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>only ports on which you can safely enable PortFast are ports on which you
 know that no bridges, switches, or other STP-speaking devices are connected.</code></pre></div>
 <p>Cisco switches enable RSTP point-to-point edge ports by enabling PortFast on the<br>
 port.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>BPDU Guard</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>BPDU Guard</code></pre></div>
 <ul>
 <li>An attacker could connect a switch to one of these ports, one with a low STP/RSTP</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>An attacker could connect a switch to one of these ports, one with a low STP/RSTP priority value, and become the root switch. The new STP/RSTP topology could have
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>An attacker could connect a switch to one of these ports, one with a low STP/RSTP priority value, and become the root switch. The new STP/RSTP topology could have
 worse performance than the desired topology.</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Tactually forward much of the traffic in the LAN. Without the networking staff he attacker could plug into multiple ports, into multiple switches, become root, and
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Tactually forward much of the traffic in the LAN. Without the networking staff he attacker could plug into multiple ports, into multiple switches, become root, and
 realizing it, the attacker could use a LAN analyzer to copy large numbers of data
 frames sent through the LAN.</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Users could innocently harm the LAN when they buy and connect an inexpensive consumer LAN switch (one that does not use STP/RSTP). Such a switch, without any
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Users could innocently harm the LAN when they buy and connect an inexpensive consumer LAN switch (one that does not use STP/RSTP). Such a switch, without any
 STP/RSTP function, would not choose to block any ports and could cause a loop.</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Cisco BPDU Guard feature helps defeat these kinds of problems by disabling a port if
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Cisco BPDU Guard feature helps defeat these kinds of problems by disabling a port if
 any BPDUs are received on the port.that should be used only as an access port and never connected to another switch.So, this feature is particularly useful on ports</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>In addition, the BPDU Guard feature helps prevent problems with PortFast. PortFast
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>In addition, the BPDU Guard feature helps prevent problems with PortFast. PortFast
 should be enabled only on access ports that connect to user devices, not to other LAN switches. Using BPDU Guard on these same ports makes sense because if
 another switch connects to such a port, the local switch can disable the port before
 a loop is created.</code></pre></div>
@@ -822,8 +773,8 @@ a loop is created.</code></pre></div>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -849,23 +800,23 @@ a loop is created.</code></pre></div>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

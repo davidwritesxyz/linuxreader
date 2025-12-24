@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Podman Podman Podman">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Containers :: Linux Reader">
     <meta name="twitter:description" content="Podman Podman Podman">
-    <meta property="og:url" content="https://linuxreader.com/containers/containers-1/">
+    <meta property="og:url" content="http://localhost:1313/containers/containers-1/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Containers :: Linux Reader">
     <meta property="og:description" content="Podman Podman Podman">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Podman Podman Podman">
     <meta itemprop="wordCount" content="8407">
     <title>Containers :: Linux Reader</title>
-    <link href="/containers/containers-1/index.xml" rel="alternate" type="application/rss+xml" title="Containers :: Linux Reader">
-    <link href="/containers/containers-1/index.print.html" rel="alternate" type="text/html" title="Containers :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/containers\/containers-1\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/containers/" title="Containers (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/containers/" title="Containers (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -254,12 +208,9 @@
             Containers
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/containers/containers-1/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/cyber-security/" title="Cyber Security (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/cyber-security/" title="Cyber Security (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -280,7 +231,7 @@
 
 <h1 id="containers">Containers</h1>
 
-<h1 id="introduction-to-containers">Introduction to Containers</h1>
+<h1 id="introduction-to-containers">Introduction to Containers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <ul>
 <li>Take advantage of the native virtualization features available in the Linux kernel.</li>
 <li>Each container typically encapsulates one self-contained application that includes all dependencies such as library files, configuration files, software binaries, and services.</li>
@@ -318,7 +269,7 @@
 <p>Containerization is a growing trend for architecting and deploying applications, application components, and databases in real world environments.</p>
 </li>
 </ul>
-<h3 id="containers-and-the-linux-features">Containers and the Linux Features</h3>
+<h3 id="containers-and-the-linux-features">Containers and the Linux Features<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Container technology employs some of the core features available in the Linux kernel.</li>
 <li>These features include:
@@ -346,51 +297,51 @@
 <li>Impose security constraints thereby protecting processes from one another and the host operating system from running processes.</li>
 <li>Container technology employs these characteristics to run processes isolated in a highly secure environment with full control over what they can or cannot do.</li>
 </ul>
-<h2 id="benefits-of-using-containers">Benefits of Using Containers</h2>
-<h3 id="isolation">Isolation</h3>
+<h2 id="benefits-of-using-containers">Benefits of Using Containers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="isolation">Isolation<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Containers are not affected due to changes in the host operating system or in other hosted or containerized applications, as they run fully isolated from the rest of the environment.</li>
 </ul>
-<h3 id="loose-coupling">Loose Coupling</h3>
+<h3 id="loose-coupling">Loose Coupling<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Containerized applications are loosely coupled with the underlying operating system due to their self-containment and minimal level of dependency.</li>
 </ul>
-<h3 id="maintenance-independence">Maintenance Independence</h3>
+<h3 id="maintenance-independence">Maintenance Independence<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Maintenance is performed independently on individual containers.</li>
 </ul>
-<h3 id="less-overhead">Less Overhead</h3>
+<h3 id="less-overhead">Less Overhead<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Containers require fewer system resources than do bare metal and virtual servers.</li>
 </ul>
-<h3 id="transition-time">Transition Time</h3>
+<h3 id="transition-time">Transition Time<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Containers require a few seconds to start and stop.</li>
 </ul>
-<h3 id="transition-independence">Transition Independence</h3>
+<h3 id="transition-independence">Transition Independence<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Transitioning from one state to another (start or stop) is independent of other containers, and it does not affect or require a restart of any underlying host operating system service.</li>
 </ul>
-<h3 id="portability">Portability</h3>
+<h3 id="portability">Portability<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Containers can be migrated to other servers without modifications to the contained applications.</li>
 <li>Target servers may be bare metal or virtual and located on-premises or in the cloud.</li>
 </ul>
-<h3 id="reusability">Reusability</h3>
+<h3 id="reusability">Reusability<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>The same container image can be used to run identical containers in development, test, preproduction, and production environments.</li>
 <li>There is no need to rebuild the image.</li>
 </ul>
-<h3 id="rapidity">Rapidity</h3>
+<h3 id="rapidity">Rapidity<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>The container technology allows for accelerated application development, testing, deployment, patching, and scaling.</li>
 <li>There is no need for an exhaustive testing.</li>
 </ul>
-<h3 id="version-control">Version Control</h3>
+<h3 id="version-control">Version Control<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Container images can be version-controlled, which gives users the flexibility in choosing the right version to run a container.</li>
 </ul>
-<h3 id="container-home-bare-metal-or-virtual-machine">Container Home: Bare Metal or Virtual Machine</h3>
+<h3 id="container-home-bare-metal-or-virtual-machine">Container Home: Bare Metal or Virtual Machine<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Containers</p>
 <ul>
 <li>run directly on the underlying operating system whether it be running on a bare metal server or in a virtual machine.</li>
@@ -399,9 +350,9 @@
 <li>Share the same Linux kernel and require far fewer hardware resources than do virtual machines, which contributes to their speedy start and stop.</li>
 <li>Given the presence of an extra layer of hypervisor services, it may be more beneficial and economical to run containers directly on non-virtualized physical servers.</li>
 </ul>
-<p><a href="#R-image-77b10b02e92f2d0a0b3582bcc8a392d9" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/image-3RXCU9W7%201.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-77b10b02e92f2d0a0b3582bcc8a392d9"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/image-3RXCU9W7%201.jpg"></a></p>
-<h3 id="container-images-and-container-registries">Container Images and Container Registries</h3>
+<p><a href="#R-image-429971c9cbdfc3c0790dc49e3b91f8e0" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/image-3RXCU9W7%201.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-429971c9cbdfc3c0790dc49e3b91f8e0"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/image-3RXCU9W7%201.jpg"></a></p>
+<h3 id="container-images-and-container-registries">Container Images and Container Registries<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Launching a container requires a pre-packaged image to be available.</li>
 </ul>
@@ -468,7 +419,7 @@
 <p>Private registries may also require authentication for access.</p>
 </li>
 </ul>
-<h3 id="rootful-vs-rootless-containers">Rootful vs. Rootless Containers</h3>
+<h3 id="rootful-vs-rootless-containers">Rootful vs. Rootless Containers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
 <p>Containers can be launched with the root user privileges (sudo or directly as the root user).</p>
@@ -489,15 +440,15 @@
 <p>Rootless containers allow regular, unprivileged users to run containers without the ability to perform tasks that require privileged access.</p>
 </li>
 </ul>
-<h2 id="working-with-images-and-containers">Working with Images and Containers</h2>
-<h3 id="lab-install-necessary-container-support">Lab: Install Necessary Container Support</h3>
+<h2 id="working-with-images-and-containers">Working with Images and Containers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="lab-install-necessary-container-support">Lab: Install Necessary Container Support<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Install the necessary software to set the foundation for completing the exercises in the remainder of the chapter.</li>
 <li>The standard RHEL 9.1 image includes a package called <code>container-tools</code> that consists of all the required components and commands.</li>
 <li>Use the standard <code>dnf</code> command to install the package.</li>
 </ul>
 <p>1. Install the container-tools package:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># dnf install -y container-tools</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># dnf install -y container-tools</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> Upgraded:
 </span></span><span style="display:flex;"><span>  aardvark-dns-2:1.10.0-3.el9_4.x86_64 
@@ -515,19 +466,19 @@
 </span></span><span style="display:flex;"><span>  toolbox-0.0.99.5-2.el9.x86_64      
 </span></span><span style="display:flex;"><span>  udica-0.2.8-1.el9.noarch    </span></span></code></pre></div>
 <p>2. Verify the package installation:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># dnf list container-tools</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># dnf list container-tools</span>
 </span></span><span style="display:flex;"><span> Updating Subscription Management repositories.
 </span></span><span style="display:flex;"><span> Last metadata expiration check: 14:53:32 ago on Wed <span style="color:#ff9f43">31</span> Jul <span style="color:#ff9f43">2024</span> 05:45:56 PM MST.
 </span></span><span style="display:flex;"><span> Installed Packages
 </span></span><span style="display:flex;"><span> container-tools.noarch   1-14.el9    @rhel-9-for-x86_64-appstream-rpms</span></span></code></pre></div>
-<h3 id="podman-command"><code>podman</code> Command</h3>
+<h3 id="podman-command"><code>podman</code> Command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Finding, inspect, retrieve, and delete images</li>
 <li>Run, stop, list, and delete containers.</li>
 <li>Used for most of these operations.</li>
 </ul>
-<h3 id="subcommands">Subcommands</h3>
-<h4 id="image-management">Image Management</h4>
+<h3 id="subcommands">Subcommands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="image-management">Image Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p><strong>build</strong></p>
 <ul>
 <li>Builds an image using instructions delineated in a Container file</li>
@@ -565,7 +516,7 @@
 <ul>
 <li>Adds a name to an image. The default is &rsquo;latest&rsquo; to classify the image as the latest version. Older images may have specific version identifiers.</li>
 </ul>
-<h4 id="container-management">Container Management</h4>
+<h4 id="container-management">Container Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p><strong>attach</strong></p>
 <ul>
 <li>Attaches to a running container</li>
@@ -602,7 +553,7 @@
 <ul>
 <li>Starts, stops, or restarts a container</li>
 </ul>
-<h3 id="skopeo-command"><code>skopeo</code> Command</h3>
+<h3 id="skopeo-command"><code>skopeo</code> Command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Utilized for interacting with local and remote images and registries.</li>
 <li>Has numerous subcommands available; however, you will be using only the <code>inspect</code> subcommand to examine the details of an image stored in a remote registry.</li>
@@ -618,7 +569,7 @@
 </li>
 <li>Defines searchable and blocked registries.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># grep -Ev &#39;^#|^$&#39; /etc/containers/registries.conf</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># grep -Ev &#39;^#|^$&#39; /etc/containers/registries.conf</span>
 </span></span><span style="display:flex;"><span> unqualified-search-registries <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">[</span><span style="color:#5af78e">&#34;registry.access.redhat.com&#34;</span>, <span style="color:#5af78e">&#34;registry.redhat.io&#34;</span>, <span style="color:#5af78e">&#34;docker.io&#34;</span><span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span> short-name-mode <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">&#34;enforcing&#34;</span></span></span></code></pre></div>
 <ul>
@@ -627,13 +578,13 @@
 <li>Can add additional registries to the list.</li>
 </ul>
 <p>Add a private registry called <em>registry.private.myorg.io</em> to be added with the highest priority:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /etc/containers/registries.conf</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> unqualified-search-registries <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">\[</span><span style="color:#5af78e">&#34;registry.private.myorg.io&#34;</span>,
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /etc/containers/registries.conf</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> unqualified-search-registries <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">\[</span><span style="color:#5af78e">&#34;registry.private.myorg.io&#34;</span>,
 </span></span><span style="display:flex;"><span> <span style="color:#5af78e">&#34;registry.access.redhat.com&#34;</span>, <span style="color:#5af78e">&#34;registry.redhat.io&#34;</span>, <span style="color:#5af78e">&#34;docker.io&#34;</span><span style="color:#5af78e">\]</span></span></span></code></pre></div>
 <p>If this private registry is the only one to be used, you can take the rest of the registry entries out of the list:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> unqualified-search-registries <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">\[</span><span style="color:#5af78e">&#34;registry.private.myorg.io&#34;</span><span style="color:#5af78e">\]</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> unqualified-search-registries <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">\[</span><span style="color:#5af78e">&#34;registry.private.myorg.io&#34;</span><span style="color:#5af78e">\]</span></span></span></code></pre></div>
 <p>EXAM TIP: As there is no Internet access provided during Red Hat exams, you may have to access a network-based registry to download images.</p>
-<h3 id="viewing-podman-configuration-and-version">Viewing Podman Configuration and Version</h3>
+<h3 id="viewing-podman-configuration-and-version">Viewing Podman Configuration and Version<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>The podman command references various system runtime and configuration files and runs certain Linux commands in the background to gather and display information.</li>
 <li>For instance, it looks for registries and storage data in the system-wide and per-user configuration files, pulls memory information from the <em>/proc/meminfo</em> file, executes <code>uname -r</code>to obtain the kernel version, and so on.</li>
@@ -641,7 +592,7 @@
 </ul>
 <p>Here is a sample when this command is executed as a normal
 user (user1):</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[[</span>user1@server10 root<span style="color:#ff6ac1">]</span>$ podman info
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[[</span>user1@server10 root<span style="color:#ff6ac1">]</span>$ podman info
 </span></span><span style="display:flex;"><span> ERRO<span style="color:#ff6ac1">[</span>0000<span style="color:#ff6ac1">]</span> XDG_RUNTIME_DIR directory <span style="color:#5af78e">&#34;/run/user/0&#34;</span> is not owned by the current user<span style="color:#ff6ac1">](</span>&lt;<span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman info
 </span></span><span style="display:flex;"><span> host:
 </span></span><span style="display:flex;"><span>  arch: amd64
@@ -661,7 +612,7 @@ user (user1):</p>
 <p>The differences lie between where the root and rootless (normal) users store and obtain configuration data, the number of container images they have locally available, and so on.</p>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># podman info</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># podman info</span>
 </span></span><span style="display:flex;"><span> host:
 </span></span><span style="display:flex;"><span>  arch: amd64
 </span></span><span style="display:flex;"><span>  buildahVersion: 1.33.8
@@ -677,14 +628,14 @@ user (user1):</p>
 </span></span><span style="display:flex;"><span>...</span></span></code></pre></div>
 <p>Similarly, you can run the podman command as follows to check its
 version:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># podman version</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># podman version</span>
 </span></span><span style="display:flex;"><span> Client:       Podman Engine
 </span></span><span style="display:flex;"><span> Version:      4.9.4-rhel
 </span></span><span style="display:flex;"><span> API Version:  4.9.4-rhel
 </span></span><span style="display:flex;"><span> Go Version:   go1.21.11 <span style="color:#ff6ac1">(</span>Red Hat 1.21.11-1.el9_4<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span> Built:        Mon Jul  <span style="color:#ff9f43">1</span> 03:27:14 <span style="color:#ff9f43">2024</span>
 </span></span><span style="display:flex;"><span> OS/Arch:      linux/amd64</span></span></code></pre></div>
-<h3 id="image-management-1">Image Management</h3>
+<h3 id="image-management-1">Image Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Container images</p>
 <ul>
 <li>Are available from numerous private and public registries.</li>
@@ -694,25 +645,25 @@ version:</p>
 <li>Downloaded images can be removed when no longer needed to conserve local storage.</li>
 <li>The same pair of commands&mdash;<code>podman</code> and <code>skopeo</code>&mdash;is employed for these operations.</li>
 </ul>
-<h3 id="lab-search-examine-download-and-remove-an-image">Lab: Search, Examine, Download, and Remove an Image</h3>
+<h3 id="lab-search-examine-download-and-remove-an-image">Lab: Search, Examine, Download, and Remove an Image<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Log in to the registry.access.redhat.com registry</li>
 <li>Look for an image called <em>mysql-80</em> in the registry, examine its details, pull it to your system, confirm the retrieval, and finally erase it from the local storage.</li>
 </ul>
 <p>1. Log in to the specified Red Hat registry:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman login registry.redhat.io</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman login registry.redhat.io</span></span></code></pre></div>
 <p>2. Confirm a successful login:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman login registry.redhat.io --get-login</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman login registry.redhat.io --get-login</span></span></code></pre></div>
 <p>3. Find the mysql-80 image in the specified registry. Add the
 <code>--no-trunc</code> option to view full output.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman search registry.redhat.io/mysql-80 --no-trunc
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman search registry.redhat.io/mysql-80 --no-trunc
 </span></span><span style="display:flex;"><span> NAME                                     DESCRIPTION
 </span></span><span style="display:flex;"><span> registry.redhat.io/rhel8/mysql-80        This container image provides a containerized packaging of the MySQL mysqld daemon and client application. The  mysqld server daemon accepts connections from clients and provides access to content from MySQL databases on behalf of the clients.
 </span></span><span style="display:flex;"><span>...</span></span></code></pre></div>
 <p>4. Select the second image rhel9/mysql-80 for this exercise. Inspect the image without downloading it using skopeo inspect. A long output
 will be generated. The command uses the docker:// mechanism to access
 the image.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ skopeo inspect docker://registry.redhat.io/rhel9/mysql-80
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ skopeo inspect docker://registry.redhat.io/rhel9/mysql-80
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#5af78e">&#34;Name&#34;</span>: <span style="color:#5af78e">&#34;registry.redhat.io/rhel9/mysql-80&#34;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#5af78e">&#34;Digest&#34;</span>: <span style="color:#5af78e">&#34;sha256:247903d2103a3c1db9401f6340ecdcd97c6244480b7a3419e6303dda650491dc&#34;</span>,
@@ -748,7 +699,7 @@ the image.</p>
 </li>
 </ul>
 <p>5. Download the image by specifying the fully qualified image name using podman pull:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman pull docker://registry.redhat.io/rhel9/mysql-80
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman pull docker://registry.redhat.io/rhel9/mysql-80
 </span></span><span style="display:flex;"><span> Trying to pull registry.redhat.io/rhel9/mysql-80:latest...
 </span></span><span style="display:flex;"><span> Getting image <span style="color:#ff5c57">source</span> signatures
 </span></span><span style="display:flex;"><span> Checking <span style="color:#ff6ac1">if</span> image destination supports signatures
@@ -760,11 +711,11 @@ the image.</p>
 </span></span><span style="display:flex;"><span> Storing signatures
 </span></span><span style="display:flex;"><span> b5782120a320e5915d86555e661c357cfa56dd8320ba4c54a58caa1e1c91925f</span></span></code></pre></div>
 <p>6. List the image to confirm the retrieval using podman images:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman images
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman images
 </span></span><span style="display:flex;"><span> REPOSITORY                         TAG         IMAGE ID      CREATED      SIZE
 </span></span><span style="display:flex;"><span> registry.redhat.io/rhel9/mysql-80  latest      b5782120a320  <span style="color:#ff9f43">2</span> weeks ago  <span style="color:#ff9f43">555</span> MB</span></span></code></pre></div>
 <p>7. Display the image&rsquo;s details using <code>podman inspect</code>:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman inspect mysql-80
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman inspect mysql-80
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>
 </span></span><span style="display:flex;"><span>     <span style="color:#ff6ac1">{</span>
 </span></span><span style="display:flex;"><span>          <span style="color:#5af78e">&#34;Id&#34;</span>: <span style="color:#5af78e">&#34;b5782120a320e5915d86555e661c357cfa56dd8320ba4c54a58caa1e1c91925f&#34;</span>,
@@ -773,16 +724,16 @@ the image.</p>
 </span></span><span style="display:flex;"><span>               <span style="color:#5af78e">&#34;registry.redhat.io/rhel9/mysql-80:latest&#34;</span>
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">]</span>,</span></span></code></pre></div>
 <p>8. Remove the mysql-80 image from local storage:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman rmi mysql-80
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman rmi mysql-80
 </span></span><span style="display:flex;"><span> Untagged: registry.redhat.io/rhel9/mysql-80:latest
 </span></span><span style="display:flex;"><span> Deleted: b5782120a320e5915d86555e661c357cfa56dd8320ba4c54a58caa1e1c91925f</span></span></code></pre></div>
 <ul>
 <li>Shows the ID of the image after deletion.</li>
 </ul>
 <p>9. Confirm the removal:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman images
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman images
 </span></span><span style="display:flex;"><span> REPOSITORY  TAG         IMAGE ID    CREATED     SIZE</span></span></code></pre></div>
-<h3 id="containerfile">Containerfile</h3>
+<h3 id="containerfile">Containerfile<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Can build a custom image by outlining the steps you need to be run in a file called Containerfile.</li>
 <li>The podman command can then be used to read those instructions and executes them to produce a new image.</li>
@@ -822,8 +773,8 @@ the image.</p>
 <li>Sets the working directory. This directory is automatically created if it does not already exist.</li>
 </ul>
 <p>A sample container file is presented below:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ vim containerfile</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#78787e"># Use RHEL9 base image</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ vim containerfile</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#78787e"># Use RHEL9 base image</span>
 </span></span><span style="display:flex;"><span> FROM registry.redhat.io/ubi9/ubi
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#78787e"># Install Apache web server software</span>
@@ -840,21 +791,21 @@ the image.</p>
 <ul>
 <li>The index.html file may contain a basic statement such as &ldquo;This is a custom-built Apache web server container image based on RHEL 9&rdquo;.</li>
 </ul>
-<h3 id="lab-use-containerfile-to-build-image">Lab: Use Containerfile to Build Image</h3>
+<h3 id="lab-use-containerfile-to-build-image">Lab: Use Containerfile to Build Image<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Use a containerfile to build a custom image based on the latest version of the RHEL 9 universal base image (ubi) available from a Red Hat container registry.</li>
 <li>Confirm the image creation.</li>
 <li>Use the podman command for these activities.</li>
 </ul>
 <p>1. Log in to the specified Red Hat registry:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman login registry.redhat.io
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman login registry.redhat.io
 </span></span><span style="display:flex;"><span> Authenticating with existing credentials <span style="color:#ff6ac1">for</span> registry.redhat.io
 </span></span><span style="display:flex;"><span> Existing credentials are valid. Already logged in to registry.redhat.io</span></span></code></pre></div>
 <p>2. Confirm a successful login:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman login registry.redhat.io --get-login</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman login registry.redhat.io --get-login</span></span></code></pre></div>
 <p>3. Create a file called containerfile with the following code:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ vim containerfile2</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#78787e"># Use RHEL9 base image</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ vim containerfile2</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#78787e"># Use RHEL9 base image</span>
 </span></span><span style="display:flex;"><span> FROM registry.redhat.io/ubi9/ubi
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#78787e"># Count the number of characters</span>
@@ -863,11 +814,11 @@ the image.</p>
 </span></span><span style="display:flex;"><span> <span style="color:#78787e"># Copy a local file to /tmp</span>
 </span></span><span style="display:flex;"><span> COPY ./testfile /tmp</span></span></code></pre></div>
 <p>4. Create a file called testfile with some random text in it and place it in the same directory as the containerfile.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ <span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;boo bee doo bee doo&#34;</span> &gt;&gt; testfile
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ <span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;boo bee doo bee doo&#34;</span> &gt;&gt; testfile
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ cat testfile 
 </span></span><span style="display:flex;"><span> boo bee doo bee doo</span></span></code></pre></div>
 <p>5. Build an image by specifying the containerfile name and an image tag such as <code>ubi9-simple-image</code>. The period character at the end represents the current directory and this is where both containerfile and testfile are located.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman image build -f containerfile2 -t ubi9-simple-image .
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman image build -f containerfile2 -t ubi9-simple-image .
 </span></span><span style="display:flex;"><span> STEP 1/3: FROM registry.redhat.io/ubi9/ubi
 </span></span><span style="display:flex;"><span> Trying to pull registry.redhat.io/ubi9/ubi:latest...
 </span></span><span style="display:flex;"><span> Getting image <span style="color:#ff5c57">source</span> signatures
@@ -884,7 +835,7 @@ the image.</p>
 </span></span><span style="display:flex;"><span> Successfully tagged localhost/ubi9-simple-image:latest
 </span></span><span style="display:flex;"><span> a2797b06a1294ed06edab2ba1c21d2bddde3eb3af1d8ed286781837f62992622</span></span></code></pre></div>
 <p>6. Confirm image creation:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman image ls
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman image ls
 </span></span><span style="display:flex;"><span> REPOSITORY                   TAG         IMAGE ID      CREATED        SIZE
 </span></span><span style="display:flex;"><span> localhost/ubi9-simple-image  latest      a2797b06a129  <span style="color:#ff9f43">2</span> minutes ago  <span style="color:#ff9f43">220</span> MB
 </span></span><span style="display:flex;"><span> registry.redhat.io/ubi9/ubi  latest      159a1e67312e  <span style="color:#ff9f43">2</span> weeks ago    <span style="color:#ff9f43">220</span> MB</span></span></code></pre></div>
@@ -900,7 +851,7 @@ the image.</p>
 <p>Do not remove the custom image yet as you will be using it to launch a container in the next section.</p>
 </li>
 </ul>
-<h3 id="basic-container-management">Basic Container Management</h3>
+<h3 id="basic-container-management">Basic Container Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Starting, stopping, listing, viewing information about, and deleting them.</li>
 <li>Depending on the use case, containers can be launched in different ways.</li>
@@ -916,14 +867,14 @@ the image.</p>
 <li>The podman command is utilized to start containers and manage their lifecycle.</li>
 <li>This command is also employed to list stopped and running containers, and view their details.</li>
 </ul>
-<h3 id="lab-run-interact-with-and-remove-a-named-container">Lab: Run, Interact with, and Remove a Named Container</h3>
+<h3 id="lab-run-interact-with-and-remove-a-named-container">Lab: Run, Interact with, and Remove a Named Container<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Run a container based on the latest version of the RHEL 8 ubi available in the Red Hat container registry.</li>
 <li>Assign this container a name and run a few native Linux commands in a terminal window interactively.</li>
 <li>Exit out of the container to mark the completion of the exercise.</li>
 </ul>
 <p>1. Launch a container using ubi8 (RHEL 8). Name this container rhel8-base-os and open a terminal session for interaction:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman run -ti --name rhel8-base-os ubi8
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman run -ti --name rhel8-base-os ubi8
 </span></span><span style="display:flex;"><span> Resolved <span style="color:#5af78e">&#34;ubi8&#34;</span> as an <span style="color:#ff5c57">alias</span> <span style="color:#ff6ac1">(</span>/etc/containers/registries.conf.d/001-rhel-shortnames.conf<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span> Trying to pull registry.access.redhat.com/ubi8:latest...
 </span></span><span style="display:flex;"><span> Getting image <span style="color:#ff5c57">source</span> signatures
@@ -952,7 +903,7 @@ the image.</p>
 </ul>
 <p>2. Run a few basic commands such as pwd, ls, cat, and date inside the
 container for verification:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@30c7cccd8490 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># pwd</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@30c7cccd8490 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># pwd</span>
 </span></span><span style="display:flex;"><span> /
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@30c7cccd8490 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls</span>
 </span></span><span style="display:flex;"><span> bin   dev  home  lib64	     media  opt   root	sbin  sys  usr
@@ -962,16 +913,16 @@ container for verification:</p>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@30c7cccd8490 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># date</span>
 </span></span><span style="display:flex;"><span> Thu Aug  <span style="color:#ff9f43">1</span> 21:09:13 UTC <span style="color:#ff9f43">2024</span></span></span></code></pre></div>
 <p>3. Close the terminal session when done:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@30c7cccd8490 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># exit</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@30c7cccd8490 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># exit</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">exit</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ </span></span></code></pre></div>
 <p>4. Delete the container using podman rm:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman rm rhel8-base-os
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman rm rhel8-base-os
 </span></span><span style="display:flex;"><span> rhel8-base-os</span></span></code></pre></div>
 <p>Confirm the removal with podman ps.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman ps
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman ps
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE       COMMAND     CREATED     STATUS      PORTS       NAMES</span></span></code></pre></div>
-<h3 id="lab-run-a-nameless-container-and-auto-remove-it-after-entry-point-command-execution">Lab: Run a Nameless Container and Auto-Remove it After Entry Point Command Execution</h3>
+<h3 id="lab-run-a-nameless-container-and-auto-remove-it-after-entry-point-command-execution">Lab: Run a Nameless Container and Auto-Remove it After Entry Point Command Execution<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Launch a container based on the latest version of RHEL 7 ubi available in a Red Hat container registry.
 <ul>
@@ -981,7 +932,7 @@ container for verification:</p>
 <li>Enter a Linux command at the command line for execution inside the container as an entry point command and the container should be automatically deleted right after that.</li>
 </ul>
 <p>1. Start a container using ubi7 (RHEL 7) and run ls as an entry point command. Remove the container as soon as the entry point command has finished running.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman run --rm ubi7 ls
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server10 ~<span style="color:#ff6ac1">]</span>$ podman run --rm ubi7 ls
 </span></span><span style="display:flex;"><span> Resolved <span style="color:#5af78e">&#34;ubi7&#34;</span> as an <span style="color:#ff5c57">alias</span> <span style="color:#ff6ac1">(</span>/etc/containers/registries.conf.d/001-rhel-shortnames.conf<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span> Trying to pull registry.access.redhat.com/ubi7:latest...
 </span></span><span style="display:flex;"><span> Getting image <span style="color:#ff5c57">source</span> signatures
@@ -997,16 +948,16 @@ container for verification:</p>
 </span></span><span style="display:flex;"><span> home
 </span></span><span style="display:flex;"><span>...</span></span></code></pre></div>
 <p>2. Confirm the container removal with podman ps:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>podman ps
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>podman ps
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE       COMMAND     CREATED     STATUS      PORTS       NAMES</span></span></code></pre></div>
-<h2 id="advanced-container-management">Advanced Container Management</h2>
+<h2 id="advanced-container-management">Advanced Container Management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Preset environment variables may be passed when launching containers or new variables may be set for containerized applications to consume for proper operation.</li>
 <li>Information stored during an application execution is lost when a container is restarted or erased.</li>
 <li>This behavior can be overridden by making a directory on the host available inside the container for saving data persistently.</li>
 <li>Containers may be configured to start and stop with the transitioning of the host system via the systemd service. These advanced tasks are also performed with the <code>podman</code> command.</li>
 </ul>
-<h2 id="containers-and-port-mapping">Containers and Port Mapping</h2>
+<h2 id="containers-and-port-mapping">Containers and Port Mapping<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Applications running in different containers often need to exchange data for proper operation.</li>
 <li>For instance, a containerized Apache web server may need to talk to a MySQL database instance running in a different container.</li>
@@ -1014,7 +965,7 @@ container for verification:</p>
 <li>To support this traffic flow, appropriate port mappings are established between the host system and each container.</li>
 </ul>
 <p>EXAM TIP: As a normal user, you cannot map a host port below 1024 to a container port.</p>
-<h3 id="lab-configure-port-mapping">Lab: Configure Port Mapping</h3>
+<h3 id="lab-configure-port-mapping">Lab: Configure Port Mapping<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Launch a container called rhel7-port-map in detached mode (as a daemon) with host port 10000 mapped to port 8000 inside the container.</li>
 <li>Use a version of the RHEL 7 image with Apache web server software pre-installed.</li>
@@ -1023,17 +974,17 @@ container for verification:</p>
 </ul>
 <p>1. Search for an Apache web server image for RHEL 7 using podman
 search:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman search registry.redhat.io/rhel7/httpd
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman search registry.redhat.io/rhel7/httpd
 </span></span><span style="display:flex;"><span> NAME                                      DESCRIPTION
 </span></span><span style="display:flex;"><span> registry.redhat.io/rhscl/httpd-24-rhel7   Apache HTTP 2.4 Server</span></span></code></pre></div>
 <p>2. Log in to registry.redhat.io using the Red Hat credentials to access
 the image:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman login registry.redhat.io
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman login registry.redhat.io
 </span></span><span style="display:flex;"><span> Username: tdavetech@gmail.com
 </span></span><span style="display:flex;"><span> Password: 
 </span></span><span style="display:flex;"><span> Login Succeeded!</span></span></code></pre></div>
 <p>3. Download the latest version of the Apache image using podman pull:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman pull registry.redhat.io/rhscl/httpd-24- rhel7
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman pull registry.redhat.io/rhscl/httpd-24- rhel7
 </span></span><span style="display:flex;"><span> Trying to pull registry.redhat.io/rhscl/httpd-24-rhel7:latest...
 </span></span><span style="display:flex;"><span> Getting image <span style="color:#ff5c57">source</span> signatures
 </span></span><span style="display:flex;"><span> Checking <span style="color:#ff6ac1">if</span> image destination supports signatures
@@ -1045,53 +996,53 @@ the image:</p>
 </span></span><span style="display:flex;"><span> Storing signatures
 </span></span><span style="display:flex;"><span> 847db19d6cbc726106c901a7713d30dccc9033031ec812037c4c458319a1b328</span></span></code></pre></div>
 <p>4. Verify the download using podman images:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman images
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman images
 </span></span><span style="display:flex;"><span> REPOSITORY                               TAG         IMAGE ID       CREATED       SIZE
 </span></span><span style="display:flex;"><span> registry.redhat.io/rhscl/httpd-24-rhel7  latest      847db19d6cbc  <span style="color:#ff9f43">2</span>  months ago  <span style="color:#ff9f43">332</span> MB</span></span></code></pre></div>
 <p>5. Launch a container named <em>rhel7-port-map</em> in detached mode to run the containerized Apache web server with host port 10000
 mapped to container port 8000.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman run -dp 10000:8000 --name rhel7-port-map  httpd-24-rhel7
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman run -dp 10000:8000 --name rhel7-port-map  httpd-24-rhel7
 </span></span><span style="display:flex;"><span> cd063dff352dfbcd57dd417587513b12ca4033ed657f3baaa28d54df19d4df1c</span></span></code></pre></div>
 <p>6. Verify that the container was launched successfully using podman ps:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE                                           COMMAND               CREATED         STATUS         PORTS                    NAMES
 </span></span><span style="display:flex;"><span> cd063dff352d  registry.redhat.io/rhscl/httpd-24-rhel7:latest   /usr/bin/run-http...  <span style="color:#ff9f43">36</span> seconds ago  Up <span style="color:#ff9f43">36</span> seconds  0.0.0.0:10000- &gt;8000/tcp  rhel7-port-map</span></span></code></pre></div>
 <p>7. You can also use <code>podman port</code> to view the mapping:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman port rhel7-port-map
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman port rhel7-port-map
 </span></span><span style="display:flex;"><span> 8000/tcp -&gt; 0.0.0.0:10000</span></span></code></pre></div>
 <ul>
 <li>Now any inbound web traffic on host port 10000 will be redirected to the container.</li>
 </ul>
-<h3 id="exercise-22-7-stop-restart-and-remove-a-container">Exercise 22-7: Stop, Restart, and Remove a Container</h3>
+<h3 id="exercise-22-7-stop-restart-and-remove-a-container">Exercise 22-7: Stop, Restart, and Remove a Container<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Stop the container, restart it, stop it again, and then erase it.</li>
 <li>Use appropriate <code>podman</code> subcommands and verify each transition.</li>
 </ul>
 <p>1. Verify the current operational state of the container rhel7-port-map:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE                                           COMMAND               CREATED        STATUS        PORTS                    NAMES
 </span></span><span style="display:flex;"><span> cd063dff352d  registry.redhat.io/rhscl/httpd-24-rhel7:latest   /usr/bin/run-http...  <span style="color:#ff9f43">3</span> minutes ago  Up <span style="color:#ff9f43">3</span> minutes  0.0.0.0:10000- &gt;8000/tcp  rhel7-port-map</span></span></code></pre></div>
 <p>2. Stop the container and confirm.
 (the <code>-a</code> option with <code>ps</code> also includes the stopped containers in the output):</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman stop rhel7-port-map
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman stop rhel7-port-map
 </span></span><span style="display:flex;"><span> rhel7-port-map
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps -a
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE                                           COMMAND               CREATED        STATUS                    PORTS                    NAMES
 </span></span><span style="display:flex;"><span> cd063dff352d  registry.redhat.io/rhscl/httpd-24-rhel7:latest   /usr/bin/run-http...  <span style="color:#ff9f43">6</span> minutes ago  Exited <span style="color:#ff6ac1">(</span>0<span style="color:#ff6ac1">)</span> <span style="color:#ff9f43">5</span> seconds ago   0.0.0.0:10000-&gt;8000/tcp  rhel7-port-map</span></span></code></pre></div>
 <p>3. Start the container and confirm:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman start rhel7-port-map
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman start rhel7-port-map
 </span></span><span style="display:flex;"><span> rhel7-port-map
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps -a
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE                                           COMMAND               CREATED        STATUS         PORTS                    NAMES
 </span></span><span style="display:flex;"><span> cd063dff352d  registry.redhat.io/rhscl/httpd-24-rhel7:latest   /usr/bin/run-http...  <span style="color:#ff9f43">8</span> minutes ago  Up <span style="color:#ff9f43">11</span> seconds  0.0.0.0:10000- &gt;8000/tcp  rhel7-port-map</span></span></code></pre></div>
 <p>4. Stop the container and remove it:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman rm rhel7-port-map
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman rm rhel7-port-map
 </span></span><span style="display:flex;"><span> rhel7-port-map</span></span></code></pre></div>
 <p>5. Confirm the removal:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps -a
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps -a
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE       COMMAND     CREATED     STATUS      PORTS       NAMES</span></span></code></pre></div>
-<h2 id="containers-and-environment-variables">Containers and Environment Variables</h2>
+<h2 id="containers-and-environment-variables">Containers and Environment Variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Many times it is necessary to pass a host&rsquo;s pre-defined environment variable, such as PATH, to a containerized application for consumption.</li>
 <li>Moreover, it may also be necessary at times to set new variables to inject debugging flags or sensitive information such as passwords, access keys, or other secrets for use inside containers.</li>
@@ -1099,7 +1050,7 @@ mapped to container port 8000.</p>
 <li>The <code>podman</code> command allows multiple variables to be passed or set with the <code>-e</code> option.</li>
 </ul>
 <p>EXAM TIP: Use the <code>-e</code> option with each variable that you want to pass or set.</p>
-<h3 id="lab-pass-and-set-environment-variables">Lab: Pass and Set Environment Variables</h3>
+<h3 id="lab-pass-and-set-environment-variables">Lab: Pass and Set Environment Variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Launch a container using the latest version of a ubi for RHEL 9 available in a Red Hat container registry.</li>
 <li>Inject the HISTSIZE environment variable, and a variable called SECRET with a value &ldquo;secret123&rdquo;.</li>
@@ -1107,7 +1058,7 @@ mapped to container port 8000.</p>
 <li>Remove this container.</li>
 </ul>
 <p>1. Launch a container with an interactive terminal session and inject variables <strong>HISTSIZE</strong> and <strong>SECRET</strong> as directed. Use the specified container image.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman run -it -e HISTSIZE -e <span style="color:#ff5c57">SECRET</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;secret123&#34;</span> --name rhel9-env-vars ubi9
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman run -it -e HISTSIZE -e <span style="color:#ff5c57">SECRET</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;secret123&#34;</span> --name rhel9-env-vars ubi9
 </span></span><span style="display:flex;"><span> Resolved <span style="color:#5af78e">&#34;ubi9&#34;</span> as an <span style="color:#ff5c57">alias</span> <span style="color:#ff6ac1">(</span>/etc/containers/registries.conf.d/001- rhel-shortnames.conf<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span> Trying to pull registry.access.redhat.com/ubi9:latest...
 </span></span><span style="display:flex;"><span> Getting image <span style="color:#ff5c57">source</span> signatures
@@ -1118,18 +1069,18 @@ mapped to container port 8000.</p>
 </span></span><span style="display:flex;"><span> Storing signatures
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@b587355b8fc1 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># </span></span></span></code></pre></div>
 <p>2. Verify both variables using the echo command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@b587355b8fc1 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $HISTSIZE $SECRET</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@b587355b8fc1 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $HISTSIZE $SECRET</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff9f43">1000</span> secret123
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@b587355b8fc1 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># </span></span></span></code></pre></div>
 <p>3. Disconnect from the container, and stop and remove it:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman stop rhel9-env-vars
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman stop rhel9-env-vars
 </span></span><span style="display:flex;"><span> rhel9-env-vars
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman rm rhel9-env-vars
 </span></span><span style="display:flex;"><span> rhel9-env-vars</span></span></code></pre></div>
 <p>Confirm the deletion:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps -a
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps -a
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE       COMMAND     CREATED     STATUS      PORTS       NAMES</span></span></code></pre></div>
-<h2 id="containers-and-persistent-storage">Containers and Persistent Storage</h2>
+<h2 id="containers-and-persistent-storage">Containers and Persistent Storage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Containers are normally launched for a period of time to run an application and then stopped or deleted when their job is finished.</li>
 <li>Any data that is produced during runtime is lost on their restart, failure, or termination.</li>
@@ -1145,7 +1096,7 @@ mapped to container port 8000.</p>
 <li>These steps include the correct ownership, permissions, and SELinux type (<em>container_file_t</em>).</li>
 <li>The special SELinux file type is applied to prevent containerized applications (especially those running in root containers) from gaining undesired privileged access to host files and processes, or other running containers on the host if compromised.</li>
 </ul>
-<h3 id="lab-attach-persistent-storage-and-access-data-across-containers">Lab: Attach Persistent Storage and Access Data Across Containers</h3>
+<h3 id="lab-attach-persistent-storage-and-access-data-across-containers">Lab: Attach Persistent Storage and Access Data Across Containers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Set up a directory on server20 and attach it to a new container.</li>
 <li>Write some data to the directory while in the container.</li>
@@ -1154,13 +1105,13 @@ mapped to container port 8000.</p>
 <li>Remove the container to mark the completion of this exercise.</li>
 </ul>
 <p>1. Create a directory called /host_data, set full permissions on it, and confirm:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo mkdir /host_data
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo mkdir /host_data
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>sudo<span style="color:#ff6ac1">]</span> password <span style="color:#ff6ac1">for</span> user1: 
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo chmod <span style="color:#ff9f43">777</span> /host_data/
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ ll -d /host_data/
 </span></span><span style="display:flex;"><span> drwxrwxrwx. <span style="color:#ff9f43">2</span> root root <span style="color:#ff9f43">6</span> Aug  <span style="color:#ff9f43">1</span> 22:59 /host_data/</span></span></code></pre></div>
 <p>2. Launch a root container called <em>rhel9-persistent-data</em>  in interactive mode using the latest ubi9 image. Specify the attachment point (<em>/container_data</em>) to be used inside the container for the host directory (<em>/host_data</em>) Ensure the SELinux type container_file_t is automatically set on the directory and files within.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman run --name rhel9-persistent-data -v  /host_data:/container_data:Z -it ubi9
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman run --name rhel9-persistent-data -v  /host_data:/container_data:Z -it ubi9
 </span></span><span style="display:flex;"><span> Resolved <span style="color:#5af78e">&#34;ubi9&#34;</span> as an <span style="color:#ff5c57">alias</span> <span style="color:#ff6ac1">(</span>/etc/containers/registries.conf.d/001- rhel-shortnames.conf<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span> Trying to pull registry.access.redhat.com/ubi9:latest...
 </span></span><span style="display:flex;"><span> Getting image <span style="color:#ff5c57">source</span> signatures
@@ -1170,27 +1121,27 @@ mapped to container port 8000.</p>
 </span></span><span style="display:flex;"><span> Writing manifest to image destination
 </span></span><span style="display:flex;"><span> Storing signatures</span></span></code></pre></div>
 <p>3. Confirm the presence of the directory inside the container with <code>ls</code> on /container_data:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@e8711892370f /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -ldZ /container_data</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@e8711892370f /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -ldZ /container_data</span>
 </span></span><span style="display:flex;"><span> drwxrwxrwx. <span style="color:#ff9f43">2</span> root root  system_u:object_r:container_file_t:s0:c376,c965 <span style="color:#ff9f43">6</span> Aug  <span style="color:#ff9f43">2</span> 05:59  /container_data</span></span></code></pre></div>
 <p>4. Create a file called testfile with the echo command under /container_data:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@e8711892370f /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo &#34;This is persistent storage.&#34; &gt;  /container_data/testfile</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@e8711892370f /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo &#34;This is persistent storage.&#34; &gt;  /container_data/testfile</span></span></span></code></pre></div>
 <p>5. Verify the file creation and the SELinux type on it:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@e8711892370f /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -lZ /container_data/</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@e8711892370f /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -lZ /container_data/</span>
 </span></span><span style="display:flex;"><span> total <span style="color:#ff9f43">4</span>
 </span></span><span style="display:flex;"><span> -rw-r--r--. <span style="color:#ff9f43">1</span> root root  system_u:object_r:container_file_t:s0:c376,c965 <span style="color:#ff9f43">28</span> Aug  <span style="color:#ff9f43">2</span> 06:03  testfile</span></span></code></pre></div>
 <p>6. Exit out of the container and check the presence of the file in the host directory:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@e8711892370f /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># exit</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@e8711892370f /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># exit</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">exit</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ ls -lZ /host_data/
 </span></span><span style="display:flex;"><span> total <span style="color:#ff9f43">4</span>
 </span></span><span style="display:flex;"><span> -rw-r--r--. <span style="color:#ff9f43">1</span> root root  system_u:object_r:container_file_t:s0:c376,c965 <span style="color:#ff9f43">28</span> Aug  <span style="color:#ff9f43">1</span> 23:03  testfile</span></span></code></pre></div>
 <p>7. Stop and remove the container:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman stop rhel9-persistent-data
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman stop rhel9-persistent-data
 </span></span><span style="display:flex;"><span> rhel9-persistent-data
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman rm rhel9-persistent-data
 </span></span><span style="display:flex;"><span> rhel9-persistent-data</span></span></code></pre></div>
 <p>8. Launch a new root container called <em>rhel8-persistent-data</em> in interactive mode using the latest ubi8 image from any of the defined registries. Specify the attachment point (<em>/container_data2</em>) to be used inside the container for the host directory (<em>/host_data</em>). Ensure the SELinux type <em>container_file_t</em> is automatically set on the directory and files within.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman run -it --name rhel8-persistent-data -v /host_data:/container_data2:Z ubi8
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman run -it --name rhel8-persistent-data -v /host_data:/container_data2:Z ubi8
 </span></span><span style="display:flex;"><span> Resolved <span style="color:#5af78e">&#34;ubi8&#34;</span> as an <span style="color:#ff5c57">alias</span> <span style="color:#ff6ac1">(</span>/etc/containers/registries.conf.d/001- rhel-shortnames.conf<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span> Trying to pull registry.access.redhat.com/ubi8:latest...
 </span></span><span style="display:flex;"><span> Getting image <span style="color:#ff5c57">source</span> signatures
@@ -1200,7 +1151,7 @@ mapped to container port 8000.</p>
 </span></span><span style="display:flex;"><span> Writing manifest to image destination
 </span></span><span style="display:flex;"><span> Storing signatures </span></span></code></pre></div>
 <p>9. Confirm the presence of the directory inside the container with ls on /container_data2:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@af6773299c7e /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -ldZ /container_data2/</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@af6773299c7e /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -ldZ /container_data2/</span>
 </span></span><span style="display:flex;"><span> drwxrwxrwx. <span style="color:#ff9f43">2</span> root root  system_u:object_r:container_file_t:s0:c198,c914 <span style="color:#ff9f43">22</span> Aug  <span style="color:#ff9f43">2</span> 06:03  /container_data2/
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@af6773299c7e /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -lZ /container_data2/</span>
 </span></span><span style="display:flex;"><span> total <span style="color:#ff9f43">4</span>
@@ -1208,14 +1159,14 @@ mapped to container port 8000.</p>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@af6773299c7e /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /container_data2/testfile</span>
 </span></span><span style="display:flex;"><span> This is persistent storage.</span></span></code></pre></div>
 <p>10. Create a file called testfile2 with the echo command under /container_data2:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@af6773299c7e /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo &#34;This is persistent storage2.&#34; &gt;  /container_data2/testfile2</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@af6773299c7e /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo &#34;This is persistent storage2.&#34; &gt;  /container_data2/testfile2</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@af6773299c7e /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls -lZ /container_data2/</span>
 </span></span><span style="display:flex;"><span> total <span style="color:#ff9f43">8</span>
 </span></span><span style="display:flex;"><span> -rw-r--r--. <span style="color:#ff9f43">1</span> root root  system_u:object_r:container_file_t:s0:c198,c914 <span style="color:#ff9f43">28</span> Aug  <span style="color:#ff9f43">2</span> 06:03  testfile
 </span></span><span style="display:flex;"><span> -rw-r--r--. <span style="color:#ff9f43">1</span> root root  system_u:object_r:container_file_t:s0:c198,c914 <span style="color:#ff9f43">29</span> Aug  <span style="color:#ff9f43">2</span> 06:10  testfile2</span></span></code></pre></div>
 <p>11. Exit out of the container and confirm the existence of both files in the host directory:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@af6773299c7e /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># exit</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@af6773299c7e /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># exit</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">exit</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ ls -lZ /host_data/
@@ -1223,16 +1174,16 @@ mapped to container port 8000.</p>
 </span></span><span style="display:flex;"><span> -rw-r--r--. <span style="color:#ff9f43">1</span> root root  system_u:object_r:container_file_t:s0:c198,c914 <span style="color:#ff9f43">28</span> Aug  <span style="color:#ff9f43">1</span> 23:03  testfile
 </span></span><span style="display:flex;"><span> -rw-r--r--. <span style="color:#ff9f43">1</span> root root  system_u:object_r:container_file_t:s0:c198,c914 <span style="color:#ff9f43">29</span> Aug  <span style="color:#ff9f43">1</span> 23:10  testfile2</span></span></code></pre></div>
 <p>12. Stop and remove the container using the stop and rm subcommands:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman stop rhel8-persistent-data
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman stop rhel8-persistent-data
 </span></span><span style="display:flex;"><span> rhel8-persistent-data
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman rm rhel8-persistent-data
 </span></span><span style="display:flex;"><span> rhel8-persistent-data</span></span></code></pre></div>
 <p>13. Re-check the presence of the files in the host directory:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ ll /host_data
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ ll /host_data
 </span></span><span style="display:flex;"><span> total <span style="color:#ff9f43">8</span>
 </span></span><span style="display:flex;"><span> -rw-r--r--. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">28</span> Aug  <span style="color:#ff9f43">1</span> 23:03 testfile
 </span></span><span style="display:flex;"><span> -rw-r--r--. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">29</span> Aug  <span style="color:#ff9f43">1</span> 23:10 testfile2</span></span></code></pre></div>
-<h2 id="container-state-management-with-systemd">Container State Management with systemd</h2>
+<h2 id="container-state-management-with-systemd">Container State Management with systemd<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>
 <p>Multiple containers run on a single host and it becomes a challenging task to change their operational state or delete them manually.</p>
@@ -1275,7 +1226,7 @@ mapped to container port 8000.</p>
 <ul>
 <li>Rootless setup does not require elevated privileges of the root user.</li>
 </ul>
-<h3 id="lab-configure-a-rootful-container-as-a-systemd-service">Lab: Configure a Rootful Container as a systemd Service</h3>
+<h3 id="lab-configure-a-rootful-container-as-a-systemd-service">Lab: Configure a Rootful Container as a systemd Service<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Create a systemd unit configuration file for managing the state of your rootful containers.</li>
 <li>Launch a new container and use it as a template to generate a service unit file.</li>
@@ -1283,15 +1234,15 @@ mapped to container port 8000.</p>
 <li>Use the <code>systemctl</code> command to verify the automatic container start, stop, and deletion.</li>
 </ul>
 <p>1. Launch a new container called <em>rootful-container</em> in detached mode using the latest ubi9:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman run -dt --name rootful-container ubi9
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman run -dt --name rootful-container ubi9
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>sudo<span style="color:#ff6ac1">]</span> password <span style="color:#ff6ac1">for</span> user1: 
 </span></span><span style="display:flex;"><span> 0ed04dcedec418068acd14c864e95e78f56a38dd57d2349cf2c46b0de1a1bf1b</span></span></code></pre></div>
 <p>2. Confirm the new container using podman ps. Note the container ID.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman ps
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman ps
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE                                   COMMAND      CREATED         STATUS         PORTS       NAMES
 </span></span><span style="display:flex;"><span> 0ed04dcedec4  registry.access.redhat.com/ubi9:latest  /bin/bash   <span style="color:#ff9f43">20</span>  seconds ago  Up <span style="color:#ff9f43">20</span> seconds              rootful-container</span></span></code></pre></div>
 <p>3. Create (generate) a service unit file called <em>rootful-container.service</em> under <em>/etc/systemd/system</em> while ensuring that the next new container that will be launched based on this configuration file will not require the source container  to work. The <code>tee</code> command will show the generated file content on the screen as well as store it in the specified file.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman generate systemd --new --name  rootful-container | sudo tee /etc/systemd/system/rootful-qcontainer.service
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman generate systemd --new --name  rootful-container | sudo tee /etc/systemd/system/rootful-qcontainer.service
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>Unit<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">Description</span><span style="color:#ff6ac1">=</span>Podman container-rootful-container.service
@@ -1341,7 +1292,7 @@ mapped to container port 8000.</p>
 </li>
 </ul>
 <p>4. Stop and delete the source container (rootful-container):</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman stop rootful-container
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman stop rootful-container
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>sudo<span style="color:#ff6ac1">]</span> password <span style="color:#ff6ac1">for</span> user1: 
 </span></span><span style="display:flex;"><span> WARN<span style="color:#ff6ac1">[</span>0010<span style="color:#ff6ac1">]</span> StopSignal SIGTERM failed to stop container rootful- container in <span style="color:#ff9f43">10</span> seconds, resorting to SIGKILL 
 </span></span><span style="display:flex;"><span> rootful-container
@@ -1349,24 +1300,24 @@ mapped to container port 8000.</p>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman rm rootful-container
 </span></span><span style="display:flex;"><span> rootful-container</span></span></code></pre></div>
 <p>Verify the removal by running sudo podman ps -a:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman ps -a
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman ps -a
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE       COMMAND     CREATED     STATUS      PORTS       NAMES</span></span></code></pre></div>
 <p>5. Update systemd to bring the new service under its control (reboot the system if required):</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo systemctl daemon-reload</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo systemctl daemon-reload</span></span></code></pre></div>
 <p>6. Enable and start the container service:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo systemctl <span style="color:#ff5c57">enable</span> --now rootful-container
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo systemctl <span style="color:#ff5c57">enable</span> --now rootful-container
 </span></span><span style="display:flex;"><span> Created symlink /etc/systemd/system/default.target.wants/rootful- container.service → /etc/systemd/system/rootful-container.service.</span></span></code></pre></div>
 <p>7. Check the running status of the new service:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo systemctl status rootful-container
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo systemctl status rootful-container
 </span></span><span style="display:flex;"><span> rootful-container.service - Podman container-rootful-container.s&gt;
 </span></span><span style="display:flex;"><span>     Loaded: loaded <span style="color:#ff6ac1">(</span>/etc/systemd/system/rootful-container.service&gt;
 </span></span><span style="display:flex;"><span>     Active: active <span style="color:#ff6ac1">(</span>running<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
 <p>8. Verify the launch of a new container (compare the container ID with that of the source root container):</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman ps
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman ps
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE                                   COMMAND      CREATED             STATUS             PORTS       NAMES
 </span></span><span style="display:flex;"><span> 440a57c26186  registry.access.redhat.com/ubi9:latest  /bin/bash    About a minute ago  Up About a minute              rootful-container</span></span></code></pre></div>
 <p>9. Restart the container service using the systemctl command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo systemctl restart rootful-container
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo systemctl restart rootful-container
 </span></span><span style="display:flex;"><span> sudo systemctl status rootful-
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo systemctl status rootful-container
@@ -1374,13 +1325,13 @@ mapped to container port 8000.</p>
 </span></span><span style="display:flex;"><span>     Loaded: loaded <span style="color:#ff6ac1">(</span>/etc/systemd/system/rootful-container.service&gt;
 </span></span><span style="display:flex;"><span>     Active: active <span style="color:#ff6ac1">(</span>running<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
 <p>10. Check the status of the container again. Observe the removal of the previous container and the launch of a new container (compare container IDs).</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman ps
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman ps
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE                                   COMMAND      CREATED         STATUS             PORTS       NAMES
 </span></span><span style="display:flex;"><span> 0a980537b83a  registry.access.redhat.com/ubi9:latest  /bin/bash   <span style="color:#ff9f43">59</span>  seconds ago  Up About a minute              rootful-container</span></span></code></pre></div>
 <ul>
 <li>Each time the rootful-container service is restarted or server20 is rebooted, a new container will be launched.</li>
 </ul>
-<h3 id="lab-configure-rootless-container-as-a-systemd-service">Lab: Configure Rootless Container as a systemd Service</h3>
+<h3 id="lab-configure-rootless-container-as-a-systemd-service">Lab: Configure Rootless Container as a systemd Service<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Create a systemd unit configuration file for managing the state of your rootless containers.</li>
 <li>Launch a new container as conuser1 (create this user) and use it as a template to generate a service unit file.</li>
@@ -1388,15 +1339,15 @@ mapped to container port 8000.</p>
 <li>Use the <code>systemctl</code> command as conuser1 to verify the automatic container start, stop, and deletion.</li>
 </ul>
 <p>1. Create a user account called conuser1 and assign a simple password:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo useradd conuser1
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ sudo useradd conuser1
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ <span style="color:#ff5c57">echo</span> conuser1 | sudo passwd -- stdin conuser1
 </span></span><span style="display:flex;"><span> Changing password <span style="color:#ff6ac1">for</span> user conuser1.
 </span></span><span style="display:flex;"><span> passwd: all authentication tokens updated  successfully.</span></span></code></pre></div>
 <p>2. Open a new terminal window on server20 and log in as conuser1. Create directory <em>~/.config/systemd/user</em> to store a service unit file:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ mkdir ~/.config/systemd/user -p</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ mkdir ~/.config/systemd/user -p</span></span></code></pre></div>
 <p>3. Launch a new container called rootless-container in detached mode using the latest ubi8:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman run -dt --name  rootless-container ubi8
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman run -dt --name  rootless-container ubi8
 </span></span><span style="display:flex;"><span> Resolved <span style="color:#5af78e">&#34;ubi8&#34;</span> as an <span style="color:#ff5c57">alias</span>  <span style="color:#ff6ac1">(</span>/etc/containers/registries.conf.d/001-rhel- shortnames.conf<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span> Trying to pull  registry.access.redhat.com/ubi8:latest...
 </span></span><span style="display:flex;"><span> Getting image <span style="color:#ff5c57">source</span> signatures
@@ -1407,18 +1358,18 @@ mapped to container port 8000.</p>
 </span></span><span style="display:flex;"><span> Storing signatures
 </span></span><span style="display:flex;"><span> 381d46ae9a3e11723c3bde35090782129e6937c461f8c2621bc9725f6b9efc27</span></span></code></pre></div>
 <p>4. Confirm the new container using podman ps. Note the container ID.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE                                   COMMAND     CREATED         STATUS         PORTS       NAMES
 </span></span><span style="display:flex;"><span> 381d46ae9a3e  registry.access.redhat.com/ubi8:latest  /bin/bash   <span style="color:#ff9f43">27</span> seconds ago  Up <span style="color:#ff9f43">27</span> seconds              rootless-container</span></span></code></pre></div>
 <p>5. Create (generate) a service unit file called <em>rootless-container.service</em> under <em>~/.config/systemd/user</em> while ensuring that the next new container that will be launched based on this configuration will not require the source container to work:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman generate systemd --new --name rootless-container &gt;  ~/.config/systemd/user/rootless-container.service
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman generate systemd --new --name rootless-container &gt;  ~/.config/systemd/user/rootless-container.service
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> DEPRECATED command:
 </span></span><span style="display:flex;"><span> It is recommended to use Quadlets <span style="color:#ff6ac1">for</span> running  containers and pods under systemd.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> Please refer to podman-systemd.unit<span style="color:#ff6ac1">(</span>5<span style="color:#ff6ac1">)</span> <span style="color:#ff6ac1">for</span> details.</span></span></code></pre></div>
 <p>6. Display the content of the unit file:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ cat  ~/.config/systemd/user/rootless-container.service 
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ cat  ~/.config/systemd/user/rootless-container.service 
 </span></span><span style="display:flex;"><span> <span style="color:#78787e"># container-rootless-container.service</span>
 </span></span><span style="display:flex;"><span> <span style="color:#78787e"># autogenerated by Podman 4.9.4-rhel</span>
 </span></span><span style="display:flex;"><span> <span style="color:#78787e"># Thu Aug  1 23:42:11 MST 2024</span>
@@ -1455,60 +1406,60 @@ mapped to container port 8000.</p>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>Install<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">WantedBy</span><span style="color:#ff6ac1">=</span>default.target</span></span></code></pre></div>
 <p>7. Stop and delete the source container rootless-container using the stop and rm subcommands:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman stop rootless-container
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman stop rootless-container
 </span></span><span style="display:flex;"><span> rootless-container
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman rm rootless-container
 </span></span><span style="display:flex;"><span> rootless-container</span></span></code></pre></div>
 <p>Verify the removal by running podman ps -a:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps -a
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps -a
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE       COMMAND     CREATED      STATUS      PORTS       NAMES</span></span></code></pre></div>
 <p>8. Update systemd to bring the new service to its control</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ systemctl --user daemon-reload</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ systemctl --user daemon-reload</span></span></code></pre></div>
 <p>9. Enable and start the container service:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ systemctl --user <span style="color:#ff5c57">enable</span> --now rootless-container.service 
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ systemctl --user <span style="color:#ff5c57">enable</span> --now rootless-container.service 
 </span></span><span style="display:flex;"><span> Created symlink  /home/conuser1/.config/systemd/user/default.target.wa nts/rootless-container.service →  /home/conuser1/.config/systemd/user/rootless- container.service.</span></span></code></pre></div>
 <p>10. Check the running status of the new service:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ systemctl --user status  rootless-container
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ systemctl --user status  rootless-container
 </span></span><span style="display:flex;"><span> rootless-container.service - Podman container- rootless-container&gt;
 </span></span><span style="display:flex;"><span>     Loaded: loaded <span style="color:#ff6ac1">(</span>/home/conuser1/.config/systemd/user/rootless-&gt;
 </span></span><span style="display:flex;"><span>     Active: active <span style="color:#ff6ac1">(</span>running<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
 <p>11. Verify the launch of a new container (compare the container ID with that of the source rootless container):</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE                                   COMMAND     CREATED             STATUS              PORTS       NAMES
 </span></span><span style="display:flex;"><span> 57f946085605  registry.access.redhat.com/ubi8:latest  /bin/bash   About a minute ago  Up About a minute              rootless-container</span></span></code></pre></div>
 <p>12. Enable the container service to start and stop with host transition using the <code>loginctl</code> command (systemd login manager) and confirm:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ loginctl enable-linger
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ loginctl enable-linger
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ loginctl show-user conuser1 | grep -i linger
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">Linger</span><span style="color:#ff6ac1">=</span>yes</span></span></code></pre></div>
 <p>13. Restart the container service using the <code>systemctl</code> command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ systemctl --user restart  rootless-container
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ systemctl --user restart  rootless-container
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ systemctl --user status  rootless-container
 </span></span><span style="display:flex;"><span> rootless-container.service - Podman container- rootless-container&gt;
 </span></span><span style="display:flex;"><span>     Loaded: loaded  <span style="color:#ff6ac1">(</span>/home/conuser1/.config/systemd/user/rootless-&gt;
 </span></span><span style="display:flex;"><span>     Active: active <span style="color:#ff6ac1">(</span>running<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
 <p>14. Check the status of the container again. Observe the removal of the previous container and the launch of a new container (compare container IDs).</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman ps
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE                                   COMMAND     CREATED         STATUS         PORTS       NAMES
 </span></span><span style="display:flex;"><span> 4dec33db41b5  registry.access.redhat.com/ubi8:latest  /bin/bash   <span style="color:#ff9f43">41</span> seconds ago  Up <span style="color:#ff9f43">41</span> seconds              rootless-container</span></span></code></pre></div>
 <ul>
 <li>Each time the rootless-container service is restarted or server20 is rebooted, a new container will be launched. You can verify this by comparing their container IDs.</li>
 </ul>
-<h2 id="containers-diy-labs">Containers DIY Labs</h2>
-<h3 id="lab-launch-named-root-container-with-port-mapping">Lab: Launch Named Root Container with Port Mapping</h3>
+<h2 id="containers-diy-labs">Containers DIY Labs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="lab-launch-named-root-container-with-port-mapping">Lab: Launch Named Root Container with Port Mapping<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Create a new user account called conadm on server30 and give them full sudo rights.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@se
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@se
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> -bash: 3: <span style="color:#ff5c57">command</span> not found
 </span></span><span style="display:flex;"><span> rver30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># adduser conadm</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># visudo</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> conadm <span style="color:#ff5c57">ALL</span><span style="color:#ff6ac1">=(</span>ALL<span style="color:#ff6ac1">)</span>        ALL</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> conadm <span style="color:#ff5c57">ALL</span><span style="color:#ff6ac1">=(</span>ALL<span style="color:#ff6ac1">)</span>        ALL</span></span></code></pre></div>
 <ul>
 <li>As conadm with sudo (where required) on server30, inspect the latest version of ubi9 and then download it to your computer.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># dnf install container-tools</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># dnf install container-tools</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># podman login registry.redhat.io</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conuser1@server30 ~<span style="color:#ff6ac1">]</span>$ podman pull ubi9
 </span></span><span style="display:flex;"><span> Resolved <span style="color:#5af78e">&#34;ubi9&#34;</span> as an <span style="color:#ff5c57">alias</span>  <span style="color:#ff6ac1">(</span>/etc/containers/registries.conf.d/001-rhel- shortnames.conf<span style="color:#ff6ac1">)</span>
@@ -1523,11 +1474,11 @@ mapped to container port 8000.</p>
 <ul>
 <li>Launch a container called <em>rootful-cont-port</em> in attached terminal mode with host port 80 mapped to container port 8080.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo podman run -it --name rootful-cont-port -p  80:8080 ubi9</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> sudo podman run -it --name rootful-cont-port -p  80:8080 ubi9</span></span></code></pre></div>
 <ul>
 <li>Run a few basic Linux commands such as <code>ls</code>, <code>pwd</code>, <code>df</code>, <code>cat</code> <em>/etc/redhat-release</em>, and <em>os-release</em> while in the container.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@349163a6e431 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@349163a6e431 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls</span>
 </span></span><span style="display:flex;"><span> afs  boot  etc	 lib	lost+found  mnt  proc  run    srv  tmp  var
 </span></span><span style="display:flex;"><span> bin  dev   home  lib64	media	    opt  root  sbin   sys  usr
 </span></span><span style="display:flex;"><span>
@@ -1547,48 +1498,48 @@ mapped to container port 8000.</p>
 <ul>
 <li>Check to confirm the port mapping from server30.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman port rootful-cont- port
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman port rootful-cont- port
 </span></span><span style="display:flex;"><span> 8080/tcp -&gt; 0.0.0.0:80</span></span></code></pre></div>
 <ul>
 <li>Do not remove the container yet.</li>
 </ul>
-<h3 id="lab-launch-nameless-rootless-container-with-two-variables">Lab: Launch Nameless Rootless Container with Two Variables</h3>
+<h3 id="lab-launch-nameless-rootless-container-with-two-variables">Lab: Launch Nameless Rootless Container with Two Variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>As conadm on server30, launch a container using the latest version of ubi8 in interactive mode (-it) with two environment variables VAR1=lab1 and VAR2=lab2 defined.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman run -d -e <span style="color:#ff5c57">VAR1</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;lab1&#34;</span> -e <span style="color:#ff5c57">VAR2</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;lab2&#34;</span> --name variables8 ubi8 </span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman run -d -e <span style="color:#ff5c57">VAR1</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;lab1&#34;</span> -e <span style="color:#ff5c57">VAR2</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;lab2&#34;</span> --name variables8 ubi8 </span></span></code></pre></div>
 <ul>
 <li>Check the variables from within the container.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@803642faea28 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $VAR1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@803642faea28 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $VAR1</span>
 </span></span><span style="display:flex;"><span> lab1
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@803642faea28 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $VAR2</span>
 </span></span><span style="display:flex;"><span> lab2</span></span></code></pre></div>
 <ul>
 <li>Delete the container and the image when done.</li>
 </ul>
-<h3 id="lab-launch-named-rootless-container-with-persistent-storage">Lab: Launch Named Rootless Container with Persistent Storage</h3>
+<h3 id="lab-launch-named-rootless-container-with-persistent-storage">Lab: Launch Named Rootless Container with Persistent Storage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>As conadm with sudo (where required) on server30, create a directory called <em>/host_perm1</em> with full permissions, and a file called <em>str1</em> in it.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ sudo mkdir /host_perm1
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ sudo mkdir /host_perm1
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>sudo<span style="color:#ff6ac1">]</span> password <span style="color:#ff6ac1">for</span> conadm: 
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ sudo chmod <span style="color:#ff9f43">777</span> /host_perm1
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ sudo touch /host_perm1/str1</span></span></code></pre></div>
 <ul>
 <li>Launch a container called <em>rootless-cont-str</em> in attached terminal mode with the created directory mapped to <em>/cont_perm1</em> inside the container.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman run --name  rootless-cont-str -v /host_perm1:/cont_perm1:Z -it  ubi8
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ sudo podman run --name  rootless-cont-str -v /host_perm1:/cont_perm1:Z -it  ubi8
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@a1326200eae1 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># </span></span></span></code></pre></div>
 <ul>
 <li>While in the container, check access to the directory and the presence of the file.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@a1326200eae1 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls /cont_perm1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@a1326200eae1 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls /cont_perm1</span>
 </span></span><span style="display:flex;"><span> str1</span></span></code></pre></div>
 <ul>
 <li>Create a sub-directory and a file under <em>/cont_perm1</em> and exit out of the container shell.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@a1326200eae1 cont_perm1<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkdir permdir2</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@a1326200eae1 cont_perm1<span style="color:#ff6ac1">]</span><span style="color:#78787e"># mkdir permdir2</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@a1326200eae1 cont_perm1<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ls</span>
 </span></span><span style="display:flex;"><span> permdir2  str1
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@a1326200eae1 cont_perm1<span style="color:#ff6ac1">]</span><span style="color:#78787e"># exit</span>
@@ -1597,29 +1548,29 @@ mapped to container port 8000.</p>
 <ul>
 <li>List <em>/host_perm1</em> on server30 to verify the sub-directory and the file.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ sudo ls /host_perm1
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ sudo ls /host_perm1
 </span></span><span style="display:flex;"><span> permdir2  str1</span></span></code></pre></div>
 <ul>
 <li>Stop and delete the container.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman stop rootless-cont-str
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman stop rootless-cont-str
 </span></span><span style="display:flex;"><span> rootless-cont-str
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman rm rootless-cont-str
 </span></span><span style="display:flex;"><span> rootless-cont-str</span></span></code></pre></div>
 <ul>
 <li>Remove <em>/host_perm1</em>.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ sudo rm -r /host_perm1</span></span></code></pre></div>
-<h3 id="lab-launch-named-rootless-container-with-port-mapping-environment-variables-and-persistent-storage">Lab: Launch Named Rootless Container with Port Mapping, Environment Variables, and Persistent Storage</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ sudo rm -r /host_perm1</span></span></code></pre></div>
+<h3 id="lab-launch-named-rootless-container-with-port-mapping-environment-variables-and-persistent-storage">Lab: Launch Named Rootless Container with Port Mapping, Environment Variables, and Persistent Storage<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>As conadm with sudo (where required) on server30, launch a named rootless container called <em>rootless-cont-adv</em> in attached mode with two variables (<strong>HISTSIZE</strong>=100 and <strong>MYNAME</strong>=RedHat), host port 9000 mapped to container port 8080, and <em>/host_perm2</em> mounted at <em>/cont_perm2</em></li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman run --name rootless-cont-adv -v ~/host_perm2:/cont_perm2:Z -e <span style="color:#ff5c57">HISTSIZE</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;100&#34;</span> -e <span style="color:#ff5c57">MYNAME</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;RedHat&#34;</span> -p 9000:8080 -it --replace ubi8
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman run --name rootless-cont-adv -v ~/host_perm2:/cont_perm2:Z -e <span style="color:#ff5c57">HISTSIZE</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;100&#34;</span> -e <span style="color:#ff5c57">MYNAME</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;RedHat&#34;</span> -p 9000:8080 -it --replace ubi8
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@79e965cd1436 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># </span></span></span></code></pre></div>
 <ul>
 <li>Check and confirm the settings while inside the container.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@79e965cd1436 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $HISTSIZE</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@79e965cd1436 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $HISTSIZE</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff9f43">100</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@79e965cd1436 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $MYNAME</span>
@@ -1633,17 +1584,17 @@ mapped to container port 8000.</p>
 <ul>
 <li>Exit out of the container.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@5d510a1b2293 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># exit</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@5d510a1b2293 /<span style="color:#ff6ac1">]</span><span style="color:#78787e"># exit</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">exit</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ </span></span></code></pre></div>
 <ul>
 <li>Do not remove the container yet.</li>
 </ul>
-<h3 id="lab-22-5-control-rootless-container-states-via-systemd">Lab 22-5: Control Rootless Container States via systemd</h3>
+<h3 id="lab-22-5-control-rootless-container-states-via-systemd">Lab 22-5: Control Rootless Container States via systemd<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>As conadm on server30, use the <em>rootless-cont-adv</em> container launched in the last lab as a template and generate a systemd service configuration file and store the file in the appropriate directory.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman run --name rootless-cont-adv -v ~/host_perm2:/cont_perm2:Z -e <span style="color:#ff5c57">HISTSIZE</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;100&#34;</span> -e <span style="color:#ff5c57">MYNAME</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;RedHat&#34;</span> -p 9000:8080 -dt --replace ubi8
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman run --name rootless-cont-adv -v ~/host_perm2:/cont_perm2:Z -e <span style="color:#ff5c57">HISTSIZE</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;100&#34;</span> -e <span style="color:#ff5c57">MYNAME</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#34;RedHat&#34;</span> -p 9000:8080 -dt --replace ubi8
 </span></span><span style="display:flex;"><span> da8faf434813242985b8e332dc06b0e6da78e7125bc36579ffc8d82b0bcafb8e
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman generate systemd --new --name rootless-cont-adv &gt;  ~/.config/systemd/user/rootless-container.service
 </span></span><span style="display:flex;"><span>
@@ -1654,28 +1605,28 @@ mapped to container port 8000.</p>
 <ul>
 <li>Stop and remove the source container rootless-cont-adv.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman stop rootless-cont-adv
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman stop rootless-cont-adv
 </span></span><span style="display:flex;"><span> rootless-cont-adv
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman rm rootless-cont-adv
 </span></span><span style="display:flex;"><span> rootless-cont-adv</span></span></code></pre></div>
 <ul>
 <li>Add the support for the new service to systemd and enable the new service to auto-start at system reboots.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ systemctl --user daemon-reload
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ systemctl --user daemon-reload
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 user<span style="color:#ff6ac1">]</span>$ systemctl --user <span style="color:#ff5c57">enable</span> -- now rootless-container.service
 </span></span><span style="display:flex;"><span> Created symlink  /home/conadm/.config/systemd/user/default.target.want s/rootless-container.service →  /home/conadm/.config/systemd/user/rootless- container.service.</span></span></code></pre></div>
 <ul>
 <li>Perform the required setup to ensure the container is launched without the need for the conadm user to log in.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 user<span style="color:#ff6ac1">]</span>$ loginctl enable-linger
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 user<span style="color:#ff6ac1">]</span>$ loginctl enable-linger
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 user<span style="color:#ff6ac1">]</span>$ loginctl show-user conadm |  grep -i linger
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">Linger</span><span style="color:#ff6ac1">=</span>yes</span></span></code></pre></div>
 <ul>
 <li>Reboot server30 and confirm a successful start of the container service and the container.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@rhcsa3 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl --user --machine=conadm@ list-units --type=service</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@rhcsa3 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl --user --machine=conadm@ list-units --type=service</span>
 </span></span><span style="display:flex;"><span>  UNIT                           LOAD   ACTIVE SUB     DESCRIPTION           &gt;
 </span></span><span style="display:flex;"><span>  dbus-broker.service            loaded active running D-Bus User Message Bus
 </span></span><span style="display:flex;"><span>  rootless-cont-adv.service      loaded active running Podman container-rootl&gt;
@@ -1689,11 +1640,11 @@ mapped to container port 8000.</p>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@rhcsa3 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo -i -u conadm podman ps -a</span>
 </span></span><span style="display:flex;"><span>CONTAINER ID  IMAGE                                   COMMAND     CREATED         STATUS         PORTS                   NAMES
 </span></span><span style="display:flex;"><span>a48fd2c25be4  registry.access.redhat.com/ubi9:latest  /bin/bash   <span style="color:#ff9f43">10</span> minutes ago  Up <span style="color:#ff9f43">10</span> minutes  0.0.0.0:9000-&gt;8080/tcp  rootless-cont-adv</span></span></code></pre></div>
-<h3 id="lab-22-6-control-rootful-container-states-via-systemd">Lab 22-6: Control Rootful Container States via systemd</h3>
+<h3 id="lab-22-6-control-rootful-container-states-via-systemd">Lab 22-6: Control Rootful Container States via systemd<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>As conadm with sudo where required on server10, use the rootful-cont-port container launched in Lab 22-1 as a template and generate a systemd service configuration file and store the file in the appropriate directory.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># podman generate systemd --new -- name rootful-cont-port | tee  /etc/systemd/system/rootful-cont-port.service</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># podman generate systemd --new -- name rootful-cont-port | tee  /etc/systemd/system/rootful-cont-port.service</span>
 </span></span><span style="display:flex;"><span> DEPRECATED command:
 </span></span><span style="display:flex;"><span> It is recommended to use Quadlets <span style="color:#ff6ac1">for</span> running  containers and pods under systemd.
 </span></span><span style="display:flex;"><span>
@@ -1738,7 +1689,7 @@ mapped to container port 8000.</p>
 <ul>
 <li>Stop and remove the source container rootful-cont-port.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># podman stop rootful-cont-port</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># podman stop rootful-cont-port</span>
 </span></span><span style="display:flex;"><span> WARN<span style="color:#ff6ac1">[</span>0010<span style="color:#ff6ac1">]</span> StopSignal SIGTERM failed to stop  container rootful-cont-port in <span style="color:#ff9f43">10</span> seconds, resorting  to SIGKILL 
 </span></span><span style="display:flex;"><span> rootful-cont-port
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># podman ps</span>
@@ -1751,30 +1702,30 @@ mapped to container port 8000.</p>
 <ul>
 <li>Add the support for the new service to systemd and enable the service to auto-start at system reboots.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl daemon-reload</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl daemon-reload</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># systemctl enable --now rootful- cont-port</span>
 </span></span><span style="display:flex;"><span> Created symlink  /etc/systemd/system/default.target.wants/rootful- cont-port.service → /etc/systemd/system/rootful-cont- port.service.</span></span></code></pre></div>
 <ul>
 <li>Reboot server10 and confirm a successful start of the container service and the container.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># reboot</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># reboot</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># podman ps</span>
 </span></span><span style="display:flex;"><span> CONTAINER ID  IMAGE                                   COMMAND     CREATED             STATUS              PORTS                 NAMES
 </span></span><span style="display:flex;"><span> 5c030407a7d6   registry.access.redhat.com/ubi9:latest  /bin/bash    About a minute ago  Up About a minute  0.0.0.0:80- &gt;8080/tcp  rootful-cont-port
 </span></span><span style="display:flex;"><span> 9d1e8a429ac6   registry.access.redhat.com/ubi9:latest  /bin/bash    About a minute ago  Up About a minute                        rootful-container
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># </span></span></span></code></pre></div>
-<h3 id="lab-22-7-build-custom-image-using-containerfile">Lab 22-7: Build Custom Image Using Containerfile</h3>
+<h3 id="lab-22-7-build-custom-image-using-containerfile">Lab 22-7: Build Custom Image Using Containerfile<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>As conadm on server10, write a containerfile to use the latest version of ubi8 and create a user account called user-in-container in the resultant custom image.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ vim containerfile</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> FROM registry.access.redhat.com/ubi8/ubi:latest
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ vim containerfile</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> FROM registry.access.redhat.com/ubi8/ubi:latest
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> RUN useradd -ms /bin/bash -u <span style="color:#ff9f43">1001</span> user-in-container
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> USER <span style="color:#ff9f43">1001</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman image build -f  containerfile --no-cache -t ubi8-user .
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman image build -f  containerfile --no-cache -t ubi8-user .
 </span></span><span style="display:flex;"><span> STEP 1/3: FROM  registry.access.redhat.com/ubi8/ubi:latest
 </span></span><span style="display:flex;"><span> STEP 2/3: RUN useradd -ms /bin/bash -u <span style="color:#ff9f43">1001</span> user-in- container
 </span></span><span style="display:flex;"><span> --&gt; b330095e91eb
@@ -1786,7 +1737,7 @@ mapped to container port 8000.</p>
 <ul>
 <li>Test the image by launching a container in interactive mode and verifying the user.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman run -ti --name test12  ubi8-user
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>conadm@server30 ~<span style="color:#ff6ac1">]</span>$ podman run -ti --name test12  ubi8-user
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>user-in-container@30558ffcb227 /<span style="color:#ff6ac1">]</span>$</span></span></code></pre></div>
 
   <footer class="footline">
@@ -1858,8 +1809,8 @@ mapped to container port 8000.</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1885,23 +1836,23 @@ mapped to container port 8000.</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

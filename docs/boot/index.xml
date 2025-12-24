@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Boot :: Linux Reader</title>
-    <link>https://linuxreader.com/boot/</link>
+    <link>http://localhost:1313/boot/</link>
     <description>Boot Process, Grub2, and Kernel&#xD;System Initialization, Message Logging, and System Tuning</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://linuxreader.com/boot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/boot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Boot Process, Grub2, and Kernel</title>
-      <link>https://linuxreader.com/boot/boot-process-grub2-and-kernel/</link>
+      <link>http://localhost:1313/boot/boot-process-grub2-and-kernel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/boot/boot-process-grub2-and-kernel/</guid>
+      <guid>http://localhost:1313/boot/boot-process-grub2-and-kernel/</guid>
       <description>Linux kernel, boot process, and password recovery</description>
     </item>
     <item>
       <title>System Initialization, Message Logging, and System Tuning</title>
-      <link>https://linuxreader.com/boot/system-initialization-message-logging-and-system-tuning/</link>
+      <link>http://localhost:1313/boot/system-initialization-message-logging-and-system-tuning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/boot/system-initialization-message-logging-and-system-tuning/</guid>
+      <guid>http://localhost:1313/boot/system-initialization-message-logging-and-system-tuning/</guid>
       <description>System initialization, service management, tuning, and logging</description>
     </item>
   </channel>

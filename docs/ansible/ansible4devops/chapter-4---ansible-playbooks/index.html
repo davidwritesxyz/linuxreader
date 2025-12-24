@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="Chapter 4 - Ansible Playbooks Power plays Like many other configuration management solutions, Ansible uses a metaphor to describe its configuration files. They are called ‘playbooks’, and they list a set of tasks (‘plays’ in Ansible parlance) that will be run against a particular server or set of servers. In American football, a team follows a set of pre-written playbooks as the basis for a bunch of plays they execute to try to win a game. In Ansible, you write playbooks (a list of instructions describing the steps to bring your server to a certain configuration state) that are then played on your servers.">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="Chapter 4 - Ansible Playbooks Power plays Like many other configuration management solutions, Ansible uses a metaphor to describe its configuration files. They are called ‘playbooks’, and they list a set of tasks (‘plays’ in Ansible parlance) that will be run against a particular server or set of servers. In American football, a team follows a set of pre-written playbooks as the basis for a bunch of plays they execute to try to win a game. In Ansible, you write playbooks (a list of instructions describing the steps to bring your server to a certain configuration state) that are then played on your servers.">
-    <meta property="og:url" content="https://linuxreader.com/ansible/ansible4devops/chapter-4---ansible-playbooks/">
+    <meta property="og:url" content="http://localhost:1313/ansible/ansible4devops/chapter-4---ansible-playbooks/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:description" content="Chapter 4 - Ansible Playbooks Power plays Like many other configuration management solutions, Ansible uses a metaphor to describe its configuration files. They are called ‘playbooks’, and they list a set of tasks (‘plays’ in Ansible parlance) that will be run against a particular server or set of servers. In American football, a team follows a set of pre-written playbooks as the basis for a bunch of plays they execute to try to win a game. In Ansible, you write playbooks (a list of instructions describing the steps to bring your server to a certain configuration state) that are then played on your servers.">
     <meta property="og:locale" content="en_us">
@@ -19,39 +19,35 @@
     <meta itemprop="description" content="Chapter 4 - Ansible Playbooks Power plays Like many other configuration management solutions, Ansible uses a metaphor to describe its configuration files. They are called ‘playbooks’, and they list a set of tasks (‘plays’ in Ansible parlance) that will be run against a particular server or set of servers. In American football, a team follows a set of pre-written playbooks as the basis for a bunch of plays they execute to try to win a game. In Ansible, you write playbooks (a list of instructions describing the steps to bring your server to a certain configuration state) that are then played on your servers.">
     <meta itemprop="wordCount" content="8703">
     <title></title>
-    <link href="/ansible/ansible4devops/chapter-4---ansible-playbooks/index.xml" rel="alternate" type="application/rss+xml" title="">
-    <link href="/ansible/ansible4devops/chapter-4---ansible-playbooks/index.print.html" rel="alternate" type="text/html" title="">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/ansible\/ansible4devops\/chapter-4---ansible-playbooks\/';
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -59,14 +55,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -94,49 +90,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -156,14 +110,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/" title="Ansible (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/" title="Ansible (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -190,12 +144,9 @@
             
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ansible4devops/chapter-4---ansible-playbooks/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ad-hoc-ansible-commands/" title="Ad Hoc Ansible Commands (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/ad-hoc-ansible-commands/" title="Ad Hoc Ansible Commands (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -216,8 +167,8 @@
 
 <h1 id=""></h1>
 
-<h2 id="chapter-4---ansible-playbooks">Chapter 4 - Ansible Playbooks</h2>
-<h3 id="chap06.xhtml_leanpub-auto-power-plays">Power plays</h3>
+<h2 id="chapter-4---ansible-playbooks">Chapter 4 - Ansible Playbooks<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="chap06.xhtml_leanpub-auto-power-plays">Power plays<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Like many other configuration management solutions, Ansible uses a
 metaphor to describe its configuration files. They are called
 &lsquo;playbooks&rsquo;, and they list a set of tasks (&lsquo;plays&rsquo; in Ansible parlance)
@@ -430,12 +381,12 @@ thousand servers, all of their configurations will be updated to match
 your playbook&mdash;and Ansible will tell you if anything ever changes
 (you&rsquo;re not making ad-hoc changes on individual production servers, <em>are
 you</em>?).</p>
-<h3 id="chap06.xhtml_leanpub-auto-running-playbooks-with-ansible-playbook">Running Playbooks with <code>ansible-playbook</code></h3>
+<h3 id="chap06.xhtml_leanpub-auto-running-playbooks-with-ansible-playbook">Running Playbooks with <code>ansible-playbook</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>If we run the playbooks in the examples above (which are set to run on
 <code>all</code> hosts), then the playbook would be run against every host defined
 in your Ansible inventory file (see Chapter 1&rsquo;s <a href="/ansible/ansible4devops/chapter-4---ansible-playbooks/#chap03.xhtml_basic-inventory">basic inventory file
 example</a>).</p>
-<h4 id="chap06.xhtml_leanpub-auto-limiting-playbooks-to-particular-hosts-and-groups">Limiting playbooks to particular hosts and groups</h4>
+<h4 id="chap06.xhtml_leanpub-auto-limiting-playbooks-to-particular-hosts-and-groups">Limiting playbooks to particular hosts and groups<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>You can limit a playbook to specific groups or individual hosts by
 changing the <code>hosts:</code> definition. The value can be set to <code>all</code> hosts, a
 <code>group</code> of hosts defined in your inventory, multiple groups of hosts
@@ -480,7 +431,7 @@ bar.example.com</code></pre></p>
 </figure>
 <p>(Where <code>count</code> is the count of servers defined in your inventory, and
 following is a list of all the hosts defined in your inventory).</p>
-<h4 id="chap06.xhtml_leanpub-auto-setting-user-and-sudo-options-with-ansible-playbook">Setting user and sudo options with <code>ansible-playbook</code></h4>
+<h4 id="chap06.xhtml_leanpub-auto-setting-user-and-sudo-options-with-ansible-playbook">Setting user and sudo options with <code>ansible-playbook</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>If no <code>user</code> is defined alongside the <code>hosts</code> in a playbook, Ansible
 assumes you&rsquo;ll connect as the user defined in your inventory file for a
 particular host, and then will fall back to your local user account
@@ -508,7 +459,7 @@ prompt you for the sudo password:</p>
 <p>If you&rsquo;re not using key-based authentication to connect to your servers
 (read my warning about the security implications of doing so in Chapter
 1), you can use <code>--ask-pass</code>.</p>
-<h4 id="chap06.xhtml_leanpub-auto-other-options-for-ansible-playbook">Other options for <code>ansible-playbook</code></h4>
+<h4 id="chap06.xhtml_leanpub-auto-other-options-for-ansible-playbook">Other options for <code>ansible-playbook</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The <code>ansible-playbook</code> command also allows for some other common
 options:</p>
 <ul>
@@ -544,7 +495,7 @@ to follow along more easily. The GitHub repository includes Vagrantfiles
 with each example, so you can build the servers on your local host using
 Vagrant.</p>
 </aside>
-<h3 id="chap06.xhtml_leanpub-auto-real-world-playbook-centos-nodejs-app-server">Real-world playbook: CentOS Node.js app server</h3>
+<h3 id="chap06.xhtml_leanpub-auto-real-world-playbook-centos-nodejs-app-server">Real-world playbook: CentOS Node.js app server<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>The first example, while being helpful for someone who might want to
 post a simple static web page to a clunky old Apache server, is not a
 good representation of a real-world scenario. I&rsquo;m going to run through
@@ -572,7 +523,7 @@ this example) to contain our playbook. Let&rsquo;s keep things simple:</p>
 (see the section above about limiting the playbook to particular groups
 and hosts), then tell Ansible that what follows will be a list of tasks
 to run on the hosts.</p>
-<h4 id="chap06.xhtml_leanpub-auto-add-extra-repositories">Add extra repositories</h4>
+<h4 id="chap06.xhtml_leanpub-auto-add-extra-repositories">Add extra repositories<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Adding extra package repositories (yum or apt) is one thing many admins
 will do before any other work on a server to ensure that certain
 packages are available, or are at a later version than the ones in the
@@ -680,7 +631,7 @@ users and Node.js apps on the system.</li>
 </ol>
 <p>We&rsquo;re beginning to have a nice little Node.js app server set up. Let&rsquo;s
 set up a little Node.js app that responds to HTTP requests on port 80.</p>
-<h4 id="chap06.xhtml_leanpub-auto-deploy-a-nodejs-app">Deploy a Node.js app</h4>
+<h4 id="chap06.xhtml_leanpub-auto-deploy-a-nodejs-app">Deploy a Node.js app<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The next step is to install a simple Node.js app on our server. First,
 we&rsquo;ll create a really simple Node.js app by creating a new folder,
 <code>app</code>, in the same folder as your playbook.yml. Create a new file,
@@ -760,7 +711,7 @@ place on the server.</p>
 the path to the app. This tells NPM to parse the package.json file and
 ensure all the dependencies are present.</p>
 <p>We&rsquo;re <em>almost</em> finished! The last step is to start the app.</p>
-<h4 id="chap06.xhtml_leanpub-auto-launch-a-nodejs-app">Launch a Node.js app</h4>
+<h4 id="chap06.xhtml_leanpub-auto-launch-a-nodejs-app">Launch a Node.js app<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>We&rsquo;ll now use <code>forever</code> (which we installed earlier) to start the app.</p>
 <figure class="code">
 <div class="highlight">
@@ -797,7 +748,7 @@ app is running, we don&rsquo;t want to start another instance of it. To avoid
 that situation, we tell Ansible when we want to start the app with
 <code>when</code>. Specifically, we tell Ansible to start the app only when the
 app&rsquo;s path in <em>not</em> in the <code>forever list</code> output.</p>
-<h4 id="chap06.xhtml_leanpub-auto-nodejs-app-server-summary">Node.js app server summary</h4>
+<h4 id="chap06.xhtml_leanpub-auto-nodejs-app-server-summary">Node.js app server summary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>At this point, you have a complete playbook that will install a simple
 Node.js app which responds to HTTP requests on port 80 with &ldquo;Hello
 World!&rdquo;.</p>
@@ -827,7 +778,7 @@ application server In fewer than fifty lines of YAML!</p>
 repository at <a href="https://github.com/geerlingguy/ansible-for-devops" rel="external" target="_blank">https://github.com/geerlingguy/ansible-for-devops</a>, in
 the <code>nodejs</code> directory.</p>
 </aside>
-<h3 id="chap06.xhtml_leanpub-auto-real-world-playbook-ubuntu-lamp-server-with-drupal">Real-world playbook: Ubuntu LAMP server with Drupal</h3>
+<h3 id="chap06.xhtml_leanpub-auto-real-world-playbook-ubuntu-lamp-server-with-drupal">Real-world playbook: Ubuntu LAMP server with Drupal<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>At this point, you should be getting comfortable with Ansible playbooks
 and the YAML syntax used to define them. Up to this point, most examples
 have assumed you&rsquo;re working with a CentOS, RHEL, or Fedora server.
@@ -840,7 +791,7 @@ Drupal website.</p>
 alt="Drupal LAMP server." />
 <figcaption aria-hidden="true">Drupal LAMP server.</figcaption>
 </figure>
-<h4 id="chap06.xhtml_leanpub-auto-include-a-variables-file-and-discover-pretasks-and-handlers">Include a variables file, and discover <code>pre_tasks</code> and <code>handlers</code></h4>
+<h4 id="chap06.xhtml_leanpub-auto-include-a-variables-file-and-discover-pretasks-and-handlers">Include a variables file, and discover <code>pre_tasks</code> and <code>handlers</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>To make our playbook more efficient and readable, let&rsquo;s begin the
 playbook (named <code>playbook.yml</code>) by instructing Ansible to load in
 variables from a separate <code>vars.yml</code> file:</p>
@@ -904,7 +855,7 @@ sure handlers always run after a task uses <code>notify</code> to call the handl
 even in case of playbook failure, add <code>--force-handlers</code> to your
 <code>ansible-playbook</code> command.</p>
 </aside>
-<h4 id="chap06.xhtml_leanpub-auto-basic-lamp-server-setup">Basic LAMP server setup</h4>
+<h4 id="chap06.xhtml_leanpub-auto-basic-lamp-server-setup">Basic LAMP server setup<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The first step towards building an application server that depends on
 the LAMP stack is to build the actual LAMP part of it. This is the
 simplest process, but still requires a little extra work for our
@@ -973,7 +924,7 @@ instead have a restrictive firewall only allowing access on ports
 <li>Start up all the required services, and make sure they&rsquo;re enabled to
 start on system boot.</li>
 </ol>
-<h4 id="chap06.xhtml_leanpub-auto-configure-apache">Configure Apache</h4>
+<h4 id="chap06.xhtml_leanpub-auto-configure-apache">Configure Apache<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The next step is configuring Apache so it will work correctly with
 Drupal. Out of the box, Apache doesn&rsquo;t have mod_rewrite enabled on
 Ubuntu 12.04. To remedy that situation, you can use the command
@@ -1068,7 +1019,7 @@ to restart Apache (which will fail the first time you run the playbook),
 notify will wait until after we&rsquo;ve finished all the other steps in our
 main group of tasks (giving us time to finish setting up the server),
 <em>then</em> restart Apache.</p>
-<h4 id="chap06.xhtml_lineinfile-php">Configure PHP with <code>lineinfile</code></h4>
+<h4 id="chap06.xhtml_lineinfile-php">Configure PHP with <code>lineinfile</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>We briefly mentioned <code>lineinfile</code> earlier in the book, when discussing
 file management and ad-hoc task execution. Modifying PHP&rsquo;s configuration
 is a perfect way to demonstrate <code>lineinfile</code>&rsquo;s simplicity and
@@ -1101,7 +1052,7 @@ line. If there is, Ansible will make sure the line matches the <code>line</code>
 parameter. If not, Ansible will add the line as defined in the <code>line</code>
 parameter. Ansible will only report a change if it had to add or change
 the line to match <code>line</code>.</p>
-<h4 id="chap06.xhtml_leanpub-auto-configure-mysql">Configure MySQL</h4>
+<h4 id="chap06.xhtml_leanpub-auto-configure-mysql">Configure MySQL<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The next step is to remove MySQL&rsquo;s default test database, and create a
 database (named for the domain we specified earlier) for our Drupal
 installation to use.</p>
@@ -1136,7 +1087,7 @@ in your Ansible playbooks or variable files. Otherwise, you can prompt
 the user running the Ansible playbook for a MySQL username and password.
 This option, using prompts, will be discussed later in the book.</p>
 </aside>
-<h4 id="chap06.xhtml_leanpub-auto-install-composer-and-drush">Install Composer and Drush</h4>
+<h4 id="chap06.xhtml_leanpub-auto-install-composer-and-drush">Install Composer and Drush<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Drupal has a command-line companion in the form of Drush. Drush is
 developed independently of Drupal, and provides a full suite of CLI
 commands to manage Drupal. Drush, like most modern PHP tools, integrates
@@ -1228,7 +1179,7 @@ already exists (for idempotency).</p>
 <p>Finally, we create a symlink from <code>/usr/local/bin/drush</code> to the
 executable at <code>/opt/drush/drush</code>, so we can call the <code>drush</code> command
 anywhere on the system.</p>
-<h4 id="chap06.xhtml_leanpub-auto-install-drupal-with-git-and-drush">Install Drupal with Git and Drush</h4>
+<h4 id="chap06.xhtml_leanpub-auto-install-drupal-with-git-and-drush">Install Drupal with Git and Drush<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>We&rsquo;ll use <code>git</code> again to clone Drupal to the Apache document root we
 defined earlier in our virtual host configuration, then we&rsquo;ll run
 Drupal&rsquo;s installation via Drush, and fix a couple other file permissions
@@ -1288,7 +1239,7 @@ installed, we also restart Apache for good measure (using <code>notify</code>
 again, like we did when updating Apache&rsquo;s configuration).</p>
 <p>The final two tasks set permissions on Drupal&rsquo;s settings.php and files
 folder to 744 and 777, respectively.</p>
-<h4 id="chap06.xhtml_leanpub-auto-drupal-lamp-server-summary">Drupal LAMP server summary</h4>
+<h4 id="chap06.xhtml_leanpub-auto-drupal-lamp-server-summary">Drupal LAMP server summary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>To run the playbook on a server (either via a local VM for testing or on
 another server), use the following command:</p>
 <figure class="code">
@@ -1309,7 +1260,7 @@ including Symfony, Wordpress, Joomla, Laravel, etc.</p>
 repository at <a href="https://github.com/geerlingguy/ansible-for-devops" rel="external" target="_blank">https://github.com/geerlingguy/ansible-for-devops</a>, in
 the <code>drupal</code> directory.</p>
 </aside>
-<h3 id="chap06.xhtml_leanpub-auto-real-world-playbook-ubuntu-apache-tomcat-server-with-solr">Real-world playbook: Ubuntu Apache Tomcat server with Solr</h3>
+<h3 id="chap06.xhtml_leanpub-auto-real-world-playbook-ubuntu-apache-tomcat-server-with-solr">Real-world playbook: Ubuntu Apache Tomcat server with Solr<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Apache Solr is a fast and scalable search server optimized for full-text
 search, word highlighting, faceted search, fast indexing, and more. It&rsquo;s
 a very popular search server, and it&rsquo;s pretty easy to install and
@@ -1320,7 +1271,7 @@ Apache Solr using Ubuntu 12.04 and Apache Tomcat.</p>
 alt="Apache Solr Server." />
 <figcaption aria-hidden="true">Apache Solr Server.</figcaption>
 </figure>
-<h4 id="chap06.xhtml_leanpub-auto-include-a-variables-file-and-more-pretasks-and-handlers">Include a variables file, and more <code>pre_tasks</code> and <code>handlers</code></h4>
+<h4 id="chap06.xhtml_leanpub-auto-include-a-variables-file-and-more-pretasks-and-handlers">Include a variables file, and more <code>pre_tasks</code> and <code>handlers</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Just like the previous LAMP server example, we&rsquo;ll begin this playbook
 (again named <code>playbook.yml</code>) by telling Ansible our variables will be in
 a separate <code>vars.yml</code> file:</p>
@@ -1369,7 +1320,7 @@ that powers Apache Solr:</p>
 </figure>
 <p>We can call this handler with the option <code>notify: restart tomcat</code> in any
 play in our playbook.</p>
-<h4 id="chap06.xhtml_leanpub-auto-install-apache-tomcat-7">Install Apache Tomcat 7</h4>
+<h4 id="chap06.xhtml_leanpub-auto-install-apache-tomcat-7">Install Apache Tomcat 7<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>It&rsquo;s easy enough to install Tomcat 7 on an Ubuntu Precise server; there
 are packages in the default apt repositories, so we just need to make
 sure they&rsquo;re installed, and that the <code>tomcat7</code> service is enabled and
@@ -1391,7 +1342,7 @@ started:</p>
 <code>tomcat7</code> and <code>tomcat7-admin</code> (so we can log into Tomcat&rsquo;s
 administrative backend), then started <code>tomcat7</code> and set it to start when
 the system boots.</p>
-<h4 id="chap06.xhtml_leanpub-auto-install-apache-solr">Install Apache Solr</h4>
+<h4 id="chap06.xhtml_leanpub-auto-install-apache-solr">Install Apache Solr<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Ubuntu 12.04 includes a package for Apache Solr, but it installs a very
 old version, so we&rsquo;ll install the latest version of Solr from source.
 The first step is downloading the source:</p>
@@ -1565,7 +1516,7 @@ minutes (depending on your server&rsquo;s Internet connection speed), you
 should be able to access the Solr admin interface at
 <a href="http://example.com:8080/solr" rel="external" target="_blank">http://example.com:8080/solr</a> (where &rsquo;example.com&rsquo; is your server&rsquo;s
 hostname or IP address).</p>
-<h4 id="chap06.xhtml_leanpub-auto-apache-solr-server-summary">Apache Solr server summary</h4>
+<h4 id="chap06.xhtml_leanpub-auto-apache-solr-server-summary">Apache Solr server summary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The configuration we used when deploying Apache Solr allows for a multi
 core setup, so you could add more &lsquo;search cores&rsquo; via the admin interface
 (as long as the directories and core schema configuration is in place in
@@ -1579,7 +1530,7 @@ service I run which hosts Apache Solr search cores for Drupal websites.</p>
 repository at <a href="https://github.com/geerlingguy/ansible-for-devops" rel="external" target="_blank">https://github.com/geerlingguy/ansible-for-devops</a>, in
 the <code>solr</code> directory.</p>
 </aside>
-<h3 id="chap06.xhtml_leanpub-auto-summary-3">Summary</h3>
+<h3 id="chap06.xhtml_leanpub-auto-summary-3">Summary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>At this point, you should be getting comfortable with Ansible&rsquo;s <em>modus
 operandi</em>. Playbooks are the heart of Ansible&rsquo;s configuration management
 and provisioning functionality, and the same modules and similar syntax
@@ -1715,8 +1666,8 @@ time setting up and configuring your infrastructure.</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1742,23 +1693,23 @@ time setting up and configuring your infrastructure.</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

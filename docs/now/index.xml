@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>What I am Doing Now :: Linux Reader</title>
-    <link>https://linuxreader.com/now/</link>
+    <link>http://localhost:1313/now/</link>
     <description>This is a page to help me stay focused and keep track of what I am doing. It is also to show others what I am currently working on and thinking about. Credit goes to Derek Sivers for starting a “Now” page movement. Read about “Now” pages here.&#xA;I keep a page of projects that I want to do and tech that I want to learn here. Then, instead of trying to learn every new shiny thing as it pops up. I continue to focus on my current goal.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://linuxreader.com/now/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/now/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

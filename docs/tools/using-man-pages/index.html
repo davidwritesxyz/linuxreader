@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Guide to using Man Pages">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="You Need to Learn Man Pages :: Linux Reader">
     <meta name="twitter:description" content="Guide to using Man Pages">
-    <meta property="og:url" content="https://linuxreader.com/tools/using-man-pages/">
+    <meta property="og:url" content="http://localhost:1313/tools/using-man-pages/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="You Need to Learn Man Pages :: Linux Reader">
     <meta property="og:description" content="Guide to using Man Pages">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Guide to using Man Pages">
     <meta itemprop="wordCount" content="843">
     <title>You Need to Learn Man Pages :: Linux Reader</title>
-    <link href="/tools/using-man-pages/index.xml" rel="alternate" type="application/rss+xml" title="You Need to Learn Man Pages :: Linux Reader">
-    <link href="/tools/using-man-pages/index.print.html" rel="alternate" type="text/html" title="You Need to Learn Man Pages :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/tools\/using-man-pages\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/vimguide/" title="Vim Guide (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tools/vimguide/" title="Vim Guide (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -185,12 +139,9 @@
             You Need to Learn Man Pages
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/using-man-pages/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/users-and-groups/" title="Users and Groups (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/users-and-groups/" title="Users and Groups (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -232,13 +183,13 @@
 <p>g first line in file</p>
 <p>G last line in file</p>
 <p>CR means press enter</p>
-<h2 id="searching">Searching</h2>
+<h2 id="searching">Searching<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>/searchword</p>
 <p>press enter to jump first occurance of searched word</p>
 <p>n to jump to next match</p>
 <p>N to go to previous match</p>
 <p>?searchword to do a backward search (n and N are reversed when going through results)</p>
-<h2 id="man-page-conventions">Man page conventions</h2>
+<h2 id="man-page-conventions">Man page conventions<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>bold text</strong> type as shown</p>
 <p><em>italic text</em> replace with arguments</p>
 <ul>
@@ -248,7 +199,7 @@
 <p>-a | -b Options separated by a pipe symbol cannot be used together.</p>
 <p><u>argument</u> &hellip; (followed by 3 dots) can be repeated. (Argument is repeatable)</p>
 <p><u>[expression]</u> &hellip; entire expression within [ ] is repeatable.</p>
-<h2 id="parts-of-a-man-page">Parts of a man page</h2>
+<h2 id="parts-of-a-man-page">Parts of a man page<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>Name</strong></p>
 <ul>
 <li>name of command</li>
@@ -260,11 +211,11 @@
 <p>When you see file in a man page, think file and or directory</p>
 <p><strong>Description</strong>
 short and long options do the same thing
-<a href="#R-image-461347636d2dd7c962b8be53edf7e08b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020240709211540.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-461347636d2dd7c962b8be53edf7e08b"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020240709211540.png"></a></p>
+<a href="#R-image-a78a809e0f8127989b38c68d082973d8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020240709211540.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a78a809e0f8127989b38c68d082973d8"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020240709211540.png"></a></p>
 <p>Current section number is printed at the top left of the man page.</p>
 <p>-k to search sections using apropos</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># man -k unlink</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># man -k unlink</span>
 </span></span><span style="display:flex;"><span>mq_unlink <span style="color:#ff6ac1">(</span>2<span style="color:#ff6ac1">)</span>        - remove a message queue
 </span></span><span style="display:flex;"><span>mq_unlink <span style="color:#ff6ac1">(</span>3<span style="color:#ff6ac1">)</span>        - remove a message queue
 </span></span><span style="display:flex;"><span>mq_unlink <span style="color:#ff6ac1">(</span>3p<span style="color:#ff6ac1">)</span>       - remove a message queue <span style="color:#ff6ac1">(</span>REALT...
@@ -280,14 +231,14 @@ short and long options do the same thing
 </span></span><span style="display:flex;"><span>unlinkat <span style="color:#ff6ac1">(</span>2<span style="color:#ff6ac1">)</span>         - delete a name and possibly th...<span style="color:#ff6ac1">]</span></span></span></code></pre></div>
 <p>Shows page number in ()</p>
 <p>The sections that end in p are POSIX documentation. Theese are not specific to Linux.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># man -k &#34;man pages&#34;</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># man -k &#34;man pages&#34;</span>
 </span></span><span style="display:flex;"><span>lexgrog <span style="color:#ff6ac1">(</span>1<span style="color:#ff6ac1">)</span>          - parse header information in man pages
 </span></span><span style="display:flex;"><span>man <span style="color:#ff6ac1">(</span>7<span style="color:#ff6ac1">)</span>              - macros to format man pages
 </span></span><span style="display:flex;"><span>man-pages <span style="color:#ff6ac1">(</span>7<span style="color:#ff6ac1">)</span>        - conventions <span style="color:#ff6ac1">for</span> writing Linux man pages
 </span></span><span style="display:flex;"><span>man.man-pages <span style="color:#ff6ac1">(</span>7<span style="color:#ff6ac1">)</span>    - macros to format man pages
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># man man-pages</span></span></span></code></pre></div>
 <p>Use man-pages to learn more about man pages</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Sections within a manual page
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Sections within a manual page
 </span></span><span style="display:flex;"><span>       The list below shows conventional or suggested sections.  Most manual
 </span></span><span style="display:flex;"><span>       pages should include at least the highlighted  sections.   Arrange  a
 </span></span><span style="display:flex;"><span>       new manual page so that sections are placed in the order shown in the
@@ -320,12 +271,12 @@ short and long options do the same thing
 <code>man bash</code></p>
 <p>Search for the Shell Builtins section:
 <code>/SHELL BUILTIN COMMANDS</code></p>
-<p><a href="#R-image-5505a7f252fbcc6d2bb955fe9faf437b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020240710050240.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5505a7f252fbcc6d2bb955fe9faf437b"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020240710050240.png"></a></p>
+<p><a href="#R-image-61e1f0c8183683bf1e14c1e6e1b5cad0" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020240710050240.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-61e1f0c8183683bf1e14c1e6e1b5cad0"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020240710050240.png"></a></p>
 <p>You can find help on builtins with the help command:
-<a href="#R-image-5e75b1f4b0efdfcaf8cf7f92d83e83b7" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020240710050536.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-5e75b1f4b0efdfcaf8cf7f92d83e83b7"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020240710050536.png"></a></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>david@fedora:~$ <span style="color:#ff5c57">help</span> <span style="color:#ff5c57">hash</span>
+<a href="#R-image-ff64c63de0f3c421f8a38ce2d69af048" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020240710050536.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ff64c63de0f3c421f8a38ce2d69af048"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020240710050536.png"></a></p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>david@fedora:~$ <span style="color:#ff5c57">help</span> <span style="color:#ff5c57">hash</span>
 </span></span><span style="display:flex;"><span>hash: <span style="color:#ff5c57">hash</span> <span style="color:#ff6ac1">[</span>-lr<span style="color:#ff6ac1">]</span> <span style="color:#ff6ac1">[</span>-p pathname<span style="color:#ff6ac1">]</span> <span style="color:#ff6ac1">[</span>-dt<span style="color:#ff6ac1">]</span> <span style="color:#ff6ac1">[</span>name ...<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span>    Remember or display program locations.
 </span></span><span style="display:flex;"><span>    
@@ -347,7 +298,7 @@ short and long options do the same thing
 </span></span><span style="display:flex;"><span>    Exit Status:
 </span></span><span style="display:flex;"><span>    Returns success unless NAME is not found or an invalid option is given.</span></span></code></pre></div>
 <p><code>help</code> without any arguments displays commands you can get help on.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>david@fedora:~/Documents/davidvargas/davidvargasxyz.github.io$ <span style="color:#ff5c57">help</span> <span style="color:#ff5c57">help</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>david@fedora:~/Documents/davidvargas/davidvargasxyz.github.io$ <span style="color:#ff5c57">help</span> <span style="color:#ff5c57">help</span>
 </span></span><span style="display:flex;"><span>help: <span style="color:#ff5c57">help</span> <span style="color:#ff6ac1">[</span>-dms<span style="color:#ff6ac1">]</span> <span style="color:#ff6ac1">[</span>pattern ...<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span>    Display information about <span style="color:#ff5c57">builtin</span> commands.
 </span></span><span style="display:flex;"><span>    
@@ -447,8 +398,8 @@ short and long options do the same thing
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -474,23 +425,23 @@ short and long options do the same thing
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

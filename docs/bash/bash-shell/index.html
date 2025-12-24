@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Bash variables, redirections, history substitution, metacharacters, startup files, etc.">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Bash :: Linux Reader">
     <meta name="twitter:description" content="Bash variables, redirections, history substitution, metacharacters, startup files, etc.">
-    <meta property="og:url" content="https://linuxreader.com/bash/bash-shell/">
+    <meta property="og:url" content="http://localhost:1313/bash/bash-shell/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Bash :: Linux Reader">
     <meta property="og:description" content="Bash variables, redirections, history substitution, metacharacters, startup files, etc.">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Bash variables, redirections, history substitution, metacharacters, startup files, etc.">
     <meta itemprop="wordCount" content="3677">
     <title>Bash :: Linux Reader</title>
-    <link href="/bash/bash-shell/index.xml" rel="alternate" type="application/rss+xml" title="Bash :: Linux Reader">
-    <link href="/bash/bash-shell/index.print.html" rel="alternate" type="text/html" title="Bash :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/bash\/bash-shell\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/bash/" title="Bash (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/bash/" title="Bash (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -246,12 +200,9 @@
             Bash
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/bash/bash-shell/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/bash/shell-scripting/" title="Shell Scripting (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/bash/shell-scripting/" title="Shell Scripting (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -272,15 +223,15 @@
 
 <h1 id="bash">Bash</h1>
 
-<h2 id="my-name-is-marcel-and-im-partially-a-shell">My name is Marcel and I&rsquo;m partially a shell..</h2>
-<p><a href="#R-image-9d4216b9d8032c86bd94e38275080444" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020250316051144.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9d4216b9d8032c86bd94e38275080444"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020250316051144.png"></a></p>
+<h2 id="my-name-is-marcel-and-im-partially-a-shell">My name is Marcel and I&rsquo;m partially a shell..<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><a href="#R-image-7aad30d47254a78bb3c183ff0d542fef" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020250316051144.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7aad30d47254a78bb3c183ff0d542fef"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020250316051144.png"></a></p>
 <p>A shell is a program that takes commands and passes them to the operating system.^1^ This is done via <strong>terminal emulator</strong> with keyboard commands or by using scripts ran on the system. There are many shell programs that you can use on Linux. Almost all Linux distributions come with a shell called <strong>Bash</strong>. Some others include <strong>zsh</strong>, <strong>fsh</strong>, <strong>ksh</strong>, and <strong>Tcsh</strong>. (But not limited to)</p>
 <p>Shells have different features such as built in commands, job control, alias definitions, history substitution, PATH searching, command completion, and more. Each shell has it&rsquo;s own syntax, hotkeys, way of doing things. Most of them follow a standard called &ldquo;POSIX&rdquo; that help with script portability between shells.</p>
 <p>You can see a list of more shells and a comparison of their features on this <a href="https://en.wikipedia.org/wiki/Comparison_of_command_shells" rel="external" target="_blank">Wikipedia page</a>.</p>
-<h2 id="terminator-emulators">Terminator emulators..</h2>
-<p><a href="#R-image-45459756bc7f37d2ff2c4bcefcdef2ed" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020250316051955.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-45459756bc7f37d2ff2c4bcefcdef2ed"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020250316051955.png"></a></p>
+<h2 id="terminator-emulators">Terminator emulators..<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><a href="#R-image-744a6628ce1825f2546b161725fd3f86" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020250316051955.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-744a6628ce1825f2546b161725fd3f86"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020250316051955.png"></a></p>
 <p>I meant Terminal Emulators! Silly me..</p>
 <p>The <strong>Current shell</strong></p>
 <ul>
@@ -322,20 +273,20 @@
 	- **USER** 
 		- Retains the name of the logged-in user
 </code></pre>
-<h3 id="setting-and-unsetting-variables">Setting and unsetting variables</h3>
+<h3 id="setting-and-unsetting-variables">Setting and unsetting variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li><code>export</code>, <code>unset</code>, and <code>echo</code> to define and undefine environment variables</li>
 <li>Use uppercase for variables</li>
 </ul>
-<h3 id="echo-command">echo command</h3>
+<h3 id="echo-command">echo command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Restricted to showing the value of a specific variable</li>
 </ul>
-<h3 id="env-command">env command</h3>
+<h3 id="env-command">env command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Displays the environment variables only.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># env</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># env</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">SHELL</span><span style="color:#ff6ac1">=</span>/bin/bash
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">HISTCONTROL</span><span style="color:#ff6ac1">=</span>ignoredups
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">HISTSIZE</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1000</span>
@@ -369,15 +320,15 @@
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">_</span><span style="color:#ff6ac1">=</span>/usr/bin/env
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">OLDPWD</span><span style="color:#ff6ac1">=</span>/dev/vg200</span></span></code></pre></div>
-<h3 id="printenv-command">printenv command</h3>
+<h3 id="printenv-command">printenv command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Displays the environment variables only.</li>
 </ul>
-<h3 id="set-command">set command</h3>
+<h3 id="set-command">set command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>View both local and environment variables.</li>
 </ul>
-<h3 id="command-and-variable-substitutions">Command and Variable substitutions</h3>
+<h3 id="command-and-variable-substitutions">Command and Variable substitutions<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>PS1 Environment variable sets what the prompt looks like.</li>
 <li>Default value is \u@\h \W\$
@@ -406,7 +357,7 @@
 </li>
 <li>Command whose output you want assigned to a variable must be encapsulated within either backticks <code>hostname</code> or parentheses $(hostname).</li>
 </ul>
-<h2 id="input-output-and-error-redirections">Input, Output, and Error Redirections</h2>
+<h2 id="input-output-and-error-redirections">Input, Output, and Error Redirections<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Input, output, and error character streams:
 <ul>
@@ -475,7 +426,7 @@
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim test.txt</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim test.txt</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># set -o noclobber</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo &#34;Hello&#34; &gt; test.txt</span>
 </span></span><span style="display:flex;"><span>-bash: test.txt: cannot overwrite existing file
@@ -483,7 +434,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo &#34;Hello&#34; &gt; test.txt</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat test.txt</span>
 </span></span><span style="display:flex;"><span>Hello</span></span></code></pre></div>
-<h2 id="history-substitution">History Substitution</h2>
+<h2 id="history-substitution">History Substitution<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Command history or history expansion.</li>
 <li>Can disable and re-enable if required.</li>
@@ -510,7 +461,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="history-command"><code>history</code> command</h3>
+<h3 id="history-command"><code>history</code> command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Displays or reruns previously executed commands.</li>
 <li>Gets the history data from the system memory as well as from the .bash_history file.</li>
@@ -526,7 +477,7 @@
 </ul>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># set +o history</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># set +o history</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># history | tail </span>
 </span></span><span style="display:flex;"><span>  <span style="color:#ff9f43">126</span>  ls
@@ -571,8 +522,8 @@
 </span></span><span style="display:flex;"><span>  <span style="color:#ff9f43">137</span>  <span style="color:#ff5c57">history</span> | tail </span></span></code></pre></div>
 <p>Add timestamps to history output system wide:
 <code>echo &quot;export HISTTIMEFORMAT='%F %T '&quot; &gt;&gt; /etc/profile &amp;&amp; source /etc/profile</code></p>
-<h2 id="editing-at-the-command-line">Editing at the Command line</h2>
-<h3 id="common-key-combinations">Common key combinations:</h3>
+<h2 id="editing-at-the-command-line">Editing at the Command line<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="common-key-combinations">Common key combinations:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li><strong>Ctrl+a / Home</strong>
 <ul>
@@ -615,12 +566,12 @@
 </ul>
 </li>
 </ul>
-<h3 id="tab-completion">Tab completion</h3>
+<h3 id="tab-completion">Tab completion<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Hitting the Tab key twice automatically completes the entire name.</li>
 <li>In case of multiple possibilities matching the entered characters, it completes up to the point they have in common and prints the rest of the possibilities on the screen.</li>
 </ul>
-<h3 id="tilde-substitution-tilde-expansion">Tilde Substitution (tilde expansion)</h3>
+<h3 id="tilde-substitution-tilde-expansion">Tilde Substitution (tilde expansion)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Performed on words that begin with the tilde character (~).
 ~
@@ -635,7 +586,7 @@
 - Refers to previous working directory.</p>
 <p>~USER
 - Refers to specific user&rsquo;s home directory.</p>
-<h3 id="alias-substitution-command-aliasing-or-alias">Alias Substitution (command aliasing or alias)</h3>
+<h3 id="alias-substitution-command-aliasing-or-alias">Alias Substitution (command aliasing or alias)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Define shortcuts for commands.</li>
 <li>Bash shell includes several predefined aliases that are set during user login.</li>
@@ -645,12 +596,12 @@
 </ul>
 </li>
 </ul>
-<h3 id="alias-command">alias command</h3>
+<h3 id="alias-command">alias command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Set an alias.</li>
 <li>Internal shell command.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># alias</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># alias</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">cp</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;cp -i&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">egrep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;egrep --color=auto&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">fgrep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;fgrep --color=auto&#39;</span>
@@ -666,18 +617,18 @@
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">zegrep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;zegrep --color=auto&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">zfgrep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;zfgrep --color=auto&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">zgrep</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;zgrep --color=auto&#39;</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[root@localhost ~]# alias frog=&#39;pwd&#39;
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>[root@localhost ~]# alias frog=&#39;pwd&#39;
 [root@localhost ~]# frog
 /root</code></pre></div>
-<h3 id="unalias-command">unalias command</h3>
+<h3 id="unalias-command">unalias command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Unset an alias.</li>
 <li>Internal shell command.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># unalias frog</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># unalias frog</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@localhost ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># frog</span>
 </span></span><span style="display:flex;"><span>-bash: frog: <span style="color:#ff5c57">command</span> not found</span></span></code></pre></div>
-<h2 id="metacharacters-and-wildcard">Metacharacters and Wildcard</h2>
+<h2 id="metacharacters-and-wildcard">Metacharacters and Wildcard<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Metacharacters
 <ul>
@@ -757,7 +708,7 @@
 <ul>
 <li>Run a second command after the ;</li>
 </ul>
-<h3 id="quoting-mechanisms">Quoting Mechanisms</h3>
+<h3 id="quoting-mechanisms">Quoting Mechanisms<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Disable special meaning of metacharacters</li>
 </ul>
@@ -774,13 +725,13 @@
 <ul>
 <li>Mask the meaning of all but the backslash (), dollar sign ($), and single quotes (‘’).</li>
 </ul>
-<h3 id="regular-expressions-regexp-or-regex">Regular expressions (regexp or regex)</h3>
+<h3 id="regular-expressions-regexp-or-regex">Regular expressions (regexp or regex)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Text pattern or an expression that is matched against a string of characters in a file or supplied input in a search operation.</li>
 <li>Pattern may include a single character, multiple random characters, a range of characters, word, phrase, or an entire sentence.</li>
 <li>Any pattern containing one or more white spaces must be surrounded by quotation marks.</li>
 </ul>
-<h3 id="grep-command"><code>grep</code> command</h3>
+<h3 id="grep-command"><code>grep</code> command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Searches the contents of one or more text files or input supplied for a match.</li>
 </ul>
@@ -809,7 +760,7 @@
 <ul>
 <li>-Use patterns for matching</li>
 </ul>
-<h2 id="jobs">Jobs</h2>
+<h2 id="jobs">Jobs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>job
 <ul>
@@ -852,7 +803,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="jobs-command">jobs command</h3>
+<h3 id="jobs-command">jobs command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>output
 plus sign (+)
 - indicates the current background job
@@ -861,7 +812,7 @@ minus sign (-)
 Stopped
 - currently suspended
 - can be signaled to continue their execution with bg or fg</p>
-<h2 id="shell-startup-files">Shell Startup Files</h2>
+<h2 id="shell-startup-files">Shell Startup Files<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Sourced by the shell following user authentication at the time of logging in and before the command prompt appears.</li>
 <li>Aliases, functions, and scripts can be added to these files as well.</li>
@@ -931,399 +882,399 @@ Stopped
 </li>
 <li>Per user settings must be added to the appropriate file for persistence.</li>
 </ul>
-<h2 id="bash-labs">Bash Labs</h2>
-<h3 id="lab-view-environment-variables">Lab: View environment variables</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>env
+<h2 id="bash-labs">Bash Labs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="lab-view-environment-variables">Lab: View environment variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>env
 printenv</code></pre></div>
-<h3 id="lab-viewing-environment-variable-values">Lab: Viewing Environment variable values</h3>
+<h3 id="lab-viewing-environment-variable-values">Lab: Viewing Environment variable values<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>View the value for the PATH variable</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>echo $PATH</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>echo $PATH</code></pre></div>
 <ol start="2">
 <li>View the value for the HOME variable</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>echo $HOME</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>echo $HOME</code></pre></div>
 <ol start="3">
 <li>View the value for the SHELL variable</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>echo $SHELL</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>echo $SHELL</code></pre></div>
 <ol start="4">
 <li>View the value for the TERM variable</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>echo $TERM</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>echo $TERM</code></pre></div>
 <ol start="5">
 <li>View the value for the PPID variable</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>echo $PPID</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>echo $PPID</code></pre></div>
 <ol start="6">
 <li>View the value for the PS1 variable</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>echo $PS1</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>echo $PS1</code></pre></div>
 <ol start="7">
 <li>View the value for the USER variable</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>echo $USER</code></pre></div>
-<h3 id="lab-setting-and-unsetting-variables">Lab: Setting and Unsetting Variables</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>echo $USER</code></pre></div>
+<h3 id="lab-setting-and-unsetting-variables">Lab: Setting and Unsetting Variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Define a local variable called VR1:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>VR1=RHEL9</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>VR1=RHEL9</code></pre></div>
 <ol start="2">
 <li>View the value of VR1:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>echo $VR1</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>echo $VR1</code></pre></div>
 <ol start="3">
 <li>Type bash at the command prompt to enter a sub-shell and then run echo $VR1 to check whether the variable is visible in the sub-shell.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>echo $VR1</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>echo $VR1</code></pre></div>
 <ol start="4">
 <li>Exit out of the subshell:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>exit</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>exit</code></pre></div>
 <ol start="5">
 <li>Turn VR1 into an environment variable:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>export VR1</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>export VR1</code></pre></div>
 <ol start="6">
 <li>Type bash at the command prompt to enter a sub-shell and then run echo $VR1 to check whether the variable is visible in the sub-shell.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>echo $VR1</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>echo $VR1</code></pre></div>
 <ol start="7">
 <li>Undefine this variable and erase it from the shell environment:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>unset VR1</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>unset VR1</code></pre></div>
 <ol start="8">
 <li>Define a local variable that contains a value with one or more white spaces:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>VR2=&#34;I love RHEL 9&#34;</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>VR2=&#34;I love RHEL 9&#34;</code></pre></div>
 <ol start="9">
 <li>Define and make the variable an environment variable at the same time:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>export VR3=&#34;I love RHEL 9&#34;</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>export VR3=&#34;I love RHEL 9&#34;</code></pre></div>
 <ol start="10">
 <li>View local and environment variables:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>set</code></pre></div>
-<h3 id="lab-modify-primary-command-prompt">Lab: Modify Primary Command Prompt</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>set</code></pre></div>
+<h3 id="lab-modify-primary-command-prompt">Lab: Modify Primary Command Prompt<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Change the value of the variable PS1 to reflect the desired information:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>export PS1=&#34;&lt; $LOGNAME on $HOSTNAME in \$PWD &gt; &#34; </code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>export PS1=&#34;&lt; $LOGNAME on $HOSTNAME in \$PWD &gt; &#34; </code></pre></div>
 <ol start="2">
 <li>Edit the .bash_profile file for user1 and define the value exactly as it was run in Step 1.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>vim .bash_profile</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>vim .bash_profile</code></pre></div>
 <ol start="3">
 <li>Test by logging off as user1 and logging back in. The new command prompt will be displayed.</li>
 </ol>
-<h3 id="lab-redirecting-standard-input">Lab: Redirecting Standard Input</h3>
+<h3 id="lab-redirecting-standard-input">Lab: Redirecting Standard Input<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Have the cat command read the <em>/etc/redhat-release</em> file and display its content on the standard output (terminal screen):</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>cat &lt; /etc/redhat-release</code></pre></div>
-<h3 id="lab-redirecting-standard-output">Lab: Redirecting Standard Output</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>cat &lt; /etc/redhat-release</code></pre></div>
+<h3 id="lab-redirecting-standard-output">Lab: Redirecting Standard Output<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Direct the ls command output to a file called ls.out:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ls &gt; ls.out</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ls &gt; ls.out</code></pre></div>
 <ol start="2">
 <li>Do the same thing but using file descriptors:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ls 1&gt; ls.out</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ls 1&gt; ls.out</code></pre></div>
 <ol start="3">
 <li>Activate the noclobber feature then try the redirect feature again:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>set -o noclobber
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>set -o noclobber
 ls &gt; ls.out</code></pre></div>
 <ol start="4">
 <li>Deactivate noclobber</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">set</span> +o noclobber</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">set</span> +o noclobber</span></span></code></pre></div>
 <ol start="5">
 <li>Direct the ls command to append the output to the ls.out file instead of overwriting it:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls &gt;&gt; ls.out
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls &gt;&gt; ls.out
 </span></span><span style="display:flex;"><span>or
 </span></span><span style="display:flex;"><span>ls 1&gt;&gt; ls.out</span></span></code></pre></div>
-<h3 id="lab-redirecting-standard-error">Lab: Redirecting Standard Error</h3>
+<h3 id="lab-redirecting-standard-error">Lab: Redirecting Standard Error<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Direct the find command issued as a normal user to search for all occurrences of files by the name core in the entire directory tree and sends any error messages produced to /dev/null</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -name core -print 2&gt; /dev/null</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find / -name core -print 2&gt; /dev/null</span></span></code></pre></div>
 <ol start="2">
 <li>Redirect both standard output and error:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls /usr /cdr &amp;&gt; outerr.out
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls /usr /cdr &amp;&gt; outerr.out
 </span></span><span style="display:flex;"><span>or
 </span></span><span style="display:flex;"><span>ls /usr /cdr 1&gt; outerr.out 2&gt;&amp;<span style="color:#ff9f43">1</span>
 </span></span><span style="display:flex;"><span><span style="color:#5af78e">\#</span> means to redirect file descriptor <span style="color:#ff9f43">1</span> to file outerr.out as well as to file descriptor 2.</span></span></code></pre></div>
 <ol start="3">
 <li>Same as above but append to file:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls /usr/cdr &amp;&gt;&gt; outerr.out</span></span></code></pre></div>
-<h3 id="lab-show-history-variables">Lab: Show History Variables</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls /usr/cdr &amp;&gt;&gt; outerr.out</span></span></code></pre></div>
+<h3 id="lab-show-history-variables">Lab: Show History Variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>View HISTFILE Variable:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#ff5c57">$HISTFILE</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#ff5c57">$HISTFILE</span></span></span></code></pre></div>
 <ol start="2">
 <li>View HISTSIZE variable:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#ff5c57">$HISTSIZE</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#ff5c57">$HISTSIZE</span></span></span></code></pre></div>
 <ol start="3">
 <li>View HISTFILESIZE variable:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#ff5c57">$HISTFILESIZE</span></span></span></code></pre></div>
-<h3 id="lab-history-command">Lab: History command</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#ff5c57">$HISTFILESIZE</span></span></span></code></pre></div>
+<h3 id="lab-history-command">Lab: History command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Rune history without any options:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>history</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>history</span></span></code></pre></div>
 <ol start="2">
 <li>Display 10 entries:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">history</span> <span style="color:#ff9f43">10</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">history</span> <span style="color:#ff9f43">10</span></span></span></code></pre></div>
 <ol start="3">
 <li>Run the 15th command in history:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>!15</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>!15</span></span></code></pre></div>
 <ol start="4">
 <li>re-execute the most recent occurrence of a command that started with a particular letter or series of letters (ch for example):</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>!ch</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>!ch</span></span></code></pre></div>
 <ol start="5">
 <li>Issue the most recent command that contained “grep”:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>!?grep?</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>!?grep?</span></span></code></pre></div>
 <ol start="6">
 <li>Remove entry 24 from history:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">history</span> -d <span style="color:#ff9f43">24</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">history</span> -d <span style="color:#ff9f43">24</span></span></span></code></pre></div>
 <ol start="7">
 <li>Repeat the last command executed:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>!!</span></span></code></pre></div>
-<h3 id="lab-tilde-expansion">Lab: Tilde expansion</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>!!</span></span></code></pre></div>
+<h3 id="lab-tilde-expansion">Lab: Tilde expansion<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Display user&rsquo;s home directory:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> ~</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> ~</span></span></code></pre></div>
 <ol start="2">
 <li>Display the current directory:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> ~+</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> ~+</span></span></code></pre></div>
 <ol start="3">
 <li>Display the previous working directory:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> ~-</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> ~-</span></span></code></pre></div>
 <ol start="4">
 <li>Display user1&rsquo;s home directory:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> ~user1</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> ~user1</span></span></code></pre></div>
 <ol start="5">
 <li>cd into the home directory of user1 and confirm:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">cd</span> ~user1
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">cd</span> ~user1
 </span></span><span style="display:flex;"><span>pwd</span></span></code></pre></div>
 <ol start="6">
 <li>cd into a subdirectory:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">cd</span> ~/Documents/</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">cd</span> ~/Documents/</span></span></code></pre></div>
 <ol start="7">
 <li>View directory information of the root user&rsquo;s desktop:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -ld ~root/Desktop</span></span></code></pre></div>
-<h3 id="lab-command-aliasing">Lab: Command Aliasing</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -ld ~root/Desktop</span></span></code></pre></div>
+<h3 id="lab-command-aliasing">Lab: Command Aliasing<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>shows all aliases that are currently set for user1:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su - user1
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su - user1
 </span></span><span style="display:flex;"><span>alias</span></span></code></pre></div>
 <ol start="2">
 <li>Run alias as root:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>alias</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>alias</span></span></code></pre></div>
 <ol start="3">
 <li>Create an alias “search” to abbreviate the find command with several switches and arguments. Enclose the entire command within single quotation marks (‘’) to ensure white spaces are taken care of. Do not leave any spaces before and after the equal sign (=).</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">search</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;find / -name core -exec ls -l {} \;&#39;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">search</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;find / -name core -exec ls -l {} \;&#39;</span></span></span></code></pre></div>
 <ol start="4">
 <li>Search with the new alias:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>search</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>search</span></span></code></pre></div>
 <ol start="5">
 <li>Create and alias by the same name as rm command but adding the -i flag:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">rm</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;rm -i&#39;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">alias</span> <span style="color:#ff5c57">rm</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;rm -i&#39;</span></span></span></code></pre></div>
 <ol start="6">
 <li>Run rm without using the alias:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm file1</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm file1</span></span></code></pre></div>
 <ol start="7">
 <li>Remove the two aliases we just created:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">unalias</span> search rm</span></span></code></pre></div>
-<h3 id="lab-wildcards-and-metacharacters">Lab: Wildcards and Metacharacters</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">unalias</span> search rm</span></span></code></pre></div>
+<h3 id="lab-wildcards-and-metacharacters">Lab: Wildcards and Metacharacters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>List all files in the <em>/etc</em> directory that begin with letters “ma” and followed by any characters:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls /etc/ma*</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls /etc/ma*</span></span></code></pre></div>
 <ol start="2">
 <li>List all hidden files and directories in /home/user1:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -d .*</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -d .*</span></span></code></pre></div>
 <ol start="3">
 <li>List all files in the <em>/var/log</em> directory that end in “.log”:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls /var/log/*.log</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls /var/log/*.log</span></span></code></pre></div>
 <ol start="4">
 <li>List all files and directories under <em>/var/log</em> with exactly four characters in their names:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -d /var/log/????</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -d /var/log/????</span></span></code></pre></div>
 <ol start="5">
 <li>Include all files and directories that begin with either of the two characters and followed by any number of characters.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls /usr/bin/<span style="color:#ff6ac1">[</span>yw<span style="color:#ff6ac1">]</span>*</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls /usr/bin/<span style="color:#ff6ac1">[</span>yw<span style="color:#ff6ac1">]</span>*</span></span></code></pre></div>
 <ol start="6">
 <li>Match all directory names that begin with any letter between “m” and “o” in the <em>/etc/systemd/system</em> directory:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -d /etc/systemd/system/<span style="color:#ff6ac1">[</span>m-o<span style="color:#ff6ac1">]</span>*</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -d /etc/systemd/system/<span style="color:#ff6ac1">[</span>m-o<span style="color:#ff6ac1">]</span>*</span></span></code></pre></div>
 <ol start="6">
 <li>Inverse results of the previous:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -d /etc/systemd/system/<span style="color:#ff6ac1">[</span>!m-o<span style="color:#ff6ac1">]</span>*</span></span></code></pre></div>
-<h3 id="lab-piping">Lab: Piping</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -d /etc/systemd/system/<span style="color:#ff6ac1">[</span>!m-o<span style="color:#ff6ac1">]</span>*</span></span></code></pre></div>
+<h3 id="lab-piping">Lab: Piping<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Pipe the output to the less command in order to view the directory listing one screenful at a time:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l /etc | less</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l /etc | less</span></span></code></pre></div>
 <ol start="2">
 <li>Run the last command and pipe the output to nl to number each line:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>last | nl</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>last | nl</span></span></code></pre></div>
 <ol start="3">
 <li>Send the output of ls to grep for the lines that do not contain the pattern “root”.  Piped again for a case-insensitive selection of all lines that exclude the pattern “dec”. Number the output, and show the last four lines on the display:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l /proc | grep -v root | grep -iv dec | nl | tail -4</span></span></code></pre></div>
-<h3 id="lab-quoting-mechanisms">Lab: Quoting Mechanisms</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l /proc | grep -v root | grep -iv dec | nl | tail -4</span></span></code></pre></div>
+<h3 id="lab-quoting-mechanisms">Lab: Quoting Mechanisms<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Remove a file called * without deleting everything in the directory:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm <span style="color:#5af78e">\*</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm <span style="color:#5af78e">\*</span></span></span></code></pre></div>
 <ol start="2">
 <li>Display $LOGNAME without expanding the LOGNAME variable:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#39;$LOGNAME&#39;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#39;$LOGNAME&#39;</span></span></span></code></pre></div>
 <ol start="3">
 <li>Run the following with double quotes and without:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;</span><span style="color:#ff5c57">$SHELL</span><span style="color:#5af78e">&#34;</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;</span><span style="color:#ff5c57">$SHELL</span><span style="color:#5af78e">&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;\$PWD&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;&#39;\&#39;&#34;</span></span></span></code></pre></div>
-<h3 id="lab-grep-and-regex">Lab: grep and regex</h3>
+<h3 id="lab-grep-and-regex">Lab: grep and regex<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Search for the pattern “operator” in the <em>/etc/passwd</em> file:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep operator /etc/passwd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep operator /etc/passwd</span></span></code></pre></div>
 <ol start="2">
 <li>Search for the space-separated pattern “aliases and functions” in the <em>$HOME/.bashrc</em> file:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep <span style="color:#5af78e">&#39;aliases and functions&#39;</span> .bashrc</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep <span style="color:#5af78e">&#39;aliases and functions&#39;</span> .bashrc</span></span></code></pre></div>
 <ol start="3">
 <li>Search for the pattern “nologin” in the passwd file and exclude (-v) the lines in the output that contain this pattern. Add the -n switch to show the line numbers associated with the matched lines.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -nv nologin /etc/passwd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -nv nologin /etc/passwd</span></span></code></pre></div>
 <ol start="4">
 <li>Find any duplicate entries for the root user in the passwd file. Prepend the caret sign (^) to the pattern “root” to mark the beginning of a line.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep ^root /etc/passwd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep ^root /etc/passwd</span></span></code></pre></div>
 <ol start="5">
 <li>Identify all users in the passwd file with bash as their primary shell.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep bash$ /etc/passwd</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep bash$ /etc/passwd</span></span></code></pre></div>
 <ol start="6">
 <li>Show the entire login.defs file but exclude all the empty lines:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -v ^$ /etc/login.defs</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -v ^$ /etc/login.defs</span></span></code></pre></div>
 <ol start="7">
 <li>Perform a case-insensitive search (-i) for all the lines in the /etc/bashrc file that match the pattern “path.”</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -i path /etc/bashrc</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -i path /etc/bashrc</span></span></code></pre></div>
 <ol start="8">
 <li>Print all the lines from the <em>/etc/lvm/lvm.conf</em> file that contain an exact match for a word (-w) “acce” followed by exactly two characters:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -w acce.. /etc/lvm/lvm.conf</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -w acce.. /etc/lvm/lvm.conf</span></span></code></pre></div>
 <ol start="9">
 <li>Print all the lines from the <code>ls</code> command output that include either (-E) the pattern “cron” or “ly”.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l /etc | grep -E <span style="color:#5af78e">&#39;cron|ly&#39;</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l /etc | grep -E <span style="color:#5af78e">&#39;cron|ly&#39;</span></span></span></code></pre></div>
 <ol start="10">
 <li>Show all the lines from the <em>/etc/ssh/sshd_config</em> file but exclude (-v) the empty lines and commented lines. Use the -e flag multiple times instead of | for either or.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo grep -ve ^$ -ve ^# /etc/ssh/sshd_config</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo grep -ve ^$ -ve ^# /etc/ssh/sshd_config</span></span></code></pre></div>
 <ol start="11">
 <li>Learn more about regex:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>man <span style="color:#ff9f43">7</span> regex</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>man <span style="color:#ff9f43">7</span> regex</span></span></code></pre></div>
 <ol start="12">
 <li>Consult the grep man pages:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>man grep</span></span></code></pre></div>
-<h3 id="lab-managing-jobs">Lab: Managing jobs</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>man grep</span></span></code></pre></div>
+<h3 id="lab-managing-jobs">Lab: Managing jobs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Issue the jobs command with the -l switch to view all the jobs running in the background:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">jobs</span> -l</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff5c57">jobs</span> -l</span></span></code></pre></div>
 <ol start="2">
 <li>bring job ID 1 to the foreground and start running it:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>fg %1</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>fg %1</code></pre></div>
 <ol start="3">
 <li>Suspend job 1 with ctrl+z and then let it run in the background:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>bg %1</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>bg %1</code></pre></div>
 <ol start="4">
 <li>Terminate job ID 1, supply its PID (31726) to the kill command:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>kill 31726</code></pre></div>
-<h3 id="lab-shell-startup-files">Lab: Shell Startup Files</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>kill 31726</code></pre></div>
+<h3 id="lab-shell-startup-files">Lab: Shell Startup Files<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>View the first 10 lines of /etc/bashrc:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>head /etc/bashrc</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>head /etc/bashrc</span></span></code></pre></div>
 <ol start="2">
 <li>View the first 10 lines of /etc/profile:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>head /etc/profile</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>head /etc/profile</span></span></code></pre></div>
 <ol start="3">
 <li>View the directory /etc/profile.d</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l /etc/profile.d/</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l /etc/profile.d/</span></span></code></pre></div>
 <ol start="4">
 <li>View .bashrc</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat ~/.bashrc</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat ~/.bashrc</span></span></code></pre></div>
 <ol start="5">
 <li>View .bash_profile</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat ~/.bash_profile</span></span></code></pre></div>
-<h3 id="lab--customize-the-command-prompt-user1">Lab:  Customize the Command Prompt (user1)</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat ~/.bash_profile</span></span></code></pre></div>
+<h3 id="lab--customize-the-command-prompt-user1">Lab:  Customize the Command Prompt (user1)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Permanently customize the primary shell prompt to display “&lt;user1@server1 in /etc &gt;:” when this user switches into the /etc directory. The prompt should always reflect the current directory directory path.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim ~/.bash_profile
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim ~/.bash_profile
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">export</span> <span style="color:#ff5c57">PS1</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">&#39;$USERNAME $PWD&#39;</span></span></span></code></pre></div>
-<h3 id="lab-7-2-redirect-the-standard-input-output-and-error-user1">Lab 7-2: Redirect the Standard Input, Output, and Error (user1)</h3>
+<h3 id="lab-7-2-redirect-the-standard-input-output-and-error-user1">Lab 7-2: Redirect the Standard Input, Output, and Error (user1)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ol>
 <li>Run the <code>ls</code> command on <em>/etc</em>, <em>/dvd</em>, and <em>/var</em>. Have the output printed on the screen and the errors forwarded to file <em>/tmp/ioerror</em>.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls /etc /dvd /var 2&gt; /tmp/ioerror</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls /etc /dvd /var 2&gt; /tmp/ioerror</span></span></code></pre></div>
 <ol start="2">
 <li>Check the file after the command execution and analyze the results:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /tmp/ioerror</span></span></code></pre></div>
-<h2 id="notes">Notes</h2>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat /tmp/ioerror</span></span></code></pre></div>
+<h2 id="notes">Notes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ol>
 <li>It is NOT, a hard, protective outer layer usually created by an animal or organism that lives in the sea.</li>
 </ol>
@@ -1398,8 +1349,8 @@ ls &gt; ls.out</code></pre></div>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1425,23 +1376,23 @@ ls &gt; ls.out</code></pre></div>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="Chapter 8 - Ansible Cookbooks Until now, most of this book has demonstrated individual aspects of Ansible—inventory, playbooks, ad-hoc tasks, etc. But this chapter synthesizes everything we’ve gone over in the previous chapters and shows how Ansible is applied to real-world infrastructure management scenarios.
 Highly-Available Infrastructure with Ansible Real-world web applications require redundancy and horizontal scalability with multi-server infrastructure. In the following example, we’ll use Ansible to configure a complex infrastructure on servers provisioned either locally (via Vagrant and VirtualBox) or on a set of automatically-provisioned instances (running on either DigitalOcean or Amazon Web Services):">
@@ -12,7 +12,7 @@ Highly-Available Infrastructure with Ansible Real-world web applications require
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="Chapter 8 - Ansible Cookbooks Until now, most of this book has demonstrated individual aspects of Ansible—inventory, playbooks, ad-hoc tasks, etc. But this chapter synthesizes everything we’ve gone over in the previous chapters and shows how Ansible is applied to real-world infrastructure management scenarios.
 Highly-Available Infrastructure with Ansible Real-world web applications require redundancy and horizontal scalability with multi-server infrastructure. In the following example, we’ll use Ansible to configure a complex infrastructure on servers provisioned either locally (via Vagrant and VirtualBox) or on a set of automatically-provisioned instances (running on either DigitalOcean or Amazon Web Services):">
-    <meta property="og:url" content="https://linuxreader.com/ansible/ansible4devops/chapter-8---ansible-cookbooks/">
+    <meta property="og:url" content="http://localhost:1313/ansible/ansible4devops/chapter-8---ansible-cookbooks/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:description" content="Chapter 8 - Ansible Cookbooks Until now, most of this book has demonstrated individual aspects of Ansible—inventory, playbooks, ad-hoc tasks, etc. But this chapter synthesizes everything we’ve gone over in the previous chapters and shows how Ansible is applied to real-world infrastructure management scenarios.
 Highly-Available Infrastructure with Ansible Real-world web applications require redundancy and horizontal scalability with multi-server infrastructure. In the following example, we’ll use Ansible to configure a complex infrastructure on servers provisioned either locally (via Vagrant and VirtualBox) or on a set of automatically-provisioned instances (running on either DigitalOcean or Amazon Web Services):">
@@ -23,39 +23,35 @@ Highly-Available Infrastructure with Ansible Real-world web applications require
 Highly-Available Infrastructure with Ansible Real-world web applications require redundancy and horizontal scalability with multi-server infrastructure. In the following example, we’ll use Ansible to configure a complex infrastructure on servers provisioned either locally (via Vagrant and VirtualBox) or on a set of automatically-provisioned instances (running on either DigitalOcean or Amazon Web Services):">
     <meta itemprop="wordCount" content="15376">
     <title></title>
-    <link href="/ansible/ansible4devops/chapter-8---ansible-cookbooks/index.xml" rel="alternate" type="application/rss+xml" title="">
-    <link href="/ansible/ansible4devops/chapter-8---ansible-cookbooks/index.print.html" rel="alternate" type="text/html" title="">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/ansible\/ansible4devops\/chapter-8---ansible-cookbooks\/';
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -63,14 +59,14 @@ Highly-Available Infrastructure with Ansible Real-world web applications require
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -98,49 +94,7 @@ Highly-Available Infrastructure with Ansible Real-world web applications require
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -160,14 +114,14 @@ Highly-Available Infrastructure with Ansible Real-world web applications require
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/" title="Ansible (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/" title="Ansible (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -193,12 +147,9 @@ Highly-Available Infrastructure with Ansible Real-world web applications require
             
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ansible4devops/chapter-8---ansible-cookbooks/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ad-hoc-ansible-commands/" title="Ad Hoc Ansible Commands (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/ad-hoc-ansible-commands/" title="Ad Hoc Ansible Commands (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -219,13 +170,13 @@ Highly-Available Infrastructure with Ansible Real-world web applications require
 
 <h1 id=""></h1>
 
-<h2 id="chapter-8---ansible-cookbooks">Chapter 8 - Ansible Cookbooks</h2>
+<h2 id="chapter-8---ansible-cookbooks">Chapter 8 - Ansible Cookbooks<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Until now, most of this book has demonstrated individual aspects of
 Ansible&mdash;inventory, playbooks, ad-hoc tasks, etc. But this chapter
 synthesizes everything we&rsquo;ve gone over in the previous chapters and
 shows how Ansible is applied to real-world infrastructure management
 scenarios.</p>
-<h3 id="chap10.xhtml_leanpub-auto-highly-available-infrastructure-with-ansible">Highly-Available Infrastructure with Ansible</h3>
+<h3 id="chap10.xhtml_leanpub-auto-highly-available-infrastructure-with-ansible">Highly-Available Infrastructure with Ansible<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Real-world web applications require redundancy and horizontal
 scalability with multi-server infrastructure. In the following example,
 we&rsquo;ll use Ansible to configure a complex infrastructure on servers
@@ -254,7 +205,7 @@ database storage.</p>
 and performant database access; all data will be replicated from the
 master to the slave, and in addition, the slave can be used as a
 secondary server for read-only queries to take some load off the master.</p>
-<h4 id="chap10.xhtml_leanpub-auto-directory-structure">Directory Structure</h4>
+<h4 id="chap10.xhtml_leanpub-auto-directory-structure">Directory Structure<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>In order to keep our configuration organized, we&rsquo;ll use the following
 structure for our playbooks and configuration:</p>
 <figure class="code">
@@ -278,7 +229,7 @@ configuration individually, then build playbooks for provisioning and
 configuring instances on different hosting providers later. This
 organization also keeps server playbooks completely independent, so we
 can modularize and reuse individual server configurations.</p>
-<h4 id="chap10.xhtml_leanpub-auto-individual-server-playbooks">Individual Server Playbooks</h4>
+<h4 id="chap10.xhtml_leanpub-auto-individual-server-playbooks">Individual Server Playbooks<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Let&rsquo;s start building our individual server playbooks (in the <code>playbooks</code>
 directory). To make our playbooks more efficient, we&rsquo;ll use some
 contributed Ansible roles on Ansible Galaxy rather than install and
@@ -709,7 +660,7 @@ of databases that will be created (if they don&rsquo;t already exist) on the
 database servers.</p>
 <p>With the configuration of the database servers complete, the
 server-specific playbooks are ready to go.</p>
-<h4 id="chap10.xhtml_leanpub-auto-main-playbook-for-configuring-all-servers">Main Playbook for Configuring All Servers</h4>
+<h4 id="chap10.xhtml_leanpub-auto-main-playbook-for-configuring-all-servers">Main Playbook for Configuring All Servers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>A simple playbook including each of the group-specific playbooks is all
 we need for the overall configuration to take place. Create
 <code>configure.yml</code> in the project&rsquo;s root directory, with the following
@@ -729,7 +680,7 @@ defined inventory groups like <code>lamp-www</code>, <code>lamp-db</code>, etc.,
 the ready!</p>
 <p>But we&rsquo;re going to continue to make our playbooks more flexible and
 useful.</p>
-<h4 id="chap10.xhtml_leanpub-auto-getting-the-required-roles">Getting the required roles</h4>
+<h4 id="chap10.xhtml_leanpub-auto-getting-the-required-roles">Getting the required roles<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>As mentioned in the Chapter 6, Ansible allows you to define all the
 required Ansible Galaxy roles for a given project in a
 <code>requirements.yml</code> file. Instead of having to remember to run
@@ -753,7 +704,7 @@ project, with the following contents:</p>
 <p>To make sure all the required dependencies are installed, run
 <code>ansible-galaxy install -r requirements.yml</code> from within the project&rsquo;s
 root.</p>
-<h4 id="chap10.xhtml_leanpub-auto-vagrantfile-for-local-infrastructure-via-virtualbox">Vagrantfile for Local Infrastructure via VirtualBox</h4>
+<h4 id="chap10.xhtml_leanpub-auto-vagrantfile-for-local-infrastructure-via-virtualbox">Vagrantfile for Local Infrastructure via VirtualBox<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>As with many other examples in this book, we can use Vagrant and
 VirtualBox to build and configure the infrastructure locally. This lets
 us test things as much as we want with zero cost, and usually results in
@@ -922,7 +873,7 @@ servers.</p>
 <p>We now have local infrastructure development covered, and Ansible makes
 it easy to use the exact same configuration to build our infrastructure
 in the cloud.</p>
-<h4 id="chap10.xhtml_leanpub-auto-provisioner-configuration-digitalocean">Provisioner Configuration: DigitalOcean</h4>
+<h4 id="chap10.xhtml_leanpub-auto-provisioner-configuration-digitalocean">Provisioner Configuration: DigitalOcean<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>In Chapter 7, we learned provisioning and configuring DigitalOcean
 droplets in an Ansible playbook is fairly simple. But we need to take
 provisioning a step further by provisioning multiple droplets (one for
@@ -1119,7 +1070,7 @@ the <code>state</code> parameter in <code>provisioners/digitalocean.yml</code> t
 <code>'absent'</code> and run <code>$ ansible-playbook provision.yml</code> once more.</p>
 <p>Next up, we&rsquo;ll build the infrastructure a third time&mdash;on Amazon&rsquo;s
 infrastructure.</p>
-<h4 id="chap10.xhtml_leanpub-auto-provisioner-configuration-amazon-web-services-ec2">Provisioner Configuration: Amazon Web Services (EC2)</h4>
+<h4 id="chap10.xhtml_leanpub-auto-provisioner-configuration-amazon-web-services-ec2">Provisioner Configuration: Amazon Web Services (EC2)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>For Amazon Web Services, provisioning is slightly different. Amazon has
 a broader ecosystem of services surrounding EC2 instances, so for our
 particular example we will need to configure security groups prior to
@@ -1370,7 +1321,7 @@ minutes.</p>
 <p>To terminate all the provisioned instances, you can change the
 <code>exact_count</code> in the <code>ec2</code> task to <code>0</code>, and run
 <code>$ ansible-playbook provision.yml</code> again.</p>
-<h4 id="chap10.xhtml_leanpub-auto-summary-7">Summary</h4>
+<h4 id="chap10.xhtml_leanpub-auto-summary-7">Summary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>In the above example, an entire highly-available PHP application
 infrastructure was defined in a series of short Ansible playbooks, and
 then provisioning configuration was created to build the infrastructure
@@ -1397,7 +1348,7 @@ DevOps GitHub
 repository</a>, in the
 <code>lamp-infrastructure</code> directory.</p>
 </aside>
-<h3 id="chap10.xhtml_leanpub-auto-elk-logging-with-ansible">ELK Logging with Ansible</h3>
+<h3 id="chap10.xhtml_leanpub-auto-elk-logging-with-ansible">ELK Logging with Ansible<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Though application, database, and backup servers may be some of the most
 mission-critical components of a well-rounded infrastructure, one area
 that is equally important is a decent logging system.</p>
@@ -1422,7 +1373,7 @@ dashboard.</figcaption>
 aggregation, searching, and graphical display of logged data from a
 variety of other servers, and give some common configuration examples to
 send common system logs, webserver logs, etc.</p>
-<h4 id="chap10.xhtml_leanpub-auto-elk-playbook">ELK Playbook</h4>
+<h4 id="chap10.xhtml_leanpub-auto-elk-playbook">ELK Playbook<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Just like our previous example, we&rsquo;re going to let a few roles from
 Ansible Galaxy do the heavy lifting of actually installing and
 configuring Elasticsearch, Logstash, and Kibana. If you&rsquo;re interested in
@@ -1566,7 +1517,7 @@ different interface than the latest release, but this book will likely
 be updated with newer screenshots and updated guides once the 4.x
 release comes out.</p>
 </aside>
-<h4 id="chap10.xhtml_leanpub-auto-forwarding-logs-from-other-servers">Forwarding Logs from Other Servers</h4>
+<h4 id="chap10.xhtml_leanpub-auto-forwarding-logs-from-other-servers">Forwarding Logs from Other Servers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>It&rsquo;s great that we have the ELK stack running. Elasticsearch will store
 and make available log data with one search index per day, Logstash will
 listen for log entries, Logstash Forwarder will send entries in
@@ -1762,14 +1713,14 @@ right tuning and scaling, you can efficiently process and display
 thousands of requests per second across your infrastructure! For most,
 even the simple example demonstrated above would adequately cover an
 entire infrastructure&rsquo;s logging and log analysis needs.</p>
-<h4 id="chap10.xhtml_leanpub-auto-summary-8">Summary</h4>
+<h4 id="chap10.xhtml_leanpub-auto-summary-8">Summary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Log aggregation and analysis are two fields that see constant
 improvements and innovation. There are many SaaS products and
 proprietary solutions that can assist with logging, but few match the
 flexibility, security, and TCO of Elasticsearch, Logstash and Kibana.</p>
 <p>Ansible is the simplest way to configure an ELK server and direct all
 your infrastructure&rsquo;s pertinent log data to the server.</p>
-<h3 id="chap10.xhtml_leanpub-auto-glusterfs-distributed-file-system-configuration-with-ansible">GlusterFS Distributed File System Configuration with Ansible</h3>
+<h3 id="chap10.xhtml_leanpub-auto-glusterfs-distributed-file-system-configuration-with-ansible">GlusterFS Distributed File System Configuration with Ansible<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Modern infrastructure often involves some amount of horizontal scaling;
 instead of having one giant server with one storage volume, one
 database, one application instance, etc., most apps use two, four, ten,
@@ -1809,7 +1760,7 @@ hardware (e.g. a SAN).</p>
 and a fairly active support community (especially in the #gluster IRC
 channel). But to someone new to distributed file systems, it can be
 daunting to get set it up the first time.</p>
-<h4 id="chap10.xhtml_leanpub-auto-configuring-gluster---basic-overview">Configuring Gluster - Basic Overview</h4>
+<h4 id="chap10.xhtml_leanpub-auto-configuring-gluster---basic-overview">Configuring Gluster - Basic Overview<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>To get Gluster working on a basic two-server setup (so you can have one
 folder synchronized and replicated across the two servers&mdash;allowing one
 server to go down completely, and the other to still have access to the
@@ -1834,7 +1785,7 @@ volume.</li>
 both servers (so Gluster can communicate): TCP ports 111, 24007-24011,
 49152-49153, and UDP port 111. For each extra server in your Gluster
 cluster, you need to add an additional TCP port in the 49xxx range.</p>
-<h4 id="chap10.xhtml_leanpub-auto-configuring-gluster-with-ansible">Configuring Gluster with Ansible</h4>
+<h4 id="chap10.xhtml_leanpub-auto-configuring-gluster-with-ansible">Configuring Gluster with Ansible<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>For demonstration purposes, we&rsquo;ll set up a simple two-server
 infrastructure using Vagrant, and create a shared volume between the
 two, with two replicas (meaning all files will be replicated on each
@@ -2088,7 +2039,7 @@ replicated/distributed correctly:</p>
 </ol>
 <p>You should see the <code>test</code> file you created in step 2; this means Gluster
 is working correctly!</p>
-<h4 id="chap10.xhtml_leanpub-auto-summary-9">Summary</h4>
+<h4 id="chap10.xhtml_leanpub-auto-summary-9">Summary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Deploying distributed file systems like Gluster can seem challenging,
 but Ansible simplifies the process, and more importantly, does so
 idempotently; each time you run the playbook again, it will ensure
@@ -2097,7 +2048,7 @@ everything stays configured as you&rsquo;ve set it.</p>
 GitHub, in the <a href="https://github.com/geerlingguy/ansible-vagrant-examples/tree/master/gluster" rel="external" target="_blank">Gluster
 example</a>
 in the Ansible Vagrant Examples project.</p>
-<h3 id="chap10.xhtml_leanpub-auto-mac-provisioning-with-ansible-and-homebrew">Mac Provisioning with Ansible and Homebrew</h3>
+<h3 id="chap10.xhtml_leanpub-auto-mac-provisioning-with-ansible-and-homebrew">Mac Provisioning with Ansible and Homebrew<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>The next example will be specific to the Mac, but the principle behind
 it applies universally. How many times have you wanted to hit the
 &lsquo;reset&rsquo; button on your day-to-day workstation or personal computer? How
@@ -2119,7 +2070,7 @@ and used git to synchronize the dotfiles to all my workstations.</p>
 excellent package manager for OS X, there was still a lot of manual
 labor involved in installing and configuring my favorite apps and
 command line tools.</p>
-<h4 id="chap10.xhtml_leanpub-auto-running-ansible-playbooks-locally">Running Ansible playbooks locally</h4>
+<h4 id="chap10.xhtml_leanpub-auto-running-ansible-playbooks-locally">Running Ansible playbooks locally<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>We saw examples of running playbooks with <code>connection: local</code> earlier
 while provisioning virtual machines in the cloud through our local
 workstation. But in fact, you can perform <em>any</em> Ansible task using a
@@ -2154,7 +2105,7 @@ own account in order to minimize surprises.</p>
 password before running the playbook) or run the playbook normally, and
 wait for Ansible to prompt you for your sudo password.</p>
 </aside>
-<h4 id="chap10.xhtml_leanpub-auto-automating-homebrew-package-and-app-management">Automating Homebrew package and app management</h4>
+<h4 id="chap10.xhtml_leanpub-auto-automating-homebrew-package-and-app-management">Automating Homebrew package and app management<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Since I use Homebrew (billed as &ldquo;the missing package manager for OS X&rdquo;)
 for most of my application installation and configuration, I created the
 role <code>geerlingguy.homebrew</code>, which first installs Homebrew and then
@@ -2217,7 +2168,7 @@ that process completely, so you don&rsquo;t even have to run the Homebrew
 commands manually! The <code>geerlingguy.homebrew</code> role uses Ansible&rsquo;s
 built-in <code>homebrew</code> module to manage package installation, along with
 some custom tasks to manage cask applications.</p>
-<h4 id="chap10.xhtml_leanpub-auto-configuring-mac-os-x-through-dotfiles">Configuring Mac OS X through dotfiles</h4>
+<h4 id="chap10.xhtml_leanpub-auto-configuring-mac-os-x-through-dotfiles">Configuring Mac OS X through dotfiles<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Just like there&rsquo;s a <code>homebrew</code> role on Ansible Galaxy, made for
 configuring and installing packages via Homebrew, there&rsquo;s a <code>dotfiles</code>
 role you can use to download and configure your local dotfiles.</p>
@@ -2285,7 +2236,7 @@ if you&rsquo;d like to get started automating the build of your own
 development workstation. Even if you don&rsquo;t use a Mac, most of the
 structure is similar; just substitute a different package manager, and
 start automating!</p>
-<h4 id="chap10.xhtml_leanpub-auto-summary-10">Summary</h4>
+<h4 id="chap10.xhtml_leanpub-auto-summary-10">Summary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Ansible is the best way to automate infrastructure provisioning and
 configuration. Ansible can also be used to configure your own
 workstation, saving you the time and frustration it takes to do so
@@ -2294,7 +2245,7 @@ top-of-the-line workstation with Ansible!</p>
 <p>You can find the full playbook I&rsquo;m currently using to configure my Macs
 on GitHub: <a href="https://github.com/geerlingguy/mac-dev-playbook" rel="external" target="_blank">Mac Development Ansible
 Playbook</a>.</p>
-<h3 id="chap10.xhtml_leanpub-auto-docker-based-infrastructure-with-ansible">Docker-based Infrastructure with Ansible</h3>
+<h3 id="chap10.xhtml_leanpub-auto-docker-based-infrastructure-with-ansible">Docker-based Infrastructure with Ansible<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Docker is a highly optimized platform for building and running
 containers on local machines and servers in a highly efficient manner.
 You can think of Docker containers as sort-of lightweight virtual
@@ -2309,7 +2260,7 @@ everything. Please see the <a href="https://docs.docker.com/installation/" rel="
 Docker</a> for help installing
 Docker on whatever platform you&rsquo;re using.</p>
 </aside>
-<h4 id="chap10.xhtml_leanpub-auto-a-brief-introduction-to-docker-containers">A brief introduction to Docker containers</h4>
+<h4 id="chap10.xhtml_leanpub-auto-a-brief-introduction-to-docker-containers">A brief introduction to Docker containers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Starting with an extremely simple example, let&rsquo;s build a Docker image
 from a Dockerfile. In this case, we want to show how Dockerfiles work
 and how we can use Ansible to build the image in the same way as if we
@@ -2389,7 +2340,7 @@ works. To summarize:</p>
 will likely want to get familiar with the Docker CLI and how the process
 works from a manual perspective. But when building the final images and
 running them on your servers, Ansible can help ease the process.</p>
-<h4 id="chap10.xhtml_leanpub-auto-using-ansible-to-build-and-manage-containers">Using Ansible to build and manage containers</h4>
+<h4 id="chap10.xhtml_leanpub-auto-using-ansible-to-build-and-manage-containers">Using Ansible to build and manage containers<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Ansible has a built-in <a href="http://docs.ansible.com/docker_module.html" rel="external" target="_blank">Docker
 module</a> that integrates
 nicely with Docker for container management. We&rsquo;re going to use it to
@@ -2468,7 +2419,7 @@ run <code>docker</code> commands, you may need to use <code>sudo</code> with thi
 <p>The code example above can be found in the <a href="https://github.com/geerlingguy/ansible-for-devops/tree/master/docker" rel="external" target="_blank">Ansible for DevOps GitHub
 repository</a>.</p>
 </aside>
-<h4 id="chap10.xhtml_leanpub-auto-building-a-flask-app-with-ansible-and-docker">Building a Flask app with Ansible and Docker</h4>
+<h4 id="chap10.xhtml_leanpub-auto-building-a-flask-app-with-ansible-and-docker">Building a Flask app with Ansible and Docker<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Let&rsquo;s build a more useful Docker-powered environment, with a container
 that runs our application (built with Flask, a lightweight Python web
 framework), and a container that runs a database (MySQL), along with a
@@ -2672,7 +2623,7 @@ servers: <a href="https://coreos.com/blog/managing-coreos-with-ansible/" rel="ex
 Ansible</a> and
 <a href="http://www.tazj.in/en/1410951452" rel="external" target="_blank">Provisioning CoreOS with Ansible</a>.</p>
 </aside>
-<h5 id="chap10.xhtml_leanpub-auto-data-storage-container">Data storage container</h5>
+<h5 id="chap10.xhtml_leanpub-auto-data-storage-container">Data storage container<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
 <p>For the data storage container, we don&rsquo;t need much; we just need to
 create a directory and set it as an exposed mount point using <code>VOLUME</code>:</p>
 <figure class="code">
@@ -2699,7 +2650,7 @@ inside the container. In the Docker world, it&rsquo;s best to use the most
 minimal base images possible, and to only install and run the bare
 necessities inside each container to support the container&rsquo;s app.</p>
 </aside>
-<h5 id="chap10.xhtml_leanpub-auto-flask-container">Flask container</h5>
+<h5 id="chap10.xhtml_leanpub-auto-flask-container">Flask container<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
 <p><a href="http://flask.pocoo.org/" rel="external" target="_blank">Flask</a> is a lightweight Python web framework
 &ldquo;based on Werkzeug, Jinja 2 and good intentions&rdquo;. It&rsquo;s a great web
 framework for small, fast, and robust websites and apps, or even a
@@ -2872,7 +2823,7 @@ following:</p>
   playbook.yml</code></pre>
 </div>
 </figure>
-<h5 id="chap10.xhtml_leanpub-auto-mysql-container">MySQL container</h5>
+<h5 id="chap10.xhtml_leanpub-auto-mysql-container">MySQL container<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
 <p>We&rsquo;ve configured MySQL a few times throughout this book, so little time
 will be spent discussing how MySQL is set up. We&rsquo;ll instead dive into
 how MySQL is configured to work inside a Docker container, with a
@@ -2984,7 +2935,7 @@ place, then run, and port 3306 is exposed.</p>
   start-mysql.sh</code></pre>
 </div>
 </figure>
-<h4 id="chap10.xhtml_leanpub-auto-ship-it">Ship it!</h4>
+<h4 id="chap10.xhtml_leanpub-auto-ship-it">Ship it!<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Now that everything&rsquo;s in place, you should be able to cd into the main
 <code>docker</code> directory, and run <code>vagrant up</code>. After 10 minutes or so,
 Vagrant should show that Ansible provisioning was successful, and if you
@@ -3003,7 +2954,7 @@ first launch. If the page doesn&rsquo;t show up at all, you might want to
 compare your code with the <a href="https://github.com/geerlingguy/ansible-vagrant-examples/tree/master/docker" rel="external" target="_blank">Docker LAMP
 example</a>
 on GitHub.</p>
-<h4 id="chap10.xhtml_leanpub-auto-summary-11">Summary</h4>
+<h4 id="chap10.xhtml_leanpub-auto-summary-11">Summary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>The entire <a href="https://github.com/geerlingguy/ansible-vagrant-examples/tree/master/docker" rel="external" target="_blank">Docker LAMP
 example</a>
 is available on GitHub, if you&rsquo;d like to clone it and try it locally.</p>
@@ -3143,8 +3094,8 @@ within a Dockerfile to simplify complex container configurations.</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -3170,23 +3121,23 @@ within a Dockerfile to simplify complex container configurations.</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

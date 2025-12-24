@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Guide to using Vim">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Vim Guide :: Linux Reader">
     <meta name="twitter:description" content="Guide to using Vim">
-    <meta property="og:url" content="https://linuxreader.com/tools/vimguide/">
+    <meta property="og:url" content="http://localhost:1313/tools/vimguide/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Vim Guide :: Linux Reader">
     <meta property="og:description" content="Guide to using Vim">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Guide to using Vim">
     <meta itemprop="wordCount" content="1324">
     <title>Vim Guide :: Linux Reader</title>
-    <link href="/tools/vimguide/index.xml" rel="alternate" type="application/rss+xml" title="Vim Guide :: Linux Reader">
-    <link href="/tools/vimguide/index.print.html" rel="alternate" type="text/html" title="Vim Guide :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/tools\/vimguide\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/using-vagrant-on-linux/" title="Using Vagrant on Linux (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tools/using-vagrant-on-linux/" title="Using Vagrant on Linux (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -248,12 +202,9 @@
             Vim Guide
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/vimguide/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/tools/using-man-pages/" title="You Need to Learn Man Pages (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tools/using-man-pages/" title="You Need to Learn Man Pages (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -278,31 +229,31 @@
 <p><code>Vim</code> stands for vi (Improved) just like its name it stands for an improved version of the <code>vi</code> text editor command.</p>
 <p>Lightweight</p>
 <p>Start Vim</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim</span></span></code></pre></div>
-<h2 id="vim-search-patterns">Vim Search Patterns</h2>
-<h3 id="moving-the-cursor">Moving the Cursor</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim</span></span></code></pre></div>
+<h2 id="vim-search-patterns">Vim Search Patterns<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="moving-the-cursor">Moving the Cursor<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>h or left arrow - move left one character
 k or up arrow - move up one line
 j or down arrow - move down one line
 l or right arrow - will move you right one character</p>
-<h3 id="different-vim-modes">Different Vim Modes</h3>
+<h3 id="different-vim-modes">Different Vim Modes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>I -  Enter INSERT mode from command mode
 esc - Go back to command mode
 v - visual mode</p>
-<h2 id="vim-appending-text">Vim Appending Text</h2>
+<h2 id="vim-appending-text">Vim Appending Text<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>In enter while in command mode and will bring you to insert mode.</p>
 <p>I - insert text before the cursor
 O - insert text on the previous line
 o - insert text on the next line
 a - append text after cursor
 A - append text at the end of the line</p>
-<h2 id="vim-editing">Vim editing</h2>
+<h2 id="vim-editing">Vim editing<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>x - used to cut the selected text also used for deleting characters
 dd - used to delete the current line
 y - yank or copy whatever is selected
 yy - yank or copy the current line
 p - paste the copied text before the cursor</p>
-<h2 id="vim-saving-and-exiting">Vim Saving and exiting</h2>
+<h2 id="vim-saving-and-exiting">Vim Saving and exiting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>:w - writes or saves the file
 :q - quit out of vim
 :wq - write and then quit
@@ -311,37 +262,37 @@ ZZ - equivalent of :wq, but one character faster</p>
 <p>u - undo your last action
 Ctrl-r - redo your last action
 :% sort - Sort lines</p>
-<h1 id="vim-splits">Vim Splits</h1>
+<h1 id="vim-splits">Vim Splits<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p>Add to .vimrc for different key mappings for easy navigation between splits to save a keystroke. So instead of <code>ctrl-w</code> then <code>j</code>, it’s just <code>ctrl-j</code>:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>nnoremap &lt;C-J&gt; &lt;C-W&gt;&lt;C-J&gt; 
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>nnoremap &lt;C-J&gt; &lt;C-W&gt;&lt;C-J&gt; 
 nnoremap &lt;C-K&gt; &lt;C-W&gt;&lt;C-K&gt; 
 nnoremap &lt;C-L&gt; &lt;C-W&gt;&lt;C-L&gt; 
 nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;</code></pre></div>
-<h1 id="open-file-in-new-split">Open file in new split</h1>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>:vsp filename</code></pre></div>
+<h1 id="open-file-in-new-split">Open file in new split<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>:vsp filename</code></pre></div>
 <p><a href="https://github.com/preservim/nerdtree" rel="external" target="_blank">https://github.com/preservim/nerdtree</a></p>
-<h2 id="find-and-replace">Find and Replace</h2>
+<h2 id="find-and-replace">Find and Replace<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><a href="https://linuxize.com/post/vim-find-replace/" rel="external" target="_blank">https://linuxize.com/post/vim-find-replace/</a></p>
-<h1 id="find-and-replace-text-in-files-with-vim">Find and Replace Text in File(s) with Vim</h1>
-<h2 id="find-and-replace-in-a-single-file">Find and replace in a single file</h2>
+<h1 id="find-and-replace-text-in-files-with-vim">Find and Replace Text in File(s) with Vim<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<h2 id="find-and-replace-in-a-single-file">Find and replace in a single file<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Open the file in Vim, this command will replace all occurances of the word &ldquo;foo&rdquo; with &ldquo;bar&rdquo;.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>:%s/foo/bar/g</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>:%s/foo/bar/g</code></pre></div>
 <p>% - apply to whole file
 s  - substitution
 g - operate on all results</p>
-<h2 id="find-and-replace-a-string-in-all-files-in-current-directory">Find and replace a string in all files in current directory</h2>
+<h2 id="find-and-replace-a-string-in-all-files-in-current-directory">Find and replace a string in all files in current directory<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>In vim, select all files with args. Use regex to select the files you want. Select all files with *</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>:args *</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>:args *</code></pre></div>
 <p>You can also select all recursively:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>:args **</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>:args **</code></pre></div>
 <p>Run :args to see which files are selected&quot;</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>:args</code></pre></div>
-<h3 id="perform-substitution-with-argdo">Perform substitution with argdo</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>:args</code></pre></div>
+<h3 id="perform-substitution-with-argdo">Perform substitution with argdo<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>This applies the replacement command to all selected args:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>:argdo %s/foo/bar/g | update</code></pre></div>
-<h1 id="nerd-tree-plugin">Nerd Tree Plugin</h1>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>:argdo %s/foo/bar/g | update</code></pre></div>
+<h1 id="nerd-tree-plugin">Nerd Tree Plugin<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p>Add to .vimrc</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>call plug#begin()
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>call plug#begin()
 Plug &#39;preservim/nerdtree&#39;
 
 call plug#end()
@@ -350,10 +301,10 @@ nnoremap &lt;leader&gt;n :NERDTreeFocus&lt;CR&gt;
 nnoremap &lt;C-n&gt; :NERDTree&lt;CR&gt;
 nnoremap &lt;C-t&gt; :NERDTreeToggle&lt;CR&gt;
 nnoremap &lt;C-f&gt; :NERDTreeFind&lt;CR&gt;</code></pre></div>
-<h2 id="vim-calendar">Vim Calendar</h2>
+<h2 id="vim-calendar">Vim Calendar<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>dhttps://blog.mague.com/?p=602</p>
 <p>Add to vim.rc</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>:auto FileType vim/wiki map d :Vim/wikiMakeDiaryNote
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>:auto FileType vim/wiki map d :Vim/wikiMakeDiaryNote
 function! ToggleCalendar()
   execute &#34;:Calendar&#34;
   if exists(&#34;g:calendar_open&#34;)
@@ -368,27 +319,27 @@ function! ToggleCalendar()
   end
 endfunction
 :auto FileType vim/wiki map c :call ToggleCalendar()i</code></pre></div>
-<h2 id="vimwiki">Vimwiki</h2>
-<h2 id="cheat-sheet">Cheat sheet</h2>
+<h2 id="vimwiki">Vimwiki<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h2 id="cheat-sheet">Cheat sheet<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><a href="http://thedarnedestthing.com/vimwiki%20cheatsheet" rel="external" target="_blank">http://thedarnedestthing.com/vimwiki%20cheatsheet</a></p>
-<h3 id="set-up">Set up</h3>
+<h3 id="set-up">Set up<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Make sure git is installed? <a href="https://github.com/git-guides/install-git" rel="external" target="_blank" title="https://github.com/git-guides/install-git">https://github.com/git-guides/install-git</a></p>
-<h3 id="check-git-version">Check git version</h3>
+<h3 id="check-git-version">Check git version<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><code>git --version</code> Check git version</p>
-<h3 id="dnf-git-install">dnf git install</h3>
+<h3 id="dnf-git-install">dnf git install<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>sudo dnf install git-all</p>
 <p><a href="https://github.com/junegunn/vim-plug" rel="external" target="_blank" title="https://github.com/junegunn/vim-plug">https://github.com/junegunn/vim-plug</a></p>
 <p>Download plug.vim and put it in ~/.vim/autoload</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</code></pre></div>
-<h3 id="create-vimrc">Create ~/.vimrc</h3>
+<h3 id="create-vimrc">Create ~/.vimrc<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><code>touch ~/.vimrc</code></p>
-<h3 id="add-to-vimrc">Add to ~/.vimrc</h3>
-<h4 id="installation-using-vim-plug">Installation using <a href="https://github.com/junegunn/vim-plug" rel="external" target="_blank" title="https://github.com/junegunn/vim-plug">Vim-Plug</a></h4>
+<h3 id="add-to-vimrc">Add to ~/.vimrc<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<h4 id="installation-using-vim-plug">Installation using <a href="https://github.com/junegunn/vim-plug" rel="external" target="_blank" title="https://github.com/junegunn/vim-plug">Vim-Plug</a><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Install Vim Plug</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</code></pre></div>
 <p>Add the following to the plugin-configuration in your vimrc:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>set nocompatible  
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>set nocompatible  
 filetype plugin on  
 syntax on
 
@@ -410,8 +361,8 @@ let g:vimwiki_list = [wiki_1, wiki_2]  </code></pre></div>
 <p>Then run <code>:PlugInstall</code>.</p>
 <p>(leader)ws
 select which wiki to use</p>
-<h2 id="basic-markup">Basic Markup</h2>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>= Header1 =
+<h2 id="basic-markup">Basic Markup<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>= Header1 =
 == Header2 ==
 === Header3 ===
 
@@ -421,8 +372,8 @@ _italic_ -- italic text
 
 [wiki link](wiki%20link) -- wiki link
 [description](wiki%20link) -- wiki link with description </code></pre></div>
-<h3 id="lists"><a href="https://github.com/vim/wiki/vim/wiki#lists" rel="external" target="_blank" title="https://github.com/vim/wiki/vim/wiki#lists"></a>Lists</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>* bullet list item 1
+<h3 id="lists"><a href="https://github.com/vim/wiki/vim/wiki#lists" rel="external" target="_blank" title="https://github.com/vim/wiki/vim/wiki#lists"></a>Lists<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>* bullet list item 1
     - bullet list item 2
     - bullet list item 3
         * bullet list item 4
@@ -437,7 +388,7 @@ _italic_ -- italic text
     a) numbered list item 3
     b) numbered list item 4 </code></pre></div>
 <p>For other syntax elements, see <code>:h vimwiki-syntax</code></p>
-<h3 id="vimwiki-table-of-contents">Vimwiki Table of Contents</h3>
+<h3 id="vimwiki-table-of-contents">Vimwiki Table of Contents<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><em>:VimwikiTOC</em>
 Create or update the Table of Contents for the current wiki file.
 See |vimwiki-toc|.</p>
@@ -488,10 +439,10 @@ references all levels.
 1               Brief: The link contains only the URL. URL references only
 the immediate level.</p>
 <p>Default: 0</p>
-<h2 id="key-bindings">Key bindings</h2>
-<h3 id="normal-mode"><a href="https://github.com/vim/wiki/vim/wiki#normal-mode" rel="external" target="_blank" title="https://github.com/vim/wiki/vim/wiki#normal-mode"></a>Normal mode</h3>
+<h2 id="key-bindings">Key bindings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="normal-mode"><a href="https://github.com/vim/wiki/vim/wiki#normal-mode" rel="external" target="_blank" title="https://github.com/vim/wiki/vim/wiki#normal-mode"></a>Normal mode<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><strong>Note:</strong> your terminal may prevent capturing some of the default bindings listed below. See <code>:h vimwiki-local-mappings</code> for suggestions for alternative bindings if you encounter a problem.</p>
-<h4 id="basic-key-bindings"><a href="https://github.com/vim/wiki/vim/wiki#basic-key-bindings" rel="external" target="_blank" title="https://github.com/vim/wiki/vim/wiki#basic-key-bindings"></a>Basic key bindings</h4>
+<h4 id="basic-key-bindings"><a href="https://github.com/vim/wiki/vim/wiki#basic-key-bindings" rel="external" target="_blank" title="https://github.com/vim/wiki/vim/wiki#basic-key-bindings"></a>Basic key bindings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li><code>&lt;Leader&gt;ww</code> &ndash; Open default /wiki index file.</li>
 <li><code>&lt;Leader&gt;wt</code> &ndash; Open default /wiki index file in a new tab.</li>
@@ -505,19 +456,19 @@ the immediate level.</p>
 <li><code>&lt;Tab&gt;</code> &ndash; Find next /wiki link.</li>
 <li><code>&lt;Shift-Tab&gt;</code> &ndash; Find previous /wiki link.</li>
 </ul>
-<h4 id="advanced-key-bindings"><a href="https://github.com/vim/wiki/vim/wiki#advanced-key-bindings" rel="external" target="_blank" title="https://github.com/vim/wiki/vim/wiki#advanced-key-bindings"></a>Advanced key bindings</h4>
+<h4 id="advanced-key-bindings"><a href="https://github.com/vim/wiki/vim/wiki#advanced-key-bindings" rel="external" target="_blank" title="https://github.com/vim/wiki/vim/wiki#advanced-key-bindings"></a>Advanced key bindings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Refer to the complete documentation at <code>:h vimwiki-mappings</code> to see many more bindings.</p>
-<h2 id="commands"><a href="https://github.com/vim/wiki/vim/wiki#commands" rel="external" target="_blank" title="https://github.com/vim/wiki/vim/wiki#commands"></a>Commands</h2>
+<h2 id="commands"><a href="https://github.com/vim/wiki/vim/wiki#commands" rel="external" target="_blank" title="https://github.com/vim/wiki/vim/wiki#commands"></a>Commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li><code>:Vimwiki2HTML</code> &ndash; Convert current wiki link to HTML.</li>
 <li><code>:VimwikiAll2HTML</code> &ndash; Convert all your wiki links to HTML.</li>
 <li><code>:help vimwiki-commands</code> &ndash; List all commands.</li>
 <li><code>:help vimwiki</code> &ndash; General vimwiki help docs.</li>
 </ul>
-<h1 id="diary">Diary</h1>
-<h3 id="alias">alias</h3>
+<h1 id="diary">Diary<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<h3 id="alias">alias<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>alias todo=&lsquo;vim -c VimwikiDiaryIndex&rsquo;</p>
-<h3 id="hotkeys">Hotkeys</h3>
+<h3 id="hotkeys">Hotkeys<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>:VimwikiDiaryGenerateLinks
 ^w^i
 Generate links
@@ -532,24 +483,24 @@ ctrl + down next day</p>
 <li>How to do a template for daily</li>
 <li>set folder location for diary</li>
 </ul>
-<h3 id="diary-template">Diary Template</h3>
+<h3 id="diary-template">Diary Template<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><a href="https://frostyx.cz/posts/vimwiki-diary-template" rel="external" target="_blank">https://frostyx.cz/posts/vimwiki-diary-template</a></p>
-<h1 id="nested-folder-structure">Nested folder structure</h1>
+<h1 id="nested-folder-structure">Nested folder structure<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p>[dev](dev/ndex)</p>
 <p>Say yes to make new directory</p>
-<h1 id="wiki">wiki</h1>
+<h1 id="wiki">wiki<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p>Convert to html live and shows some design stuff
 <a href="https://www.youtube.com/watch?v=A1YgbAp5YRc" rel="external" target="_blank">https://www.youtube.com/watch?v=A1YgbAp5YRc</a></p>
 <p><a href="https://github.com/Dynalonwiki" rel="external" target="_blank">https://github.com/Dynalonwiki</a></p>
-<h1 id="taskwarrior">Taskwarrior</h1>
+<h1 id="taskwarrior">Taskwarrior<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p><a href="https://www.youtube.com/watch?v=UuHJloiDErM" rel="external" target="_blank">https://www.youtube.com/watch?v=UuHJloiDErM</a>
 requires neovim?</p>
-<h2 id="taskwiki">taskwiki</h2>
+<h2 id="taskwiki">taskwiki<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>vimwiki integration with task warrior
 <a href="https://github.com/tools-life/taskwiki" rel="external" target="_blank">https://github.com/tools-life/taskwiki</a>
 <a href="https://www.youtube.com/watch?v=UuHJloiDErM" rel="external" target="_blank">https://www.youtube.com/watch?v=UuHJloiDErM</a></p>
-<h1 id="ctrl-p">Ctrl P</h1>
-<h2 id="install">Install</h2>
+<h1 id="ctrl-p">Ctrl P<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<h2 id="install">Install<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Plug &lsquo;ctrlpvim/ctrlp.vim&rsquo;</p>
 
   <footer class="footline">
@@ -629,8 +580,8 @@ requires neovim?</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -656,23 +607,23 @@ requires neovim?</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

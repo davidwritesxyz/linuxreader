@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
     <meta name="description" content="16 Controller-Based Networking Friday, October 29, 2021 2:40 PM
 ○ Matching an Ethernet frame’s destination Media Access Control (MAC) address to the MAC address table (Layer 2 switches) Matching an IP packet’s destination IP address to the IP routing table (routers, Layer 3 switches) ○ Encrypting the data and adding a new IP header (for virtual private network [VPN] processing) ○ ○ Changing the source or destination IP address (for Network Address Translation [NAT] processing)
@@ -22,7 +22,7 @@ The Control Plane
 any action that controls the data plane.
 creating the tables used by the data plane, tables like the IP routing table, an IP Address Resolution Protocol (ARP) table, a switch MAC address table, and so on.
 adding to, removing, and changing entries to the tables used by the data plane">
-    <meta property="og:url" content="https://linuxreader.com/networking/ccna/newccnanotes/16controllerbasednetworking/">
+    <meta property="og:url" content="http://localhost:1313/networking/ccna/newccnanotes/16controllerbasednetworking/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:description" content="16 Controller-Based Networking Friday, October 29, 2021 2:40 PM
 ○ Matching an Ethernet frame’s destination Media Access Control (MAC) address to the MAC address table (Layer 2 switches) Matching an IP packet’s destination IP address to the IP routing table (routers, Layer 3 switches) ○ Encrypting the data and adding a new IP header (for virtual private network [VPN] processing) ○ ○ Changing the source or destination IP address (for Network Address Translation [NAT] processing)
@@ -43,39 +43,35 @@ creating the tables used by the data plane, tables like the IP routing table, an
 adding to, removing, and changing entries to the tables used by the data plane">
     <meta itemprop="wordCount" content="2351">
     <title></title>
-    <link href="/networking/ccna/newccnanotes/16controllerbasednetworking/index.xml" rel="alternate" type="application/rss+xml" title="">
-    <link href="/networking/ccna/newccnanotes/16controllerbasednetworking/index.print.html" rel="alternate" type="text/html" title="">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/networking\/ccna\/newccnanotes\/16controllerbasednetworking\/';
       window.relearn.relBasePath='..\/..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -83,14 +79,14 @@ adding to, removing, and changing entries to the tables used by the data plane">
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -118,49 +114,7 @@ adding to, removing, and changing entries to the tables used by the data plane">
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -180,14 +134,14 @@ adding to, removing, and changing entries to the tables used by the data plane">
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/" title="Networking (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/networking/" title="Networking (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"> 
                 </div>
@@ -200,12 +154,9 @@ adding to, removing, and changing entries to the tables used by the data plane">
             
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/ccna/newccnanotes/16controllerbasednetworking/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/networking/consoling_in_to_mx80_from_linux/" title="Consoling in to MX80 from linux (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/networking/consoling_in_to_mx80_from_linux/" title="Consoling in to MX80 from linux (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -226,15 +177,15 @@ adding to, removing, and changing entries to the tables used by the data plane">
 
 <h1 id=""></h1>
 
-<h1 id="16-controller-based-networking">16 Controller-Based Networking</h1>
+<h1 id="16-controller-based-networking">16 Controller-Based Networking<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <p>Friday, October 29, 2021 2:40 PM</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>○ Matching an Ethernet frame’s destination Media Access Control (MAC) address to the MAC address table (Layer 2 switches)
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>○ Matching an Ethernet frame’s destination Media Access Control (MAC) address to the MAC address table (Layer 2 switches)
 Matching an IP packet’s destination IP address to the IP routing table (routers, Layer 3
 switches)</code></pre></div>
-<h6 id="heading">○</h6>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Encrypting the data and adding a new IP header (for virtual private network [VPN]
+<h6 id="heading">○<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h6>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>Encrypting the data and adding a new IP header (for virtual private network [VPN]
 processing)</code></pre></div>
-<h6 id="heading-1">○</h6>
+<h6 id="heading-1">○<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h6>
 <p>○ Changing the source or destination IP address (for Network Address Translation [NAT] processing)<br>
 ○ Discarding a message due to a filter (access control lists [ACLs], port security)<br>
 The Control Plane<br>
@@ -265,7 +216,7 @@ A controller, or SDN controller, centralizes the control of the networking devic
 the controller can perform all control plane functions, replacing the devices’ distributed control plane. Alternately, the controller can simply be aware of the ongoing work of the<br>
 distributed data, control, and management planes on the devices, without changing how those operate. And the list goes on, with many variations.<br>
 The networking devices do not populate their forwarding tables with traditional distributed</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>The networking devices do not populate their forwarding tables with traditional distributed control plane processes</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>The networking devices do not populate their forwarding tables with traditional distributed control plane processes</code></pre></div>
 <p>The Southbound Interface<br>
 an interface between the controller and those devices, and given its location at the bottom part of<br>
 drawings,<br>
@@ -303,10 +254,10 @@ Programs can pull information from the controller, using the controller’s APIs
 controller’s SBIs.<br>
 An application can run on the same server as the controller and use an NBI, which is an API, so<br>
 that two programs can communicate.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>REST (Representational State Transfer)different hosts, using HTTP messages to transfer data over the APIdescribes a type of API that allows applications to sit on
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>REST (Representational State Transfer)different hosts, using HTTP messages to transfer data over the APIdescribes a type of API that allows applications to sit on
 application running on the same system as the controller, the API does not need to send messages
 over a network because both programs run on the same system.</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>over a network because both programs run on the same system.
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>over a network because both programs run on the same system.
 when the application runs on a different system somewhere else in the network other than running on the controller, the API needs a way to send the data back and forth over an IP network,
 and RESTful APIs meet that need
 REST API
@@ -317,8 +268,8 @@ the URI might identify an object that is the list of physical interfaces on a sp
 <p>the response holds variable names and their values, in a format that can be easily used by a program. The common formats for data used for network programmabilityare JavaScript Object<br>
 Notation (JSON) and eXtensible Markup Language (XML), shown as step 3.<br>
 <strong>Examples of Network Programmability and SDN</strong></p>
-<h5 id="opendaylightcontroller-and-openflow-sbi">OpenDaylight(Controller) and OpenFlow (SBI)</h5>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>defines the concept of a controller along with an IP-based SBI between the controller and
+<h5 id="opendaylightcontroller-and-openflow-sbi">OpenDaylight(Controller) and OpenFlow (SBI)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h5>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>defines the concept of a controller along with an IP-based SBI between the controller and
 the network devices.
 defines a standard idea of what a switch’s capabilities are, based on the ASICs and TCAMs commonly used in switches today. (switch abstraction)
 An with great flexibility beyond the traditional model of a Layer 2/3 switch.OpenFlowswitch can act as a Layer 2 switch, a Layer 3 switch, or in different ways and
@@ -343,7 +294,7 @@ Cisco made the network infrastructure become application centric, hence the name
 Infrastructure, or ACI.</p>
 <p>how ACI creates a powerful and flexible network to support a modern<br>
 data center in which VMs and containers are created, run, move, and are stopped dynamically as a matter of routine.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ACI Physical Design: Spine and Leaf
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ACI Physical Design: Spine and Leaf
 uses a specific physical switch topology called spine and leaf.
 also called a Clos network
  Each leaf switch must connect to every spine switch.
@@ -351,7 +302,7 @@ also called a Clos network
  Leaf switches cannot connect to each other.
  Spine switches cannot connect to each other.
  Endpoints connect only to the leaf switches.</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>The center, like the router on the leftendpoints can be connections to devices outside the data
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>The center, like the router on the leftendpoints can be connections to devices outside the data
 most of the endpoints will be either physical servers running a
 native OS or servers running virtualization software with numbers of VMs and containers as shown in the center of the figure.</code></pre></div>
 <p>ACI Operating Model with Intent-Based Networking<br>
@@ -364,18 +315,18 @@ one web app often exists as three separate servers:<br>
 the next web page for that particular user based on the user’s profile and latest actions and input.<br>
 <strong>DB (Database) server:</strong> Many of the app server’s actions<br>
 require data; the DB server retrieves and stores the data as requested by the app server.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>the engineer, or some automation program, defines the policies and intent for which endpoints should be allowed to
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>the engineer, or some automation program, defines the policies and intent for which endpoints should be allowed to
 communicate and which should not. Then the controller determines what that means for this network at this moment
 in time, depending on where the endpoints are right now.</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>intent-based networking (IBN) model.</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>when starting the VMs for this app, the virtualization software
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>intent-based networking (IBN) model.</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>when starting the VMs for this app, the virtualization software
 would create (via the APIC) several endpoint groups (EPGs) as shown in Figure 16-11. The controller must also be told the access
 policies, which define which EPGs should be able to communicate (and which should not), as implied in the figure with arrowed lines.
 For example, the routers that connect to the network external to</code></pre></div>
 <p>For example, the routers that connect to the network external to the data center should be able to send packets to all web servers,<br>
 but not to the app servers or DB servers.</p>
 <p>ACI uses a centralized controller called the Application Policy Infrastructure Controller (APIC),</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>it is the controller that creates application policies for the
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>it is the controller that creates application policies for the
 data center infrastructure. The APIC takes the intent (EPGs, policies, and so on), which completely changes the
 operational model away from configuring VLANs, trunks, EtherChannels, ACLs, and so on. (Some control plane in
 switches)</code></pre></div>
@@ -394,7 +345,7 @@ Plug and Play: that you can unbox a new device and make it IP reachable through 
 automation in the controller.<br>
 Easy QoS: With a few simple decisions at the controller, you can<br>
 configure complex QoS features at each device.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>does not directly program the data or control planes, but it does interact with the management plane via Telnet, SSH, and/or SNMP;</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>does not directly program the data or control planes, but it does interact with the management plane via Telnet, SSH, and/or SNMP;</code></pre></div>
 <p>APIC-EM Replacement<br>
 many of the functions of APICCisco DNA Center (DNAC) product-EM have become core features of the<br>
 list of applications just above this chapter’s Figure 16-14 also exist<br>
@@ -505,8 +456,8 @@ Enables a DevOps approach to networks</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -532,23 +483,23 @@ Enables a DevOps approach to networks</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

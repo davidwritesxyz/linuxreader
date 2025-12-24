@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Shell scripting and logical constructs">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Shell Scripting :: Linux Reader">
     <meta name="twitter:description" content="Shell scripting and logical constructs">
-    <meta property="og:url" content="https://linuxreader.com/bash/shell-scripting/">
+    <meta property="og:url" content="http://localhost:1313/bash/shell-scripting/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Shell Scripting :: Linux Reader">
     <meta property="og:description" content="Shell scripting and logical constructs">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Shell scripting and logical constructs">
     <meta itemprop="wordCount" content="4089">
     <title>Shell Scripting :: Linux Reader</title>
-    <link href="/bash/shell-scripting/index.xml" rel="alternate" type="application/rss+xml" title="Shell Scripting :: Linux Reader">
-    <link href="/bash/shell-scripting/index.print.html" rel="alternate" type="text/html" title="Shell Scripting :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/bash\/shell-scripting\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/bash/bash-shell/" title="Bash (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/bash/bash-shell/" title="Bash (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -224,12 +178,9 @@
             Shell Scripting
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/bash/shell-scripting/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/boot/" title="Boot (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/boot/" title="Boot (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -250,7 +201,7 @@
 
 <h1 id="shell-scripting">Shell Scripting</h1>
 
-<h2 id="shell-scripts">Shell Scripts</h2>
+<h2 id="shell-scripts">Shell Scripts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>
 <p>A group of Linux commands along with control structures and optional comments stored in a text file.</p>
@@ -286,12 +237,12 @@
 <p>Can store your scripts in the <em>/usr/local/bin</em> directory, which is included in the PATH of all users by default.</p>
 </li>
 </ul>
-<h3 id="script01-displaying-system-information">Script01: Displaying System Information</h3>
+<h3 id="script01-displaying-system-information">Script01: Displaying System Information<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Create the first script called <em>sys_info.sh</em> in <em>/usr/local/bin/</em></li>
 <li>Use the vim editor with sudo to write the script.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;Display Basic System Information&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;==================================&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span>
@@ -304,8 +255,8 @@
 <li>Within vim, press the ESC key and then type :set nu to view line numbers associated with each line entry.</li>
 <li>Must add execute bit to run the script</li>
 </ul>
-<h3 id="executing-a-script">Executing a Script</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chmod +x /usr/local/bin/sys_info.sh
+<h3 id="executing-a-script">Executing a Script<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chmod +x /usr/local/bin/sys_info.sh
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>ll /usr/local/bin/sys_info.sh
 </span></span><span style="display:flex;"><span>-rwxr-xr-x. <span style="color:#ff9f43">1</span> root root <span style="color:#ff9f43">244</span> Jul <span style="color:#ff9f43">30</span> 09:47 /usr/local/bin/sys_info.sh&gt;<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
@@ -313,7 +264,7 @@
 <li>Any user on the system can now run this script using either its name or the full path.</li>
 </ul>
 <p>Let&rsquo;s run the script and see what the output will look like:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sys_info.sh
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sys_info.sh
 </span></span><span style="display:flex;"><span>Display Basic System <span style="color:#ff5c57">Information</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">==================================</span>
 </span></span><span style="display:flex;"><span>
@@ -334,9 +285,9 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>The Following users are currently logged in:
 </span></span><span style="display:flex;"><span>root     pts/0        2024-07-30 07:22 <span style="color:#ff6ac1">(</span>172.16.7.95<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
-<h3 id="debugging-a-script">Debugging a Script</h3>
+<h3 id="debugging-a-script">Debugging a Script<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Can either append the <code>-x</code> option to the &ldquo;<code>#!/bin/bash</code>&rdquo; at the beginning of the script to look like &ldquo;<code>#!/bin/bash -x</code>&rdquo;, or execute the script as follows:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># bash -x sys_info.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># bash -x sys_info.sh</span>
 </span></span><span style="display:flex;"><span>+ <span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#39;Display Basic System Information&#39;</span>
 </span></span><span style="display:flex;"><span>Display Basic System Information
 </span></span><span style="display:flex;"><span>+ <span style="color:#ff5c57">echo</span> <span style="color:#ff6ac1">==================================</span>
@@ -371,7 +322,7 @@
 <li>This way you can identify any issues pertaining to the path, command name, use of special characters, etc., and address it quickly.</li>
 </ul>
 <p>Change one of the echo commands in the script to &ldquo;iecho&rdquo; and re-run the script in the debug mode to see the error:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># bash -x sys_info.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># bash -x sys_info.sh</span>
 </span></span><span style="display:flex;"><span>+ <span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#39;Display Basic System Information&#39;</span>
 </span></span><span style="display:flex;"><span>Display Basic System Information
 </span></span><span style="display:flex;"><span>+ <span style="color:#ff5c57">echo</span> <span style="color:#ff6ac1">==================================</span>
@@ -400,13 +351,13 @@
 </span></span><span style="display:flex;"><span>The Following users are currently logged in:
 </span></span><span style="display:flex;"><span>+ /usr/bin/who
 </span></span><span style="display:flex;"><span>root     pts/0        2024-07-30 07:22 <span style="color:#ff6ac1">(</span>172.16.7.95<span style="color:#ff6ac1">)</span></span></span></code></pre></div>
-<h3 id="script02-using-local-variables">Script02: Using Local Variables</h3>
+<h3 id="script02-using-local-variables">Script02: Using Local Variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Create a script called <em>use_var.sh</em></li>
 <li>Define a local variable and display its value on the screen.</li>
 <li>Re-check the value of the variable after the script execution has completed.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/use_var.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/use_var.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash</span>
 </span></span><span style="display:flex;"><span>
@@ -414,7 +365,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;========================&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">SYSNAME</span><span style="color:#ff6ac1">=</span>server30.example.com
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;The hostname of this system is </span><span style="color:#ff5c57">$SYSNAME</span><span style="color:#5af78e">&#34;</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/use_var.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/use_var.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># use_var.sh</span>
 </span></span><span style="display:flex;"><span>Setting a Local <span style="color:#ff5c57">Variable</span>
@@ -422,22 +373,22 @@
 </span></span><span style="display:flex;"><span>The hostname of this system is server30.example.com</span></span></code></pre></div>
 <p>If you run the echo command to see what is stored in the SYSNAME
 variable, you will get nothing:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $SYSNAME</span></span></span></code></pre></div>
-<h3 id="script03-using-pre-defined-environment-variables">Script03: Using Pre-Defined Environment Variables</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $SYSNAME</span></span></span></code></pre></div>
+<h3 id="script03-using-pre-defined-environment-variables">Script03: Using Pre-Defined Environment Variables<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>The following script called pre_env.sh will display the values of SHELL and LOGNAME environment variables:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/pre_env.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/pre_env.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;The location of my shell command is:&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#ff5c57">$SHELL</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;I am logged in as </span><span style="color:#ff5c57">$LOGNAME</span><span style="color:#5af78e">&#34;</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/pre_env.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/pre_env.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># pre_env.sh</span>
 </span></span><span style="display:flex;"><span>The location of my shell <span style="color:#ff5c57">command</span> is:
 </span></span><span style="display:flex;"><span>/bin/bash
 </span></span><span style="display:flex;"><span>I am logged in as root</span></span></code></pre></div>
-<h3 id="script04-using-command-substitution">Script04: Using Command Substitution</h3>
+<h3 id="script04-using-command-substitution">Script04: Using Command Substitution<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
 <p>Can use the command substitution feature of the bash shell and store the output generated by the command into a variable.</p>
@@ -446,19 +397,19 @@ variable, you will get nothing:</p>
 <p>Two different ways to use command substitution: Backtics or subshell</p>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span><span style="color:#ff5c57">SYSNAME</span><span style="color:#ff6ac1">=</span><span style="color:#ff6ac1">$(</span>hostname<span style="color:#ff6ac1">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">KERNVER</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">`</span>uname -r<span style="color:#5af78e">`</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;The hostname is </span><span style="color:#ff5c57">$SYSNAME</span><span style="color:#5af78e">&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;The kernel version is </span><span style="color:#ff5c57">$KERNVER</span><span style="color:#5af78e">&#34;</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/cmd_out.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/cmd_out.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/cmd_out.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cmd_out.sh</span>
 </span></span><span style="display:flex;"><span>The hostname is server30
 </span></span><span style="display:flex;"><span>The kernel version is 5.14.0-362.24.1.el9_3.x86_64</span></span></code></pre></div>
-<h1 id="shell-parameters">Shell Parameters</h1>
+<h1 id="shell-parameters">Shell Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <ul>
 <li>An entity that holds a value such as a name, special character, or number.</li>
 <li>The parameter that holds a <strong>name</strong> is referred to as a <strong>variable</strong></li>
@@ -475,21 +426,21 @@ variable, you will get nothing:</p>
 </ul>
 </li>
 </ul>
-<p><a href="#R-image-be8144ce829b1455338283a0e736440b" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/image-G1VF6C4I%201.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-be8144ce829b1455338283a0e736440b"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/image-G1VF6C4I%201.jpg"></a></p>
+<p><a href="#R-image-af9f114a9b077d87a524ad3c505eb316" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/image-G1VF6C4I%201.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-af9f114a9b077d87a524ad3c505eb316"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/image-G1VF6C4I%201.jpg"></a></p>
 <ul>
 <li>Just like the variable and command substitutions, the shell uses the dollar ($) sign for special and positional parameter expansions as well.</li>
 </ul>
-<h3 id="script05-using-special-and-positional-parameters">Script05: Using Special and Positional Parameters</h3>
+<h3 id="script05-using-special-and-positional-parameters">Script05: Using Special and Positional Parameters<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Create <em>com_line_arg.sh</em> to show the supplied arguments, total count, value of the first argument, and PID of the script:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/com_line_arg.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/com_line_arg.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;There are </span><span style="color:#ff5c57">$#</span><span style="color:#5af78e"> arguments specified at the command line&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;The arguments supplied are: </span><span style="color:#ff5c57">$*</span><span style="color:#5af78e">&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;The first argument is: </span><span style="color:#ff5c57">$1</span><span style="color:#5af78e">&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;The Process ID of the script is: </span><span style="color:#ff5c57">$$</span><span style="color:#5af78e">&#34;</span>                                          </span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/com_line_arg.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/com_line_arg.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># com_line_arg.sh</span>
 </span></span><span style="display:flex;"><span>There are <span style="color:#ff9f43">0</span> arguments specified at the <span style="color:#ff5c57">command</span> line
@@ -502,13 +453,13 @@ variable, you will get nothing:</p>
 </span></span><span style="display:flex;"><span>The arguments supplied are: the dog jumped over the frog
 </span></span><span style="display:flex;"><span>The first argument is: the
 </span></span><span style="display:flex;"><span>The Process ID of the script is: <span style="color:#ff9f43">1936</span></span></span></code></pre></div>
-<h3 id="script06-shifting-command-line-arguments">Script06: Shifting Command Line Arguments</h3>
+<h3 id="script06-shifting-command-line-arguments">Script06: Shifting Command Line Arguments<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><code>shift</code> command</p>
 <ul>
 <li>Used to move arguments one position to the left.</li>
 <li>During this move, the value of the first argument is lost.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/com_line_arg_shift.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/com_line_arg_shift.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;There are </span><span style="color:#ff5c57">$#</span><span style="color:#5af78e"> arguments specified at the command line&#34;</span>
@@ -519,7 +470,7 @@ variable, you will get nothing:</p>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;The new first argument after the first shift is: </span><span style="color:#ff5c57">$1</span><span style="color:#5af78e">&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">shift</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;The new first argument after the second shift is: </span><span style="color:#ff5c57">$1</span><span style="color:#5af78e">&#34;</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/com_line_arg_shift.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/com_line_arg_shift.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># com_line_arg_shift.sh</span>
 </span></span><span style="display:flex;"><span>There are <span style="color:#ff9f43">0</span> arguments specified at the <span style="color:#ff5c57">command</span> line
@@ -539,7 +490,7 @@ variable, you will get nothing:</p>
 <ul>
 <li>Multiple shifts in a single attempt may be performed by furnishing a count of desired shifts to the shift command as an argument. For example, &ldquo;shift 2&rdquo; will carry out two shifts, &ldquo;shift 3&rdquo; will make three shifts, and so on.</li>
 </ul>
-<h2 id="logical-constructs">Logical Constructs</h2>
+<h2 id="logical-constructs">Logical Constructs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Use test conditions, which decides what to do next based on the true or false status of the condition.</li>
 </ul>
@@ -557,7 +508,7 @@ variable, you will get nothing:</p>
 <li>Return code is stored in a special shell parameter called ? (question mark).</li>
 </ul>
 <p>Let&rsquo;s look at the following two examples to understand their usage:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># pwd</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># pwd</span>
 </span></span><span style="display:flex;"><span>/root
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $?</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff9f43">0</span>
@@ -576,7 +527,7 @@ variable, you will get nothing:</p>
 <li>Used in logical constructs to decide what to do next.</li>
 <li>Can be set on integer values, string values, or files using the <code>test</code> command or by enclosing them within the square brackets [].</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>man test</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>man test</span></span></code></pre></div>
 <p><strong>Operation on Integer Value</strong></p>
 <p><code>integer1 -eq (-ne) integer2</code></p>
 <ul>
@@ -645,7 +596,7 @@ variable, you will get nothing:</p>
 <ul>
 <li>The logical OR operator. Either of the two or both operands must be true for the condition to be true. Syntax: <code>[ (x == 1 -o y == 2) ]</code></li>
 </ul>
-<h3 id="if-then-fi-construct">if-then-fi Construct</h3>
+<h3 id="if-then-fi-construct">if-then-fi Construct<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Evaluates the condition for true or false.</li>
 <li>Executes the specified action if the condition is true.</li>
@@ -653,13 +604,13 @@ variable, you will get nothing:</p>
 <li>Begins with an <code>if</code> and ends with a <code>fi</code></li>
 <li>Can execute an action only if the specified condition is true. It quits the statement if the condition is untrue.</li>
 </ul>
-<p><a href="#R-image-746545a5eb565588d94961b4231691d5" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/image-7FX8FVMW%201.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-746545a5eb565588d94961b4231691d5"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/image-7FX8FVMW%201.jpg"></a></p>
+<p><a href="#R-image-c6563edf6cdc14ca56bf0c2380407959" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/image-7FX8FVMW%201.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c6563edf6cdc14ca56bf0c2380407959"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/image-7FX8FVMW%201.jpg"></a></p>
 <p>The general syntax of this statement is as follows:</p>
 <p>if condition &gt; then &gt; action &gt; fi</p>
-<h3 id="script07-the-if-then-fi-construct">Script07: The if-then-fi Construct</h3>
+<h3 id="script07-the-if-then-fi-construct">Script07: The if-then-fi Construct<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Create <em>if_then_fi.sh</em> to determine the number of arguments and print an error message if there are none provided:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/if_then_fi.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/if_then_fi.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash </span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">if</span> <span style="color:#ff6ac1">[</span> <span style="color:#ff5c57">$#</span> -ne <span style="color:#ff9f43">2</span> <span style="color:#ff6ac1">]</span> <span style="color:#78787e"># Ensure there is a space after [ and before ] </span>
@@ -669,43 +620,43 @@ variable, you will get nothing:</p>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">exit</span> <span style="color:#ff9f43">2</span> 
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">fi</span> 
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;Script terminated&#34;</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/if_then_fi.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/if_then_fi.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># if_then_fi.sh</span>
 </span></span><span style="display:flex;"><span>Error: Invalid number of arguments supplied
 </span></span><span style="display:flex;"><span>Usage: /usr/local/bin/if_then_fi.sh source_file destination_file</span></span></code></pre></div>
 <p>This script will display the following messages on the screen if it is
 executed without exactly two arguments specified at the command line:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># if_then_fi.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># if_then_fi.sh</span>
 </span></span><span style="display:flex;"><span>Error: Invalid number of arguments supplied
 </span></span><span style="display:flex;"><span>Usage: /usr/local/bin/if_then_fi.sh source_file destination_file</span></span></code></pre></div>
 <p>Return code value reflects the exit code in the script .</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $?</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $?</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff9f43">2</span></span></span></code></pre></div>
 <p>Return code will be 0 if you supply a pair of arguments:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># if_then_fi.sh a b</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># if_then_fi.sh a b</span>
 </span></span><span style="display:flex;"><span>Script terminated
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $?</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff9f43">0</span></span></span></code></pre></div>
-<h3 id="if-then-else-fi-construct">if-then-else-fi Construct</h3>
+<h3 id="if-then-else-fi-construct">if-then-else-fi Construct<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Can execute an action if the condition is true and another action if the condition is false.</li>
 </ul>
-<p><a href="#R-image-0d670fbdc7f8ce3aac9444503da94593" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/image-CMLV644G%201.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0d670fbdc7f8ce3aac9444503da94593"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/image-CMLV644G%201.jpg"></a></p>
+<p><a href="#R-image-645e956eacec39f2d608437abb8880a4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/image-CMLV644G%201.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-645e956eacec39f2d608437abb8880a4"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/image-CMLV644G%201.jpg"></a></p>
 <p>The general syntax of this statement is as follows:</p>
 <p>if condition &gt; then &gt; action1 &gt; else &gt; action2 &gt; fi</p>
-<h3 id="script08-the-if-then-else-fi-construct">Script08: The if-then-else-fi Construct</h3>
+<h3 id="script08-the-if-then-else-fi-construct">Script08: The if-then-else-fi Construct<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Create a script called <em>if_then_else_fi.sh</em> that will accept an integer value as an argument and tell if the value is positive or negative:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim /usr/local/bin/if_then_else_fi.sh</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>#!/bin/bash
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim /usr/local/bin/if_then_else_fi.sh</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>#!/bin/bash
 if [ $1 -gt 0 ]
 then
         echo &#34;$1 is a positive integer value&#34;
 else
         echo &#34;$1 is a negative integer value&#34;
 fi</code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/if_then_else_fi.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/if_then_else_fi.sh</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># if_then_else_fi.sh</span>
 </span></span><span style="display:flex;"><span>/usr/local/bin/if_then_else_fi.sh: line 2: <span style="color:#ff6ac1">[</span>: -gt: unary operator expected
 </span></span><span style="display:flex;"><span> is a negative integer value
@@ -713,25 +664,25 @@ fi</code></pre></div>
 </span></span><span style="display:flex;"><span><span style="color:#ff9f43">3</span> is a positive integer value
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># if_then_else_fi.sh -3</span>
 </span></span><span style="display:flex;"><span>-3 is a negative integer value</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># if_then_else_fi.sh a</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># if_then_else_fi.sh a</span>
 </span></span><span style="display:flex;"><span>/usr/local/bin/if_then_else_fi.sh: line 2: <span style="color:#ff6ac1">[</span>: a: integer expression expected
 </span></span><span style="display:flex;"><span>a is a negative integer value
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $?</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff9f43">0</span></span></span></code></pre></div>
-<h3 id="the-if-then-elif-fi-construct">The if-then-elif-fi Construct</h3>
+<h3 id="the-if-then-elif-fi-construct">The if-then-elif-fi Construct<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Can define multiple conditions and associate an action with each one of them.</li>
 <li>The action corresponding to the true condition is performed.</li>
 </ul>
-<p><a href="#R-image-2fdae0d077dc15594df48e2dcba15cd1" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/image-TNYN7SP2%201.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-2fdae0d077dc15594df48e2dcba15cd1"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/image-TNYN7SP2%201.jpg"></a></p>
+<p><a href="#R-image-03ade6d246cd31014ccb5715bb454d05" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/image-TNYN7SP2%201.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-03ade6d246cd31014ccb5715bb454d05"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/image-TNYN7SP2%201.jpg"></a></p>
 <p>The general syntax of this statement is as follows:</p>
 <p>if  condition1 &gt; then action1 &gt; elif condition2 &gt; then action2 &gt; elif  condition3 &gt; then action3 &gt; else &gt; action(n) &gt; fi</p>
-<h3 id="script09-the-if-then-elif-fi-construct-example-1">Script09: The if-then-elif-fi Construct (Example 1)</h3>
+<h3 id="script09-the-if-then-elif-fi-construct-example-1">Script09: The if-then-elif-fi Construct (Example 1)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Create <em>if_then_elif_fi.sh</em> script to accept an integer value as an argument and tell if the integer is positive, negative, or zero. If a non-integer value or no argument is supplied, the script will complain. Employ the exit command after each action to help you identify where it exited.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/if_then_elif_fi.sh</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/if_then_elif_fi.sh</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span><span style="color:#ff6ac1">if</span> <span style="color:#ff6ac1">[</span> <span style="color:#ff5c57">$1</span> -gt <span style="color:#ff9f43">0</span> <span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">then</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;</span><span style="color:#ff5c57">$1</span><span style="color:#5af78e"> is a positive integer value&#34;</span>
@@ -749,7 +700,7 @@ fi</code></pre></div>
 </span></span></span><span style="display:flex;"><span><span style="color:#5af78e">nteger.&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">exit</span> <span style="color:#ff9f43">4</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">fi</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># if_then_elif_fi.sh -0</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># if_then_elif_fi.sh -0</span>
 </span></span><span style="display:flex;"><span>-0 is a zero integer value
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $?</span>
@@ -776,10 +727,10 @@ fi</code></pre></div>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># echo $?</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff9f43">4</span></span></span></code></pre></div>
-<h3 id="script10-the-if-then-elif-fi-construct-example-2">Script10: The if-then-elif-fi Construct (Example 2)</h3>
+<h3 id="script10-the-if-then-elif-fi-construct-example-2">Script10: The if-then-elif-fi Construct (Example 2)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Create <em>ex200_ex294.sh</em> to display the name of the Red Hat exam RHCSA or RHCE in the output based on the input argument (ex200 or ex294). If a random or no argument is provided, it will print &ldquo;Usage: Acceptable values are ex200 and ex294&rdquo;. Add white spaces in the conditions.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/ex200_ex294.sh</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/ex200_ex294.sh</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span><span style="color:#ff6ac1">if</span> <span style="color:#ff6ac1">[</span> <span style="color:#5af78e">&#34;</span><span style="color:#ff5c57">$1</span><span style="color:#5af78e">&#34;</span> <span style="color:#ff6ac1">=</span> ex200 <span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">then</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;RHCSA&#34;</span>
@@ -789,7 +740,7 @@ fi</code></pre></div>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">else</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;Usage: Acceptable values are ex200 and ex294&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">fi</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/ex200_ex294.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/ex200_ex294.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ex200_ex294.sh ex200</span>
 </span></span><span style="display:flex;"><span>RHCSA
@@ -799,7 +750,7 @@ fi</code></pre></div>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ex200_ex294.sh frog</span>
 </span></span><span style="display:flex;"><span>Usage: Acceptable values are ex200 and ex294</span></span></code></pre></div>
-<h3 id="looping-constructs">Looping Constructs</h3>
+<h3 id="looping-constructs">Looping Constructs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Perform certain task on a number of given elements.</li>
 <li>Or repeatedly until a specified condition becomes true or false.</li>
@@ -821,7 +772,7 @@ fi</code></pre></div>
 <li>until loop does just the opposite of the while loop</li>
 <li>Performs an operation repeatedly until the specified condition becomes true.</li>
 </ul>
-<h3 id="test-conditions">Test Conditions</h3>
+<h3 id="test-conditions">Test Conditions<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><code>let</code> command</p>
 <ul>
 <li>Used in looping constructs to evaluate a condition at each iteration.</li>
@@ -858,27 +809,27 @@ fi</code></pre></div>
 <ul>
 <li>Comparison for equality /non-equality</li>
 </ul>
-<h3 id="the-for-loop">The for Loop</h3>
+<h3 id="the-for-loop">The for Loop<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Executed on an array of elements until all the elements in the array are consumed.</li>
 <li>Each element is assigned to a variable one after the other for processing.</li>
 </ul>
-<p><a href="#R-image-b0205834382759061b1c4f48041338f8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/image-BPQ7RWER%201.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b0205834382759061b1c4f48041338f8"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/image-BPQ7RWER%201.jpg"></a></p>
+<p><a href="#R-image-95febeb910c4dd444f40bb0994c599de" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/image-BPQ7RWER%201.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-95febeb910c4dd444f40bb0994c599de"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/image-BPQ7RWER%201.jpg"></a></p>
 <p>The general syntax of this construct is as follows:</p>
 <p>for VAR in list &gt; do &gt; action &gt; done</p>
-<h3 id="script11-print-alphabets-using-for-loop">Script11: Print Alphabets Using for Loop</h3>
+<h3 id="script11-print-alphabets-using-for-loop">Script11: Print Alphabets Using for Loop<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Create script <em>for_do_done.sh</em> script that initializes the variable COUNT to 0. The for loop will read each letter sequentially from the range placed within curly brackets (no spaces before the letter A and after the letter Z), assign it to another variable LETTER, and display the value on the screen. The <code>expr</code> command is an arithmetic processor, and it is used here to increment the COUNT by 1 at each loop iteration.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/for_do_done.sh</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/for_do_done.sh</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span><span style="color:#ff5c57">COUNT</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">for</span> LETTER in <span style="color:#ff6ac1">{</span>A..Z<span style="color:#ff6ac1">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">do</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#ff5c57">COUNT</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">`</span>/usr/bin/expr <span style="color:#ff5c57">$COUNT</span> + 1<span style="color:#5af78e">`</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;Letter </span><span style="color:#ff5c57">$COUNT</span><span style="color:#5af78e"> is [</span><span style="color:#ff5c57">$LETTER</span><span style="color:#5af78e">]&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">done</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/for_do_done.sh</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># for_do_done.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/for_do_done.sh</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># for_do_done.sh</span>
 </span></span><span style="display:flex;"><span>Letter <span style="color:#ff9f43">1</span> is <span style="color:#ff6ac1">[</span>A<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span>Letter <span style="color:#ff9f43">2</span> is <span style="color:#ff6ac1">[</span>B<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span>Letter <span style="color:#ff9f43">3</span> is <span style="color:#ff6ac1">[</span>C<span style="color:#ff6ac1">]</span>
@@ -905,11 +856,11 @@ fi</code></pre></div>
 </span></span><span style="display:flex;"><span>Letter <span style="color:#ff9f43">24</span> is <span style="color:#ff6ac1">[</span>X<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span>Letter <span style="color:#ff9f43">25</span> is <span style="color:#ff6ac1">[</span>Y<span style="color:#ff6ac1">]</span>
 </span></span><span style="display:flex;"><span>Letter <span style="color:#ff9f43">26</span> is <span style="color:#ff6ac1">[</span>Z<span style="color:#ff6ac1">]</span></span></span></code></pre></div>
-<h3 id="script12-create-users-using-for-loop">Script12: Create Users Using for Loop</h3>
+<h3 id="script12-create-users-using-for-loop">Script12: Create Users Using for Loop<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Create script <em>create_user.sh</em> script to create several Linux user accounts. As each account is created, the value of the variable ? is checked. If the value is 0, a message saying the account is created successfully will be displayed, otherwise the script will terminate. In case of a successful
 account creation, the <code>passwd</code> command will be invoked to assign the user the same password as their username.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/create_user.sh</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/create_user.sh</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#78787e">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#78787e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">for</span> USER in user<span style="color:#ff6ac1">{</span>10..12<span style="color:#ff6ac1">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">do</span>
@@ -924,7 +875,7 @@ account creation, the <code>passwd</code> command will be invoked to assign the 
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">exit</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">fi</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">done</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/create_user.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/create_user.sh</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># create_user.sh</span>
 </span></span><span style="display:flex;"><span>Create account <span style="color:#ff6ac1">for</span> user user10
@@ -940,22 +891,22 @@ account creation, the <code>passwd</code> command will be invoked to assign the 
 </span></span><span style="display:flex;"><span>passwd: all authentication tokens updated successfully.
 </span></span><span style="display:flex;"><span>user12 is created successfully</span></span></code></pre></div>
 <p>Script fails if ran again:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># create_user.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server10 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># create_user.sh</span>
 </span></span><span style="display:flex;"><span>Create account <span style="color:#ff6ac1">for</span> user user10
 </span></span><span style="display:flex;"><span>useradd: user <span style="color:#5af78e">&#39;user10&#39;</span> already exists
 </span></span><span style="display:flex;"><span>Failed to create account user10</span></span></code></pre></div>
-<h2 id="shell-scripting-diy-labs">Shell Scripting DIY Labs</h2>
-<h3 id="lab-write-script-to-create-logical-volumes">Lab: Write Script to Create Logical Volumes</h3>
+<h2 id="shell-scripting-diy-labs">Shell Scripting DIY Labs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="lab-write-script-to-create-logical-volumes">Lab: Write Script to Create Logical Volumes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Present 2x1GB virtual disks to server40 in VirtualBox Manager.</li>
 <li>As user1 with sudo on server40, write a single bash script to create 2x400MB partitions on each disk using parted and then bring both partitions into LVM control with the <code>pvcreate</code> command.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> vim /usr/local/bin/lvscript.sh</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> vim /usr/local/bin/lvscript.sh</span></span></code></pre></div>
 <ul>
 <li>Create a volume group called <code>vgscript</code> and add both physical volumes to it.</li>
 <li>Create three logical volumes each of size 200MB and name them lvscript1, lvscript2, and lvscript3.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#78787e">#!/bin/bash</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#78787e">#!/bin/bash</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">for</span> DEVICE in <span style="color:#5af78e">&#34;/dev/sd&#34;</span><span style="color:#ff6ac1">{</span>b..c<span style="color:#ff6ac1">}</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">do</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;Creating partition 1 with the size of 400MB on </span><span style="color:#ff5c57">$DEVICE</span><span style="color:#5af78e">&#34;</span>
@@ -973,15 +924,15 @@ account creation, the <code>passwd</code> command will be invoked to assign the 
 </span></span><span style="display:flex;"><span>        <span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;Creating logical volume </span><span style="color:#ff5c57">$LV</span><span style="color:#5af78e"> in volume group vgscript with the size of 200MB&#34;</span>
 </span></span><span style="display:flex;"><span>        lvcreate vgscript -L 200MB -n <span style="color:#ff5c57">$LV</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">done</span></span></span></code></pre></div>
-<h3 id="lab-write-script-to-create-file-systems">Lab: Write Script to Create File Systems</h3>
+<h3 id="lab-write-script-to-create-file-systems">Lab: Write Script to Create File Systems<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Write another bash script to create xfs, ext4, and vfat file system structures in the logical volumes, respectively.</li>
 <li>Create mount points /mnt/xfs, /mnt/ext4, and /mnt/vfat, and mount the file systems.</li>
 <li>Include the df command with -h in the script to list the mounted file systems.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> vim /usr/local/bin/fsscript.sh</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/fsscript.sh</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#78787e">#!/bin/bash</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> vim /usr/local/bin/fsscript.sh</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/fsscript.sh</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#78787e">#!/bin/bash</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">for</span> DEVICE in lvscript<span style="color:#ff6ac1">{</span>1..3<span style="color:#ff6ac1">}</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">do</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">if</span> <span style="color:#ff6ac1">[</span> <span style="color:#5af78e">&#34;</span><span style="color:#ff5c57">$DEVICE</span><span style="color:#5af78e">&#34;</span> <span style="color:#ff6ac1">=</span> lvscript1 <span style="color:#ff6ac1">]</span>
@@ -1021,7 +972,7 @@ account creation, the <code>passwd</code> command will be invoked to assign the 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">fi</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">done</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># fsscript.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># fsscript.sh</span>
 </span></span><span style="display:flex;"><span> Creating xfs filesystem on logical volume lvscript1
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> Filesystem should be larger than 300MB.
@@ -1062,33 +1013,33 @@ account creation, the <code>passwd</code> command will be invoked to assign the 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> Done!</span></span></code></pre></div>
-<h3 id="lab-21-3-write-script-to-configure-new-network-connection-profile">Lab 21-3: Write Script to Configure New Network Connection Profile</h3>
+<h3 id="lab-21-3-write-script-to-configure-new-network-connection-profile">Lab 21-3: Write Script to Configure New Network Connection Profile<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Present a new network interface to server40 in VirtualBox Manager.</li>
 <li>As user1 with sudo on server40, write a single bash script to run the nmcli command to configure custom IP assignments (choose your own settings) on the new network device.</li>
 <li>Make a copy of the /etc/hosts file as part of this script.</li>
 <li>Choose a hostname of your choice and add a mapping to the /etc/hosts file without overwriting existing file content.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/network.sh</span></span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#78787e">#!/bin/bash</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># vim /usr/local/bin/network.sh</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#78787e">#!/bin/bash</span>
 </span></span><span style="display:flex;"><span> cp /etc/hosts /etc/hosts.bak <span style="color:#ff6ac1">&amp;&amp;</span>
 </span></span><span style="display:flex;"><span> nmcli c a <span style="color:#ff5c57">type</span> Ethernet con-name enp0s9 ifname enp0s9 ip4  10.32.32.2/24 gw4 10.32.32.1
 </span></span><span style="display:flex;"><span> <span style="color:#ff5c57">echo</span> <span style="color:#5af78e">&#34;10.32.33.14 frog.example.com frog&#34;</span> &gt;&gt; /etc/hosts</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/network.sh</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># chmod +x /usr/local/bin/network.sh</span>
 </span></span><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># network.sh</span>
 </span></span><span style="display:flex;"><span> Connection <span style="color:#5af78e">&#39;enp0s9&#39;</span> <span style="color:#ff6ac1">(</span>5a342243-e77b-452e-88e2-8838d3ecea6d<span style="color:#ff6ac1">)</span>  successfully added.</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /etc/hosts</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /etc/hosts</span>
 </span></span><span style="display:flex;"><span> 127.0.0.1   localhost localhost.localdomain localhost4  localhost4.localdomain4
 </span></span><span style="display:flex;"><span> ::1         localhost localhost.localdomain localhost6  localhost6.localdomain6
 </span></span><span style="display:flex;"><span> 10.32.33.14 frog.example.com frog</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ip a</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ip a</span>
 </span></span><span style="display:flex;"><span> enp0s9: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span style="color:#ff9f43">1500</span> qdisc fq_codel  state UP group default qlen <span style="color:#ff9f43">1000</span>
 </span></span><span style="display:flex;"><span>    link/ether 08:00:27:1d:f4:c1 brd ff:ff:ff:ff:ff:ff
 </span></span><span style="display:flex;"><span>    inet 10.32.32.2/24 brd 10.32.32.255 scope global noprefixroute enp0s9
 </span></span><span style="display:flex;"><span>       valid_lft forever preferred_lft forever
 </span></span><span style="display:flex;"><span>    inet6 fe80::2c5d:31cc:1d79:6b43/64 scope link noprefixroute 
 </span></span><span style="display:flex;"><span>       valid_lft forever preferred_lft forever</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># nmcli d s</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># nmcli d s</span>
 </span></span><span style="display:flex;"><span> DEVICE  TYPE      STATE                   CONNECTION 
 </span></span><span style="display:flex;"><span> enp0s3  ethernet  connected               enp0s3     
 </span></span><span style="display:flex;"><span> enp0s8  ethernet  connected               enp0s8     
@@ -1165,8 +1116,8 @@ account creation, the <code>passwd</code> command will be invoked to assign the 
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1192,23 +1143,23 @@ account creation, the <code>passwd</code> command will be invoked to assign the 
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

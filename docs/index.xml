@@ -2,108 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux Reader</title>
-    <link>https://linuxreader.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Contact me or see what this site is all about&#xA;Ansible&#xD;Bash&#xD;Boot&#xD;Containers&#xD;Cyber Security&#xD;Desktop&#xD;Files&#xD;Networking&#xD;Packages&#xD;Storage&#xD;System&#xD;Tools&#xD;Users and Groups&#xD;Virtualization</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Nov 2023 06:20:36 -0700</lastBuildDate>
-    <atom:link href="https://linuxreader.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ansible</title>
-      <link>https://linuxreader.com/ansible/</link>
+      <link>http://localhost:1313/ansible/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/ansible/</guid>
+      <guid>http://localhost:1313/ansible/</guid>
       <description>Ad Hoc Ansible Commands&#xD;Ansible Documentation&#xD;Ansible Facts&#xD;Ansible Galaxy Roles&#xD;Ansible Inventory and Ansible.cfg&#xD;Ansible Playbooks&#xD;Ansible Roles&#xD;Ansible Vault&#xD;Ansible-inventory command&#xD;Ansible.cfg&#xD;Boot Process&#xD;Building an Ansible lab with Ansible&#xD;Common modules with examples&#xD;Deploying files&#xD;Discovering storage related facts&#xD;Dynamic Inventory&#xD;Encrypted passwords&#xD;Execution Environments&#xD;Handlers&#xD;Host Name Patterns&#xD;Including and importing Files&#xD;Jinja2 templates&#xD;Managing Ansible Errors and Logs&#xD;Managing Packages&#xD;Managing Partitions and LVM&#xD;Managing Services&#xD;Networking with Ansible&#xD;NFS Setup&#xD;Optimizing Ansible Processing&#xD;Repositories and subscriptions&#xD;SeLinux File Properties&#xD;Setting up an Ansible Lab&#xD;SSH Connections&#xD;Troubleshooting Common Scenarios&#xD;Users and Groups&#xD;Using Loops and Items&#xD;Using Modules for Troubleshooting and Testing&#xD;Using Multiple Inventories&#xD;Using RHEL System roles&#xD;Using Tags&#xD;Using when to Run Tasks Conditionally&#xD;Variables</description>
     </item>
     <item>
       <title>Bash</title>
-      <link>https://linuxreader.com/bash/</link>
+      <link>http://localhost:1313/bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/bash/</guid>
+      <guid>http://localhost:1313/bash/</guid>
       <description>Bash&#xD;Shell Scripting</description>
     </item>
     <item>
       <title>Boot</title>
-      <link>https://linuxreader.com/boot/</link>
+      <link>http://localhost:1313/boot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/boot/</guid>
+      <guid>http://localhost:1313/boot/</guid>
       <description>Boot Process, Grub2, and Kernel&#xD;System Initialization, Message Logging, and System Tuning</description>
     </item>
     <item>
       <title>Containers</title>
-      <link>https://linuxreader.com/containers/</link>
+      <link>http://localhost:1313/containers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/containers/</guid>
+      <guid>http://localhost:1313/containers/</guid>
       <description>Containers</description>
     </item>
     <item>
       <title>Cyber Security</title>
-      <link>https://linuxreader.com/cyber-security/</link>
+      <link>http://localhost:1313/cyber-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/cyber-security/</guid>
+      <guid>http://localhost:1313/cyber-security/</guid>
       <description>Security Enhanced Linux&#xD;The confusing world of SELinux&#xD;The Linux Firewall&#xD;Firewalld stuff mostly&#xD;The Secure Shell Service&#xD;OpenSSH, system access, file transfer</description>
     </item>
     <item>
       <title>Desktop</title>
-      <link>https://linuxreader.com/desktop/</link>
+      <link>http://localhost:1313/desktop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/desktop/</guid>
+      <guid>http://localhost:1313/desktop/</guid>
       <description>Configure Fedora Desktop using Ansible&#xD;New Fedora Build Using Ansible&#xD;Learning Touch Typing&#xD;Learning touch typing&#xD;My Fedora Setup&#xD;My Fedora Setup&#xD;Silverblue&#xD;Fedora Silverblue</description>
     </item>
     <item>
       <title>Files</title>
-      <link>https://linuxreader.com/files/</link>
+      <link>http://localhost:1313/files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/files/</guid>
+      <guid>http://localhost:1313/files/</guid>
       <description>Advanced File Management&#xD;File permissions, ACLs, and finding things&#xD;Basic File Managment&#xD;File types, linking, viewing, and archiving files.</description>
     </item>
     <item>
       <title>Networking</title>
-      <link>https://linuxreader.com/networking/</link>
+      <link>http://localhost:1313/networking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/networking/</guid>
+      <guid>http://localhost:1313/networking/</guid>
       <description>Consoling in to MX80 from linux&#xD;How to console into an MX80 router from linux&#xD;DNS&#xD;DNS Stuff&#xD;How to Study for the CCNA Exam&#xD;Guide to how you should approach studying for the CCNA exam&#xD;Juniper CLI Basics&#xD;Juniper Basics&#xD;My CCNA Notes&#xD;Notes I took for a multitude of CCNA resources&#xD;Networking Network Devices and Network Connections&#xD;Hostname, IP addressing, network protocols, network manager, tools, etc.&#xD;Resources for Passing CCNA&#xD;Resources for passing the CCNA exam&#xD;Time Synchronization&#xD;NTP, Chrony, etc.&#xD;Toggle PoE on a Juniper Switch&#xD;How to toggle PoE on a Juniper switch.&#xD;What to Learn After CCNA&#xD;What you should learn after taking the CCNA exam</description>
     </item>
     <item>
       <title>Packages</title>
-      <link>https://linuxreader.com/packages/</link>
+      <link>http://localhost:1313/packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/packages/</guid>
+      <guid>http://localhost:1313/packages/</guid>
       <description>Advanced Package Management&#xD;Managing package groups, application streams, modules, and DNF&#xD;Basic Package Management&#xD;RPM and package integrity and credibility</description>
     </item>
     <item>
       <title>Storage</title>
-      <link>https://linuxreader.com/storage/</link>
+      <link>http://localhost:1313/storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/storage/</guid>
+      <guid>http://localhost:1313/storage/</guid>
       <description>AutoFS&#xD;Managing AutoFS&#xD;Local File Systems and Swap&#xD;Local file systems and swap&#xD;Network File System (NFS)&#xD;Managing NFS and AutoFS&#xD;Partitioning, MBR, and GPT&#xD;Partitions and their management.&#xD;Remove a filesystem from a partition&#xD;Remove a filesystem from a partition.&#xD;Thin Provisioning and LVM&#xD;Thin provisioning and LVM&#xD;Virtual Data Optimizer (VDO)&#xD;VDO</description>
     </item>
     <item>
       <title>System</title>
-      <link>https://linuxreader.com/system/</link>
+      <link>http://localhost:1313/system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/system/</guid>
+      <guid>http://localhost:1313/system/</guid>
       <description>Installation&#xD;Installation Logs and Cockpit&#xD;Interaction&#xD;Basic Commands and Directory Structure&#xD;Process and Task Scheduling&#xD;Processes, priorities, and scheduling jobs.</description>
     </item>
     <item>
       <title>Tools</title>
-      <link>https://linuxreader.com/tools/</link>
+      <link>http://localhost:1313/tools/</link>
       <pubDate>Mon, 06 Nov 2023 06:20:36 -0700</pubDate>
-      <guid>https://linuxreader.com/tools/</guid>
+      <guid>http://localhost:1313/tools/</guid>
       <description>Calibre Web with Docker and NGINX&#xD;Setting up your own Calibre Web server using Docker and NGINX&#xD;How to Build a website With Hugo&#xD;Guide for setting up a static website with Hugo&#xD;How to Process Bookfusion Highlights with Vim&#xD;Removing extra stuff from Bookfusion exported highlights&#xD;How to Set Up Hugo Relearn Theme&#xD;Hugo Relearn setup guide&#xD;Nextcloud on RHEL Based Systems&#xD;Nextcloud setup guide on a RHEL based server&#xD;Self hosting a Nextcloud Server&#xD;Self hosting a Nextcloud server&#xD;Using Vagrant on Linux&#xD;How to use Vagrant from a Linux computer.&#xD;Vim Guide&#xD;Guide to using Vim&#xD;You Need to Learn Man Pages&#xD;Guide to using Man Pages</description>
     </item>
     <item>
       <title>Users and Groups</title>
-      <link>https://linuxreader.com/users-and-groups/</link>
+      <link>http://localhost:1313/users-and-groups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/users-and-groups/</guid>
+      <guid>http://localhost:1313/users-and-groups/</guid>
       <description>Advanced User Management&#xD;Password aging, group and user manament&#xD;Basic User Management&#xD;Manage users and groups</description>
     </item>
     <item>
       <title>Virtualization</title>
-      <link>https://linuxreader.com/virtualization/</link>
+      <link>http://localhost:1313/virtualization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linuxreader.com/virtualization/</guid>
+      <guid>http://localhost:1313/virtualization/</guid>
       <description>RHCSA Vagrant Lab Setup&#xD;Lab setup for RHCSA using Vagrant</description>
     </item>
   </channel>

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contact Me :: Linux Reader</title>
-    <link>https://linuxreader.com/contact/</link>
+    <link>http://localhost:1313/contact/</link>
     <description>Need to get in touch? Your Full Name: Your Email Address: Message: Submit Form</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://linuxreader.com/contact/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

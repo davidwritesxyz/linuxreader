@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Thin provisioning and LVM">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Thin Provisioning and LVM :: Linux Reader">
     <meta name="twitter:description" content="Thin provisioning and LVM">
-    <meta property="og:url" content="https://linuxreader.com/storage/thin-provisioning/">
+    <meta property="og:url" content="http://localhost:1313/storage/thin-provisioning/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Thin Provisioning and LVM :: Linux Reader">
     <meta property="og:description" content="Thin provisioning and LVM">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Thin provisioning and LVM">
     <meta itemprop="wordCount" content="4133">
     <title>Thin Provisioning and LVM :: Linux Reader</title>
-    <link href="/storage/thin-provisioning/index.xml" rel="alternate" type="application/rss+xml" title="Thin Provisioning and LVM :: Linux Reader">
-    <link href="/storage/thin-provisioning/index.print.html" rel="alternate" type="text/html" title="Thin Provisioning and LVM :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/storage\/thin-provisioning\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/storage/remove-a-filesystem-from-a-partition/" title="Remove a filesystem from a partition (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/storage/remove-a-filesystem-from-a-partition/" title="Remove a filesystem from a partition (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -200,12 +154,9 @@
             Thin Provisioning and LVM
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/storage/thin-provisioning/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/storage/virtual-data-optimizer-vdo/" title="Virtual Data Optimizer (VDO) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/storage/virtual-data-optimizer-vdo/" title="Virtual Data Optimizer (VDO) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -226,7 +177,7 @@
 
 <h1 id="thin-provisioning-and-lvm">Thin Provisioning and LVM</h1>
 
-<h1 id="thin-provisioning">Thin Provisioning</h1>
+<h1 id="thin-provisioning">Thin Provisioning<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <ul>
 <li>Allows for an economical allocation and utilization of storage space by moving arbitrary data blocks to contiguous locations, which results in empty block elimination.</li>
 <li>Can create a thin pool of storage space and assign volumes much larger storage space than the physical capacity of the pool.</li>
@@ -235,7 +186,7 @@
 <li>The volumes will automatically start exploiting the new space right away.</li>
 <li>helps prevent spending more money upfront.</li>
 </ul>
-<h2 id="logical-volume-manager-lvm">Logical Volume Manager (LVM)</h2>
+<h2 id="logical-volume-manager-lvm">Logical Volume Manager (LVM)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Used for managing block storage in Linux.</li>
 <li>Provides an abstraction layer between the physical storage and the file system</li>
@@ -247,8 +198,8 @@
 <li>mirroring and striping across multiple disks</li>
 <li>snapshotting of logical volumes.</li>
 </ul>
-<p><a href="#R-image-1ac8c562c7d56ca98263726c885b5f2a" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/image-0A8W8M1U.jpg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1ac8c562c7d56ca98263726c885b5f2a"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/image-0A8W8M1U.jpg"></a></p>
+<p><a href="#R-image-f273295775ce8def29ae47a8bd8d97d6" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/image-0A8W8M1U.jpg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f273295775ce8def29ae47a8bd8d97d6"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/image-0A8W8M1U.jpg"></a></p>
 <ul>
 <li>Made up of three key objects called physical volume, volume group, and logical volume.</li>
 <li>These objects are further virtually broken down into Physical Extents (PEs) and Logical Extents (LEs).</li>
@@ -262,7 +213,7 @@
 <li>The rest of the device space is available for use.</li>
 </ul>
 <p>You can use an LVM command called <code>pvs</code> (physical volume scan or summary) to scan and list available physical volumes on server2:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvs</span>
 </span></span><span style="display:flex;"><span>  PV         VG   Fmt  Attr PSize   PFree
 </span></span><span style="display:flex;"><span>  /dev/sda2  rhel lvm2 a--  &lt;19.00g    <span style="color:#ff9f43">0</span></span></span></code></pre></div>
 <ul>
@@ -281,7 +232,7 @@ about the physical volume.</p>
 <li>A copy of the volume group metadata is stored and maintained at two distinct locations on each physical volume within the volume group.</li>
 </ul>
 <p>Use <code>vgs</code> (volume group scan or summary) to scan and list available volume groups on server2:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs</span>
 </span></span><span style="display:flex;"><span>  VG   <span style="color:#78787e">#PV #LV #SN Attr   VSize   VFree</span>
 </span></span><span style="display:flex;"><span>  rhel   <span style="color:#ff9f43">1</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- &lt;19.00g    <span style="color:#ff9f43">0</span></span></span></code></pre></div>
 <ul>
@@ -289,7 +240,7 @@ about the physical volume.</p>
 </ul>
 <p>Try running this command again with the -v flag to view more information
 about the volume group.</p>
-<h3 id="physical-extent">Physical Extent</h3>
+<h3 id="physical-extent">Physical Extent<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>A physical volume is divided into several smaller logical pieces when it is added to a volume group.</li>
 <li>These logical pieces are known as Physical Extents (PE).</li>
@@ -299,9 +250,9 @@ about the volume group.</p>
 <li>Any physical volumes added to this volume group thereafter will use the same PE size.</li>
 </ul>
 <p>Use <code>vgdisplay</code> (volume group display) on server2 and grep for &lsquo;PE Size&rsquo; to view the PE size used in the rhel volume group:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay rhel | grep &#39;PE Size&#39;</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay rhel | grep &#39;PE Size&#39;</span>
 </span></span><span style="display:flex;"><span>  PE Size               4.00 MiB</span></span></code></pre></div>
-<h3 id="logical-volume">Logical Volume</h3>
+<h3 id="logical-volume">Logical Volume<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>A volume group consists of a pool of storage taken from one or more physical volumes.</li>
 <li>This volume group space is used to create one or more Logical Volumes (LVs).</li>
@@ -310,7 +261,7 @@ about the volume group.</p>
 <p>The default naming convention used for logical volumes is lvol0, lvol1,
 lvol2, and so on you may assign custom names to them.</p>
 <p>Use <code>lvs</code> (logical volume scan or summary) to scan and list available logical volumes on server2:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvs</span>
 </span></span><span style="display:flex;"><span>  LV   VG   Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
 </span></span><span style="display:flex;"><span>  root rhel -wi-ao---- &lt;17.00g                                                    
 </span></span><span style="display:flex;"><span>  swap rhel -wi-ao----   2.00g</span></span></code></pre></div>
@@ -318,7 +269,7 @@ lvol2, and so on you may assign custom names to them.</p>
 <li>Attr column (w for writeable, i for inherited allocation policy, a for active, and o for open) and their sizes.</li>
 </ul>
 <p>Try running this command again with the -v flag to view more information about the logical volumes.</p>
-<h3 id="logical-extent">Logical Extent</h3>
+<h3 id="logical-extent">Logical Extent<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>A logical volume is made up of Logical Extents (LE).</li>
 <li>Logical extents point to physical extents, and they may be random or contiguous.</li>
@@ -328,7 +279,7 @@ lvol2, and so on you may assign custom names to them.</p>
 <li>The default LE size is 4MB, which corresponds to the default PE size of 4MB.</li>
 </ul>
 <p>Use <code>lvdisplay</code> (logical volume display) on server2 to view information about the root logical volume in the rhel volume group.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lvdisplay /dev/rhel/root</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lvdisplay /dev/rhel/root</span>
 </span></span><span style="display:flex;"><span>  --- Logical volume ---
 </span></span><span style="display:flex;"><span>  LV Path                /dev/rhel/root
 </span></span><span style="display:flex;"><span>  LV Name                root
@@ -348,14 +299,14 @@ lvol2, and so on you may assign custom names to them.</p>
 <ul>
 <li>The output does not disclose the LE size;  however, you can convert the LV size in MBs (17,000) and then divide the result by the Current LE count (4,351) to get the LE size (which comes close to 4MB).</li>
 </ul>
-<h3 id="lvm-operations-and-commands">LVM Operations and Commands</h3>
+<h3 id="lvm-operations-and-commands">LVM Operations and Commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Creating and removing a physical volume, volume group, and logical volume</li>
 <li>Extending and reducing a volume group and logical volume</li>
 <li>Renaming a volume group and logical volume</li>
 <li>listing and displaying physical volume, volume group, and logical volume information.</li>
 </ul>
-<h3 id="create-and-remove-operations">Create and Remove Operations</h3>
+<h3 id="create-and-remove-operations">Create and Remove Operations<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><code>pvcreate</code>/<code>pvremove</code></p>
 <ul>
 <li>Initializes/uninitializes a disk or partition for LVM use</li>
@@ -368,7 +319,7 @@ lvol2, and so on you may assign custom names to them.</p>
 <ul>
 <li>Creates/removes a logical volume</li>
 </ul>
-<h3 id="extend-and-reduce-operations">Extend and Reduce Operations</h3>
+<h3 id="extend-and-reduce-operations">Extend and Reduce Operations<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><code>vgextend</code>/<code>vgreduce</code></p>
 <ul>
 <li>Adds/removes a physical volume to/from a volume group</li>
@@ -381,7 +332,7 @@ lvol2, and so on you may assign custom names to them.</p>
 <ul>
 <li>Resizes a logical volume. With the <code>-r</code> option, this command calls the <code>fsadm</code> command to resize the underlying file system as well.</li>
 </ul>
-<h3 id="rename-operations">Rename Operations</h3>
+<h3 id="rename-operations">Rename Operations<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><code>vgrename</code></p>
 <ul>
 <li>Rename a volume group</li>
@@ -390,7 +341,7 @@ lvol2, and so on you may assign custom names to them.</p>
 <ul>
 <li>Rename a logical volume</li>
 </ul>
-<h3 id="list-and-display-operations">List and Display Operations</h3>
+<h3 id="list-and-display-operations">List and Display Operations<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><code>pvs</code>/<code>pvdisplay</code></p>
 <ul>
 <li>Lists/displays physical volume information</li>
@@ -404,14 +355,14 @@ lvol2, and so on you may assign custom names to them.</p>
 <p>All the tools accept the -v switch to support verbosity.</p>
 </li>
 </ul>
-<h3 id="exercise-13-6-create-physical-volume-and-volume-group-server2">Exercise 13-6: Create Physical Volume and Volume Group (server2)</h3>
+<h3 id="exercise-13-6-create-physical-volume-and-volume-group-server2">Exercise 13-6: Create Physical Volume and Volume Group (server2)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>initialize one partition sdd1 (90MB) and one disk sde (250MB) for use in LVM.</li>
 <li>create a volume group called vgbook and add both physical volumes to it use the PE size of 16MB</li>
 <li>list and display the volume group and the physical volumes.</li>
 </ul>
 <p>1. Create a partition of size 90MB on sdd using the parted command and confirm. You need to label the disk first, as it is a new disk.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdd mklabel msdos</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdd mklabel msdos</span>
 </span></span><span style="display:flex;"><span>Information: You may need to update /etc/fstab.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdd mkpart primary 1 91m               </span>
@@ -427,7 +378,7 @@ lvol2, and so on you may assign custom names to them.</p>
 </span></span><span style="display:flex;"><span>Number  Start   End     Size    Type     File system  Flags
 </span></span><span style="display:flex;"><span> <span style="color:#ff9f43">1</span>      1049kB  91.2MB  90.2MB  primary</span></span></code></pre></div>
 <p>2. Initialize the sdd1 partition and the sde disk using the <code>pvcreate</code> command. Note that there is no need to apply a disk label on sde with parted as LVM does not require it.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sdd1 /dev/sde -v</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sdd1 /dev/sde -v</span>
 </span></span><span style="display:flex;"><span>  Wiping signatures on new PV /dev/sdd1.
 </span></span><span style="display:flex;"><span>  Wiping signatures on new PV /dev/sde.
 </span></span><span style="display:flex;"><span>  Set up physical volume <span style="color:#ff6ac1">for</span> <span style="color:#5af78e">&#34;/dev/sdd1&#34;</span> with <span style="color:#ff9f43">176128</span> available sectors.
@@ -440,7 +391,7 @@ lvol2, and so on you may assign custom names to them.</p>
 </span></span><span style="display:flex;"><span>  Physical volume <span style="color:#5af78e">&#34;/dev/sde&#34;</span> successfully created.</span></span></code></pre></div>
 <p>3. Create vgbook volume group using the <code>vgcreate</code> command and add the two physical volumes to it. Use the -s option to specify the PE size in
 MBs.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgcreate -vs 16 vgbook /dev/sdd1 /dev/sde</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgcreate -vs 16 vgbook /dev/sdd1 /dev/sde</span>
 </span></span><span style="display:flex;"><span>  Wiping signatures on new PV /dev/sdd1.
 </span></span><span style="display:flex;"><span>  Wiping signatures on new PV /dev/sde.
 </span></span><span style="display:flex;"><span>  Adding physical volume <span style="color:#5af78e">&#39;/dev/sdd1&#39;</span> to volume group <span style="color:#5af78e">&#39;vgbook&#39;</span>
@@ -448,11 +399,11 @@ MBs.</p>
 </span></span><span style="display:flex;"><span>  Creating volume group backup <span style="color:#5af78e">&#34;/etc/lvm/backup/vgbook&#34;</span> <span style="color:#ff6ac1">(</span>seqno 1<span style="color:#ff6ac1">)</span>.
 </span></span><span style="display:flex;"><span>  Volume group <span style="color:#5af78e">&#34;vgbook&#34;</span> successfully created</span></span></code></pre></div>
 <p>4. List the volume group information:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs vgbook</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs vgbook</span>
 </span></span><span style="display:flex;"><span>  VG     <span style="color:#78787e">#PV #LV #SN Attr   VSize   VFree  </span>
 </span></span><span style="display:flex;"><span>  vgbook   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span>   <span style="color:#ff9f43">0</span> wz--n- 320.00m 320.00m</span></span></code></pre></div>
 <p>5. Display detailed information about the volume group and the physical volumes it contains:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay -v vgbook</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay -v vgbook</span>
 </span></span><span style="display:flex;"><span>  --- Volume group ---
 </span></span><span style="display:flex;"><span>  VG Name               vgbook
 </span></span><span style="display:flex;"><span>  System ID             
@@ -485,13 +436,13 @@ MBs.</p>
 </span></span><span style="display:flex;"><span>  PV Status             allocatable
 </span></span><span style="display:flex;"><span>  Total PE / Free PE    <span style="color:#ff9f43">15</span> / <span style="color:#ff9f43">15</span></span></span></code></pre></div>
 <p>6. List the physical volume information:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvs</span>
 </span></span><span style="display:flex;"><span>  PV         VG     Fmt  Attr PSize   PFree  
 </span></span><span style="display:flex;"><span>  /dev/sda2  rhel   lvm2 a--  &lt;19.00g      <span style="color:#ff9f43">0</span> 
 </span></span><span style="display:flex;"><span>  /dev/sdd1  vgbook lvm2 a--   80.00m  80.00m
 </span></span><span style="display:flex;"><span>  /dev/sde   vgbook lvm2 a--  240.00m 240.00m</span></span></code></pre></div>
 <p>7. Display detailed information about the physical volumes:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvdisplay /dev/sdd1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvdisplay /dev/sdd1</span>
 </span></span><span style="display:flex;"><span>  --- Physical volume ---
 </span></span><span style="display:flex;"><span>  PV Name               /dev/sdd1
 </span></span><span style="display:flex;"><span>  VG Name               vgbook
@@ -505,14 +456,14 @@ MBs.</p>
 <ul>
 <li>Once a partition or disk is initialized and added to a volume group, they are treated identically within the volume group. LVM does not prefer one over the other.</li>
 </ul>
-<h3 id="exercise-13-7-create-logical-volumesserver2">Exercise 13-7: Create Logical Volumes(server2)</h3>
+<h3 id="exercise-13-7-create-logical-volumesserver2">Exercise 13-7: Create Logical Volumes(server2)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Create two logical volumes, lvol0 and lvbook1, in the vgbook volume group.</li>
 <li>Use 120MB for lvol0 and 192MB for lvbook1 from the available pool of space.</li>
 <li>Display the details of the volume group and the logical volumes.</li>
 </ul>
 <p>1. Create a logical volume with the default name lvol0 using the <code>lvcreate</code> command. Use the -L option to specify the logical volume size, 120MB. You may use the -v, -vv, or -vvv option with the command for verbosity.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -vL 120 vgbook</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -vL 120 vgbook</span>
 </span></span><span style="display:flex;"><span>  Rounding up size to full physical extent 128.00 MiB
 </span></span><span style="display:flex;"><span>  Creating logical volume lvol0
 </span></span><span style="display:flex;"><span>  Archiving volume group <span style="color:#5af78e">&#34;vgbook&#34;</span> metadata <span style="color:#ff6ac1">(</span>seqno 1<span style="color:#ff6ac1">)</span>.
@@ -537,17 +488,17 @@ MBs.</p>
 </li>
 </ul>
 <p>2. Create lvbook1 of size 192MB (16x12) using the <code>lvcreate</code> command. Use the -l switch to specify the size in logical extents and -n for the custom name.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -l 12 -n lvbook1 vgbook</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvcreate -l 12 -n lvbook1 vgbook</span>
 </span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;lvbook1&#34;</span> created.</span></span></code></pre></div>
 <p>3. List the logical volume information:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvs</span>
 </span></span><span style="display:flex;"><span>  LV      VG     Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
 </span></span><span style="display:flex;"><span>  root    rhel   -wi-ao---- &lt;17.00g                                                    
 </span></span><span style="display:flex;"><span>  swap    rhel   -wi-ao----   2.00g                                                    
 </span></span><span style="display:flex;"><span>  lvbook1 vgbook -wi-a----- 192.00m                                                    
 </span></span><span style="display:flex;"><span>  lvol0   vgbook -wi-a----- 128.00m </span></span></code></pre></div>
 <p>4. Display detailed information about the volume group including the logical volumes and the physical volumes:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay -v vgbook</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay -v vgbook</span>
 </span></span><span style="display:flex;"><span>  --- Volume group ---
 </span></span><span style="display:flex;"><span>  VG Name               vgbook
 </span></span><span style="display:flex;"><span>  System ID             
@@ -615,7 +566,7 @@ MBs.</p>
 </span></span><span style="display:flex;"><span>  Total PE / Free PE    <span style="color:#ff9f43">15</span> / <span style="color:#ff9f43">0</span></span></span></code></pre></div>
 <p>Alternatively, you can run the following to view only the logical volume
 details:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvdisplay /dev/vgbook/lvol0</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvdisplay /dev/vgbook/lvol0</span>
 </span></span><span style="display:flex;"><span>  --- Logical volume ---
 </span></span><span style="display:flex;"><span>  LV Path                /dev/vgbook/lvol0
 </span></span><span style="display:flex;"><span>  LV Name                lvol0
@@ -632,7 +583,7 @@ details:</p>
 </span></span><span style="display:flex;"><span>  Read ahead sectors     auto
 </span></span><span style="display:flex;"><span>  - currently <span style="color:#ff5c57">set</span> to     <span style="color:#ff9f43">8192</span>
 </span></span><span style="display:flex;"><span>  Block device           253:2</span></span></code></pre></div>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvdisplay /dev/vgbook/lvbook1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvdisplay /dev/vgbook/lvbook1</span>
 </span></span><span style="display:flex;"><span>  --- Logical volume ---
 </span></span><span style="display:flex;"><span>  LV Path                /dev/vgbook/lvbook1
 </span></span><span style="display:flex;"><span>  LV Name                lvbook1
@@ -649,7 +600,7 @@ details:</p>
 </span></span><span style="display:flex;"><span>  Read ahead sectors     auto
 </span></span><span style="display:flex;"><span>  - currently <span style="color:#ff5c57">set</span> to     <span style="color:#ff9f43">8192</span>
 </span></span><span style="display:flex;"><span>  Block device           253:3</span></span></code></pre></div>
-<h3 id="exercise-13-8-extend-a-volume-group-and-a-logical-volumeserver2">Exercise 13-8: Extend a Volume Group and a Logical Volume(server2)</h3>
+<h3 id="exercise-13-8-extend-a-volume-group-and-a-logical-volumeserver2">Exercise 13-8: Extend a Volume Group and a Logical Volume(server2)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Add another partition sdd2 of size 158MB to vgbook to increase the pool of allocatable space.</li>
 <li>Initialize the new partition prior to adding it to the volume group.</li>
@@ -657,7 +608,7 @@ details:</p>
 <li>Display basic information for the physical volumes, volume group, and logical volume.</li>
 </ul>
 <p>1. Create a partition of size 158MB on sdd using the parted command. Display the new partition to confirm the partition number and size.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># parted /dev/sdd mkpart primary 91 250</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server20 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># parted /dev/sdd mkpart primary 91 250</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdd print                              </span>
 </span></span><span style="display:flex;"><span>Model: ATA VBOX HARDDISK <span style="color:#ff6ac1">(</span>scsi<span style="color:#ff6ac1">)</span>
@@ -670,24 +621,24 @@ details:</p>
 </span></span><span style="display:flex;"><span> <span style="color:#ff9f43">1</span>      1049kB  91.2MB  90.2MB  primary
 </span></span><span style="display:flex;"><span> <span style="color:#ff9f43">2</span>      92.3MB  250MB   157MB   primary               lvm</span></span></code></pre></div>
 <p>2. Initialize sdd2 using the pvcreate command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sdd2</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvcreate /dev/sdd2</span>
 </span></span><span style="display:flex;"><span>  Physical volume <span style="color:#5af78e">&#34;/dev/sdd2&#34;</span> successfully created.</span></span></code></pre></div>
 <p>3. Extend vgbook by adding the new physical volume to it:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgextend vgbook /dev/sdd2</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgextend vgbook /dev/sdd2</span>
 </span></span><span style="display:flex;"><span>  Volume group <span style="color:#5af78e">&#34;vgbook&#34;</span> successfully extended</span></span></code></pre></div>
 <p>4. List the volume group:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs</span>
 </span></span><span style="display:flex;"><span>  VG     <span style="color:#78787e">#PV #LV #SN Attr   VSize   VFree  </span>
 </span></span><span style="display:flex;"><span>  rhel     <span style="color:#ff9f43">1</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- &lt;19.00g      <span style="color:#ff9f43">0</span> 
 </span></span><span style="display:flex;"><span>  vgbook   <span style="color:#ff9f43">3</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- 464.00m 144.00m</span></span></code></pre></div>
 <p>5. Extend the size of lvbook1 to 340MB by adding 144MB using the <code>lvextend</code> command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvextend -L +144 /dev/vgbook/lvbook1</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvextend -L +144 /dev/vgbook/lvbook1</span>
 </span></span><span style="display:flex;"><span>  Size of logical volume vgbook/lvbook1 changed from 192.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">12</span> extents<span style="color:#ff6ac1">)</span> to 336.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">21</span> extents<span style="color:#ff6ac1">)</span>.
 </span></span><span style="display:flex;"><span>  Logical volume vgbook/lvbook1 successfully resized.</span></span></code></pre></div>
 <p>EXAM TIP: Make sure the expansion of a logical volume does not affect the file system and the data it contains.</p>
 <p>6. Issue vgdisplay on vgbook with the -v switch for the updated
 details:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay -v vgbook</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay -v vgbook</span>
 </span></span><span style="display:flex;"><span>  --- Volume group ---
 </span></span><span style="display:flex;"><span>  VG Name               vgbook
 </span></span><span style="display:flex;"><span>  System ID             
@@ -759,20 +710,20 @@ details:</p>
 </span></span><span style="display:flex;"><span>  PV Status             allocatable
 </span></span><span style="display:flex;"><span>  Total PE / Free PE    <span style="color:#ff9f43">9</span> / <span style="color:#ff9f43">0</span></span></span></code></pre></div>
 <p>7. View a summary of the physical volumes:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvs</span>
 </span></span><span style="display:flex;"><span>  PV         VG     Fmt  Attr PSize   PFree
 </span></span><span style="display:flex;"><span>  /dev/sda2  rhel   lvm2 a--  &lt;19.00g    <span style="color:#ff9f43">0</span> 
 </span></span><span style="display:flex;"><span>  /dev/sdd1  vgbook lvm2 a--   80.00m    <span style="color:#ff9f43">0</span> 
 </span></span><span style="display:flex;"><span>  /dev/sdd2  vgbook lvm2 a--  144.00m    <span style="color:#ff9f43">0</span> 
 </span></span><span style="display:flex;"><span>  /dev/sde   vgbook lvm2 a--  240.00m    <span style="color:#ff9f43">0</span></span></span></code></pre></div>
 <p>8. View a summary of the logical volumes:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvs</span>
 </span></span><span style="display:flex;"><span>  LV      VG     Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
 </span></span><span style="display:flex;"><span>  root    rhel   -wi-ao---- &lt;17.00g                                                    
 </span></span><span style="display:flex;"><span>  swap    rhel   -wi-ao----   2.00g                                                    
 </span></span><span style="display:flex;"><span>  lvbook1 vgbook -wi-a----- 336.00m                                                    
 </span></span><span style="display:flex;"><span>  lvol0   vgbook -wi-a----- 128.00m </span></span></code></pre></div>
-<h3 id="exercise-13-9-rename-reduce-extend-and-remove-logical-volumesserver2">Exercise 13-9: Rename, Reduce, Extend, and Remove Logical Volumes(server2)</h3>
+<h3 id="exercise-13-9-rename-reduce-extend-and-remove-logical-volumesserver2">Exercise 13-9: Rename, Reduce, Extend, and Remove Logical Volumes(server2)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Rename lvol0 to lvbook2.</li>
 <li>Decrease the size of lvbook2 to 50MB using the <code>lvreduce</code> command</li>
@@ -782,21 +733,21 @@ details:</p>
 </ul>
 <p>1. Rename lvol0 to lvbook2 using the <code>lvrename</code> command and confirm with
 lvs:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvrename vgbook lvol0 lvbook2</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvrename vgbook lvol0 lvbook2</span>
 </span></span><span style="display:flex;"><span>  Renamed <span style="color:#5af78e">&#34;lvol0&#34;</span> to <span style="color:#5af78e">&#34;lvbook2&#34;</span> in volume group <span style="color:#5af78e">&#34;vgbook&#34;</span></span></span></code></pre></div>
 <p>2. Reduce the size of lvbook2 to 50MB with the <code>lvreduce</code> command. Specify the absolute desired size for the logical volume. Answer &ldquo;Do you really want to reduce vgbook/lvbook2?&rdquo; in the affirmative.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvreduce -L 50 /dev/vgbook/lvbook2</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvreduce -L 50 /dev/vgbook/lvbook2</span>
 </span></span><span style="display:flex;"><span>  Rounding size to boundary between physical extents: 64.00 MiB.
 </span></span><span style="display:flex;"><span>  No file system found on /dev/vgbook/lvbook2.
 </span></span><span style="display:flex;"><span>  Size of logical volume vgbook/lvbook2 changed from 128.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">8</span> extents<span style="color:#ff6ac1">)</span> to 64.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">4</span> extents<span style="color:#ff6ac1">)</span>.
 </span></span><span style="display:flex;"><span>  Logical volume vgbook/lvbook2 successfully resized.</span></span></code></pre></div>
 <p>3. Add 32MB to lvbook2 with the lvresize command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvresize -L +32 /dev/vgbook/lvbook2</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvresize -L +32 /dev/vgbook/lvbook2</span>
 </span></span><span style="display:flex;"><span>  Size of logical volume vgbook/lvbook2 changed from 64.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">4</span> extents<span style="color:#ff6ac1">)</span> to 96.00 MiB <span style="color:#ff6ac1">(</span><span style="color:#ff9f43">6</span> extents<span style="color:#ff6ac1">)</span>.
 </span></span><span style="display:flex;"><span>  Logical volume vgbook/lvbook2 successfully resized.</span></span></code></pre></div>
 <p>4. Use the pvs, lvs, vgs, and vgdisplay commands to view the updated
 allocation.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># pvs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># pvs</span>
 </span></span><span style="display:flex;"><span>  PV         VG     Fmt  Attr PSize   PFree 
 </span></span><span style="display:flex;"><span>  /dev/sda2  rhel   lvm2 a--  &lt;19.00g     <span style="color:#ff9f43">0</span> 
 </span></span><span style="display:flex;"><span>  /dev/sdd1  vgbook lvm2 a--   80.00m     <span style="color:#ff9f43">0</span> 
@@ -860,7 +811,7 @@ allocation.</p>
 <p>5. Remove both lvbook1 and lvbook2 logical volumes using the <code>lvremove</code>
 command. Use the <code>-f</code> option to suppress the &ldquo;Do you really want to remove
 active logical volume&rdquo; message.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvremove /dev/vgbook/lvbook1 -f</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvremove /dev/vgbook/lvbook1 -f</span>
 </span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;lvbook1&#34;</span> successfully removed.
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvremove /dev/vgbook/lvbook2 -f</span>
 </span></span><span style="display:flex;"><span>  Logical volume <span style="color:#5af78e">&#34;lvbook2&#34;</span> successfully removed.</span></span></code></pre></div>
@@ -871,9 +822,9 @@ active logical volume&rdquo; message.</p>
 <br>
 6. Execute the <code>vgdisplay</code> command and grep for &ldquo;Cur LV&rdquo; to see the number of logical volumes currently available in vgbook. It should show 0, as you have removed both logical volumes.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay vgbook | grep &#39;Cur LV&#39;</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgdisplay vgbook | grep &#39;Cur LV&#39;</span>
 </span></span><span style="display:flex;"><span>  Cur LV                <span style="color:#ff9f43">0</span></span></span></code></pre></div>
-<h3 id="exercise-13-10-reduce-and-remove-a-volume-groupserver2">Exercise 13-10: Reduce and Remove a Volume Group(server2)</h3>
+<h3 id="exercise-13-10-reduce-and-remove-a-volume-groupserver2">Exercise 13-10: Reduce and Remove a Volume Group(server2)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>\</p>
 <ul>
 <li>Reduce vgbook by removing the sdd1 and sde physical volumes from it</li>
@@ -881,24 +832,24 @@ active logical volume&rdquo; message.</p>
 <li>Confirm the deletion of the volume group and the logical volumes at the end.</li>
 </ul>
 <p>1. Remove sdd1 and sde physical volumes from vgbook by issuing the <code>vgreduce</code> command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgreduce vgbook /dev/sdd1 /dev/sde</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgreduce vgbook /dev/sdd1 /dev/sde</span>
 </span></span><span style="display:flex;"><span>  Removed <span style="color:#5af78e">&#34;/dev/sdd1&#34;</span> from volume group <span style="color:#5af78e">&#34;vgbook&#34;</span>
 </span></span><span style="display:flex;"><span>  Removed <span style="color:#5af78e">&#34;/dev/sde&#34;</span> from volume group <span style="color:#5af78e">&#34;vgbook&#34;</span></span></span></code></pre></div>
 <p>2. Remove the volume group using the <code>vgremove</code> command. This will also remove the last physical volume, sdd2, from it.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgremove vgbook</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgremove vgbook</span>
 </span></span><span style="display:flex;"><span>  Volume group <span style="color:#5af78e">&#34;vgbook&#34;</span> successfully removed</span></span></code></pre></div>
 <ul>
 <li>Use the <code>-f</code> option with the <code>vgremove</code> command to force the volume group removal even if it contains any number of logical and physical volumes in it.</li>
 </ul>
 <p>3. Execute the <code>vgs</code> and <code>lvs</code> commands for confirmation:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo vgs</span>
 </span></span><span style="display:flex;"><span>  VG   <span style="color:#78787e">#PV #LV #SN Attr   VSize   VFree</span>
 </span></span><span style="display:flex;"><span>  rhel   <span style="color:#ff9f43">1</span>   <span style="color:#ff9f43">2</span>   <span style="color:#ff9f43">0</span> wz--n- &lt;19.00g    <span style="color:#ff9f43">0</span> 
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo lvs</span>
 </span></span><span style="display:flex;"><span>  LV   VG   Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
 </span></span><span style="display:flex;"><span>  root rhel -wi-ao---- &lt;17.00g                                                    
 </span></span><span style="display:flex;"><span>  swap rhel -wi-ao----   2.00g    </span></span></code></pre></div>
-<h3 id="exercise-13-11-uninitialize-physical-volumes-server2">Exercise 13-11: Uninitialize Physical Volumes (Server2)\</h3>
+<h3 id="exercise-13-11-uninitialize-physical-volumes-server2">Exercise 13-11: Uninitialize Physical Volumes (Server2)\<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Uninitialize all three physical volumes&mdash;sdd1, sdd2, and sde&mdash;by deleting the LVM structural information from them.</li>
 <li>Use the <code>pvs</code> command for confirmation.</li>
@@ -906,22 +857,22 @@ active logical volume&rdquo; message.</p>
 <li>Verify that all disks used in Exercises 13-6 to 13-10 are now in their original raw state.</li>
 </ul>
 <p>1. Remove the LVM structures from sdd1, sdd2, and sde using the <code>pvremove</code> command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvremove /dev/sdd1 /dev/sdd2 /dev/sde</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvremove /dev/sdd1 /dev/sdd2 /dev/sde</span>
 </span></span><span style="display:flex;"><span>  Labels on physical volume <span style="color:#5af78e">&#34;/dev/sdd1&#34;</span> successfully wiped.
 </span></span><span style="display:flex;"><span>  Labels on physical volume <span style="color:#5af78e">&#34;/dev/sdd2&#34;</span> successfully wiped.
 </span></span><span style="display:flex;"><span>  Labels on physical volume <span style="color:#5af78e">&#34;/dev/sde&#34;</span> successfully wiped.</span></span></code></pre></div>
 <p>2. Confirm the removal using the <code>pvs</code> command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvs</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo pvs</span>
 </span></span><span style="display:flex;"><span>  PV         VG   Fmt  Attr PSize   PFree
 </span></span><span style="display:flex;"><span>  /dev/sda2  rhel lvm2 a--  &lt;19.00g    <span style="color:#ff9f43">0</span> </span></span></code></pre></div>
 <p>The partitions and the disk are now back to their raw state and can be repurposed.</p>
 <p>3. Remove the partitions from sdd using the <code>parted</code> command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdd rm 1 ; sudo parted /dev/sdd rm 2</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># sudo parted /dev/sdd rm 1 ; sudo parted /dev/sdd rm 2</span>
 </span></span><span style="display:flex;"><span>Information: You may need to update /etc/fstab.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Information: You may need to update /etc/fstab.  </span></span></code></pre></div>
 <p>4. Verify that all disks used in previous exercises have returned to their original raw state using the lsblk command:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk                                                   </span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server2 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># lsblk                                                   </span>
 </span></span><span style="display:flex;"><span>NAME          MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
 </span></span><span style="display:flex;"><span>sda             8:0    <span style="color:#ff9f43">0</span>   20G  <span style="color:#ff9f43">0</span> disk 
 </span></span><span style="display:flex;"><span>├─sda1          8:1    <span style="color:#ff9f43">0</span>    1G  <span style="color:#ff9f43">0</span> part /boot
@@ -1010,8 +961,8 @@ active logical volume&rdquo; message.</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -1037,23 +988,23 @@ active logical volume&rdquo; message.</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="OpenSSH, system access, file transfer">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="The Secure Shell Service :: Linux Reader">
     <meta name="twitter:description" content="OpenSSH, system access, file transfer">
-    <meta property="og:url" content="https://linuxreader.com/cyber-security/the-secure-shell-service/">
+    <meta property="og:url" content="http://localhost:1313/cyber-security/the-secure-shell-service/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="The Secure Shell Service :: Linux Reader">
     <meta property="og:description" content="OpenSSH, system access, file transfer">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="OpenSSH, system access, file transfer">
     <meta itemprop="wordCount" content="2449">
     <title>The Secure Shell Service :: Linux Reader</title>
-    <link href="/cyber-security/the-secure-shell-service/index.xml" rel="alternate" type="application/rss+xml" title="The Secure Shell Service :: Linux Reader">
-    <link href="/cyber-security/the-secure-shell-service/index.print.html" rel="alternate" type="text/html" title="The Secure Shell Service :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/cyber-security\/the-secure-shell-service\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/cyber-security/the-linux-firewall/" title="The Linux Firewall (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/cyber-security/the-linux-firewall/" title="The Linux Firewall (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -207,12 +161,9 @@
             The Secure Shell Service
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/cyber-security/the-secure-shell-service/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/desktop/" title="Desktop (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/desktop/" title="Desktop (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -233,7 +184,7 @@
 
 <h1 id="the-secure-shell-service">The Secure Shell Service</h1>
 
-<h2 id="the-openssh-service">The OpenSSH Service</h2>
+<h2 id="the-openssh-service">The OpenSSH Service<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>Secure Shell (SSH)</strong></p>
 <ul>
 <li>Delivers a secure mechanism for data transmission between source and destination systems over IP networks.</li>
@@ -246,7 +197,7 @@
 <li>Monitors the data being transferred throughout a session to ensure integrity.</li>
 <li>Includes a set of utilities <code>ssh</code> and <code>sftp</code> for remote users to log in, transfer files, and execute commands securely.</li>
 </ul>
-<h3 id="common-encryption-techniques">Common Encryption Techniques</h3>
+<h3 id="common-encryption-techniques">Common Encryption Techniques<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Two common techniques: symmetric and asymetric</li>
 </ul>
@@ -270,7 +221,7 @@
 <li>the public key is disseminated to clients.</li>
 <li>used for channel encryption and user authentication.</li>
 </ul>
-<h3 id="authentication-methods">Authentication Methods</h3>
+<h3 id="authentication-methods">Authentication Methods<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Encrypted channel is established between the client and server</li>
 <li>Then additional negotiations take place between the two to authenticate the user trying to access the server.</li>
@@ -316,7 +267,7 @@
 <li>Server prompts the user to enter their password.</li>
 <li>Checks the password against the stored entry in the shadow file and allows the user in if the password is confirmed.</li>
 </ul>
-<h3 id="openssh-protocol-version-and-algorithms">OpenSSH Protocol Version and Algorithms</h3>
+<h3 id="openssh-protocol-version-and-algorithms">OpenSSH Protocol Version and Algorithms<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>V2</li>
 <li>Supports various algorithms for data encryption and user authentication (digital signatures) such as:</li>
@@ -331,7 +282,7 @@
 <li>Authentication only.</li>
 <li>Used to generate public and private key pairs for the asymmetric technique.</li>
 </ul>
-<h3 id="openssh-packages">OpenSSH Packages</h3>
+<h3 id="openssh-packages">OpenSSH Packages<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Installed during OS installation</li>
 </ul>
@@ -347,7 +298,7 @@
 <ul>
 <li>contains the sshd service daemon, server configuration file <em>/etc/ssh/sshd_config</em>, and library routines.</li>
 </ul>
-<h3 id="openssh-server-daemon-and-client-commands">OpenSSH Server Daemon and Client Commands</h3>
+<h3 id="openssh-server-daemon-and-client-commands">OpenSSH Server Daemon and Client Commands<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>OpenSSH server program is sshd</li>
 </ul>
@@ -385,14 +336,14 @@
 <ul>
 <li>Generates and manages private and public key pairs</li>
 </ul>
-<h3 id="server-configuration-file">Server Configuration File</h3>
+<h3 id="server-configuration-file">Server Configuration File<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><strong>/etc/ssh/sshd_config</strong></p>
 <p><strong>/var/log/secure</strong></p>
 <ul>
 <li>log file is used to capture authentication messages.</li>
 </ul>
 <p>View directives listed in <em>/etc/ssh/sshd_config</em>:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 tmp<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /etc/ssh/sshd_config</span></span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server30 tmp<span style="color:#ff6ac1">]</span><span style="color:#78787e"># cat /etc/ssh/sshd_config</span></span></span></code></pre></div>
 <p><strong>Port</strong></p>
 <ul>
 <li>Port number to listen on. Default is 22.</li>
@@ -428,7 +379,7 @@ Enables or disables challenge-response authentication mechanism. Default is yes.
 Enables or disables user authentication via PAM. If enabled, only root will be able to run the sshd daemon. Default is yes.</p>
 <p><strong>X11Forwarding</strong>                    <br>
 Allows or disallows remote access to graphical applications. Default is yes.</p>
-<h3 id="client-configuration-file">Client Configuration File</h3>
+<h3 id="client-configuration-file">Client Configuration File<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p><strong>/etc/ssh/ssh_config</strong></p>
 <ul>
 <li>Local configuration file that directs how the client should behave. This file, , is located in the /etc/ssh directory.</li>
@@ -513,26 +464,26 @@ Specifies the default protocol version to use</p>
 </ul>
 </li>
 </ul>
-<h2 id="system-access-and-file-transfer">System Access and File Transfer</h2>
-<h3 id="lab-access-rhel-system-from-another-rhel-system">Lab: Access RHEL System from Another RHEL System</h3>
+<h2 id="system-access-and-file-transfer">System Access and File Transfer<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="lab-access-rhel-system-from-another-rhel-system">Lab: Access RHEL System from Another RHEL System<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>issue the ssh command as user1 on server10 to log in to server20.</li>
 <li>Run appropriate commands on server20 for validation.</li>
 <li>Log off and return to the originating system.</li>
 </ul>
 <p>1. Issue the ssh command as user1 on server10:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ ssh server20</span></span></code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ ssh server20</span></span></code></pre></div>
 <p>2. Issue the basic Linux commands whoami, hostname, and pwd to confirm
 that you are logged in as user1 on server20 and placed in the correct
 home directory:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server40 ~<span style="color:#ff6ac1">]</span>$ whoami
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server40 ~<span style="color:#ff6ac1">]</span>$ whoami
 </span></span><span style="display:flex;"><span>user1
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server40 ~<span style="color:#ff6ac1">]</span>$ hostname
 </span></span><span style="display:flex;"><span>server40
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server40 ~<span style="color:#ff6ac1">]</span>$ <span style="color:#ff5c57">pwd</span>
 </span></span><span style="display:flex;"><span>/home/user1</span></span></code></pre></div>
 <p>3. Run the logout or the exit command or simply press the key combination Ctrl+d to log off server20 and return to server10:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server40 ~<span style="color:#ff6ac1">]</span>$ <span style="color:#ff5c57">exit</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server40 ~<span style="color:#ff6ac1">]</span>$ <span style="color:#ff5c57">exit</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff5c57">logout</span>
 </span></span><span style="display:flex;"><span>Connection to server40 closed.</span></span></code></pre></div>
 <p>If you wish to log on as a different user such as user2 (assuming user2
@@ -540,7 +491,7 @@ exists on the target server server20), you may run the ssh command in
 either of the following ways:</p>
 <p><code>[user1@server30 tmp]$ ssh -l user2 server40</code></p>
 <p><code>[user1@server30 tmp]$ ssh user2@server40</code></p>
-<h3 id="lab-generate-distribute-and-use-ssh-keys">Lab: Generate, Distribute, and Use SSH Keys</h3>
+<h3 id="lab-generate-distribute-and-use-ssh-keys">Lab: Generate, Distribute, and Use SSH Keys<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Generate a passwordless ssh key pair using RSA algorithm for user1 on server10.</li>
 <li>display the private and public file contents.</li>
@@ -551,7 +502,7 @@ either of the following ways:</p>
 <p>2. Generate RSA keys without a password (-N) and without detailed
 output (-q). Press Enter when prompted to provide the filename to store
 the private key.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ ssh-keygen -N <span style="color:#5af78e">&#34;&#34;</span> -q
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ ssh-keygen -N <span style="color:#5af78e">&#34;&#34;</span> -q
 </span></span><span style="display:flex;"><span>Enter file in which to save the key <span style="color:#ff6ac1">(</span>/home/user1/.ssh/id_rsa<span style="color:#ff6ac1">)</span>: </span></span></code></pre></div>
 <p>View the private key:
 <code>[user1@server30 tmp]$ cat ~/.ssh/id_rsa</code></p>
@@ -559,7 +510,7 @@ the private key.</p>
 <code>[user1@server30 tmp]$ cat ~/.ssh/id_rsa.pub</code></p>
 <p>3. Copy the public key file to server20 under /home/user1/.ssh
 directory.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ ssh-copy-id server40
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ ssh-copy-id server40
 </span></span><span style="display:flex;"><span>/usr/bin/ssh-copy-id: INFO: Source of key<span style="color:#ff6ac1">(</span>s<span style="color:#ff6ac1">)</span> to be installed: <span style="color:#5af78e">&#34;/home/user1/.ssh/id_rsa.pub&#34;</span>
 </span></span><span style="display:flex;"><span>/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key<span style="color:#ff6ac1">(</span>s<span style="color:#ff6ac1">)</span>, to filter out any that are already installed
 </span></span><span style="display:flex;"><span>/usr/bin/ssh-copy-id: INFO: <span style="color:#ff9f43">1</span> key<span style="color:#ff6ac1">(</span>s<span style="color:#ff6ac1">)</span> remain to be installed -- <span style="color:#ff6ac1">if</span> you are prompted now it is to install the new keys
@@ -577,34 +528,34 @@ file on server10 and stores the fingerprints for server20 in it.</li>
 <p>4. On server10, run the ssh command as user1 to connect to server20.
 You will not be prompted for a password because there was none assigned
 to the ssh keys.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ ssh server40
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ ssh server40
 </span></span><span style="display:flex;"><span>Register this system with Red Hat Insights: insights-client --register
 </span></span><span style="display:flex;"><span>Create an account or view all your systems at https://red.ht/insights-dashboard
 </span></span><span style="display:flex;"><span>Last login: Sun Jul <span style="color:#ff9f43">21</span> 01:20:17 <span style="color:#ff9f43">2024</span> from 192.168.0.30</span></span></code></pre></div>
 <p>View this login attempt in the /var/log/secure file on server20:
 <code>[user1@server40 ~]$ sudo tail /var/log/secure</code></p>
-<h3 id="executing-commands-remotely-using-ssh">Executing Commands Remotely Using ssh</h3>
+<h3 id="executing-commands-remotely-using-ssh">Executing Commands Remotely Using ssh<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Can use <code>ssh</code> command to run programs without remoting in:</li>
 </ul>
 <p>Execute the hostname command on server20:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ ssh server40 hostname
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ ssh server40 hostname
 </span></span><span style="display:flex;"><span>server40</span></span></code></pre></div>
 <p>Run the <code>nmcli</code> command on server20 to show (s) active network connections(c):</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ ssh server40 nmcli c s
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ ssh server40 nmcli c s
 </span></span><span style="display:flex;"><span>NAME    UUID                                  TYPE      DEVICE 
 </span></span><span style="display:flex;"><span>enp0s3  1c391bb6-20a3-4eb4-b717-1e458877dbe4  ethernet  enp0s3 
 </span></span><span style="display:flex;"><span>lo      175f8a4c-1907-4006-b838-eb43438d847b  loopback  lo </span></span></code></pre></div>
-<h3 id="sftp-command">sftp` command</h3>
+<h3 id="sftp-command">sftp` command<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Interactive file transfer tool.</li>
 </ul>
 <p>On server10, to connect to server20:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ sftp server40
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ sftp server40
 </span></span><span style="display:flex;"><span>Connected to server40.
 </span></span><span style="display:flex;"><span>sftp&gt; </span></span></code></pre></div>
 <p>Type ? at the prompt to list available commands along with a short description:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ sftp server40
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ sftp server40
 </span></span><span style="display:flex;"><span>Connected to server40.
 </span></span><span style="display:flex;"><span>sftp&gt; ?
 </span></span><span style="display:flex;"><span>Available commands:
@@ -641,7 +592,7 @@ to the ssh keys.</p>
 </span></span><span style="display:flex;"><span>!                                  Escape to <span style="color:#ff5c57">local</span> shell
 </span></span><span style="display:flex;"><span>?                                  Synonym <span style="color:#ff6ac1">for</span> help</span></span></code></pre></div>
 <p>Example:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sftp&gt; ls
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sftp&gt; ls
 </span></span><span style="display:flex;"><span>sftp&gt; mkdir /tmp/dir10-20
 </span></span><span style="display:flex;"><span>sftp&gt; <span style="color:#ff5c57">cd</span> /tmp/dir10-20
 </span></span><span style="display:flex;"><span>sftp&gt; <span style="color:#ff5c57">pwd</span>
@@ -664,14 +615,14 @@ to the ssh keys.</p>
 <li>Other commands are also available. (See man pages)</li>
 </ul>
 <p>Type quit at the sftp&gt; prompt to exit the program when you&rsquo;re done:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sftp&gt; quit
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sftp&gt; quit
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 tmp<span style="color:#ff6ac1">]</span>$ </span></span></code></pre></div>
-<h2 id="secure-shell-service-diy-labs">Secure Shell Service DIY Labs</h2>
-<h3 id="lab-establish-key-based-authentication">Lab: Establish Key-Based Authentication</h3>
+<h2 id="secure-shell-service-diy-labs">Secure Shell Service DIY Labs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="lab-establish-key-based-authentication">Lab: Establish Key-Based Authentication<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>Create user account user20 on both systems and assign a password.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># adduser user20</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># adduser user20</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>root@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># passwd user20</span>
 </span></span><span style="display:flex;"><span>Changing password <span style="color:#ff6ac1">for</span> user user20.
 </span></span><span style="display:flex;"><span>New password: 
@@ -681,14 +632,14 @@ to the ssh keys.</p>
 <ul>
 <li>As user20 on server40, generate a private/public key pair without a passphrase using the ssh-keygen command.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user20@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ssh-keygen -N &#34;&#34; -q</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user20@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ssh-keygen -N &#34;&#34; -q</span>
 </span></span><span style="display:flex;"><span>Enter file in which to save the key <span style="color:#ff6ac1">(</span>/root/.ssh/id_rsa<span style="color:#ff6ac1">)</span>: </span></span></code></pre></div>
 <ul>
 <li>Distribute the public key to server30 with the ssh-copy-id command.
 <code>[user20@server40 ~]# ssh-copy-id server30</code></li>
 <li>Log on to server30 as user20 and accept the fingerprints for the server if presented.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user20@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ssh server30</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user20@server40 ~<span style="color:#ff6ac1">]</span><span style="color:#78787e"># ssh server30</span>
 </span></span><span style="display:flex;"><span>Activate the web console with: systemctl <span style="color:#ff5c57">enable</span> --now cockpit.socket
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Register this system with Red Hat Insights: insights-client --register
@@ -698,7 +649,7 @@ to the ssh keys.</p>
 <ul>
 <li>On subsequent log in attempts from server40 to server30, user20 should not be prompted for their password.</li>
 </ul>
-<h3 id="lab-test-the-effect-of-permitrootlogin-directive">Lab: Test the Effect of PermitRootLogin Directive</h3>
+<h3 id="lab-test-the-effect-of-permitrootlogin-directive">Lab: Test the Effect of PermitRootLogin Directive<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>
 <p>As user1 with sudo on server30, edit the /etc/ssh/sshd_config file and change the value of the directive PermitRootLogin to &ldquo;no&rdquo;.
@@ -708,7 +659,7 @@ to the ssh keys.</p>
 <p>Use the systemctl command to activate the change.</p>
 </li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ systemctl restart <span style="color:#ff5c57">sshd</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>user1@server30 ~<span style="color:#ff6ac1">]</span>$ systemctl restart <span style="color:#ff5c57">sshd</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">====</span> AUTHENTICATING FOR org.freedesktop.systemd1.manage-units <span style="color:#ff6ac1">====</span>
 </span></span><span style="display:flex;"><span>Authentication is required to restart <span style="color:#5af78e">&#39;sshd.service&#39;</span>.
 </span></span><span style="display:flex;"><span>Authenticating as: root
@@ -793,8 +744,8 @@ to the ssh keys.</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -820,23 +771,23 @@ to the ssh keys.</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

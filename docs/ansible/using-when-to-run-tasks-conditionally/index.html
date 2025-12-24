@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Using when to Run Tasks Conditionally">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Using when to Run Tasks Conditionally :: Linux Reader">
     <meta name="twitter:description" content="Using when to Run Tasks Conditionally">
-    <meta property="og:url" content="https://linuxreader.com/ansible/using-when-to-run-tasks-conditionally/">
+    <meta property="og:url" content="http://localhost:1313/ansible/using-when-to-run-tasks-conditionally/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Using when to Run Tasks Conditionally :: Linux Reader">
     <meta property="og:description" content="Using when to Run Tasks Conditionally">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Using when to Run Tasks Conditionally">
     <meta itemprop="wordCount" content="1526">
     <title>Using when to Run Tasks Conditionally :: Linux Reader</title>
-    <link href="/ansible/using-when-to-run-tasks-conditionally/index.xml" rel="alternate" type="application/rss+xml" title="Using when to Run Tasks Conditionally :: Linux Reader">
-    <link href="/ansible/using-when-to-run-tasks-conditionally/index.print.html" rel="alternate" type="text/html" title="Using when to Run Tasks Conditionally :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/ansible\/using-when-to-run-tasks-conditionally\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/using-tags/" title="Using Tags (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/using-tags/" title="Using Tags (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -194,12 +148,9 @@
             Using when to Run Tasks Conditionally
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/using-when-to-run-tasks-conditionally/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/variables/" title="Variables (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/variables/" title="Variables (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -220,7 +171,7 @@
 
 <h1 id="using-when-to-run-tasks-conditionally">Using when to Run Tasks Conditionally</h1>
 
-<h2 id="using-when-to-run-tasks-conditionally">Using when to Run Tasks Conditionally</h2>
+<h2 id="using-when-to-run-tasks-conditionally">Using when to Run Tasks Conditionally<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <ul>
 <li>Use a <strong>when</strong> statement to run tasks conditionally.</li>
 <li>you can test whether:
@@ -232,12 +183,12 @@
 </ul>
 </li>
 </ul>
-<h4 id="working-with-when">Working with when</h4>
+<h4 id="working-with-when">Working with when<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Install the right software package for the Apache web server, based on the Linux distribution that was found in the Ansible facts. Notice that</p>
 <ul>
 <li>when used in <strong>when</strong> statements, the variable that is evaluated is not placed between double curly braces.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>    ---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>    ---
     - name: conditional install
       hosts: all
       tasks:
@@ -265,7 +216,7 @@
 <p>Without the double quotes, it would be considered an integer test.</p>
 </li>
 </ul>
-<h4 id="using-conditional-test-statements">Using Conditional Test Statements</h4>
+<h4 id="using-conditional-test-statements">Using Conditional Test Statements<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <p>Common conditional tests that you can perform with the <strong>when</strong> statement:</p>
 <p>Variable exists</p>
 <ul>
@@ -333,7 +284,7 @@ Not equal to</p>
 • Integer comparisons</p>
 <p>The first type of test checks whether a variable exists or is a part of another variable, such as a list.</p>
 <p>Checks for the existence of a specific disk device, using <strong>variable is defined</strong> and <strong>variable is not defined</strong>. All failing tests result in the message &ldquo;skipping.&rdquo;</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    ---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: check for existence of devices
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">tasks</span>:
@@ -353,12 +304,12 @@ Not equal to</p>
 </span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">debug</span>:
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">msg</span>: there is no /dev/sdc device
 </span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">when</span>: ansible_facts[’devices’][’sdc’] is not defined</span></span></code></pre></div>
-<h3 id="lab-check-that-finds-whether-the-first-variable-value-is-present-in-the-second-variables-list">Lab: Check that finds whether the first variable value is present in the second variable&rsquo;s list.</h3>
+<h3 id="lab-check-that-finds-whether-the-first-variable-value-is-present-in-the-second-variables-list">Lab: Check that finds whether the first variable value is present in the second variable&rsquo;s list.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>executes the <strong>debug</strong> task if the variable <strong>my_answer</strong> is in <strong>supported_packages</strong>.</li>
 <li><strong>vars_prompt</strong> is used. This stops the playbook, asks the user for input, and stores the input in a variable with the name my_answer.</li>
 </ul>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: test if variable is in another variables list
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">vars_prompt</span>:
@@ -385,8 +336,8 @@ Not equal to</p>
 <li>When doing checks on available disk space and available memory, carefully look at the expected value.</li>
 <li>Memory is shown in megabytes, by default, whereas disk space is expressed in bytes.</li>
 </ul>
-<h3 id="lab-integer-check-install-vsftpd-if-more-than-50-mb-of-memory-is-available">Lab: integer check, install vsftpd if more than 50 MB of memory is available.</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
+<h3 id="lab-integer-check-install-vsftpd-if-more-than-50-mb-of-memory-is-available">Lab: integer check, install vsftpd if more than 50 MB of memory is available.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: conditionals test
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">tasks</span>:
@@ -395,15 +346,15 @@ Not equal to</p>
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">name</span>: vsftpd
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">state</span>: latest
 </span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">when</span>: ansible_facts[’memory_mb’][’real’][’free’] &gt; 50</span></span></code></pre></div>
-<h4 id="testing-multiple-conditions">Testing Multiple Conditions</h4>
+<h4 id="testing-multiple-conditions">Testing Multiple Conditions<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li><strong>when</strong> statements can also be used to evaluate multiple conditions.</li>
 <li>To do so, you can group the conditions with parentheses and combine them with <strong>and</strong> and <strong>or</strong> keywords.</li>
 <li><strong>and</strong> runs if both conditionals are ture</li>
 <li><strong>or</strong> runs if one of the conditions are true</li>
 </ul>
-<h3 id="lab-and-is-used-and--runs-the-task-only-if-both-conditions-are-true">Lab: <strong>and</strong> is used and  runs the task only if both conditions are true.</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
+<h3 id="lab-and-is-used-and--runs-the-task-only-if-both-conditions-are-true">Lab: <strong>and</strong> is used and  runs the task only if both conditions are true.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: testing multiple conditions
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">tasks</span>:
@@ -415,8 +366,8 @@ Not equal to</p>
 <li>You can make more complex statements by grouping conditions together in parentheses.</li>
 <li>group the <strong>when</strong> statement starts with a &gt; sign to wrap the statement over the next five lines for readability.</li>
 </ul>
-<h3 id="lab-combining-complex-statements">Lab: Combining complex statements</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
+<h3 id="lab-combining-complex-statements">Lab: Combining complex statements<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: using multiple conditions
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">tasks</span>:
@@ -429,9 +380,9 @@ Not equal to</p>
 </span></span></span><span style="display:flex;"><span><span style="color:#5af78e">          or
 </span></span></span><span style="display:flex;"><span><span style="color:#5af78e">          ( ansible_facts[’distribution’] == &#34;CentOS&#34; and
 </span></span></span><span style="display:flex;"><span><span style="color:#5af78e">            ansible_facts[’memfree_mb’] &lt; 256 )</span></span></span></code></pre></div>
-<h4 id="combining-loop-and-when">Combining loop and when</h4>
-<h3 id="lab-combining-loop-and-when-perform-a-kernel-update-only-if-boot-is-on-a-dedicated-mount-point-and-at-least-200-mbis-available-in-the-mount">Lab: Combining loop and when, Perform a kernel update only if /boot is on a dedicated mount point and at least 200 MBis available in the mount.</h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
+<h4 id="combining-loop-and-when">Combining loop and when<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<h3 id="lab-combining-loop-and-when-perform-a-kernel-update-only-if-boot-is-on-a-dedicated-mount-point-and-at-least-200-mbis-available-in-the-mount">Lab: Combining loop and when, Perform a kernel update only if /boot is on a dedicated mount point and at least 200 MBis available in the mount.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: conditionals test
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">tasks</span>:
@@ -441,9 +392,9 @@ Not equal to</p>
 </span></span><span style="display:flex;"><span>          <span style="color:#ff6ac1">state</span>: latest
 </span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">loop</span>: <span style="color:#5af78e">&#34;{{ ansible_facts[’mounts’] }}&#34;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">when</span>: item.mount == &#34;/boot&#34; and item.size_available &gt; 200000000</span></span></code></pre></div>
-<h4 id="combining-loop-and-register">Combining loop and register</h4>
-<h3 id="lab-combining-register-and-loop">Lab: Combining <strong>register</strong> and <strong>loop</strong></h3>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
+<h4 id="combining-loop-and-register">Combining loop and register<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<h3 id="lab-combining-register-and-loop">Lab: Combining <strong>register</strong> and <strong>loop</strong><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>    ---
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: test register
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">tasks</span>:
@@ -461,17 +412,17 @@ Not equal to</p>
 <li>For instance, if the string lisa is found in /etc/passwd, it returns an unexpected value like 2604, which is the position in the file, expressed as a byte offset from the beginning, where the string is found for the first time.</li>
 <li>Because of the behavior of the Python <strong>find</strong> function, <strong>variable.find</strong> needs <em>not</em> to be equal to −1 to have the task succeed. So don&rsquo;t write <strong>passwd_contents.stdout.find(&rsquo;lisa&rsquo;) = 0</strong> (because it is not a Boolean), but instead write <strong>passwd_contents.stdout.find(&rsquo;lisa&rsquo;) != -1</strong>.</li>
 </ul>
-<h3 id="lab-practice-working-with-conditionals-using-register">Lab: Practice working with conditionals using <strong>register</strong>.</h3>
+<h3 id="lab-practice-working-with-conditionals-using-register">Lab: Practice working with conditionals using <strong>register</strong>.<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>When using <strong>register</strong>, you might want to define a task that runs a command that will fail, just to capture the return code of that command, after which the playbook should continue. If that is the case, you must ensure that <strong>ignore_errors: yes</strong> is used in the task definition.</li>
 </ul>
 <p>1. Use your editor to create a new file with the name exercise72.yaml. Start writing the play header as follows:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
 - name: restart sshd service if httpd is running
   hosts: ansible1
   tasks:</code></pre></div>
 <p>2. Add the first task, which checks whether the httpd service is running, using command output that will be registered. Notice the use of <strong>ignore_errors: yes</strong>. This line makes sure that if the service is <em>not</em> running, the play is still executed further.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
 - name: restart sshd service if httpd is running
   hosts: ansible1
   tasks:
@@ -480,7 +431,7 @@ Not equal to</p>
     ignore_errors: yes
     register: result</code></pre></div>
 <p>3. Add a debug task that shows the output of the command so that you can analyze what is currently in the registered variable:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
 - name: restart sshd service if httpd is running
   hosts: ansible1
   tasks:
@@ -492,7 +443,7 @@ Not equal to</p>
     debug:
       msg: printing contents of the registered variable {{ result }}</code></pre></div>
 <p>4. Complete the playbook by including the <strong>service</strong> task, which is started only if the value stored in <strong>result.rc</strong> (which is the return code of the command that was registered) contains a 0. This is the case if the previous command executed successfully.</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code class="language-pre1" data-lang="pre1">---
 - name: restart sshd service if httpd is running
   hosts: ansible1
   tasks:
@@ -623,8 +574,8 @@ Not equal to</p>
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -650,23 +601,23 @@ Not equal to</p>
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

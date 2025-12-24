@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+d150cc8909ed7836ff5d545e76544f6923ffacf5">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Getting started with Ansible Playbooks">
     <meta name="author" content="David Thomas">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Ansible Playbooks :: Linux Reader">
     <meta name="twitter:description" content="Getting started with Ansible Playbooks">
-    <meta property="og:url" content="https://linuxreader.com/ansible/ansible-playbooks/">
+    <meta property="og:url" content="http://localhost:1313/ansible/ansible-playbooks/">
     <meta property="og:site_name" content="Linux Reader">
     <meta property="og:title" content="Ansible Playbooks :: Linux Reader">
     <meta property="og:description" content="Getting started with Ansible Playbooks">
@@ -21,39 +21,35 @@
     <meta itemprop="description" content="Getting started with Ansible Playbooks">
     <meta itemprop="wordCount" content="1653">
     <title>Ansible Playbooks :: Linux Reader</title>
-    <link href="/ansible/ansible-playbooks/index.xml" rel="alternate" type="application/rss+xml" title="Ansible Playbooks :: Linux Reader">
-    <link href="/ansible/ansible-playbooks/index.print.html" rel="alternate" type="text/html" title="Ansible Playbooks :: Linux Reader">
-    <link href="/images/favicon.svg?1765108594" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1765108594" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1765108594" defer></script>
-    <script src="/js/search-lunr.min.js?1765108594" defer></script>
-    <script src="/js/search.min.js?1765108594" defer></script>
+    <link href="/images/favicon.svg?1766587782" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1766587782" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1766587782" defer></script>
+    <script src="/js/search-lunr.js?1766587782" defer></script>
+    <script src="/js/search.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1765108594";
+      window.relearn.index_js_url="/searchindex.en.js?1766587782";
     </script>
-    <script src="/js/lunr/lunr.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1765108594" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1765108594" defer></script>
+    <script src="/js/lunr/lunr.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1766587782" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1766587782" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1765108594" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1765108594" rel="stylesheet">
-    <link href="/css/theme.min.css?1765108594" rel="stylesheet">
-    <link href="/css/format-html.min.css?1765108594" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766587782" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766587782" rel="stylesheet">
+    <link href="/css/theme.css?1766587782" rel="stylesheet">
+    <link href="/css/format-html.css?1766587782" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/ansible\/ansible-playbooks\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/linuxreader.com';
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=true;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -61,14 +57,14 @@
       window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
       window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
       window.T_Reset_view = `Reset view`;
       window.T_View_reset = `View reset!`;
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'oled' ];
       window.relearn.customvariantname = "my-custom-variant";
@@ -96,49 +92,7 @@
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-    </script>
-
-
-
-
-   
-   <!-- Thanks for using github/divinerites/plausible-hugo v1.22.0. Please, consider leaving a star on Github if you like it. -->
-
-
-
-
-
-
-
-
-
-
-
-    
-        <link rel="preconnect" href="https://analytics.linuxreader.com:8443">
-    
-        
-            
-            <script defer  data-domain="linuxreader.com" src="https://analytics.linuxreader.com:8443/js/script.js" ></script>
-
-<!-- If you are using Content-Security-Policy, do not forget to add this code to your CSP : 
-  script-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  connect-src 'unsafe-inline' https://analytics.linuxreader.com:8443
-  or just add the partial 'plausible_csp.html' to those 2 csp directives in your 'index.headers' file
--->
-
-
-
-    
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    <script>
-         
-         
-         
-    </script>
-
-    
-
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="a5c8f877-041b-4f72-9c2d-45911ab5c723"></script>
 <style>
 :root {
     --MENU-WIDTH-S: 14.375rem;
@@ -158,14 +112,14 @@
           <div class="topbar-sidebar-divider"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ansible-inventory/" title="Ansible Inventory and Ansible.cfg (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/ansible-inventory/" title="Ansible Inventory and Ansible.cfg (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
 
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
@@ -197,12 +151,9 @@
             Ansible Playbooks
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/ansible-playbooks/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a></span>
-            </div>
 
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle link noborder notitle interactive"><a href="/ansible/using-ansible-roles/" title="Ansible Roles (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/ansible/using-ansible-roles/" title="Ansible Roles (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
 
 
@@ -230,7 +181,7 @@
 </ul>
 <p>Lets create our first playbook:</p>
 <p><code>[ansible@control base]$ vim playbook.yaml</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: install start and enable httpd &lt;-- play is at the highest level
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">tasks</span>: &lt;-- play has a list of tasks
@@ -251,7 +202,7 @@
 <p>Indentation is created using spaces. Usually two spaces is used, but not required. You cannot use tabs for indentation.</p>
 <p>You can also edit your .vimrc file to help with indentation when it detects that you are working with a YAML file:
 <code>vim ~/.vimrc</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>autocmd FileType yaml setlocal ai ts=2 sw=2 et</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>autocmd FileType yaml setlocal ai ts=2 sw=2 et</code></pre></div>
 <p>Required elements:</p>
 <ul>
 <li>hosts - name of host(s) to perform play on</li>
@@ -259,7 +210,7 @@
 <li>tasks - one or more tasks to execute for this play</li>
 </ul>
 <p>To run a playbook:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>ansible@control base<span style="color:#ff6ac1">]</span>$ ansible-playbook playbook.yaml 
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff6ac1">[</span>ansible@control base<span style="color:#ff6ac1">]</span>$ ansible-playbook playbook.yaml 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#78787e"># Name of the play</span>
 </span></span><span style="display:flex;"><span>PLAY <span style="color:#ff6ac1">[</span>install start and <span style="color:#ff5c57">enable</span> http+userd<span style="color:#ff6ac1">]</span> ***********************************************
@@ -286,24 +237,24 @@
 </span></span><span style="display:flex;"><span>web1                       : <span style="color:#ff5c57">ok</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>    <span style="color:#ff5c57">changed</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>    <span style="color:#ff5c57">unreachable</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1</span>    <span style="color:#ff5c57">failed</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>    <span style="color:#ff5c57">skipped</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>    <span style="color:#ff5c57">rescued</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>    <span style="color:#ff5c57">ignored</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>   
 </span></span><span style="display:flex;"><span>web2                       : <span style="color:#ff5c57">ok</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>    <span style="color:#ff5c57">changed</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>    <span style="color:#ff5c57">unreachable</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">1</span>    <span style="color:#ff5c57">failed</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>    <span style="color:#ff5c57">skipped</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>    <span style="color:#ff5c57">rescued</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>    <span style="color:#ff5c57">ignored</span><span style="color:#ff6ac1">=</span><span style="color:#ff9f43">0</span>   </span></span></code></pre></div>
 <p>Before running tasks, the <code>ansible-playbook</code> command gathers facts (current configuration and settings) about managed nodes.</p>
-<h3 id="how-to-undo-playbook-modifications">How to undo playbook modifications</h3>
+<h3 id="how-to-undo-playbook-modifications">How to undo playbook modifications<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Ansible does not have a built in feature to undo a playbook that you ran. So to undo changes, you need to make another playbook that defines the new desired state of the host.</p>
-<h3 id="working-with-yaml">Working with YAML</h3>
+<h3 id="working-with-yaml">Working with YAML<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Key value pairs can also be listed as:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ff6ac1">tasks</span>:
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ff6ac1">tasks</span>:
 </span></span><span style="display:flex;"><span> - <span style="color:#ff6ac1">name</span>: install vsftpd
 </span></span><span style="display:flex;"><span>   <span style="color:#ff6ac1">yum</span>: name=vsftpd
 </span></span><span style="display:flex;"><span> - <span style="color:#ff6ac1">name</span>: enable vsftpd
 </span></span><span style="display:flex;"><span>   <span style="color:#ff6ac1">service</span>: name=vsftpd enabled=true
 </span></span><span style="display:flex;"><span> - <span style="color:#ff6ac1">name</span>: create readme file</span></span></code></pre></div>
 <p>But better to list them as such for better readability:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    <span style="color:#ff6ac1">copy</span>:
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    <span style="color:#ff6ac1">copy</span>:
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">content</span>: <span style="color:#5af78e">&#34;welcome to the FTP server\n&#34;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">dest</span>: /var/ftp/pub/README
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">force</span>: <span style="color:#ff6ac1">no</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">mode</span>: <span style="color:#ff9f43">0444</span></span></span></code></pre></div>
 <p>Some modules support multiple values for a single key:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: install multiple packages
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">tasks</span>:
@@ -314,7 +265,7 @@
 </span></span><span style="display:flex;"><span>      - httpd
 </span></span><span style="display:flex;"><span>      - vsftpd
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">state</span>: latest &lt;-- will install and/or update to latest version</span></span></code></pre></div>
-<h3 id="yaml-strings">YAML Strings</h3>
+<h3 id="yaml-strings">YAML Strings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Valid fomats for a string in YAML:</p>
 <ul>
 <li><code>super string</code></li>
@@ -322,7 +273,7 @@
 <li><code>'super string'</code></li>
 </ul>
 <p>When inserting text into a file, you may have to deal with spacing. You can either preserve newline characters with a pipe <code>|</code> such as:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: Using | to preserve newlines
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>    - <span style="color:#ff6ac1">name</span>: Using | to preserve newlines
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">copy</span>:
 </span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">dest</span>: /tmp/rendezvous-with-death.txt
 </span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">content</span>: |<span style="color:#5af78e">
@@ -331,12 +282,12 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#5af78e">          When Spring comes back with rustling shade
 </span></span></span><span style="display:flex;"><span><span style="color:#5af78e">          And apple-blossoms fill the air—</span></span></span></code></pre></div>
 <p>Output:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>I have a rendezvous with Death
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>I have a rendezvous with Death
 </span></span><span style="display:flex;"><span>At some disputed barricade,
 </span></span><span style="display:flex;"><span>When Spring comes back with rustling shade
 </span></span><span style="display:flex;"><span>And apple-blossoms fill the air—</span></span></code></pre></div>
 <p>Or chose not to with a carrot &gt;</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span> - <span style="color:#ff6ac1">name</span>: Using &gt; to fold lines into one
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span> - <span style="color:#ff6ac1">name</span>: Using &gt; to fold lines into one
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">copy</span>:
 </span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">dest</span>: /tmp/rendezvous-with-death.txt
 </span></span><span style="display:flex;"><span>        <span style="color:#ff6ac1">content</span>: &gt;<span style="color:#5af78e">
@@ -345,10 +296,10 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#5af78e">          When Spring comes back with rustling shade
 </span></span></span><span style="display:flex;"><span><span style="color:#5af78e">          And apple-blossoms fill the air—</span></span></span></code></pre></div>
 <p>Output:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>I have a rendezvous with Death At some disputed barricade, When Spring comes back with rustling shade And apple-blossoms fill the air—</span></span></code></pre></div>
-<h3 id="checking-syntax-with---syntax-check">Checking syntax with <code>--syntax-check</code></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>I have a rendezvous with Death At some disputed barricade, When Spring comes back with rustling shade And apple-blossoms fill the air—</span></span></code></pre></div>
+<h3 id="checking-syntax-with---syntax-check">Checking syntax with <code>--syntax-check</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>You can use the <code>--syntax-check</code> flag to check a playbook for errors. The <code>ansible-playbook</code> command does check syntax by default though, and will throw the same error messages. The syntax check stops after detecting a single error. So you will need to fix the first errors in order to see errors further in the file. I&rsquo;ve added a tab in front of the host key to demonstrate:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>[ansible@control base]$ cat playbook.yaml 
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>[ansible@control base]$ cat playbook.yaml 
 </span></span><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: install start and enable httpd
 </span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">hosts</span>: all
@@ -379,7 +330,7 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>         ^ here</span></span></code></pre></div>
 <p>And here it is again, after fixing the syntax error:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>[ansible@control base]$ vim playbook.yaml 
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>[ansible@control base]$ vim playbook.yaml 
 </span></span><span style="display:flex;"><span>[ansible@control base]$ cat playbook.yaml 
 </span></span><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: install start and enable httpd
@@ -397,15 +348,15 @@
 </span></span><span style="display:flex;"><span>[ansible@control base]$ ansible-playbook --syntax-check playbook.yaml 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#ff6ac1">playbook</span>: playbook.yaml</span></span></code></pre></div>
-<h3 id="doing-a-dry-run">Doing a dry run</h3>
+<h3 id="doing-a-dry-run">Doing a dry run<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Use the -C flag to perform a dry run. This will check the success status of all of the tasks without actually making any changes.
 <code>ansible-playbook -C playbook.yaml</code></p>
-<h2 id="multiple-play-playbooks">Multiple play playbooks</h2>
+<h2 id="multiple-play-playbooks">Multiple play playbooks<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Using multiple plays in a playbook lets you set up one group of servers with one configuration and another group with a different configuration. Each play has it&rsquo;s own list of hosts to address.</p>
 <p>You can also specify different parameters in each play such as <strong>become:</strong> or the <strong>remote_user:</strong> parameters.</p>
 <p>Try to keep playbooks small. As bigger playbooks will be harder to troubleshoot. You can use <em>include:</em> to include other playbooks. Other than troubleshooting, using smaller playbooks lets you use your playbooks in a flexible way to perform a wider range of tasks.</p>
 <p>Here is an example of a playbook with two plays:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: install start and enable httpd   &lt;--- play 1
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">hosts</span>: all
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">tasks</span>:
@@ -425,7 +376,7 @@
 </span></span><span style="display:flex;"><span>  - <span style="color:#ff6ac1">name</span>: test httpd access
 </span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">uri</span>:
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">url</span>: http://ansible1</span></span></code></pre></div>
-<h3 id="verbose-output-options">Verbose output options</h3>
+<h3 id="verbose-output-options">Verbose output options<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>You can increase the output of verbosity to an amount hitherto undreamt of. This can be useful for troubleshooting.</p>
 <p>Verbose output of the playbook above showing task results:
 <code>[ansible@control base]$ ansible-playbook -v playbook.yaml </code></p>
@@ -435,10 +386,10 @@
 <code>[ansible@control base]$ ansible-playbook -vvv playbook.yaml </code></p>
 <p>Verbose output of the playbook above showing task results, task configuration, and info about connections to managed hosts, plug-ins, user accounts, and executed scripts:
 <code>[ansible@control base]$ ansible-playbook -vvvv playbook.yaml </code></p>
-<h3 id="lab-playbook">Lab playbook</h3>
+<h3 id="lab-playbook">Lab playbook<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Now we know enough to create and enable a simple webserver. Here is a playbook example. Just make sure to download the posix collection or you won&rsquo;t be able to use the firewalld module:
 <code>[ansible@control base]$ ansible-galaxy collection install ansible.posix</code></p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>[ansible@control base]$ cat playbook.yaml 
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>[ansible@control base]$ cat playbook.yaml 
 </span></span><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>- <span style="color:#ff6ac1">name</span>: Enable web server 
 </span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">hosts</span>: ansible1
@@ -481,7 +432,7 @@
 </span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">status_code</span>: <span style="color:#ff9f43">200</span> &lt;--</span></span></code></pre></div>
 <p>After running this playbook, you should be able to reach the webserver at http://ansible1</p>
 <p>With return content and status code</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>ok: [localhost] =&gt; {&#34;accept_ranges&#34;: &#34;bytes&#34;, &#34;changed&#34;: false, &#34;connection&#34;: &#34;close&#34;, &#34;content&#34;: &#34;Welcome to the webserver!\n&#34;, &#34;content_length&#34;: &#34;26&#34;, &#34;content_type&#34;: &#34;text/html; charset=UTF-8&#34;, &#34;cookies&#34;: {}, &#34;cookies_string&#34;: &#34;&#34;, &#34;date&#34;: &#34;Thu, 10 Apr 2025 12:12:37 GMT&#34;, &#34;elapsed&#34;: 0, &#34;etag&#34;: &#34;\&#34;1a-6326b4cfb4042\&#34;&#34;, &#34;last_modified&#34;: &#34;Thu, 10 Apr 2025 11:58:14 GMT&#34;, &#34;msg&#34;: &#34;OK (26 bytes)&#34;, &#34;redirected&#34;: false, &#34;server&#34;: &#34;Apache/2.4.62 (Red Hat Enterprise Linux)&#34;, &#34;status&#34;: 200, &#34;url&#34;: &#34;http://ansible1&#34;}</code></pre></div>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>ok: [localhost] =&gt; {&#34;accept_ranges&#34;: &#34;bytes&#34;, &#34;changed&#34;: false, &#34;connection&#34;: &#34;close&#34;, &#34;content&#34;: &#34;Welcome to the webserver!\n&#34;, &#34;content_length&#34;: &#34;26&#34;, &#34;content_type&#34;: &#34;text/html; charset=UTF-8&#34;, &#34;cookies&#34;: {}, &#34;cookies_string&#34;: &#34;&#34;, &#34;date&#34;: &#34;Thu, 10 Apr 2025 12:12:37 GMT&#34;, &#34;elapsed&#34;: 0, &#34;etag&#34;: &#34;\&#34;1a-6326b4cfb4042\&#34;&#34;, &#34;last_modified&#34;: &#34;Thu, 10 Apr 2025 11:58:14 GMT&#34;, &#34;msg&#34;: &#34;OK (26 bytes)&#34;, &#34;redirected&#34;: false, &#34;server&#34;: &#34;Apache/2.4.62 (Red Hat Enterprise Linux)&#34;, &#34;status&#34;: 200, &#34;url&#34;: &#34;http://ansible1&#34;}</code></pre></div>
 <p>Adds this: <code>&quot;content&quot;: &quot;Welcome to the webserver!\n&quot;</code> and this: <code>&quot;status&quot;: 200, &quot;url&quot;: &quot;http://ansible1&quot;}</code> to verbose output for that task.</p>
 
   <footer class="footline">
@@ -594,8 +545,8 @@
             <li class="" data-nav-url="/about/"><a class="padding" href="/about/"><i class='fas fa-solid fa-circle-info'></i> About</a></li>
             <li class="" data-nav-url="https://www.youtube.com/@linuxreader"><a class="padding" href="https://www.youtube.com/@linuxreader" rel="external" target="_blank"><i class='fas fa-fw fa-play'></i> YouTube</a></li>
             <li class="" data-nav-url="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact</a></li>
-            <li class="" data-nav-url="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
-            <li class="" data-nav-url="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
+            <li class="" data-nav-url="https://github.com/davidwritesxyz"><a class="padding" href="https://github.com/davidwritesxyz" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub</a></li>
+            <li class="" data-nav-url="https://linkedin.com/in/davidwritesxyz/"><a class="padding" href="https://linkedin.com/in/davidwritesxyz/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn</a></li>
           </ul>
         </div>
         <div id="R-footer-margin"></div>
@@ -621,23 +572,23 @@
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/js-yaml/js-yaml.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-color.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-dispatch.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-drag.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-ease.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-interpolate.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-selection.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-timer.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-transition.min.js?1765108594" defer></script>
-    <script src="/js/d3/d3-zoom.min.js?1765108594" defer></script>
+    <script src="/js/js-yaml/js-yaml.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-color.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-dispatch.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-drag.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-ease.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-interpolate.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-selection.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-timer.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-transition.min.js?1766587782" defer></script>
+    <script src="/js/d3/d3-zoom.min.js?1766587782" defer></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"theme\": \"default\" }");
     </script>
-    <script src="/js/clipboard/clipboard.min.js?1765108594" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1765108594" defer></script>
-    <script src="/js/theme.min.js?1765108594" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766587782" defer></script>
+    <script src="/js/theme.js?1766587782" defer></script><script async src="https://eomail5.com/form/d37e6864-cf88-11f0-8615-fbed900cb19e.js" data-form="d37e6864-cf88-11f0-8615-fbed900cb19e"></script>
 
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

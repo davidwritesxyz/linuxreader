@@ -177,6 +177,10 @@
   --INTERNAL-BOX-INFO-TEXT-color: var(--BOX-INFO-TEXT-color, var(--INTERNAL-BOX-BLUE-TEXT-color));
   --INTERNAL-BOX-INFO-CAPTION-color: var(--BOX-INFO-CAPTION-color, var(--INTERNAL-BOX-BLUE-CAPTION-color));
   --INTERNAL-BOX-INFO-BG-color: var(--BOX-INFO-BG-color, var(--INTERNAL-BOX-BLUE-BG-color));
+  --INTERNAL-BOX-INLINE-color: var(--BOX-INLINE-color, var(--INTERNAL-CODE-INLINE-BG-color));
+  --INTERNAL-BOX-INLINE-TEXT-color: var(--BOX-INLINE-TEXT-color, var(--INTERNAL-CODE-INLINE-BG-color));
+  --INTERNAL-BOX-INLINE-CAPTION-color: var(--BOX-INLINE-CAPTION-color, var(--INTERNAL-CODE-INLINE-color));
+  --INTERNAL-BOX-INLINE-BG-color: var(--BOX-INLINE-BG-color, var(--INTERNAL-CODE-INLINE-color));
   --INTERNAL-BOX-MAGENTA-color: var(--BOX-MAGENTA-color, rgba( 229, 50, 210, 1 ));
   --INTERNAL-BOX-MAGENTA-TEXT-color: var(--BOX-MAGENTA-TEXT-color, var(--INTERNAL-BOX-TEXT-color));
   --INTERNAL-BOX-MAGENTA-CAPTION-color: var(--BOX-MAGENTA-CAPTION-color, var(--INTERNAL-BOX-CAPTION-color));
@@ -1593,14 +1597,14 @@ div.highlight {
   position: relative;
 }
 /* we may have special treatment if highlight shortcode was used in table lineno mode */
-div.highlight > div {
+div.highlight > div:not(.actionbar) {
   background-color: var(--INTERNAL-CODE-BLOCK-BG-color);
   border-color: var(--INTERNAL-CODE-BLOCK-BORDER-color);
   border-style: solid;
   border-width: 1px;
 }
 /* remove default style for usual markdown tables */
-div.highlight > div table {
+div.highlight > div:not(.actionbar) table {
   background-color: transparent;
   border-width: 0;
   margin: 0;
@@ -1615,27 +1619,27 @@ tr:has(th) {
   top: -1px;
   z-index: 110;
 }
-div.highlight > div td {
+div.highlight > div:not(.actionbar) td {
   border-width: 0;
 }
-#R-body div.highlight > div a {
+#R-body div.highlight > div:not(.actionbar) a {
   line-height: inherit;
 }
-#R-body div.highlight > div a:after {
+#R-body div.highlight > div:not(.actionbar) a:after {
   display: none;
 }
 /* disable selection for lineno cells */
-div.highlight > div td:first-child:not(:last-child),
+div.highlight > div:not(.actionbar) td:first-child:not(:last-child),
 div.highlight > span[id] {
   -webkit-user-select: none;
   user-select: none;
 }
 /* increase code column to full width if highlight shortcode was used in table lineno mode  */
-div.highlight > div td:not(:first-child):last-child {
+div.highlight > div:not(.actionbar) td:not(:first-child):last-child {
   width: 100%;
 }
 /* add scrollbars if highlight shortcode was used in table lineno mode */
-div.highlight > div table {
+div.highlight > div:not(.actionbar) table {
   display: block;
   overflow: auto;
 }
@@ -1649,23 +1653,23 @@ div.highlight.wrap-code pre:not(.mermaid) code {
   white-space: pre-wrap;
 }
 /* remove border from row cells if highlight shortcode was used in table lineno mode */
-div.highlight > div td > pre:not(.mermaid) {
+div.highlight > div:not(.actionbar) td > pre:not(.mermaid) {
   border-radius: 0;
   border-width: 0;
 }
 /* in case of table lineno mode we want to move each row closer together - besides the edges
 this usually applies only to wrapfix tables but it doesn't hurt for non-wrapfix tables too */
-div.highlight > div tr:not(:first-child) pre:not(.mermaid) {
+div.highlight > div:not(.actionbar) tr:not(:first-child) pre:not(.mermaid) {
   padding-top: 0;
 }
-div.highlight > div tr:not(:last-child) pre:not(.mermaid) {
+div.highlight > div:not(.actionbar) tr:not(:last-child) pre:not(.mermaid) {
   padding-bottom: 0;
 }
 /* in case of table lineno mode we want to move each columns closer together on the inside */
-div.highlight > div td:first-child:not(:last-child) pre:not(.mermaid) {
+div.highlight > div:not(.actionbar) td:first-child:not(:last-child) pre:not(.mermaid) {
   padding-right: 0;
 }
-div.highlight > div td:not(:first-child):last-child pre:not(.mermaid) {
+div.highlight > div:not(.actionbar) td:not(:first-child):last-child pre:not(.mermaid) {
   padding-left: 0;
 }
 
@@ -1702,145 +1706,57 @@ tbody > tr:nth-child(even) > td {
   background-color: rgba(134, 134, 134, 0.045);
 }
 
-.tooltipped {
-  position: relative;
+/* Toast Notification System */
+#toast-container {
+  align-items: center;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  left: 50%;
+  pointer-events: none;
+  position: fixed;
+  transform: translateX(-50%);
+  z-index: 200;
 }
 
-.tooltipped:after {
-  background: rgba(0, 0, 0, 1);
-  border: 1px solid rgba(119, 119, 119, 1);
-  border-radius: 3px;
-  color: rgba(255, 255, 255, 1);
-  content: attr(aria-label);
-  display: none;
-  font-family: var(--INTERNAL-MAIN-font);
-  font-size: 0.6875rem;
-  font-weight: 700;
-  -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.5;
-  padding: 5px 8px;
-  pointer-events: none;
-  position: absolute;
+.toast {
+  animation: toast-slide-in 0.3s ease-out;
+  background-color: var(--INTERNAL-PRIMARY-color);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: var(--MAIN-BG-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  max-width: 90vw;
+  padding: 0.75rem 1.25rem;
+  pointer-events: auto;
   text-align: center;
-  text-decoration: none;
-  text-shadow: none;
-  text-transform: none;
-  white-space: pre;
-  word-wrap: break-word;
-  z-index: 140;
+  width: max-content;
 }
 
-.tooltipped:before {
-  border: 5px solid transparent;
-  color: rgba(0, 0, 0, 1);
-  content: '';
-  display: none;
-  height: 0;
-  pointer-events: none;
-  position: absolute;
-  width: 0;
-  z-index: 150;
+.toast.toast-hiding {
+  animation: toast-fade-out 0.3s ease-in forwards;
 }
 
-.tooltipped:hover:before,
-.tooltipped:hover:after,
-.tooltipped:active:before,
-.tooltipped:active:after,
-.tooltipped:focus:before,
-.tooltipped:focus:after {
-  display: inline-block;
-  text-decoration: none;
+@keyframes toast-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.tooltipped-s:after,
-.tooltipped-se:after,
-.tooltipped-sw:after {
-  margin-top: 5px;
-  right: 50%;
-  top: 100%;
-}
-
-.tooltipped-s:before,
-.tooltipped-se:before,
-.tooltipped-sw:before {
-  border-bottom-color: rgba(0, 0, 0, 0.8);
-  bottom: -5px;
-  margin-right: -5px;
-  right: 50%;
-  top: auto;
-}
-
-.tooltipped-se:after {
-  left: 50%;
-  margin-left: -15px;
-  right: auto;
-}
-
-.tooltipped-sw:after {
-  margin-right: -15px;
-}
-
-.tooltipped-n:after,
-.tooltipped-ne:after,
-.tooltipped-nw:after {
-  bottom: 100%;
-  margin-bottom: 5px;
-  right: 50%;
-}
-
-.tooltipped-n:before,
-.tooltipped-ne:before,
-.tooltipped-nw:before {
-  border-top-color: rgba(0, 0, 0, 0.8);
-  bottom: auto;
-  margin-right: -5px;
-  right: 50%;
-  top: -5px;
-}
-
-.tooltipped-ne:after {
-  left: 50%;
-  margin-left: -15px;
-  right: auto;
-}
-
-.tooltipped-nw:after {
-  margin-right: -15px;
-}
-
-.tooltipped-s:after,
-.tooltipped-n:after {
-  transform: translateX(50%);
-}
-
-.tooltipped-w:after {
-  bottom: 50%;
-  margin-right: 5px;
-  right: 100%;
-  transform: translateY(50%);
-}
-
-.tooltipped-w:before {
-  border-left-color: rgba(0, 0, 0, 0.8);
-  bottom: 50%;
-  left: -5px;
-  margin-top: -5px;
-  top: 50%;
-}
-
-.tooltipped-e:after {
-  bottom: 50%;
-  left: 100%;
-  margin-left: 5px;
-  transform: translateY(50%);
-}
-
-.tooltipped-e:before {
-  border-right-color: rgba(0, 0, 0, 0.8);
-  bottom: 50%;
-  margin-top: -5px;
-  right: -5px;
-  top: 50%;
+@keyframes toast-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 #R-topbar {
@@ -1945,16 +1861,26 @@ html[dir='rtl'] .topbar-button-next i {
 }
 
 .topbar-breadcrumbs {
-  flex-grow: 1;
   margin: 0;
-  padding: 0 calc(1rem - 2px);
+  padding: 0 calc(0.9em - 2px);
 }
 @media screen and (max-width: 47.999rem) {
   .topbar-breadcrumbs {
-    /* we just hide the breadcrumbs instead of display: none;
-        this makes sure that the breadcrumbs are still usable for
-        accessability */
-    visibility: hidden;
+    text-align: center;
+  }
+  .topbar-breadcrumbs li:has(> a) {
+    /* same as .a11y-only */
+    /* idea taken from https://www.filamentgroup.com/lab/a11y-form-labels.html */
+    clip-path: polygon(0 0, 1px 0, 1px 1px, 0 1px);
+    overflow: hidden;
+    position: absolute;
+    height: 1px;
+    transform: translateY(-100%);
+    transition: transform 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    -webkit-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: 1px;
   }
 }
 
@@ -2043,64 +1969,61 @@ span.copy-to-clipboard {
 
 code.copy-to-clipboard-code:has(+ .inline-copy-to-clipboard-button):after {
   display: inline-block;
-  width: calc(1.333em + var(--bpx1) * 0.125em);
+  width: calc(1.375em - var(--bpx1) * 0.125em);
   content: '';
 }
 
-.inline-copy-to-clipboard-button {
-  background-color: var(--INTERNAL-CODE-INLINE-BG-color);
-  border-color: var(--INTERNAL-CODE-INLINE-BORDER-color);
-  border-inline-start-style: solid;
-  border-inline-start-width: 1px;
-  color: var(--INTERNAL-CODE-INLINE-color);
-  cursor: pointer;
-  display: inline;
+.inline-copy-to-clipboard-button.btn.cstyle {
   font: initial;
   font-size: 0.934375em;
-  margin-inline-start: calc(-1 * (1.333em + var(--bpx1) * 0.125em));
+  margin-inline-start: calc(-1 * (1.375em - var(--bpx1) * 0.125em));
   position: relative;
   z-index: 10;
 }
-.inline-copy-to-clipboard-button:hover {
-  background-color: var(--INTERNAL-CODE-INLINE-color);
-  color: var(--INTERNAL-CODE-INLINE-BG-color);
+
+.inline-copy-to-clipboard-button.btn.cstyle > * {
+  border-start-start-radius: 0;
+  border-start-end-radius: 0.125em;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0.125em;
+  border-color: var(--INTERNAL-CODE-INLINE-BORDER-color);
+  padding: 0;
 }
 
-.block-copy-to-clipboard-button {
+.inline-copy-to-clipboard-button.btn.cstyle > * > i {
+  font-size: 0.859625em;
+  line-height: 1.375em;
+  width: 1.375em;
+}
+
+.actionbar {
+  display: none;
   inset-inline-end: 4px;
   position: absolute;
   top: 4px;
 }
 
-.block-copy-to-clipboard-button.btn {
-  /* only show copy to clipboard on hover for code blocks if configured */
-  display: none;
+.disableHoverBlockCopyToClipBoard .actionbar {
+  display: block;
 }
+
+.actionbar-wrapper:hover .actionbar,
+.actionbar-wrapper:focus-within .actionbar,
+.actionbar:has(:hover),
+.actionbar:has(:active),
+.actionbar:has(:focus) {
+  display: block;
+}
+
 @media (any-hover: none) {
-  /* if there is at least one input device that does not support hover, we want to force the copy button */
-  .block-copy-to-clipboard-button.btn {
+  /* if at least one input device does not support hover, force actionbar to be visible */
+  .actionbar {
     display: block;
   }
 }
-div.highlight:focus-within .block-copy-to-clipboard-button.btn,
-div.highlight .block-copy-to-clipboard-button.btn:active,
-div.highlight:hover .block-copy-to-clipboard-button.btn {
-  display: block;
-}
-.disableHoverBlockCopyToClipBoard div.highlight .block-copy-to-clipboard-button.btn {
-  display: block;
-}
+
 .force-display {
   display: block !important;
-}
-.inline-copy-to-clipboard-button > i {
-  font-size: 0.859625em;
-  padding-left: 0.333em;
-  padding-right: 0.333em;
-}
-
-.block-copy-to-clipboard-button > i {
-  width: 2em;
 }
 
 option {
@@ -2180,27 +2103,12 @@ html[dir='rtl'] .expand[open] > .box-label > i.expander-icon {
   cursor: grab;
 }
 
-.svg-reset-button {
-  inset-inline-end: 4px;
-  position: absolute;
-  top: 4px;
-}
-
 .svg-reset-button.btn {
   display: none;
 }
-.mermaid:hover .svg-reset-button.btn.zoomed {
-  display: block;
-}
-@media (any-hover: some) {
-  /* if there is at least one input device that does not support hover, we want to force the reset button if zoomed */
-  .svg-reset-button.btn.zoomed {
-    display: block;
-  }
-}
 
-.svg-reset-button > i {
-  width: 2em;
+.svg-reset-button.btn.zoomed {
+  display: block;
 }
 
 .mermaid-code {
@@ -2374,7 +2282,7 @@ i.cstyle {
   background-color: var(--VARIABLE-BOX-color);
   border-radius: 4px;
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: 0;
@@ -2416,24 +2324,46 @@ i.cstyle {
   border-style: solid;
   border-width: 1px;
   color: var(--VARIABLE-BOX-CAPTION-color);
-  padding: 6px 12px;
+  padding: 0.4em 0.5em;
   text-align: center;
   touch-action: manipulation;
   -webkit-user-select: none;
   user-select: none;
   white-space: nowrap;
 }
-button.btn.noborder,
+
+.btn > *:has(> i.fa-fw.fa-lg) {
+  padding: 0.2em;
+}
+
+.btn > * > i.fa-fw {
+  /* fa-fw makes rectangles instead of squares, so we adjust back, hopefully no icon exceeds that area */
+  width: 1.1em;
+}
+
+.btn > * > i.fa-fw.fa-lg {
+  /* fa-lg makes rectangles instead of squares, so we adjust back, hopefully no icon exceeds that area */
+  line-height: 1.375em;
+  width: 1.375em;
+}
+
+.btn > * > i + .title {
+  padding-inline-start: 0.1em;
+}
+
 .btn.noborder > * {
   border-color: transparent !important;
 }
 .btn.notitle > * {
-  padding: 6px;
+  padding: 0.4em;
 }
 
-.btn > *:after {
+.btn.notitle.noicon > *:after {
   /* avoid breakage if no content is given */
   content: '\200b';
+  display: block;
+  min-height: 1.1em;
+  min-width: 1.1em;
 }
 
 #R-body #R-body-inner .btn > *.highlight:after {
@@ -2474,14 +2404,9 @@ button.btn.noborder,
 
 /* anchors */
 .anchor {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  color: var(--VARIABLE-LINK-color);
-  cursor: pointer;
   font-size: 0.5em;
-  margin-inline-start: 0.66em;
-  margin-top: 0.9em;
+  margin-inline-start: 0.3em;
+  margin-top: 0.55em;
   position: absolute;
   visibility: hidden;
 }
@@ -2491,12 +2416,6 @@ button.btn.noborder,
     visibility: visible;
   }
 }
-.anchor:hover,
-.anchor:active,
-.anchor:focus {
-  color: var(--VARIABLE-LINK-HOVER-color);
-}
-
 h2:hover .anchor,
 h3:hover .anchor,
 h4:hover .anchor,
@@ -3719,6 +3638,13 @@ body[data-theme='dark'] .card-container .card:hover,
   --VARIABLE-BOX-TEXT-color: var(--INTERNAL-BOX-INFO-TEXT-color);
   --VARIABLE-BOX-CAPTION-color: var(--INTERNAL-BOX-INFO-CAPTION-color);
   --VARIABLE-BOX-BG-color: var(--INTERNAL-BOX-INFO-BG-color);
+}
+
+.cstyle.inline {
+  --VARIABLE-BOX-color: var(--INTERNAL-BOX-INLINE-color);
+  --VARIABLE-BOX-TEXT-color: var(--INTERNAL-BOX-INLINE-TEXT-color);
+  --VARIABLE-BOX-CAPTION-color: var(--INTERNAL-BOX-INLINE-CAPTION-color);
+  --VARIABLE-BOX-BG-color: var(--INTERNAL-BOX-INLINE-BG-color);
 }
 
 .cstyle.magenta {
