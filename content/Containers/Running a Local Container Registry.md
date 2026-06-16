@@ -15,7 +15,6 @@ draft: true
 - Must define a destination directory to host all image layers and metadata. 
 - `5000/tcp` is default port for this service. 
 
-
 - Can use Podman or its companion tools, Buildah or Skopeo to push to a registry. 
 - With Skopeo,  we do not even need to scope the image name with the registry name.
 
@@ -26,34 +25,79 @@ containers-storage:localhost/minimal_httpd \
 docker://localhost:5000/minimal_httpd 
 ```
 
-Notice the use of `--dest-tls-verify=false`: this is necessary since the local registry doesn\'t have TLS or a trusted certificate; it provides an HTTP transport by default.
-
-Despite being simple to implement, the default registry configuration has some limitations that must be addressed. To illustrate one of those limitations, let\'s try to delete the just-uploaded image:
-
-``` 
-$ skopeo delete \ --tls-verify=false \ docker://localhost:5000/minimal_httpd
-
-FATA[0000] Failed to delete /v2/minimal_httpd/manifests/sha256:f8c0c374cf124e728e20045f327de30ce1f3c552b307945de9b911cbee103522: {"errors":[{"code":"UNSUPPORTED","message":"The operation is unsupported."}]} (405 Method Not Allowed) 
-```
-
-As we can see in the previous output, the registry did not allow us to delete the image, returning an HTTP` 405` error message. To alter this behavior, we need to edit the registry configuration.
+`--dest-tls-verify=false`
+- Necessary since the local registry doesn't have TLS or a trusted certificate; it provides an HTTP transport by default.
 
 ## Customizing the registry configuration 
 
 The registry configuration file (`/etc/docker/registry/config.yml`) can be modified to alter its behavior. The default content of this file is the following:
 
-```
-version: 0.1 log: fields: service: registry storage: cache: blobdescriptor: inmemory filesystem: rootdirectory: /var/lib/registry http: addr: :5000 headers: X-Content-Type-Options: [nosniff] health: storagedriver: enabled: true interval: 10s threshold: 3 
+```yml
+version: 0.1
+
+log:
+  fields:
+    service: registry
+
+storage:
+  cache:
+    blobdescriptor: inmemory
+  filesystem:
+    rootdirectory: /var/lib/registry
+
+http:
+  addr: :5000
+  headers:
+    X-Content-Type-Options: [nosniff]
+
+health:
+  storagedriver:
+    enabled: true
+    interval: 10s
+    threshold: 3
 ```
 
-We soon realize that this is an extremely basic configuration with no authentication, no allowed deletion of images, and no TLS encryption. Our custom version will try to address those limitations.
-
-The full documentation about the registry configuration has a wide range of options that we\'re not mentioning here since it is out of the scope of this book. More configuration options can be found at this link: https://docs.docker.com/registry/configuration/.
+Default config has no:
+- authentication
+- allowed deletion of images
+- no TLS encryption. 
 
 The following file contains a modified version of the `config.yml` registry (`Chapter09/local_registry/customizations/config.yml`):
 
-``` 
-version: 0.1 log: fields: service: registry storage: cache: blobdescriptor: inmemory filesystem: rootdirectory: /var/lib/registry delete: enabled: true auth: htpasswd: realm: basic-realm path: /var/lib/htpasswd http: addr: :5000 headers: X-Content-Type-Options: [nosniff] tls: certificate: /etc/pki/certs/tls.crt key: /etc/pki/certs/tls.key health: storagedriver: enabled: true interval: 10s threshold: 3 
+```yml
+version: 0.1
+
+log:
+  fields:
+    service: registry
+
+storage:
+  cache:
+    blobdescriptor: inmemory
+  filesystem:
+    rootdirectory: /var/lib/registry
+  delete:
+    enabled: true
+
+auth:
+  htpasswd:
+    realm: basic-realm
+    path: /var/lib/htpasswd
+
+http:
+  addr: :5000
+  headers:
+    X-Content-Type-Options: [nosniff]
+  tls:
+    certificate: /etc/pki/certs/tls.crt
+    key: /etc/pki/certs/tls.key
+
+health:
+  storagedriver:
+    enabled: true
+    interval: 10s
+    threshold: 3
+
 ```
 
 The highlighted sections in the previous example emphasize the following added features:
@@ -78,15 +122,21 @@ Bounding certificates to the `localhost` CN is a frequent practice in developmen
 
 The following example shows how to create a self-signed certificate with the `openssl` utility:
 
-``` $ mkdir certs $ openssl req -newkey rsa:4096 -x509 -sha256 -nodes \ -days 365 \ -out certs/tls.crt \ -keyout certs/tls.key \ -subj '/CN=localhost' \ -addext "subjectAltName=DNS:localhost" ```
+```bash
+$ mkdir certs 
+$ openssl req -newkey rsa:4096 -x509 -sha256 -nodes \
+	-days 365 \
+	-out certs/tls.crt \
+	-keyout certs/tls.key \
+	-subj '/CN=localhost' \
+	-addext "subjectAltName=DNS:localhost" 
+```
 
 The command will issue non-interactive certificate generation, without any extra information about the certificate subject. The `tls.key` private key is generated using a 4,096-bit RSA algorithm. The certificate, named `tls.crt`, is set to expire after 1 year. Both the key and certificate are written inside the `certs` directory.
 
-To inspect the content of the generated certificate, we can run the following command:
-
+Inspect the content of the generated certificate:  
 ``` $ openssl x509 -in certs/tls.crt -text -noout ```
 
-The command will produce a human-readable dump of the certificate data and validity.
 
  packt_tip **Hint**
 
@@ -104,7 +154,14 @@ The next command shows how to run the new custom registry using bind mounts to p
 
 ```
 # podman volume create registry_data
-# podman run -d --name local_registry \ -p 5000:5000 \ -v $PWD/htpasswd:/var/lib/htpasswd:z \ -v $PWD/config.yml:/etc/docker/registry/config.yml:z \ -v registry_data:/var/lib/registry:Z \ -v $PWD/certs:/etc/pki/certs:z \ --restart=always \ registry:2 
+# podman run -d --name local_registry \
+-p 5000:5000 \
+-v $PWD/htpasswd:/var/lib/htpasswd:z \
+-v $PWD/config.yml:/etc/docker/registry/config.yml:z \
+-v registry_data:/var/lib/registry:Z \
+-v $PWD/certs:/etc/pki/certs:z \
+--restart=always \
+registry:2 
 ```
 
 We can now test the login to the remote registry using the previously defined credentials:

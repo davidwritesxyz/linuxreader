@@ -1,6 +1,6 @@
 # 
 
-# Introducing Buildah, Podman\'s companion 
+# Introducing Buildah, Podman's companion 
 
 Podman does an excellent job in plain builds with Dockerfiles/Containerfiles and helps teams to preserve their previously implemented build pipelines without the need for new investments.
 

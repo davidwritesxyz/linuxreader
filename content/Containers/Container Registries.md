@@ -1,6 +1,7 @@
 ---
 title: Container Registries 
-draft: true
+summary: Basic container registry info
+draft: false
 ---
 
 # Pushing Images to a Container Registry 

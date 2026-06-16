@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools</title>
-    <link>https://www.linuxreader.com/tools/</link>
+    <link>http://localhost:1313/tools/</link>
     <description>How to Remove Formatting From Ebook Highlights With Vim&#xD;Removing extra stuff from Bookfusion and Foliate exported highlights&#xD;Calibre Web with Docker and NGINX&#xD;Setting up your own Calibre Web server using Docker and NGINX&#xD;You Need to Learn Man Pages&#xD;You need to be using man pages. Here is how. A short guide to using Man Pages&#xD;Proxmox PfSense HaProxy Setup&#xD;Access Proxmox PVE GUI through HaProxy on PfSense&#xD;Calibre Web with Docker and NGINX&#xD;Setting up your own Calibre Web server using Docker and NGINX&#xD;How to Build a website With Hugo&#xD;Guide for setting up a static website with Hugo&#xD;How to Process Bookfusion Highlights with Vim&#xD;Removing extra stuff from Bookfusion exported highlights&#xD;How to Set Up Hugo Relearn Theme&#xD;Hugo Relearn setup guide&#xD;Learning Touch Typing&#xD;Learning touch typing&#xD;Nextcloud on RHEL Based Systems&#xD;Nextcloud setup guide on a RHEL based server&#xD;Self hosting a Nextcloud Server&#xD;Self hosting a Nextcloud server&#xD;Vim Guide&#xD;Guide to using Vim</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.linuxreader.com/tools/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Remove Formatting From Ebook Highlights With Vim</title>
-      <link>https://www.linuxreader.com/tools/remove-formatting-from-highlights/</link>
+      <link>http://localhost:1313/tools/remove-formatting-from-highlights/</link>
       <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/tools/remove-formatting-from-highlights/</guid>
+      <guid>http://localhost:1313/tools/remove-formatting-from-highlights/</guid>
       <description>Removing extra stuff from Bookfusion and Foliate exported highlights</description>
     </item>
     <item>
       <title>Calibre Web with Docker and NGINX</title>
-      <link>https://www.linuxreader.com/tools/calibre-web-docker-nginx/</link>
+      <link>http://localhost:1313/tools/calibre-web-docker-nginx/</link>
       <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/tools/calibre-web-docker-nginx/</guid>
+      <guid>http://localhost:1313/tools/calibre-web-docker-nginx/</guid>
       <description>Setting up your own Calibre Web server using Docker and NGINX</description>
     </item>
     <item>
       <title>You Need to Learn Man Pages</title>
-      <link>https://www.linuxreader.com/tools/you-need-to-learn-man-pages/</link>
+      <link>http://localhost:1313/tools/you-need-to-learn-man-pages/</link>
       <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/tools/you-need-to-learn-man-pages/</guid>
+      <guid>http://localhost:1313/tools/you-need-to-learn-man-pages/</guid>
       <description>You need to be using man pages. Here is how. A short guide to using Man Pages</description>
     </item>
     <item>
       <title>Proxmox PfSense HaProxy Setup</title>
-      <link>https://www.linuxreader.com/tools/proxmox-ha-proxy-setup/</link>
+      <link>http://localhost:1313/tools/proxmox-ha-proxy-setup/</link>
       <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/tools/proxmox-ha-proxy-setup/</guid>
+      <guid>http://localhost:1313/tools/proxmox-ha-proxy-setup/</guid>
       <description>Access Proxmox PVE GUI through HaProxy on PfSense</description>
     </item>
     <item>
       <title>Calibre Web with Docker and NGINX</title>
-      <link>https://www.linuxreader.com/tools/calibre-web-with-docker-and-nginx/</link>
+      <link>http://localhost:1313/tools/calibre-web-with-docker-and-nginx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/tools/calibre-web-with-docker-and-nginx/</guid>
+      <guid>http://localhost:1313/tools/calibre-web-with-docker-and-nginx/</guid>
       <description>Setting up your own Calibre Web server using Docker and NGINX</description>
     </item>
     <item>
       <title>How to Build a website With Hugo</title>
-      <link>https://www.linuxreader.com/tools/how-to-build-a-website-with-hugo/</link>
+      <link>http://localhost:1313/tools/how-to-build-a-website-with-hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/tools/how-to-build-a-website-with-hugo/</guid>
+      <guid>http://localhost:1313/tools/how-to-build-a-website-with-hugo/</guid>
       <description>Guide for setting up a static website with Hugo</description>
     </item>
     <item>
       <title>How to Process Bookfusion Highlights with Vim</title>
-      <link>https://www.linuxreader.com/tools/process-bookfusion-highlights/</link>
+      <link>http://localhost:1313/tools/process-bookfusion-highlights/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/tools/process-bookfusion-highlights/</guid>
+      <guid>http://localhost:1313/tools/process-bookfusion-highlights/</guid>
       <description>Removing extra stuff from Bookfusion exported highlights</description>
     </item>
     <item>
       <title>How to Set Up Hugo Relearn Theme</title>
-      <link>https://www.linuxreader.com/tools/how-to-set-up-hugo-relearn-theme/</link>
+      <link>http://localhost:1313/tools/how-to-set-up-hugo-relearn-theme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/tools/how-to-set-up-hugo-relearn-theme/</guid>
+      <guid>http://localhost:1313/tools/how-to-set-up-hugo-relearn-theme/</guid>
       <description>Hugo Relearn setup guide</description>
     </item>
     <item>
       <title>Learning Touch Typing</title>
-      <link>https://www.linuxreader.com/tools/learning-touch-typing/</link>
+      <link>http://localhost:1313/tools/learning-touch-typing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/tools/learning-touch-typing/</guid>
+      <guid>http://localhost:1313/tools/learning-touch-typing/</guid>
       <description>Learning touch typing</description>
     </item>
     <item>
       <title>Nextcloud on RHEL Based Systems</title>
-      <link>https://www.linuxreader.com/tools/nextcloud-on-rhel-based-systems/</link>
+      <link>http://localhost:1313/tools/nextcloud-on-rhel-based-systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/tools/nextcloud-on-rhel-based-systems/</guid>
+      <guid>http://localhost:1313/tools/nextcloud-on-rhel-based-systems/</guid>
       <description>Nextcloud setup guide on a RHEL based server</description>
     </item>
     <item>
       <title>Self hosting a Nextcloud Server</title>
-      <link>https://www.linuxreader.com/tools/setting-up-a-self-hosted-nextcloud-server/</link>
+      <link>http://localhost:1313/tools/setting-up-a-self-hosted-nextcloud-server/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/tools/setting-up-a-self-hosted-nextcloud-server/</guid>
+      <guid>http://localhost:1313/tools/setting-up-a-self-hosted-nextcloud-server/</guid>
       <description>Self hosting a Nextcloud server</description>
     </item>
     <item>
       <title>Vim Guide</title>
-      <link>https://www.linuxreader.com/tools/vimguide/</link>
+      <link>http://localhost:1313/tools/vimguide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/tools/vimguide/</guid>
+      <guid>http://localhost:1313/tools/vimguide/</guid>
       <description>Guide to using Vim</description>
     </item>
   </channel>

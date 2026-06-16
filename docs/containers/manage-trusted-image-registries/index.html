@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html id="R-html" lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.154.5">
+    <meta name="generator" content="Relearn 9.0.3">
+    <meta name="description" content="Managing Trusted Image Registires and creating Aliases">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Managing Trusted Image Registries">
+    <meta name="twitter:description" content="Managing Trusted Image Registires and creating Aliases">
+    <meta property="og:url" content="http://localhost:1313/containers/manage-trusted-image-registries/">
+    <meta property="og:title" content="Managing Trusted Image Registries">
+    <meta property="og:description" content="Managing Trusted Image Registires and creating Aliases">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Containers">
+    <meta itemprop="name" content="Managing Trusted Image Registries">
+    <meta itemprop="description" content="Managing Trusted Image Registires and creating Aliases">
+    <meta itemprop="wordCount" content="1078">
+    <title>Managing Trusted Image Registries</title>
+    <link href="/containers/manage-trusted-image-registries/index.md" rel="alternate" type="text/markdown" title="Managing Trusted Image Registries">
+    <link href="/images/favicon.svg?1781627881" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1781627881" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1781627881" defer></script>
+    <script src="/js/search-lunr.js?1781627881" defer></script>
+    <script src="/js/search.js?1781627881" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1781627881";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1781627881" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1781627881" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1781627881" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1781627881" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1781627881" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1781627881" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1781627881" rel="stylesheet">
+    <link href="/css/theme.css?1781627881" rel="stylesheet">
+    <link href="/css/format-html.css?1781627881" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/containers\/manage-trusted-image-registries\/';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'oled' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="d179743c-138a-4212-8906-28f70628ef95"></script>
+<style>
+:root {
+    --MENU-S-width: 15rem;
+    --MENU-M-width: 15rem;
+    --MENU-L-width: 18rem;
+    --MAIN-MAX-width: 100rem;
+}
+html {
+  zoom: 1.2;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+               "Apple Color Emoji", "Segoe UI Emoji" !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500 !important;
+  letter-spacing: 0.7px;
+}
+
+code, kbd, pre, samp {
+  font-family: "Fira Code", "Hack", "Source Code Pro", Consolas, Menlo, monospace !important;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+</style>
+
+  </head>
+  <body class="mobile-support html" data-origin="/containers/manage-trusted-image-registries/">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#registry-configuration-file-global-settings">Registry configuration file global settings</a></li>
+    <li><a href="#registries-and-mirrors">Registries and mirrors</a></li>
+    <li><a href="#aliases">Aliases</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/"><span itemprop="name">Linux Reader</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/containers/"><span itemprop="name">Containers</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Managing Trusted Image Registries</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/containers/manage-trusted-image-registries/index.md" title="Show Markdown"><i class="fa-fw fab fa-markdown"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/containers/intro-to-containers/" title="Introduction to Containers (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/containers/podman-links/" title="Podman Links (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable containers" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="managing-trusted-image-registries">Managing Trusted Image Registries</h1>
+
+<p><code>/etc/containers/registries.conf</code></p>
+<ul>
+<li>Overridden by the user-related <code>$HOME/.config/containers/registries.conf</code> file if present</li>
+<li>Manages a list of trusted registries that Podman can safely contact to search and pull images.</li>
+</ul>
+<p>Let's look at an example of this file:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>unqualified-search-registries = [&#34;docker.io&#34;, &#34;quay.io&#34;]
+
+[[registry]]
+location = &#34;registry.example.com:5000&#34; 
+insecure = false </code></pre></div>
+<ul>
+<li>Podman accepts both <strong>unqualified</strong> and <strong>fully</strong> <strong>qualified</strong> images.</li>
+</ul>
+<p><strong>fully qualified</strong></p>
+<ul>
+<li>Includes a registry server FQDN, namespace, image name, and tag.</li>
+<li>i.e. <code>docker.io/library/nginx:latest</code>
+<ul>
+<li>Has a full name that cannot be confused with any other Nginx image.</li>
+</ul>
+</li>
+</ul>
+<p><strong>unqualified image</strong></p>
+<ul>
+<li>Only includes the image&rsquo;s name.</li>
+<li>i.e. <code>nginx</code> image can have multiple instances in the searched registries.</li>
+<li>The majority of the images that result from the basic <code>podman search nginx</code> command will not be official and should be analyzed in detail to ensure they&rsquo;re trusted.
+<ul>
+<li>Output can be filtered by the <code>OFFICIAL</code> flag and by the number of stars</li>
+</ul>
+</li>
+</ul>
+<h2 id="registry-configuration-file-global-settings">Registry configuration file global settings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><code>unqualified-search-registry</code></p>
+<ul>
+<li>Defines the search list of registries for unqualified images.</li>
+<li>When the user runs the <code>podman search &lt;image_name&gt;</code> command, Podman will search across the registries defined in this list.</li>
+<li>By removing a registry from the list, Podman will stop searching the registry.</li>
+<li>Podman will still be able to pull a fully qualified image from a foreign registry.</li>
+</ul>
+<h2 id="registries-and-mirrors">Registries and mirrors<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p><code>[[registry]]</code></p>
+<ul>
+<li>Manage single registries and create matching patterns for specific images.</li>
+<li>The main settings of these tables:
+<ul>
+<li><code>prefix</code>
+<ul>
+<li>Used to define the image names and can support multiple formats.</li>
+<li>Can define images by following the <code>host[:port]/namespace[/_namespace_…]/repo(:_tag|@digest)</code> pattern.</li>
+<li>Simpler patterns, such as <code>host[:port]</code>, <code>host[:port]/namespace</code>, and even <code>[*.]host</code>, can be applied.</li>
+<li>Users can define a generic prefix for a registry or a more detailed prefix to match a specific image or tag.</li>
+<li>Given a fully qualified image, if two <code>[[registry]]</code> tables have a prefix with a partial match, the longest matching pattern will be used.</li>
+</ul>
+</li>
+<li><code>insecure</code>
+<ul>
+<li>Boolean value</li>
+<li>Allows unencrypted HTTP connections or TLS connections based on untrusted certificates.</li>
+</ul>
+</li>
+<li><code>blocked</code>
+<ul>
+<li>This is a Boolean (<code>true</code> or <code>false</code>) that's used to define blocked registries. If it's set to <code>true</code>, the registries or images that match the prefix are blocked.</li>
+</ul>
+</li>
+<li><code>location</code>
+<ul>
+<li>Defines the registry&rsquo;s location.</li>
+<li>By default, it is equal to <code>prefix</code></li>
+<li>A pattern that matches a custom prefix namespace will resolve to the <code>location</code> value.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><code>[[registry.mirror]]</code></p>
+<ul>
+<li>Provide alternate paths to the main registry or registry namespace.</li>
+<li>When multiple mirrors are provided, Podman will search across them first and then fall back to the location that&rsquo;s defined in the main <code>[[registry]]</code> table.</li>
+</ul>
+<p>The following example extends the previous one by defining a namespaced registry entry and its mirror:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>unqualified-search-registries = [&#34;docker.io&#34;, &#34;quay.io&#34;]
+
+[[registry]] 
+location = &#34;registry.example.com:5000/foo&#34; 
+insecure = false 
+
+[[registry.mirror]] 
+location = &#34;mirror1.example.com:5000/bar&#34; 
+
+[[registry.mirror]] 
+location = &#34;mirror2.example.com:5000/bar&#34; </code></pre></div>
+<p>According to this example, if a user tries to pull the image tagged as <code>registry.example.com:5000/foo/app:latest</code>, Podman will try <code>mirror1.example.com:5000/bar/app:latest</code>, then <code>mirror2.example.com:5000/bar/app:latest</code>, and fall back to <code>registry.example.com:5000/foo/app:latest</code> in case a failure occurs.</p>
+<p>Using a prefix provides even more flexibility. In the following example, all the images that match <code>example.com/foo</code> will be redirected to mirror locations and fall back to the main location at the end:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>unqualified-search-registries = [&#34;docker.io&#34;, &#34;quay.io&#34;] 
+
+[[registry]] 
+prefix = &#34;example.com/foo&#34; 
+location = &#34;registry.example.com:5000/foo&#34; 
+insecure = false 
+
+[[registry.mirror]] 
+location = &#34;mirror1.example.com:5000/bar&#34; 
+
+[[registry.mirror]] 
+location = &#34;mirror2.example.com:5000/bar&#34; </code></pre></div>
+<p>In this example, when we pull the <code>example.com/foo/app:latest</code> image, Podman will attempt <code>mirror1.example.com:5000/bar/app:latest</code>, followed by <code>mirror2.example.com:5000/bar/app:latest</code> and <code>registry.example.com:5000/foo/app:latest</code>.</p>
+<ul>
+<li>Possible to use mirroring for replacing public registries with private mirrors in disconnected environments.</li>
+</ul>
+<p>The following example remaps the <code>docker.io</code> and <code>quay.io</code> registries to a private mirror with different namespaces:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>[[registry]] 
+prefix=&#34;quay.io&#34; 
+location=&#34;mirror-internal.example.com/quay&#34; 
+
+[[registry]] 
+prefix=&#34;docker.io&#34; 
+location=&#34;mirror-internal.example.com/docker&#34; </code></pre></div>
+<ul>
+<li>
+<p>Mirror registries should be kept up to date with mirrored repositories.</p>
+</li>
+<li>
+<p>Administrators or SRE teams should implement an image sync policy to keep the repositories updated.</p>
+</li>
+<li>
+<p>Can block a source that is not considered trusted.</p>
+<ul>
+<li>Could impact a single image, a namespace, or a whole registry.</li>
+</ul>
+</li>
+</ul>
+<p>The following example tells Podman not to search for or pull images from a blocked registry:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>[[registry]] 
+location = &#34;registry.rogue.io&#34; 
+blocked = true </code></pre></div>
+<ul>
+<li>Can refine the blocking policy by passing a specific namespace without blocking the whole registry.</li>
+</ul>
+<p>In the following example, every image search or pull that matches the <code>quay.io/foo</code> namespace pattern defined in the <code>prefix</code> field is blocked:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>[[registry]] 
+prefix = &#34;quay.io/foo/&#34; 
+location = &#34;quay.io&#34; 
+blocked = true </code></pre></div>
+<ul>
+<li>Can define a very specific blocking rule for a single image or even a single tag by using the same approach that was described for namespaces.</li>
+</ul>
+<p>Block a specific image tag:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>[[registry]]
+prefix = &#34;internal-registry.example.com/dev/app:v0.1&#34; 
+location = &#34;internal-registry.example.com &#34; 
+blocked = true </code></pre></div>
+<ul>
+<li>
+<p>It is possible to combine many blocking rules and add mirror tables on top of them.</p>
+</li>
+<li>
+<p>A clever idea would be to keep the registry&rsquo;s configuration file updated using configuration management tools and declaratively apply the registry&rsquo;s filters.</p>
+</li>
+</ul>
+<h2 id="aliases">Aliases<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li><strong>Fully qualified image names</strong> (<strong>FQNs</strong>) can become quite long if we sum up the registry FQDN, namespace(s), repository, and tags.</li>
+<li>While using FQNs such as <code>quay.io/podman/stable:latest</code> is the gold standard for security and automation, they are often cumbersome to type manually.</li>
+<li>To bridge the gap between convenience and security, Podman utilizes a short-name aliasing system.</li>
+<li>Normally, when you provide an <em>unqualified</em> name (for example, <code>podman pull fedora</code>), Podman must iterate through a list of registries defined in the <code>[registries.search]</code> table of your configuration.</li>
+<li>This can be slow and, if not configured correctly, potentially insecure.</li>
+<li>Aliases change this behavior by short-circuiting the search.</li>
+<li>If a short name matches an entry in an alias table, Podman immediately resolves it to the specific, fully qualified name provided in the mapping, bypassing the search registry list entirely.</li>
+<li>On Fedora and RHEL, you don't have to build this list from scratch.</li>
+<li>The system comes pre-configured with an extensive library of trusted mappings located at the following:</li>
+</ul>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>/etc/containers/registries.conf.d/000-shortnames.conf </code></pre></div>
+<ul>
+<li>This file is maintained by the community and operating system vendors to ensure that common names point to their most logical and secure upstream sources.</li>
+<li>For example, an entry in this file might look as follows:</li>
+</ul>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>[aliases] 
+&#34;fedora&#34; = &#34;registry.fedoraproject.org/fedora&#34; 
+&#34;ubi8&#34; = &#34;registry.access.redhat.com/ubi8&#34; 
+&#34;alpine&#34; = &#34;docker.io/library/alpine&#34; </code></pre></div>
+<ul>
+<li>When an alias matches a short name, it is immediately used without the registries defined in the <code>unqualified-search-registries</code> list being searched.</li>
+<li>Can create custom files inside the <code>/etc/containers/registries.conf.d/</code> folder to define aliases without bloating the main configuration file.</li>
+<li>No tags or digests:
+<ul>
+<li>Aliases resolve the repository path, not a specific version.</li>
+<li>For example, if you alias <code>my-app</code> to <code>quay.io/org/my-app</code>, running <code>podman pull my-app:v2</code> will correctly resolve to <code>quay.io/org/my-app:v2</code>.</li>
+<li>The alias handles the prefix, while the tag remains dynamic.</li>
+</ul>
+</li>
+<li>Precedence:
+<ul>
+<li>Local user-defined aliases (often found in <code>$HOME/.config/containers/registries.conf.d/</code>) will typically override the global system aliases found in <code>/etc/containers/</code>.</li>
+</ul>
+</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation"><a href="https://linuxreader.com">
+  <img src="/images/linuxreader.svg" alt="Linux Reader" >
+</a>
+
+        <search><form action="/search/" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-fw fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/ansible/"><input type="checkbox" id="R-section-e5b911977d99c31c82b120cc3d2f2606" aria-controls="R-subsections-e5b911977d99c31c82b120cc3d2f2606"><label for="R-section-e5b911977d99c31c82b120cc3d2f2606"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Ansible</span></label><a class="padding default-animation" href="/ansible/"><i class="fa-solid fa-robot"></i> Ansible<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e5b911977d99c31c82b120cc3d2f2606" class="collapsible-menu">
+            <li class="" data-nav-id="/ansible/ansible-navigator/"><a class="padding" href="/ansible/ansible-navigator/">Ansible Navigator<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/install-ansible-using-uv/"><a class="padding" href="/ansible/install-ansible-using-uv/">How to Install Ansible Using uv<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/adhoccommands/"><a class="padding" href="/ansible/adhoccommands/">Ad Hoc Ansible Commands<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/inventory/"><a class="padding" href="/ansible/inventory/">Ansible Inventory and Ansible.cfg<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/playbooks/"><a class="padding" href="/ansible/playbooks/">Ansible Playbooks<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/roles/"><a class="padding" href="/ansible/roles/">Ansible Roles<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/ansible-vault/"><a class="padding" href="/ansible/ansible-vault/">Ansible Vault<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/ansibleconfig/"><a class="padding" href="/ansible/ansibleconfig/">Ansible.cfg<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/awx-minikube-install/"><a class="padding" href="/ansible/awx-minikube-install/">AWX MiniKube Install<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/boot-process/"><a class="padding" href="/ansible/boot-process/">Boot Process<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/deploying-files/"><a class="padding" href="/ansible/deploying-files/">Deploying files<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/encrypted-passwords/"><a class="padding" href="/ansible/encrypted-passwords/">Encrypted passwords<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/handlers/"><a class="padding" href="/ansible/handlers/">Handlers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/hostname-patterns/"><a class="padding" href="/ansible/hostname-patterns/">Host Name Patterns<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/include-and-import-files/"><a class="padding" href="/ansible/include-and-import-files/">Including and importing Files<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/jinja2/"><a class="padding" href="/ansible/jinja2/">Jinja2 templates<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/user-and-groups/"><a class="padding" href="/ansible/user-and-groups/">Manage Users and Groups with Ansible<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/packages-repos-and-subscriptions/"><a class="padding" href="/ansible/packages-repos-and-subscriptions/">Managing Packages, Repositories, and Subscriptions with Ansible<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/storage-partitions-and-lvm/"><a class="padding" href="/ansible/storage-partitions-and-lvm/">Managing Partitions and LVM<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/services/"><a class="padding" href="/ansible/services/">Managing Services with Ansible<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/optimize-ansible-processing/"><a class="padding" href="/ansible/optimize-ansible-processing/">Optimizing Ansible Processing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/selinux/"><a class="padding" href="/ansible/selinux/">SeLinux File Properties<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/ssh-connections/"><a class="padding" href="/ansible/ssh-connections/">SSH Connections<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/tags/"><a class="padding" href="/ansible/tags/">Using Ansible Tags<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/filters/"><a class="padding" href="/ansible/filters/">Using Filters in Ansible<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/loops-and-items/"><a class="padding" href="/ansible/loops-and-items/">Using Loops and Items<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/modules-for-troubleshooting/"><a class="padding" href="/ansible/modules-for-troubleshooting/">Using Modules for Troubleshooting and Testing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/variables/"><a class="padding" href="/ansible/variables/">Using Variables In Ansible<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/when/"><a class="padding" href="/ansible/when/">Using when to Run Tasks Conditionally<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/bash/"><input type="checkbox" id="R-section-4b42c24c987a75657a389c72aa61a56d" aria-controls="R-subsections-4b42c24c987a75657a389c72aa61a56d"><label for="R-section-4b42c24c987a75657a389c72aa61a56d"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Bash</span></label><a class="padding default-animation" href="/bash/"><i class="fa-fw fas fa-code"></i> Bash<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-4b42c24c987a75657a389c72aa61a56d" class="collapsible-menu">
+            <li class="" data-nav-id="/bash/bash-shell/"><a class="padding" href="/bash/bash-shell/">Bash<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/bash/shell-scripting/"><a class="padding" href="/bash/shell-scripting/">Shell Scripting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/boot/"><input type="checkbox" id="R-section-a53bfb333437907a8d5bdc636d15c75d" aria-controls="R-subsections-a53bfb333437907a8d5bdc636d15c75d"><label for="R-section-a53bfb333437907a8d5bdc636d15c75d"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Boot</span></label><a class="padding default-animation" href="/boot/"><i class="fa-solid fa-hourglass-start"></i> Boot<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-a53bfb333437907a8d5bdc636d15c75d" class="collapsible-menu">
+            <li class="" data-nav-id="/boot/boot-process-grub2-kernel/"><a class="padding" href="/boot/boot-process-grub2-kernel/">Boot Process, Grub2, and Kernel<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/boot/sys-init-logging-and-tuning/"><a class="padding" href="/boot/sys-init-logging-and-tuning/">System Initialization, Message Logging, and System Tuning<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent " data-nav-id="/containers/"><input type="checkbox" id="R-section-98e55644e7defe4a283b28e510b18cf5" aria-controls="R-subsections-98e55644e7defe4a283b28e510b18cf5" checked><label for="R-section-98e55644e7defe4a283b28e510b18cf5"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Containers</span></label><a class="padding default-animation" href="/containers/"><i class="fa-solid fa-cubes"></i> Containers<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-98e55644e7defe4a283b28e510b18cf5" class="collapsible-menu">
+            <li class="" data-nav-id="/containers/automating-wordpress-containers/"><a class="padding" href="/containers/automating-wordpress-containers/">Automating Wordpress Containers with Ansible and Podman<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/ansible-and-podman/"><a class="padding" href="/containers/ansible-and-podman/">Ansible and Podman<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/building-containers-with-containerfiles/"><a class="padding" href="/containers/building-containers-with-containerfiles/">Building Containers with Containerfiles<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/container-basics/"><a class="padding" href="/containers/container-basics/">Container Basics<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/container-registries/"><a class="padding" href="/containers/container-registries/">Container Registries<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/container-base-images/"><a class="padding" href="/containers/container-base-images/">Container Universal Base Images<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/intro-to-podman/"><a class="padding" href="/containers/intro-to-podman/">Containers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/customizing-podman/"><a class="padding" href="/containers/customizing-podman/">Customizing Podman&#39;s Behavior<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/distrobox/"><a class="padding" href="/containers/distrobox/">Distrobox Basics<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/installing-podman/"><a class="padding" href="/containers/installing-podman/">Installing Podman<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/intro-to-containers/"><a class="padding" href="/containers/intro-to-containers/">Introduction to Containers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="active " data-nav-id="/containers/manage-trusted-image-registries/"><a class="padding" href="/containers/manage-trusted-image-registries/">Managing Trusted Image Registries<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/podman-links/"><a class="padding" href="/containers/podman-links/">Podman Links<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/podman-quadlets/"><a class="padding" href="/containers/podman-quadlets/">Podman Quadlets<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/podman-socket/"><a class="padding" href="/containers/podman-socket/">Podman Socket<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/cyber-security/"><input type="checkbox" id="R-section-f95cf8cea1c115dd046e46a833f33dfa" aria-controls="R-subsections-f95cf8cea1c115dd046e46a833f33dfa"><label for="R-section-f95cf8cea1c115dd046e46a833f33dfa"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Cyber Security</span></label><a class="padding default-animation" href="/cyber-security/"><i class="fa-solid fa-user-secret"></i> Cyber Security<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-f95cf8cea1c115dd046e46a833f33dfa" class="collapsible-menu">
+            <li class="" data-nav-id="/cyber-security/security-enhanced-linux/"><a class="padding" href="/cyber-security/security-enhanced-linux/">Security Enhanced Linux<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/cyber-security/the-linux-firewall/"><a class="padding" href="/cyber-security/the-linux-firewall/">The Linux Firewall<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/cyber-security/the-secure-shell-service/"><a class="padding" href="/cyber-security/the-secure-shell-service/">The Secure Shell Service<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/desktop/"><input type="checkbox" id="R-section-e1fc414efb00462ad25041a21e45e696" aria-controls="R-subsections-e1fc414efb00462ad25041a21e45e696"><label for="R-section-e1fc414efb00462ad25041a21e45e696"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Desktop</span></label><a class="padding default-animation" href="/desktop/"><i class="fa-fw fas fa-computer"></i> Desktop<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e1fc414efb00462ad25041a21e45e696" class="collapsible-menu">
+            <li class="" data-nav-id="/desktop/new-setup/"><a class="padding" href="/desktop/new-setup/">Configure Fedora Desktop using Ansible<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/desktop/my-fedora-setup/"><a class="padding" href="/desktop/my-fedora-setup/">My old Fedora Setup<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/desktop/silverblue/"><a class="padding" href="/desktop/silverblue/">Silverblue<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/files/"><input type="checkbox" id="R-section-31e56884d732922d4a0e407592968056" aria-controls="R-subsections-31e56884d732922d4a0e407592968056"><label for="R-section-31e56884d732922d4a0e407592968056"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Files</span></label><a class="padding default-animation" href="/files/"><i class="fa-solid fa-copy"></i> Files<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-31e56884d732922d4a0e407592968056" class="collapsible-menu">
+            <li class="" data-nav-id="/files/advanced-file-management/"><a class="padding" href="/files/advanced-file-management/">Advanced File Management<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/files/file-management/"><a class="padding" href="/files/file-management/">Basic File Managment<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/networking/"><input type="checkbox" id="R-section-d7c3359b808d40df139a3bb9f9073483" aria-controls="R-subsections-d7c3359b808d40df139a3bb9f9073483"><label for="R-section-d7c3359b808d40df139a3bb9f9073483"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Networking</span></label><a class="padding default-animation" href="/networking/"><i class="fa-fw fas fa-network-wired"></i> Networking<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-d7c3359b808d40df139a3bb9f9073483" class="collapsible-menu">
+            <li class="" data-nav-id="/networking/classfulipv4/"><a class="padding" href="/networking/classfulipv4/">Classful IPv4<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/consoling_in_to_mx80_from_linux/"><a class="padding" href="/networking/consoling_in_to_mx80_from_linux/">Consoling in to MX80 from linux<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/dns-and-time-syncronization/"><a class="padding" href="/networking/dns-and-time-syncronization/">DNS<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/how-to-study-for-the-ccna-exam/"><a class="padding" href="/networking/how-to-study-for-the-ccna-exam/">How I Studied For CCNA<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/juniper_cli_basics/"><a class="padding" href="/networking/juniper_cli_basics/">Juniper CLI Basics<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/network-devices-and-connections/"><a class="padding" href="/networking/network-devices-and-connections/">Networking Devices and Connections<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/networking-network-devices-and-network-connections/"><a class="padding" href="/networking/networking-network-devices-and-network-connections/">Networking Network Devices and Network Connections<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/time-synchronization/"><a class="padding" href="/networking/time-synchronization/">Time Synchronization<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/toggle_poe/"><a class="padding" href="/networking/toggle_poe/">Toggle PoE on a Juniper Switch<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/packages/"><input type="checkbox" id="R-section-bdf1e8ce92aa8ff6883c617f10480430" aria-controls="R-subsections-bdf1e8ce92aa8ff6883c617f10480430"><label for="R-section-bdf1e8ce92aa8ff6883c617f10480430"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Packages</span></label><a class="padding default-animation" href="/packages/"><i class="fa-solid fa-box-open"></i> Packages<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-bdf1e8ce92aa8ff6883c617f10480430" class="collapsible-menu">
+            <li class="" data-nav-id="/packages/advanced-package-management/"><a class="padding" href="/packages/advanced-package-management/">Advanced Package Management<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/packages/basic-package-management/"><a class="padding" href="/packages/basic-package-management/">Basic Package Management<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/packages/dnf-package-groups/"><a class="padding" href="/packages/dnf-package-groups/">DNF Package Groups<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storage/"><input type="checkbox" id="R-section-28a53f7a259bc0e6bfd5bf73591250a9" aria-controls="R-subsections-28a53f7a259bc0e6bfd5bf73591250a9"><label for="R-section-28a53f7a259bc0e6bfd5bf73591250a9"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storage</span></label><a class="padding default-animation" href="/storage/"><i class="fa-solid fa-hard-drive"></i> Storage<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-28a53f7a259bc0e6bfd5bf73591250a9" class="collapsible-menu">
+            <li class="" data-nav-id="/storage/autofs/"><a class="padding" href="/storage/autofs/">AutoFS<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storage/local-filesystems-and-swap/"><a class="padding" href="/storage/local-filesystems-and-swap/">Local File Systems and Swap<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storage/network-filesystem-nfs/"><a class="padding" href="/storage/network-filesystem-nfs/">Network File System (NFS)<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storage/partitioning-mbr-gpt/"><a class="padding" href="/storage/partitioning-mbr-gpt/">Partitioning, MBR, and GPT<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storage/rm-filesystem-from-partition/"><a class="padding" href="/storage/rm-filesystem-from-partition/">Remove a filesystem from a partition<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storage/thin-provisioning/"><a class="padding" href="/storage/thin-provisioning/">Thin Provisioning and LVM<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storage/virtual-data-optimizer-vdo/"><a class="padding" href="/storage/virtual-data-optimizer-vdo/">Virtual Data Optimizer (VDO)<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/system/"><input type="checkbox" id="R-section-0ea554b019cc5a3e6337c45b68b3a647" aria-controls="R-subsections-0ea554b019cc5a3e6337c45b68b3a647"><label for="R-section-0ea554b019cc5a3e6337c45b68b3a647"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu System</span></label><a class="padding default-animation" href="/system/"><i class="fa-solid fa-server"></i> System<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-0ea554b019cc5a3e6337c45b68b3a647" class="collapsible-menu">
+            <li class="" data-nav-id="/system/installation/"><a class="padding" href="/system/installation/">Installing RHEL Linux<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/system/interaction/"><a class="padding" href="/system/interaction/">Interaction<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/system/process-and-task-scheduling/"><a class="padding" href="/system/process-and-task-scheduling/">Process and Task Scheduling<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/tools/"><input type="checkbox" id="R-section-bf1399820dde3dd110e03ace4147ff86" aria-controls="R-subsections-bf1399820dde3dd110e03ace4147ff86"><label for="R-section-bf1399820dde3dd110e03ace4147ff86"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Tools</span></label><a class="padding default-animation" href="/tools/"><i class="fa-solid fa-screwdriver-wrench"></i> Tools<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-bf1399820dde3dd110e03ace4147ff86" class="collapsible-menu">
+            <li class="" data-nav-id="/tools/remove-formatting-from-highlights/"><a class="padding" href="/tools/remove-formatting-from-highlights/">How to Remove Formatting From Ebook Highlights With Vim<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/calibre-web-docker-nginx/"><a class="padding" href="/tools/calibre-web-docker-nginx/">Calibre Web with Docker and NGINX<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/you-need-to-learn-man-pages/"><a class="padding" href="/tools/you-need-to-learn-man-pages/">You Need to Learn Man Pages<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/proxmox-ha-proxy-setup/"><a class="padding" href="/tools/proxmox-ha-proxy-setup/">Proxmox PfSense HaProxy Setup<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/calibre-web-with-docker-and-nginx/"><a class="padding" href="/tools/calibre-web-with-docker-and-nginx/">Calibre Web with Docker and NGINX<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/how-to-build-a-website-with-hugo/"><a class="padding" href="/tools/how-to-build-a-website-with-hugo/">How to Build a website With Hugo<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/process-bookfusion-highlights/"><a class="padding" href="/tools/process-bookfusion-highlights/">How to Process Bookfusion Highlights with Vim<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/how-to-set-up-hugo-relearn-theme/"><a class="padding" href="/tools/how-to-set-up-hugo-relearn-theme/">How to Set Up Hugo Relearn Theme<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/learning-touch-typing/"><a class="padding" href="/tools/learning-touch-typing/">Learning Touch Typing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/nextcloud-on-rhel-based-systems/"><a class="padding" href="/tools/nextcloud-on-rhel-based-systems/">Nextcloud on RHEL Based Systems<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/setting-up-a-self-hosted-nextcloud-server/"><a class="padding" href="/tools/setting-up-a-self-hosted-nextcloud-server/">Self hosting a Nextcloud Server<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/vimguide/"><a class="padding" href="/tools/vimguide/">Vim Guide<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/virtualization/"><input type="checkbox" id="R-section-da8ee4406de37987b502b79e5b0a9d1c" aria-controls="R-subsections-da8ee4406de37987b502b79e5b0a9d1c"><label for="R-section-da8ee4406de37987b502b79e5b0a9d1c"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Virtualization</span></label><a class="padding default-animation" href="/virtualization/"><i class="fa-solid fa-microchip"></i> Virtualization<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-da8ee4406de37987b502b79e5b0a9d1c" class="collapsible-menu">
+            <li class="" data-nav-id="/virtualization/automate-kvm-vms/"><a class="padding" href="/virtualization/automate-kvm-vms/">Using Libvirt and Ansible to Automate KVM Virtual Machine Deployments<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/virtualization/using-vagrant-on-linux/"><a class="padding" href="/virtualization/using-vagrant-on-linux/">Using Vagrant on Linux<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/users-and-groups/"><input type="checkbox" id="R-section-ea23e0c86f0adbd857ee01a4f4dd70e4" aria-controls="R-subsections-ea23e0c86f0adbd857ee01a4f4dd70e4"><label for="R-section-ea23e0c86f0adbd857ee01a4f4dd70e4"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Users and Groups</span></label><a class="padding default-animation" href="/users-and-groups/"><i class="fa-solid fa-users"></i> Users and Groups<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-ea23e0c86f0adbd857ee01a4f4dd70e4" class="collapsible-menu">
+            <li class="" data-nav-id="/users-and-groups/advanced-user-management/"><a class="padding" href="/users-and-groups/advanced-user-management/">Advanced User Management<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/users-and-groups/basic-user-management/"><a class="padding" href="/users-and-groups/basic-user-management/">Basic User Management<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <div class="nav-title padding">More</div>
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/booknotes/"><a class="padding" href="/booknotes/"><i class='fas fa-fw fa-book'></i> Book Notes<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/now/"><a class="padding" href="/now/"><i class='fas fa-fw fa-clock'></i> Now<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+            <li class="R-historyclearer">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-history"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <button>Clear History</button>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1781627881" defer></script>
+    <script src="/js/theme.js?1781627881" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

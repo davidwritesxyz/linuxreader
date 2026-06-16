@@ -1,441 +1,450 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.linuxreader.com/ansible/</loc>
+    <loc>http://localhost:1313/ansible/</loc>
     <lastmod>2026-02-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/bash/</loc>
+    <loc>http://localhost:1313/bash/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/boot/</loc>
+    <loc>http://localhost:1313/boot/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/containers/</loc>
+    <loc>http://localhost:1313/containers/</loc>
     <lastmod>2026-06-03T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/cyber-security/</loc>
+    <loc>http://localhost:1313/cyber-security/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/desktop/</loc>
+    <loc>http://localhost:1313/desktop/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/files/</loc>
+    <loc>http://localhost:1313/files/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/networking/</loc>
+    <loc>http://localhost:1313/networking/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/packages/</loc>
+    <loc>http://localhost:1313/packages/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/storage/</loc>
+    <loc>http://localhost:1313/storage/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/system/</loc>
+    <loc>http://localhost:1313/system/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tools/</loc>
+    <loc>http://localhost:1313/tools/</loc>
     <lastmod>2026-02-04T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/virtualization/</loc>
+    <loc>http://localhost:1313/virtualization/</loc>
     <lastmod>2026-01-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/users-and-groups/</loc>
+    <loc>http://localhost:1313/users-and-groups/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/containers/automating-wordpress-containers/</loc>
+    <loc>http://localhost:1313/containers/automating-wordpress-containers/</loc>
     <lastmod>2026-06-03T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/ansible-navigator/</loc>
+    <loc>http://localhost:1313/ansible/ansible-navigator/</loc>
     <lastmod>2026-02-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/100m-offers/</loc>
+    <loc>http://localhost:1313/booknotes/100m-offers/</loc>
     <lastmod>2026-02-09T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tools/remove-formatting-from-highlights/</loc>
+    <loc>http://localhost:1313/tools/remove-formatting-from-highlights/</loc>
     <lastmod>2026-02-04T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tools/calibre-web-docker-nginx/</loc>
+    <loc>http://localhost:1313/tools/calibre-web-docker-nginx/</loc>
     <lastmod>2026-02-03T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tools/you-need-to-learn-man-pages/</loc>
+    <loc>http://localhost:1313/tools/you-need-to-learn-man-pages/</loc>
     <lastmod>2026-02-02T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/virtualization/automate-kvm-vms/</loc>
+    <loc>http://localhost:1313/virtualization/automate-kvm-vms/</loc>
     <lastmod>2026-01-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tools/proxmox-ha-proxy-setup/</loc>
+    <loc>http://localhost:1313/tools/proxmox-ha-proxy-setup/</loc>
     <lastmod>2026-01-17T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/install-ansible-using-uv/</loc>
+    <loc>http://localhost:1313/ansible/install-ansible-using-uv/</loc>
     <lastmod>2026-01-15T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/theeasywaytoquitcaffeine/</loc>
+    <loc>http://localhost:1313/booknotes/theeasywaytoquitcaffeine/</loc>
     <lastmod>2025-12-30T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/tribes/</loc>
+    <loc>http://localhost:1313/booknotes/tribes/</loc>
     <lastmod>2025-12-28T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/built-to-move/</loc>
+    <loc>http://localhost:1313/booknotes/built-to-move/</loc>
     <lastmod>2025-10-15T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tags/non-fiction/</loc>
+    <loc>http://localhost:1313/tags/non-fiction/</loc>
     <lastmod>2025-10-15T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-10-15T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/bliss-of-the-celibate/</loc>
+    <loc>http://localhost:1313/booknotes/bliss-of-the-celibate/</loc>
     <lastmod>2025-10-12T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/caffeineblues/</loc>
+    <loc>http://localhost:1313/booknotes/caffeineblues/</loc>
     <lastmod>2025-10-07T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/thewillpowerinstinct/</loc>
+    <loc>http://localhost:1313/booknotes/thewillpowerinstinct/</loc>
     <lastmod>2025-09-24T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/nonviolentcommunication/</loc>
+    <loc>http://localhost:1313/booknotes/nonviolentcommunication/</loc>
     <lastmod>2025-08-15T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/milliondollarweekend/</loc>
+    <loc>http://localhost:1313/booknotes/milliondollarweekend/</loc>
     <lastmod>2025-08-02T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/meditations/</loc>
+    <loc>http://localhost:1313/booknotes/meditations/</loc>
     <lastmod>2025-07-17T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/anythingyouwant/</loc>
+    <loc>http://localhost:1313/booknotes/anythingyouwant/</loc>
     <lastmod>2025-05-05T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/i-will-teach-you-to-be-rich/</loc>
+    <loc>http://localhost:1313/booknotes/i-will-teach-you-to-be-rich/</loc>
     <lastmod>2025-03-15T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/dopaminenation/</loc>
+    <loc>http://localhost:1313/booknotes/dopaminenation/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/goodinside/</loc>
+    <loc>http://localhost:1313/booknotes/goodinside/</loc>
     <lastmod>2025-02-22T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/therelationshiphandbook/</loc>
+    <loc>http://localhost:1313/booknotes/therelationshiphandbook/</loc>
     <lastmod>2025-02-01T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/your-brain-on-porn/</loc>
+    <loc>http://localhost:1313/booknotes/your-brain-on-porn/</loc>
     <lastmod>2024-05-30T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/the12weekyear/</loc>
+    <loc>http://localhost:1313/booknotes/the12weekyear/</loc>
     <lastmod>2024-03-12T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/theblogstartup/</loc>
+    <loc>http://localhost:1313/booknotes/theblogstartup/</loc>
     <lastmod>2024-03-12T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/the-magic-of-thinking-big/</loc>
+    <loc>http://localhost:1313/booknotes/the-magic-of-thinking-big/</loc>
     <lastmod>2024-03-12T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/thepowerofpositivedogtraining/</loc>
+    <loc>http://localhost:1313/booknotes/thepowerofpositivedogtraining/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/thepsychologyofmoney/</loc>
+    <loc>http://localhost:1313/booknotes/thepsychologyofmoney/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/123magic/</loc>
+    <loc>http://localhost:1313/booknotes/123magic/</loc>
     <lastmod>2022-05-16T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/adhoccommands/</loc>
+    <loc>http://localhost:1313/ansible/adhoccommands/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/files/advanced-file-management/</loc>
+    <loc>http://localhost:1313/files/advanced-file-management/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/packages/advanced-package-management/</loc>
+    <loc>http://localhost:1313/packages/advanced-package-management/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/users-and-groups/advanced-user-management/</loc>
+    <loc>http://localhost:1313/users-and-groups/advanced-user-management/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/containers/ansible-and-podman/</loc>
+    <loc>http://localhost:1313/containers/ansible-and-podman/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/inventory/</loc>
+    <loc>http://localhost:1313/ansible/inventory/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/playbooks/</loc>
+    <loc>http://localhost:1313/ansible/playbooks/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/roles/</loc>
+    <loc>http://localhost:1313/ansible/roles/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/ansible-vault/</loc>
+    <loc>http://localhost:1313/ansible/ansible-vault/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/ansibleconfig/</loc>
+    <loc>http://localhost:1313/ansible/ansibleconfig/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/storage/autofs/</loc>
+    <loc>http://localhost:1313/storage/autofs/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/awx-minikube-install/</loc>
+    <loc>http://localhost:1313/ansible/awx-minikube-install/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/bash/bash-shell/</loc>
+    <loc>http://localhost:1313/bash/bash-shell/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/files/file-management/</loc>
+    <loc>http://localhost:1313/files/file-management/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/packages/basic-package-management/</loc>
+    <loc>http://localhost:1313/packages/basic-package-management/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/users-and-groups/basic-user-management/</loc>
+    <loc>http://localhost:1313/users-and-groups/basic-user-management/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/bookgraveyard/</loc>
+    <loc>http://localhost:1313/booknotes/bookgraveyard/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/books-ive-read/</loc>
+    <loc>http://localhost:1313/booknotes/books-ive-read/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/boot-process/</loc>
+    <loc>http://localhost:1313/ansible/boot-process/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/boot/boot-process-grub2-kernel/</loc>
+    <loc>http://localhost:1313/boot/boot-process-grub2-kernel/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/containers/building-containers-with-containerfiles/</loc>
+    <loc>http://localhost:1313/containers/building-containers-with-containerfiles/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tools/calibre-web-with-docker-and-nginx/</loc>
+    <loc>http://localhost:1313/tools/calibre-web-with-docker-and-nginx/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/networking/classfulipv4/</loc>
+    <loc>http://localhost:1313/networking/classfulipv4/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/desktop/new-setup/</loc>
+    <loc>http://localhost:1313/desktop/new-setup/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/networking/consoling_in_to_mx80_from_linux/</loc>
+    <loc>http://localhost:1313/networking/consoling_in_to_mx80_from_linux/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/containers/container-basics/</loc>
+    <loc>http://localhost:1313/containers/container-basics/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/containers/intro-to-podman/</loc>
+    <loc>http://localhost:1313/containers/container-registries/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/containers/convert-docker-compose-to-quadlets/</loc>
+    <loc>http://localhost:1313/containers/container-base-images/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/containers/customizing-podman/</loc>
+    <loc>http://localhost:1313/containers/intro-to-podman/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/deploying-files/</loc>
+    <loc>http://localhost:1313/containers/customizing-podman/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/containers/distrobox/</loc>
+    <loc>http://localhost:1313/ansible/deploying-files/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/packages/dnf-package-groups/</loc>
+    <loc>http://localhost:1313/containers/distrobox/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/networking/dns-and-time-syncronization/</loc>
+    <loc>http://localhost:1313/packages/dnf-package-groups/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/encrypted-passwords/</loc>
+    <loc>http://localhost:1313/networking/dns-and-time-syncronization/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/fiction/</loc>
+    <loc>http://localhost:1313/ansible/encrypted-passwords/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/handlers/</loc>
+    <loc>http://localhost:1313/booknotes/fiction/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/hostname-patterns/</loc>
+    <loc>http://localhost:1313/ansible/handlers/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/networking/how-to-study-for-the-ccna-exam/</loc>
+    <loc>http://localhost:1313/ansible/hostname-patterns/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tools/how-to-build-a-website-with-hugo/</loc>
+    <loc>http://localhost:1313/networking/how-to-study-for-the-ccna-exam/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tools/process-bookfusion-highlights/</loc>
+    <loc>http://localhost:1313/tools/how-to-build-a-website-with-hugo/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tools/how-to-set-up-hugo-relearn-theme/</loc>
+    <loc>http://localhost:1313/tools/process-bookfusion-highlights/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/include-and-import-files/</loc>
+    <loc>http://localhost:1313/tools/how-to-set-up-hugo-relearn-theme/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/containers/installing-podman/</loc>
+    <loc>http://localhost:1313/ansible/include-and-import-files/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/system/installation/</loc>
+    <loc>http://localhost:1313/containers/installing-podman/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/system/interaction/</loc>
+    <loc>http://localhost:1313/system/installation/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/containers/intro-to-containers/</loc>
+    <loc>http://localhost:1313/system/interaction/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/jinja2/</loc>
+    <loc>http://localhost:1313/containers/intro-to-containers/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/networking/juniper_cli_basics/</loc>
+    <loc>http://localhost:1313/ansible/jinja2/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tools/learning-touch-typing/</loc>
+    <loc>http://localhost:1313/networking/juniper_cli_basics/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/storage/local-filesystems-and-swap/</loc>
+    <loc>http://localhost:1313/tools/learning-touch-typing/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/user-and-groups/</loc>
+    <loc>http://localhost:1313/storage/local-filesystems-and-swap/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/packages-repos-and-subscriptions/</loc>
+    <loc>http://localhost:1313/ansible/user-and-groups/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/storage-partitions-and-lvm/</loc>
+    <loc>http://localhost:1313/ansible/packages-repos-and-subscriptions/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/services/</loc>
+    <loc>http://localhost:1313/ansible/storage-partitions-and-lvm/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/desktop/my-fedora-setup/</loc>
+    <loc>http://localhost:1313/ansible/services/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/storage/network-filesystem-nfs/</loc>
+    <loc>http://localhost:1313/containers/manage-trusted-image-registries/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/networking/network-devices-and-connections/</loc>
+    <loc>http://localhost:1313/desktop/my-fedora-setup/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/networking/networking-network-devices-and-network-connections/</loc>
+    <loc>http://localhost:1313/storage/network-filesystem-nfs/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tools/nextcloud-on-rhel-based-systems/</loc>
+    <loc>http://localhost:1313/networking/network-devices-and-connections/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/optimize-ansible-processing/</loc>
+    <loc>http://localhost:1313/networking/networking-network-devices-and-network-connections/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/storage/partitioning-mbr-gpt/</loc>
+    <loc>http://localhost:1313/tools/nextcloud-on-rhel-based-systems/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/containers/podman-quadlets/</loc>
+    <loc>http://localhost:1313/ansible/optimize-ansible-processing/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/containers/podman-socket/</loc>
+    <loc>http://localhost:1313/storage/partitioning-mbr-gpt/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/system/process-and-task-scheduling/</loc>
+    <loc>http://localhost:1313/containers/podman-links/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/storage/rm-filesystem-from-partition/</loc>
+    <loc>http://localhost:1313/containers/podman-quadlets/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/cyber-security/security-enhanced-linux/</loc>
+    <loc>http://localhost:1313/containers/podman-socket/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tools/setting-up-a-self-hosted-nextcloud-server/</loc>
+    <loc>http://localhost:1313/system/process-and-task-scheduling/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/selinux/</loc>
+    <loc>http://localhost:1313/storage/rm-filesystem-from-partition/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/bash/shell-scripting/</loc>
+    <loc>http://localhost:1313/cyber-security/security-enhanced-linux/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/desktop/silverblue/</loc>
+    <loc>http://localhost:1313/tools/setting-up-a-self-hosted-nextcloud-server/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/ssh-connections/</loc>
+    <loc>http://localhost:1313/ansible/selinux/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/boot/sys-init-logging-and-tuning/</loc>
+    <loc>http://localhost:1313/bash/shell-scripting/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/cyber-security/the-linux-firewall/</loc>
+    <loc>http://localhost:1313/desktop/silverblue/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/cyber-security/the-secure-shell-service/</loc>
+    <loc>http://localhost:1313/ansible/ssh-connections/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/booknotes/the-truth/</loc>
+    <loc>http://localhost:1313/boot/sys-init-logging-and-tuning/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/storage/thin-provisioning/</loc>
+    <loc>http://localhost:1313/cyber-security/the-linux-firewall/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/networking/time-synchronization/</loc>
+    <loc>http://localhost:1313/cyber-security/the-secure-shell-service/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/networking/toggle_poe/</loc>
+    <loc>http://localhost:1313/booknotes/the-truth/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/tags/</loc>
+    <loc>http://localhost:1313/storage/thin-provisioning/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/filters/</loc>
+    <loc>http://localhost:1313/networking/time-synchronization/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/loops-and-items/</loc>
+    <loc>http://localhost:1313/networking/toggle_poe/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/modules-for-troubleshooting/</loc>
+    <loc>http://localhost:1313/ansible/tags/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/virtualization/using-vagrant-on-linux/</loc>
+    <loc>http://localhost:1313/ansible/filters/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/variables/</loc>
+    <loc>http://localhost:1313/ansible/loops-and-items/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/ansible/when/</loc>
+    <loc>http://localhost:1313/ansible/modules-for-troubleshooting/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/tools/vimguide/</loc>
+    <loc>http://localhost:1313/virtualization/using-vagrant-on-linux/</loc>
   </url>
   <url>
-    <loc>https://www.linuxreader.com/storage/virtual-data-optimizer-vdo/</loc>
+    <loc>http://localhost:1313/ansible/variables/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/ansible/when/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tools/vimguide/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/storage/virtual-data-optimizer-vdo/</loc>
   </url>
 </urlset>

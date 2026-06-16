@@ -21,27 +21,27 @@
     <meta itemprop="wordCount" content="3693">
     <title>Boot Process, Grub2, and Kernel</title>
     <link href="/boot/boot-process-grub2-kernel/index.md" rel="alternate" type="text/markdown" title="Boot Process, Grub2, and Kernel">
-    <link href="/images/favicon.svg?1781090095" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1781090095" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1781090095" defer></script>
-    <script src="/js/search-lunr.min.js?1781090095" defer></script>
-    <script src="/js/search.min.js?1781090095" defer></script>
+    <link href="/images/favicon.svg?1781627878" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1781627878" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1781627878" defer></script>
+    <script src="/js/search-lunr.min.js?1781627878" defer></script>
+    <script src="/js/search.min.js?1781627878" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1781090095";
+      window.relearn.index_js_url="/searchindex.en.js?1781627878";
     </script>
-    <script src="/js/lunr/lunr.min.js?1781090095" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1781090095" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1781090095" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1781090095" defer></script>
+    <script src="/js/lunr/lunr.min.js?1781627878" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1781627878" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1781627878" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1781627878" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1781090095" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1781090095" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1781090095" rel="stylesheet">
-    <link href="/css/theme.min.css?1781090095" rel="stylesheet">
-    <link href="/css/format-html.min.css?1781090095" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1781627878" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1781627878" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1781627878" rel="stylesheet">
+    <link href="/css/theme.min.css?1781627878" rel="stylesheet">
+    <link href="/css/format-html.min.css?1781627878" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -952,8 +952,8 @@ timeout value when GRUB2 menu appears.</p>
 </li>
 </ul>
 <p>Append &ldquo;emergency&rdquo; to the kernel line entry:</p>
-<p><a href="#R-image-7c40c848c44b9c59a640c550a7bd53fc" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../../images/Pasted%20image%2020240321045343%201.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-7c40c848c44b9c59a640c550a7bd53fc"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Pasted%20image%2020240321045343%201.png"></a></p>
+<p><a href="#R-image-30737c80d63a81fa5eec751adac2333f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../../images/Pasted%20image%2020240321045343%201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-30737c80d63a81fa5eec751adac2333f"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Pasted%20image%2020240321045343%201.png"></a></p>
 <p>Other options:</p>
 <ul>
 <li>&ldquo;rescue&rdquo;</li>
@@ -971,8 +971,8 @@ timeout value when GRUB2 menu appears.</p>
 </li>
 <li>
 <p>Modify this kernel string and append &ldquo;rd.break&rdquo; to the end of the line.
-<a href="#R-image-b4ea84e3cffb0ba8e5b162842b7cc327" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../../images/Pasted%20image%2020240321045933%201.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b4ea84e3cffb0ba8e5b162842b7cc327"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Pasted%20image%2020240321045933%201.png"></a></p>
+<a href="#R-image-e2084683fb22f1a28d1278e0139b6f8d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../../images/Pasted%20image%2020240321045933%201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e2084683fb22f1a28d1278e0139b6f8d"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../../images/Pasted%20image%2020240321045933%201.png"></a></p>
 </li>
 <li>
 <p>Press Ctrl+x when done to boot to the special shell. The system mounts the root file system read-only on the <em>/sysroot</em> directory. Make <em>/sysroot</em> appear as mounted on <em>/</em> using the <em>chroot</em> command:</p>
@@ -1162,12 +1162,15 @@ confirm the loading of the new kernel:
             <li class="" data-nav-id="/containers/ansible-and-podman/"><a class="padding" href="/containers/ansible-and-podman/">Ansible and Podman<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/building-containers-with-containerfiles/"><a class="padding" href="/containers/building-containers-with-containerfiles/">Building Containers with Containerfiles<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/container-basics/"><a class="padding" href="/containers/container-basics/">Container Basics<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/container-registries/"><a class="padding" href="/containers/container-registries/">Container Registries<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/container-base-images/"><a class="padding" href="/containers/container-base-images/">Container Universal Base Images<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/intro-to-podman/"><a class="padding" href="/containers/intro-to-podman/">Containers<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/containers/convert-docker-compose-to-quadlets/"><a class="padding" href="/containers/convert-docker-compose-to-quadlets/">Convert Docker Compose to Quadlets<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/customizing-podman/"><a class="padding" href="/containers/customizing-podman/">Customizing Podman&#39;s Behavior<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/distrobox/"><a class="padding" href="/containers/distrobox/">Distrobox Basics<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/installing-podman/"><a class="padding" href="/containers/installing-podman/">Installing Podman<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/intro-to-containers/"><a class="padding" href="/containers/intro-to-containers/">Introduction to Containers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/manage-trusted-image-registries/"><a class="padding" href="/containers/manage-trusted-image-registries/">Managing Trusted Image Registries<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/podman-links/"><a class="padding" href="/containers/podman-links/">Podman Links<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/podman-quadlets/"><a class="padding" href="/containers/podman-quadlets/">Podman Quadlets<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/podman-socket/"><a class="padding" href="/containers/podman-socket/">Podman Socket<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
             <li class="" data-nav-id="/cyber-security/"><input type="checkbox" id="R-section-f95cf8cea1c115dd046e46a833f33dfa" aria-controls="R-subsections-f95cf8cea1c115dd046e46a833f33dfa"><label for="R-section-f95cf8cea1c115dd046e46a833f33dfa"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Cyber Security</span></label><a class="padding default-animation" href="/cyber-security/"><i class="fa-solid fa-user-secret"></i> Cyber Security<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-f95cf8cea1c115dd046e46a833f33dfa" class="collapsible-menu">
@@ -1259,8 +1262,8 @@ confirm the loading of the new kernel:
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1781090095" defer></script>
-    <script src="/js/theme.min.js?1781090095" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1781627878" defer></script>
+    <script src="/js/theme.min.js?1781627878" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

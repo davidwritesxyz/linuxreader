@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html id="R-html" lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.154.5">
+    <meta name="generator" content="Relearn 9.0.3">
+    <meta name="description" content="All about Container Universal Base Images">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Container Universal Base Images">
+    <meta name="twitter:description" content="All about Container Universal Base Images">
+    <meta property="og:url" content="http://localhost:1313/containers/container-base-images/">
+    <meta property="og:title" content="Container Universal Base Images">
+    <meta property="og:description" content="All about Container Universal Base Images">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Containers">
+    <meta itemprop="name" content="Container Universal Base Images">
+    <meta itemprop="description" content="All about Container Universal Base Images">
+    <meta itemprop="wordCount" content="3108">
+    <title>Container Universal Base Images</title>
+    <link href="/containers/container-base-images/index.md" rel="alternate" type="text/markdown" title="Container Universal Base Images">
+    <link href="/images/favicon.svg?1781627881" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1781627881" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1781627881" defer></script>
+    <script src="/js/search-lunr.js?1781627881" defer></script>
+    <script src="/js/search.js?1781627881" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1781627881";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1781627881" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1781627881" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1781627881" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1781627881" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1781627881" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1781627881" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1781627881" rel="stylesheet">
+    <link href="/css/theme.css?1781627881" rel="stylesheet">
+    <link href="/css/format-html.css?1781627881" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/containers\/container-base-images\/';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'oled' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script><script defer src="https://cloud.umami.is/script.js" data-website-id="d179743c-138a-4212-8906-28f70628ef95"></script>
+<style>
+:root {
+    --MENU-S-width: 15rem;
+    --MENU-M-width: 15rem;
+    --MENU-L-width: 18rem;
+    --MAIN-MAX-width: 100rem;
+}
+html {
+  zoom: 1.2;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+               "Apple Color Emoji", "Segoe UI Emoji" !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500 !important;
+  letter-spacing: 0.7px;
+}
+
+code, kbd, pre, samp {
+  font-family: "Fira Code", "Hack", "Source Code Pro", Consolas, Menlo, monospace !important;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+</style>
+
+  </head>
+  <body class="mobile-support html" data-origin="/containers/container-base-images/">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#oci-image-manifest">OCI Image Manifest</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#the-ubi-standard-image">The UBI Standard image</a></li>
+    <li><a href="#the-ubi-minimal-image">The UBI Minimal image</a></li>
+    <li><a href="#the-ubi-micro-image">The UBI Micro image</a></li>
+    <li><a href="#the-ubi-init-image">The UBI Init image</a></li>
+    <li><a href="#other-ubi-based-images">Other UBI-based images</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/"><span itemprop="name">Linux Reader</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/containers/"><span itemprop="name">Containers</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Container Universal Base Images</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-markdown default-animation" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/containers/container-base-images/index.md" title="Show Markdown"><i class="fa-fw fab fa-markdown"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/containers/container-registries/" title="Container Registries (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/containers/intro-to-podman/" title="Containers (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable containers" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="container-universal-base-images">Container Universal Base Images</h1>
+
+<p>Choosing the right container base image is an important task in the container journey: a container base image is the underlying operating system layer that our system's service, application, or code will rely on. Due to this, we should choose one that fits our best practices concerning security and updates.</p>
+<p>In this chapter, we're going to cover the following main topics:</p>
+<ul>
+<li>The Open Container Initiative image format</li>
+<li>Where do container images come from?</li>
+<li>Trusted container image sources</li>
+<li>Introducing Universal Base Image</li>
+</ul>
+<h1 id="the-open-container-initiative-image-format">The Open Container Initiative image format<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<p>These contributors developed the Runtime Specification (runtime-spec) and the Image Specification (image-spec) for describing how the API and the architecture for new container engines should be created in the future.</p>
+<p>After a few months of work, the OCI team released its first implementation of a container runtime that adhered to their specifications; the project was named <strong>runc</strong>.</p>
+<p>The specification defines an OCI container image that consists of the following:</p>
+<ul>
+<li><strong>Manifest</strong>: This contains the metadata of the contents and dependencies of the image. This also includes the ability to identify one or more filesystem archives that will be unpacked to get the final runnable filesystem.</li>
+<li><strong>Image</strong> <strong>index (optional)</strong>: This represents a list of manifests and descriptors that can provide different implementations of the image, depending on the target platform.</li>
+<li><strong>Set of</strong> <strong>filesystem</strong> <strong>layers</strong>: The actual set of layers that should be merged to build the final container filesystem.</li>
+<li><strong>Configuration</strong>: This contains all the information that's required by the container runtime engine to effectively run the application, such as arguments and environment variables.</li>
+</ul>
+<p>We will not deep dive into every element of the OCI Image Specification as it is out of scope, but the Image Manifest deserves a closer look.</p>
+<h2 id="oci-image-manifest">OCI Image Manifest<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>The Image Manifest defines a set of layers and the configuration for a single container image that is built for a specific architecture and an operating system.</p>
+<p>Let's explore the details of the OCI Image Manifest by looking at the following example:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code> {
+ &#34;schemaVersion&#34;: 2, &#34;config&#34;: { &#34;mediaType&#34;: &#34;application/vnd.oci.image.config.v1+json&#34;, &#34;size&#34;: 7023, &#34;digest&#34;: &#34;sha256:b5b2b2c507a0944348e0303114d8d93aaaa081732b86451d9bce1f432a537bc7&#34; }, &#34;layers&#34;: [ { &#34;mediaType&#34;: &#34;application/vnd.oci.image.layer.v1.tar+gzip&#34;, &#34;size&#34;: 32654, &#34;digest&#34;: &#34;sha256:9834876dcfb05cb167a5c24953eba58c4ac89b1adf57f28f2f9d09af107ee8f0&#34; } ], &#34;annotations&#34;: { &#34;com.example.key1&#34;: &#34;value1&#34;, &#34;com.example.key2&#34;: &#34;value2&#34; } }</code></pre></div>
+<p>Here, we are using the following keywords:</p>
+<ul>
+<li><code>schemaVersion</code>: A property that must be set to a value of <code>2</code>. This ensures backward compatibility with Docker.</li>
+<li><code>config</code>: A property that references an image's configuration through a digest:</li>
+<li><code>mediaType</code>: This property defines the actual configuration format (just one currently)</li>
+<li><code>layers</code>: This property provides an array of descriptor objects:</li>
+<li><code>mediaType</code>: In this case, this descriptor should be one of the media types that are allowed for the layer's descriptors</li>
+<li><code>annotations</code>: This property defines additional metadata for the Image Manifest.</li>
+</ul>
+<p>To summarize, the main goal of the specification is to make interoperable tools for building, transporting, and preparing a container image to be run.</p>
+<p>The Image Manifest Specification has three main goals:</p>
+<ul>
+<li>To enable hashing for the image's configuration, thereby generating a unique ID</li>
+<li>To allow multi-architecture images due to its high-level manifest (image index) that references platform-specific versions of the Image Manifest</li>
+<li>To be able to easily translate the container image into the OCI Runtime Specification</li>
+</ul>
+<p>Now, let's learn where these container images come from.</p>
+<h1 id="where-do-container-images-come-from">Where do container images come from?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<p>We can choose between the following cloud container registries:</p>
+<ul>
+<li><strong>Docker</strong> <strong>Hub</strong>: This is the hosted registry solution by Docker Inc. This registry also hosts official repositories and security-verified images for some popular open source projects.</li>
+<li><strong>Quay.io</strong>: This is the hosted registry solution that was born under the CoreOS company, though it is now part of Red Hat. It offers private and public repositories, automated scanning for security purposes, image builds, and integration with popular Git public repositories.</li>
+<li><strong>Linux</strong> <strong>distribution</strong> <strong>registries</strong>: Popular Linux distributions are typically community-baked, such as Fedora Linux, or enterprise-based, such as <strong>Red Hat Enterprise Linux</strong> (<strong>RHEL</strong>). They usually offer public container registries, though these are often only available for projects or packages that have already been provided as system packages. These registries are not available to end users and they are fed by the Linux distributions' maintainers.</li>
+<li><strong>Public</strong> <strong>cloud</strong> <strong>registries</strong>: Amazon, Google, Microsoft, and other public cloud providers offer public and private container registries for their customers.</li>
+</ul>
+<h1 id="introducing-the-universal-base-image">Introducing the Universal Base Image<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<p>When working on enterprise environments, many users and companies adopt RHEL as the operating system of choice to execute workloads reliably and securely. RHEL-based container images are available too, and they take advantage of the same package versioning as the operating system release. All the security updates that are released for RHEL are immediately applied to OCI images, making them wealthy, secure images to build production-grade applications with.</p>
+<p>Unfortunately, RHEL images are not publicly available without a Red Hat subscription. Users who have activated a valid subscription can use them freely on their RHEL systems and build custom images on top of them, but they are not freely redistributable without breaking the Red Hat enterprise agreement.</p>
+<p>So, why worry? There are plenty of commonly used images that can replace them. This is true, but when it comes to reliability and security, many companies choose to stick to an enterprise-grade solution, and this is no exception for containers.</p>
+<p>For these reasons, and to address the redistribution limitations of RHEL images, Red Hat created <strong>UBI</strong>. UBI images are freely redistributable; can be used to build containerized applications, middleware, and utilities; and are constantly maintained and upgraded by Red Hat.</p>
+<p>UBI images are based on the currently supported versions of RHEL. At the time of writing, UBI 8, UBI 9, and UBI 10 images are available, based on RHEL 8, RHEL 9, and RHEL 10, respectively. In general, UBI images can be considered a subset of the RHEL operating system.</p>
+<p>All UBI images are available on the public Red Hat registry (<a href="https://registry.access.redhat.com" rel="external" target="_blank">[registry.access.redhat.com]{.url}</a>{style=&ldquo;text-decoration: none;&rdquo;}) and Docker Hub (<a href="https://docker.io" rel="external" target="_blank">[docker.io]{.url}</a>{style=&ldquo;text-decoration: none;&rdquo;}).</p>
+<p>There are currently four different flavors of UBI images, each one specialized for a particular use case:</p>
+<ul>
+<li><strong>Standard</strong>: This is the standard UBI image. It has the most features and package availability.</li>
+<li><strong>Minimal</strong>: This is a stripped-down version of the standard image with minimalistic package management.</li>
+<li><strong>Micro</strong>: This is a UBI version with the smallest footprint possible, without a package manager.</li>
+<li><strong>Init</strong>: This is a UBI image that includes the <code>systemd</code> init system so that you can manage the execution of multiple services in a single container.</li>
+</ul>
+<p>All of these are <em>free to use and redistribute</em> inside custom images. Unlike standard RHEL images, UBI is freely redistributable, allowing developers to build applications on a trusted foundation and share them anywhere, including public registries, without requiring a Red Hat subscription. In addition to that, UBI bridges the gap between development and production; you can build on a laptop running Fedora or a CI/CD pipeline in the cloud and deploy to a production RHEL or OpenShift environment with zero compatibility concerns.</p>
+<p>Let's describe each in detail, starting with the UBI Standard image.</p>
+<h2 id="the-ubi-standard-image">The UBI Standard image<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>The UBI Standard image is the most complete UBI image version and the closest one to standard RHEL images. It includes the <strong>yum</strong> package manager, which is available in RHEL, and can be customized by installing the packages that are available in its dedicated software repositories, that is, <code>ubi-8-baseos</code> and <code>ubi-8-appstream</code>.</p>
+<p>The following example shows a Dockerfile/Containerfile that uses a standard UBI 8 image to build a minimal <code>httpd</code> server:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>FROM registry.access.redhat.com/ubi8
+
+# Update image and install httpd RUN yum update -y &amp;&amp; yum install -y httpd &amp;&amp; yum clean all
+
+# Expose the default httpd port 80 EXPOSE 80
+
+# Run the httpd CMD [&#34;/usr/sbin/httpd&#34;, &#34;-DFOREGROUND&#34;] </code></pre></div>
+<p>The UBI Standard image was designed for generic applications and packages that are available on RHEL and already includes a curated list of basic system tools (including <code>curl</code>, <code>tar</code>, <code>vi</code>, <code>sed</code>, and <code>gzip</code>) and OpenSSL libraries while still retaining a small size (around 230 MiB): fewer packages mean more lightweight images and a smaller attack surface.</p>
+<p>In <em><a href="/containers/container-base-images/#Chapter_6.xhtml#h1_163">Chapter 6</a>{.chapref}</em>, <em>Meet</em> <em>Buildah</em> <em>&ndash; Building Containers from Scratch</em>, we learned how to build a new container image starting from a Containerfile or a Dockerfile, so you can leverage Buildah to test the previous example.</p>
+<p>If the UBI Standard image is still considered too big, UBI Minimal can be a good fit.</p>
+<h2 id="the-ubi-minimal-image">The UBI Minimal image<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>The UBI Minimal image is a stripped-down version of UBI Standard and was designed for self-consistent applications and their runtimes (Python, Ruby, Node.js, and so on). For this reason, it's smaller in size, has a small selection of packages, and doesn't include the yum package manager; this has been replaced with a minimal tool called <code>microdnf</code>. The UBI Minimal image is smaller than UBI Standard and is roughly half its size.</p>
+<p>The following example shows a Dockerfile/Containerfile using a UBI 8 minimal image to build a proof-of-concept Python web server:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code># Based on the UBI8 Minimal image
+
+FROM registry.access.redhat.com/ubi8-minimal
+
+# Upgrade and install Python 3 RUN microdnf upgrade &amp;&amp; microdnf install python3
+
+# Copy source code COPY entrypoint.sh http_server.py /
+
+# Expose the default httpd port 80 EXPOSE 8080
+
+# Configure the container entrypoint ENTRYPOINT [&#34;/entrypoint.sh&#34;]
+
+# Run the httpd CMD [&#34;/usr/bin/python3&#34;, &#34;-u&#34;, &#34;/http_server.py&#34;] </code></pre></div>
+<p>By looking at the source code of the Python web server that's been executed by the container, we can see that the web server handler prints a <em>Hello World!</em> string when an HTTP GET request is received. The server also manages signal termination using the Python <code>signal</code> module, allowing the container to be stopped gracefully:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>#!/usr/bin/python3 import http.server import socketserver import logging import sys import signal from http import HTTPStatus
+
+port = 8080 message = b&#39;Hello World!\n&#39; logging.basicConfig( stream = sys.stdout, level = logging.INFO )
+
+def signal_handler(signum, frame): sys.exit(0)
+
+class Handler(http.server.SimpleHTTPRequestHandler): def do_GET(self): self.send_response(HTTPStatus.OK) self.end_headers() self.wfile.write(message)
+
+if __name__ == &#34;__main__&#34;: signal.signal(signal.SIGTERM, signal_handler) signal.signal(signal.SIGINT, signal_handler) try: httpd = socketserver.TCPServer((&#39;&#39;, port), Handler) logging.info(&#34;Serving on port %s&#34;, port) httpd.serve_forever() except SystemExit: httpd.shutdown() httpd.server_close() </code></pre></div>
+<p>Finally, the Python executable is called by a minimal entry point script:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>#!/bin/bash set -e exec $@ </code></pre></div>
+<p>The script launches the command that's passed by the array in the <code>CMD</code> instruction. Also, notice the <code>-u</code> option that's passed to the Python executable in the command array. This enables unbuffered output and has the container print access logs in real time.</p>
+<p>Let's try to build and run the container to see what happens:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>$ buildah build -t python_httpd .
+
+$ podman run -p 8080:8080 python_httpd INFO:root:Serving on port 8080 </code></pre></div>
+<p>With that, our minimal Python <code>http</code> server is ready to operate and serve a lot of barely useful but warming <em>Hello World!</em> responses. You can find all these examples in the GitHub repository of the book.</p>
+<p>UBI Minimal works best for these kinds of use cases. However, an even smaller image may be necessary. This is the perfect use case for the UBI Micro image.</p>
+<h2 id="the-ubi-micro-image">The UBI Micro image<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>The UBI Micro image is the latest arrival to the UBI family. Its basic idea is to provide a distroless image and a stripped-down package manager, without all the unnecessary packages, to provide a very small image that could also offer a minimal attack surface. Reducing the attack surface is required to achieve secure, minimal images that are more complex to exploit. In addition to that, the small size also minimizes the amount of data that must be downloaded when using the image for the first time or after an update.</p>
+<p>The UBI 8 Micro image is great in multi-stage builds, where the first stage creates the finished artifact(s) and the second stage copies them inside the final image. The following example shows a basic multi-stage Dockerfile/Containerfile where a minimal Golang application is being built inside a UBI Standard container while the final artifact is copied inside a UBI Micro image:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code># Builder image FROM registry.access.redhat.com/ubi8-minimal AS builder
+
+# Install Golang packages RUN microdnf upgrade &amp;&amp; \ microdnf install golang &amp;&amp; \ microdnf clean all
+
+# Copy files for build COPY go.mod /go/src/hello-world/ COPY main.go /go/src/hello-world/
+
+# Set the working directory WORKDIR /go/src/hello-world
+
+# Download dependencies RUN go get -d -v ./...
+
+# Install the package RUN go build -v ./...
+
+# Runtime image FROM registry.access.redhat.com/ubi8/ubi-micro:latest COPY --from=builder /go/src/hello-world/hello-world /
+
+EXPOSE 8080
+
+CMD [&#34;/hello-world&#34;] </code></pre></div>
+<p>The build's output results in an image that's approximately 45 MB in size.</p>
+<p>The UBI Micro image has no built-in package manager, but it is still possible to install additional packages using Buildah native commands. This works effectively on an RHEL system, where all Red Hat GPG certificates are installed.</p>
+<p>The following example shows a build script that can be executed on RHEL 8. Its purpose is to install additional Python packages using the host's <code>yum</code> package manager, on top of a UBI Micro image:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>#!/bin/bash
+
+set -euo pipefail
+
+if [ $UID -ne 0 ]; then echo &#34;This script must be run as root&#34; exit 1 fi
+
+container=$(buildah from registry.access.redhat.com/ubi8/ubi-micro) mount=$(buildah mount $container)
+
+yum install -y \ --installroot $mount \ --setopt install_weak_deps=false \ --nodocs \ --noplugins \ --releasever 8 \ python3
+
+yum clean all --installroot $mount
+
+buildah umount $container buildah commit $container micro_python3 </code></pre></div>
+<p>Notice that the <code>yum install</code> command is executed by passing the <code>--installroot $mount</code> option, which tells the installer to use the working container mount point as the temporary root to install the packages.</p>
+<p>UBI Minimal and UBI Micro images are great for implementing microservices architectures where we need to orchestrate multiple containers together, with each running a specific microservice.</p>
+<p>Now, let's look at the UBI Init image, which allows us to coordinate the execution of multiple services inside a container.</p>
+<h2 id="the-ubi-init-image">The UBI Init image<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>A common pattern in container development is to create highly specialized images with a single component running inside them.</p>
+<p>To implement multi-tier applications, such as those with a frontend, middleware, and a backend, the best practice is to create and orchestrate multiple containers, each one running a specific component. The goal is to have minimal and very specialized containers, each one running its own service/process while following the <strong>Keep It Simple, Stupid</strong> (<strong>KISS</strong>) philosophy, which has been carried out in UNIX systems since their inception.</p>
+<p>Despite being great for most use cases, this approach does not always suit some special scenarios where many processes need to be orchestrated together. An example is when we need to share all the container namespaces across processes, or when we just want a single, <em>uber</em> image.</p>
+<p>Container images are normally created without an init system, and the process that's executed inside the container (invoked by the <code>CMD</code> instruction) usually gets <strong>PID</strong> <strong>1</strong>.</p>
+<p>For this reason, Red Hat introduced the UBI Init image, which runs a minimal <strong>systemd</strong> init process inside the container, allowing multiple systemd units that are governed by the systemd process with a PID of <code>1</code> to be executed.</p>
+<p>The UBI Init image is slightly smaller than the Standard image but has more packages available than the Minimal image.</p>
+<p>The default CMD is set to <code>/sbin/init</code>, which corresponds to the systemd process. systemd ignores the <code>SIGTERM</code> and <code>SIGKILL</code> signals, which are used by Podman to stop running containers. For this reason, the image is configured to send <code>SIGRTMIN+3</code> signals for termination by passing the <code>STOPSIGNAL SIGRTMIN+3</code> instruction inside the image Dockerfile.</p>
+<p>The following example shows a Dockerfile/Containerfile that installs the <code>httpd</code> package and configures a <code>systemd</code> unit to run the <code>httpd</code> service:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>FROM registry.access.redhat.com/ubi8/ubi-init
+
+RUN yum -y install httpd &amp;&amp; \ yum clean all &amp;&amp; \ systemctl enable httpd
+
+RUN echo &#34;Successful Web Server Test&#34; &gt; /var/www/html/index.html
+
+RUN mkdir /etc/systemd/system/httpd.service.d/ &amp;&amp; \ echo -e &#39;[Service]\nRestart=always&#39; &gt; /etc/systemd/system/httpd.service.d/httpd.conf
+
+EXPOSE 80 CMD [ &#34;/sbin/init&#34; ] </code></pre></div>
+<p>Notice the <code>RUN</code> instruction, where we create the <code>/etc/systemd/system/httpd.service.d/</code> folder and the systemd unit file. This minimal example could be replaced with a copy of pre-edited unit files, which is particularly useful when multiple services must be created.</p>
+<p>We can build and run the image and inspect the behavior of the <code>init</code> system inside the container using the <code>ps</code> command:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>$ buildah build -t init_httpd . $ podman run -d --name httpd_init -p 8080:80 init_httpd $ podman exec -ti httpd_init /bin/bash [root@b4fb727f1907 /]# ps aux USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND root 1 0.1 0.0 89844 9404 ? Ss 10:30 0:00 /sbin/init root 10 0.0 0.0 95552 10636 ? Ss 10:30 0:00 /usr/lib/systemd/systemd-journald root 20 0.1 0.0 258068 10700 ? Ss 10:30 0:00 /usr/sbin/httpd -DFOREGROUND dbus 21 0.0 0.0 54056 4856 ? Ss 10:30 0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only apache 23 0.0 0.0 260652 7884 ? S 10:30 0:00 /usr/sbin/httpd -DFOREGROUND apache 24 0.0 0.0 2760308 9512 ? Sl 10:30 0:00 /usr/sbin/httpd -DFOREGROUND apache 25 0.0 0.0 2563636 9748 ? Sl 10:30 0:00 /usr/sbin/httpd -DFOREGROUND apache 26 0.0 0.0 2563636 9516 ? Sl 10:30 0:00 /usr/sbin/httpd -DFOREGROUND root 238 0.0 0.0 19240 3564 pts/0 Ss 10:30 0:00 /bin/bash root 247 0.0 0.0 51864 3728 pts/0 R+ 10:30 0:00 ps aux </code></pre></div>
+<p>Note that the <code>/sbin/init</code> process is executed with a PID of <code>1</code> and that it spawns the <code>httpd</code> processes. The container also executed <code>dbus-daemon</code>, which is used by systemd to expose its API, along with <code>systemd-journald</code> to handle logs.</p>
+<p>Following this approach, we can add multiple services that are supposed to work together in the same container and have them orchestrated by systemd.</p>
+<p>So far, we have looked at the four currently available UBI images and demonstrated how they can be used to create custom applications. Many public Red Hat images are based on UBI. Let's take a look.</p>
+<h2 id="other-ubi-based-images">Other UBI-based images<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Red Hat uses UBI images to produce many pre-built specialized images, especially for runtimes. They are usually expected not to have redistribution limitations.</p>
+<p>This allows runtime images to be created for languages, runtimes, and frameworks such as Python, Quarkus, Golang, Perl, PDP, .NET, Node.js, Ruby, and OpenJDK.</p>
+<p>UBI is also used as the base image for the <strong>Source-to-Image</strong> (<strong>S2I</strong>) framework, which is used to build applications natively in OpenShift without the use of Dockerfiles. With S2I, it is possible to assemble images from user-defined custom scripts and, obviously, application source code.</p>
+<p>Last but not least, Red Hat's supported container releases of Buildah, Podman, and Skopeo are packaged using UBI 8 images.</p>
+<p>Moving beyond Red Hat's offering, other vendors use UBI images to release their images too &ndash; Intel, IBM, Isovalent, Cisco, Aqua Security, and many others adopt UBI as the base for their official images on the Red Hat Marketplace.</p>
+<h1 id="further-reading">Further reading<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<p>To learn more about the topics that were covered in this chapter, take a look at the following resources:</p>
+<ul>
+<li>[1] MITRE ATT&amp;CK® matrix: <a href="https://attack.mitre.org/matrices/enterprise/containers/" rel="external" target="_blank">https://attack.mitre.org/matrices/enterprise/containers/</a></li>
+<li>[2] Things you should know about the Kubernetes threat matrix: <a href="https://cloud.redhat.com/blog/2021-kubernetes-threat-matrix-updates-things-you-should-know" rel="external" target="_blank">https://cloud.redhat.com/blog/2021-kubernetes-threat-matrix-updates-things-you-should-know</a></li>
+<li>[3] How to manage Linux container registries: <a href="https://www.redhat.com/sysadmin/manage-container-registries" rel="external" target="_blank">https://www.redhat.com/sysadmin/manage-container-registries</a></li>
+<li>[4] (Re)Introducing the Red Hat Universal Base Image: <a href="https://www.redhat.com/en/blog/introducing-red-hat-universal-base-image" rel="external" target="_blank">https://www.redhat.com/en/blog/introducing-red-hat-universal-base-image</a></li>
+<li>[5] Introduction to Red Hat's UBI Micro: <a href="https://www.redhat.com/en/blog/int" rel="external" target="_blank">https://www.redhat.com/en/blog/int</a></li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation"><a href="https://linuxreader.com">
+  <img src="/images/linuxreader.svg" alt="Linux Reader" >
+</a>
+
+        <search><form action="/search/" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-fw fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/ansible/"><input type="checkbox" id="R-section-e5b911977d99c31c82b120cc3d2f2606" aria-controls="R-subsections-e5b911977d99c31c82b120cc3d2f2606"><label for="R-section-e5b911977d99c31c82b120cc3d2f2606"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Ansible</span></label><a class="padding default-animation" href="/ansible/"><i class="fa-solid fa-robot"></i> Ansible<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e5b911977d99c31c82b120cc3d2f2606" class="collapsible-menu">
+            <li class="" data-nav-id="/ansible/ansible-navigator/"><a class="padding" href="/ansible/ansible-navigator/">Ansible Navigator<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/install-ansible-using-uv/"><a class="padding" href="/ansible/install-ansible-using-uv/">How to Install Ansible Using uv<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/adhoccommands/"><a class="padding" href="/ansible/adhoccommands/">Ad Hoc Ansible Commands<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/inventory/"><a class="padding" href="/ansible/inventory/">Ansible Inventory and Ansible.cfg<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/playbooks/"><a class="padding" href="/ansible/playbooks/">Ansible Playbooks<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/roles/"><a class="padding" href="/ansible/roles/">Ansible Roles<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/ansible-vault/"><a class="padding" href="/ansible/ansible-vault/">Ansible Vault<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/ansibleconfig/"><a class="padding" href="/ansible/ansibleconfig/">Ansible.cfg<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/awx-minikube-install/"><a class="padding" href="/ansible/awx-minikube-install/">AWX MiniKube Install<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/boot-process/"><a class="padding" href="/ansible/boot-process/">Boot Process<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/deploying-files/"><a class="padding" href="/ansible/deploying-files/">Deploying files<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/encrypted-passwords/"><a class="padding" href="/ansible/encrypted-passwords/">Encrypted passwords<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/handlers/"><a class="padding" href="/ansible/handlers/">Handlers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/hostname-patterns/"><a class="padding" href="/ansible/hostname-patterns/">Host Name Patterns<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/include-and-import-files/"><a class="padding" href="/ansible/include-and-import-files/">Including and importing Files<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/jinja2/"><a class="padding" href="/ansible/jinja2/">Jinja2 templates<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/user-and-groups/"><a class="padding" href="/ansible/user-and-groups/">Manage Users and Groups with Ansible<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/packages-repos-and-subscriptions/"><a class="padding" href="/ansible/packages-repos-and-subscriptions/">Managing Packages, Repositories, and Subscriptions with Ansible<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/storage-partitions-and-lvm/"><a class="padding" href="/ansible/storage-partitions-and-lvm/">Managing Partitions and LVM<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/services/"><a class="padding" href="/ansible/services/">Managing Services with Ansible<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/optimize-ansible-processing/"><a class="padding" href="/ansible/optimize-ansible-processing/">Optimizing Ansible Processing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/selinux/"><a class="padding" href="/ansible/selinux/">SeLinux File Properties<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/ssh-connections/"><a class="padding" href="/ansible/ssh-connections/">SSH Connections<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/tags/"><a class="padding" href="/ansible/tags/">Using Ansible Tags<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/filters/"><a class="padding" href="/ansible/filters/">Using Filters in Ansible<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/loops-and-items/"><a class="padding" href="/ansible/loops-and-items/">Using Loops and Items<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/modules-for-troubleshooting/"><a class="padding" href="/ansible/modules-for-troubleshooting/">Using Modules for Troubleshooting and Testing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/variables/"><a class="padding" href="/ansible/variables/">Using Variables In Ansible<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/ansible/when/"><a class="padding" href="/ansible/when/">Using when to Run Tasks Conditionally<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/bash/"><input type="checkbox" id="R-section-4b42c24c987a75657a389c72aa61a56d" aria-controls="R-subsections-4b42c24c987a75657a389c72aa61a56d"><label for="R-section-4b42c24c987a75657a389c72aa61a56d"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Bash</span></label><a class="padding default-animation" href="/bash/"><i class="fa-fw fas fa-code"></i> Bash<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-4b42c24c987a75657a389c72aa61a56d" class="collapsible-menu">
+            <li class="" data-nav-id="/bash/bash-shell/"><a class="padding" href="/bash/bash-shell/">Bash<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/bash/shell-scripting/"><a class="padding" href="/bash/shell-scripting/">Shell Scripting<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/boot/"><input type="checkbox" id="R-section-a53bfb333437907a8d5bdc636d15c75d" aria-controls="R-subsections-a53bfb333437907a8d5bdc636d15c75d"><label for="R-section-a53bfb333437907a8d5bdc636d15c75d"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Boot</span></label><a class="padding default-animation" href="/boot/"><i class="fa-solid fa-hourglass-start"></i> Boot<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-a53bfb333437907a8d5bdc636d15c75d" class="collapsible-menu">
+            <li class="" data-nav-id="/boot/boot-process-grub2-kernel/"><a class="padding" href="/boot/boot-process-grub2-kernel/">Boot Process, Grub2, and Kernel<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/boot/sys-init-logging-and-tuning/"><a class="padding" href="/boot/sys-init-logging-and-tuning/">System Initialization, Message Logging, and System Tuning<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent " data-nav-id="/containers/"><input type="checkbox" id="R-section-98e55644e7defe4a283b28e510b18cf5" aria-controls="R-subsections-98e55644e7defe4a283b28e510b18cf5" checked><label for="R-section-98e55644e7defe4a283b28e510b18cf5"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Containers</span></label><a class="padding default-animation" href="/containers/"><i class="fa-solid fa-cubes"></i> Containers<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-98e55644e7defe4a283b28e510b18cf5" class="collapsible-menu">
+            <li class="" data-nav-id="/containers/automating-wordpress-containers/"><a class="padding" href="/containers/automating-wordpress-containers/">Automating Wordpress Containers with Ansible and Podman<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/ansible-and-podman/"><a class="padding" href="/containers/ansible-and-podman/">Ansible and Podman<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/building-containers-with-containerfiles/"><a class="padding" href="/containers/building-containers-with-containerfiles/">Building Containers with Containerfiles<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/container-basics/"><a class="padding" href="/containers/container-basics/">Container Basics<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/container-registries/"><a class="padding" href="/containers/container-registries/">Container Registries<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="active " data-nav-id="/containers/container-base-images/"><a class="padding" href="/containers/container-base-images/">Container Universal Base Images<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/intro-to-podman/"><a class="padding" href="/containers/intro-to-podman/">Containers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/customizing-podman/"><a class="padding" href="/containers/customizing-podman/">Customizing Podman&#39;s Behavior<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/distrobox/"><a class="padding" href="/containers/distrobox/">Distrobox Basics<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/installing-podman/"><a class="padding" href="/containers/installing-podman/">Installing Podman<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/intro-to-containers/"><a class="padding" href="/containers/intro-to-containers/">Introduction to Containers<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/manage-trusted-image-registries/"><a class="padding" href="/containers/manage-trusted-image-registries/">Managing Trusted Image Registries<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/podman-links/"><a class="padding" href="/containers/podman-links/">Podman Links<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/podman-quadlets/"><a class="padding" href="/containers/podman-quadlets/">Podman Quadlets<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/podman-socket/"><a class="padding" href="/containers/podman-socket/">Podman Socket<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/cyber-security/"><input type="checkbox" id="R-section-f95cf8cea1c115dd046e46a833f33dfa" aria-controls="R-subsections-f95cf8cea1c115dd046e46a833f33dfa"><label for="R-section-f95cf8cea1c115dd046e46a833f33dfa"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Cyber Security</span></label><a class="padding default-animation" href="/cyber-security/"><i class="fa-solid fa-user-secret"></i> Cyber Security<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-f95cf8cea1c115dd046e46a833f33dfa" class="collapsible-menu">
+            <li class="" data-nav-id="/cyber-security/security-enhanced-linux/"><a class="padding" href="/cyber-security/security-enhanced-linux/">Security Enhanced Linux<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/cyber-security/the-linux-firewall/"><a class="padding" href="/cyber-security/the-linux-firewall/">The Linux Firewall<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/cyber-security/the-secure-shell-service/"><a class="padding" href="/cyber-security/the-secure-shell-service/">The Secure Shell Service<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/desktop/"><input type="checkbox" id="R-section-e1fc414efb00462ad25041a21e45e696" aria-controls="R-subsections-e1fc414efb00462ad25041a21e45e696"><label for="R-section-e1fc414efb00462ad25041a21e45e696"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Desktop</span></label><a class="padding default-animation" href="/desktop/"><i class="fa-fw fas fa-computer"></i> Desktop<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e1fc414efb00462ad25041a21e45e696" class="collapsible-menu">
+            <li class="" data-nav-id="/desktop/new-setup/"><a class="padding" href="/desktop/new-setup/">Configure Fedora Desktop using Ansible<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/desktop/my-fedora-setup/"><a class="padding" href="/desktop/my-fedora-setup/">My old Fedora Setup<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/desktop/silverblue/"><a class="padding" href="/desktop/silverblue/">Silverblue<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/files/"><input type="checkbox" id="R-section-31e56884d732922d4a0e407592968056" aria-controls="R-subsections-31e56884d732922d4a0e407592968056"><label for="R-section-31e56884d732922d4a0e407592968056"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Files</span></label><a class="padding default-animation" href="/files/"><i class="fa-solid fa-copy"></i> Files<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-31e56884d732922d4a0e407592968056" class="collapsible-menu">
+            <li class="" data-nav-id="/files/advanced-file-management/"><a class="padding" href="/files/advanced-file-management/">Advanced File Management<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/files/file-management/"><a class="padding" href="/files/file-management/">Basic File Managment<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/networking/"><input type="checkbox" id="R-section-d7c3359b808d40df139a3bb9f9073483" aria-controls="R-subsections-d7c3359b808d40df139a3bb9f9073483"><label for="R-section-d7c3359b808d40df139a3bb9f9073483"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Networking</span></label><a class="padding default-animation" href="/networking/"><i class="fa-fw fas fa-network-wired"></i> Networking<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-d7c3359b808d40df139a3bb9f9073483" class="collapsible-menu">
+            <li class="" data-nav-id="/networking/classfulipv4/"><a class="padding" href="/networking/classfulipv4/">Classful IPv4<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/consoling_in_to_mx80_from_linux/"><a class="padding" href="/networking/consoling_in_to_mx80_from_linux/">Consoling in to MX80 from linux<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/dns-and-time-syncronization/"><a class="padding" href="/networking/dns-and-time-syncronization/">DNS<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/how-to-study-for-the-ccna-exam/"><a class="padding" href="/networking/how-to-study-for-the-ccna-exam/">How I Studied For CCNA<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/juniper_cli_basics/"><a class="padding" href="/networking/juniper_cli_basics/">Juniper CLI Basics<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/network-devices-and-connections/"><a class="padding" href="/networking/network-devices-and-connections/">Networking Devices and Connections<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/networking-network-devices-and-network-connections/"><a class="padding" href="/networking/networking-network-devices-and-network-connections/">Networking Network Devices and Network Connections<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/time-synchronization/"><a class="padding" href="/networking/time-synchronization/">Time Synchronization<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/networking/toggle_poe/"><a class="padding" href="/networking/toggle_poe/">Toggle PoE on a Juniper Switch<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/packages/"><input type="checkbox" id="R-section-bdf1e8ce92aa8ff6883c617f10480430" aria-controls="R-subsections-bdf1e8ce92aa8ff6883c617f10480430"><label for="R-section-bdf1e8ce92aa8ff6883c617f10480430"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Packages</span></label><a class="padding default-animation" href="/packages/"><i class="fa-solid fa-box-open"></i> Packages<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-bdf1e8ce92aa8ff6883c617f10480430" class="collapsible-menu">
+            <li class="" data-nav-id="/packages/advanced-package-management/"><a class="padding" href="/packages/advanced-package-management/">Advanced Package Management<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/packages/basic-package-management/"><a class="padding" href="/packages/basic-package-management/">Basic Package Management<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/packages/dnf-package-groups/"><a class="padding" href="/packages/dnf-package-groups/">DNF Package Groups<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/storage/"><input type="checkbox" id="R-section-28a53f7a259bc0e6bfd5bf73591250a9" aria-controls="R-subsections-28a53f7a259bc0e6bfd5bf73591250a9"><label for="R-section-28a53f7a259bc0e6bfd5bf73591250a9"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Storage</span></label><a class="padding default-animation" href="/storage/"><i class="fa-solid fa-hard-drive"></i> Storage<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-28a53f7a259bc0e6bfd5bf73591250a9" class="collapsible-menu">
+            <li class="" data-nav-id="/storage/autofs/"><a class="padding" href="/storage/autofs/">AutoFS<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storage/local-filesystems-and-swap/"><a class="padding" href="/storage/local-filesystems-and-swap/">Local File Systems and Swap<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storage/network-filesystem-nfs/"><a class="padding" href="/storage/network-filesystem-nfs/">Network File System (NFS)<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storage/partitioning-mbr-gpt/"><a class="padding" href="/storage/partitioning-mbr-gpt/">Partitioning, MBR, and GPT<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storage/rm-filesystem-from-partition/"><a class="padding" href="/storage/rm-filesystem-from-partition/">Remove a filesystem from a partition<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storage/thin-provisioning/"><a class="padding" href="/storage/thin-provisioning/">Thin Provisioning and LVM<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/storage/virtual-data-optimizer-vdo/"><a class="padding" href="/storage/virtual-data-optimizer-vdo/">Virtual Data Optimizer (VDO)<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/system/"><input type="checkbox" id="R-section-0ea554b019cc5a3e6337c45b68b3a647" aria-controls="R-subsections-0ea554b019cc5a3e6337c45b68b3a647"><label for="R-section-0ea554b019cc5a3e6337c45b68b3a647"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu System</span></label><a class="padding default-animation" href="/system/"><i class="fa-solid fa-server"></i> System<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-0ea554b019cc5a3e6337c45b68b3a647" class="collapsible-menu">
+            <li class="" data-nav-id="/system/installation/"><a class="padding" href="/system/installation/">Installing RHEL Linux<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/system/interaction/"><a class="padding" href="/system/interaction/">Interaction<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/system/process-and-task-scheduling/"><a class="padding" href="/system/process-and-task-scheduling/">Process and Task Scheduling<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/tools/"><input type="checkbox" id="R-section-bf1399820dde3dd110e03ace4147ff86" aria-controls="R-subsections-bf1399820dde3dd110e03ace4147ff86"><label for="R-section-bf1399820dde3dd110e03ace4147ff86"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Tools</span></label><a class="padding default-animation" href="/tools/"><i class="fa-solid fa-screwdriver-wrench"></i> Tools<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-bf1399820dde3dd110e03ace4147ff86" class="collapsible-menu">
+            <li class="" data-nav-id="/tools/remove-formatting-from-highlights/"><a class="padding" href="/tools/remove-formatting-from-highlights/">How to Remove Formatting From Ebook Highlights With Vim<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/calibre-web-docker-nginx/"><a class="padding" href="/tools/calibre-web-docker-nginx/">Calibre Web with Docker and NGINX<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/you-need-to-learn-man-pages/"><a class="padding" href="/tools/you-need-to-learn-man-pages/">You Need to Learn Man Pages<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/proxmox-ha-proxy-setup/"><a class="padding" href="/tools/proxmox-ha-proxy-setup/">Proxmox PfSense HaProxy Setup<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/calibre-web-with-docker-and-nginx/"><a class="padding" href="/tools/calibre-web-with-docker-and-nginx/">Calibre Web with Docker and NGINX<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/how-to-build-a-website-with-hugo/"><a class="padding" href="/tools/how-to-build-a-website-with-hugo/">How to Build a website With Hugo<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/process-bookfusion-highlights/"><a class="padding" href="/tools/process-bookfusion-highlights/">How to Process Bookfusion Highlights with Vim<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/how-to-set-up-hugo-relearn-theme/"><a class="padding" href="/tools/how-to-set-up-hugo-relearn-theme/">How to Set Up Hugo Relearn Theme<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/learning-touch-typing/"><a class="padding" href="/tools/learning-touch-typing/">Learning Touch Typing<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/nextcloud-on-rhel-based-systems/"><a class="padding" href="/tools/nextcloud-on-rhel-based-systems/">Nextcloud on RHEL Based Systems<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/setting-up-a-self-hosted-nextcloud-server/"><a class="padding" href="/tools/setting-up-a-self-hosted-nextcloud-server/">Self hosting a Nextcloud Server<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/tools/vimguide/"><a class="padding" href="/tools/vimguide/">Vim Guide<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/virtualization/"><input type="checkbox" id="R-section-da8ee4406de37987b502b79e5b0a9d1c" aria-controls="R-subsections-da8ee4406de37987b502b79e5b0a9d1c"><label for="R-section-da8ee4406de37987b502b79e5b0a9d1c"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Virtualization</span></label><a class="padding default-animation" href="/virtualization/"><i class="fa-solid fa-microchip"></i> Virtualization<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-da8ee4406de37987b502b79e5b0a9d1c" class="collapsible-menu">
+            <li class="" data-nav-id="/virtualization/automate-kvm-vms/"><a class="padding" href="/virtualization/automate-kvm-vms/">Using Libvirt and Ansible to Automate KVM Virtual Machine Deployments<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/virtualization/using-vagrant-on-linux/"><a class="padding" href="/virtualization/using-vagrant-on-linux/">Using Vagrant on Linux<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/users-and-groups/"><input type="checkbox" id="R-section-ea23e0c86f0adbd857ee01a4f4dd70e4" aria-controls="R-subsections-ea23e0c86f0adbd857ee01a4f4dd70e4"><label for="R-section-ea23e0c86f0adbd857ee01a4f4dd70e4"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Users and Groups</span></label><a class="padding default-animation" href="/users-and-groups/"><i class="fa-solid fa-users"></i> Users and Groups<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-ea23e0c86f0adbd857ee01a4f4dd70e4" class="collapsible-menu">
+            <li class="" data-nav-id="/users-and-groups/advanced-user-management/"><a class="padding" href="/users-and-groups/advanced-user-management/">Advanced User Management<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/users-and-groups/basic-user-management/"><a class="padding" href="/users-and-groups/basic-user-management/">Basic User Management<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <div class="nav-title padding">More</div>
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/booknotes/"><a class="padding" href="/booknotes/"><i class='fas fa-fw fa-book'></i> Book Notes<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/now/"><a class="padding" href="/now/"><i class='fas fa-fw fa-clock'></i> Now<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+            <li class="R-historyclearer">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-history"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <button>Clear History</button>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1781627881" defer></script>
+    <script src="/js/theme.js?1781627881" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

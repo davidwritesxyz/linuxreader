@@ -95,34 +95,19 @@ Instead, I want to contanerize the whole process to:
 - Removes complexity in the set up from "that one server you SSH'd to" to a more declarative system.
 
 Containers give you a repeatable and portable way to describe a process.
-```
+```dockerfile
 FROM registry.fedoraproject.org/fedora:latest as base
 
 FROM base as build
 
-RUN dnf -y install hugo
+RUN set -eou pipefail; \
+dnf install -y hugo; \
+dnf clean all -y; \
+rm -rf /var/cache/dnf/*
 
-COPY ~/Documents/linuxreader.github.io/ /blog
-COPY ~/Documents/notes/Ansible /blog/content
-COPY ~/Documents/notes/Bash /blog/content
-COPY ~/Documents/notes/Booknotes /blog/content
-COPY ~/Documents/notes/Boot /blog/content
-COPY ~/Documents/notes/Containers /blog/content
-COPY ~/Documents/notes/Cyber-Security /blog/content
-COPY ~/Documents/notes/Desktop /blog/content
-COPY ~/Documents/notes/Files /blog/content
-COPY ~/Documents/notes/images /blog/content
-COPY ~/Documents/notes/Networking /blog/content
-COPY ~/Documents/notes/Packages /blog/content
-COPY ~/Documents/notes/Python /blog/content
-COPY ~/Documents/notes/Packages /blog/content
-COPY ~/Documents/notes/Storage /blog/content
-COPY ~/Documents/notes/System /blog/content
-COPY ~/Documents/notes/Tools /blog/content
-COPY ~/Documents/notes/Users-and-Groups /blog/content
-COPY ~/Documents/notes/Virtualization /blog/content
-COPY ~/Documents/notes/personal/linuxreader /blog/content
-COPY ~/Documents/notes/Now /blog/content
+COPY /linuxreader.github.io/ /blog/
+COPY /notes/* /blog/content/*
+COPY /notes/Sites/linuxreader/* /blog/content/
 
 WORKDIR /blog
 
@@ -130,12 +115,18 @@ RUN hugo
 
 FROM base
 
-RUN dnf -y install httpd
+RUN set -eou pipefail; \
+dnf install -y httpd; \
+dnf clean all -y; \
+rm -rf /var/cache/dnf/*
 
-COPY --from=build /blog/public /var/www/html
+COPY --from=build /blog/docs /var/www/html
 
 ENTRYPOINT ["httpd"]
 CMD ["-D", "FOREGROUND"]
 ```
 
 Push image to registry:  
+```bash
+skopeo copy --dest-tls-verify=false containers-storage:localhost/lrsite docker://dt-lab3:5000/lrsite
+```
