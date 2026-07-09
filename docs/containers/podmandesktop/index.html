@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html id="R-html" lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.154.5">
@@ -14,7 +14,7 @@ Setting up the prerequisites for the host operating system Easily building, runn
     <meta name="twitter:description" content="Managing Your Container, Kubernetes, and AI Workloads from a Graphical Interface
 Accelerate day-to-day tasks such as inspecting logs, managing multiple environments, and exploring new technologies. Comprehensive control center for all your container, Kubernetes, and even artificial intelligence (AI) development needs, right on your local machine. In this chapter, we&#39;re going to cover the following main topics:
 Setting up the prerequisites for the host operating system Easily building, running, stopping, and managing containers with a user-friendly interface Connecting to and interacting directly with Kubernetes clusters Provisioning local inference servers to run AI models and obtaining endpoints for application integration Integrating an AI model running on Podman for building your own chatbot use case Technical requirements To complete this chapter, you will need a machine with a working Podman installation.[]{.sentence-end} As we mentioned in Chapter 3{.chapref}, Running the First Container, all the examples in this book were executed on a Fedora 40 system or later, but can be reproduced on your choice of operating system (OS).">
-    <meta property="og:url" content="https://www.linuxreader.com/containers/podmandesktop/">
+    <meta property="og:url" content="http://localhost:1313/containers/podmandesktop/">
     <meta property="og:description" content="Managing Your Container, Kubernetes, and AI Workloads from a Graphical Interface
 Accelerate day-to-day tasks such as inspecting logs, managing multiple environments, and exploring new technologies. Comprehensive control center for all your container, Kubernetes, and even artificial intelligence (AI) development needs, right on your local machine. In this chapter, we&#39;re going to cover the following main topics:
 Setting up the prerequisites for the host operating system Easily building, running, stopping, and managing containers with a user-friendly interface Connecting to and interacting directly with Kubernetes clusters Provisioning local inference servers to run AI models and obtaining endpoints for application integration Integrating an AI model running on Podman for building your own chatbot use case Technical requirements To complete this chapter, you will need a machine with a working Podman installation.[]{.sentence-end} As we mentioned in Chapter 3{.chapref}, Running the First Container, all the examples in this book were executed on a Fedora 40 system or later, but can be reproduced on your choice of operating system (OS).">
@@ -27,35 +27,35 @@ Setting up the prerequisites for the host operating system Easily building, runn
     <meta itemprop="wordCount" content="5653">
     <title></title>
     <link href="/containers/podmandesktop/index.md" rel="alternate" type="text/markdown" title="">
-    <link href="/images/favicon.svg?1781627878" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1781627878" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1781627878" defer></script>
-    <script src="/js/search-lunr.min.js?1781627878" defer></script>
-    <script src="/js/search.min.js?1781627878" defer></script>
+    <link href="/images/favicon.svg?1783626904" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1783626904" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1783626904" defer></script>
+    <script src="/js/search-lunr.js?1783626904" defer></script>
+    <script src="/js/search.js?1783626904" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1781627878";
+      window.relearn.index_js_url="/searchindex.en.js?1783626904";
     </script>
-    <script src="/js/lunr/lunr.min.js?1781627878" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1781627878" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1781627878" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1781627878" defer></script>
+    <script src="/js/lunr/lunr.min.js?1783626904" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1783626904" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1783626904" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1783626904" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1781627878" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1781627878" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1781627878" rel="stylesheet">
-    <link href="/css/theme.min.css?1781627878" rel="stylesheet">
-    <link href="/css/format-html.min.css?1781627878" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1783626904" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1783626904" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1783626904" rel="stylesheet">
+    <link href="/css/theme.css?1783626904" rel="stylesheet">
+    <link href="/css/format-html.css?1783626904" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/containers\/podmandesktop\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/www.linuxreader.com';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=false;
       window.relearn.enableBlockCodeWrap=true;
       // translations
@@ -899,8 +899,8 @@ of Pods and a policy by which to access them.[]{.sentence-end} This
 list shows all the services, their type (<code>ClusterIP</code>{.inlineCode},
 <code>NodePort</code>{.inlineCode}, or <code>LoadBalancer</code>{.inlineCode}), and the
 ports they expose.[]{.sentence-end}</p>
-<p><a href="#R-image-9e698016cca394b70633863224170065" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_16.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9e698016cca394b70633863224170065"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_16.png"></a></p>
+<p><a href="#R-image-9aa8b754b5c9e48d79b41123339ab6e8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_16.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9aa8b754b5c9e48d79b41123339ab6e8"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_16.png"></a></p>
 <p>Figure 15.16: The Services list view, showing services of different
 types, including a NodePort service with its assigned port</p>
 </li>
@@ -956,8 +956,8 @@ workloads in the next section.</p>
 <li>
 <p>Click the toggle switch to enable it. The application might require a quick restart to apply the
 changes.</p>
-<p><a href="#R-image-74acbfaf3f0813d90953cf92301dbd86" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_17.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-74acbfaf3f0813d90953cf92301dbd86"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_17.png"></a></p>
+<p><a href="#R-image-f98797a9d2a063f788b10f62bae530b4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_17.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f98797a9d2a063f788b10f62bae530b4"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_17.png"></a></p>
 </li>
 </ol>
 <p>Once enabled, a new <strong>AI Lab</strong> icon will appear in your left sidebar, ready for you to explore.</p>
@@ -979,8 +979,8 @@ designed to run well on consumer hardware:</p>
 </li>
 <li>
 <p>A configuration dialog will appear. Here, you can accept the defaults or customize the setup. For now, the default settings are sufficient. Click <strong>Create service</strong> to proceed.</p>
-<p><a href="#R-image-e12210080955a5e9c43cb79edae74e6e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_18.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e12210080955a5e9c43cb79edae74e6e"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_18.png"></a></p>
+<p><a href="#R-image-5372de46824bea495858d257d4861bae" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_18.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5372de46824bea495858d257d4861bae"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_18.png"></a></p>
 </li>
 </ol>
 <p>If you see any warning regarding the available RAM, please disregard it if you are running Podman Desktop on a Linux machine; otherwise, please follow any instructions to adjust the memory settings.</p>
@@ -997,8 +997,8 @@ AI models with container-centric commands such as <code>run</code>, <code>pull</
 </li>
 <li>
 <p>You will see a new container running. Its name will be related to the AI Lab service (e.g., <code>ramalama-llama-server</code>. This confirms that AI Lab simply orchestrated the creation of a standard Podman container to host the model.</p>
-<p><a href="#R-image-31e0d3f4d16bb6d5d7ce3b5db3d21d10" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_19.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-31e0d3f4d16bb6d5d7ce3b5db3d21d10"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_19.png"></a></p>
+<p><a href="#R-image-40333698205c93068433cda2d8b582a5" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_19.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-40333698205c93068433cda2d8b582a5"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_19.png"></a></p>
 </li>
 </ol>
 <p>By clicking on this container, you can inspect it just like any other: view its logs, check the mapped ports, or even open a terminal inside it. This transparency is a key benefit because you are always in control and can use your existing container skills to manage the underlying infrastructure.</p>
@@ -1016,8 +1016,8 @@ AI models with container-centric commands such as <code>run</code>, <code>pull</
 like http://localhost:8080/v1/chat/completions</p>
 </li>
 </ol>
-<p><a href="#R-image-a85fd86dc5a63a42db8e8a23ca6e145e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_20.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a85fd86dc5a63a42db8e8a23ca6e145e"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_20.png"></a></p>
+<p><a href="#R-image-cfe03b5500cd99ddda7439b150e0e394" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_20.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cfe03b5500cd99ddda7439b150e0e394"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_20.png"></a></p>
 <p>You can test the endpoint immediately. Copy the URL, open a terminal on your host machine, and use a tool such as <code>curl</code> to send a
 request.[]{.sentence-end} While we will build a full application in the
 next section, a simple test demonstrates that your local AI server is
@@ -1106,8 +1106,8 @@ $ chmod -R 777 /home/seal/.local/share/containers/storage/volumes/anythingllm/_d
 </li>
 <li>
 <p>Give the container a name, such as <code>anything-llm</code>, and click <strong>Start Container</strong>.</p>
-<p><a href="#R-image-0a2b5e8844a4e4f56d366534dea7de47" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_21.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0a2b5e8844a4e4f56d366534dea7de47"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_21.png"></a></p>
+<p><a href="#R-image-0db322c31d023a1deffe429627318a72" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_21.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0db322c31d023a1deffe429627318a72"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_21.png"></a></p>
 </li>
 </ol>
 <p>After that, the container will start, and we will be ready to connect it to our model!</p>
@@ -1126,8 +1126,8 @@ URL. It will look like http://localhost:43717/v1.</li>
 <p>Now, open a web browser and navigate to the <strong>AnythingLLM</strong> interface at http://localhost:3001</p>
 </li>
 </ol>
-<p><a href="#R-image-84d12030b150f66003a7e7b2868d2b38" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_22.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-84d12030b150f66003a7e7b2868d2b38"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_22.png"></a></p>
+<p><a href="#R-image-75e26725db96b43c5bb2311d54ce5b24" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_22.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-75e26725db96b43c5bb2311d54ce5b24"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_22.png"></a></p>
 <ol start="3">
 <li>You will be guided through a one-time setup process.When you reach the <strong>LLM Preference</strong> step, you will configure it to use your local model:
 <ul>
@@ -1153,8 +1153,8 @@ the URL to be something like <code>http://host.containers.internal:43717/v1</cod
 </ul>
 </li>
 </ol>
-<p><a href="#R-image-440730d5ba3bd69ed740bb953f8067bd" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_23.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-440730d5ba3bd69ed740bb953f8067bd"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_23.png"></a></p>
+<p><a href="#R-image-350a90d16962488ef2e80884b50118eb" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_23.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-350a90d16962488ef2e80884b50118eb"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_23.png"></a></p>
 <ol start="4">
 <li>Complete the setup. You will be taken to the main chat interface.</li>
 </ol>
@@ -1166,8 +1166,8 @@ the URL to be something like <code>http://host.containers.internal:43717/v1</cod
 response will be streamed back to the web interface.</p>
 <p>To confirm that the entire stack is running as expected, return to Podman Desktop and navigate to the <strong>Containers</strong> list.</p>
 <p>You should now see at least two running containers: your AI inference server and your web application <code>anythingllm</code>.</p>
-<p><a href="#R-image-27516f07f4a42c0e08336bfa568baee6" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_24.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-27516f07f4a42c0e08336bfa568baee6"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_24.png"></a></p>
+<p><a href="#R-image-108f6c7bbf0e0e1cdc815be3df66c78d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="images/B31467_15_24.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-108f6c7bbf0e0e1cdc815be3df66c78d"><img class="lazy lightbox lightbox-image" loading="lazy" src="images/B31467_15_24.png"></a></p>
 <h1 id="h1_380" class="heading-1">Further reading<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <ul>
 <li>Podman Desktop downloads:
@@ -1281,7 +1281,8 @@ response will be streamed back to the web interface.</p>
             <li class="" data-nav-id="/containers/manage-trusted-image-registries/"><a class="padding" href="/containers/manage-trusted-image-registries/">Managing Trusted Image Registries<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/podman-links/"><a class="padding" href="/containers/podman-links/">Podman Links<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/podman-quadlets/"><a class="padding" href="/containers/podman-quadlets/">Podman Quadlets<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/containers/podman-socket/"><a class="padding" href="/containers/podman-socket/">Podman Socket<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/containers/podman-socket/"><a class="padding" href="/containers/podman-socket/">Podman Socket<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/zot-container-image-registry-setup/"><a class="padding" href="/containers/zot-container-image-registry-setup/">Self Hosted Zot Container Registry<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
             <li class="" data-nav-id="/cyber-security/"><input type="checkbox" id="R-section-f95cf8cea1c115dd046e46a833f33dfa" aria-controls="R-subsections-f95cf8cea1c115dd046e46a833f33dfa"><label for="R-section-f95cf8cea1c115dd046e46a833f33dfa"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Cyber Security</span></label><a class="padding default-animation" href="/cyber-security/"><i class="fa-solid fa-user-secret"></i> Cyber Security<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-f95cf8cea1c115dd046e46a833f33dfa" class="collapsible-menu">
             <li class="" data-nav-id="/cyber-security/security-enhanced-linux/"><a class="padding" href="/cyber-security/security-enhanced-linux/">Security Enhanced Linux<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/cyber-security/the-linux-firewall/"><a class="padding" href="/cyber-security/the-linux-firewall/">The Linux Firewall<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -1371,8 +1372,8 @@ response will be streamed back to the web interface.</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1781627878" defer></script>
-    <script src="/js/theme.min.js?1781627878" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1783626904" defer></script>
+    <script src="/js/theme.js?1783626904" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

@@ -25,27 +25,27 @@
     <meta itemprop="wordCount" content="72">
     <title>Proxmox PfSense HaProxy Setup</title>
     <link href="/tools/proxmox-ha-proxy-setup/index.md" rel="alternate" type="text/markdown" title="Proxmox PfSense HaProxy Setup">
-    <link href="/images/favicon.svg?1781627881" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1781627881" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1781627881" defer></script>
-    <script src="/js/search-lunr.js?1781627881" defer></script>
-    <script src="/js/search.js?1781627881" defer></script>
+    <link href="/images/favicon.svg?1783626905" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1783626905" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1783626905" defer></script>
+    <script src="/js/search-lunr.js?1783626905" defer></script>
+    <script src="/js/search.js?1783626905" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1781627881";
+      window.relearn.index_js_url="/searchindex.en.js?1783626905";
     </script>
-    <script src="/js/lunr/lunr.min.js?1781627881" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1781627881" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1781627881" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1781627881" defer></script>
+    <script src="/js/lunr/lunr.min.js?1783626905" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1783626905" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1783626905" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1783626905" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1781627881" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1781627881" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1781627881" rel="stylesheet">
-    <link href="/css/theme.css?1781627881" rel="stylesheet">
-    <link href="/css/format-html.css?1781627881" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1783626905" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1783626905" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1783626905" rel="stylesheet">
+    <link href="/css/theme.css?1783626905" rel="stylesheet">
+    <link href="/css/format-html.css?1783626905" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -190,30 +190,30 @@ code, kbd, pre, samp {
 <p>General HaProxy setup pretty much matches the LS video here: <a href="https://www.youtube.com/watch?v=bU85dgHSb2E" rel="external" target="_blank">https://www.youtube.com/watch?v=bU85dgHSb2E</a></p>
 <h2 id="frontend-configuration">Frontend configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>External address</strong></p>
-<p><a href="#R-image-fd988732f7b44af2ecaf7103fb32f8ad" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041515.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-fd988732f7b44af2ecaf7103fb32f8ad"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041515.png"></a></p>
+<p><a href="#R-image-6835627296258366fca3bd3551e915ae" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041515.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6835627296258366fca3bd3551e915ae"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041515.png"></a></p>
 <p><strong>Type</strong>
-<a href="#R-image-86b4b694dd5c00f0f8077c3b2b60b022" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041615.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-86b4b694dd5c00f0f8077c3b2b60b022"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041615.png"></a></p>
+<a href="#R-image-0e0d4467d0fc22193f95bc08af5d4df0" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041615.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0e0d4467d0fc22193f95bc08af5d4df0"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041615.png"></a></p>
 <p><strong>ACL</strong>
-<a href="#R-image-57e38798933c92bfca36dbc5167609cc" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041708.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-57e38798933c92bfca36dbc5167609cc"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041708.png"></a></p>
+<a href="#R-image-e197c175eff013e8c4307efec467dc48" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041708.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e197c175eff013e8c4307efec467dc48"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041708.png"></a></p>
 <p><strong>ACL Actions</strong>
-<a href="#R-image-abdd326010bb331273196374e92f49c7" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041758.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-abdd326010bb331273196374e92f49c7"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041758.png"></a></p>
+<a href="#R-image-ae5968a447531f4f90871934b8fa21ba" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041758.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ae5968a447531f4f90871934b8fa21ba"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041758.png"></a></p>
 <p><strong>SSL Offloading</strong>
-<a href="#R-image-f1ac36c15ae4e0ffd7ca0586e77001c4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041849.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f1ac36c15ae4e0ffd7ca0586e77001c4"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041849.png"></a></p>
+<a href="#R-image-7d689da29e51aac781b714297a18d342" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041849.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7d689da29e51aac781b714297a18d342"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041849.png"></a></p>
 <h2 id="backend-configuration">Backend configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>Backend Server Pool</strong>
-<a href="#R-image-f945805ccd785f7cf1edb308bd5d31e2" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117042001.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-f945805ccd785f7cf1edb308bd5d31e2"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117042001.png"></a></p>
+<a href="#R-image-8f63d54856fb159c633c1a499911e097" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117042001.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8f63d54856fb159c633c1a499911e097"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117042001.png"></a></p>
 <p><strong>Health check</strong>
-<a href="#R-image-67dd37dd6e1c98bb4b343dd3c73e452a" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117042031.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-67dd37dd6e1c98bb4b343dd3c73e452a"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117042031.png"></a></p>
+<a href="#R-image-78594a0584366a3c01b850f56c73ae90" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117042031.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-78594a0584366a3c01b850f56c73ae90"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117042031.png"></a></p>
 <h2 id="its-working-finally">It&rsquo;s working finally!<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-62044f493d3addd923f1f72eafe81669" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/proxmox-gui.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-62044f493d3addd923f1f72eafe81669"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/proxmox-gui.png"></a></p>
+<p><a href="#R-image-f93e8f7971a3d36f316d3560582d6c94" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/proxmox-gui.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f93e8f7971a3d36f316d3560582d6c94"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/proxmox-gui.png"></a></p>
 
   <footer class="footline">
   </footer>
@@ -309,7 +309,8 @@ code, kbd, pre, samp {
             <li class="" data-nav-id="/containers/manage-trusted-image-registries/"><a class="padding" href="/containers/manage-trusted-image-registries/">Managing Trusted Image Registries<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/podman-links/"><a class="padding" href="/containers/podman-links/">Podman Links<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/podman-quadlets/"><a class="padding" href="/containers/podman-quadlets/">Podman Quadlets<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/containers/podman-socket/"><a class="padding" href="/containers/podman-socket/">Podman Socket<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/containers/podman-socket/"><a class="padding" href="/containers/podman-socket/">Podman Socket<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/zot-container-image-registry-setup/"><a class="padding" href="/containers/zot-container-image-registry-setup/">Self Hosted Zot Container Registry<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
             <li class="" data-nav-id="/cyber-security/"><input type="checkbox" id="R-section-f95cf8cea1c115dd046e46a833f33dfa" aria-controls="R-subsections-f95cf8cea1c115dd046e46a833f33dfa"><label for="R-section-f95cf8cea1c115dd046e46a833f33dfa"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Cyber Security</span></label><a class="padding default-animation" href="/cyber-security/"><i class="fa-solid fa-user-secret"></i> Cyber Security<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-f95cf8cea1c115dd046e46a833f33dfa" class="collapsible-menu">
             <li class="" data-nav-id="/cyber-security/security-enhanced-linux/"><a class="padding" href="/cyber-security/security-enhanced-linux/">Security Enhanced Linux<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/cyber-security/the-linux-firewall/"><a class="padding" href="/cyber-security/the-linux-firewall/">The Linux Firewall<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -399,8 +400,8 @@ code, kbd, pre, samp {
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1781627881" defer></script>
-    <script src="/js/theme.js?1781627881" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1783626905" defer></script>
+    <script src="/js/theme.js?1783626905" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

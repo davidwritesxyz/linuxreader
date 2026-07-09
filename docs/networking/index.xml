@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Networking</title>
-    <link>https://www.linuxreader.com/networking/</link>
+    <link>http://localhost:1313/networking/</link>
     <description>Classful IPv4&#xD;Classful IPv4 address space&#xD;Consoling in to MX80 from linux&#xD;How to console into an MX80 router from linux&#xD;DNS&#xD;Basic DNS Concepts&#xD;How I Studied For CCNA&#xD;How I approached my CCNA studies.&#xD;Juniper CLI Basics&#xD;How to do basic stuff with Junos&#xD;Networking Devices and Connections&#xD;Hostname, IP addressing, network protocols, network manager, tools, etc.&#xD;Networking Network Devices and Network Connections&#xD;Hostname, IP addressing, network protocols, network manager, tools, etc.&#xD;Time Synchronization&#xD;NTP, Chrony, etc.&#xD;Toggle PoE on a Juniper Switch&#xD;How to toggle PoE on a Juniper switch.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://www.linuxreader.com/networking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Classful IPv4</title>
-      <link>https://www.linuxreader.com/networking/classfulipv4/</link>
+      <link>http://localhost:1313/networking/classfulipv4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/networking/classfulipv4/</guid>
+      <guid>http://localhost:1313/networking/classfulipv4/</guid>
       <description>Classful IPv4 address space</description>
     </item>
     <item>
       <title>Consoling in to MX80 from linux</title>
-      <link>https://www.linuxreader.com/networking/consoling_in_to_mx80_from_linux/</link>
+      <link>http://localhost:1313/networking/consoling_in_to_mx80_from_linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/networking/consoling_in_to_mx80_from_linux/</guid>
+      <guid>http://localhost:1313/networking/consoling_in_to_mx80_from_linux/</guid>
       <description>How to console into an MX80 router from linux</description>
     </item>
     <item>
       <title>DNS</title>
-      <link>https://www.linuxreader.com/networking/dns-and-time-syncronization/</link>
+      <link>http://localhost:1313/networking/dns-and-time-syncronization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/networking/dns-and-time-syncronization/</guid>
+      <guid>http://localhost:1313/networking/dns-and-time-syncronization/</guid>
       <description>Basic DNS Concepts</description>
     </item>
     <item>
       <title>How I Studied For CCNA</title>
-      <link>https://www.linuxreader.com/networking/how-to-study-for-the-ccna-exam/</link>
+      <link>http://localhost:1313/networking/how-to-study-for-the-ccna-exam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/networking/how-to-study-for-the-ccna-exam/</guid>
+      <guid>http://localhost:1313/networking/how-to-study-for-the-ccna-exam/</guid>
       <description>How I approached my CCNA studies.</description>
     </item>
     <item>
       <title>Juniper CLI Basics</title>
-      <link>https://www.linuxreader.com/networking/juniper_cli_basics/</link>
+      <link>http://localhost:1313/networking/juniper_cli_basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/networking/juniper_cli_basics/</guid>
+      <guid>http://localhost:1313/networking/juniper_cli_basics/</guid>
       <description>How to do basic stuff with Junos</description>
     </item>
     <item>
       <title>Networking Devices and Connections</title>
-      <link>https://www.linuxreader.com/networking/network-devices-and-connections/</link>
+      <link>http://localhost:1313/networking/network-devices-and-connections/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/networking/network-devices-and-connections/</guid>
+      <guid>http://localhost:1313/networking/network-devices-and-connections/</guid>
       <description>Hostname, IP addressing, network protocols, network manager, tools, etc.</description>
     </item>
     <item>
       <title>Networking Network Devices and Network Connections</title>
-      <link>https://www.linuxreader.com/networking/networking-network-devices-and-network-connections/</link>
+      <link>http://localhost:1313/networking/networking-network-devices-and-network-connections/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/networking/networking-network-devices-and-network-connections/</guid>
+      <guid>http://localhost:1313/networking/networking-network-devices-and-network-connections/</guid>
       <description>Hostname, IP addressing, network protocols, network manager, tools, etc.</description>
     </item>
     <item>
       <title>Time Synchronization</title>
-      <link>https://www.linuxreader.com/networking/time-synchronization/</link>
+      <link>http://localhost:1313/networking/time-synchronization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/networking/time-synchronization/</guid>
+      <guid>http://localhost:1313/networking/time-synchronization/</guid>
       <description>NTP, Chrony, etc.</description>
     </item>
     <item>
       <title>Toggle PoE on a Juniper Switch</title>
-      <link>https://www.linuxreader.com/networking/toggle_poe/</link>
+      <link>http://localhost:1313/networking/toggle_poe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.linuxreader.com/networking/toggle_poe/</guid>
+      <guid>http://localhost:1313/networking/toggle_poe/</guid>
       <description>How to toggle PoE on a Juniper switch.</description>
     </item>
   </channel>

@@ -385,6 +385,9 @@
     <loc>http://localhost:1313/cyber-security/security-enhanced-linux/</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/containers/zot-container-image-registry-setup/</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/tools/setting-up-a-self-hosted-nextcloud-server/</loc>
   </url>
   <url>

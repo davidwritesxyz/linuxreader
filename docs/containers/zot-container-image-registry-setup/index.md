@@ -1,4 +1,44 @@
-# 
+# Self Hosted Zot Container Registry
+
+On my journey to have everything self-hosted and automated, I found the need to set up my own container registry. For this, I chose Zot. 
+
+My Zot setup will allow me to store container images, to which I can have my lab server pull images from at whatever interval I choose. 
+
+That way I can build my images locally, push them to the registry, and have them update automatically in my production environment. 
+
+Zot itself is running as a container. So I added it to my Ansible container-ship role. Here's the breakdown:
+
+## Templates
+
+Here are the templates I used. These are located in the role under `templates/` 
+
+`zot_container.j2
+
+This file is the main Quadlet file for running the container as a systemd service:  
+```ini
+[Container]
+Image=zot.image
+PodmanArgs=--interactive --tty
+PublishPort=5000:5000
+Volume=registry:/var/lib/registry
+Volume=/home/{{ podman_user }}/zot/htpasswd:/var/lib/htpasswd:z
+Volume=/home/{{ podman_user }}/zot/config.json:/etc/zot/config.json:z
+AutoUpdate=registry
+HealthCmd=curl -f http://localhost:5000/v2/ || exit 1
+HealthInterval=30s
+HealthRetries=3
+HealthStartPeriod=30s
+
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+
+```
+
+
 
 Run:  
 ```
@@ -232,3 +272,4 @@ dXNlcm5hbWU6cGFzc3dvcmQ=
   }
 }
 ```
+

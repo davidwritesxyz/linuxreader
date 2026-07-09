@@ -10,7 +10,7 @@ This is my super awesome tech documentation site. Or a place where I put all of 
 
 Browse categories below or navigate using the sidebar. Have fun!
 
-P.S. Want an email whenever I post something new? Make sure to subscribe:  
+P.S. Want an email whenever I post something new? Msake sure to subscribe:  
 <script async src="https://eomail5.com/form/d9b7d338-dbf3-11f0-bae4-65187d72ac9a.js" data-form="d9b7d338-dbf3-11f0-bae4-65187d72ac9a"></script>
 ## Recent Posts
 

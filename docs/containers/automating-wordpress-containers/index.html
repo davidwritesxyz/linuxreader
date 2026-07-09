@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html id="R-html" lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.154.5">
@@ -10,7 +10,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Automating Wordpress Containers with Ansible and Podman">
     <meta name="twitter:description" content="Wordpress setup using Ansible and Podman Quadlets to deploy new Wordpress sites in under a minute.">
-    <meta property="og:url" content="https://www.linuxreader.com/containers/automating-wordpress-containers/">
+    <meta property="og:url" content="http://localhost:1313/containers/automating-wordpress-containers/">
     <meta property="og:title" content="Automating Wordpress Containers with Ansible and Podman">
     <meta property="og:description" content="Wordpress setup using Ansible and Podman Quadlets to deploy new Wordpress sites in under a minute.">
     <meta property="og:locale" content="en_us">
@@ -25,35 +25,35 @@
     <meta itemprop="wordCount" content="2025">
     <title>Automating Wordpress Containers with Ansible and Podman</title>
     <link href="/containers/automating-wordpress-containers/index.md" rel="alternate" type="text/markdown" title="Automating Wordpress Containers with Ansible and Podman">
-    <link href="/images/favicon.svg?1781627878" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1781627878" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1781627878" defer></script>
-    <script src="/js/search-lunr.min.js?1781627878" defer></script>
-    <script src="/js/search.min.js?1781627878" defer></script>
+    <link href="/images/favicon.svg?1783626904" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1783626904" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1783626904" defer></script>
+    <script src="/js/search-lunr.js?1783626904" defer></script>
+    <script src="/js/search.js?1783626904" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1781627878";
+      window.relearn.index_js_url="/searchindex.en.js?1783626904";
     </script>
-    <script src="/js/lunr/lunr.min.js?1781627878" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1781627878" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1781627878" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1781627878" defer></script>
+    <script src="/js/lunr/lunr.min.js?1783626904" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1783626904" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1783626904" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1783626904" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1781627878" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1781627878" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1781627878" rel="stylesheet">
-    <link href="/css/theme.min.css?1781627878" rel="stylesheet">
-    <link href="/css/format-html.min.css?1781627878" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1783626904" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1783626904" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1783626904" rel="stylesheet">
+    <link href="/css/theme.css?1783626904" rel="stylesheet">
+    <link href="/css/format-html.css?1783626904" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/containers\/automating-wordpress-containers\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/www.linuxreader.com';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=false;
       window.relearn.enableBlockCodeWrap=true;
       // translations
@@ -199,8 +199,8 @@ code, kbd, pre, samp {
 
 <h1 id="automating-wordpress-containers-with-ansible-and-podman">Automating Wordpress Containers with Ansible and Podman</h1>
 
-<p><a href="#R-image-69ca062e43a2a6634d2766af4b95f2ea" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/wordpress-ansible-quadlet.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-69ca062e43a2a6634d2766af4b95f2ea"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/wordpress-ansible-quadlet.png"></a></p>
+<p><a href="#R-image-8f86f596a192971ce57bc2f0de26dcda" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/wordpress-ansible-quadlet.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8f86f596a192971ce57bc2f0de26dcda"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/wordpress-ansible-quadlet.png"></a></p>
 <p>If you asked, &ldquo;how I set up WordPress sites super fast and easy using Podman quadlet files and Ansible?&rdquo;</p>
 <p>You&rsquo;ve come to the right place.</p>
 <p>This guide includes:</p>
@@ -550,8 +550,8 @@ sandwich_db_password: letseat</code></pre></div>
 </span></span><span style="display:flex;"><span>7ce5c6130a4d  docker.io/library/wordpress:latest    apache2-foregroun...  <span style="color:#a5d6ff">4</span> minutes ago  Up <span style="color:#a5d6ff">4</span> minutes <span style="color:#ff7b72;font-weight:bold">(</span>unhealthy<span style="color:#ff7b72;font-weight:bold">)</span>  0.0.0.0:8087-&gt;80/tcp                       systemd-sandwich-wordpress</span></span></code></pre></div>
 <p>As you can see, we now have three rootless pods running under our dogman user. Each pod starts an <code>infra</code> container, as well as the <code>mysql</code> and <code>wordpress</code> container.</p>
 <p>We can verify the sites are live by visiting the browser using the port numbers for each site. 8085, 8086, and 8087.
-<a href="#R-image-c45374f98576ee9d7f2ca60f89e5881f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020260603103253.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c45374f98576ee9d7f2ca60f89e5881f"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020260603103253.png"></a></p>
+<a href="#R-image-e598b5ac6a6bdbb81712f5980aeff3b5" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020260603103253.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e598b5ac6a6bdbb81712f5980aeff3b5"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020260603103253.png"></a></p>
 <p>You should now get a WordPress setup page for all three sites now. What&rsquo;s next? You can configure the sites and pipe DNS records into a reverse proxy that handles SSL certs or whatever you like.</p>
 <p>To view what containers were updated and when, and if any rollbacks happened run:</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>journalctl --user -u podman-auto-update.service</span></span></code></pre></div>
@@ -654,7 +654,8 @@ sandwich_db_password: letseat</code></pre></div>
             <li class="" data-nav-id="/containers/manage-trusted-image-registries/"><a class="padding" href="/containers/manage-trusted-image-registries/">Managing Trusted Image Registries<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/podman-links/"><a class="padding" href="/containers/podman-links/">Podman Links<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/containers/podman-quadlets/"><a class="padding" href="/containers/podman-quadlets/">Podman Quadlets<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/containers/podman-socket/"><a class="padding" href="/containers/podman-socket/">Podman Socket<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/containers/podman-socket/"><a class="padding" href="/containers/podman-socket/">Podman Socket<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/containers/zot-container-image-registry-setup/"><a class="padding" href="/containers/zot-container-image-registry-setup/">Self Hosted Zot Container Registry<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
             <li class="" data-nav-id="/cyber-security/"><input type="checkbox" id="R-section-f95cf8cea1c115dd046e46a833f33dfa" aria-controls="R-subsections-f95cf8cea1c115dd046e46a833f33dfa"><label for="R-section-f95cf8cea1c115dd046e46a833f33dfa"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Cyber Security</span></label><a class="padding default-animation" href="/cyber-security/"><i class="fa-solid fa-user-secret"></i> Cyber Security<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-f95cf8cea1c115dd046e46a833f33dfa" class="collapsible-menu">
             <li class="" data-nav-id="/cyber-security/security-enhanced-linux/"><a class="padding" href="/cyber-security/security-enhanced-linux/">Security Enhanced Linux<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/cyber-security/the-linux-firewall/"><a class="padding" href="/cyber-security/the-linux-firewall/">The Linux Firewall<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -744,8 +745,8 @@ sandwich_db_password: letseat</code></pre></div>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1781627878" defer></script>
-    <script src="/js/theme.min.js?1781627878" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1783626904" defer></script>
+    <script src="/js/theme.js?1783626904" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>
