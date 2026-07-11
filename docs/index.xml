@@ -2,108 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>http://localhost:1313/</link>
+    <link>https://www.linuxreader.com/</link>
     <description>The premier Linux documentation site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.linuxreader.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ansible</title>
-      <link>http://localhost:1313/ansible/</link>
+      <link>https://www.linuxreader.com/ansible/</link>
       <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/</guid>
+      <guid>https://www.linuxreader.com/ansible/</guid>
       <description>Ansible Navigator&#xD;Basic setup for Ansible Navigator&#xD;How to Install Ansible Using uv&#xD;Insall ansible using uv&#xD;Ad Hoc Ansible Commands&#xD;How to use Ad-Hoc Ansible Commands&#xD;Ansible Inventory and Ansible.cfg&#xD;Setting up and Ansible environment&#xD;Ansible Playbooks&#xD;Getting started with Ansible Playbooks&#xD;Ansible Roles&#xD;Ansible Galaxy Roles, RHEL System Roles, and Role Structure&#xD;Ansible Vault&#xD;Ansible Vault Basics&#xD;Ansible.cfg&#xD;Ansible.cfg common options&#xD;AWX MiniKube Install&#xD;Deploy AWX on a single node with MiniKube&#xD;Boot Process&#xD;Managing Boot Process with Ansible&#xD;Deploying files&#xD;Manipulating files, SELinux, and Jinja2 templates&#xD;Encrypted passwords&#xD;Encrypted passwords&#xD;Handlers&#xD;Ansible handlers for running tasks later&#xD;Host Name Patterns&#xD;Working with host name patterns&#xD;Including and importing Files&#xD;Including and importing Files&#xD;Jinja2 templates&#xD;Jinja2 templates&#xD;Manage Users and Groups with Ansible&#xD;How to Manage Users and Groups with Ansible&#xD;Managing Packages, Repositories, and Subscriptions with Ansible&#xD;How to Manage Packages, Repositories, and Subscriptions with Ansible&#xD;Managing Partitions and LVM&#xD;Managing Partitions and LVM&#xD;Managing Services with Ansible&#xD;How to Manage Services with Ansible&#xD;Optimizing Ansible Processing&#xD;Optimizing Ansible Processing&#xD;SeLinux File Properties&#xD;How to manage SeLinux File Properties with Ansible&#xD;SSH Connections&#xD;Manage SSH Connections with Ansible&#xD;Using Ansible Tags&#xD;Guide for how to use Ansible Tags. What are they, and some examples to put them to use.&#xD;Using Filters in Ansible&#xD;Ansible filter stuff&#xD;Using Loops and Items&#xD;Using Loops and Items&#xD;Using Modules for Troubleshooting and Testing&#xD;Using Modules for Troubleshooting and Testing&#xD;Using Variables In Ansible&#xD;How to Use Variables In Ansible&#xD;Using when to Run Tasks Conditionally&#xD;Using when to Run Tasks Conditionally</description>
     </item>
     <item>
       <title>Bash</title>
-      <link>http://localhost:1313/bash/</link>
+      <link>https://www.linuxreader.com/bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bash/</guid>
+      <guid>https://www.linuxreader.com/bash/</guid>
       <description>Bash&#xD;Bash variables, redirections, history substitution, metacharacters, startup files, etc.&#xD;Shell Scripting&#xD;Shell scripting and logical constructs</description>
     </item>
     <item>
       <title>Boot</title>
-      <link>http://localhost:1313/boot/</link>
+      <link>https://www.linuxreader.com/boot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/boot/</guid>
+      <guid>https://www.linuxreader.com/boot/</guid>
       <description>Boot Process, Grub2, and Kernel&#xD;Linux kernel, boot process, and password recovery&#xD;System Initialization, Message Logging, and System Tuning&#xD;System initialization, service management, tuning, and logging</description>
     </item>
     <item>
       <title>Containers</title>
-      <link>http://localhost:1313/containers/</link>
+      <link>https://www.linuxreader.com/containers/</link>
       <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/containers/</guid>
+      <guid>https://www.linuxreader.com/containers/</guid>
       <description>Automating Wordpress Containers with Ansible and Podman&#xD;Wordpress setup using Ansible and Podman Quadlets to deploy new Wordpress sites in under a minute.&#xD;Ansible and Podman&#xD;Ansible and podman quadlets&#xD;Building Containers with Containerfiles&#xD;Using Dockerfiles (Containerfiles) with Podman to build custom images.&#xD;Container Basics&#xD;Container Basics with Podman&#xD;Container Registries&#xD;Basic container registry info&#xD;Container Universal Base Images&#xD;All about Container Universal Base Images&#xD;Containers&#xD;Podman Podman Podman&#xD;Customizing Podman’s Behavior&#xD;Custom options for Podman configuration&#xD;Distrobox Basics&#xD;Getting started with Distrobox&#xD;Installing Podman&#xD;Installing Podman on different systems&#xD;Introduction to Containers&#xD;Getting a Basic understanding of how containers work&#xD;Managing Trusted Image Registries&#xD;Managing Trusted Image Registires and creating Aliases&#xD;Podman Links&#xD;podman desktop tutorial https://www.youtube.com/watch?v=YXfA5O5Mr18&amp;t=216s Connecting to remote machine It’s still experimental though, and buried in the menus (Settings -&gt; Preferences -&gt; Podman Extension -&gt; Remote (a toggle button). But the GUI seemed to throw js errors until after I had podman remote properly setup on the cli as follows, so only turn it on after the cli works! First, you will need to have your ssh keys already setup correctly to ssh in passwordlessly, and I have read that the ed25519 ssh key algorithm is preferred (YMMV). There are many generate and ssh-copy-id tutorials on the internet. But then you still have to add the remote connection at the command line, and not in the GUI. E.g. podman --remote system connection add &lt;&lt;NICKNAMEYOURREMOTEMACHINEHERE&gt;&gt; --identity ~/.ssh/id_ed25519 ssh://&lt;&lt;YOURREMOTEUSERNAMEHERE&gt;&gt;@&lt;&lt;YOURIPHERE&gt;&gt;/run/user/&lt;&lt;YOURUIDHERE&gt;&gt;/podman/podman.sock You should test it at the command-line with something like: podman -c REMOTEMACHINENICKNAME ps Once I sorted through the various connection errors (I initially had the wrong uid &amp; had to upgrade my remote podman to version 4) and got it to work at the cli, I turned it on in the GUI and it worked. I can say the Podman Desktop GUI makes it easier to admin remote podman containers. But there are a few issues I can already see with it, such as it does not not yet visually distinguish between a remote and a local container. Again, it is very early stage… ctop to view metrics So, to work with podman there are some quick steps to set the socket enabled and be transparent with docker-ctop:&#xD;Podman Quadlets&#xD;Podman quadlet basics&#xD;Podman Socket&#xD;Activating the Podman Daemon&#xD;Self Hosted Zot Container Registry&#xD;Hosting my own container images with Zot. Ansible setup.</description>
     </item>
     <item>
       <title>Cyber Security</title>
-      <link>http://localhost:1313/cyber-security/</link>
+      <link>https://www.linuxreader.com/cyber-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cyber-security/</guid>
+      <guid>https://www.linuxreader.com/cyber-security/</guid>
       <description>Security Enhanced Linux&#xD;The confusing world of SELinux&#xD;The Linux Firewall&#xD;Firewalld stuff mostly&#xD;The Secure Shell Service&#xD;OpenSSH, system access, file transfer</description>
     </item>
     <item>
       <title>Desktop</title>
-      <link>http://localhost:1313/desktop/</link>
+      <link>https://www.linuxreader.com/desktop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/desktop/</guid>
+      <guid>https://www.linuxreader.com/desktop/</guid>
       <description>Configure Fedora Desktop using Ansible&#xD;New Fedora Build Using Ansible&#xD;My old Fedora Setup&#xD;My Old, un-ansibled Fedora Setup&#xD;Silverblue&#xD;Fedora Silverblue</description>
     </item>
     <item>
       <title>Files</title>
-      <link>http://localhost:1313/files/</link>
+      <link>https://www.linuxreader.com/files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/files/</guid>
+      <guid>https://www.linuxreader.com/files/</guid>
       <description>Advanced File Management&#xD;File permissions, ACLs, and finding things&#xD;Basic File Managment&#xD;File types, linking, viewing, and archiving files.</description>
     </item>
     <item>
       <title>Networking</title>
-      <link>http://localhost:1313/networking/</link>
+      <link>https://www.linuxreader.com/networking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/networking/</guid>
+      <guid>https://www.linuxreader.com/networking/</guid>
       <description>Classful IPv4&#xD;Classful IPv4 address space&#xD;Consoling in to MX80 from linux&#xD;How to console into an MX80 router from linux&#xD;DNS&#xD;Basic DNS Concepts&#xD;How I Studied For CCNA&#xD;How I approached my CCNA studies.&#xD;Juniper CLI Basics&#xD;How to do basic stuff with Junos&#xD;Networking Devices and Connections&#xD;Hostname, IP addressing, network protocols, network manager, tools, etc.&#xD;Networking Network Devices and Network Connections&#xD;Hostname, IP addressing, network protocols, network manager, tools, etc.&#xD;Time Synchronization&#xD;NTP, Chrony, etc.&#xD;Toggle PoE on a Juniper Switch&#xD;How to toggle PoE on a Juniper switch.</description>
     </item>
     <item>
       <title>Packages</title>
-      <link>http://localhost:1313/packages/</link>
+      <link>https://www.linuxreader.com/packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/packages/</guid>
+      <guid>https://www.linuxreader.com/packages/</guid>
       <description>Advanced Package Management&#xD;Managing package groups, application streams, modules, and DNF&#xD;Basic Package Management&#xD;RPM and package integrity and credibility&#xD;DNF Package Groups&#xD;All about DNF Package groups</description>
     </item>
     <item>
       <title>Storage</title>
-      <link>http://localhost:1313/storage/</link>
+      <link>https://www.linuxreader.com/storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/storage/</guid>
+      <guid>https://www.linuxreader.com/storage/</guid>
       <description>AutoFS&#xD;Managing AutoFS&#xD;Local File Systems and Swap&#xD;Local file systems and swap&#xD;Network File System (NFS)&#xD;Managing NFS and AutoFS&#xD;Partitioning, MBR, and GPT&#xD;Partitions and their management.&#xD;Remove a filesystem from a partition&#xD;Remove a filesystem from a partition.&#xD;Thin Provisioning and LVM&#xD;Thin provisioning and LVM&#xD;Virtual Data Optimizer (VDO)&#xD;VDO</description>
     </item>
     <item>
       <title>System</title>
-      <link>http://localhost:1313/system/</link>
+      <link>https://www.linuxreader.com/system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/system/</guid>
+      <guid>https://www.linuxreader.com/system/</guid>
       <description>Installing RHEL Linux&#xD;Installation Logs and Cockpit&#xD;Interaction&#xD;Basic Commands and Directory Structure&#xD;Process and Task Scheduling&#xD;Processes, priorities, and scheduling jobs.</description>
     </item>
     <item>
       <title>Tools</title>
-      <link>http://localhost:1313/tools/</link>
+      <link>https://www.linuxreader.com/tools/</link>
       <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tools/</guid>
+      <guid>https://www.linuxreader.com/tools/</guid>
       <description>How to Remove Formatting From Ebook Highlights With Vim&#xD;Removing extra stuff from Bookfusion and Foliate exported highlights&#xD;Calibre Web with Docker and NGINX&#xD;Setting up your own Calibre Web server using Docker and NGINX&#xD;You Need to Learn Man Pages&#xD;You need to be using man pages. Here is how. A short guide to using Man Pages&#xD;Proxmox PfSense HaProxy Setup&#xD;Access Proxmox PVE GUI through HaProxy on PfSense&#xD;Calibre Web with Docker and NGINX&#xD;Setting up your own Calibre Web server using Docker and NGINX&#xD;How to Build a website With Hugo&#xD;Guide for setting up a static website with Hugo&#xD;How to Process Bookfusion Highlights with Vim&#xD;Removing extra stuff from Bookfusion exported highlights&#xD;How to Set Up Hugo Relearn Theme&#xD;Hugo Relearn setup guide&#xD;Learning Touch Typing&#xD;Learning touch typing&#xD;Nextcloud on RHEL Based Systems&#xD;Nextcloud setup guide on a RHEL based server&#xD;Self hosting a Nextcloud Server&#xD;Self hosting a Nextcloud server&#xD;Vim Guide&#xD;Guide to using Vim</description>
     </item>
     <item>
       <title>Virtualization</title>
-      <link>http://localhost:1313/virtualization/</link>
+      <link>https://www.linuxreader.com/virtualization/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/virtualization/</guid>
+      <guid>https://www.linuxreader.com/virtualization/</guid>
       <description>Using Libvirt and Ansible to Automate KVM Virtual Machine Deployments&#xD;How to build local KVM virtual machines using Ansible and Libvirt&#xD;Using Vagrant on Linux&#xD;How to use Vagrant from a Linux computer.</description>
     </item>
     <item>
       <title>Users and Groups</title>
-      <link>http://localhost:1313/users-and-groups/</link>
+      <link>https://www.linuxreader.com/users-and-groups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/users-and-groups/</guid>
+      <guid>https://www.linuxreader.com/users-and-groups/</guid>
       <description>Advanced User Management&#xD;Password aging, group and user manament&#xD;Basic User Management&#xD;Manage users and groups</description>
     </item>
   </channel>

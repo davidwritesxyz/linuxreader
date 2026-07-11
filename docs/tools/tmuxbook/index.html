@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html id="R-html" lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.154.5">
@@ -16,7 +16,7 @@ Quickly move between these windows and panes using only the keyboard.">
 tmux 2 Productive Mouse-Free Development easily manage a text editor, a database console, and a local web server within a single environment.
 split tmux windows into sections, so multiple apps can run side by side.
 Quickly move between these windows and panes using only the keyboard.">
-    <meta property="og:url" content="http://localhost:1313/tools/tmuxbook/">
+    <meta property="og:url" content="https://www.linuxreader.com/tools/tmuxbook/">
     <meta property="og:description" content="Links: https://git.jharmison.com/james/dotfiles/src/branch/master/.tmux.conf https://www.youtube.com/watch?v=nTqu6w2wc68 https://www.youtube.com/watch?v=DzNmUNvnB04 https://www.youtube.com/watch?v=Yl7NFenTgIo https://github.com/alacritty/alacritty https://github.com/rothgar/awesome-tmux https://www.youtube.com/watch?v=GH3kpsbbERo https://git.jharmison.com/james/dotfiles/src/branch/master/.config/alacritty/alacritty.toml#L41
 tmux 2 Productive Mouse-Free Development easily manage a text editor, a database console, and a local web server within a single environment.
 split tmux windows into sections, so multiple apps can run side by side.
@@ -31,35 +31,35 @@ Quickly move between these windows and panes using only the keyboard.">
     <meta itemprop="wordCount" content="20431">
     <title></title>
     <link href="/tools/tmuxbook/index.md" rel="alternate" type="text/markdown" title="">
-    <link href="/images/favicon.svg?1783627003" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1783627003" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1783627003" defer></script>
-    <script src="/js/search-lunr.js?1783627003" defer></script>
-    <script src="/js/search.js?1783627003" defer></script>
+    <link href="/images/favicon.svg?1783767192" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1783767192" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1783767192" defer></script>
+    <script src="/js/search-lunr.min.js?1783767192" defer></script>
+    <script src="/js/search.min.js?1783767192" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1783627003";
+      window.relearn.index_js_url="/searchindex.en.js?1783767192";
     </script>
-    <script src="/js/lunr/lunr.min.js?1783627003" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1783627003" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1783627003" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1783627003" defer></script>
+    <script src="/js/lunr/lunr.min.js?1783767192" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1783767192" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1783767192" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1783767192" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1783627003" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1783627003" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1783627003" rel="stylesheet">
-    <link href="/css/theme.css?1783627003" rel="stylesheet">
-    <link href="/css/format-html.css?1783627003" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1783767192" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1783767192" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1783767192" rel="stylesheet">
+    <link href="/css/theme.min.css?1783767192" rel="stylesheet">
+    <link href="/css/format-html.min.css?1783767192" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = ``;
+      window.relearn.min = `.min`;
       window.relearn.path='\/tools\/tmuxbook\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.absBaseUri='https:\/\/www.linuxreader.com';
       window.relearn.disableInlineCopyToClipboard=false;
       window.relearn.enableBlockCodeWrap=true;
       // translations
@@ -502,8 +502,8 @@ your operating system, or building tmux from source.</p>
 <code>​tmux</code>​</p>
 <p>from a terminal window. You&rsquo;ll see something that looks like the
 following image appear on your screen.</p>
-<p><a href="#R-image-6d326c249dc16af2b8541839966c171e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240403103153.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6d326c249dc16af2b8541839966c171e"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240403103153.png"></a></p>
+<p><a href="#R-image-3e4967e715b1b804ba5dad35343d9821" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240403103153.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3e4967e715b1b804ba5dad35343d9821"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240403103153.png"></a></p>
 <p>This is a tmux &ldquo;session,&rdquo; and it works just like your normal terminal session.</p>
 <p>You can issue any terminal command you&rsquo;d like, and everything will work as expected.</p>
 <p>To close the tmux session:
@@ -531,8 +531,8 @@ following image appear on your screen.</p>
 </ul>
 <p>Open the tmux clock: (press enter to dismiss the clock)
 <code>prefix-t</code></p>
-<p><a href="#R-image-6cdb17d8a69e92804ac5c3bc4c61b956" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240403135641.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6cdb17d8a69e92804ac5c3bc4c61b956"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240403135641.png"></a></p>
+<p><a href="#R-image-5b3973663d6ac8d52e23a56a915504a4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240403135641.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5b3973663d6ac8d52e23a56a915504a4"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240403135641.png"></a></p>
 <p>Detach from a session:
 <code>Prefix-d</code></p>
 <ul>
@@ -546,8 +546,8 @@ following image appear on your screen.</p>
 </ul>
 <p>Within a tmux session, start top:
 <code>top</code>​</p>
-<p><a href="#R-image-98a8dbbf2444d03b27845488c6de6ada" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240403141320.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-98a8dbbf2444d03b27845488c6de6ada"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240403141320.png"></a></p>
+<p><a href="#R-image-14c438598539058d610d84a6472f77f5" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240403141320.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-14c438598539058d610d84a6472f77f5"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240403141320.png"></a></p>
 <p>Detach from the tmux session:
 <code>prefix-d</code></p>
 <p>Close your terminal window.</p>
@@ -653,8 +653,8 @@ can start up another application. Let&rsquo;s</p>
 </ul>
 <p>Split the window in half vertically first, and then horizontally, creating one large pane on the left and two smaller panes on the right:
 <code>Prefix</code> <code>%</code> <code>Prefix</code> <code>&quot;</code></p>
-<p><a href="#R-image-38c1fd9c84c04a1adced2d98dc16413e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240403150606.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-38c1fd9c84c04a1adced2d98dc16413e"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240403150606.png"></a></p>
+<p><a href="#R-image-ddd3e12fd975a7b0c5d18a2d816064a4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240403150606.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ddd3e12fd975a7b0c5d18a2d816064a4"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240403150606.png"></a></p>
 <h3 id="pane-layouts">Pane Layouts<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <ul>
 <li>resize a pane using incremental resizing or templates.</li>
@@ -1036,8 +1036,8 @@ you&rsquo;ll need to do a little configuration.</p>
 mode. On the Mac, you can configure this in the Terminal app by editing
 the profile as shown in the following figure:</p>
 <p>::: ss
-<a href="#R-image-a0ae38859dea80c82ff0c1c96f817541" class="lightbox-link"><img alt="images/config/iterm2.png" class="lazy lightbox figure-image" loading="lazy" src="/images/image00120.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a0ae38859dea80c82ff0c1c96f817541"><img alt="images/config/iterm2.png" class="lazy lightbox lightbox-image" loading="lazy" src="/images/image00120.jpeg"></a>{#d24e2463
+<a href="#R-image-ad1a50f62d7dbb4e9971766648c0b9d3" class="lightbox-link"><img alt="images/config/iterm2.png" class="lazy lightbox figure-image" loading="lazy" src="/images/image00120.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ad1a50f62d7dbb4e9971766648c0b9d3"><img alt="images/config/iterm2.png" class="lazy lightbox lightbox-image" loading="lazy" src="/images/image00120.jpeg"></a>{#d24e2463
 style=&ldquo;width: 90%&rdquo;}
 :::</p>
 <p>If you&rsquo;re using
@@ -1046,8 +1046,8 @@ iTerm2,^<a href="/tools/tmuxbook/#part0029.xhtml#FOOTNOTE-5">[5]</a>{#part0026.x
 changing the terminal mode to [xterm-256color], as shown in the
 following figure:</p>
 <p>::: ss
-<a href="#R-image-a8cc38ba491cfd8ac606749b436d5c0d" class="lightbox-link"><img alt="images/config/iterm2.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00120.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a8cc38ba491cfd8ac606749b436d5c0d"><img alt="images/config/iterm2.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00120.jpeg"></a>{#d24e2474
+<a href="#R-image-4873f726f6abf7ffb1a5684f47c92894" class="lightbox-link"><img alt="images/config/iterm2.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00120.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4873f726f6abf7ffb1a5684f47c92894"><img alt="images/config/iterm2.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00120.jpeg"></a>{#d24e2474
 style=&ldquo;width: 90%&rdquo;}
 :::</p>
 <p>If you&rsquo;re using Linux, you might need to add</p>
@@ -1075,8 +1075,8 @@ tmux, especially when you are using more complex color schemes for
 syntax highlighting. Just take a look at this figure to see the
 difference.</p>
 <p>::: ss
-<a href="#R-image-8d0b7eea1c726c0b879984cf2a8cb666" class="lightbox-link"><img alt="images/config/16vs256.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00121.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8d0b7eea1c726c0b879984cf2a8cb666"><img alt="images/config/16vs256.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00121.jpeg"></a>{#d24e2514}
+<a href="#R-image-117c4c7f02629ba4d94cc305f3f07352" class="lightbox-link"><img alt="images/config/16vs256.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00121.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-117c4c7f02629ba4d94cc305f3f07352"><img alt="images/config/16vs256.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00121.jpeg"></a>{#d24e2514}
 :::</p>
 <p>Now let&rsquo;s configure the appearance of tmux&rsquo;s components, starting with
 colors.</p>
@@ -1102,8 +1102,8 @@ use:^<a href="/tools/tmuxbook/#part0029.xhtml#FOOTNOTE-6">[6]</a>{#part0026.xhtm
 <p>When you execute this command, you&rsquo;ll see the following output in your
 terminal, displaying the colors:</p>
 <p>::: ss
-<a href="#R-image-8eee3fc6717583378c8b65436623a7a1" class="lightbox-link"><img alt="images/config/colors.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00122.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8eee3fc6717583378c8b65436623a7a1"><img alt="images/config/colors.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00122.jpeg"></a>{#d24e2605
+<a href="#R-image-9c31b5828ef6543cb6db8467377508a2" class="lightbox-link"><img alt="images/config/colors.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00122.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9c31b5828ef6543cb6db8467377508a2"><img alt="images/config/colors.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00122.jpeg"></a>{#d24e2605
 style=&ldquo;width: 65%&rdquo;}
 :::</p>
 <p>tmux has specific configuration options to change foreground and
@@ -1115,8 +1115,8 @@ It&rsquo;s pretty bland, and depending on your terminal configuration, it can
 be hard to read. Let&rsquo;s make it have white text on a black background by
 default, so it looks like this:</p>
 <p>::: ss
-<a href="#R-image-00476bde7b26d075d40569a057cdadbd" class="lightbox-link"><img alt="images/config/statusline1.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00123.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-00476bde7b26d075d40569a057cdadbd"><img alt="images/config/statusline1.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00123.jpeg"></a>{#d24e2613}
+<a href="#R-image-1fc367e0f99923dbd039a94c1c11ead3" class="lightbox-link"><img alt="images/config/statusline1.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00123.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1fc367e0f99923dbd039a94c1c11ead3"><img alt="images/config/statusline1.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00123.jpeg"></a>{#d24e2613}
 :::</p>
 <p>The [status-style] option sets the foreground and background
 colors of the status line, as well as the style. Add the following line
@@ -1152,8 +1152,8 @@ window looks. To configure the colors, you use the same syntax you used
 for the [status-style] option.</p>
 <p>Let&rsquo;s make the names of the windows cyan, like this:</p>
 <p>::: ss
-<a href="#R-image-ac7d9c8d8a20dd7f1cdee9a09ae7ff42" class="lightbox-link"><img alt="images/config/statusline2.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00124.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ac7d9c8d8a20dd7f1cdee9a09ae7ff42"><img alt="images/config/statusline2.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00124.jpeg"></a>{#d24e2674}
+<a href="#R-image-bc1b76980e890047325702aa045324fd" class="lightbox-link"><img alt="images/config/statusline2.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00124.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bc1b76980e890047325702aa045324fd"><img alt="images/config/statusline2.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00124.jpeg"></a>{#d24e2674}
 :::</p>
 <p>Add this to your configuration file:</p>
 <p>::: livecodelozenge
@@ -1174,8 +1174,8 @@ add this to your configuration:</p>
 <p>Now inactive windows are cyan, and the active window is easily
 identifiable:</p>
 <p>::: ss
-<a href="#R-image-8d1f7be1123ac6693832f7a22c164ff5" class="lightbox-link"><img alt="/images/config/statusline3.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00125.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8d1f7be1123ac6693832f7a22c164ff5"><img alt="/images/config/statusline3.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00125.jpeg"></a>{#d24e2701}
+<a href="#R-image-05411c5734b2b593e80bcd92f34d2bf4" class="lightbox-link"><img alt="/images/config/statusline3.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00125.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-05411c5734b2b593e80bcd92f34d2bf4"><img alt="/images/config/statusline3.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00125.jpeg"></a>{#d24e2701}
 :::</p>
 <p>This takes care of the window list. Let&rsquo;s look at how we can customize
 how panes within a window appear.</p>
@@ -1189,8 +1189,8 @@ background color, by default, is black, but if we color it when the pane
 is active, we can make the active pane extremely noticeable, as shown in
 the following figure:</p>
 <p>::: ss
-<a href="#R-image-18d3690adfaffcd8fc46540234a48136" class="lightbox-link"><img alt="images/config/activepane.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00126.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-18d3690adfaffcd8fc46540234a48136"><img alt="images/config/activepane.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00126.jpeg"></a>{#d24e2713}
+<a href="#R-image-093a535b5ce764485a642c086a921b6f" class="lightbox-link"><img alt="images/config/activepane.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00126.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-093a535b5ce764485a642c086a921b6f"><img alt="images/config/activepane.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00126.jpeg"></a>{#d24e2713}
 :::</p>
 <p>Add this to your configuration file to add this effect to your
 environment:</p>
@@ -1321,8 +1321,8 @@ formatting mechanism used in many programming
 languages.^<a href="/tools/tmuxbook/#part0029.xhtml#FOOTNOTE-7">[7]</a>{#part0027.xhtml#FNPTR-7
 .footnote}^ Your status line should now look like this:</p>
 <p>::: ss
-<a href="#R-image-00dd4d37abe1eeca34255c739035230d" class="lightbox-link"><img alt="images/config/statusline4.png" class="lazy lightbox figure-image" loading="lazy" src="image00127.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-00dd4d37abe1eeca34255c739035230d"><img alt="images/config/statusline4.png" class="lazy lightbox lightbox-image" loading="lazy" src="image00127.jpeg"></a>{#d24e2944}
+<a href="#R-image-f3c2de8f6b69683aea4c819e2f2abaa5" class="lightbox-link"><img alt="images/config/statusline4.png" class="lazy lightbox figure-image" loading="lazy" src="image00127.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f3c2de8f6b69683aea4c819e2f2abaa5"><img alt="images/config/statusline4.png" class="lazy lightbox lightbox-image" loading="lazy" src="image00127.jpeg"></a>{#d24e2944}
 :::</p>
 <p>You can take things a step further by incorporating shell commands into
 the mix by using the [#(shell-command)] variable to return the
@@ -1357,8 +1357,8 @@ change:</p>
 <hr>
 <p>With this in place, the window list appears centered:</p>
 <p>::: ss
-<a href="#R-image-3606823c9bac81ff3aea1cc7a0abf5d9" class="lightbox-link"><img alt="images/config/statusline5.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00128.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3606823c9bac81ff3aea1cc7a0abf5d9"><img alt="images/config/statusline5.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00128.jpeg"></a>{#d24e2987}
+<a href="#R-image-309834b3fd93597088e0909b6c6caa61" class="lightbox-link"><img alt="images/config/statusline5.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00128.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-309834b3fd93597088e0909b6c6caa61"><img alt="images/config/statusline5.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00128.jpeg"></a>{#d24e2987}
 :::</p>
 <p>As you create new windows, the window list will shift accordingly,
 staying in the center of the status line.</p>
@@ -1382,8 +1382,8 @@ status line as well.</p>
 <p>Now when one of the other windows has some activity, it&rsquo;ll stand out
 with a cyan background, like the &ldquo;top&rdquo; window shown here:</p>
 <p>::: ss
-<a href="#R-image-3f63bfa5b7fd8dfae09df695a96cbc68" class="lightbox-link"><img alt="images/config/customstatusbar.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00129.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-3f63bfa5b7fd8dfae09df695a96cbc68"><img alt="images/config/customstatusbar.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00129.jpeg"></a>{#d24e3017}
+<a href="#R-image-77effe454942ee5da44ee4921873bc95" class="lightbox-link"><img alt="images/config/customstatusbar.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00129.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-77effe454942ee5da44ee4921873bc95"><img alt="images/config/customstatusbar.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00129.jpeg"></a>{#d24e3017}
 :::</p>
 <p>Once you switch to that window, the colors will revert back to normal.
 If you want to configure different colors, you can do so with [setw -g
@@ -1746,8 +1746,8 @@ script looks like this:</p>
 <hr>
 <p>your environment will look like this:</p>
 <p>::: ss
-<a href="#R-image-23f0b5533cd27b2c1fc4a4b92f98c538" class="lightbox-link"><img alt="images/scripting/devenv.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00130.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-23f0b5533cd27b2c1fc4a4b92f98c538"><img alt="images/scripting/devenv.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00130.jpeg"></a>{#d24e4058}
+<a href="#R-image-9ce95b3baa6595bfd25bd1eb10ce6f1e" class="lightbox-link"><img alt="images/scripting/devenv.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00130.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9ce95b3baa6595bfd25bd1eb10ce6f1e"><img alt="images/scripting/devenv.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00130.jpeg"></a>{#d24e4058}
 :::</p>
 <p>One drawback to this approach is that this script creates a brand-new
 session. It won&rsquo;t work properly if you run it a second time while the
@@ -2212,8 +2212,8 @@ then enter Command mode and type this:</p>
 <p>[choose-buffer]</p>
 <p>You&rsquo;ll be presented with a list that looks like this:</p>
 <p>::: ss
-<a href="#R-image-39007021ec1b970d20459beb044f001f" class="lightbox-link"><img alt="images/buffers/choose-buffer.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00131.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-39007021ec1b970d20459beb044f001f"><img alt="images/buffers/choose-buffer.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00131.jpeg"></a>{#d24e5219}
+<a href="#R-image-69a62165aa50b2e9771511471c2de293" class="lightbox-link"><img alt="images/buffers/choose-buffer.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00131.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-69a62165aa50b2e9771511471c2de293"><img alt="images/buffers/choose-buffer.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00131.jpeg"></a>{#d24e5219}
 :::</p>
 <p>You can select any entry in the list, press <code>Enter</code>
 , and the text will be inserted into the
@@ -2548,8 +2548,8 @@ currently working in! This is great for those &ldquo;Hey, let me just try
 something&rdquo; moments, or when one person wants to use Emacs and the other
 person prefers Vim:</p>
 <p>::: ss
-<a href="#R-image-92a69fdc71297d4868ceef3f8e2b7fbb" class="lightbox-link"><img alt="images/pairing/groupedsession.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00132.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-92a69fdc71297d4868ceef3f8e2b7fbb"><img alt="images/pairing/groupedsession.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00132.jpeg"></a>{#d24e6162}
+<a href="#R-image-249a5fe4a0f41e37af0d21d24115d39b" class="lightbox-link"><img alt="images/pairing/groupedsession.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00132.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-249a5fe4a0f41e37af0d21d24115d39b"><img alt="images/pairing/groupedsession.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00132.jpeg"></a>{#d24e6162}
 :::</p>
 <p>The second user can kill off their session with [kill-session],
 and the original will still exist. However, both sessions will be killed
@@ -2587,8 +2587,8 @@ manager:</p>
 <p>and tmate will launch, displaying the connection address in the bottom
 of the window where your status line would be.</p>
 <p>::: ss
-<a href="#R-image-c21a8dd44b25d3ba40c167e2aff55524" class="lightbox-link"><img alt="images/pairing/tmate.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00133.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-c21a8dd44b25d3ba40c167e2aff55524"><img alt="images/pairing/tmate.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00133.jpeg"></a>{#d24e6280}
+<a href="#R-image-a14584f6cccc50da90d90d92dbcc4c98" class="lightbox-link"><img alt="images/pairing/tmate.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00133.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a14584f6cccc50da90d90d92dbcc4c98"><img alt="images/pairing/tmate.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00133.jpeg"></a>{#d24e6280}
 :::</p>
 <p>Copy that address and send it to your pair, and they&rsquo;ll be able to join
 you instantly. If the address disappears before you can copy it, or
@@ -2905,8 +2905,8 @@ to move to the next session.</p>
 <p>You can also use <code>Prefix</code>
 <code>s</code>  to display a list
 of sessions, so you can quickly navigate between sessions:</p>
-<p><a href="#R-image-a19903a8ff1146ccf5a19d12348c6a4d" class="lightbox-link"><img alt="images/workflows/sessions.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00134.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-a19903a8ff1146ccf5a19d12348c6a4d"><img alt="images/workflows/sessions.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00134.jpeg"></a>
+<p><a href="#R-image-7f86564deba886f95a5862ec933031b0" class="lightbox-link"><img alt="images/workflows/sessions.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00134.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7f86564deba886f95a5862ec933031b0"><img alt="images/workflows/sessions.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00134.jpeg"></a>
 You can use the <code>j</code>  and <code>k</code>  keys to move
 up and down if you&rsquo;ve configured tmux to use Vim-like movement, and you
 can press <code>Space</code>  to
@@ -3115,8 +3115,8 @@ in [.tmux.conf]  to this:</p>
 <hr>
 <p>Now, when you reload the [.tmux.conf]  file, the battery
 status indicator will appear.</p>
-<p><a href="#R-image-99cb8b4ba45dc296fc32a9a0098b1859" class="lightbox-link"><img alt="images/workflows/battery.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00135.jpeg" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-99cb8b4ba45dc296fc32a9a0098b1859"><img alt="images/workflows/battery.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00135.jpeg"></a></p>
+<p><a href="#R-image-43cd9d39f398f9c6d7b562241bd7b93e" class="lightbox-link"><img alt="images/workflows/battery.png" class="lazy lightbox figure-image" loading="lazy" src="images/image00135.jpeg" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-43cd9d39f398f9c6d7b562241bd7b93e"><img alt="images/workflows/battery.png" class="lazy lightbox lightbox-image" loading="lazy" src="images/image00135.jpeg"></a></p>
 <p>To get battery status when it&rsquo;s charging, you&rsquo;ll need to execute the
 command</p>
 <hr>
@@ -3584,8 +3584,8 @@ part of your workflow.</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1783627003" defer></script>
-    <script src="/js/theme.js?1783627003" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1783767192" defer></script>
+    <script src="/js/theme.min.js?1783767192" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Now</title>
-    <link>http://localhost:1313/now/</link>
-    <description>What I am up to Now.&#xA;Career I am currently deep diving container technology. And studying for the RedHat Certified Developer in Cloud-native Applications exam.&#xA;Health Really focusing on reducing my caffeine intake right now.&#xA;Fun Currently spend most of my fun time just hanging out with the family at home. Playing a little Beyond All Reason and Starcraft 2 here and there.</description>
+    <link>https://www.linuxreader.com/now/</link>
+    <description>What I am up to Now.&#xA;Career I am currently deep diving container technology. And studying for the RedHat Certified Developer in Cloud-native Applications exam.&#xA;Health Really focusing on reducing my caffeine intake right now. Also on moving my body.&#xA;Fun Currently spend most of my fun time just hanging out with the family at home. Getting into woodworking and reading a lot as well.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/now/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.linuxreader.com/now/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

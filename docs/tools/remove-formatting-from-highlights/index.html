@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html id="R-html" lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.154.5">
@@ -10,7 +10,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How to Remove Formatting From Ebook Highlights With Vim">
     <meta name="twitter:description" content="Removing extra stuff from Bookfusion and Foliate exported highlights">
-    <meta property="og:url" content="http://localhost:1313/tools/remove-formatting-from-highlights/">
+    <meta property="og:url" content="https://www.linuxreader.com/tools/remove-formatting-from-highlights/">
     <meta property="og:title" content="How to Remove Formatting From Ebook Highlights With Vim">
     <meta property="og:description" content="Removing extra stuff from Bookfusion and Foliate exported highlights">
     <meta property="og:locale" content="en_us">
@@ -25,35 +25,35 @@
     <meta itemprop="wordCount" content="232">
     <title>How to Remove Formatting From Ebook Highlights With Vim</title>
     <link href="/tools/remove-formatting-from-highlights/index.md" rel="alternate" type="text/markdown" title="How to Remove Formatting From Ebook Highlights With Vim">
-    <link href="/images/favicon.svg?1783627005" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1783627005" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1783627005" defer></script>
-    <script src="/js/search-lunr.js?1783627005" defer></script>
-    <script src="/js/search.js?1783627005" defer></script>
+    <link href="/images/favicon.svg?1783767192" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1783767192" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1783767192" defer></script>
+    <script src="/js/search-lunr.min.js?1783767192" defer></script>
+    <script src="/js/search.min.js?1783767192" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1783627005";
+      window.relearn.index_js_url="/searchindex.en.js?1783767192";
     </script>
-    <script src="/js/lunr/lunr.min.js?1783627005" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1783627005" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1783627005" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1783627005" defer></script>
+    <script src="/js/lunr/lunr.min.js?1783767192" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1783767192" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1783767192" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1783767192" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1783627005" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1783627005" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1783627005" rel="stylesheet">
-    <link href="/css/theme.css?1783627005" rel="stylesheet">
-    <link href="/css/format-html.css?1783627005" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1783767192" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1783767192" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1783767192" rel="stylesheet">
+    <link href="/css/theme.min.css?1783767192" rel="stylesheet">
+    <link href="/css/format-html.min.css?1783767192" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = ``;
+      window.relearn.min = `.min`;
       window.relearn.path='\/tools\/remove-formatting-from-highlights\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.absBaseUri='https:\/\/www.linuxreader.com';
       window.relearn.disableInlineCopyToClipboard=false;
       window.relearn.enableBlockCodeWrap=true;
       // translations
@@ -186,38 +186,38 @@ code, kbd, pre, samp {
 
 <h2 id="bookfusion">Bookfusion<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Here are my highlights pulled up in Vim:</p>
-<p><a href="#R-image-9ea1f356eb71421ef96f25a00badd312" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/formattingbookfusion.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-9ea1f356eb71421ef96f25a00badd312"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/formattingbookfusion.png"></a></p>
+<p><a href="#R-image-1a875acbd89c61c1c846bf82c271062d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/formattingbookfusion.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1a875acbd89c61c1c846bf82c271062d"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/formattingbookfusion.png"></a></p>
 <p>As you can see, Bookfusion gives you a lot of extra information when you export highlights. First, let&rsquo;s get rid of the lines that begin with <code>##</code></p>
 <p>Enter command mode in Vim by pressing <code>esc</code>. Then type <code>:g/^##/d</code> and press enter.</p>
 <p>Much better.</p>
-<p><a href="#R-image-ed7f25194f39732b84bb03d8500afb9c" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414034407%201.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-ed7f25194f39732b84bb03d8500afb9c"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414034407%201.png"></a></p>
+<p><a href="#R-image-dc3b2c60e0ccdc677825bfbfbefb2c16" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414034407%201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dc3b2c60e0ccdc677825bfbfbefb2c16"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414034407%201.png"></a></p>
 <p>Now let&rsquo;s get rid of the color references:`</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>:g/^Color/d</span></span></code></pre></div>
-<p><a href="#R-image-dc66a33bccbe5a18c70d0e77607d60ce" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414034652%201.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-dc66a33bccbe5a18c70d0e77607d60ce"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414034652%201.png"></a></p>
+<p><a href="#R-image-665d4e58f1ee27675fd459d0e0c337cf" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414034652%201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-665d4e58f1ee27675fd459d0e0c337cf"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414034652%201.png"></a></p>
 <p>To get rid of the timestamps, we must find a different commonality between the lines. In this case, each line ends with &ldquo;UTC&rdquo;. Let&rsquo;s match that:</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>:g/UTC$/d</span></span></code></pre></div>
 <p>Where <code>$</code> matches the end of the line.</p>
-<p><a href="#R-image-d01bf941cf74e29924b9154d5af60b88" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414035013%201.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-d01bf941cf74e29924b9154d5af60b88"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414035013%201.png"></a></p>
+<p><a href="#R-image-569331668b9da2a094e07933028fe8bc" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414035013%201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-569331668b9da2a094e07933028fe8bc"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414035013%201.png"></a></p>
 <p>Now, I want to get rid of the <code>&gt; </code> on each line:
 <code>%s/&gt; //g</code></p>
-<p><a href="#R-image-6803ad90a801fbb0ad0a380f2e75da86" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414035218%201.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6803ad90a801fbb0ad0a380f2e75da86"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414035218%201.png"></a></p>
+<p><a href="#R-image-e908cd95768e5d0c741611f76e6d5cc0" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414035218%201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e908cd95768e5d0c741611f76e6d5cc0"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414035218%201.png"></a></p>
 <p>Almost there, you&rsquo;ll notice there are 6 empty lines in between each highlight. Let&rsquo;s shrink those down into one:</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>:%s/<span style="color:#79c0ff">\(\n\)\{</span>3,<span style="color:#ff7b72;font-weight:bold">}</span>/<span style="color:#79c0ff">\r\r</span>/g</span></span></code></pre></div>
-<p><a href="#R-image-6d1b37df8db7dd661f77f3ee616d182a" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414035716%201.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-6d1b37df8db7dd661f77f3ee616d182a"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414035716%201.png"></a></p>
+<p><a href="#R-image-c02eea777dff5cf7ca90ae4c3b92e9b8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414035716%201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c02eea777dff5cf7ca90ae4c3b92e9b8"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414035716%201.png"></a></p>
 <p>The command above matches newline character <code>n</code> 3 or more times and replaces them with two newline characters <code>/r/r</code>.</p>
 <p>As we scroll down, I see a few weird artifacts from the book conversion to markdown.</p>
-<p><a href="#R-image-53deb413d5a8b7f8c9869538f3d930d3" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414040052%201.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-53deb413d5a8b7f8c9869538f3d930d3"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414040052%201.png"></a></p>
+<p><a href="#R-image-9e93d969087a74ff23154e3db7b82087" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414040052%201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9e93d969087a74ff23154e3db7b82087"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414040052%201.png"></a></p>
 <p>Now, I want to get rid of any carrot brackets in the file. Let&rsquo;s use the substitute command again here:</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>%s/&lt;//g</span></span></code></pre></div>
-<p><a href="#R-image-73ee01f2ccd2c78e449aaf5875a481a8" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414040338%201.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-73ee01f2ccd2c78e449aaf5875a481a8"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414040338%201.png"></a></p>
+<p><a href="#R-image-56ce2b88a2ae7a556a7fd9eadadc7484" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240414040338%201.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-56ce2b88a2ae7a556a7fd9eadadc7484"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240414040338%201.png"></a></p>
 <p>Depending on your book and formatting. You may have some other stuff to edit.</p>
 <h2 id="foliate">Foliate<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>Get rid of lines with color reference:
@@ -414,8 +414,8 @@ code, kbd, pre, samp {
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1783627005" defer></script>
-    <script src="/js/theme.js?1783627005" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1783767192" defer></script>
+    <script src="/js/theme.min.js?1783767192" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>
