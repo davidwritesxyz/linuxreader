@@ -30,7 +30,7 @@ Run `pandoc bookname.epub -o bookname.md --extract-media=images`
 
 This will create the file and an image folder. Place the image folder in your Obsidian attachments folder. Also, place the markdown file in your Obsidian vault and Obsidian will see all of the image references. 
 
-Then, you can run Obsidian's [Text Extractor](../Personal/obsidian/image_to_text.md) to pull the text from the image to your clipboard. 
+Then, you can run Obsidian's [Text Extractor](../../Personal/obsidian/image_to_text.md) to pull the text from the image to your clipboard. 
 
 
 

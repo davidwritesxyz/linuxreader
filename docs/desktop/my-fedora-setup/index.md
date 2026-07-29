@@ -370,7 +370,7 @@ From Tools menu, select Arrow
 
 ## Distrobox
 
-See [distrobox](../../Containers/distrobox.md) 
+See [distrobox](../Containers/distrobox.md) 
 
 ## ZSH For Humans
 

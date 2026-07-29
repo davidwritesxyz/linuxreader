@@ -20,8 +20,8 @@ Currently spend most of my fun time just hanging out with the family at home. Ge
 
 ## What I am reading
 
-I am exclusively reading "transformative fiction" at the moment. My current read:
+I am alternating between fiction and non-fiction. My current read:
 
 ![](sgtciy.jpg?classes=left&width=200px)
 
-Updated: 07/11/2026
+Updated: 07/29/2026

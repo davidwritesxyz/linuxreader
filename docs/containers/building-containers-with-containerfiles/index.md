@@ -224,7 +224,7 @@ d45e568b58b0  localhost/jupiterhttpd:latest  httpd       3 seconds ago  Up 3 sec
 ```
 
 Now you can visit your web browser to see the served webpage:  
-![](../images/Pasted%20image%2020260607093343.png)
+![](../../images/Pasted%20image%2020260607093343.png)
 
 The newly built image will be available in the local host cache:  
 ```bash

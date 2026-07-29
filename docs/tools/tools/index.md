@@ -8,7 +8,7 @@
 -  [[Calibre Web with Docker and NGINX|Calibre Web with Docker and NGINX]]
 -  [[Calibre_Server|Calibre_Server]]
 -  [[../System/consoling_in_on_linux|consoling_in_on_linux]]
--  [[../../Containers/distrobox|distrobox]]
+-  [[../Containers/distrobox|distrobox]]
 -  [[Editing Foliate Highlights with Vim|Editing Foliate Highlights with Vim]]
 -  [[emailserver|emailserver]]
 -  [[Gitea setup|Gitea setup]]

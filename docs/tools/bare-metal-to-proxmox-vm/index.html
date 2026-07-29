@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html id="R-html" lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.154.5">
@@ -14,7 +14,7 @@ Create New VM in proxmox In the OS tab, select “Do not use any media” Verify
     <meta name="twitter:description" content="Create a vm in proxmox and copy the physical drive to the vm drive.
 Create New VM in proxmox In the OS tab, select “Do not use any media” Verify Kernel version
 [root@server10 conf.d]# hostnamectl Static hostname: server10.example.com Icon name: computer-server Chassis: server Machine ID: 22baa6004a0f4bb59217ab20b4d981c7 Boot ID: 35a631cc684348a4872db20ddb169a8a Operating System: AlmaLinux 8.10 (Cerulean Leopard) CPE OS Name: cpe:/o:almalinux:almalinux:8::baseos Kernel: Linux 4.18.0-553.8.1.el8_10.x86_64 Architecture: x86-64 Check the boot partition for BIOS or UEFI">
-    <meta property="og:url" content="http://localhost:1313/tools/bare-metal-to-proxmox-vm/">
+    <meta property="og:url" content="https://www.linuxreader.com/tools/bare-metal-to-proxmox-vm/">
     <meta property="og:description" content="Create a vm in proxmox and copy the physical drive to the vm drive.
 Create New VM in proxmox In the OS tab, select “Do not use any media” Verify Kernel version
 [root@server10 conf.d]# hostnamectl Static hostname: server10.example.com Icon name: computer-server Chassis: server Machine ID: 22baa6004a0f4bb59217ab20b4d981c7 Boot ID: 35a631cc684348a4872db20ddb169a8a Operating System: AlmaLinux 8.10 (Cerulean Leopard) CPE OS Name: cpe:/o:almalinux:almalinux:8::baseos Kernel: Linux 4.18.0-553.8.1.el8_10.x86_64 Architecture: x86-64 Check the boot partition for BIOS or UEFI">
@@ -27,35 +27,35 @@ Create New VM in proxmox In the OS tab, select “Do not use any media” Verify
     <meta itemprop="wordCount" content="362">
     <title></title>
     <link href="/tools/bare-metal-to-proxmox-vm/index.md" rel="alternate" type="text/markdown" title="">
-    <link href="/images/favicon.svg?1784028178" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1784028178" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1784028178" defer></script>
-    <script src="/js/search-lunr.js?1784028178" defer></script>
-    <script src="/js/search.js?1784028178" defer></script>
+    <link href="/images/favicon.svg?1785359070" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1785359070" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1785359070" defer></script>
+    <script src="/js/search-lunr.min.js?1785359070" defer></script>
+    <script src="/js/search.min.js?1785359070" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1784028178";
+      window.relearn.index_js_url="/searchindex.en.js?1785359070";
     </script>
-    <script src="/js/lunr/lunr.min.js?1784028178" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1784028178" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1784028178" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1784028178" defer></script>
+    <script src="/js/lunr/lunr.min.js?1785359070" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1785359070" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1785359070" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1785359070" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1784028178" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1784028178" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1784028178" rel="stylesheet">
-    <link href="/css/theme.css?1784028178" rel="stylesheet">
-    <link href="/css/format-html.css?1784028178" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1785359070" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1785359070" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1785359070" rel="stylesheet">
+    <link href="/css/theme.min.css?1785359070" rel="stylesheet">
+    <link href="/css/format-html.min.css?1785359070" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = ``;
+      window.relearn.min = `.min`;
       window.relearn.path='\/tools\/bare-metal-to-proxmox-vm\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.absBaseUri='https:\/\/www.linuxreader.com';
       window.relearn.disableInlineCopyToClipboard=false;
       window.relearn.enableBlockCodeWrap=true;
       // translations
@@ -193,8 +193,8 @@ code, kbd, pre, samp {
 <ol>
 <li>Create New VM in proxmox</li>
 <li>In the OS tab, select &ldquo;Do not use any media&rdquo;
-<a href="#R-image-b22c6a96a30d7937e3e1b21d8568b6ab" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240806075409.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-b22c6a96a30d7937e3e1b21d8568b6ab"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240806075409.png"></a></li>
+<a href="#R-image-f607248996224c8004b7dc74baf1422e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240806075409.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f607248996224c8004b7dc74baf1422e"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240806075409.png"></a></li>
 </ol>
 <p>Verify Kernel version</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff7b72;font-weight:bold">[</span>root@server10 conf.d<span style="color:#ff7b72;font-weight:bold">]</span><span style="color:#8b949e;font-style:italic"># hostnamectl</span>
@@ -219,15 +219,15 @@ code, kbd, pre, samp {
 </span></span><span style="display:flex;"><span>  ├─cl_dall-home 253:2    <span style="color:#a5d6ff">0</span> 186.3G  <span style="color:#a5d6ff">0</span> lvm  /home
 </span></span><span style="display:flex;"><span>  └─cl_dall-var  253:3    <span style="color:#a5d6ff">0</span>   578G  <span style="color:#a5d6ff">0</span> lvm  /var</span></span></code></pre></div>
 <p>Select the appropriate BIOS in the System tab:
-<a href="#R-image-72c4e774d15d4637bf229cc5a061145e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240806080050.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-72c4e774d15d4637bf229cc5a061145e"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240806080050.png"></a>
+<a href="#R-image-a2b45dc3ffd42fd007f402ee0dda4f76" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240806080050.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a2b45dc3ffd42fd007f402ee0dda4f76"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240806080050.png"></a>
 Check your disk size</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff7b72;font-weight:bold">[</span>root@dall conf.d<span style="color:#ff7b72;font-weight:bold">]</span><span style="color:#8b949e;font-style:italic"># lsblk</span>
 </span></span><span style="display:flex;"><span>NAME             MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 </span></span><span style="display:flex;"><span>sda                8:0    <span style="color:#a5d6ff">0</span> 931.5G  <span style="color:#a5d6ff">0</span> disk </span></span></code></pre></div>
 <p>Make the disk a little bit bigger than the physical disk
-<a href="#R-image-1c043f78ee13d8fe7b443f8a09884c96" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240806080538.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-1c043f78ee13d8fe7b443f8a09884c96"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240806080538.png"></a></p>
+<a href="#R-image-f0490bde80e40c8b550b6177a693c7b9" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240806080538.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f0490bde80e40c8b550b6177a693c7b9"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240806080538.png"></a></p>
 <p>Select CPU and Memory based on requirements.</p>
 <p>Select virtIO for network card (Linux has drivers for this pre installed.)</p>
 <p>Confirm</p>
@@ -245,8 +245,8 @@ Check your disk size</p>
 <p>If the process gets stopped in the middle. You can resume by using the same ddrecue command as long as the log file was specified.</p>
 <p>Rename file to .raw instead of .img with mv command</p>
 <p>sample vm config file
-<a href="#R-image-36a7d7d4633c0686c020faf0cb9b0983" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240807124622.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-36a7d7d4633c0686c020faf0cb9b0983"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240807124622.png"></a>
+<a href="#R-image-617b55c636e8a137cdd605a4fd740ea4" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020240807124622.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-617b55c636e8a137cdd605a4fd740ea4"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020240807124622.png"></a>
 b_samZFS = name of storage pool
 123 = name of vm
 driveImage.raw is name of the image</p>
@@ -304,7 +304,6 @@ driveImage.raw is name of the image</p>
       </div>
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
-          <div class="nav-title padding">More</div>
           <ul class="space collapsible-menu">
             <li class="" data-nav-id="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/booknotes/"><a class="padding" href="/booknotes/"><i class='fas fa-fw fa-book'></i> Book Notes<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -452,8 +451,8 @@ driveImage.raw is name of the image</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1784028178" defer></script>
-    <script src="/js/theme.js?1784028178" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1785359070" defer></script>
+    <script src="/js/theme.min.js?1785359070" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

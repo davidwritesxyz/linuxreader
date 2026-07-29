@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>System</title>
-    <link>http://localhost:1313/system/</link>
+    <link>https://www.linuxreader.com/system/</link>
     <description>Installing RHEL Linux&#xD;Installation Logs and Cockpit&#xD;Interaction&#xD;Basic Commands and Directory Structure&#xD;Process and Task Scheduling&#xD;Processes, priorities, and scheduling jobs.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/system/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.linuxreader.com/system/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing RHEL Linux</title>
-      <link>http://localhost:1313/system/installation/</link>
+      <link>https://www.linuxreader.com/system/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/system/installation/</guid>
+      <guid>https://www.linuxreader.com/system/installation/</guid>
       <description>Installation Logs and Cockpit</description>
     </item>
     <item>
       <title>Interaction</title>
-      <link>http://localhost:1313/system/interaction/</link>
+      <link>https://www.linuxreader.com/system/interaction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/system/interaction/</guid>
+      <guid>https://www.linuxreader.com/system/interaction/</guid>
       <description>Basic Commands and Directory Structure</description>
     </item>
     <item>
       <title>Process and Task Scheduling</title>
-      <link>http://localhost:1313/system/process-and-task-scheduling/</link>
+      <link>https://www.linuxreader.com/system/process-and-task-scheduling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/system/process-and-task-scheduling/</guid>
+      <guid>https://www.linuxreader.com/system/process-and-task-scheduling/</guid>
       <description>Processes, priorities, and scheduling jobs.</description>
     </item>
   </channel>

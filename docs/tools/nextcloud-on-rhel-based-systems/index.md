@@ -52,7 +52,7 @@ davidt: { password }
 
 ### Storage setup
 
- ```bash
+```bash
 mkdir /var/www/nextcloud/ -p
 mkdir /home/databkup
 parted /dev/sdb mklabel gpt
@@ -90,7 +90,7 @@ I used this guide to help get a supported php version. As php 2 installed from d
 https://orcacore.com/php83-installation-almalinux9-rockylinux9/
 
 Make sure dnf is up to date:
- ```bash
+```bash
 sudo dnf update -y
 sudo dnf upgrade -y
 ```
@@ -136,11 +136,11 @@ Enable the correct stream:
 sudo dnf module enable php:remi-8.3
 ```
 
-Now the default to install is version 8.3, install it like this: 
+Now the default to install is version 8.3, install it like this:  
 ```
 sudo dnf install php -y
 php -v
-  ```
+```
 
 Let's install git, as it's also needed in this setup:
 `sudo dnf -y install git`
@@ -228,7 +228,7 @@ Change the nextcloud folder ownership to apache and add permissions:
 `sudo chmod -R 755 /var/www/nextcloud`
 `sudo chown -R apache:apache /var/www/nextcloud`
 
-Selinux:
+Selinux:  
 ```bash
 sudo semanage fcontext -a -t httpd_sys_content_t "/var/www/nextcloud(/.*)?" && \
 sudo semanage fcontext -a -t httpd_sys_rw_content_t "/var/www/nextcloud/(config|data|apps)(/.*)?" && \
@@ -300,9 +300,10 @@ I recommend setting up a normal user account instead of doing everything as "adm
 
 ![](../../images/Pasted%20image%2020241229051101.png)
 
-I may make a post about which Nextcloud apps I recommend and customize the setup a bit. Let me know if that's something you'd like to see. That's all for now. 
+I may make a post about which Nextcloud apps I recommend and customize the setup a bit. Let me know if that's something you'd like to see. That\'s all for now. 
 
 ### Make log dir:
+
 ```bash
 mkdir /var/log/nextcloud
 touch /var/log/nextcloud.log
@@ -311,6 +312,7 @@ chown apache:apache -R /var/log/nextcloud
 
 
 ### Change apps to read only 
+
 ```bash 
 semanage fcontext -a -t httpd_sys_content_t "/var/www/nextcloud/apps(/.*)?"
 restorecon -R /var/www/nextcloud/apps
@@ -394,7 +396,7 @@ change port to `port 0`/
 
 uncomment the socket options under "Unix Socket" and change to:
 
- ```bash
+```bash
  unixsocket /run/redis/redis-server.sock
  unixsocketperm 770
 ```

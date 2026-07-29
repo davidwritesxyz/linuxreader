@@ -2,213 +2,213 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ansible</title>
-    <link>http://localhost:1313/ansible/</link>
+    <link>https://www.linuxreader.com/ansible/</link>
     <description>Ansible Navigator&#xD;Basic setup for Ansible Navigator&#xD;How to Install Ansible Using uv&#xD;Insall ansible using uv&#xD;Ad Hoc Ansible Commands&#xD;How to use Ad-Hoc Ansible Commands&#xD;Ansible Inventory and Ansible.cfg&#xD;Setting up and Ansible environment&#xD;Ansible Playbooks&#xD;Getting started with Ansible Playbooks&#xD;Ansible Roles&#xD;Ansible Galaxy Roles, RHEL System Roles, and Role Structure&#xD;Ansible Vault&#xD;Ansible Vault Basics&#xD;Ansible.cfg&#xD;Ansible.cfg common options&#xD;AWX MiniKube Install&#xD;Deploy AWX on a single node with MiniKube&#xD;Boot Process&#xD;Managing Boot Process with Ansible&#xD;Deploying files&#xD;Manipulating files, SELinux, and Jinja2 templates&#xD;Encrypted passwords&#xD;Encrypted passwords&#xD;Handlers&#xD;Ansible handlers for running tasks later&#xD;Host Name Patterns&#xD;Working with host name patterns&#xD;Including and importing Files&#xD;Including and importing Files&#xD;Jinja2 templates&#xD;Jinja2 templates&#xD;Manage Users and Groups with Ansible&#xD;How to Manage Users and Groups with Ansible&#xD;Managing Packages, Repositories, and Subscriptions with Ansible&#xD;How to Manage Packages, Repositories, and Subscriptions with Ansible&#xD;Managing Partitions and LVM&#xD;Managing Partitions and LVM&#xD;Managing Services with Ansible&#xD;How to Manage Services with Ansible&#xD;Optimizing Ansible Processing&#xD;Optimizing Ansible Processing&#xD;SeLinux File Properties&#xD;How to manage SeLinux File Properties with Ansible&#xD;SSH Connections&#xD;Manage SSH Connections with Ansible&#xD;Using Ansible Tags&#xD;Guide for how to use Ansible Tags. What are they, and some examples to put them to use.&#xD;Using Filters in Ansible&#xD;Ansible filter stuff&#xD;Using Loops and Items&#xD;Using Loops and Items&#xD;Using Modules for Troubleshooting and Testing&#xD;Using Modules for Troubleshooting and Testing&#xD;Using Variables In Ansible&#xD;How to Use Variables In Ansible&#xD;Using when to Run Tasks Conditionally&#xD;Using when to Run Tasks Conditionally</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.linuxreader.com/ansible/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ansible Navigator</title>
-      <link>http://localhost:1313/ansible/ansible-navigator/</link>
+      <link>https://www.linuxreader.com/ansible/ansible-navigator/</link>
       <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/ansible-navigator/</guid>
+      <guid>https://www.linuxreader.com/ansible/ansible-navigator/</guid>
       <description>Basic setup for Ansible Navigator</description>
     </item>
     <item>
       <title>How to Install Ansible Using uv</title>
-      <link>http://localhost:1313/ansible/install-ansible-using-uv/</link>
+      <link>https://www.linuxreader.com/ansible/install-ansible-using-uv/</link>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/install-ansible-using-uv/</guid>
+      <guid>https://www.linuxreader.com/ansible/install-ansible-using-uv/</guid>
       <description>Insall ansible using uv</description>
     </item>
     <item>
       <title>Ad Hoc Ansible Commands</title>
-      <link>http://localhost:1313/ansible/adhoccommands/</link>
+      <link>https://www.linuxreader.com/ansible/adhoccommands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/adhoccommands/</guid>
+      <guid>https://www.linuxreader.com/ansible/adhoccommands/</guid>
       <description>How to use Ad-Hoc Ansible Commands</description>
     </item>
     <item>
       <title>Ansible Inventory and Ansible.cfg</title>
-      <link>http://localhost:1313/ansible/inventory/</link>
+      <link>https://www.linuxreader.com/ansible/inventory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/inventory/</guid>
+      <guid>https://www.linuxreader.com/ansible/inventory/</guid>
       <description>Setting up and Ansible environment</description>
     </item>
     <item>
       <title>Ansible Playbooks</title>
-      <link>http://localhost:1313/ansible/playbooks/</link>
+      <link>https://www.linuxreader.com/ansible/playbooks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/playbooks/</guid>
+      <guid>https://www.linuxreader.com/ansible/playbooks/</guid>
       <description>Getting started with Ansible Playbooks</description>
     </item>
     <item>
       <title>Ansible Roles</title>
-      <link>http://localhost:1313/ansible/roles/</link>
+      <link>https://www.linuxreader.com/ansible/roles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/roles/</guid>
+      <guid>https://www.linuxreader.com/ansible/roles/</guid>
       <description>Ansible Galaxy Roles, RHEL System Roles, and Role Structure</description>
     </item>
     <item>
       <title>Ansible Vault</title>
-      <link>http://localhost:1313/ansible/ansible-vault/</link>
+      <link>https://www.linuxreader.com/ansible/ansible-vault/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/ansible-vault/</guid>
+      <guid>https://www.linuxreader.com/ansible/ansible-vault/</guid>
       <description>Ansible Vault Basics</description>
     </item>
     <item>
       <title>Ansible.cfg</title>
-      <link>http://localhost:1313/ansible/ansibleconfig/</link>
+      <link>https://www.linuxreader.com/ansible/ansibleconfig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/ansibleconfig/</guid>
+      <guid>https://www.linuxreader.com/ansible/ansibleconfig/</guid>
       <description>Ansible.cfg common options</description>
     </item>
     <item>
       <title>AWX MiniKube Install</title>
-      <link>http://localhost:1313/ansible/awx-minikube-install/</link>
+      <link>https://www.linuxreader.com/ansible/awx-minikube-install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/awx-minikube-install/</guid>
+      <guid>https://www.linuxreader.com/ansible/awx-minikube-install/</guid>
       <description>Deploy AWX on a single node with MiniKube</description>
     </item>
     <item>
       <title>Boot Process</title>
-      <link>http://localhost:1313/ansible/boot-process/</link>
+      <link>https://www.linuxreader.com/ansible/boot-process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/boot-process/</guid>
+      <guid>https://www.linuxreader.com/ansible/boot-process/</guid>
       <description>Managing Boot Process with Ansible</description>
     </item>
     <item>
       <title>Deploying files</title>
-      <link>http://localhost:1313/ansible/deploying-files/</link>
+      <link>https://www.linuxreader.com/ansible/deploying-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/deploying-files/</guid>
+      <guid>https://www.linuxreader.com/ansible/deploying-files/</guid>
       <description>Manipulating files, SELinux, and Jinja2 templates</description>
     </item>
     <item>
       <title>Encrypted passwords</title>
-      <link>http://localhost:1313/ansible/encrypted-passwords/</link>
+      <link>https://www.linuxreader.com/ansible/encrypted-passwords/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/encrypted-passwords/</guid>
+      <guid>https://www.linuxreader.com/ansible/encrypted-passwords/</guid>
       <description>Encrypted passwords</description>
     </item>
     <item>
       <title>Handlers</title>
-      <link>http://localhost:1313/ansible/handlers/</link>
+      <link>https://www.linuxreader.com/ansible/handlers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/handlers/</guid>
+      <guid>https://www.linuxreader.com/ansible/handlers/</guid>
       <description>Ansible handlers for running tasks later</description>
     </item>
     <item>
       <title>Host Name Patterns</title>
-      <link>http://localhost:1313/ansible/hostname-patterns/</link>
+      <link>https://www.linuxreader.com/ansible/hostname-patterns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/hostname-patterns/</guid>
+      <guid>https://www.linuxreader.com/ansible/hostname-patterns/</guid>
       <description>Working with host name patterns</description>
     </item>
     <item>
       <title>Including and importing Files</title>
-      <link>http://localhost:1313/ansible/include-and-import-files/</link>
+      <link>https://www.linuxreader.com/ansible/include-and-import-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/include-and-import-files/</guid>
+      <guid>https://www.linuxreader.com/ansible/include-and-import-files/</guid>
       <description>Including and importing Files</description>
     </item>
     <item>
       <title>Jinja2 templates</title>
-      <link>http://localhost:1313/ansible/jinja2/</link>
+      <link>https://www.linuxreader.com/ansible/jinja2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/jinja2/</guid>
+      <guid>https://www.linuxreader.com/ansible/jinja2/</guid>
       <description>Jinja2 templates</description>
     </item>
     <item>
       <title>Manage Users and Groups with Ansible</title>
-      <link>http://localhost:1313/ansible/user-and-groups/</link>
+      <link>https://www.linuxreader.com/ansible/user-and-groups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/user-and-groups/</guid>
+      <guid>https://www.linuxreader.com/ansible/user-and-groups/</guid>
       <description>How to Manage Users and Groups with Ansible</description>
     </item>
     <item>
       <title>Managing Packages, Repositories, and Subscriptions with Ansible</title>
-      <link>http://localhost:1313/ansible/packages-repos-and-subscriptions/</link>
+      <link>https://www.linuxreader.com/ansible/packages-repos-and-subscriptions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/packages-repos-and-subscriptions/</guid>
+      <guid>https://www.linuxreader.com/ansible/packages-repos-and-subscriptions/</guid>
       <description>How to Manage Packages, Repositories, and Subscriptions with Ansible</description>
     </item>
     <item>
       <title>Managing Partitions and LVM</title>
-      <link>http://localhost:1313/ansible/storage-partitions-and-lvm/</link>
+      <link>https://www.linuxreader.com/ansible/storage-partitions-and-lvm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/storage-partitions-and-lvm/</guid>
+      <guid>https://www.linuxreader.com/ansible/storage-partitions-and-lvm/</guid>
       <description>Managing Partitions and LVM</description>
     </item>
     <item>
       <title>Managing Services with Ansible</title>
-      <link>http://localhost:1313/ansible/services/</link>
+      <link>https://www.linuxreader.com/ansible/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/services/</guid>
+      <guid>https://www.linuxreader.com/ansible/services/</guid>
       <description>How to Manage Services with Ansible</description>
     </item>
     <item>
       <title>Optimizing Ansible Processing</title>
-      <link>http://localhost:1313/ansible/optimize-ansible-processing/</link>
+      <link>https://www.linuxreader.com/ansible/optimize-ansible-processing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/optimize-ansible-processing/</guid>
+      <guid>https://www.linuxreader.com/ansible/optimize-ansible-processing/</guid>
       <description>Optimizing Ansible Processing</description>
     </item>
     <item>
       <title>SeLinux File Properties</title>
-      <link>http://localhost:1313/ansible/selinux/</link>
+      <link>https://www.linuxreader.com/ansible/selinux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/selinux/</guid>
+      <guid>https://www.linuxreader.com/ansible/selinux/</guid>
       <description>How to manage SeLinux File Properties with Ansible</description>
     </item>
     <item>
       <title>SSH Connections</title>
-      <link>http://localhost:1313/ansible/ssh-connections/</link>
+      <link>https://www.linuxreader.com/ansible/ssh-connections/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/ssh-connections/</guid>
+      <guid>https://www.linuxreader.com/ansible/ssh-connections/</guid>
       <description>Manage SSH Connections with Ansible</description>
     </item>
     <item>
       <title>Using Ansible Tags</title>
-      <link>http://localhost:1313/ansible/tags/</link>
+      <link>https://www.linuxreader.com/ansible/tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/tags/</guid>
+      <guid>https://www.linuxreader.com/ansible/tags/</guid>
       <description>Guide for how to use Ansible Tags. What are they, and some examples to put them to use.</description>
     </item>
     <item>
       <title>Using Filters in Ansible</title>
-      <link>http://localhost:1313/ansible/filters/</link>
+      <link>https://www.linuxreader.com/ansible/filters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/filters/</guid>
+      <guid>https://www.linuxreader.com/ansible/filters/</guid>
       <description>Ansible filter stuff</description>
     </item>
     <item>
       <title>Using Loops and Items</title>
-      <link>http://localhost:1313/ansible/loops-and-items/</link>
+      <link>https://www.linuxreader.com/ansible/loops-and-items/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/loops-and-items/</guid>
+      <guid>https://www.linuxreader.com/ansible/loops-and-items/</guid>
       <description>Using Loops and Items</description>
     </item>
     <item>
       <title>Using Modules for Troubleshooting and Testing</title>
-      <link>http://localhost:1313/ansible/modules-for-troubleshooting/</link>
+      <link>https://www.linuxreader.com/ansible/modules-for-troubleshooting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/modules-for-troubleshooting/</guid>
+      <guid>https://www.linuxreader.com/ansible/modules-for-troubleshooting/</guid>
       <description>Using Modules for Troubleshooting and Testing</description>
     </item>
     <item>
       <title>Using Variables In Ansible</title>
-      <link>http://localhost:1313/ansible/variables/</link>
+      <link>https://www.linuxreader.com/ansible/variables/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/variables/</guid>
+      <guid>https://www.linuxreader.com/ansible/variables/</guid>
       <description>How to Use Variables In Ansible</description>
     </item>
     <item>
       <title>Using when to Run Tasks Conditionally</title>
-      <link>http://localhost:1313/ansible/when/</link>
+      <link>https://www.linuxreader.com/ansible/when/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ansible/when/</guid>
+      <guid>https://www.linuxreader.com/ansible/when/</guid>
       <description>Using when to Run Tasks Conditionally</description>
     </item>
   </channel>
