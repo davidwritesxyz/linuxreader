@@ -27,6 +27,7 @@ showDate: false
 [![](/images/harrypotter.jpg?classes=inline,border&width=100px&lightbox=false)](https://amzn.to/4omRNWF)
 [![](/images/nlmg.jpg?classes=inline,border&width=100px&lightbox=false)](https://amzn.to/43mbzYy)
 [![](/images/fotr.jpg?classes=inline,border&width=100px&lightbox=false)](https://amzn.to/4ycln5t)
+[![](/images/wubc.jpg?classes=inline,border&width=100px&lightbox=false)](https://amzn.to/4z2GuYy)
 
 ## Writing
 

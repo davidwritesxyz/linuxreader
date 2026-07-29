@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html id="R-html" lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.154.5">
@@ -12,7 +12,7 @@ Also, by setting up your infrastructure as code, you get to set up machines quic
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="We are sick of manually setting up virtual machines and configuring them. You can use Ansible to automate the configuration of a server. But what about setting up a server before it’s configured? Let’s stop doing that manually as well by using Vagrant.
 Also, by setting up your infrastructure as code, you get to set up machines quickly and consistently manage and deploy your servers. This reduces the time it takes, operating costs, and minimizes the chance of configuration errors.">
-    <meta property="og:url" content="https://www.linuxreader.com/tools/vagrant-what-is-it-for/">
+    <meta property="og:url" content="http://localhost:1313/tools/vagrant-what-is-it-for/">
     <meta property="og:description" content="We are sick of manually setting up virtual machines and configuring them. You can use Ansible to automate the configuration of a server. But what about setting up a server before it’s configured? Let’s stop doing that manually as well by using Vagrant.
 Also, by setting up your infrastructure as code, you get to set up machines quickly and consistently manage and deploy your servers. This reduces the time it takes, operating costs, and minimizes the chance of configuration errors.">
     <meta property="og:locale" content="en_us">
@@ -23,35 +23,35 @@ Also, by setting up your infrastructure as code, you get to set up machines quic
     <meta itemprop="wordCount" content="1011">
     <title></title>
     <link href="/tools/vagrant-what-is-it-for/index.md" rel="alternate" type="text/markdown" title="">
-    <link href="/images/favicon.svg?1783943825" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1783943825" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1783943825" defer></script>
-    <script src="/js/search-lunr.min.js?1783943825" defer></script>
-    <script src="/js/search.min.js?1783943825" defer></script>
+    <link href="/images/favicon.svg?1784028178" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1784028178" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1784028178" defer></script>
+    <script src="/js/search-lunr.js?1784028178" defer></script>
+    <script src="/js/search.js?1784028178" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1783943825";
+      window.relearn.index_js_url="/searchindex.en.js?1784028178";
     </script>
-    <script src="/js/lunr/lunr.min.js?1783943825" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1783943825" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1783943825" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1783943825" defer></script>
+    <script src="/js/lunr/lunr.min.js?1784028178" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1784028178" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1784028178" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1784028178" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1783943825" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1783943825" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1783943825" rel="stylesheet">
-    <link href="/css/theme.min.css?1783943825" rel="stylesheet">
-    <link href="/css/format-html.min.css?1783943825" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1784028178" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1784028178" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1784028178" rel="stylesheet">
+    <link href="/css/theme.css?1784028178" rel="stylesheet">
+    <link href="/css/format-html.css?1784028178" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/tools\/vagrant-what-is-it-for\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/www.linuxreader.com';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=false;
       window.relearn.enableBlockCodeWrap=true;
       // translations
@@ -189,8 +189,8 @@ code, kbd, pre, samp {
 <p>We are sick of manually setting up virtual machines and configuring them. You can use Ansible to automate the configuration of a server. But what about setting up a server before it&rsquo;s configured? Let&rsquo;s stop doing that manually as well by using Vagrant.</p>
 <p>Also, by setting up your infrastructure as code, you get to set up machines quickly and consistently manage and deploy your servers. This reduces the time it takes, operating costs, and minimizes the chance of configuration errors.</p>
 <p>I just spent a full hour setting up and Ansible lab by manually attaching an installation disk, configuring IPs, selectng software, setting up accounts, etc.</p>
-<p><a href="#R-image-e049055e0f2de5b95b4362349797ecbb" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020250401042551.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e049055e0f2de5b95b4362349797ecbb"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020250401042551.png"></a></p>
+<p><a href="#R-image-be43f7759e007a023638f777aded0bb0" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="/images/Pasted%20image%2020250401042551.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-be43f7759e007a023638f777aded0bb0"><img class="lazy lightbox lightbox-image" loading="lazy" src="/images/Pasted%20image%2020250401042551.png"></a></p>
 <p>Vagrant uses a configuration file called a <em>vagrantfile</em>. This file has all of the information needed to deploy a new virtual machine. Let&rsquo;s install Vagrant on Fedora:</p>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf install -y dnf-plugins-core
 </span></span><span style="display:flex;"><span>sudo dnf config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
@@ -200,8 +200,8 @@ code, kbd, pre, samp {
 </span></span></span><span style="display:flex;"><span>  gcc libvirt-devel libxml2-devel make ruby-devel
 </span></span><span style="display:flex;"><span>vagrant plugin install vagrant-libvirt</span></span></code></pre></div>
 <p>You will also need virt-manager, libvirt, and qemu for this tutorial.
-<a href="#R-image-0aa3208ced5ad926d3d6b9d09c4089c5" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020250401043118.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-0aa3208ced5ad926d3d6b9d09c4089c5"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020250401043118.png"></a></p>
+<a href="#R-image-e73d8fe2234a293b3a777c7f1d92f91f" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020250401043118.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e73d8fe2234a293b3a777c7f1d92f91f"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020250401043118.png"></a></p>
 <p>First, we need a plugin that will let Vagrant interact with our VM provider. Install libvirt plugin to do this:
 <code>vagrant plugin install vagrant-libvirt</code></p>
 <p>Libvirt documenttation can be found <a href="https://vagrant-libvirt.github.io/vagrant-libvirt/" rel="external" target="_blank">here</a>.</p>
@@ -372,7 +372,21 @@ Storage: 20GB</p>
         </div>
       </div>
       <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <div class="nav-title padding">More</div>
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/booknotes/"><a class="padding" href="/booknotes/"><i class='fas fa-fw fa-book'></i> Book Notes<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/now/"><a class="padding" href="/now/"><i class='fas fa-fw fa-clock'></i> Now<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
         <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <div class="nav-title padding">Categories</div>
           <ul class="enlarge morespace collapsible-menu">
             <li class="" data-nav-id="/ansible/"><input type="checkbox" id="R-section-e5b911977d99c31c82b120cc3d2f2606" aria-controls="R-subsections-e5b911977d99c31c82b120cc3d2f2606"><label for="R-section-e5b911977d99c31c82b120cc3d2f2606"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Ansible</span></label><a class="padding default-animation" href="/ansible/"><i class="fa-solid fa-robot"></i> Ansible<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e5b911977d99c31c82b120cc3d2f2606" class="collapsible-menu">
             <li class="" data-nav-id="/ansible/ansible-navigator/"><a class="padding" href="/ansible/ansible-navigator/">Ansible Navigator<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -486,16 +500,6 @@ Storage: 20GB</p>
             <li class="" data-nav-id="/users-and-groups/basic-user-management/"><a class="padding" href="/users-and-groups/basic-user-management/">Basic User Management<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
-        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
-          <div class="nav-title padding">More</div>
-          <ul class="space collapsible-menu">
-            <li class="" data-nav-id="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/booknotes/"><a class="padding" href="/booknotes/"><i class='fas fa-fw fa-book'></i> Book Notes<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/now/"><a class="padding" href="/now/"><i class='fas fa-fw fa-clock'></i> Now<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          </ul>
-        </div>
         <div id="R-footer-margin" class="default-animation"></div>
         <div class="R-menu-divider default-animation">
           <hr class="padding default-animation">
@@ -517,8 +521,8 @@ Storage: 20GB</p>
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1783943825" defer></script>
-    <script src="/js/theme.min.js?1783943825" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1784028178" defer></script>
+    <script src="/js/theme.js?1784028178" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

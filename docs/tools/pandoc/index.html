@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html id="R-html" lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.154.5">
@@ -18,7 +18,7 @@ https://ins3cure.com/pandoc-on-rhel-8/
 Go to https://github.com/jgm/pandoc/releases/latest, download the latest tarball (currently pandoc-2.17.0.1-linux-64.tar.gz) and run:
 sudo tar xvzf pandoc-2.17.0.1-linux-64.tar.gz --strip-components 1 -C /usr/local/ install TeX to be able to generate PDF output:
 sudo yum -y install texlive Basic useage pandoc inputfile -f inputfiletype -t outputfiletype -o outputfile Convert full folder for f in *; do pandoc &#34;$f&#34; -s -o &#34;../bloghtml/${f%}.html&#34;; done Convert epub to markdown and migrate to Obsidian Run pandoc bookname.epub -o bookname.md --extract-media=images">
-    <meta property="og:url" content="https://www.linuxreader.com/tools/pandoc/">
+    <meta property="og:url" content="http://localhost:1313/tools/pandoc/">
     <meta property="og:description" content="Pandoc Used for converting file formats
 https://ins3cure.com/pandoc-on-rhel-8/
 Go to https://github.com/jgm/pandoc/releases/latest, download the latest tarball (currently pandoc-2.17.0.1-linux-64.tar.gz) and run:
@@ -35,35 +35,35 @@ sudo yum -y install texlive Basic useage pandoc inputfile -f inputfiletype -t ou
     <meta itemprop="wordCount" content="131">
     <title></title>
     <link href="/tools/pandoc/index.md" rel="alternate" type="text/markdown" title="">
-    <link href="/images/favicon.svg?1783943825" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1783943825" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1783943825" defer></script>
-    <script src="/js/search-lunr.min.js?1783943825" defer></script>
-    <script src="/js/search.min.js?1783943825" defer></script>
+    <link href="/images/favicon.svg?1784028178" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1784028178" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1784028178" defer></script>
+    <script src="/js/search-lunr.js?1784028178" defer></script>
+    <script src="/js/search.js?1784028178" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1783943825";
+      window.relearn.index_js_url="/searchindex.en.js?1784028178";
     </script>
-    <script src="/js/lunr/lunr.min.js?1783943825" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1783943825" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1783943825" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1783943825" defer></script>
+    <script src="/js/lunr/lunr.min.js?1784028178" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1784028178" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1784028178" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1784028178" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1783943825" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1783943825" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1783943825" rel="stylesheet">
-    <link href="/css/theme.min.css?1783943825" rel="stylesheet">
-    <link href="/css/format-html.min.css?1783943825" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1784028178" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1784028178" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1784028178" rel="stylesheet">
+    <link href="/css/theme.css?1784028178" rel="stylesheet">
+    <link href="/css/format-html.css?1784028178" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/tools\/pandoc\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/www.linuxreader.com';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=false;
       window.relearn.enableBlockCodeWrap=true;
       // translations
@@ -252,7 +252,21 @@ code, kbd, pre, samp {
         </div>
       </div>
       <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <div class="nav-title padding">More</div>
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/booknotes/"><a class="padding" href="/booknotes/"><i class='fas fa-fw fa-book'></i> Book Notes<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/now/"><a class="padding" href="/now/"><i class='fas fa-fw fa-clock'></i> Now<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
         <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <div class="nav-title padding">Categories</div>
           <ul class="enlarge morespace collapsible-menu">
             <li class="" data-nav-id="/ansible/"><input type="checkbox" id="R-section-e5b911977d99c31c82b120cc3d2f2606" aria-controls="R-subsections-e5b911977d99c31c82b120cc3d2f2606"><label for="R-section-e5b911977d99c31c82b120cc3d2f2606"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Ansible</span></label><a class="padding default-animation" href="/ansible/"><i class="fa-solid fa-robot"></i> Ansible<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e5b911977d99c31c82b120cc3d2f2606" class="collapsible-menu">
             <li class="" data-nav-id="/ansible/ansible-navigator/"><a class="padding" href="/ansible/ansible-navigator/">Ansible Navigator<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -366,16 +380,6 @@ code, kbd, pre, samp {
             <li class="" data-nav-id="/users-and-groups/basic-user-management/"><a class="padding" href="/users-and-groups/basic-user-management/">Basic User Management<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
-        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
-          <div class="nav-title padding">More</div>
-          <ul class="space collapsible-menu">
-            <li class="" data-nav-id="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/booknotes/"><a class="padding" href="/booknotes/"><i class='fas fa-fw fa-book'></i> Book Notes<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/now/"><a class="padding" href="/now/"><i class='fas fa-fw fa-clock'></i> Now<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          </ul>
-        </div>
         <div id="R-footer-margin" class="default-animation"></div>
         <div class="R-menu-divider default-animation">
           <hr class="padding default-animation">
@@ -397,8 +401,8 @@ code, kbd, pre, samp {
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1783943825" defer></script>
-    <script src="/js/theme.min.js?1783943825" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1784028178" defer></script>
+    <script src="/js/theme.js?1784028178" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html id="R-html" lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.154.5">
@@ -10,7 +10,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Proxmox PfSense HaProxy Setup">
     <meta name="twitter:description" content="Access Proxmox PVE GUI through HaProxy on PfSense">
-    <meta property="og:url" content="https://www.linuxreader.com/tools/proxmox-ha-proxy-setup/">
+    <meta property="og:url" content="http://localhost:1313/tools/proxmox-ha-proxy-setup/">
     <meta property="og:title" content="Proxmox PfSense HaProxy Setup">
     <meta property="og:description" content="Access Proxmox PVE GUI through HaProxy on PfSense">
     <meta property="og:locale" content="en_us">
@@ -25,35 +25,35 @@
     <meta itemprop="wordCount" content="72">
     <title>Proxmox PfSense HaProxy Setup</title>
     <link href="/tools/proxmox-ha-proxy-setup/index.md" rel="alternate" type="text/markdown" title="Proxmox PfSense HaProxy Setup">
-    <link href="/images/favicon.svg?1783943825" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1783943825" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1783943825" defer></script>
-    <script src="/js/search-lunr.min.js?1783943825" defer></script>
-    <script src="/js/search.min.js?1783943825" defer></script>
+    <link href="/images/favicon.svg?1784028178" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1784028178" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1784028178" defer></script>
+    <script src="/js/search-lunr.js?1784028178" defer></script>
+    <script src="/js/search.js?1784028178" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1783943825";
+      window.relearn.index_js_url="/searchindex.en.js?1784028178";
     </script>
-    <script src="/js/lunr/lunr.min.js?1783943825" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1783943825" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1783943825" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1783943825" defer></script>
+    <script src="/js/lunr/lunr.min.js?1784028178" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1784028178" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1784028178" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1784028178" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/all.min.css?1783943825" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1783943825" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1783943825" rel="stylesheet">
-    <link href="/css/theme.min.css?1783943825" rel="stylesheet">
-    <link href="/css/format-html.min.css?1783943825" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/all.min.css?1784028178" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1784028178" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1784028178" rel="stylesheet">
+    <link href="/css/theme.css?1784028178" rel="stylesheet">
+    <link href="/css/format-html.css?1784028178" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/tools\/proxmox-ha-proxy-setup\/';
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
-      window.relearn.absBaseUri='https:\/\/www.linuxreader.com';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=false;
       window.relearn.enableBlockCodeWrap=true;
       // translations
@@ -190,30 +190,30 @@ code, kbd, pre, samp {
 <p>General HaProxy setup pretty much matches the LS video here: <a href="https://www.youtube.com/watch?v=bU85dgHSb2E" rel="external" target="_blank">https://www.youtube.com/watch?v=bU85dgHSb2E</a></p>
 <h2 id="frontend-configuration">Frontend configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>External address</strong></p>
-<p><a href="#R-image-e73c07bc7e4b250d653b5ed8d37e1279" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041515.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-e73c07bc7e4b250d653b5ed8d37e1279"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041515.png"></a></p>
+<p><a href="#R-image-7700c4d84339543571500d346e1fea7d" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041515.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7700c4d84339543571500d346e1fea7d"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041515.png"></a></p>
 <p><strong>Type</strong>
-<a href="#R-image-8c50e99a9cd07f3b740fd93682cdce2e" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041615.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8c50e99a9cd07f3b740fd93682cdce2e"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041615.png"></a></p>
+<a href="#R-image-1b17369678627fbf3c3bceedb042d9dd" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041615.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1b17369678627fbf3c3bceedb042d9dd"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041615.png"></a></p>
 <p><strong>ACL</strong>
-<a href="#R-image-665ae41818585af25a16e6945b04d2fa" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041708.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-665ae41818585af25a16e6945b04d2fa"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041708.png"></a></p>
+<a href="#R-image-85b88f1b44ca60b1258d009fef4ac3ab" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041708.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-85b88f1b44ca60b1258d009fef4ac3ab"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041708.png"></a></p>
 <p><strong>ACL Actions</strong>
-<a href="#R-image-95cdd5c65e6651910b282f0d131de5cf" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041758.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-95cdd5c65e6651910b282f0d131de5cf"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041758.png"></a></p>
+<a href="#R-image-819414eb2987dd7d28e8846582150005" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041758.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-819414eb2987dd7d28e8846582150005"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041758.png"></a></p>
 <p><strong>SSL Offloading</strong>
-<a href="#R-image-8a99b3b419ea1322a9df8390687616f2" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041849.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-8a99b3b419ea1322a9df8390687616f2"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041849.png"></a></p>
+<a href="#R-image-4804aa4e3b2853cbbceb75ea82467a02" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117041849.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4804aa4e3b2853cbbceb75ea82467a02"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117041849.png"></a></p>
 <h2 id="backend-configuration">Backend configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p><strong>Backend Server Pool</strong>
-<a href="#R-image-627c809951339a29ee257f31924a72b3" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117042001.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-627c809951339a29ee257f31924a72b3"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117042001.png"></a></p>
+<a href="#R-image-445c98bf2118d2a3bc61eebfc3a28241" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117042001.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-445c98bf2118d2a3bc61eebfc3a28241"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117042001.png"></a></p>
 <p><strong>Health check</strong>
-<a href="#R-image-051c6e107b612ac27d5e64c70d794dcb" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117042031.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-051c6e107b612ac27d5e64c70d794dcb"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117042031.png"></a></p>
+<a href="#R-image-3280d4fa1b145da6f798c3766ec010d1" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/Pasted%20image%2020260117042031.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3280d4fa1b145da6f798c3766ec010d1"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/Pasted%20image%2020260117042031.png"></a></p>
 <h2 id="its-working-finally">It&rsquo;s working finally!<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p><a href="#R-image-cee3edef4d2734192b99c1136d9d77fa" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/proxmox-gui.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-cee3edef4d2734192b99c1136d9d77fa"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/proxmox-gui.png"></a></p>
+<p><a href="#R-image-82ca03a5e5d4e42c7e73011c874faa68" class="lightbox-link"><img class="lazy lightbox figure-image" loading="lazy" src="../../images/proxmox-gui.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-82ca03a5e5d4e42c7e73011c874faa68"><img class="lazy lightbox lightbox-image" loading="lazy" src="../../images/proxmox-gui.png"></a></p>
 
   <footer class="footline">
   </footer>
@@ -256,7 +256,21 @@ code, kbd, pre, samp {
         </div>
       </div>
       <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <div class="nav-title padding">More</div>
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/booknotes/"><a class="padding" href="/booknotes/"><i class='fas fa-fw fa-book'></i> Book Notes<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/now/"><a class="padding" href="/now/"><i class='fas fa-fw fa-clock'></i> Now<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn<i class="fa-fw fas fa-check read-icon"></i></a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
         <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <div class="nav-title padding">Categories</div>
           <ul class="enlarge morespace collapsible-menu">
             <li class="" data-nav-id="/ansible/"><input type="checkbox" id="R-section-e5b911977d99c31c82b120cc3d2f2606" aria-controls="R-subsections-e5b911977d99c31c82b120cc3d2f2606"><label for="R-section-e5b911977d99c31c82b120cc3d2f2606"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Ansible</span></label><a class="padding default-animation" href="/ansible/"><i class="fa-solid fa-robot"></i> Ansible<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e5b911977d99c31c82b120cc3d2f2606" class="collapsible-menu">
             <li class="" data-nav-id="/ansible/ansible-navigator/"><a class="padding" href="/ansible/ansible-navigator/">Ansible Navigator<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -369,16 +383,6 @@ code, kbd, pre, samp {
             <li class="" data-nav-id="/users-and-groups/basic-user-management/"><a class="padding" href="/users-and-groups/basic-user-management/">Basic User Management<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
-        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
-          <div class="nav-title padding">More</div>
-          <ul class="space collapsible-menu">
-            <li class="" data-nav-id="/contact/"><a class="padding" href="/contact/"><i class='fas fa-fw fa-envelope'></i> Contact<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/booknotes/"><a class="padding" href="/booknotes/"><i class='fas fa-fw fa-book'></i> Book Notes<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/now/"><a class="padding" href="/now/"><i class='fas fa-fw fa-clock'></i> Now<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="https://github.com/linuxreader"><a class="padding" href="https://github.com/linuxreader" rel="external" target="_blank"><i class='fab fa-fw fa-github'></i> GitHub<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="https://linkedin.com/in/linuxreader/"><a class="padding" href="https://linkedin.com/in/linuxreader/" rel="external" target="_blank"><i class='fab fa-fw fa-linkedin'></i> LinkedIn<i class="fa-fw fas fa-check read-icon"></i></a></li>
-          </ul>
-        </div>
         <div id="R-footer-margin" class="default-animation"></div>
         <div class="R-menu-divider default-animation">
           <hr class="padding default-animation">
@@ -400,8 +404,8 @@ code, kbd, pre, samp {
 <div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1783943825" defer></script>
-    <script src="/js/theme.min.js?1783943825" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1784028178" defer></script>
+    <script src="/js/theme.js?1784028178" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

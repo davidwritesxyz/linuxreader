@@ -19,7 +19,7 @@ params:
   disableAssetsBusting: false
   disableGeneratorVersion: false
   disableInlineCopyToClipBoard: false
-  disableShortcutsTitle: false
+  disableShortcutsTitle: true
   disableLandingPageButton: true
   disableLanguageSwitchingButton: false
   disableMarkdownButton: false
@@ -36,6 +36,13 @@ params:
   externalLinkTarget: "_blank"
   custom_css: 
     - css/custom.css
+  sidebarmenus:
+    - identifier: shortcuts
+      type: menu
+    - type: divider
+    - identifier: main
+      type: page
+      disableTitle: false
 
 ignoreLogs: 
   - "warning-goldmark-raw-html"

@@ -1,6 +1,0 @@
-[https://github.com/VSCodium](https://github.com/VSCodium "https://github.com/VSCodium") VScode but without the Microsoft Telemetry
-
-See section about migrating from VScod to VS codium
-[https://github.com/VSCodium/vscodium/blob/a02839b466d8d01b8a61ea9611f0b74039538eae/DOCS.md#migrating-from-visual-studio-code-to-vscodium](https://github.com/VSCodium/vscodium/blob/a02839b466d8d01b8a61ea9611f0b74039538eae/DOCS.md#migrating-from-visual-studio-code-to-vscodium "https://github.com/VSCodium/vscodium/blob/a02839b466d8d01b8a61ea9611f0b74039538eae/DOCS.md#migrating-from-visual-studio-code-to-vscodium"). 
-
-It pulls from this server rather than Microsoft's: [https://open-vsx.org/](https://open-vsx.org/ "https://open-vsx.org/"). And you can manually download the extensions from microsoft [https://marketplace.visualstudio.com/vscode](https://marketplace.visualstudio.com/vscode "https://marketplace.visualstudio.com/vscode") if they haven't been added to [open-vsx.org](http://open-vsx.org/ "http://open-vsx.org/") yet.
