@@ -110,7 +110,7 @@ These are the summaries and notes of books I have read. I also keep a list of th
   <div>
     <h2 class="mb-1">
     <a href="/booknotes/100m-offers/" class="hover:underline">
-     $100m Offers$
+     $100m Offers
      </a>
     </h2>
     <div class="text-lg">
@@ -203,6 +203,22 @@ These are the summaries and notes of books I have read. I also keep a list of th
     </div>
     <p>
     Quick read about creating the business (and life) that you want. Life isn't all about maximizing profits and accelerated growth. Do what makes you happy. Treat your customers like rock stars and they will tell everyone. 
+    </p>
+  </div>
+</div>
+<div style="display:flex; gap:1rem; align-items:flex-start; margin-bottom:1.5rem;">
+  <img src="/images/sgtciy.jpg" style="flex: 0 0 15%; max-width:15%; height:auto;" />
+  <div>
+    <h2 class="mb-1">
+    <a href="/booknotes/so-good-they-cant-ignore-you/" class="hover:underline">
+     So Good They Can't Ignore You
+     </a>
+    </h2>
+    <div class="text-lg">
+    ★★★★☆
+    </div>
+    <p>
+      A simple, no B.S. guide to chosing a career you love. Cal newport hit the nail on the head here. You need to do the hard work of building skills. Then passion, freedom, and fun will follow. 
     </p>
   </div>
 </div>
